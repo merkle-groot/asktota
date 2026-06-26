@@ -15,7 +15,7 @@
 
 // Reveal sections on scroll
 (function () {
-  const items = document.querySelectorAll('.feature-card, .step, .review, .download-inner');
+  const items = document.querySelectorAll('.feature-card, .step, .download-inner');
   items.forEach((el) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(18px)';

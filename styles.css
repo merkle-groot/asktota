@@ -135,14 +135,6 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 30px;
 }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 26px; }
-.hero-meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--muted);
-}
-.stars-rating { color: var(--gold); letter-spacing: 2px; }
 
 /* ---------- phone mockup ---------- */
 .hero-phone { display: flex; justify-content: center; position: relative; z-index: 1; }
@@ -241,23 +233,8 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 8px;
 }
 
-/* ---------- trust strip ---------- */
-.trust {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 28px;
-  padding: 24px 20px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-}
-.trust span { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; }
-.trust strong { font-size: 17px; font-weight: 700; color: #6f747c; font-family: Georgia, serif; }
-
 /* ---------- sections shared ---------- */
-section.features, section.how, section.reviews {
+section.features, section.how {
   max-width: var(--maxw);
   margin: 0 auto;
   padding: clamp(56px, 9vw, 100px) clamp(20px, 5vw, 56px);
@@ -338,22 +315,6 @@ section.features, section.how, section.reviews {
 .step h3 { font-size: 20px; margin-bottom: 8px; }
 .step p { color: var(--muted); font-size: 15px; max-width: 280px; margin-inline: auto; }
 
-/* ---------- reviews ---------- */
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.review {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 26px 24px;
-}
-.review .stars-rating { font-size: 16px; margin-bottom: 14px; }
-.review p { font-size: 16px; margin-bottom: 16px; }
-.review cite { color: var(--muted); font-style: normal; font-weight: 600; font-size: 14px; }
-
 /* ---------- download ---------- */
 .download {
   padding: clamp(40px, 7vw, 80px) clamp(20px, 5vw, 56px);
@@ -418,9 +379,9 @@ section.features, section.how, section.reviews {
   .hero { grid-template-columns: 1fr; text-align: center; }
   .hero-copy { order: 1; }
   .hero-phone { order: 2; }
-  .hero-actions, .hero-meta { justify-content: center; }
+  .hero-actions { justify-content: center; }
   .lede { margin-inline: auto; }
-  .feature-grid, .steps, .review-grid { grid-template-columns: 1fr; }
+  .feature-grid, .steps { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
 @media (max-width: 480px) {

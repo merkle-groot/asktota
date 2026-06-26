@@ -357,6 +357,13 @@ section.features, section.how {
   transition: transform .15s ease;
 }
 .store-badge:hover { transform: translateY(-2px); }
+.store-badge.is-soon {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  cursor: default;
+}
+.store-badge.is-soon:hover { transform: none; }
 .fine { font-size: 13px; margin-top: 20px; margin-bottom: 0; }
 
 /* ---------- footer ---------- */

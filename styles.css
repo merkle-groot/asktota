@@ -397,6 +397,7 @@ a { color: inherit; text-decoration: none; }
 .desk-pill-green,
 .tier-free .tier-chip {
   background: var(--mint);
+  color: var(--ink);
 }
 
 .card-tag-pink,

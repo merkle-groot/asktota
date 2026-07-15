@@ -11,6 +11,18 @@
 })();
 
 (function () {
+  const heroDate = document.getElementById('hero-date');
+  if (!heroDate) return;
+
+  const now = new Date();
+  const weekday = now.toLocaleDateString(undefined, { weekday: 'short' }).toUpperCase();
+  const month = now.toLocaleDateString(undefined, { month: 'long' }).toUpperCase();
+  const day = now.getDate();
+
+  heroDate.textContent = `${weekday}, ${month} ${day}`;
+})();
+
+(function () {
   const items = document.querySelectorAll('.reveal');
   if (!items.length) return;
 

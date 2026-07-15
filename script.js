@@ -1,38 +1,26 @@
-// Live clock in the phone mockup status bar
 (function () {
-  const clock = document.getElementById('clock');
-  if (!clock) return;
-  function tick() {
-    const now = new Date();
-    let h = now.getHours();
-    const m = String(now.getMinutes()).padStart(2, '0');
-    h = h % 12 || 12;
-    clock.textContent = `${h}:${m}`;
+  const nav = document.querySelector('.site-nav');
+  if (!nav) return;
+
+  function syncNav() {
+    nav.classList.toggle('is-scrolled', window.scrollY > 12);
   }
-  tick();
-  setInterval(tick, 10000);
+
+  syncNav();
+  window.addEventListener('scroll', syncNav, { passive: true });
 })();
 
-// Reveal sections on scroll
 (function () {
-  const items = document.querySelectorAll('.feature-card, .step, .download-inner');
-  items.forEach((el) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(18px)';
-    el.style.transition = 'opacity .5s ease, transform .5s ease';
-  });
+  const items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+
   const io = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        const el = e.target;
-        const delay = (Array.from(el.parentNode.children).indexOf(el) % 3) * 80;
-        setTimeout(() => {
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-        }, delay);
-        io.unobserve(el);
-      }
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      io.unobserve(entry.target);
     });
-  }, { threshold: 0.12 });
-  items.forEach((el) => io.observe(el));
+  }, { threshold: 0.14 });
+
+  items.forEach((item) => io.observe(item));
 })();

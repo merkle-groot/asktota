@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ask Tota favicon">
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#16924b" stroke="#17372f" stroke-width="4" />
+  <rect x="14" y="14" width="36" height="12" rx="6" fill="#f4c948" stroke="#17372f" stroke-width="3" />
+  <path d="M19 42h11c8 0 13-4 13-12v-1H31v21h-6V29h-6z" fill="#fff8e8" />
+  <circle cx="48" cy="41" r="6" fill="#d85b96" stroke="#17372f" stroke-width="3" />
+</svg>

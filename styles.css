@@ -395,3 +395,71 @@ section.features, section.how {
   .hero h1 { font-size: 36px; }
   .phone { width: 270px; }
 }
+
+/* ============ legal pages (privacy / terms) ============ */
+.legal-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 120px 22px 100px;
+}
+.legal-wrap h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.legal-meta { color: var(--muted); font-size: 14px; margin-bottom: 40px; }
+.legal-wrap h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 40px 0 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.legal-wrap h2:first-of-type { border-top: none; padding-top: 0; }
+.legal-wrap h3 { font-size: 17px; font-weight: 700; margin: 24px 0 8px; }
+.legal-wrap p, .legal-wrap li { color: #d7d9de; font-size: 15.5px; margin-bottom: 12px; }
+.legal-wrap ul { padding-left: 22px; margin-bottom: 12px; }
+.legal-wrap li { margin-bottom: 8px; }
+.legal-wrap strong { color: var(--text); }
+.legal-wrap a { color: var(--lime); text-decoration: underline; }
+.legal-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+  overflow-x: auto;
+  display: block;
+}
+.legal-wrap th, .legal-wrap td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.legal-wrap th { background: var(--card-2); color: var(--text); font-weight: 700; }
+.legal-wrap .callout {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--purple);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 20px 0;
+}
+.legal-wrap .callout.warn { border-left-color: var(--gold); }
+/* Unfinished placeholders — must be obvious so the page can't ship looking done. */
+.fill {
+  background: rgba(255, 200, 97, .16);
+  color: var(--gold);
+  border: 1px dashed var(--gold);
+  border-radius: 5px;
+  padding: 0 6px;
+  font-size: .9em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.legal-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--muted); font-weight: 600; font-size: 14px; margin-bottom: 30px;
+}
+.legal-back:hover { color: var(--text); }

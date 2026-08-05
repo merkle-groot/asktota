@@ -165,8 +165,6 @@ a { color: inherit; text-decoration: none; }
   transition: transform 0.16s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.cta-short { display: none; }
-
 .btn:hover {
   transform: translateY(-2px) rotate(-0.5deg);
   box-shadow: 0 10px 22px rgba(23, 55, 47, 0.12);
@@ -319,6 +317,7 @@ a { color: inherit; text-decoration: none; }
 .desks,
 .membership,
 .faq,
+.blog-preview,
 .download {
   padding-block: clamp(56px, 8vw, 96px);
   border-top: 2px solid rgba(33, 70, 60, 0.14);
@@ -819,9 +818,7 @@ a { color: inherit; text-decoration: none; }
   .brand { gap: 8px; min-width: 0; }
   .brand-badge { padding: 0.48rem 0.68rem; font-size: 0.64rem; }
   .brand-name { font-size: 0.98rem; white-space: nowrap; }
-  .site-nav > .btn { padding: 0.7rem 0.9rem; font-size: 0.84rem; white-space: nowrap; }
-  .cta-long { display: none; }
-  .cta-short { display: inline; }
+  .site-nav > .btn { padding: 0.7rem 0.82rem; font-size: 0.78rem; white-space: nowrap; }
 
   .site-nav,
   .hero,
@@ -879,6 +876,7 @@ a { color: inherit; text-decoration: none; }
   .desks,
   .membership,
   .faq,
+  .blog-preview,
   .download { padding-block: 54px; }
 
   .section-head { margin-bottom: 26px; }
@@ -891,6 +889,16 @@ a { color: inherit; text-decoration: none; }
   .blog-feature-card { min-height: 0; padding: 24px; }
   .blog-side-note { padding: 22px; }
   .blog-feature-card h3, .blog-side-note h3 { font-size: 2.25rem; }
+
+  .blog-main { padding-top: 34px; }
+  .blog-header { padding-bottom: 28px; }
+  .blog-header h1 { font-size: clamp(2.7rem, 13vw, 4rem); }
+  .blog-dek { margin-top: 18px; font-size: 1.08rem; }
+  .blog-article > section { margin-top: 42px; }
+  .blog-article h2 { font-size: clamp(2rem, 10vw, 2.7rem); }
+  .blog-article p, .blog-article li { font-size: 1rem; line-height: 1.6; }
+  .blog-intro p { font-size: 1.2rem; }
+  .sun-finder { border-radius: 26px; padding: 20px; }
 
   .desk-list,
   .footer-top {

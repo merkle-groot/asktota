@@ -165,6 +165,8 @@ a { color: inherit; text-decoration: none; }
   transition: transform 0.16s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
+.cta-short { display: none; }
+
 .btn:hover {
   transform: translateY(-2px) rotate(-0.5deg);
   box-shadow: 0 10px 22px rgba(23, 55, 47, 0.12);
@@ -785,45 +787,110 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 760px) {
+  html { scroll-padding-top: 140px; }
+
   .page-shell {
-    width: calc(100% - 18px);
-    margin: 9px auto;
-    border-radius: 28px;
+    width: calc(100% - 16px);
+    margin: 8px auto;
+    border-radius: 24px;
   }
 
   .site-nav {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px 12px;
+    padding: 12px 16px 10px;
   }
 
   .nav-links {
-    display: none;
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 4px 0 5px;
+    margin: 0 -2px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
   }
+
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { flex: 0 0 auto; }
+
+  .brand { gap: 8px; min-width: 0; }
+  .brand-badge { padding: 0.48rem 0.68rem; font-size: 0.64rem; }
+  .brand-name { font-size: 0.98rem; white-space: nowrap; }
+  .site-nav > .btn { padding: 0.7rem 0.9rem; font-size: 0.84rem; white-space: nowrap; }
+  .cta-long { display: none; }
+  .cta-short { display: inline; }
+
+  .site-nav,
+  .hero,
+  .edition,
+  .desks,
+  .membership,
+  .faq,
+  .blog-preview,
+  .blog-main,
+  .download,
+  .site-footer { padding-inline: 18px; }
 
   .hero {
-    gap: 18px;
+    gap: 28px;
+    padding-top: 30px;
+    padding-bottom: 54px;
   }
+
+  .hero-copy { order: -1; }
 
   .hero h1 {
-    font-size: clamp(2.7rem, 15vw, 4.5rem);
+    font-size: clamp(2.85rem, 14vw, 4.4rem);
+    max-width: 11ch;
   }
 
+  .hero-lede { margin: 20px 0 24px; }
+  .hero-points { gap: 10px; margin-top: 22px; }
+  .hero-points li { align-items: flex-start; line-height: 1.35; }
+  .hero-points li::before { margin-top: 0.05em; }
+
   .hero-visual {
-    min-height: 520px;
+    min-height: 390px;
+    order: unset;
   }
 
   .paper-stack {
-    inset: 90px 20px 20px 40px;
+    inset: 64px 26px 18px 42px;
+    border-radius: 28px;
   }
 
   .phone-shot-main {
-    width: min(310px, 78vw);
+    width: min(230px, 61vw);
   }
 
   .phone-shot-float {
-    width: min(180px, 40vw);
-    right: 0;
-    bottom: 20px;
+    width: min(150px, 39vw);
+    right: 3px;
+    bottom: 14px;
   }
+
+  .phone-shot { border-radius: 26px; }
+  .shot-label { font-size: 0.62rem; padding: 0.42rem 0.65rem; }
+
+  .edition,
+  .desks,
+  .membership,
+  .faq,
+  .download { padding-block: 54px; }
+
+  .section-head { margin-bottom: 26px; }
+  .section-head h2, .membership-copy h2, .download-card h2 { font-size: clamp(2.25rem, 11vw, 3.35rem); }
+  .edition-grid, .desk-list, .tiers, .faq-list, .blog-preview-grid { gap: 16px; }
+  .news-card, .desk-item, .tier, .faq-item { padding: 20px; min-height: 0; }
+  .news-card h3, .desk-item h3, .tier h3 { font-size: 1.7rem; }
+  .membership-panel { border-radius: 26px; padding: 18px; }
+  .feature-shot { padding: 14px; }
+  .blog-feature-card { min-height: 0; padding: 24px; }
+  .blog-side-note { padding: 22px; }
+  .blog-feature-card h3, .blog-side-note h3 { font-size: 2.25rem; }
 
   .desk-list,
   .footer-top {
@@ -841,13 +908,11 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 520px) {
   .brand {
-    width: 100%;
-    justify-content: space-between;
+    width: auto;
+    justify-content: flex-start;
   }
 
-  .site-nav .btn {
-    width: 100%;
-  }
+  .brand-name { display: none; }
 
   .hero-actions,
   .download-actions {
@@ -867,6 +932,16 @@ a { color: inherit; text-decoration: none; }
     top: 10px;
     left: 10px;
   }
+
+  .footer-links { gap: 14px 18px; }
+  .footer-top { gap: 22px; }
+  .copyright { font-size: 0.9rem; line-height: 1.45; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  .reveal { opacity: 1; transform: none; }
 }
 
 /* Legal pages */

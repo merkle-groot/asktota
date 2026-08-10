@@ -743,7 +743,6 @@ a { color: inherit; text-decoration: none; }
 
 .chart-finder-form { margin-top: 24px; display: flex; flex-direction: column; gap: 16px; }
 .chart-finder-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.chart-finder-row-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .chart-finder-field { min-width: 0; }
 .chart-finder-field label { display: block; margin-bottom: 8px; font-weight: 800; }
 .chart-finder-field input,
@@ -759,6 +758,36 @@ a { color: inherit; text-decoration: none; }
 }
 .chart-finder-submit { cursor: pointer; align-self: flex-start; }
 .chart-finder-error { color: var(--pink); font-weight: 700; }
+
+.chart-place-field { position: relative; }
+.chart-place-results {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 260px;
+  overflow-y: auto;
+  border: 2px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper-2);
+  box-shadow: var(--shadow);
+}
+.chart-place-result {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(33, 70, 60, 0.14);
+}
+.chart-place-result:last-child { border-bottom: 0; }
+.chart-place-result:hover,
+.chart-place-result.is-active { background: var(--mint); }
+.chart-place-result-name { font-weight: 800; }
+.chart-place-result-meta { font-size: 0.82rem; color: var(--ink-soft); }
+.chart-place-empty { padding: 14px 16px; color: var(--ink-soft); font-size: 0.92rem; }
+.chart-place-status { margin-top: 8px !important; font-size: 0.85rem !important; color: var(--ink-soft); }
 
 .chart-sign-result { margin-top: 20px; }
 .chart-result-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
@@ -948,9 +977,9 @@ a { color: inherit; text-decoration: none; }
   .sun-finder input, .sun-finder-controls .btn { width: 100%; }
 
   .chart-finder-row,
-  .chart-finder-row-3,
   .chart-result-grid { grid-template-columns: 1fr; }
   .chart-finder-submit { width: 100%; }
+  .chart-place-results { max-height: 220px; }
 }
 
 @media (max-width: 640px) {

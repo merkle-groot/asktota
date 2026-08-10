@@ -1,25 +1,18 @@
 (function () {
   const form = document.getElementById('chart-finder-form');
-  const placeSelect = document.getElementById('birth-place');
-  const manualFields = document.getElementById('manual-place-fields');
+  const placeInput = document.getElementById('birth-place-search');
+  const placeResults = document.getElementById('birth-place-results');
+  const placeLatField = document.getElementById('birth-place-lat');
+  const placeLonField = document.getElementById('birth-place-lon');
+  const placeStatus = document.getElementById('birth-place-status');
   const result = document.getElementById('chart-finder-result');
-  if (!form || !placeSelect || !manualFields || !result) return;
+  if (!form || !placeInput || !placeResults || !placeLatField || !placeLonField || !placeStatus || !result) return;
 
-  // Preset cities: fixed offsets, no DST (India has used a single UTC+5:30 offset since 1945).
-  const PLACES = {
-    'new-delhi': { label: 'New Delhi', lat: 28.6139, lon: 77.2090, utc: 5.5 },
-    mumbai: { label: 'Mumbai', lat: 19.0760, lon: 72.8777, utc: 5.5 },
-    bengaluru: { label: 'Bengaluru', lat: 12.9716, lon: 77.5946, utc: 5.5 },
-    kolkata: { label: 'Kolkata', lat: 22.5726, lon: 88.3639, utc: 5.5 },
-    chennai: { label: 'Chennai', lat: 13.0827, lon: 80.2707, utc: 5.5 },
-    hyderabad: { label: 'Hyderabad', lat: 17.3850, lon: 78.4867, utc: 5.5 },
-    pune: { label: 'Pune', lat: 18.5204, lon: 73.8567, utc: 5.5 },
-    ahmedabad: { label: 'Ahmedabad', lat: 23.0225, lon: 72.5714, utc: 5.5 },
-    jaipur: { label: 'Jaipur', lat: 26.9124, lon: 75.7873, utc: 5.5 },
-    lucknow: { label: 'Lucknow', lat: 26.8467, lon: 80.9462, utc: 5.5 },
-    chandigarh: { label: 'Chandigarh', lat: 30.7333, lon: 76.7794, utc: 5.5 },
-    other: null,
-  };
+  // India has used a single fixed UTC+5:30 offset nationwide since 1945 — no DST to account for.
+  const INDIA_UTC_OFFSET = 5.5;
+  const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
+  const MIN_QUERY_LENGTH = 3;
+  const SEARCH_DEBOUNCE_MS = 450;
 
   const RASHIS = [
     { name: 'Mesha', english: 'Aries' },
@@ -159,8 +152,146 @@
     };
   }
 
-  placeSelect.addEventListener('change', function () {
-    manualFields.hidden = placeSelect.value !== 'other';
+  // --- Birth place search (OpenStreetMap Nominatim, scoped to India) ---
+
+  function debounce(fn, delay) {
+    let timer;
+    return function (...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn.apply(this, args), delay);
+    };
+  }
+
+  async function searchPlaces(query, signal) {
+    const trimmed = query.trim();
+    const isPin = /^\d{6}$/.test(trimmed);
+    const params = new URLSearchParams({
+      format: 'jsonv2',
+      addressdetails: '1',
+      limit: '8',
+      'accept-language': 'en',
+    });
+    if (isPin) {
+      params.set('country', 'India');
+      params.set('postalcode', trimmed);
+    } else {
+      params.set('countrycodes', 'in');
+      params.set('q', trimmed);
+    }
+    const res = await fetch(`${NOMINATIM_URL}?${params.toString()}`, { signal });
+    if (!res.ok) throw new Error('Place search failed');
+    return res.json();
+  }
+
+  function formatPlace(item) {
+    const a = item.address || {};
+    const primary =
+      a.village || a.town || a.city || a.suburb || a.county || (item.display_name || '').split(',')[0];
+    const secondary = [a.state_district, a.state].filter(Boolean).join(', ');
+    return { primary, secondary };
+  }
+
+  let currentController = null;
+  let currentItems = [];
+  let activeIndex = -1;
+
+  function hideResults() {
+    placeResults.hidden = true;
+    placeResults.innerHTML = '';
+    activeIndex = -1;
+  }
+
+  function clearSelection() {
+    placeLatField.value = '';
+    placeLonField.value = '';
+  }
+
+  function updateActive(items) {
+    items.forEach((el, i) => el.classList.toggle('is-active', i === activeIndex));
+    if (activeIndex >= 0) items[activeIndex].scrollIntoView({ block: 'nearest' });
+  }
+
+  function selectItem(index) {
+    const item = currentItems[index];
+    if (!item) return;
+    const { primary, secondary } = formatPlace(item);
+    placeInput.value = secondary ? `${primary}, ${secondary}` : primary;
+    placeLatField.value = item.lat;
+    placeLonField.value = item.lon;
+    placeStatus.textContent = '';
+    hideResults();
+  }
+
+  function renderResults(items) {
+    currentItems = items;
+    activeIndex = -1;
+    if (!items.length) {
+      placeResults.hidden = false;
+      placeResults.innerHTML =
+        '<div class="chart-place-empty">No matches. Try the nearest town, or a 6-digit PIN code.</div>';
+      return;
+    }
+    placeResults.innerHTML = items
+      .map((item, i) => {
+        const { primary, secondary } = formatPlace(item);
+        return `<div class="chart-place-result" data-index="${i}" role="option"><span class="chart-place-result-name">${primary}</span><span class="chart-place-result-meta">${secondary}</span></div>`;
+      })
+      .join('');
+    placeResults.hidden = false;
+    placeResults.querySelectorAll('.chart-place-result').forEach((el) => {
+      el.addEventListener('mousedown', (event) => {
+        event.preventDefault();
+        selectItem(Number(el.dataset.index));
+      });
+    });
+  }
+
+  const runSearch = debounce(async function (query) {
+    clearSelection();
+    if (query.trim().length < MIN_QUERY_LENGTH) {
+      hideResults();
+      placeStatus.textContent = '';
+      return;
+    }
+    if (currentController) currentController.abort();
+    currentController = new AbortController();
+    placeStatus.textContent = 'Searching…';
+    try {
+      const items = await searchPlaces(query, currentController.signal);
+      placeStatus.textContent = '';
+      renderResults(items);
+    } catch (err) {
+      if (err.name === 'AbortError') return;
+      placeStatus.textContent = "Couldn't reach place search. Check your connection and try again.";
+      hideResults();
+    }
+  }, SEARCH_DEBOUNCE_MS);
+
+  placeInput.addEventListener('input', function () {
+    runSearch(placeInput.value);
+  });
+
+  placeInput.addEventListener('keydown', function (event) {
+    if (placeResults.hidden) return;
+    const items = placeResults.querySelectorAll('.chart-place-result');
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      activeIndex = Math.min(activeIndex + 1, items.length - 1);
+      updateActive(items);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      activeIndex = Math.max(activeIndex - 1, 0);
+      updateActive(items);
+    } else if (event.key === 'Enter' && activeIndex >= 0) {
+      event.preventDefault();
+      selectItem(activeIndex);
+    } else if (event.key === 'Escape') {
+      hideResults();
+    }
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!placeInput.contains(event.target) && !placeResults.contains(event.target)) hideResults();
   });
 
   function cardHtml(label, sign, note) {
@@ -177,28 +308,17 @@
     const timeVal = document.getElementById('birth-time').value;
     if (!dateVal || !timeVal) return;
 
+    const lat = parseFloat(placeLatField.value);
+    const lon = parseFloat(placeLonField.value);
+    if (Number.isNaN(lat) || Number.isNaN(lon)) {
+      result.hidden = false;
+      result.innerHTML = '<p class="chart-finder-error">Pick a birth place from the search results before calculating.</p>';
+      return;
+    }
+
     const [year, month, day] = dateVal.split('-').map(Number);
     const [hour, minute] = timeVal.split(':').map(Number);
-
-    let lat, lon, utcOffset;
-    const placeKey = placeSelect.value;
-    if (placeKey === 'other') {
-      lat = parseFloat(document.getElementById('manual-lat').value);
-      lon = parseFloat(document.getElementById('manual-lon').value);
-      utcOffset = parseFloat(document.getElementById('manual-utc').value);
-      if (Number.isNaN(lat) || Number.isNaN(lon) || Number.isNaN(utcOffset)) {
-        result.hidden = false;
-        result.innerHTML =
-          '<p class="chart-finder-error">Fill in latitude, longitude, and UTC offset, or pick a city from the list.</p>';
-        return;
-      }
-    } else {
-      const place = PLACES[placeKey];
-      if (!place) return;
-      lat = place.lat;
-      lon = place.lon;
-      utcOffset = place.utc;
-    }
+    const utcOffset = INDIA_UTC_OFFSET;
 
     const chart = computeChart({ year, month, day, hour, minute, utcOffset, lat, lon });
 

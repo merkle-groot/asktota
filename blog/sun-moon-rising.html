@@ -66,41 +66,18 @@
                 <input id="birth-time" name="birth-time" type="time" required />
               </div>
             </div>
-            <div class="chart-finder-field">
-              <label for="birth-place">Birth place</label>
-              <select id="birth-place" name="birth-place" required>
-                <option value="new-delhi">New Delhi</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="bengaluru">Bengaluru</option>
-                <option value="kolkata">Kolkata</option>
-                <option value="chennai">Chennai</option>
-                <option value="hyderabad">Hyderabad</option>
-                <option value="pune">Pune</option>
-                <option value="ahmedabad">Ahmedabad</option>
-                <option value="jaipur">Jaipur</option>
-                <option value="lucknow">Lucknow</option>
-                <option value="chandigarh">Chandigarh</option>
-                <option value="other">Other (enter manually)</option>
-              </select>
-            </div>
-            <div id="manual-place-fields" class="chart-finder-row chart-finder-row-3" hidden>
-              <div class="chart-finder-field">
-                <label for="manual-lat">Latitude</label>
-                <input id="manual-lat" name="manual-lat" type="number" step="0.0001" min="-90" max="90" placeholder="e.g. 40.7128" />
-              </div>
-              <div class="chart-finder-field">
-                <label for="manual-lon">Longitude</label>
-                <input id="manual-lon" name="manual-lon" type="number" step="0.0001" min="-180" max="180" placeholder="e.g. -74.0060" />
-              </div>
-              <div class="chart-finder-field">
-                <label for="manual-utc">UTC offset at birth</label>
-                <input id="manual-utc" name="manual-utc" type="number" step="0.5" min="-12" max="14" placeholder="e.g. -5" />
-              </div>
+            <div class="chart-finder-field chart-place-field">
+              <label for="birth-place-search">Birth place</label>
+              <input id="birth-place-search" name="birth-place-search" type="text" autocomplete="off" placeholder="City, village, town, or PIN code" required />
+              <div id="birth-place-results" class="chart-place-results" role="listbox" hidden></div>
+              <input type="hidden" id="birth-place-lat" />
+              <input type="hidden" id="birth-place-lon" />
+              <p id="birth-place-status" class="chart-place-status" aria-live="polite"></p>
             </div>
             <button class="btn btn-primary chart-finder-submit" type="submit">Calculate my three signs</button>
           </form>
           <div id="chart-finder-result" class="chart-sign-result" aria-live="polite" hidden></div>
-          <p class="sun-finder-note">This is a quick check, not a birth-chart calculation. For places outside the list, look up latitude, longitude, and the UTC offset that applied at your birth time (account for daylight saving if it was in effect).</p>
+          <p class="sun-finder-note">This is a quick check, not a birth-chart calculation. Place search covers India only for now — type at least 3 letters, or a 6-digit PIN code, and pick a match from the list. Place search by <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
         </section>
 
         <section><h2>three signs, three jobs</h2><p>a birth chart is a snapshot of the sky at the exact minute u were born, taken from the exact place u were born. every planet gets a position in that snapshot. three of those positions get asked to do the most work in daily conversation: the sun, the moon, and the eastern horizon.</p><p><strong>sun sign:</strong> where the sun sat in the zodiac at ur birth. it moves about one degree a day and takes roughly a month to cross a sign, so it changes slowly and predictably. this is the sign people mean by default.</p><p><strong>moon sign:</strong> where the moon sat at ur birth. the moon moves fast, roughly thirteen degrees a day, crossing a full sign every two to two and a half days. in Vedic astrology this is usually the sign people actually mean when they ask ur rashi.</p><p><strong>rising sign (lagna):</strong> the zodiac sign that was climbing the eastern horizon at the exact minute u were born. this one doesn't depend on the date at all, it depends on the clock and the map. it moves a full sign roughly every two hours.</p><p>three different speeds. three different jobs. that's the whole reason they land in three different signs for most people.</p></section>

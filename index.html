@@ -97,7 +97,7 @@
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
-  <script defer src="/tt/script.js" data-endpoint="/tt"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <div class="page-shell">
@@ -136,11 +136,17 @@
           <div class="paper-stack paper-stack-back"></div>
           <div class="phone-shot phone-shot-main">
             <span class="shot-label shot-label-yellow">FRESH TODAY</span>
-            <img src="assets/app-home.png" alt="Ask Tota home screen with daily reading, vibe meter, and feature cards." />
+            <picture>
+              <source srcset="assets/app-home.webp" type="image/webp" />
+              <img src="assets/app-home.png" width="576" height="1280" fetchpriority="high" decoding="async" alt="Ask Tota home screen with daily reading, vibe meter, and feature cards." />
+            </picture>
           </div>
           <div class="phone-shot phone-shot-float">
             <span class="shot-label shot-label-pink">YOUR DESK</span>
-            <img src="assets/app-desk.png" alt="Ask Tota profile and birth record screen." />
+            <picture>
+              <source srcset="assets/app-desk.webp" type="image/webp" />
+              <img src="assets/app-desk.png" width="460" height="1023" decoding="async" alt="Ask Tota profile and birth record screen." />
+            </picture>
           </div>
         </div>
       </section>
@@ -201,7 +207,10 @@
           </div>
           <figure class="feature-shot">
             <span class="shot-label shot-label-green">YOUR PRESS PASS</span>
-            <img src="assets/app-membership.png" alt="Ask Tota membership screen showing free, plus, and pro style tiers." />
+            <picture>
+              <source srcset="assets/app-membership.webp" type="image/webp" />
+              <img src="assets/app-membership.png" width="576" height="1280" loading="lazy" decoding="async" alt="Ask Tota membership screen showing free, plus, and pro style tiers." />
+            </picture>
           </figure>
         </div>
       </section>

@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/tt/:path*", "destination": "/_vercel/insights/:path*" }
+  ]
+}

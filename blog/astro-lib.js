@@ -188,7 +188,27 @@
     const idx = Math.floor(lon / span) % 27;
     const degInNakshatra = lon - idx * span;
     const fractionElapsed = degInNakshatra / span;
-    return { ...NAKSHATRAS[idx], index: idx, fractionElapsed };
+    const padaSpan = span / 4; // 3°20'
+    const pada = Math.min(4, Math.floor(degInNakshatra / padaSpan) + 1);
+    return { ...NAKSHATRAS[idx], index: idx, fractionElapsed, pada };
+  }
+
+  const TITHI_NAMES = [
+    'Pratipada', 'Dwitiya', 'Tritiya', 'Chaturthi', 'Panchami', 'Shashthi', 'Saptami', 'Ashtami',
+    'Navami', 'Dashami', 'Ekadashi', 'Dwadashi', 'Trayodashi', 'Chaturdashi',
+  ];
+
+  // Tithi is the angle between Moon and Sun, divided into 12deg steps. It is
+  // ayanamsa-independent by construction (both bodies shift by the same
+  // amount), so this takes tropical longitudes directly.
+  function tithiOf(sunTropicalLon, moonTropicalLon) {
+    const diff = norm360(moonTropicalLon - sunTropicalLon);
+    const index = Math.floor(diff / 12); // 0-29
+    const paksha = index < 15 ? 'Shukla' : 'Krishna';
+    const numberInPaksha = (index % 15) + 1; // 1-15
+    const name = numberInPaksha === 15 ? (paksha === 'Shukla' ? 'Purnima' : 'Amavasya') : TITHI_NAMES[numberInPaksha - 1];
+    const degIntoTithi = diff - index * 12;
+    return { index, paksha, numberInPaksha, name, degIntoTithi };
   }
 
   // --- Two-body Keplerian planetary positions (JPL "Keplerian elements for
@@ -457,6 +477,7 @@
     lahiriAyanamsa,
     signOf,
     nakshatraOf,
+    tithiOf,
     saturnLongitude,
     saturnSiderealSign,
     attachPlaceSearch,

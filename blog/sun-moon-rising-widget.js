@@ -10,7 +10,7 @@
 
   // India has used a single fixed UTC+5:30 offset nationwide since 1945 — no DST to account for.
   const INDIA_UTC_OFFSET = 5.5;
-  const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
+  const SEARCH_URL = 'https://photon.komoot.io/api/';
   const MIN_QUERY_LENGTH = 3;
   const SEARCH_DEBOUNCE_MS = 450;
 
@@ -152,7 +152,11 @@
     };
   }
 
-  // --- Birth place search (OpenStreetMap Nominatim, scoped to India) ---
+  // --- Birth place search (Photon, OSM-derived, scoped to India) ---
+  // Was Nominatim directly; its public instance does not reliably send
+  // Access-Control-Allow-Origin (confirmed missing even with a proper Origin
+  // header), which silently broke this search for every visitor. Photon is
+  // built for direct browser use and consistently sends CORS headers.
 
   function debounce(fn, delay) {
     let timer;
@@ -164,30 +168,29 @@
 
   async function searchPlaces(query, signal) {
     const trimmed = query.trim();
-    const isPin = /^\d{6}$/.test(trimmed);
     const params = new URLSearchParams({
-      format: 'jsonv2',
-      addressdetails: '1',
-      limit: '8',
-      'accept-language': 'en',
+      q: trimmed,
+      limit: '15',
+      lang: 'en',
+      lat: '20.5937',
+      lon: '78.9629',
+      zoom: '5',
     });
-    if (isPin) {
-      params.set('country', 'India');
-      params.set('postalcode', trimmed);
-    } else {
-      params.set('countrycodes', 'in');
-      params.set('q', trimmed);
-    }
-    const res = await fetch(`${NOMINATIM_URL}?${params.toString()}`, { signal });
+    const res = await fetch(`${SEARCH_URL}?${params.toString()}`, { signal });
     if (!res.ok) throw new Error('Place search failed');
-    return res.json();
+    const data = await res.json();
+    const features = (data.features || []).filter((f) => (f.properties || {}).countrycode === 'IN');
+    features.sort((a, b) => {
+      const rank = (f) => ((f.properties || {}).osm_key === 'place' ? 0 : 1);
+      return rank(a) - rank(b);
+    });
+    return features.slice(0, 8);
   }
 
-  function formatPlace(item) {
-    const a = item.address || {};
-    const primary =
-      a.village || a.town || a.city || a.suburb || a.county || (item.display_name || '').split(',')[0];
-    const secondary = [a.state_district, a.state].filter(Boolean).join(', ');
+  function formatPlace(feature) {
+    const p = feature.properties || {};
+    const primary = p.name || p.city || p.county || p.state || '';
+    const secondary = [p.state, p.postcode].filter(Boolean).join(', ');
     return { primary, secondary };
   }
 
@@ -215,9 +218,10 @@
     const item = currentItems[index];
     if (!item) return;
     const { primary, secondary } = formatPlace(item);
+    const coords = (item.geometry || {}).coordinates || [];
     placeInput.value = secondary ? `${primary}, ${secondary}` : primary;
-    placeLatField.value = item.lat;
-    placeLonField.value = item.lon;
+    placeLatField.value = coords[1];
+    placeLonField.value = coords[0];
     placeStatus.textContent = '';
     hideResults();
   }

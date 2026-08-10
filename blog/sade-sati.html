@@ -49,11 +49,46 @@
           <p>it's a real, specific, calculable transit. it happens to everyone, more than once in most lifetimes. it is not a curse, a punishment, or a sign that something is broken in your chart. it's Saturn's slow orbit passing through three signs around your moon, one at a time, and each phase asks something different of u.</p>
         </section>
 
+        <section class="sun-finder chart-finder" aria-labelledby="sadesati-finder-title">
+          <div>
+            <p class="section-kicker">THE QUICK CHECK</p>
+            <h2 id="sadesati-finder-title">find ur sade sati window</h2>
+            <p>enter ur birth details. we'll find ur natal moon sign and tell u where u are in Saturn's 7.5-year cycle around it — or when the next one starts.</p>
+          </div>
+          <form id="sadesati-form" class="chart-finder-form">
+            <div class="chart-finder-field">
+              <label for="sadesati-name">Name (optional)</label>
+              <input id="sadesati-name" name="sadesati-name" type="text" placeholder="what should we call u?" />
+            </div>
+            <div class="chart-finder-row">
+              <div class="chart-finder-field">
+                <label for="sadesati-date">Birth date</label>
+                <input id="sadesati-date" name="sadesati-date" type="date" required />
+              </div>
+              <div class="chart-finder-field">
+                <label for="sadesati-time">Birth time</label>
+                <input id="sadesati-time" name="sadesati-time" type="time" required />
+              </div>
+            </div>
+            <div class="chart-finder-field chart-place-field">
+              <label for="sadesati-place-search">Birth place</label>
+              <input id="sadesati-place-search" name="sadesati-place-search" type="text" autocomplete="off" placeholder="City, village, town, or PIN code" required />
+              <div id="sadesati-place-results" class="chart-place-results" role="listbox" hidden></div>
+              <input type="hidden" id="sadesati-place-lat" />
+              <input type="hidden" id="sadesati-place-lon" />
+              <p id="sadesati-place-status" class="chart-place-status" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary chart-finder-submit" type="submit">Find my sade sati</button>
+          </form>
+          <div id="sadesati-result" class="chart-sign-result" aria-live="polite" hidden></div>
+          <p class="sun-finder-note">This is a quick check, not a birth-chart calculation. Place search covers India only for now — type at least 3 letters, or a 6-digit PIN code, and pick a match from the list.</p>
+        </section>
+
         <section><h2>the mechanics, with no drama attached</h2><p>Saturn takes roughly 29.5 years to orbit the sun, which means it spends roughly 2.5 years in each zodiac sign. sade sati is the name for the period when Saturn is transiting the sign before your natal moon sign, the sign of your natal moon, and the sign after it, back to back to back. three signs, about 2.5 years each, roughly 7.5 years total. that's the whole definition.</p><p>everyone's moon sign gets this transit. it isn't a flaw specific to certain charts, it's just Saturn's orbit passing through the neighborhood your moon happens to live in, on a schedule that repeats roughly every 29.5 years.</p></section>
 
         <section><h2>the three phases actually mean different things</h2><p><strong>phase one, rising (Saturn in the 12th from your moon):</strong> the setup phase. things quietly shift before u fully register why. old structures loosen. this phase is usually experienced as unease more than crisis.</p><p><strong>phase two, peak (Saturn on your natal moon):</strong> the phase people mean when they say "the middle of sade sati." Saturn sitting directly on your moon sign tends to be felt the most, because it's transiting the placement most tied to mood and emotional processing. this is usually the heaviest of the three, and also the most consequential if u actually use it.</p><p><strong>phase three, setting (Saturn in the 2nd from your moon):</strong> consolidation. the phase where the previous five years of restructuring either has visibly paid off or clearly hasn't, and finances and family often come into focus specifically here.</p><p>three different phases, three different jobs. lumping all 7.5 years into one flat "bad period" is where most of the fear-based content stops looking at the actual mechanism.</p></section>
 
-        <section><h2>who's in it right now</h2><p>as of 2026, Saturn is transiting sidereal Meena (Pisces), which puts moon signs Kumbha (Aquarius), Meena (Pisces), and Mesha (Aries) somewhere in their sade sati window: Kumbha moons in the rising phase, Meena moons at peak, Mesha moons in the setting phase.</p><p>that's a general, sign-level statement, not your exact chart. Saturn's transit dates shift a little from source to source depending on ayanamsa and whether retrograde loops are counted, and where u personally are in the 7.5-year window depends on the degree of ur natal moon, not just the sign. Ask Tota computes this from ur actual moon placement rather than a generic sign-level table.</p></section>
+        <section><h2>who's in it right now</h2><p>as of 2026, Saturn is transiting sidereal Meena (Pisces), which puts moon signs Mesha (Aries), Meena (Pisces), and Kumbha (Aquarius) somewhere in their sade sati window: Mesha moons in the rising phase, Meena moons at peak, Kumbha moons in the setting phase.</p><p>that's a general, sign-level statement, not your exact chart. Saturn's transit dates shift a little from source to source depending on ayanamsa and whether retrograde loops are counted, and where u personally are in the 7.5-year window depends on the degree of ur natal moon, not just the sign. Ask Tota computes this from ur actual moon placement rather than a generic sign-level table.</p></section>
 
         <section><h2>what actually correlates with the "hard" reputation</h2><p>Saturn's general astrological job is restriction, structure, and discipline, the planet that asks u to slow down and do things properly instead of quickly. a multi-year transit of the planet of structure through the signs around your moon tends to correlate with periods of restructuring: career shifts, relationship reassessment, health habits finally getting addressed, family responsibilities increasing. none of that is pleasant while it's happening. most of it is the kind of change people look back on as necessary.</p><p>that's a very different framing from "seven years of bad luck," which is the version that sells remedies.</p></section>
 
@@ -61,7 +96,7 @@
 
         <section><h2>the receipt</h2><p>Saturn's 29.5-year orbit and roughly 2.5-year-per-sign transit speed are standard astronomy, not Vedic-specific claims. the three-phase structure, the sign before, on, and after the natal moon, is the classical definition of sade sati, not a simplification we invented. what's a judgment call, and we're explicit about it being one, is how much weight to put on the transit versus how someone actually handles it.</p><p>Ask Tota computes your exact sade sati phase and dates from ur natal moon's degree, using Lahiri ayanamsa, the same standard used across the app.</p></section>
 
-        <section class="blog-faq"><h2>faq</h2><h3>what is sade sati?</h3><p>the roughly 7.5-year period when Saturn transits the sign before, the sign of, and the sign after your natal moon sign, one at a time, about 2.5 years each.</p><h3>is sade sati bad luck?</h3><p>it's a period Vedic astrology associates with restructuring and discipline, not a curse. it's also universal: everyone experiences it roughly every 29.5 years.</p><h3>which moon signs are in sade sati right now?</h3><p>as of 2026, with Saturn transiting sidereal Pisces, Aquarius moons are in the rising phase, Pisces moons are at peak, and Aries moons are in the setting phase. check ur exact dates against ur natal moon's degree for precision.</p><h3>how long does sade sati last?</h3><p>roughly 7.5 years total, split into three phases of about 2.5 years each.</p><h3>do I need to buy a remedy to get through sade sati?</h3><p>classical texts describe it as a period of testing and restructuring. the traditional responses are patience and disciplined effort, not purchased intervention.</p></section>
+        <section class="blog-faq"><h2>faq</h2><h3>what is sade sati?</h3><p>the roughly 7.5-year period when Saturn transits the sign before, the sign of, and the sign after your natal moon sign, one at a time, about 2.5 years each.</p><h3>is sade sati bad luck?</h3><p>it's a period Vedic astrology associates with restructuring and discipline, not a curse. it's also universal: everyone experiences it roughly every 29.5 years.</p><h3>which moon signs are in sade sati right now?</h3><p>as of 2026, with Saturn transiting sidereal Pisces, Aries moons are in the rising phase, Pisces moons are at peak, and Aquarius moons are in the setting phase. check ur exact dates against ur natal moon's degree for precision.</p><h3>how long does sade sati last?</h3><p>roughly 7.5 years total, split into three phases of about 2.5 years each.</p><h3>do I need to buy a remedy to get through sade sati?</h3><p>classical texts describe it as a period of testing and restructuring. the traditional responses are patience and disciplined effort, not purchased intervention.</p></section>
 
         <aside class="blog-closing"><p>seven and a half years, three phases, one moon sign at the center of it. that's the whole mechanism. everything sold on top of it is optional.</p><a class="btn btn-primary" href="../index.html#download">Get early access to Ask Tota</a></aside>
       </article>
@@ -69,5 +104,7 @@
     <footer class="site-footer"><div class="footer-top"><div><p class="footer-kicker">THE DAILY TOTA</p><p class="footer-title">Astrology that knows how to look like itself.</p></div><nav class="footer-links"><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div><p class="copyright">© 2026 ask tota. Read the stars first, then send the text.</p></footer>
   </div>
   <script src="../script.js"></script>
+  <script src="astro-lib.js"></script>
+  <script src="sade-sati-widget.js"></script>
 </body>
 </html>

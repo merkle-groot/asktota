@@ -49,6 +49,50 @@
           <p>not every placement cares equally about the clock. some barely move in a day. one moves so fast that being off by twenty minutes can change the answer. knowing which is which tells u how worried to actually be about that vague "somewhere around 6am" your mother remembers.</p>
         </section>
 
+        <section class="sun-finder chart-finder" aria-labelledby="birthtime-finder-title">
+          <div>
+            <p class="section-kicker">THE QUICK CHECK</p>
+            <h2 id="birthtime-finder-title">test ur own uncertainty window</h2>
+            <p>enter ur approximate birth time and how far off it might be. we'll show every rising sign that's possible inside that window — and whether it actually matters for u.</p>
+          </div>
+          <form id="birthtime-form" class="chart-finder-form">
+            <div class="chart-finder-field">
+              <label for="birthtime-name">Name (optional)</label>
+              <input id="birthtime-name" name="birthtime-name" type="text" placeholder="what should we call u?" />
+            </div>
+            <div class="chart-finder-row">
+              <div class="chart-finder-field">
+                <label for="birthtime-date">Birth date</label>
+                <input id="birthtime-date" name="birthtime-date" type="date" required />
+              </div>
+              <div class="chart-finder-field">
+                <label for="birthtime-time">Approximate birth time</label>
+                <input id="birthtime-time" name="birthtime-time" type="time" required />
+              </div>
+            </div>
+            <div class="chart-finder-field">
+              <label for="birthtime-window">How far off might it be?</label>
+              <select id="birthtime-window" name="birthtime-window">
+                <option value="15">±15 minutes</option>
+                <option value="30" selected>±30 minutes</option>
+                <option value="60">±1 hour</option>
+                <option value="120">±2 hours</option>
+              </select>
+            </div>
+            <div class="chart-finder-field chart-place-field">
+              <label for="birthtime-place-search">Birth place</label>
+              <input id="birthtime-place-search" name="birthtime-place-search" type="text" autocomplete="off" placeholder="City, village, town, or PIN code" required />
+              <div id="birthtime-place-results" class="chart-place-results" role="listbox" hidden></div>
+              <input type="hidden" id="birthtime-place-lat" />
+              <input type="hidden" id="birthtime-place-lon" />
+              <p id="birthtime-place-status" class="chart-place-status" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary chart-finder-submit" type="submit">Test my window</button>
+          </form>
+          <div id="birthtime-result" class="chart-sign-result" aria-live="polite" hidden></div>
+          <p class="sun-finder-note">This is a quick check, not a birth-chart calculation. Place search covers India only for now — type at least 3 letters, or a 6-digit PIN code, and pick a match from the list.</p>
+        </section>
+
         <section><h2>three placements, three tolerances</h2><p>the sun moves about one degree a day. get ur birth date right and the sun's sidereal position is correct to a fraction of a degree, no matter what time u put in. birth time essentially doesn't move it.</p><p>the moon moves about thirteen degrees a day, or roughly one degree every two hours. a birth time that's off by an hour can shift the moon's position by half a degree, which is usually fine, unless ur birthday happens to fall right as the moon is crossing into a new rashi. near that boundary, an hour matters. everywhere else, it mostly doesn't.</p><p>the rising sign is a different problem entirely. it's not measuring a slow-moving body's position, it's measuring which point of the zodiac was crossing the eastern horizon at that exact minute, and the earth's rotation carries a full sign past that point every two hours. that means the lagna can change roughly one degree every four minutes. a birth certificate that rounds to the nearest fifteen minutes can already be off by three or four degrees, which is enough to matter for house placements even if it doesn't flip the sign itself.</p></section>
 
         <section><h2>what each level of "off" actually costs u</h2>
@@ -75,5 +119,7 @@
     <footer class="site-footer"><div class="footer-top"><div><p class="footer-kicker">THE DAILY TOTA</p><p class="footer-title">Astrology that knows how to look like itself.</p></div><nav class="footer-links"><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div><p class="copyright">© 2026 ask tota. Read the stars first, then send the text.</p></footer>
   </div>
   <script src="../script.js"></script>
+  <script src="astro-lib.js"></script>
+  <script src="birth-time-accuracy-widget.js"></script>
 </body>
 </html>

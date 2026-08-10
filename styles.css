@@ -568,27 +568,7 @@ a { color: inherit; text-decoration: none; }
 
 .blog-side-note h3 { font-size: 2rem; color: var(--ink); }
 
-.blog-more-list {
-  margin-top: 22px;
-  border: 2px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: var(--paper-2);
-  overflow: hidden;
-}
-.blog-more-row {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 18px 24px;
-  border-bottom: 1px solid rgba(33, 70, 60, 0.16);
-  transition: background 0.15s ease;
-}
-.blog-more-row:last-child { border-bottom: 0; }
-.blog-more-row:hover { background: var(--mint); }
-.blog-more-date { flex: 0 0 auto; font-family: "Space Grotesk", sans-serif; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; color: var(--green-deep); min-width: 5ch; }
-.blog-more-title { flex: 1 1 auto; font-weight: 700; }
-.blog-more-arrow { flex: 0 0 auto; font-weight: 800; color: var(--green-deep); }
-.blog-view-all { margin-top: 20px; display: inline-block; }
+.blog-view-all-wrap { margin-top: 28px; display: flex; justify-content: center; }
 
 .faq-list {
   display: grid;
@@ -1004,9 +984,7 @@ a { color: inherit; text-decoration: none; }
   .blog-article p, .blog-article li { font-size: 1rem; line-height: 1.6; }
   .blog-intro p { font-size: 1.2rem; }
   .sun-finder { border-radius: 26px; padding: 20px; }
-  .blog-more-row { padding: 14px 16px; gap: 12px; }
-  .blog-more-date { min-width: 4.5ch; font-size: 0.7rem; }
-  .blog-more-title { font-size: 0.95rem; }
+  .blog-view-all-wrap .btn { width: 100%; }
   .archive-grid { grid-template-columns: 1fr; margin-top: 34px; gap: 16px; }
   .archive-card { padding: 22px; }
 

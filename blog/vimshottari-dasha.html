@@ -49,6 +49,41 @@
           <p>the system most Vedic astrology runs on is called vimshottari dasha, and once u see the mechanism, it stops being mysterious. it's a fixed 120-year cycle, divided into nine unequal chunks, one per planet, and where u start in that cycle is set entirely by your moon's position at birth.</p>
         </section>
 
+        <section class="sun-finder chart-finder" aria-labelledby="dasha-finder-title">
+          <div>
+            <p class="section-kicker">THE QUICK CHECK</p>
+            <h2 id="dasha-finder-title">find ur current dasha</h2>
+            <p>enter ur birth details. we'll find ur natal nakshatra and walk the fixed nine-planet sequence forward to today, to tell u exactly which mahadasha and antardasha u're in right now.</p>
+          </div>
+          <form id="dasha-form" class="chart-finder-form">
+            <div class="chart-finder-field">
+              <label for="dasha-name">Name (optional)</label>
+              <input id="dasha-name" name="dasha-name" type="text" placeholder="what should we call u?" />
+            </div>
+            <div class="chart-finder-row">
+              <div class="chart-finder-field">
+                <label for="dasha-date">Birth date</label>
+                <input id="dasha-date" name="dasha-date" type="date" required />
+              </div>
+              <div class="chart-finder-field">
+                <label for="dasha-time">Birth time</label>
+                <input id="dasha-time" name="dasha-time" type="time" required />
+              </div>
+            </div>
+            <div class="chart-finder-field chart-place-field">
+              <label for="dasha-place-search">Birth place</label>
+              <input id="dasha-place-search" name="dasha-place-search" type="text" autocomplete="off" placeholder="City, village, town, or PIN code" required />
+              <div id="dasha-place-results" class="chart-place-results" role="listbox" hidden></div>
+              <input type="hidden" id="dasha-place-lat" />
+              <input type="hidden" id="dasha-place-lon" />
+              <p id="dasha-place-status" class="chart-place-status" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-primary chart-finder-submit" type="submit">Find my dasha</button>
+          </form>
+          <div id="dasha-result" class="chart-sign-result" aria-live="polite" hidden></div>
+          <p class="sun-finder-note">This is a quick check, not a birth-chart calculation. Place search covers India only for now — type at least 3 letters, or a 6-digit PIN code, and pick a match from the list.</p>
+        </section>
+
         <section><h2>the 120-year cycle</h2><p>vimshottari means "one hundred twenty" in sanskrit, and that's exactly the length of the full cycle: 120 years, divided among nine grahas, each getting a fixed, unequal number of years. the split doesn't change from chart to chart. it's the same 120 years, the same nine shares, every time.</p>
           <div class="blog-table-wrap"><table><thead><tr><th>planet</th><th>years</th></tr></thead><tbody>
             <tr><td data-label="Planet">Ketu</td><td data-label="Years">7</td></tr>
@@ -82,5 +117,7 @@
     <footer class="site-footer"><div class="footer-top"><div><p class="footer-kicker">THE DAILY TOTA</p><p class="footer-title">Astrology that knows how to look like itself.</p></div><nav class="footer-links"><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a></nav></div><p class="copyright">© 2026 ask tota. Read the stars first, then send the text.</p></footer>
   </div>
   <script src="../script.js"></script>
+  <script src="astro-lib.js"></script>
+  <script src="vimshottari-dasha-widget.js"></script>
 </body>
 </html>

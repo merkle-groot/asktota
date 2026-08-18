@@ -13,44 +13,21 @@
   window.addEventListener('scroll', sync, { passive: true });
 })();
 
-/* The masthead dates every issue by day of the year, same as the app. */
+/* The masthead dates every issue by day of the year, same as the app.
+   The wheels in the hero are authored in the HTML (houses and nakshatras)
+   and deliberately left alone. */
 (function masthead() {
+  var line = document.getElementById('dateline');
+  if (!line) return;
+
   var now = new Date();
   var start = new Date(now.getFullYear(), 0, 0);
   var edition = Math.floor((now - start) / 86400000);
+  var day = now.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
+  var month = now.toLocaleDateString('en-US', { month: 'long' }).toUpperCase();
 
-  var line = document.getElementById('dateline');
-  if (line) {
-    var day = now.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
-    var month = now.toLocaleDateString('en-US', { month: 'long' }).toUpperCase();
-    line.textContent =
-      'VOL. YOU · NO. ' + edition + ' · ' + day + ', ' + month + ' ' + now.getDate();
-  }
-
-  var left = document.querySelector('.wheel-l');
-  if (left) {
-    fillWheel(left, [edition - 2, edition - 1, edition, edition + 1, edition + 2], 'edition');
-  }
-
-  var right = document.querySelector('.wheel-r');
-  if (right) {
-    var d = now.getDate();
-    fillWheel(right, [d - 2, d - 1, d, d + 1, d + 2], now.toLocaleDateString('en-US', { month: 'long' }));
-  }
-
-  function fillWheel(el, values, label) {
-    el.textContent = '';
-    values.forEach(function (value, i) {
-      var span = document.createElement('span');
-      span.textContent = value;
-      if (i === 2) span.className = 'is-now';
-      el.appendChild(span);
-    });
-    var tag = document.createElement('span');
-    tag.className = 'wheel-label';
-    tag.textContent = label;
-    el.appendChild(tag);
-  }
+  line.textContent =
+    'VOL. YOU · NO. ' + edition + ' · ' + day + ', ' + month + ' ' + now.getDate();
 })();
 
 /* No signup backend yet, so the form hands the address to the mail client
@@ -74,9 +51,9 @@
     }
 
     var href =
-      'mailto:hello@asktota.com' +
-      '?subject=' + encodeURIComponent('early access') +
-      '&body=' + encodeURIComponent('add me to the list: ' + value);
+      'mailto:hi@asktota.com' +
+      '?subject=' + encodeURIComponent('ios waitlist') +
+      '&body=' + encodeURIComponent('tell me when ask tota lands on ios: ' + value);
 
     window.location.href = href;
     setNote("ur mail app is opening. hit send and ur on the list.", 'is-ok');

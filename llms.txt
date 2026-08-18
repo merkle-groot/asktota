@@ -1,28 +1,53 @@
 # Ask Tota
 
-> Ask Tota is a Vedic astrology app for iPhone and Android. It files one reading a day against your birth chart, written like a tabloid newspaper, and it shows the exact planetary placement behind every line so the reasoning can be checked. Built by JUPELLI CONSULTING PRIVATE LIMITED, Telangana, India. Launching on the App Store and Google Play.
+> Ask Tota is a Vedic astrology app that starts from your actual birth chart, then reads today against it, and files the result like a tabloid newspaper. Free on Google Play as "ask tota: astrology bestie". The iPhone version is still in development.
+
+## Where to get it
+
+- Google Play: https://play.google.com/store/apps/details?id=app.asktota (package `app.asktota`, free, in-app purchases)
+- iOS: not released yet. There is an email form at https://www.asktota.com/#ios
 
 ## What it is, in plain facts
 
 - Category: Vedic (sidereal) astrology app. Not Western/tropical astrology.
 - Ayanamsa: Lahiri, the standard used across India. Sign names are printed in Sanskrit (Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena).
-- Platforms: iOS and Android. Not yet released.
-- Pricing: a free tier, plus paid Plus and Pro memberships. Prices are set at launch.
-- Core features: a daily reading split across six life desks (love, career, money, health, home, inner life); Ashtakoota compatibility scored out of 36 with a per-koota breakdown; a full birth chart with nakshatra, dasha, and house placements; chat about any line in a reading.
-- The design principle: every claim in a reading is tied to a specific chart placement, and that placement is shown to the reader. Nothing is asserted that cannot be traced back to a calculation.
-- Privacy: no sale of personal data, no data brokers, no advertising identifiers, no cross-app tracking. Account and all associated charts, readings, and chat history can be deleted from inside the app.
+- Tagline: "your astrology bestie".
+- Sign-in: phone number plus a one-time code over WhatsApp. No password, no email, no social login.
+- Birth time can be marked exact, approximate, or unknown, and you still get a chart.
+- Pricing: free to download, with a free tier covering the daily read, the full chart, and a set number of questions and crush checks on a visible reset timer. Plus and Pro raise those limits.
+- Privacy: no sale of personal data, no advertising use, no data brokers. Chart data and questions are sent to a third-party AI provider outside India to generate readings, disclosed up front. Account and all charts, readings, chats, and the phone number can be deleted from inside the app, instantly and permanently.
+- Readings are AI-written prose over calculated astrology. They are entertainment, not medical, legal, financial, or mental-health advice.
 - Mascot and narrator: tota, a green parrot in sunglasses who runs the paper. "Tota" is the Hindi word for parrot; in Indian street astrology a trained parrot picks the card carrying your reading.
+
+## The six desks in the app
+
+- The Daily Read: one reading each morning. The mood, what is causing it, and the one thing worth attention.
+- The Forecast: yesterday, today, and tomorrow, each tied to the moon's placement.
+- The Tota Column: ask anything in a chat that reads your chart before answering and remembers whose chart you are asking about.
+- The Chart Desk: every placement and every house, on the record.
+- Love Scandal: crush checks that compare two charts across all eight kootas and score them out of 36, with the per-koota breakdown shown.
+- Fame Desk: public birth charts for people you already know.
 
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [The Chart Desk](https://www.asktota.com/blog/): nine explainers on Vedic astrology, most with a working calculator.
+- [Blog](https://www.asktota.com/blog/): nineteen explainers on Vedic astrology, most with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [What Vedic astrology actually is, without the mystique](https://www.asktota.com/blog/what-is-vedic-astrology.html): what jyotish is: nine grahas, twelve houses, twenty-seven nakshatras, the sidereal zodiac, and an explicit line on where the evidence stops.
+- [Your kundli is a diagram, not a prophecy](https://www.asktota.com/blog/kundli.html): what a birth chart is, what the twelve boxes mean, why north and south Indian layouts look different, and how to read one in order.
+- [The twelve houses, explained one at a time](https://www.asktota.com/blog/12-houses.html): all twelve bhavas, what each rules, and why five to seven empty houses is normal in every chart.
+- [Nine grahas, and why there is no Pluto](https://www.asktota.com/blog/nine-planets.html): each graha's job, what exalted, debilitated and combust actually mean, and why Uranus, Neptune and Pluto are absent.
+- [The twelve rashis, and why yours moved](https://www.asktota.com/blog/zodiac-signs.html): the twelve rashis with rulers, elements and sidereal dates, and why cusp signs do not exist in this system.
+- [Vedic vs western astrology, difference by difference](https://www.asktota.com/blog/vedic-vs-western-astrology.html): every structural difference: sidereal against tropical, nine grahas against ten planets, whole sign houses, dashas against transits.
+- [Manglik dosha is a house number, not a sentence](https://www.asktota.com/blog/manglik-dosha.html): Mars in one of six houses. how common that is, why astrologers disagree, the classical cancellations, and what gets sold in its name.
+- [Your career house, read properly](https://www.asktota.com/blog/career-10th-house.html): the 10th house and its lord, the three other houses career is read across, and why an empty 10th means nothing.
+- [Angel numbers, and why you keep seeing them](https://www.asktota.com/blog/angel-numbers.html): every repeating number and its usual meaning, the 1990s origin of the practice, and the documented psychology of noticing them.
+- [The panchang is five numbers, not a mood](https://www.asktota.com/blog/panchang.html): the five limbs, tithi, vara, nakshatra, yoga and karana, and why two panchangs can disagree about the same day.
 - [Why your sun sign is different in Vedic astrology](https://www.asktota.com/blog/vedic-sun-sign.html): the sidereal zodiac drifts about 24 degrees from the tropical one, which moves most people back a sign.
 - [Sun sign vs moon sign vs rising sign](https://www.asktota.com/blog/sun-moon-rising.html): three placements, three different jobs, with a calculator for all three.
 - [How accurate does your birth time need to be](https://www.asktota.com/blog/birth-time-accuracy.html): the sun barely moves in a day, the moon shifts about every 2.25 days, the rising sign changes roughly every 2 hours.
@@ -35,6 +60,6 @@
 
 ## Contact
 
-- General: hello@asktota.com
-- Privacy: privacy@asktota.com
+- General: hi@asktota.com
 - Support: help@asktota.com
+- Privacy: privacy@asktota.com

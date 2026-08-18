@@ -472,6 +472,24 @@ h3 {
   max-width: 44ch;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.play-glyph {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
+.hero .fine {
+  margin-top: -4px;
+}
+
 /* --- email capture --- */
 .signup {
   width: min(100%, 430px);
@@ -711,6 +729,86 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%) rotate(-3deg);
   z-index: 2;
+}
+
+/* ==========================================================================
+   SCREENSHOT RAIL
+   ========================================================================== */
+
+.shot-rail {
+  display: flex;
+  gap: var(--s3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 6px max(var(--gutter), calc((100vw - var(--maxw)) / 2)) 14px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink) transparent;
+}
+
+.shot-rail::-webkit-scrollbar {
+  height: 8px;
+}
+
+.shot-rail::-webkit-scrollbar-thumb {
+  background: var(--ink);
+  border-radius: var(--r-pill);
+}
+
+.shot {
+  flex: none;
+  width: clamp(196px, 26vw, 258px);
+  scroll-snap-align: center;
+  border: 2px solid var(--ink);
+  border-radius: var(--r-sticker);
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: var(--lift);
+}
+
+.shot img {
+  width: 100%;
+  display: block;
+}
+
+.rail-hint {
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* ==========================================================================
+   IOS CARD
+   ========================================================================== */
+
+.ios-card {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--s5);
+  align-items: center;
+  padding: clamp(28px, 5vw, 48px);
+  border: 2px solid var(--ink);
+  border-radius: var(--r-tile);
+  background: var(--mint);
+  box-shadow: var(--lift);
+}
+
+.ios-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ios-copy .sec-title {
+  max-width: 16ch;
+}
+
+.ios-card .signup {
+  width: 100%;
+  align-items: stretch;
+}
+
+.ios-card .signup-note {
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -1470,6 +1568,11 @@ h3 {
 }
 
 @media (max-width: 900px) {
+  .ios-card {
+    grid-template-columns: 1fr;
+    gap: var(--s4);
+  }
+  .ios-copy .sec-title { max-width: none; }
   .card-row,
   .tiers,
   .story-row {
@@ -1642,4 +1745,212 @@ h3 {
   font-size: 0.9em;
   font-weight: 700;
   white-space: nowrap;
+}
+
+/* ==========================================================================
+   BLOG: EXPLAINER FURNITURE
+   Blocks shared by the long-form Chart Desk pillars: the answer-first
+   summary, the fact box, the contents rail, the myth ledger, and tota's
+   own aside. Same two rules as everything else on this site: 2px of ink
+   round the edge, and a shadow with no blur in it.
+   ========================================================================== */
+
+.blog-tldr {
+  border: 2px solid var(--ink);
+  border-radius: var(--r-sticker);
+  background: var(--mint);
+  padding: clamp(20px, 3.5vw, 28px);
+  box-shadow: var(--lift);
+}
+
+.blog-tldr h2 {
+  font-size: 0.75rem !important;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 4px !important;
+}
+
+.blog-tldr ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.blog-tldr li {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* The 40-70 word answer that opens a section, set apart so a search engine,
+   a screen reader and a skimming human all find the same sentence first. */
+.blog-answer {
+  margin-top: 18px;
+  border-left: 6px solid var(--marigold);
+  padding: 2px 0 2px 18px;
+}
+
+.blog-answer p {
+  margin-top: 0;
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.quick-facts {
+  margin-top: 22px;
+  border: 2px solid var(--ink);
+  border-radius: var(--r-paper);
+  background: var(--card);
+  overflow: hidden;
+}
+
+.quick-facts dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(140px, 34%) 1fr;
+}
+
+.quick-facts dt,
+.quick-facts dd {
+  margin: 0;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.quick-facts dt {
+  background: var(--stock);
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.quick-facts dd { color: var(--ink-body); }
+
+.quick-facts dl > :nth-last-child(-n + 2) { border-bottom: 0; }
+
+.blog-toc {
+  margin-top: 30px;
+  border: 2px dashed var(--ink);
+  border-radius: var(--r-paper);
+  padding: 18px 20px;
+  background: var(--stock);
+}
+
+.blog-toc p {
+  margin-top: 0;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.blog-toc ol {
+  margin: 0;
+  padding-left: 1.2em;
+  columns: 2;
+  column-gap: 28px;
+}
+
+.blog-toc li {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  break-inside: avoid;
+}
+
+/* Myth ledger: the claim, then what is actually the case. */
+.myth-ledger { margin-top: 22px; }
+
+.myth-ledger > div {
+  border: 2px solid var(--ink);
+  border-radius: var(--r-paper);
+  background: var(--card);
+  padding: 16px 18px;
+  margin-top: 14px;
+}
+
+.myth-ledger p { margin-top: 0; }
+.myth-ledger p + p { margin-top: 8px; }
+
+.myth-ledger .myth-claim {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.myth-ledger .myth-claim::before {
+  content: 'THE CLAIM';
+  display: block;
+  font-size: 0.688rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--pink-ink);
+  margin-bottom: 4px;
+}
+
+.myth-ledger .myth-truth::before {
+  content: 'WHAT IS ACTUALLY THE CASE';
+  display: block;
+  font-size: 0.688rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--parrot);
+  margin-bottom: 4px;
+}
+
+/* Tota's aside. One per article, never more than a hundred words. */
+.tota-says {
+  border: 2px solid var(--ink);
+  border-radius: var(--r-sticker);
+  background: var(--marigold);
+  padding: clamp(20px, 3.5vw, 28px);
+  box-shadow: var(--lift);
+}
+
+.tota-says .tota-says-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.tota-says .tota-says-head img {
+  width: 26px;
+  height: 26px;
+  flex: none;
+}
+
+.tota-says p:not(.tota-says-head) {
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.blog-nextup {
+  border: 2px solid var(--ink);
+  border-radius: var(--r-sticker);
+  background: var(--stock);
+  padding: clamp(20px, 3.5vw, 28px);
+}
+
+.blog-nextup h2 { font-size: 1.19rem !important; }
+
+.blog-nextup ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+@media (max-width: 620px) {
+  .quick-facts dl { grid-template-columns: 1fr; }
+  .quick-facts dt { border-bottom: 0; padding-bottom: 2px; }
+  .quick-facts dd { padding-top: 4px; }
+  .blog-toc ol { columns: 1; }
 }

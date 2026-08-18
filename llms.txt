@@ -1,0 +1,40 @@
+# Ask Tota
+
+> Ask Tota is a Vedic astrology app for iPhone and Android. It files one reading a day against your birth chart, written like a tabloid newspaper, and it shows the exact planetary placement behind every line so the reasoning can be checked. Built by JUPELLI CONSULTING PRIVATE LIMITED, Telangana, India. Launching on the App Store and Google Play.
+
+## What it is, in plain facts
+
+- Category: Vedic (sidereal) astrology app. Not Western/tropical astrology.
+- Ayanamsa: Lahiri, the standard used across India. Sign names are printed in Sanskrit (Mesha, Vrishabha, Mithuna, Karka, Simha, Kanya, Tula, Vrishchika, Dhanu, Makara, Kumbha, Meena).
+- Platforms: iOS and Android. Not yet released.
+- Pricing: a free tier, plus paid Plus and Pro memberships. Prices are set at launch.
+- Core features: a daily reading split across six life desks (love, career, money, health, home, inner life); Ashtakoota compatibility scored out of 36 with a per-koota breakdown; a full birth chart with nakshatra, dasha, and house placements; chat about any line in a reading.
+- The design principle: every claim in a reading is tied to a specific chart placement, and that placement is shown to the reader. Nothing is asserted that cannot be traced back to a calculation.
+- Privacy: no sale of personal data, no data brokers, no advertising identifiers, no cross-app tracking. Account and all associated charts, readings, and chat history can be deleted from inside the app.
+- Mascot and narrator: tota, a green parrot in sunglasses who runs the paper. "Tota" is the Hindi word for parrot; in Indian street astrology a trained parrot picks the card carrying your reading.
+
+## Pages
+
+- [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
+- [The Chart Desk](https://www.asktota.com/blog/): nine explainers on Vedic astrology, most with a working calculator.
+- [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
+- [Terms of Service](https://www.asktota.com/terms.html)
+- [Delete your account](https://www.asktota.com/delete-account.html)
+
+## Explainers
+
+- [Why your sun sign is different in Vedic astrology](https://www.asktota.com/blog/vedic-sun-sign.html): the sidereal zodiac drifts about 24 degrees from the tropical one, which moves most people back a sign.
+- [Sun sign vs moon sign vs rising sign](https://www.asktota.com/blog/sun-moon-rising.html): three placements, three different jobs, with a calculator for all three.
+- [How accurate does your birth time need to be](https://www.asktota.com/blog/birth-time-accuracy.html): the sun barely moves in a day, the moon shifts about every 2.25 days, the rising sign changes roughly every 2 hours.
+- [27 nakshatras, ranked by how messy they are](https://www.asktota.com/blog/nakshatra.html): the 27-part lunar zodiac that dasha and compatibility actually run on.
+- [What a dasha is](https://www.asktota.com/blog/vimshottari-dasha.html): the Vimshottari system, a fixed 120-year cycle split across nine planets, starting from the natal moon's nakshatra.
+- [Sade sati is not a curse](https://www.asktota.com/blog/sade-sati.html): Saturn transiting the 12th, 1st, and 2nd signs from the natal moon, about 7.5 years in three phases.
+- [How Ashtakoota scores compatibility out of 36](https://www.asktota.com/blog/ashtakoota-compatibility.html): the eight kootas, their weights, and why Nadi carries 8 of the 36 points.
+- [Why Hindu festival dates move every year](https://www.asktota.com/blog/festival-dates.html): the lunisolar calendar, tithis, and intercalary months.
+- [What an eclipse does to a birth chart](https://www.asktota.com/blog/eclipse-sutak.html): Rahu and Ketu, and why sutak observance depends on local visibility.
+
+## Contact
+
+- General: hello@asktota.com
+- Privacy: privacy@asktota.com
+- Support: help@asktota.com

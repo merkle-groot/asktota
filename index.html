@@ -2,317 +2,456 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ask Tota | Astrology app for daily horoscope, compatibility, and birth chart readings</title>
-  <meta name="description" content="Ask Tota is an astrology app for daily horoscope readings, compatibility checks, birth chart insights, and personalized guidance on iOS and Android." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ask Tota | Vedic astrology app that shows its work</title>
+  <meta name="description" content="A Vedic astrology app for iPhone and Android. Daily readings, Ashtakoota compatibility, and full birth charts, with the placement behind every line." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <meta name="theme-color" content="#16924b" />
+  <meta name="theme-color" content="#fbf3e0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="author" content="Ask Tota" />
   <meta name="application-name" content="Ask Tota" />
   <meta name="apple-mobile-web-app-title" content="Ask Tota" />
   <link rel="canonical" href="https://www.asktota.com/" />
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.asktota.com/" />
   <meta property="og:site_name" content="Ask Tota" />
-  <meta property="og:title" content="Ask Tota | Astrology app for daily horoscope, compatibility, and birth chart readings" />
-  <meta property="og:description" content="Daily horoscope readings, compatibility checks, birth chart insights, and personalized astrology guidance in one app." />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="Ask Tota | Vedic astrology app that shows its work" />
+  <meta property="og:description" content="Daily Vedic readings, compatibility scores, and birth chart details, with the exact placement behind every line. Coming to iPhone and Android." />
   <meta property="og:image" content="https://www.asktota.com/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Ask Tota social preview image promoting daily horoscope, compatibility, and birth chart readings." />
+  <meta property="og:image:alt" content="Ask Tota masthead with the tota mascot, a green parrot in sunglasses reading a newspaper." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ask Tota | Astrology app for daily horoscope, compatibility, and birth chart readings" />
-  <meta name="twitter:description" content="Daily horoscope readings, compatibility checks, birth chart insights, and personalized astrology guidance in one app." />
+  <meta name="twitter:title" content="Ask Tota | Vedic astrology app that shows its work" />
+  <meta name="twitter:description" content="Daily Vedic readings, compatibility scores, and birth chart details, with the exact placement behind every line." />
   <meta name="twitter:image" content="https://www.asktota.com/assets/og-image.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/tota/tota-news-vendor.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
+
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "name": "Ask Tota",
-          "url": "https://www.asktota.com/",
-          "logo": "https://www.asktota.com/favicon.svg"
-        },
-        {
-          "@type": "WebSite",
-          "name": "Ask Tota",
-          "url": "https://www.asktota.com/",
-          "description": "Ask Tota is an astrology app for daily horoscope readings, compatibility checks, birth chart insights, and personalized guidance."
-        },
-        {
-          "@type": "SoftwareApplication",
-          "name": "Ask Tota",
-          "applicationCategory": "LifestyleApplication",
-          "operatingSystem": "iOS, Android",
-          "url": "https://www.asktota.com/",
-          "description": "An astrology app for daily horoscope readings, compatibility checks, birth chart insights, and personalized guidance in a playful editorial format."
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is Ask Tota?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ask Tota is an astrology app that gives you daily horoscope readings, compatibility checks, birth chart insights, and personalized guidance."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What can you do inside Ask Tota?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Inside Ask Tota, you can read your daily astrology update, check compatibility, review your birth chart details, and manage your profile and membership."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Ask Tota free to use?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ask Tota starts with a free tier, with paid membership options for people who want more questions, more compatibility checks, and broader access."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "When is Ask Tota launching?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ask Tota is launching soon on iOS and Android. You can request early access from this page."
-              }
-            }
-          ]
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.asktota.com/#org",
+        "name": "Ask Tota",
+        "alternateName": ["asktota", "The Daily Tota"],
+        "url": "https://www.asktota.com/",
+        "logo": "https://www.asktota.com/favicon.png",
+        "email": "hello@asktota.com",
+        "description": "Ask Tota publishes a daily Vedic astrology reading as a tabloid newspaper, with the birth chart placement behind every claim.",
+        "slogan": "a horoscope that names its sources"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.asktota.com/#site",
+        "name": "Ask Tota",
+        "url": "https://www.asktota.com/",
+        "publisher": { "@id": "https://www.asktota.com/#org" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://www.asktota.com/#app",
+        "name": "Ask Tota",
+        "applicationCategory": "LifestyleApplication",
+        "applicationSubCategory": "Astrology",
+        "operatingSystem": "iOS, Android",
+        "url": "https://www.asktota.com/",
+        "publisher": { "@id": "https://www.asktota.com/#org" },
+        "description": "A Vedic astrology app that files a daily reading for your birth chart, scores compatibility on the eight kootas, and shows the exact planetary placement behind every line.",
+        "featureList": [
+          "Daily Vedic reading built from your birth chart and today's transits",
+          "Six life desks: love, career, money, health, home, and inner life",
+          "Ashtakoota compatibility scored out of 36",
+          "Full birth chart with nakshatra, dasha, and house placements",
+          "Sidereal calculations using the Lahiri ayanamsa",
+          "Chat with tota about any line in a reading"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR",
+          "description": "Free tier with paid Plus and Pro memberships at launch."
         }
-      ]
-    }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.asktota.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Ask Tota?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ask Tota is a Vedic astrology app for iPhone and Android. It files one reading a day for your birth chart, written like a tabloid newspaper, and it shows the planetary placement behind each line so you can check the reasoning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Ask Tota Vedic astrology or Western astrology?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vedic. Ask Tota calculates sidereal positions using the Lahiri ayanamsa, which is the standard in India, and it prints Sanskrit sign names such as Mesha and Vrishabha rather than Aries and Taurus. Your Vedic sun sign is usually one sign behind your Western one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Ask Tota free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is a free tier that covers the daily reading, your birth chart, and a limited number of questions. Plus and Pro memberships raise those limits. Prices are set at launch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need my exact birth time to use Ask Tota?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not for everything. Your sun sign barely moves within a day and your moon sign shifts about every two and a quarter days, so an approximate time still works for those. Your rising sign changes roughly every two hours, so houses and rising need a birth time accurate to a few minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Ask Tota score compatibility?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It runs the Ashtakoota system, which checks eight factors between two birth charts and adds them to a score out of 36. Ask Tota shows the per-koota breakdown rather than only the total."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does Ask Tota launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ask Tota is coming to the App Store and Google Play. Leave your email on asktota.com and you get one message on launch day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Ask Tota sell my birth data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Ask Tota does not sell personal data, does not share it with data brokers, and does not use advertising identifiers or cross-app tracking. You can delete your account and all associated charts and readings from inside the app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is tota?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tota is the app's mascot and narrator, a green parrot in sunglasses who runs the paper. Tota is the Hindi word for parrot, and in Indian street astrology a trained parrot picks the card that carries your reading."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-nav" id="top">
-        <a class="brand" href="#top" aria-label="ask tota home">
-        <span class="brand-badge">THE DAILY TOTA</span>
-        <span class="brand-name">ask tota</span>
+  <a class="skip-link" href="#main">skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/" aria-label="ask tota, home">
+        <img src="assets/tota/loader-parrot-planted.png" alt="" width="30" height="30" />
+        <span>ask tota</span>
       </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#edition">Edition</a>
-          <a href="#desks">Desks</a>
-          <a href="#membership">Membership</a>
-          <a href="#blog">Blog</a>
-        </nav>
-        <a href="#download" class="btn btn-outline">Get early access</a>
-    </header>
+      <p class="dateline" id="dateline">THE DAILY TOTA &middot; VOL. YOU &middot; FREE COPY</p>
+      <a class="nav-cta" href="#waitlist">
+        <span class="nav-dot" aria-hidden="true"></span>
+        coming soon
+      </a>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="hero-kicker"><span id="hero-date">TODAY</span> · FRESH TODAY · HOT OFF THE PRESS</p>
-          <h1>your chart, printed like the morning paper</h1>
-          <p class="hero-lede">Ask Tota makes astrology feel less like homework and more like something you'd open on purpose. You get your daily reading, compatibility checks, chart details, and a voice that doesn't sound like it was written by a textbook.</p>
-          <div class="hero-actions">
-            <a href="#download" class="btn btn-primary">Join the waitlist</a>
-            <a href="#edition" class="btn btn-secondary">See the edition</a>
-          </div>
-          <ul class="hero-points" aria-label="Highlights">
-            <li>Daily readings with an actual point of view</li>
-            <li>Compatibility, celebrity readings, and chart breakdowns</li>
-            <li>An astrology app that doesn't read like every other astrology app</li>
-          </ul>
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="wheel wheel-l" aria-hidden="true">
+        <span>228</span><span>229</span><span class="is-now">230</span><span>231</span><span>232</span>
+        <span class="wheel-label">edition</span>
+      </div>
+      <div class="wheel wheel-r" aria-hidden="true">
+        <span>16</span><span>17</span><span class="is-now">18</span><span>19</span><span>20</span>
+        <span class="wheel-label">august</span>
+      </div>
+
+      <div class="wrap hero-inner">
+        <div class="hero-mascot">
+          <img src="assets/tota/tota-news-vendor.png" alt="Tota, a green parrot in sunglasses, holding up an open newspaper." width="320" height="320" fetchpriority="high" />
+          <p class="aside-note">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 20C6 18 9 13 8 8m0 0 4 2M8 8 5.5 11.5" stroke="#5e6e5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            that's tota. he files the paper.
+          </p>
         </div>
 
-        <div class="hero-visual">
-          <div class="paper-stack paper-stack-back"></div>
-          <div class="phone-shot phone-shot-main">
-            <span class="shot-label shot-label-yellow">FRESH TODAY</span>
-            <img src="assets/app-home.png" alt="Ask Tota home screen with daily reading, vibe meter, and feature cards." />
-          </div>
-          <div class="phone-shot phone-shot-float">
-            <span class="shot-label shot-label-pink">YOUR DESK</span>
-            <img src="assets/app-desk.png" alt="Ask Tota profile and birth record screen." />
-          </div>
-        </div>
-      </section>
+        <h1 class="screamer">a horoscope that <span class="mark">names its sources</span></h1>
 
-      <section class="edition reveal" id="edition">
-        <div class="section-head">
-          <p class="section-kicker">TODAY'S EDITION</p>
-          <h2>A fresh edition every morning, set for your chart alone</h2>
-          <p>Tota reads the day's transits against your birth chart and prints what matters — the mood, the reason behind it, and the one thing worth watching. No filler, no horoscope that could belong to anyone.</p>
+        <p class="lede">real vedic astrology, filed every morning like a gossip column. every line points back at the placement it came from, so u can check tota's work instead of just believing it.</p>
+
+        <form class="signup" id="waitlist" novalidate>
+          <label class="sr-only" for="email">your email</label>
+          <div class="signup-row">
+            <input type="email" id="email" name="email" placeholder="u@example.com" autocomplete="email" required />
+            <button type="submit" class="btn btn-primary">notify me</button>
+          </div>
+          <p class="fine signup-note" id="signup-note" role="status">one email the day tota hits the app store. nothing else, ever.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== DESKS ===================== -->
+    <section class="sec" id="desks">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="kicker">the desks</p>
+          <h2 class="sec-title">every part of ur life gets <span class="mark">its own desk</span></h2>
+          <p class="lede">the daily edition splits into six beats. each one is filed separately, so a rough monday at work doesn't get pinned on ur love life.</p>
         </div>
-        <div class="edition-grid">
-          <article class="news-card news-card-feature">
-            <span class="card-tag card-tag-green">THE DAILY READING</span>
-            <h3>Astrology with a headline and a point</h3>
-            <p>Tota gives you the mood, the transit, and what matters today without burying it under filler.</p>
+
+        <div class="desk-grid">
+          <article class="desk">
+            <h3>love scandal</h3>
+            <p>who's texting, who's stalling, and which transit is behind it.</p>
+            <figure><img src="assets/desks/love-scandal.png" alt="" loading="lazy" width="700" height="466" /></figure>
           </article>
-          <article class="news-card">
-            <span class="card-tag card-tag-pink">LOVE SCANDAL</span>
-            <h3>Compatibility that people might actually share</h3>
-            <p>It reads like a gossip column, not a chart dump — the kind of thing you screenshot and send.</p>
+          <article class="desk">
+            <h3>career desk</h3>
+            <p>the meeting, the manager, the email u keep not sending.</p>
+            <figure><img src="assets/desks/career-desk.png" alt="" loading="lazy" width="700" height="466" /></figure>
           </article>
-          <article class="news-card">
-            <span class="card-tag card-tag-yellow">CHART DESK</span>
-            <h3>Your chart details stay organized</h3>
-            <p>Birth info, layout preferences, reminders, and account settings all sit in one place that makes sense.</p>
+          <article class="desk">
+            <h3>money beat</h3>
+            <p>the invoice, the cart u never cleared, the renewal u forgot.</p>
+            <figure><img src="assets/desks/money-beat.png" alt="" loading="lazy" width="700" height="466" /></figure>
+          </article>
+          <article class="desk">
+            <h3>health watch</h3>
+            <p>sleep, energy, and the week ur body files a complaint.</p>
+            <figure><img src="assets/desks/health-watch.png" alt="" loading="lazy" width="700" height="466" /></figure>
+          </article>
+          <article class="desk">
+            <h3>home front</h3>
+            <p>family, the flat, and the group chat u muted on tuesday.</p>
+            <figure><img src="assets/desks/home-front.png" alt="" loading="lazy" width="700" height="466" /></figure>
+          </article>
+          <article class="desk">
+            <h3>inner wire</h3>
+            <p>the thought u keep circling at 2am and won't say out loud.</p>
+            <figure><img src="assets/desks/inner-wire.png" alt="" loading="lazy" width="700" height="466" /></figure>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="desks reveal" id="desks">
-        <div class="section-head section-head-left">
-          <p class="section-kicker">THE DESKS</p>
-          <h2>Each feature feels like its own desk in the same paper</h2>
-          <p>Four desks, one paper. Each covers its own beat, so you always know where to look.</p>
+    <!-- ===================== THREE PROOFS ===================== -->
+    <section class="sec" id="how">
+      <div class="wrap">
+        <div class="card-row">
+          <article class="pcard">
+            <img src="assets/tota/tota-birth-clipboard.png" alt="Tota holding a clipboard with a birth record on it." loading="lazy" width="216" height="216" />
+            <h3>the receipts<br />come attached.</h3>
+            <p>tap any line and tota shows the placement it came from. mars in ur sixth house, saturn crossing ur moon, whatever it actually was.</p>
+          </article>
+          <article class="pcard">
+            <img src="assets/tota/tota-your-desk.png" alt="Tota resting on a folded stack of newspapers." loading="lazy" width="216" height="216" />
+            <h3>sanskrit names,<br />sidereal math.</h3>
+            <p>lahiri ayanamsa, the same system an astrologer in india works from. mesha, not aries. ur vedic sun sign is usually one behind the one u grew up with.</p>
+          </article>
+          <article class="pcard">
+            <img src="assets/tota/tota-exclusive-envelope.png" alt="Tota flying with a sealed envelope." loading="lazy" width="216" height="216" />
+            <h3>candid,<br />never doom.</h3>
+            <p>tota will tell u this week is annoying and why. it won't tell u ur cursed, and it will never tell u to drink water and trust the process.</p>
+          </article>
         </div>
-        <div class="desks-layout">
-          <div class="desk-list">
-            <article class="desk-item">
-              <span class="desk-pill desk-pill-green">HOROSCOPES</span>
-              <h3>Daily Reading</h3>
-              <p>Your daily mood, the transit behind it, and the part worth paying attention to.</p>
-            </article>
-            <article class="desk-item">
-              <span class="desk-pill desk-pill-pink">LOVE DESK</span>
-              <h3>Crush Check</h3>
-              <p>Compatibility reads like a column, not a spreadsheet.</p>
-            </article>
-            <article class="desk-item">
-              <span class="desk-pill desk-pill-cream">THE CHART DESK</span>
-              <h3>Birth Record</h3>
-              <p>Your chart details, settings, and reminders in one place.</p>
-            </article>
-            <article class="desk-item">
-              <span class="desk-pill desk-pill-yellow">PRESS PASS</span>
-              <h3>Membership</h3>
-              <p>Free, Plus, and Pro are easy to compare, with clear limits and unlocks.</p>
-            </article>
-          </div>
-          <figure class="feature-shot">
-            <span class="shot-label shot-label-green">YOUR PRESS PASS</span>
-            <img src="assets/app-membership.png" alt="Ask Tota membership screen showing free, plus, and pro style tiers." />
-          </figure>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="membership reveal" id="membership">
-        <div class="membership-panel">
-          <div class="membership-copy">
-            <p class="section-kicker">MEMBERSHIP</p>
-            <h2>Start free. Upgrade when you want more questions, more checks, more access.</h2>
-            <p>Three plans, no riddles. You always know what you get, what resets, and when.</p>
+    <!-- ===================== PREVIEW ===================== -->
+    <section class="sec" id="preview">
+      <div class="wrap preview">
+        <div class="phones">
+          <div class="phone phone-side">
+            <img src="assets/app-desk.png" alt="Ask Tota birth record screen showing saved chart details." loading="lazy" width="576" height="1280" />
           </div>
-          <div class="tiers">
-            <article class="tier tier-free">
-              <span class="tier-chip">CURRENT</span>
-              <h3>Free</h3>
-              <p>Enough to try the daily edition and see if Tota is your thing.</p>
-            </article>
-            <article class="tier tier-plus">
-              <span class="tier-chip">POPULAR</span>
-              <h3>Plus</h3>
-              <p>More questions, more checks, and enough room for people who use it often.</p>
-            </article>
-            <article class="tier tier-pro">
-              <span class="tier-chip">EDITOR'S PICK</span>
-              <h3>Pro</h3>
-              <p>For people who want the limits gone and the whole product open.</p>
-            </article>
+          <div class="phone">
+            <span class="chip chip-marigold phone-tag">fresh today</span>
+            <img src="assets/app-home.png" alt="Ask Tota home screen with today's reading, a vibe strip, and the desk tiles." loading="lazy" width="576" height="1280" />
+          </div>
+          <div class="phone phone-side">
+            <img src="assets/app-membership.png" alt="Ask Tota membership screen comparing the free, plus, and pro press passes." loading="lazy" width="576" height="1280" />
           </div>
         </div>
-      </section>
+        <p class="fine">coming to the app store and google play.</p>
+      </div>
+    </section>
 
-      <section class="blog-preview reveal" id="blog">
-        <div class="section-head section-head-left">
-          <p class="section-kicker">THE CHART DESK</p>
-          <h2>Things worth knowing before u blame mercury</h2>
-          <p>Clear explainers for the parts of astrology people hear about all the time and rarely get explained properly.</p>
+    <!-- ===================== MEMBERSHIP ===================== -->
+    <section class="sec" id="membership">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="kicker">press pass</p>
+          <h2 class="sec-title">start free. upgrade when u want <span class="mark mark-pink">the whole paper</span></h2>
+          <p class="lede">three passes. u always know what u get, what resets, and when. no riddles at the checkout.</p>
         </div>
-        <div class="blog-preview-grid">
-          <a class="blog-feature-card" href="blog/eclipse-sutak.html">
-            <span class="card-tag card-tag-yellow">THIS WEEK · EXPLAINER</span>
-            <p class="blog-card-meta">AUGUST 10, 2026 · 8 MIN READ</p>
+
+        <div class="tiers">
+          <article class="tier">
+            <span class="chip chip-paper">free</span>
+            <h3>day pass</h3>
+            <p>enough to see whether tota is ur kind of thing.</p>
+            <ul>
+              <li>today's edition, every morning</li>
+              <li>ur full birth chart</li>
+              <li>a few questions a day</li>
+            </ul>
+          </article>
+          <article class="tier tier-mint">
+            <span class="chip chip-marigold">most read</span>
+            <h3>plus</h3>
+            <p>for people who open it before they open instagram.</p>
+            <ul>
+              <li>higher question limit</li>
+              <li>compatibility checks</li>
+              <li>all six desks, every day</li>
+            </ul>
+          </article>
+          <article class="tier tier-marigold">
+            <span class="chip chip-paper">editor's pick</span>
+            <h3>pro</h3>
+            <p>the whole paper, plus the people u keep asking about.</p>
+            <ul>
+              <li>no question limit</li>
+              <li>readings for friends and family</li>
+              <li>every koota, every check, in full</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHART DESK ===================== -->
+    <section class="sec" id="chart-desk">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="kicker">the chart desk</p>
+          <h2 class="sec-title">explainers for the stuff people repeat <span class="mark">without checking</span></h2>
+          <p class="lede">nine pieces so far on sade sati, nakshatras, dashas, eclipses, and why ur vedic sun sign moved. most of them come with a calculator.</p>
+        </div>
+
+        <div class="story-row">
+          <a class="story" href="blog/eclipse-sutak.html">
+            <span class="chip chip-marigold">explainer</span>
+            <p class="meta">august 10, 2026 &middot; 8 min read</p>
             <h3>what an eclipse actually does to ur birth chart</h3>
-            <p>two eclipses this month, and neither one is visible from india. what sutak actually requires, and why it doesn't apply this time.</p>
-            <span class="blog-card-link">Read the story →</span>
+            <p>two eclipses in august, neither visible from india. what rahu and ketu switch on, and why sutak doesn't apply this time.</p>
+            <span class="go">read the story</span>
           </a>
-          <a class="blog-side-note" href="blog/sun-moon-rising.html">
-            <span class="desk-pill desk-pill-pink">READER FAVORITE</span>
-            <p class="blog-card-meta">AUGUST 10, 2026 · 9 MIN READ</p>
+          <a class="story" href="blog/sun-moon-rising.html">
+            <span class="chip chip-pink">most read</span>
+            <p class="meta">march 2, 2026 &middot; 9 min read</p>
             <h3>sun sign vs moon sign vs rising sign</h3>
-            <p>the three placements people mix up, and what each one is actually for. plus a tool to calculate all three.</p>
-            <span class="blog-card-link">Read the story →</span>
+            <p>three placements, three different jobs, and the one that needs ur birth time down to the minute. calculator included.</p>
+            <span class="go">read the story</span>
           </a>
         </div>
-        <div class="blog-view-all-wrap">
-          <a class="btn btn-outline" href="blog/index.html">Read more blogs →</a>
-        </div>
-      </section>
 
-      <section class="download reveal" id="download">
-        <div class="download-card">
-          <p class="section-kicker">LAUNCH DESK</p>
-          <h2>Be first in line when Ask Tota goes live</h2>
-          <p>Launching soon on iOS and Android. If you want the first edition when it drops, get in early.</p>
-          <div class="download-actions">
-            <a href="mailto:hello@asktota.com?subject=Ask%20Tota%20Early%20Access" class="btn btn-primary">Request access</a>
-            <span class="store-note">App Store and Google Play links coming with launch.</span>
-          </div>
+        <div class="center-cta">
+          <a class="btn btn-ghost" href="blog/">read the chart desk</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="faq reveal" id="faq">
-        <div class="section-head section-head-left">
-          <p class="section-kicker">FAQ</p>
-          <h2>Questions people ask before they install</h2>
-          <p>Short answers, no hedging.</p>
+    <!-- ===================== TRUST ===================== -->
+    <section class="sec" id="privacy-note">
+      <div class="wrap trust">
+        <img src="assets/tota/loader-parrot.png" alt="" loading="lazy" width="220" height="220" />
+        <h2>no ads. no data brokers. no ad IDs.</h2>
+        <p>ur birth details sit in ur account and nowhere else. tota doesn't sell them, doesn't hand them to brokers, and doesn't touch cross-app tracking. u can wipe the whole account from inside the app. <a href="privacy.html" style="text-decoration:underline;text-underline-offset:3px;">read the policy</a>.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="sec" id="faq">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="kicker">the fine print</p>
+          <h2 class="sec-title">questions people ask before they install</h2>
         </div>
+
         <div class="faq-list">
-          <article class="faq-item">
-            <h3>What is Ask Tota?</h3>
-            <p>Ask Tota is an astrology app for daily readings, compatibility checks, birth chart insights, and personalized guidance.</p>
-          </article>
-          <article class="faq-item">
-            <h3>What can you do inside Ask Tota?</h3>
-            <p>You can read your daily update, check compatibility, review your chart details, and manage your profile and membership in one place.</p>
-          </article>
-          <article class="faq-item">
-            <h3>Is Ask Tota free to use?</h3>
-            <p>Yes. Ask Tota starts with a free tier, and paid plans open up more questions, more checks, and more access.</p>
-          </article>
-          <article class="faq-item">
-            <h3>When is Ask Tota launching?</h3>
-            <p>It is launching soon on iOS and Android. You can request early access from this page.</p>
-          </article>
+          <details class="faq-item">
+            <summary>what is ask tota?</summary>
+            <p class="answer">ask tota is a vedic astrology app for iphone and android. it files one reading a day for ur birth chart, written like a tabloid, and it shows the planetary placement behind each line so u can check the reasoning instead of taking it on faith.</p>
+          </details>
+          <details class="faq-item">
+            <summary>is this vedic or western astrology?</summary>
+            <p class="answer">vedic. tota calculates sidereal positions with the lahiri ayanamsa, which is the standard across india, and prints sanskrit sign names like mesha and vrishabha. ur vedic sun sign usually lands one sign behind the western one u already know.</p>
+          </details>
+          <details class="faq-item">
+            <summary>is ask tota free?</summary>
+            <p class="answer">there's a free tier covering the daily edition, ur full birth chart, and a limited number of questions a day. plus and pro raise those limits. prices are set at launch.</p>
+          </details>
+          <details class="faq-item">
+            <summary>do i need my exact birth time?</summary>
+            <p class="answer">depends what u want. ur sun barely moves across a whole day, and ur moon shifts roughly every two and a quarter days, so a rough time is fine for both. ur rising sign changes about every two hours, so houses and rising need a birth time good to a few minutes.</p>
+          </details>
+          <details class="faq-item">
+            <summary>how does the compatibility score work?</summary>
+            <p class="answer">it runs ashtakoota, which checks eight factors between two charts and adds them up out of 36. tota shows the per-koota breakdown, not just the total, so u can see which check dragged the number down.</p>
+          </details>
+          <details class="faq-item">
+            <summary>is there an ai writing my readings?</summary>
+            <p class="answer">a language model writes the prose. the astrology underneath it is calculated, not generated: real ephemeris positions, real houses, real dashas. tota is not allowed to make a claim it can't attach to a placement, which is why every line has a receipt on it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>when does it launch?</summary>
+            <p class="answer">it's headed to the app store and google play. leave ur email above and u get one message on launch day.</p>
+          </details>
+          <details class="faq-item">
+            <summary>who is tota?</summary>
+            <p class="answer">tota is the parrot who runs the paper. tota is also just the hindi word for parrot, and in indian street astrology a trained parrot picks the card that holds ur reading. the sunglasses were his idea.</p>
+          </details>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <div class="footer-top">
-        <div>
-          <p class="footer-kicker">THE DAILY TOTA</p>
-          <p class="footer-title">Astrology that knows how to look like itself.</p>
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-inner">
+        <div class="foot-brand">
+          <strong>ask tota</strong>
+          <span>read the stars first, then send the text.</span>
         </div>
-        <nav class="footer-links">
-          <a href="#edition">Edition</a>
-          <a href="#desks">Desks</a>
-          <a href="#membership">Membership</a>
-          <a href="blog/index.html">Blog</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="delete-account.html">Delete account</a>
+        <nav class="foot-links" aria-label="Footer">
+          <a href="#desks">desks</a>
+          <a href="#membership">press pass</a>
+          <a href="blog/">chart desk</a>
+          <a href="#faq">faq</a>
+          <a href="privacy.html">privacy</a>
+          <a href="terms.html">terms</a>
+          <a href="delete-account.html">delete account</a>
+          <a href="mailto:hello@asktota.com">contact</a>
         </nav>
       </div>
-      <p class="copyright">© 2026 ask tota. Read the stars first, then send the text.</p>
-    </footer>
-  </div>
+      <p class="foot-legal">&copy; 2026 ask tota &middot; price: ur attention</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

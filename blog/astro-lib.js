@@ -455,6 +455,250 @@
     };
   }
 
+  // --- The rest of the grahas -------------------------------------------
+  // Same JPL Keplerian element set (Standish, "Keplerian elements for
+  // approximate positions of the major planets", J2000 frame, valid
+  // ~1800-2050) already used above for Saturn. Angles in degrees, second
+  // entry of each pair is the rate per Julian century.
+
+  ELEMENTS.mercury = {
+    a: [0.38709927, 0.00000037],
+    e: [0.20563593, 0.00001906],
+    i: [7.00497902, -0.00594749],
+    L: [252.25032350, 149472.67411175],
+    lonPeri: [77.45779628, 0.16047689],
+    lonNode: [48.33076593, -0.12534081],
+  };
+  ELEMENTS.venus = {
+    a: [0.72333566, 0.00000390],
+    e: [0.00677672, -0.00004107],
+    i: [3.39467605, -0.00078890],
+    L: [181.97909950, 58517.81538729],
+    lonPeri: [131.60246718, 0.00268329],
+    lonNode: [76.67984255, -0.27769418],
+  };
+  ELEMENTS.mars = {
+    a: [1.52371034, 0.00001847],
+    e: [0.09339410, 0.00007882],
+    i: [1.84969142, -0.00813131],
+    L: [-4.55343205, 19140.30268499],
+    lonPeri: [-23.94362959, 0.44441088],
+    lonNode: [49.55953891, -0.29257343],
+  };
+  ELEMENTS.jupiter = {
+    a: [5.20288700, -0.00011607],
+    e: [0.04838624, -0.00013253],
+    i: [1.30439695, -0.00183714],
+    L: [34.39644051, 3034.74612775],
+    lonPeri: [14.72847983, 0.21252668],
+    lonNode: [100.47390909, 0.20469106],
+  };
+
+  // Geocentric tropical ecliptic longitude of any of the five visible planets.
+  function planetLongitude(body, jd) {
+    const el = ELEMENTS[body];
+    if (!el) return null;
+    const T = (jd - J2000) / 36525;
+    const earth = heliocentricXYZ(ELEMENTS.earth, T);
+    const p = heliocentricXYZ(el, T);
+    return norm360(Math.atan2(p.y - earth.y, p.x - earth.x) * RAD2DEG);
+  }
+
+  // Apparent daily motion in degrees. Negative means retrograde, which for
+  // the outer planets falls straight out of the two-body geometry with no
+  // extra terms: it is the Earth overtaking on the inside of the track.
+  function planetSpeed(body, jd) {
+    const step = 0.5;
+    const before = planetLongitude(body, jd - step);
+    const after = planetLongitude(body, jd + step);
+    let delta = after - before;
+    if (delta > 180) delta -= 360;
+    if (delta < -180) delta += 360;
+    return delta / (2 * step);
+  }
+
+  // Mean lunar north node (Rahu). Meeus ch.47. Ketu sits exactly opposite.
+  function rahuLongitude(jd) {
+    const T = (jd - J2000) / 36525;
+    return norm360(
+      125.0445479 - 1934.1362891 * T + 0.0020754 * T * T + (T * T * T) / 467441 - (T * T * T * T) / 60616000
+    );
+  }
+
+  // --- Panchang limbs ----------------------------------------------------
+
+  const YOGAS = [
+    'Vishkambha', 'Priti', 'Ayushman', 'Saubhagya', 'Shobhana', 'Atiganda',
+    'Sukarma', 'Dhriti', 'Shula', 'Ganda', 'Vriddhi', 'Dhruva', 'Vyaghata',
+    'Harshana', 'Vajra', 'Siddhi', 'Vyatipata', 'Variyana', 'Parigha', 'Shiva',
+    'Siddha', 'Sadhya', 'Shubha', 'Shukla', 'Brahma', 'Indra', 'Vaidhriti',
+  ];
+
+  const MOVABLE_KARANAS = ['Bava', 'Balava', 'Kaulava', 'Taitila', 'Gara', 'Vanija', 'Vishti'];
+  const VARAS = [
+    { name: 'Ravivara', english: 'Sunday', lord: 'Sun' },
+    { name: 'Somavara', english: 'Monday', lord: 'Moon' },
+    { name: 'Mangalavara', english: 'Tuesday', lord: 'Mars' },
+    { name: 'Budhavara', english: 'Wednesday', lord: 'Mercury' },
+    { name: 'Guruvara', english: 'Thursday', lord: 'Jupiter' },
+    { name: 'Shukravara', english: 'Friday', lord: 'Venus' },
+    { name: 'Shanivara', english: 'Saturday', lord: 'Saturn' },
+  ];
+
+  // Yoga: sun longitude + moon longitude, cut into 27 arcs of 13 deg 20 min.
+  // Sidereal and tropical give the same answer only if both are shifted by
+  // the same ayanamsa, so pass sidereal longitudes for the classical value.
+  function yogaOf(sunSidereal, moonSidereal) {
+    const total = norm360(sunSidereal + moonSidereal);
+    const span = 360 / 27;
+    const index = Math.floor(total / span);
+    return { index, name: YOGAS[index], fractionElapsed: (total - index * span) / span };
+  }
+
+  // Karana: half a tithi, 6 degrees of moon-minus-sun separation. Sixty in a
+  // lunar month: four fixed ones bookend the cycle, seven movable ones repeat
+  // eight times in between.
+  function karanaOf(sunLon, moonLon) {
+    const sep = norm360(moonLon - sunLon);
+    const n = Math.floor(sep / 6); // 0..59
+    let name;
+    if (n === 0) name = 'Kimstughna';
+    else if (n >= 57) name = ['Shakuni', 'Chatushpada', 'Naga'][n - 57];
+    else name = MOVABLE_KARANAS[(n - 1) % 7];
+    const fixed = n === 0 || n >= 57;
+    return { index: n, name, fixed, degIntoKarana: sep - n * 6 };
+  }
+
+  // Vara: the Vedic day runs sunrise to sunrise, so a birth before dawn still
+  // belongs to the previous weekday. Callers that care pass a sunrise-adjusted
+  // Julian Day.
+  function varaOf(jd) {
+    const index = Math.floor(jd + 1.5) % 7; // JD 0 was a Monday
+    return VARAS[(index + 6) % 7];
+  }
+
+  // --- Chart furniture ---------------------------------------------------
+
+  const SIGN_LORDS = ['Mars', 'Venus', 'Mercury', 'Moon', 'Sun', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Saturn', 'Jupiter'];
+
+  // Exaltation degree per graha, in absolute sidereal longitude. Debilitation
+  // is 180 degrees away. Rahu and Ketu are disputed in the classical texts;
+  // we use the Taurus/Scorpio convention and say so in the output.
+  const EXALTATION = {
+    Sun: 10, Moon: 33, Mars: 298, Mercury: 165, Jupiter: 95, Venus: 357, Saturn: 200, Rahu: 50, Ketu: 230,
+  };
+
+  // Combustion orbs in degrees from the Sun, the widely used Vedic set.
+  const COMBUST_ORB = { Moon: 12, Mars: 17, Mercury: 14, Jupiter: 11, Venus: 10, Saturn: 15 };
+
+  const GRAHA_ORDER = ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus', 'Saturn', 'Rahu', 'Ketu'];
+
+  function angularGap(a, b) {
+    const d = Math.abs(norm360(a - b));
+    return d > 180 ? 360 - d : d;
+  }
+
+  function dignityOf(graha, siderealLon) {
+    const exalt = EXALTATION[graha];
+    if (exalt == null) return null;
+    const fromExalt = angularGap(siderealLon, exalt);
+    if (fromExalt <= 5) return 'exalted';
+    if (fromExalt >= 175) return 'debilitated';
+    const signIdx = Math.floor(norm360(siderealLon) / 30);
+    if (SIGN_LORDS[signIdx] === graha) return 'own sign';
+    return null;
+  }
+
+  // Whole-sign houses, the standard in Vedic practice: the lagna's whole sign
+  // is the 1st house, the next sign the 2nd, and so on. No cusps, no split
+  // houses, so a planet's house is decided by its sign alone.
+  function houseFrom(referenceSignIndex, planetSignIndex) {
+    return ((planetSignIndex - referenceSignIndex + 12) % 12) + 1;
+  }
+
+  // Full natal chart. Local clock time plus a UTC offset in hours; returns
+  // every graha with its sidereal longitude, sign, nakshatra, whole-sign
+  // house from both the lagna and the moon, dignity, retrogression and
+  // combustion.
+  function computeChart(opts) {
+    const utHour = opts.hour + opts.minute / 60 - opts.tzOffset;
+    const jd = julianDayUT(opts.year, opts.month, opts.day, utHour);
+    const T = (jd - J2000) / 36525;
+    const ayanamsa = lahiriAyanamsa(jd);
+
+    const tropical = {
+      Sun: sunLongitude(T),
+      Moon: moonLongitude(T),
+      Mars: planetLongitude('mars', jd),
+      Mercury: planetLongitude('mercury', jd),
+      Jupiter: planetLongitude('jupiter', jd),
+      Venus: planetLongitude('venus', jd),
+      Saturn: planetLongitude('saturn', jd),
+      Rahu: rahuLongitude(jd),
+    };
+    tropical.Ketu = norm360(tropical.Rahu + 180);
+
+    const ramc = norm360(gmst(jd) + opts.lon);
+    const ascTropical = ascendant(ramc, opts.lat, obliquity(T));
+    const lagna = signOf(ascTropical - ayanamsa, null);
+    const lagnaSidereal = norm360(ascTropical - ayanamsa);
+
+    const moonSidereal = norm360(tropical.Moon - ayanamsa);
+    const moonSignIndex = Math.floor(moonSidereal / 30);
+
+    const grahas = GRAHA_ORDER.map(function (name) {
+      const sidereal = norm360(tropical[name] - ayanamsa);
+      const sign = signOf(sidereal, null);
+      const nak = nakshatraOf(sidereal);
+      const isNode = name === 'Rahu' || name === 'Ketu';
+      const speed = isNode ? -0.053 : name === 'Sun' || name === 'Moon' ? 1 : planetSpeed(name.toLowerCase(), jd);
+      const orb = COMBUST_ORB[name];
+      return {
+        name: name,
+        longitude: sidereal,
+        degInSign: sidereal - Math.floor(sidereal / 30) * 30,
+        sign: sign,
+        signIndex: sign.index,
+        nakshatra: nak,
+        house: houseFrom(lagna.index, sign.index),
+        houseFromMoon: houseFrom(moonSignIndex, sign.index),
+        retrograde: speed < 0,
+        dignity: dignityOf(name, sidereal),
+        combust: orb != null && name !== 'Moon' && angularGap(sidereal, norm360(tropical.Sun - ayanamsa)) <= orb,
+      };
+    });
+
+    const housesList = [];
+    for (let h = 1; h <= 12; h++) {
+      const signIndex = (lagna.index + h - 1) % 12;
+      housesList.push({
+        number: h,
+        sign: RASHIS[signIndex],
+        signIndex: signIndex,
+        lord: SIGN_LORDS[signIndex],
+        occupants: grahas.filter(function (g) { return g.house === h; }),
+      });
+    }
+
+    return {
+      jd: jd,
+      ayanamsa: ayanamsa,
+      lagna: lagna,
+      lagnaLongitude: lagnaSidereal,
+      lagnaNakshatra: nakshatraOf(lagnaSidereal),
+      lagnaLord: SIGN_LORDS[lagna.index],
+      moonSign: RASHIS[moonSignIndex],
+      moonNakshatra: nakshatraOf(moonSidereal),
+      grahas: grahas,
+      byName: grahas.reduce(function (acc, g) { acc[g.name] = g; return acc; }, {}),
+      houses: housesList,
+      tithi: tithiOf(tropical.Sun, tropical.Moon),
+      yoga: yogaOf(norm360(tropical.Sun - ayanamsa), moonSidereal),
+      karana: karanaOf(tropical.Sun, tropical.Moon),
+      vara: varaOf(jd + opts.tzOffset / 24 - 0.25),
+    };
+  }
+
   window.AstroLib = {
     DEG2RAD,
     RAD2DEG,
@@ -480,6 +724,17 @@
     tithiOf,
     saturnLongitude,
     saturnSiderealSign,
+    planetLongitude,
+    planetSpeed,
+    rahuLongitude,
+    yogaOf,
+    karanaOf,
+    varaOf,
+    houseFrom,
+    dignityOf,
+    computeChart,
+    SIGN_LORDS,
+    GRAHA_ORDER,
     attachPlaceSearch,
   };
 })();

@@ -368,6 +368,90 @@ h3 {
   background: var(--parrot);
 }
 
+
+/* ==========================================================================
+   ZODIAC WHEELS
+   Two dials pinned to the left and right edges, each a full ring of the twelve
+   rashis in Sanskrit. Only the inward-facing arc is on screen, so it reads as a
+   semicircle. They counter-rotate as the page scrolls.
+   ========================================================================== */
+
+.zodiac {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.zodiac-arc {
+  --r: 340px;
+  --inset: -215px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+}
+
+.zodiac-l { left: var(--inset); }
+.zodiac-r { right: var(--inset); }
+
+/* the rim, so the arc reads as a wheel rather than floating words */
+.zodiac-arc::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--r) * -1);
+  top: calc(var(--r) * -1);
+  width: calc(var(--r) * 2);
+  height: calc(var(--r) * 2);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  opacity: 0.07;
+}
+
+.zodiac-ring {
+  position: absolute;
+  inset: 0;
+  transform: rotate(var(--spin, 0deg));
+  will-change: transform;
+}
+
+.zodiac-ring span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: clamp(1.05rem, 2.1vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.1;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.zodiac-l .zodiac-ring span {
+  transform-origin: 0 50%;
+  transform: rotate(calc(var(--i) * 30deg)) translateX(calc(var(--r) - 3.4em));
+}
+
+/* the leading translateX(-100%) puts the label's right edge on the ring centre,
+   so the two dials mirror each other instead of drifting off screen */
+.zodiac-r .zodiac-ring span {
+  transform-origin: 100% 50%;
+  transform: translateX(-100%) rotate(calc(var(--i) * -30deg)) translateX(calc((var(--r) - 3.4em) * -1));
+}
+
+@media (max-width: 1100px) {
+  .zodiac-arc { --r: 300px; --inset: -230px; }
+}
+
+@media (max-width: 720px) {
+  .zodiac-arc { --r: 250px; --inset: -205px; }
+  .zodiac-ring span { opacity: 0.075; }
+}
+
 /* ==========================================================================
    HERO
    ========================================================================== */
@@ -377,45 +461,6 @@ h3 {
   padding-block: clamp(36px, 6vw, 60px) var(--section-gap);
   overflow: hidden;
   text-align: center;
-}
-
-/* the edition wheel: a ghosted rotary of edition numbers, left and right.
-   the app dates every issue by day-of-year, so this is the real furniture. */
-.wheel {
-  position: absolute;
-  top: 46%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  font-weight: 800;
-  font-size: clamp(3.4rem, 8.6vw, 6.5rem);
-  line-height: 0.94;
-  letter-spacing: -0.05em;
-  color: var(--ink);
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
-.wheel-l { left: clamp(-56px, -3vw, -18px); }
-.wheel-r { right: clamp(-56px, -3vw, -18px); }
-
-.wheel span {
-  opacity: 0.055;
-}
-
-.wheel .is-now {
-  opacity: 0.16;
-}
-
-.wheel-label {
-  font-size: 0.75rem !important;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  opacity: 0.16;
-  margin-top: 10px;
 }
 
 .hero-inner {
@@ -1586,9 +1631,6 @@ h3 {
 }
 
 @media (max-width: 720px) {
-  .wheel { font-size: clamp(2.6rem, 15vw, 4rem); opacity: 0.8; }
-  .wheel-l { left: -22px; }
-  .wheel-r { right: -22px; }
   .aside-note {
     left: 50%;
     bottom: -34px;

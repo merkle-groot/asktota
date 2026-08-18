@@ -195,6 +195,6 @@
       `<div class="chart-result-card ashtakoota-total-card"><p class="chart-card-label">Total score</p><h3>${total} <span>out of 36</span></h3></div>` +
       `<div class="blog-table-wrap ashtakoota-table"><table><thead><tr><th>koota</th><th>score</th><th>detail</th></tr></thead><tbody>${rows}</tbody></table></div>` +
       `<p class="chart-finder-note">${nameA}'s moon is in ${moonA.sign.name} (${moonA.nakshatra.name}). ${nameB}'s moon is in ${moonB.sign.name} (${moonB.nakshatra.name}). this checks all 8 kootas from moon sign and nakshatra only — it's a quick check, not a full matching session.</p>` +
-      '<a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>';
+      '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>';
   });
 })();

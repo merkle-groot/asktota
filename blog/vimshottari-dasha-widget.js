@@ -92,6 +92,6 @@
       `<div class="chart-result-card"><p class="chart-card-label">Natal nakshatra</p><h3>${nakshatra.name} <span>ruled by ${nakshatra.lord}</span></h3></div>` +
       '</div>' +
       `<p class="chart-finder-note">${greeting}ur ${mahadasha.lord} mahadasha runs ${formatDate(mahadasha.startJD)} to ${formatDate(mahadasha.endJD)}. within it, ur current ${antardasha.lord} antardasha runs ${formatDate(antardasha.startJD)} to ${formatDate(antardasha.endJD)}. this is a quick calculation, not a full reading — get the full chart for pratyantardasha-level detail.</p>` +
-      '<a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>';
+      '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>';
   });
 })();

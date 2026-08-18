@@ -121,7 +121,7 @@
     return '<p class="chart-finder-note">' + html + '</p>';
   }
 
-  const CTA = '<a class="text-link" href="../index.html#waitlist">Get the full chart with Ask Tota &rarr;</a>';
+  const CTA = '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota &rarr;</a>';
 
   function listJoin(arr) {
     if (arr.length <= 1) return arr.join('');
@@ -334,7 +334,7 @@
                 : 'no standard cancellation applies here, which still does not make this a verdict on a marriage.')
             : 'Mars is not in the 1st, 2nd, 4th, 7th, 8th or 12th from ur lagna, moon or Venus, so the label does not apply on any of the three counts.') +
           ' different astrologers count from different reference points, which is exactly why two of them can give u opposite answers about the same chart. ' +
-          'more on that in <a href="manglik-dosha.html">the manglik explainer</a>.'
+          '<a href="#why-disagree">here is why that happens</a>, and <a href="#cancellations">here are the cancellations</a>.'
         ) + CTA
       );
     },

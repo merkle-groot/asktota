@@ -35,7 +35,7 @@
     const uncertain = daysFromBoundary <= 2;
     result.hidden = false;
     result.innerHTML = uncertain
-      ? `<p class="sun-result-label">YOU'RE NEAR A SANKRANTI</p><h3>probably ${entry.name} <span>(${entry.english})</span></h3><p>Your birth date is within two days of a sidereal sign boundary. Use your birth time and place for the exact answer.</p><a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>`
+      ? `<p class="sun-result-label">YOU'RE NEAR A SANKRANTI</p><h3>probably ${entry.name} <span>(${entry.english})</span></h3><p>Your birth date is within two days of a sidereal sign boundary. Use your birth time and place for the exact answer.</p><a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>`
       : `<p class="sun-result-label">YOUR APPROXIMATE VEDIC SUN SIGN</p><h3>${entry.name} <span>(${entry.english})</span></h3><p>Based on the usual Lahiri sidereal solar-month dates. Your moon sign and lagna still need your birth time and place.</p>`;
   });
 })();

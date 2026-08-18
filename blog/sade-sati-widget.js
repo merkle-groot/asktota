@@ -181,6 +181,6 @@
       `<div class="sadesati-phase"><p class="chart-card-label">Ends</p><p>&nbsp;</p><p class="sadesati-phase-date">${formatDate(sadeSati.windowEndJD)}</p></div>` +
       '</div>' +
       `<p class="chart-finder-note">${greeting}ur natal moon is in ${moonSign.name} (${moonSign.english}). dates are approximate, accurate to within a few days — this runs on a simplified Saturn model, not a substitute for the full chart.</p>` +
-      '<a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>';
+      '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>';
   });
 })();

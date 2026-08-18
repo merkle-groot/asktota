@@ -334,6 +334,6 @@
       cardHtml('Rising sign (lagna)', chart.asc, 'double-check with an exact birth time.') +
       '</div>' +
       `<p class="chart-finder-note">Sidereal positions, Lahiri ayanamsa (currently ${chart.ayanamsa.toFixed(2)}°). This runs in ur browser with no chart software behind it — accurate enough to be useful, not a substitute for a full reading.</p>` +
-      '<a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>';
+      '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>';
   });
 })();

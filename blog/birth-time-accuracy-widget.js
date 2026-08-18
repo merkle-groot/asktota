@@ -76,7 +76,7 @@
       result.innerHTML =
         `<div class="chart-result-card"><p class="chart-card-label">Rising sign is stable</p><h3>${segments[0].sign.name} <span>(${segments[0].sign.english})</span></h3></div>` +
         `<p class="chart-finder-note">${greeting}across ${windowMin} minutes either side of ${timeVal}, ur rising sign doesn't change. this placement isn't sensitive to how precise ur birth time is, within this window.</p>` +
-        '<a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>';
+        '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>';
       return;
     }
 
@@ -91,6 +91,6 @@
     result.innerHTML =
       `<div class="chart-result-grid">${cards}</div>` +
       `<p class="chart-finder-note">${greeting}within ${windowMin} minutes of ${timeVal}, ur rising sign could be any of these ${segments.length}, depending on the exact minute. this is exactly the kind of boundary case where a precise birth time matters — get the full chart once u have it.</p>` +
-      '<a class="text-link" href="../index.html#download">Get the full chart with Ask Tota →</a>';
+      '<a class="text-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=app.asktota">Get the full chart with Ask Tota →</a>';
   });
 })();

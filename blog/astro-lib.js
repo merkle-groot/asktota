@@ -569,12 +569,14 @@
     return { index: n, name, fixed, degIntoKarana: sep - n * 6 };
   }
 
-  // Vara: the Vedic day runs sunrise to sunrise, so a birth before dawn still
-  // belongs to the previous weekday. Callers that care pass a sunrise-adjusted
-  // Julian Day.
-  function varaOf(jd) {
-    const index = Math.floor(jd + 1.5) % 7; // JD 0 was a Monday
-    return VARAS[(index + 6) % 7];
+  // Vara: the Vedic day runs sunrise to sunrise, not midnight to midnight, so
+  // a birth at 4am still belongs to the previous weekday. We approximate
+  // sunrise at local 06:00, which is right to within about an hour anywhere
+  // in India and wrong only for births inside that window.
+  function varaOf(jd, tzOffset) {
+    const localJD = jd + (tzOffset || 0) / 24 - 0.25;
+    const index = Math.floor(localJD + 0.5) % 7; // 0 = Monday
+    return VARAS[(index + 1) % 7];
   }
 
   // --- Chart furniture ---------------------------------------------------
@@ -695,7 +697,7 @@
       tithi: tithiOf(tropical.Sun, tropical.Moon),
       yoga: yogaOf(norm360(tropical.Sun - ayanamsa), moonSidereal),
       karana: karanaOf(tropical.Sun, tropical.Moon),
-      vara: varaOf(jd + opts.tzOffset / 24 - 0.25),
+      vara: varaOf(jd, opts.tzOffset),
     };
   }
 

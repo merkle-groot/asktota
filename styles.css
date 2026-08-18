@@ -422,10 +422,32 @@ h3 {
   will-change: transform;
 }
 
+/* the sprite itself never renders */
+.rashi-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.rashi-glyph {
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .zodiac-ring span {
   position: absolute;
   left: 0;
   top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
   font-size: clamp(1.05rem, 2.1vw, 1.65rem);
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -438,14 +460,15 @@ h3 {
 
 .zodiac-l .zodiac-ring span {
   transform-origin: 0 50%;
-  transform: rotate(calc(var(--i) * 30deg)) translateX(calc(var(--r) - 3.4em));
+  transform: rotate(calc(var(--i) * 30deg)) translateX(calc(var(--r) - 4.9em));
 }
 
 /* the leading translateX(-100%) puts the label's right edge on the ring centre,
    so the two dials mirror each other instead of drifting off screen */
 .zodiac-r .zodiac-ring span {
+  flex-direction: row-reverse;
   transform-origin: 100% 50%;
-  transform: translateX(-100%) rotate(calc(var(--i) * -30deg)) translateX(calc((var(--r) - 3.4em) * -1));
+  transform: translateX(-100%) rotate(calc(var(--i) * -30deg)) translateX(calc((var(--r) - 4.9em) * -1));
 }
 
 @media (max-width: 1100px) {

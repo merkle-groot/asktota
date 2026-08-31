@@ -19,6 +19,7 @@ def block(prefix: str) -> str:
         '<nav class="foot-links" aria-label="Footer">\n'
         f'          <a href="{PLAY}" target="_blank" rel="noopener">download the app</a>\n'
         f'          <a href="{prefix}blog/">blog</a>\n'
+        f'          <a href="{prefix}privacy.html">privacy policy</a>\n'
         f'          <a href="{prefix}terms.html">terms and conditions</a>\n'
         '          <a href="mailto:hi@asktota.com">contact</a>\n'
         f'          <a class="foot-social" href="{IG}" target="_blank" rel="noopener" aria-label="Ask Tota on Instagram">{IG_SVG}<span>instagram</span></a>\n'

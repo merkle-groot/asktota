@@ -485,14 +485,13 @@ h3 {
   .zodiac-arc { --r: 300px; --inset: -230px; --label: 4.9em; }
 }
 
-/* On a phone the words are wider than the margin, so they used to sweep across
-   the headline. Below 860px the dials keep the glyph and drop the word: the
-   ring still turns, it just no longer sits on top of the copy. */
+/* Phones keep the full dial, names and all, the way the desktop shows it.
+   The wheel is pulled in and the type scaled down so the words actually clear
+   the left and right edges instead of arcing off screen, and the opacity stays
+   low enough that body copy reads cleanly straight over the top. */
 @media (max-width: 860px) {
-  .zodiac-arc { --r: 230px; --inset: -196px; --label: 1.9em; }
-  .zodiac-ring b { display: none; }
-  .zodiac-ring span { gap: 0; opacity: 0.14; }
-  .rashi-glyph { width: 1.5em; height: 1.5em; }
+  .zodiac-arc { --r: 300px; --inset: -228px; }
+  .zodiac-ring span { font-size: clamp(0.8rem, 3.4vw, 1.05rem); opacity: 0.1; }
 }
 
 /* ==========================================================================

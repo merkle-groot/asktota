@@ -1181,7 +1181,8 @@ h3 {
   text-decoration-color: var(--marigold-dim);
 }
 
-/* instagram: a glyph on wide screens, a labelled link once the row stacks */
+/* contact is the instagram dm, so the glyph sits with the word rather than
+   standing on its own */
 .foot-social {
   display: inline-flex;
   align-items: center;
@@ -1197,15 +1198,6 @@ h3 {
   stroke-width: 1.9;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.foot-social span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 
 .foot-social:hover svg { color: var(--ink); }

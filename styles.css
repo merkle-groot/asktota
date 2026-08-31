@@ -66,6 +66,15 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* the nav is sticky, so an anchor jump would otherwise land the heading
+   underneath it */
+:target,
+section[id],
+h2[id],
+h3[id] {
+  scroll-margin-top: 84px;
+}
+
 body {
   font-family: "Bricolage Grotesque", "DM Sans", system-ui, -apple-system, sans-serif;
   font-size: 16px;
@@ -393,6 +402,7 @@ h3 {
 .zodiac-arc {
   --r: 340px;
   --inset: -215px;
+  --label: 4.9em;
   position: absolute;
   top: 50%;
   width: 0;
@@ -460,7 +470,7 @@ h3 {
 
 .zodiac-l .zodiac-ring span {
   transform-origin: 0 50%;
-  transform: rotate(calc(var(--i) * 30deg)) translateX(calc(var(--r) - 4.9em));
+  transform: rotate(calc(var(--i) * 30deg)) translateX(calc(var(--r) - var(--label)));
 }
 
 /* the leading translateX(-100%) puts the label's right edge on the ring centre,
@@ -468,16 +478,21 @@ h3 {
 .zodiac-r .zodiac-ring span {
   flex-direction: row-reverse;
   transform-origin: 100% 50%;
-  transform: translateX(-100%) rotate(calc(var(--i) * -30deg)) translateX(calc((var(--r) - 4.9em) * -1));
+  transform: translateX(-100%) rotate(calc(var(--i) * -30deg)) translateX(calc((var(--r) - var(--label)) * -1));
 }
 
 @media (max-width: 1100px) {
-  .zodiac-arc { --r: 300px; --inset: -230px; }
+  .zodiac-arc { --r: 300px; --inset: -230px; --label: 4.9em; }
 }
 
-@media (max-width: 720px) {
-  .zodiac-arc { --r: 250px; --inset: -205px; }
-  .zodiac-ring span { opacity: 0.075; }
+/* On a phone the words are wider than the margin, so they used to sweep across
+   the headline. Below 860px the dials keep the glyph and drop the word: the
+   ring still turns, it just no longer sits on top of the copy. */
+@media (max-width: 860px) {
+  .zodiac-arc { --r: 230px; --inset: -196px; --label: 1.9em; }
+  .zodiac-ring b { display: none; }
+  .zodiac-ring span { gap: 0; opacity: 0.14; }
+  .rashi-glyph { width: 1.5em; height: 1.5em; }
 }
 
 /* ==========================================================================
@@ -670,7 +685,7 @@ h3 {
 
 .desk-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(216px, 100%), 1fr));
   gap: var(--s3);
   max-width: 800px;
   margin-inline: auto;
@@ -723,7 +738,7 @@ h3 {
 
 .card-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(258px, 100%), 1fr));
   gap: var(--s3);
 }
 
@@ -891,7 +906,7 @@ h3 {
 
 .tiers {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(232px, 100%), 1fr));
   gap: var(--s3);
 }
 
@@ -953,7 +968,7 @@ h3 {
 
 .story-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(268px, 100%), 1fr));
   gap: var(--s3);
 }
 
@@ -1166,6 +1181,35 @@ h3 {
   text-decoration-color: var(--marigold-dim);
 }
 
+/* instagram: a glyph on wide screens, a labelled link once the row stacks */
+.foot-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.foot-social svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.foot-social span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.foot-social:hover svg { color: var(--ink); }
+
 .foot-legal {
   border-top: 2px solid var(--rule);
   padding-block: 18px;
@@ -1197,7 +1241,7 @@ h3 {
 
 .archive-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(286px, 100%), 1fr));
   gap: var(--s3);
   padding-bottom: var(--section-gap);
 }
@@ -1464,6 +1508,11 @@ h3 {
 .chart-finder-field input,
 .chart-finder-field select {
   width: 100%;
+  /* min-width:auto is the default on a grid/flex child, and a native date or
+     time field reports a wide intrinsic minimum, so without this the field
+     refuses to shrink and spills past the card on a phone. */
+  min-width: 0;
+  max-width: 100%;
   min-height: 48px;
   border: 2px solid var(--ink);
   border-radius: var(--r-pill);
@@ -1471,6 +1520,42 @@ h3 {
   color: var(--ink);
   background: var(--card);
   font: inherit;
+  /* 16px minimum: anything smaller makes iOS Safari zoom the page on focus,
+     which is what makes the whole card look like it burst its bounds. */
+  font-size: max(1rem, 16px);
+  line-height: 1.35;
+  text-align: left;
+}
+
+/* iOS renders date and time values in a shadow field that centres itself and
+   carries its own intrinsic width. Left-align it and strip its padding, or the
+   value sits off-centre in the pill and clips on a narrow screen. */
+.sun-finder input[type="date"],
+.sun-finder input[type="time"],
+.chart-finder-field input[type="date"],
+.chart-finder-field input[type="time"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+}
+
+input[type="date"]::-webkit-date-and-time-value,
+input[type="time"]::-webkit-date-and-time-value {
+  text-align: left;
+  margin: 0;
+  min-width: 0;
+}
+
+input[type="date"]::-webkit-datetime-edit,
+input[type="time"]::-webkit-datetime-edit {
+  padding: 0;
+  min-width: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  margin-left: auto;
+  flex: none;
 }
 
 .sun-finder input:focus-visible,
@@ -1674,14 +1759,14 @@ h3 {
   .chart-result-grid,
   .sadesati-timeline,
   .ashtakoota-people {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .chart-finder-submit,
   .sun-finder input,
   .sun-finder-controls .btn {
     width: 100%;
   }
-  .sun-finder-controls { display: grid; grid-template-columns: 1fr; }
+  .sun-finder-controls { display: grid; grid-template-columns: minmax(0, 1fr); }
   .chart-place-results { max-height: 220px; }
 }
 
@@ -2024,6 +2109,16 @@ h3 {
   .quick-facts dt { border-bottom: 0; padding-bottom: 2px; }
   .quick-facts dd { padding-top: 4px; }
   .blog-toc ol { columns: 1; }
+  /* a bare text link is an 18px-tall thumb target; open the rows up so each
+     one clears the 44px Apple asks for */
+  .blog-toc li { margin-top: 0; }
+  .blog-toc li a,
+  .blog-nextup li a {
+    display: block;
+    padding-block: 11px;
+  }
+  .foot-links { gap: 2px 22px; }
+  .foot-links a { padding-block: 11px; }
 }
 
 /* ==========================================================================

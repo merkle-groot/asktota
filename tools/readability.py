@@ -23,15 +23,29 @@ def syllables(word):
     return max(n, 1)
 
 def prose(path):
+    """Running prose only: the <p> and <li> blocks a reader reads top to bottom.
+
+    Tables, forms, the table of contents, the quick-facts definition list and
+    the byline are lookup furniture, not prose, so they are dropped. Each block
+    is terminated with a full stop, otherwise two adjacent blocks merge into one
+    enormous "sentence" and the words-per-sentence average goes nonsense-high.
+    """
     s = path.read_text(encoding="utf-8")
     m = re.search(r"<article.*?</article>", s, re.S)
     body = m.group(0) if m else s
     for pat in (r"<script.*?</script>", r"<style.*?</style>", r"<table.*?</table>",
-                r"<form.*?</form>", r'<p class="blog-byline">.*?</p>',
+                r"<form.*?</form>", r"<nav.*?</nav>", r"<dl.*?</dl>",
+                r'<p class="blog-byline">.*?</p>',
                 r'<p class="section-kicker">.*?</p>'):
         body = re.sub(pat, " ", body, flags=re.S)
-    body = re.sub(r"<[^>]+>", " ", body)
-    return html.unescape(body)
+
+    blocks = re.findall(r"<(?:p|li)\b[^>]*>(.*?)</(?:p|li)>", body, re.S)
+    text = []
+    for b in blocks:
+        b = html.unescape(re.sub(r"<[^>]+>", " ", b)).strip()
+        if b:
+            text.append(b if b[-1] in ".!?" else b + ".")
+    return " ".join(text)
 
 def grade(text):
     sents = [x for x in re.split(r"[.!?]+", text) if len(x.split()) > 1]

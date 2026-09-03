@@ -843,20 +843,16 @@
   function clearLoaderError() {
     var screen = document.querySelector('[data-screen="loader"]');
     var error = document.getElementById('loader-error');
-    var retry = document.getElementById('loader-retry');
     if (screen) screen.setAttribute('aria-busy', 'true');
     if (error) { error.hidden = true; error.textContent = ''; }
-    if (retry) retry.hidden = true;
   }
   function showLoaderError(error) {
     var message = error && error.message ? error.message : 'the newsroom could not finish the file.';
     text('loader-copy', 'the file hit a snag.');
     text('loader-error', '⚠  ' + message);
     var errorNode = document.getElementById('loader-error');
-    var retry = document.getElementById('loader-retry');
     var screen = document.querySelector('[data-screen="loader"]');
     if (errorNode) errorNode.hidden = false;
-    if (retry) retry.hidden = false;
     if (screen) screen.setAttribute('aria-busy', 'false');
   }
   function startLoader(mode) {
@@ -866,8 +862,6 @@
     if (screen) screen.setAttribute('aria-busy', 'true');
     if (!REDUCED) loaderTimer = window.setInterval(function () { index = (index + 1) % messages.length; text('loader-copy', messages[index]); }, 2600);
   }
-  document.getElementById('loader-retry').addEventListener('click', function () { fetchEdition().catch(function () {}); });
-
   /* ── Full edition renderer ────────────────────────────────────────────────── */
   function renderRich(value) {
     return escapeHtml(value).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/==([^=]+)==/g, '<mark>$1</mark>');

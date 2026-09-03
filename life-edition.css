@@ -163,7 +163,7 @@ section[data-screen][hidden] { display: none; }
 .tota-lifted { animation: tota-bob 2.5s cubic-bezier(.37,0,.2,1) infinite alternate, tota-frame 1.2s linear infinite reverse; }
 .music-note { position: absolute; font-size: 30px; font-weight: 800; animation: note-rise 2.5s cubic-bezier(.37,0,.2,1) infinite; }
 .note-one { top: 30px; right: 10px; color: var(--parrot); }.note-two { top: 48px; left: 10px; color: var(--marigold); animation-delay: .7s; }
-.loader-copy { text-align: center; font-size: clamp(21px, 5vw, 28px); }.loader-note { margin: 0 0 24px; color: var(--ink-muted); font-size: 15px; line-height: 1.5; text-align: center; }.loader-error { max-width: 620px; margin: 0 auto 14px; text-align: center; }.loader-retry { display: block; margin: 0 auto 24px; }
+.loader-copy { text-align: center; font-size: clamp(21px, 5vw, 28px); }.loader-note { margin: 0 0 24px; color: var(--ink-muted); font-size: 15px; line-height: 1.5; text-align: center; }.loader-error { max-width: 620px; margin: 0 auto 14px; text-align: center; }
 @keyframes tota-bob { to { transform: translateY(-2px) rotate(.3deg); } }
 @keyframes tota-frame { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
 @keyframes note-rise { 0%,16% { opacity: 0; transform: translateY(8px) } 28%,72% { opacity: 1 } 100% { opacity: 0; transform: translateY(-14px) } }

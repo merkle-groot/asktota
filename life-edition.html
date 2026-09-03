@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf3e0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Your Life Edition | Ask Tota</title>
+  <meta name="description" content="A ten-desk Ask Tota life edition built from your birth chart.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="life-edition.css">
+</head>
+<body class="life-page">
+  <a class="skip-link" href="#reading-flow">skip to reading</a>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/" aria-label="ask tota, home">
+        <img src="/favicon-96.png" alt="" width="30" height="30" />
+        <span>ask tota</span>
+      </a>
+      <p class="dateline" id="dateline">THE DAILY TOTA &middot; FRESH TODAY</p>
+      <div class="nav-actions">
+        <a class="nav-link" href="blog/">blog</a>
+        <a class="nav-link" href="life-edition.html">get ur reading</a>
+        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=app.asktota" target="_blank" rel="noopener">
+          <svg class="play-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.9a1 1 0 0 0-.5.9v18.4a1 1 0 0 0 .5.9l10-10.1zM15 8.4 5.2 1.5l9.1 9.2zM5.2 22.5l9.8-6.9-.7-.7zM19.9 10.6-3.3-1.9-2.2 2.2 2.2 2.2 3.3-1.9a1 1 0 0 0 0-1.6z" fill="currentColor"/></svg>
+          google play
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="reading-flow" class="edition-wrap">
+    <!-- Lead-first onboarding: no account or sign-in is needed to start. -->
+    <section data-screen="details" aria-labelledby="details-title">
+      <div class="details-hero">
+        <div class="details-hero-copy">
+          <p class="kicker-pill kicker-green intro-kicker">A FREE READING FROM TOTA</p>
+          <h1 class="headline" id="details-title">tota has a free<br><mark>reading for u.</mark></h1>
+          <p class="subtitle">enter a few birth details and tota will open the first page from ur actual chart.</p>
+        </div>
+        <img class="screen-mascot details-mascot" src="assets/tota/tota-free-reading.png" alt="Tota presenting an open free reading">
+      </div>
+
+      <div class="ink-card details-card">
+        <span class="kicker-pill kicker-marigold pinned">BIRTH DETAILS · PRIVATE</span>
+        <form id="details-form" novalidate>
+          <label class="field-label" for="name">WHAT DO WE CALL YOU?</label>
+          <div class="field-with-message">
+            <div class="field"><span class="field-icon">✦</span><input id="name" name="name" autocomplete="name" maxlength="100" placeholder="ur name" aria-describedby="name-error" required></div>
+            <p id="name-error" class="field-bubble" role="status" aria-live="polite" hidden>✋ still need ur name</p>
+          </div>
+
+          <label class="field-label" for="date-trigger">BIRTHDAY</label>
+          <div class="field-with-message">
+            <button class="field picker-trigger" id="date-trigger" type="button" aria-haspopup="dialog" aria-controls="date-picker" aria-describedby="date-error"><span class="field-icon">🎂</span><span id="date-label" class="picker-value">choose ur date</span><span class="field-arrow" aria-hidden="true">⌄</span></button>
+            <p id="date-error" class="field-bubble" role="status" aria-live="polite" hidden>✋ still need ur birthday</p>
+          </div>
+
+          <label class="field-label" for="time-trigger">BIRTH TIME <span class="label-optional">(OPTIONAL)</span></label>
+          <div class="time-picker-row"><button class="field picker-trigger" id="time-trigger" type="button" aria-haspopup="dialog" aria-controls="time-picker"><span class="field-icon">🕐</span><span id="time-label" class="picker-value">not sure · use noon</span><span class="field-arrow" aria-hidden="true">⌄</span></button><button id="time-skip" class="skip-time" type="button" aria-pressed="true">SKIP</button></div>
+          <p class="field-hint time-note">↳ exact time makes the houses sharper. no stress if u don't know it.</p>
+
+          <label class="field-label" for="birth-place">WHERE'D IT ALL BEGIN?</label>
+          <div class="field-with-message">
+            <div class="field place-field"><span class="field-icon">📍</span><input id="birth-place" name="birth-place" autocomplete="off" placeholder="city of birth" role="combobox" aria-autocomplete="list" aria-controls="place-results" aria-expanded="false" aria-describedby="place-error" required></div>
+            <p id="place-error" class="field-bubble" role="status" aria-live="polite" hidden>✋ still need ur city of birth</p>
+          </div>
+          <div id="place-results" class="suggestions" role="listbox" aria-label="Birthplace suggestions"></div>
+
+          <div class="nudge"><span class="nudge-icon">🌶️</span><span><strong>EXACT TIME = SPICIER READING.</strong> don't stress if u don't know it</span></div>
+          <p id="details-error" class="form-error" role="status" aria-live="polite"></p>
+          <button class="pill-button" id="details-submit" type="submit">OPEN MY FREE READING <span class="arrow">→</span></button>
+        </form>
+      </div>
+      <p class="privacy">🔒 ur deets stay between u &amp; tota. we don't gossip, we swear</p>
+    </section>
+
+    <!-- The only pre-payment reading: rough notes + Career Desk preview. -->
+    <section data-screen="partial" class="newspaper-screen" hidden aria-labelledby="partial-title" aria-live="polite">
+      <div class="newspaper-page newspaper-page-preview">
+        <header class="newspaper-masthead" aria-label="The Daily Tota">
+          <div class="masthead-top"><span>EXTRA EDITION</span><span>THE LIFE EDITION</span><span>VOL. 01</span></div>
+          <div class="masthead-banner"><span class="masthead-title">THE DAILY TOTA</span><span class="masthead-parrot" aria-hidden="true">🦜</span></div>
+          <div class="masthead-dateline"><span>FIRST LOOK · PRIVATE</span><span>FRESH FROM THE NEWSROOM</span><span>PAGE 01</span></div>
+        </header>
+
+        <div class="reading-hero preview-hero">
+          <div class="reading-hero-copy">
+            <p class="kicker-pill kicker-ink intro-kicker">THE FIRST RECEIPT · FOR <span id="partial-name">U</span></p>
+            <h2 class="headline" id="partial-title">tota found a few things<br><mark>worth telling u.</mark></h2>
+            <p class="subtitle">this is the first page from ur actual chart. personal, a little nosy, and just enough to make u want the rest.</p>
+          </div>
+          <img class="screen-mascot reading-mascot" src="assets/tota/tota-exclusive-envelope.png" alt="Tota delivering a private reading">
+        </div>
+
+        <section class="reader-file" aria-labelledby="preview-reader-file-title">
+          <div class="reader-file-heading">
+            <div>
+              <p class="kicker">THE CHART DESK · BIRTH RECORD</p>
+              <h3 id="preview-reader-file-title">the file behind the story.</h3>
+            </div>
+            <span class="reader-file-stamp">ON RECORD</span>
+          </div>
+          <div class="reader-file-body">
+            <dl class="reader-facts">
+              <div><dt>DATE OF BIRTH</dt><dd id="preview-reading-dob">—</dd></div>
+              <div><dt>BORN IN</dt><dd id="preview-reading-place">—</dd></div>
+              <div><dt>TIME OF BIRTH</dt><dd id="preview-reading-time">—</dd></div>
+            </dl>
+            <div class="mini-chart-wrap">
+              <div class="mini-chart-label"><span>YOUR CHART</span><span>SOUTH INDIAN · D-1</span></div>
+              <div id="preview-reading-mini-chart" class="mini-chart" role="img" aria-label="A small South Indian birth chart"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="newspaper-section-rule"><span>TOP STORY</span><span>THE FIRST RECEIPT</span></div>
+        <article class="preview-card preview-feature newspaper-article lead-article" id="rough-notes-card">
+          <div class="preview-copy">
+            <figure class="preview-visual desk-tone-marigold"><img src="assets/desks/generated/rough-notes.webp" alt="Tota looking closely at a stack of notes" loading="lazy"><figcaption>a closer look at the first receipt.</figcaption></figure>
+            <span class="kicker-pill kicker-marigold">ROUGH NOTES</span>
+            <div id="rough-notes" class="rough-notes-content"><p>tota is reading ur chart…</p></div>
+          </div>
+        </article>
+
+        <article class="preview-card preview-feature newspaper-article" id="career-preview-card">
+          <div class="preview-copy">
+            <figure class="preview-visual desk-tone-green"><img src="assets/desks/app/career-desk.png" alt="The Career Desk illustration" loading="lazy"><span class="desk-number">01</span><figcaption id="career-preview-caption">the first desk is already filing.</figcaption></figure>
+            <div class="preview-kicker-row"><span class="kicker-pill kicker-green">CAREER DESK · PREVIEW</span><span id="career-preview-time" class="read-time">1 min read</span></div>
+            <div id="career-preview" class="career-preview-content"><p>the career desk is filing its first note…</p></div>
+          </div>
+        </article>
+
+        <div class="edition-map newspaper-index">
+          <section class="unlock-callout" aria-labelledby="unlock-callout-title">
+            <span class="unlock-callout-lock" aria-hidden="true">🔒</span>
+            <div>
+              <p class="kicker">THE REST OF THE ISSUE</p>
+              <h3 id="unlock-callout-title">pay ₹99 to unlock the full reading.</h3>
+              <p>open all ten desk stories, with the receipts behind them.</p>
+            </div>
+          </section>
+          <div class="newspaper-section-rule"><span>CONTENTS</span><span>THE FULL ISSUE</span></div>
+          <p class="lead-para">Ten desks. One connected file.</p>
+          <p class="subtitle">The preview ends here. The paid edition unlocks the eight remaining desks.</p>
+          <div id="desk-preview-list" class="desk-preview-list" aria-label="The ten desks in the full Life Edition"></div>
+          <button id="unlock-button" class="pill-button" type="button">continue to unlock <span class="arrow">→</span></button>
+        </div>
+      </div>
+      <p id="partial-error" class="form-error" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- Screen 1: capture the WhatsApp number. Verification and checkout happen on the next screens. -->
+    <section data-screen="payment" hidden aria-labelledby="payment-title">
+      <button class="back-link" type="button" data-back="partial">← back to my preview</button>
+      <p class="kicker-pill kicker-marigold intro-kicker">UNLOCK THE PRIVATE FILE</p>
+      <h2 class="headline" id="payment-title">leave a handle,<br><mark>get the whole story.</mark></h2>
+      <p class="subtitle">Enter the WhatsApp number where Tota should send your full issue and your Razorpay payment receipt. You pay once; no sign-in is needed.</p>
+      <div class="ink-card payment-card">
+        <span class="kicker-pill kicker-ink pinned">DELIVERY ADDRESS</span>
+        <form id="contact-form" novalidate>
+          <label class="field-label" for="whatsapp">WHATSAPP NUMBER</label>
+          <div class="field phone-field"><span class="field-icon">✆</span><span class="phone-prefix" aria-hidden="true">+91</span><input id="whatsapp" inputmode="tel" autocomplete="tel-national" maxlength="16" placeholder="98765 43210"></div>
+          <p class="field-hint">we'll message a 6-digit code to this number on <strong>WhatsApp</strong></p>
+          <p id="contact-error" class="form-error" role="status" aria-live="polite"></p>
+          <button id="contact-submit" class="pill-button" type="submit">✆&nbsp; send my code <span class="arrow">→</span></button>
+          <button id="payment-retry" class="delivery-retry" type="button" hidden>try payment again <span class="arrow">↻</span></button>
+        </form>
+      </div>
+      <p class="fine">Your number is used for the full issue and the Razorpay payment receipt. Your birth details stay private.</p>
+    </section>
+
+    <!-- Screen 2: verify the code that landed on WhatsApp. -->
+    <section data-screen="otp" hidden aria-labelledby="otp-title">
+      <button class="back-link" type="button" data-back="payment">← edit number</button>
+      <p class="kicker-pill kicker-marigold intro-kicker">CHECK YOUR WHATSAPP</p>
+      <h2 class="headline" id="otp-title">a code has been<br><mark>dispatched.</mark></h2>
+      <p class="subtitle">sent to <strong id="otp-phone-display">your WhatsApp</strong> · check your chats, bestie</p>
+      <div class="ink-card payment-card">
+          <span class="kicker-pill kicker-ink pinned">VERIFICATION</span>
+          <form id="otp-form" novalidate>
+            <label class="field-label" id="otp-cells-label">6-DIGIT CODE</label>
+            <p id="otp-status" class="otp-status" role="status" aria-live="polite"></p>
+            <div class="otp-cells" role="group" aria-labelledby="otp-cells-label">
+              <input class="otp-cell" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" aria-label="Digit 1">
+              <input class="otp-cell" type="text" inputmode="numeric" maxlength="1" aria-label="Digit 2">
+              <input class="otp-cell" type="text" inputmode="numeric" maxlength="1" aria-label="Digit 3">
+              <input class="otp-cell" type="text" inputmode="numeric" maxlength="1" aria-label="Digit 4">
+              <input class="otp-cell" type="text" inputmode="numeric" maxlength="1" aria-label="Digit 5">
+              <input class="otp-cell" type="text" inputmode="numeric" maxlength="1" aria-label="Digit 6">
+            </div>
+            <p class="otp-resend-row">didn't get it? <button id="whatsapp-otp-resend" class="otp-resend" type="button" disabled>resend in 0:30</button></p>
+            <button id="whatsapp-otp-verify" class="pill-button" type="submit" disabled>confirm &amp; continue <span class="arrow">→</span></button>
+          </form>
+      </div>
+      <p class="otp-note">✦&nbsp; mercury's not in retrograde — this code will actually arrive</p>
+    </section>
+
+    <!-- App-compatible animated loading state. -->
+    <section data-screen="loader" hidden aria-live="polite" aria-busy="true">
+      <div class="loader-progress"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="loader-area">
+        <div class="tota-loader" aria-label="Tota is filing your reading">
+          <img class="tota-walk tota-lifted" src="assets/tota/loader-parrot.png" alt="">
+          <img class="tota-walk tota-planted" src="assets/tota/loader-parrot-planted.png" alt="">
+          <span class="music-note note-one">♪</span><span class="music-note note-two">♫</span>
+        </div>
+      </div>
+      <h2 id="loader-copy" class="headline loader-copy">warming up the cosmic newsroom…</h2>
+      <p class="loader-note">Tota is keeping the page warm while your stars come through.</p>
+      <p id="loader-error" class="form-error loader-error" role="alert" hidden></p>
+      <button id="loader-retry" class="pill-button loader-retry" type="button" hidden>try the reading again <span class="arrow">→</span></button>
+    </section>
+
+    <!-- Full paid edition. It is populated only after /verify returns verified=true. -->
+    <section data-screen="reading" class="newspaper-screen" hidden aria-labelledby="reading-title">
+      <div class="newspaper-page newspaper-page-full">
+        <header class="newspaper-masthead" aria-label="The Daily Tota">
+          <div class="masthead-top"><span>PRIVATE EDITION</span><span>THE LIFE EDITION</span><span>VOL. 01</span></div>
+          <div class="masthead-banner"><span class="masthead-title">THE DAILY TOTA</span><span class="masthead-parrot" aria-hidden="true">🦜</span></div>
+          <div class="masthead-dateline"><span>PERSONAL FILE · <span id="reading-name">U</span></span><span>FRESH FROM THE NEWSROOM</span><span>FULL ISSUE</span></div>
+        </header>
+
+        <div class="reading-hero full-hero">
+          <div class="reading-hero-copy">
+            <p class="kicker-pill kicker-ink intro-kicker">PRIVATE FILE · MADE FOR <span id="reading-name-hero">U</span></p>
+            <h2 class="headline" id="reading-title">tota found a few things<br><mark>worth telling u.</mark></h2>
+            <p id="reading-essence" class="subtitle"></p>
+            <div class="reading-metrics" aria-label="Life Edition contents"><span>10 desks</span><span>real receipts</span><span>no vague vibes</span></div>
+          </div>
+          <img class="screen-mascot reading-mascot" src="assets/tota/tota-exclusive-envelope.png" alt="Tota delivering a private reading">
+        </div>
+        <section class="reader-file" aria-labelledby="reader-file-title">
+          <div class="reader-file-heading">
+            <div>
+              <p class="kicker">THE CHART DESK · BIRTH RECORD</p>
+              <h3 id="reader-file-title">the file behind the story.</h3>
+            </div>
+            <span class="reader-file-stamp">ON RECORD</span>
+          </div>
+          <div class="reader-file-body">
+            <dl class="reader-facts">
+              <div><dt>DATE OF BIRTH</dt><dd id="reading-dob">—</dd></div>
+              <div><dt>BORN IN</dt><dd id="reading-place">—</dd></div>
+              <div><dt>TIME OF BIRTH</dt><dd id="reading-time">—</dd></div>
+            </dl>
+            <div class="mini-chart-wrap">
+              <div class="mini-chart-label"><span>YOUR CHART</span><span>SOUTH INDIAN · D-1</span></div>
+              <div id="reading-mini-chart" class="mini-chart" role="img" aria-label="A small South Indian birth chart"></div>
+            </div>
+          </div>
+        </section>
+        <div class="newspaper-section-rule"><span>THE LIFE EDITION</span><span>10 DESKS · 01 READER</span></div>
+        <div id="reading-desks" class="reading-desks"></div>
+        <div class="reading-actions">
+          <button id="download-pdf-button" class="pill-button" type="button">download my full PDF <span class="arrow">↓</span></button>
+          <p id="pdf-note" class="pdf-note" role="status" aria-live="polite"></p>
+          <p id="delivery-note" class="delivery-note" role="status" aria-live="polite"></p>
+          <button id="delivery-retry-button" class="delivery-retry" type="button" hidden>try WhatsApp delivery again <span class="arrow">↻</span></button>
+        </div>
+      </div>
+      <aside class="app-cta" aria-labelledby="app-cta-title">
+        <div class="app-cta-copy">
+          <p class="kicker-pill kicker-marigold app-cta-kicker">THE DAILY TOTA APP</p>
+          <h2 id="app-cta-title">one reading down.<br><mark>keep the newsroom open.</mark></h2>
+          <p>install the free app for a fresh reading every day, chart tools, and a little more tota in ur pocket.</p>
+          <a class="app-store-button" href="https://play.google.com/store/apps/details?id=app.asktota" target="_blank" rel="noopener" aria-label="Get the Ask Tota app on Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.9a1 1 0 0-.5.9v18.4a1 1 0 0 0 .5.9l10-10.1zM15 8.4 5.2 1.5l9.1 9.2zM5.2 22.5l9.8-6.9-.7-.7zM19.9 10.6l-3.3-1.9-2.2 2.2 2.2 2.2 3.3-1.9a1 1 0 0 0 0-1.6z" fill="currentColor"/></svg>
+            <span class="app-store-copy"><small>DOWNLOAD FREE ON</small><strong>Google Play</strong></span>
+            <span class="app-store-arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="app-cta-note"><span aria-hidden="true">✦</span> fresh daily reads · no new birth details needed</p>
+        </div>
+        <div class="app-cta-device" aria-label="Preview of the Ask Tota app showing the daily reading screen">
+          <span class="app-cta-device-label">FRESH TODAY</span>
+          <div class="app-cta-phone"><img src="assets/app-home.webp" alt="Ask Tota app showing daily readings"></div>
+          <span class="app-cta-sticker">YOUR DAILY TOTA</span>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Custom BirthPickerModal translation. Rows are generated by life-edition.js. -->
+  <div id="date-picker" class="picker-backdrop" hidden>
+    <div class="picker-sheet" role="dialog" aria-modal="true" aria-labelledby="date-picker-title">
+      <div class="picker-masthead"><span>BIRTH RECORD · PRIVATE</span><button type="button" class="picker-close" data-picker-cancel="date">close</button></div>
+      <h2 id="date-picker-title">when did it all begin?</h2><p class="picker-subtitle">tap a row in each column to set ur birthday.</p>
+      <div class="picker-grid date-grid"><div class="picker-unit"><span class="picker-unit-label">MONTH</span><div class="picker-column" data-unit="month" role="radiogroup" aria-label="Month"><div class="picker-rows"></div><select class="picker-select" aria-label="Month"></select></div></div><div class="picker-unit"><span class="picker-unit-label">DAY</span><div class="picker-column" data-unit="day" role="radiogroup" aria-label="Day"><div class="picker-rows"></div><select class="picker-select" aria-label="Day"></select></div></div><div class="picker-unit"><span class="picker-unit-label">YEAR</span><div class="picker-column" data-unit="year" role="radiogroup" aria-label="Year"><div class="picker-rows"></div><select class="picker-select" aria-label="Year"></select></div></div></div>
+      <div id="date-summary" class="picker-summary"><span class="summary-label">SELECTED</span><strong>choose a date</strong></div>
+      <div class="picker-actions"><button type="button" class="picker-cancel" data-picker-cancel="date">cancel</button><button type="button" class="pill-button" id="date-use">use this date <span class="arrow">→</span></button></div>
+    </div>
+  </div>
+
+  <div id="time-picker" class="picker-backdrop" hidden>
+    <div class="picker-sheet" role="dialog" aria-modal="true" aria-labelledby="time-picker-title">
+      <div class="picker-masthead"><span>BIRTH RECORD · PRIVATE</span><button type="button" class="picker-close" data-picker-cancel="time">close</button></div>
+      <h2 id="time-picker-title">what time was on the clock?</h2><p class="picker-subtitle">optional, but it makes the house desk sharper.</p>
+      <div class="picker-grid time-grid"><div class="picker-unit"><span class="picker-unit-label">HOUR</span><div class="picker-column" data-unit="hour" role="radiogroup" aria-label="Hour"><div class="picker-rows"></div><select class="picker-select" aria-label="Hour"></select></div></div><div class="time-colon">:</div><div class="picker-unit"><span class="picker-unit-label">MINUTE</span><div class="picker-column" data-unit="minute" role="radiogroup" aria-label="Minute"><div class="picker-rows"></div><select class="picker-select" aria-label="Minute"></select></div></div></div>
+      <div id="time-summary" class="picker-summary"><span class="summary-label">SELECTED</span><strong>12:00 · exact</strong></div>
+      <div class="picker-actions"><button type="button" class="picker-cancel" data-picker-cancel="time">cancel</button><button type="button" class="pill-button" id="time-use">use this time <span class="arrow">→</span></button></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var override = params.get('api');
+      if (override) { try { localStorage.setItem('asktota_api_url', override); } catch (e) {} }
+      try { override = localStorage.getItem('asktota_api_url') || override; } catch (e) {}
+      var local = false;
+      try { var parsed = new URL(override); local = parsed.protocol === 'http:' && ['localhost', '127.0.0.1'].includes(parsed.hostname); } catch (e) {}
+      if (override && (local || /^https:\/\//.test(override))) window.ASKTOTA_API_URL = override.replace(/\/$/, '');
+    }());
+  </script>
+  <script src="life-edition.js"></script>
+</body>
+</html>

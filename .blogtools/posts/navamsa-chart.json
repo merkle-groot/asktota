@@ -1,0 +1,29 @@
+{
+  "title": "Navamsa chart (D9) explained simply | Ask Tota",
+  "description": "The navamsa is your birth chart cut into ninths. It is the same sky at higher magnification, it shares its grid with the nakshatra padas, and it is the chart used for marriage.",
+  "og_title": "The navamsa chart, and why ur chart has a second one",
+  "og_description": "Every sign split into nine. 108 slices, the same 108 as the nakshatra padas. Here is what the D9 actually is and how to read it without inventing things.",
+  "h1": "the navamsa chart is ur chart at higher magnification",
+  "dek": "every sign cut into nine slices of 3 degrees 20 minutes. 108 slices in total, exactly the same 108 as the nakshatra padas. here is what the D9 really is, why marriage gets read from it, and the mistake almost everyone makes with it.",
+  "published": "2026-08-27",
+  "modified": "2026-09-08",
+  "byline_date": "AUGUST 27, 2026",
+  "read_time": "11 MIN READ",
+  "section": "Vedic astrology",
+  "kicker": "THE BLOG &middot; EXPLAINER",
+  "keywords": ["navamsa chart", "d9 chart", "navamsa", "divisional charts", "varga charts", "vargottama"],
+  "faq": [
+    {"q": "what is a navamsa chart?", "a": "it is ur birth chart redrawn after cutting every sign into nine equal slices of 3 degrees 20 minutes each. each graha moves to whichever sign its slice points to. nothing new is added, the same positions are just measured more finely."},
+    {"q": "why is it called d9?", "a": "because it is the ninth divisional chart. parashara describes sixteen of them, each cutting the signs into a different number of parts. the navamsa is the nine part one and by far the most used."},
+    {"q": "is the navamsa a separate chart?", "a": "no. it is the same sky at higher magnification. every navamsa position is derived from a rashi position, so the two can never actually disagree. if they seem to, one of them was calculated wrong."},
+    {"q": "why is navamsa used for marriage?", "a": "the number nine is tied to the 9th house, which covers dharma and good fortune, and the tradition treats the navamsa as the fruit a chart eventually produces. marriage reading is the most common use, though the classical texts use it more broadly than that."},
+    {"q": "what is vargottama?", "a": "a graha sitting in the same sign in both the rashi chart and the navamsa. it is read as unusually consistent and strong, because the placement holds up at both zoom levels."},
+    {"q": "does the navamsa need an exact birth time?", "a": "more than the rashi chart does. each navamsa slice is 3 degrees 20 minutes wide, so a placement near an edge can flip. the navamsa lagna is the most sensitive part of all, since it moves roughly every 13 minutes."},
+    {"q": "how do i calculate my navamsa by hand?", "a": "take a graha's degree in its sign, divide by 3 degrees 20 minutes and round down to get which of the nine slices it is in. then count that many signs from a starting sign: the same sign for movable signs, the 9th from it for fixed signs, the 5th from it for dual signs."},
+    {"q": "is navamsa the same as nakshatra pada?", "a": "the grid is identical. a nakshatra is 13 degrees 20 minutes and each of its four padas is 3 degrees 20 minutes, which is exactly one navamsa. 27 nakshatras times 4 padas is 108, and 12 signs times 9 is also 108."},
+    {"q": "can i read houses in the navamsa chart?", "a": "carefully. most classical use treats the navamsa as a strength check and a second view of the same grahas, not as a full independent set of life departments. reading D9 houses like D1 houses is the most common beginner mistake."},
+    {"q": "what does my navamsa lagna mean?", "a": "it is often described as what u grow into, or the register u settle into later in life, as opposed to the rashi lagna which is how u arrive. treat it as a second lens on the same person."},
+    {"q": "which divisional chart matters after navamsa?", "a": "in common practice, the dashamsa (D10) for career and the dwadashamsa (D12) for parents, with the trimsamsa (D30) for difficulties. the navamsa is used far more than all of them combined."},
+    {"q": "does a bad navamsa cancel a good birth chart?", "a": "no. neither chart overrules the other, because they are the same positions at two zoom levels. the tradition uses agreement between them as a strength signal and disagreement as a sign that something is mixed."}
+  ]
+}

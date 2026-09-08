@@ -31,12 +31,23 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): nineteen explainers on Vedic astrology, most with a working calculator.
+- [Blog](https://www.asktota.com/blog/): twenty-nine explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
+
+- [How to read your kundli, step by step](https://www.asktota.com/blog/how-to-read-kundli.html): a twelve step reading order: chart style, lagna, lagna lord, moon, occupancy, dignity, aspects, house lords, yogas, dasha, transits, synthesis.
+- [Your lagna matters more than your sun sign](https://www.asktota.com/blog/lagna-ascendant.html): the ascendant sets all twelve houses, changes about every two hours, and decides which grahas are functionally helpful for you.
+- [Rahu and Ketu, the two grahas that are not there](https://www.asktota.com/blog/rahu-ketu.html): the lunar nodes, always 180 degrees apart, always retrograde, one lap every 18.6 years.
+- [Kaal sarp dosha is a line in the sky, not a curse](https://www.asktota.com/blog/kaal-sarp-dosha.html): all seven grahas on one side of the Rahu-Ketu axis. Absent from the classical texts, and far more common than the word curse implies.
+- [The navamsa chart is your chart at higher magnification](https://www.asktota.com/blog/navamsa-chart.html): the D9, nine slices per sign, 108 in total, the same grid as the nakshatra padas.
+- [Raj yoga is a handshake between two houses](https://www.asktota.com/blog/raj-yoga.html): a kendra lord connected to a trikona lord, how common that is, and why a yoga does nothing until its dasha arrives.
+- [Saturn in your chart, minus the fear](https://www.asktota.com/blog/saturn-in-birth-chart.html): 2.5 years per sign, 29.5 years per lap, 19 years of dasha, and Saturn in each of the twelve houses.
+- [When will I get married](https://www.asktota.com/blog/marriage-timing.html): the 7th lord, Venus, the dasha and the Jupiter transit, and why the method produces windows rather than dates.
+- [Nadi dosha is one koota carrying eight points](https://www.asktota.com/blog/nadi-dosha.html): all 27 nakshatras assigned to their nadi, why about one couple in three fails it, and the classical exceptions.
+- [Gemstones by planet](https://www.asktota.com/blog/gemstones-by-planet.html): the full navaratna table, the two schools that disagree about who should wear what, the upratna substitutes, and how not to be overcharged.
 
 - [What Vedic astrology actually is, without the mystique](https://www.asktota.com/blog/what-is-vedic-astrology.html): what jyotish is: nine grahas, twelve houses, twenty-seven nakshatras, the sidereal zodiac, and an explicit line on where the evidence stops.
 - [Your kundli is a diagram, not a prophecy](https://www.asktota.com/blog/kundli.html): what a birth chart is, what the twelve boxes mean, why north and south Indian layouts look different, and how to read one in order.

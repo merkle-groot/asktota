@@ -31,12 +31,23 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): twenty-nine explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): thirty-nine explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
+
+- [Mercury retrograde: the actual mechanics](https://www.asktota.com/blog/mercury-retrograde-mechanics.html): apparent retrograde motion explained, the 2026 dates, shadow periods, and the classical position that a vakri graha gains cheshta bala.
+- [What Mercury retrograde actually correlates with](https://www.asktota.com/blog/mercury-retrograde-effects.html): the 18 percent base rate, the absence of evidence, and the frequency illusion.
+- [The retrograde post-shadow](https://www.asktota.com/blog/retrograde-post-shadow.html): the degrees crossed three times, and why the direct station is not a reset.
+- [What a muhurat is](https://www.asktota.com/blog/muhurat.html): 48 minutes, the panchang filter, rahu kaal arithmetic, abhijit, and fixed versus movable lagnas.
+- [Dhanteras inside Mercury retrograde](https://www.asktota.com/blog/dhanteras-mercury-retrograde.html): a muhurat is elective and a transit is not, plus the gold-buying checklist.
+- [Navratri: the nine nights](https://www.asktota.com/blog/navratri-nine-nights.html): the Navadurga in order, four navratris a year, tithi kshaya, and the modern origin of the colour chart.
+- [Amanta vs Purnimanta](https://www.asktota.com/blog/amanta-purnimanta.html): why the dark fortnight carries two month names, with the festival mapping and adhik maas.
+- [Mercury in your birth chart](https://www.asktota.com/blog/mercury-in-birth-chart.html): the 28 degree elongation limit, combustion, Budhaditya yoga's real frequency, and Budha house by house.
+- [How to pick a Vedic astrology app](https://www.asktota.com/blog/best-vedic-astrology-app-india.html): ten checks, three product categories, and where competitors beat Ask Tota.
+- [Free kundli online: what free actually means](https://www.asktota.com/blog/free-kundli-online.html): the four business models, what birth data is worth, and why two free charts disagree.
 
 - [How to read your kundli, step by step](https://www.asktota.com/blog/how-to-read-kundli.html): a twelve step reading order: chart style, lagna, lagna lord, moon, occupancy, dignity, aspects, house lords, yogas, dasha, transits, synthesis.
 - [Your lagna matters more than your sun sign](https://www.asktota.com/blog/lagna-ascendant.html): the ascendant sets all twelve houses, changes about every two hours, and decides which grahas are functionally helpful for you.

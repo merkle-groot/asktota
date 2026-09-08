@@ -1,0 +1,47 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#222; }
+  .story { position:relative; width:1080px; height:1920px;
+           background:url('base.png') no-repeat center/1080px 1920px; overflow:hidden; }
+  .hd { position:absolute; left:170px; width:790px; }
+  .line { font-family:'Bricolage Grotesque', sans-serif; font-weight:800;
+          letter-spacing:-0.025em; color:#1E3A2A; white-space:nowrap; }
+  .hl { background:#FFD24A; box-decoration-break:clone; -webkit-box-decoration-break:clone;
+        padding:2px 14px; margin-left:-14px; }
+</style></head><body>
+<section class="story" id="s-what-is-vedic-astrology"><div class="hd" data-top="405"><div class="line"><span>vedic astrology,</span></div><div class="line"><span>minus the</span></div><div class="line"><span class="hl">mystique</span></div></div></section>
+<section class="story" id="s-kundli"><div class="hd" data-top="405"><div class="line"><span>ur kundli is a</span></div><div class="line"><span>diagram,</span></div><div class="line"><span class="hl">not a prophecy</span></div></div></section>
+<section class="story" id="s-12-houses"><div class="hd" data-top="469"><div class="line"><span>the 12 houses,</span></div><div class="line"><span class="hl">one at a time</span></div></div></section>
+<section class="story" id="s-nine-planets"><div class="hd" data-top="469"><div class="line"><span>9 grahas.</span></div><div class="line"><span class="hl">no pluto.</span></div></div></section>
+<section class="story" id="s-zodiac-signs"><div class="hd" data-top="469"><div class="line"><span>ur rashi</span></div><div class="line"><span class="hl">probably moved</span></div></div></section>
+<section class="story" id="s-vedic-vs-western-astrology"><div class="hd" data-top="405"><div class="line"><span>vedic vs</span></div><div class="line"><span class="hl">western</span></div><div class="line"><span>astrology</span></div></div></section>
+<section class="story" id="s-nakshatra"><div class="hd" data-top="469"><div class="line"><span>27 nakshatras,</span></div><div class="line"><span class="hl">ranked by mess</span></div></div></section>
+<section class="story" id="s-panchang"><div class="hd" data-top="405"><div class="line"><span>the panchang is</span></div><div class="line"><span>5 numbers,</span></div><div class="line"><span class="hl">not a mood</span></div></div></section>
+<section class="story" id="s-ashtakoota-compatibility"><div class="hd" data-top="469"><div class="line"><span>how 36 gunas</span></div><div class="line"><span class="hl">actually work</span></div></div></section>
+<section class="story" id="s-manglik-dosha"><div class="hd" data-top="405"><div class="line"><span>manglik is a</span></div><div class="line"><span>house number,</span></div><div class="line"><span class="hl">not a sentence</span></div></div></section>
+<section class="story" id="s-career-10th-house"><div class="hd" data-top="469"><div class="line"><span>ur career house,</span></div><div class="line"><span class="hl">read properly</span></div></div></section>
+<section class="story" id="s-angel-numbers"><div class="hd" data-top="469"><div class="line"><span>why u keep</span></div><div class="line"><span class="hl">seeing 11:11</span></div></div></section>
+<section class="story" id="s-festival-dates"><div class="hd" data-top="469"><div class="line"><span>why diwali</span></div><div class="line"><span class="hl">moves every year</span></div></div></section>
+<script>
+// The card is fixed width, so shrink the type until the longest line fits,
+// then re-centre the block on the original three-line baseline.
+document.fonts.ready.then(() => {
+  document.querySelectorAll('.hd').forEach(hd => {
+    let size = 96;
+    const lines = [...hd.querySelectorAll('.line')];
+    const fit = () => {
+      lines.forEach(l => { l.style.fontSize = size + 'px'; l.style.lineHeight = Math.round(size*1.323) + 'px'; });
+      return Math.max(...lines.map(l => l.firstChild.getBoundingClientRect().width));
+    };
+    while (fit() > 800 && size > 58) size -= 2;
+    const lh = Math.round(size * 1.323);
+    hd.style.top = (Number(hd.dataset.top) + (127 - lh) * (lines.length - 1) / 2) + 'px';
+  });
+  document.body.dataset.ready = '1';
+});
+</script>
+</body></html>

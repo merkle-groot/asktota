@@ -4,7 +4,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
 <style>
   :root{ --bg:#FBF3E0; --dot:#E8DCC2; --ink:#1E3A2A; --cream:#FBF3E0;
-         --marigold:#FFD24A; --muted:#5E6E5E; --mint:#DFF2E4; }
+         --marigold:#FFD24A; --muted:#5E6E5E; }
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
   #stage{position:relative;width:1080px;height:1920px;overflow:hidden;
@@ -12,41 +12,57 @@
     background-image:radial-gradient(var(--dot) 3px, transparent 3.5px);
     background-size:50px 50px;}
 
-  .masthead{position:absolute;left:48px;top:150px;width:984px;height:158px;
+  .masthead{position:absolute;left:48px;top:150px;width:984px;height:150px;
     background:var(--ink);display:flex;align-items:center;justify-content:center;
     box-shadow:14px 14px 0 rgba(30,58,42,.28);}
-  .masthead span{color:var(--cream);font-weight:800;font-size:58px;
+  .masthead span{color:var(--cream);font-weight:800;font-size:56px;
     letter-spacing:.16em;text-transform:uppercase;}
 
-  .hl{position:absolute;left:96px;width:900px;}
-  .l{font-weight:800;font-size:152px;line-height:158px;letter-spacing:-.03em;
+  .phase{position:absolute;left:96px;width:900px;top:520px;}
+  .eyebrow{font-weight:700;font-size:52px;letter-spacing:.02em;color:var(--muted);
+    margin-bottom:22px;text-transform:lowercase;}
+  .l{font-weight:800;font-size:118px;line-height:128px;letter-spacing:-.025em;
      text-transform:uppercase;color:var(--ink);position:relative;white-space:nowrap;}
-  .l .wipe{position:absolute;left:-18px;top:14px;bottom:18px;background:var(--marigold);
-     transform-origin:left center;}
+  .l .wipe{position:absolute;left:-16px;top:12px;bottom:14px;width:100%;
+     background:var(--marigold);transform-origin:left center;}
   .l i{font-style:normal;position:relative;z-index:2;}
 
-  .sub{position:absolute;left:96px;width:900px;font-weight:500;font-size:46px;
-    line-height:60px;color:var(--muted);}
-
-  .cta{position:absolute;left:96px;display:inline-flex;align-items:center;gap:22px;
-    background:var(--cream);border:6px solid var(--ink);border-radius:22px;
-    padding:26px 44px;}
+  .sub{position:absolute;left:96px;top:1010px;width:880px;font-weight:500;font-size:44px;
+    line-height:58px;color:var(--muted);}
+  .cta{position:absolute;left:96px;top:1160px;display:inline-flex;align-items:center;gap:22px;
+    background:var(--cream);border:6px solid var(--ink);border-radius:22px;padding:26px 44px;}
   .cta span{font-weight:800;font-size:46px;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)}
   .cta svg{width:52px;height:52px;fill:var(--ink)}
 
-  .tota{position:absolute;right:-40px;width:640px;}
+  .tota{position:absolute;right:-56px;width:560px;}
   .foot{position:absolute;left:96px;bottom:96px;font-weight:700;font-size:44px;
     letter-spacing:.14em;text-transform:uppercase;color:var(--ink);}
   .hidden{visibility:hidden}
 </style></head><body>
 <div id="stage">
   <div class="masthead" id="mast"><span>the daily tota</span></div>
-  <div class="hl" id="head" style="top:560px">
-    <div class="l" id="l1">we're on</div>
-    <div class="l" id="l2"><div class="wipe" id="wipe"></div><i>android</i></div>
+
+  <div class="phase" id="p1">
+    <div class="eyebrow">worried about</div>
+    <div class="l">when will i</div>
+    <div class="l">get married</div>
   </div>
-  <div class="sub" id="sub" style="top:930px">the astrology app that reads ur actual birth chart, not ur sun sign.</div>
-  <div class="cta" id="cta" style="top:1120px">
+
+  <div class="phase" id="p2">
+    <div class="eyebrow">or whether</div>
+    <div class="l">kaal sarp</div>
+    <div class="l">dosh is real</div>
+  </div>
+
+  <div class="phase" id="p3">
+    <div class="eyebrow">good news:</div>
+    <div class="l">ur astrology</div>
+    <div class="l">bestie is on</div>
+    <div class="l"><div class="wipe" id="wipe"></div><i>android</i></div>
+  </div>
+
+  <div class="sub" id="sub">reads ur actual birth chart. not ur sun sign.</div>
+  <div class="cta" id="cta">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.9a1 1 0 0 0-.5.9v18.4a1 1 0 0 0 .5.9l10-10.1zM15 8.4 5.2 1.5l9.1 9.2zM5.2 22.5l9.8-6.9-.7-.7zM19.9 10.6l-3.3-1.9-2.2 2.2 2.2 2.2 3.3-1.9a1 1 0 0 0 0-1.6z"/></svg>
     <span>free on google play</span>
   </div>
@@ -56,45 +72,38 @@
 <script>
 const $=id=>document.getElementById(id);
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
-// linear progress across [a,b]
 const p=(f,a,b)=>clamp((f-a)/(b-a),0,1);
+// cut points, chosen to land on the voiceover
+const P2=47, P3=108, CTA=166, PRESS=172, FOOT=180, END=210;
 
 function render(f){
-  // 1. masthead: snaps down from above, 4px overshoot, hard settle. no fade.
-  let my;
-  if(f<5)       my = -320 + (324*p(f,0,4));      // -320 -> +4
-  else if(f<8)  my = 4 - 4*p(f,5,7);             // +4 -> 0  (the 4px settle)
-  else          my = 0;
-  $('mast').style.transform = `translateY(${my}px)`;
-  $('mast').style.boxShadow = f<5 ? '14px 14px 0 rgba(30,58,42,.28)' : '14px 14px 0 rgba(30,58,42,.28)';
+  // masthead snaps down, 4px settle, then holds for the whole reel
+  let my = f<4 ? -320+324*p(f,0,3) : (f<7 ? 4-4*p(f,4,6) : 0);
+  $('mast').style.transform=`translateY(${my}px)`;
 
-  // 2. headline: hard cuts, never fades
-  $('l1').classList.toggle('hidden', f<10);
-  $('l2').classList.toggle('hidden', f<16);
+  // three hard-cut phases. never a fade.
+  $('p1').classList.toggle('hidden', !(f>=2  && f<P2));
+  $('p2').classList.toggle('hidden', !(f>=P2 && f<P3));
+  $('p3').classList.toggle('hidden', f<P3);
 
-  // 3. marigold highlight wipes left to right in ~180ms (5.4 frames)
-  const w=$('wipe'); const wp=p(f,20,25);
-  w.style.width='100%'; w.style.transform=`scaleX(${wp})`;
-  w.style.visibility = f<20 ? 'hidden' : 'visible';
+  // marigold wipes left to right in 180ms once "android" is up
+  const w=$('wipe'), wp=p(f,P3+43,P3+49);
+  w.style.transform=`scaleX(${wp})`;
+  w.style.visibility = f<P3+43 ? 'hidden' : 'visible';
 
-  // 4. subhead + cta, hard cuts
-  $('sub').classList.toggle('hidden', f<30);
-  $('cta').classList.toggle('hidden', f<42);
+  $('sub').classList.toggle('hidden', f<P3+20);
+  $('cta').classList.toggle('hidden', f<CTA);
+  const pressed = f>=PRESS && f<PRESS+4;
+  $('cta').style.transform = pressed?'translateY(4px)':'translateY(0)';
+  $('cta').style.boxShadow = pressed?'4px 4px 0 var(--ink)':'10px 10px 0 var(--ink)';
 
-  // 5. the press: 4px down, shadow collapses, held 4 frames
-  const pressed = f>=60 && f<64;
-  $('cta').style.transform = pressed ? 'translateY(4px)' : 'translateY(0)';
-  $('cta').style.boxShadow = pressed ? '4px 4px 0 var(--ink)' : '10px 10px 0 var(--ink)';
+  // tota rides up on the good-news cut, then bobs
+  const slide=p(f,P3,P3+10);
+  const bob = f>P3+10 ? Math.sin((f-P3-10)/37.5*Math.PI*2)*4 : 0;
+  $('tota').style.bottom = (-580+580*slide+bob)+'px';
 
-  // 6. tota slides up from the bottom, then bobs +/-4px over 1250ms (37.5f)
-  const slide = p(f,66,76);
-  const bob = f>76 ? Math.sin((f-76)/37.5*Math.PI*2)*4 : 0;
-  $('tota').style.bottom = (-660 + 660*slide + bob) + 'px';
-
-  // 7. footer kicker
-  $('foot').classList.toggle('hidden', f<84);
+  $('foot').classList.toggle('hidden', f<FOOT);
 }
-render(0);
-window.render=render;
+render(0); window.render=render; window.TOTAL=END;
 </script>
 </body></html>

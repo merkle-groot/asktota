@@ -1055,5 +1055,1106 @@
     "eyebrow": "one more thing"
    }
   ]
+ },
+ "mercury-mechanics": {
+  "date": "wed, 21 oct",
+  "ground": "mint",
+  "slides": [
+   {
+    "h": "mercury isn't moving backwards. ~~u are.~~",
+    "save": "save this before ur group chat starts blaming budha again",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "retro",
+      "b": "88 days",
+      "s": "mercury's whole orbit",
+      "cap": "the speed"
+     },
+     {
+      "tone": "marigold",
+      "b": "116 days",
+      "s": "between each lap of earth",
+      "cap": "the cycle"
+     },
+     {
+      "tone": "pink",
+      "b": "3x a year",
+      "s": "about 3 weeks each",
+      "cap": "the window"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "it has **never** reversed. not once.",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "retro",
+      "b": "same direction",
+      "s": "as every planet, always",
+      "cap": "the orbit"
+     },
+     {
+      "tone": "mint",
+      "b": "no braking",
+      "s": "no stopping, no turning",
+      "cap": "the truth"
+     },
+     {
+      "tone": "card",
+      "b": "apparent",
+      "s": "the word doing all the work",
+      "cap": "the term"
+     }
+    ],
+    "copy": "the astronomy term is **apparent retrograde motion**. the word apparent carries the entire sentence and it never survives the trip to instagram."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "ur in the ++outside lane++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "u = earth",
+      "s": "outside lane, slower",
+      "cap": "car one"
+     },
+     {
+      "tone": "mint",
+      "b": "mercury",
+      "s": "inside lane, faster",
+      "cap": "car two"
+     },
+     {
+      "tone": "card",
+      "b": "the buildings",
+      "s": "are the fixed stars",
+      "cap": "the background"
+     }
+    ],
+    "copy": "as mercury pulls ahead, watch where it sits against the buildings on the far side. for a stretch it slides **backwards across them**, while both cars go forwards the whole time."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "it draws a **loop** in the sky",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "retro",
+      "b": "7° tilt",
+      "s": "so it doesn't retrace a line",
+      "cap": "the geometry"
+     },
+     {
+      "tone": "pink",
+      "b": "a loop",
+      "s": "plotted for 2000 years",
+      "cap": "the shape"
+     },
+     {
+      "tone": "card",
+      "b": "the clue",
+      "s": "that broke the old model",
+      "cap": "the history"
+     }
+    ],
+    "copy": "these loops were so awkward to explain that they eventually forced the earth-centred model out. **retrograde motion is not a glitch. it is the evidence that solved the sky.**"
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "18% of every year. ++forever.++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "60-65 days",
+      "s": "a year, every year",
+      "cap": "the total"
+     },
+     {
+      "tone": "marigold",
+      "b": "1 day in 5",
+      "s": "for every person alive",
+      "cap": "the share"
+     },
+     {
+      "tone": "card",
+      "b": "24 oct",
+      "s": "to 13 nov, in 2026",
+      "cap": "this year"
+     }
+    ],
+    "copy": "a condition true for one day in five, every year, for everybody, is not an event. **it is a background.**"
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "and vedic astrology calls it **strong**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "vakri",
+      "s": "the sanskrit for retrograde",
+      "cap": "the word"
+     },
+     {
+      "tone": "mint",
+      "b": "cheshta bala",
+      "s": "motional strength, 1 of the 6",
+      "cap": "the scoring"
+     },
+     {
+      "tone": "card",
+      "b": "not broken",
+      "s": "insistent. repeating. strong.",
+      "cap": "the reading"
+     }
+    ],
+    "copy": "a retrograde graha gains cheshta bala in shadbala. **the tradition being quoted at u scores this as strength.** the three week panic is a modern import from somewhere else entirely."
+   },
+   {
+    "quote": {
+     "q": "saturn is retrograde ~~4 and a half months a year~~",
+     "attrib": "and nobody has ever cancelled anything over it"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "the whole thing, **with the geometry**",
+     "p": "free on the blog. dates, stations, shadows.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
+ },
+ "dhanteras": {
+  "date": "wed, 4 nov",
+  "ground": "marigold",
+  "slides": [
+   {
+    "h": "dhanteras is inside ~~mercury retrograde~~",
+    "save": "send this to whoever is about to tell u not to buy anything",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "6 nov",
+      "s": "dhanteras 2026",
+      "cap": "the day"
+     },
+     {
+      "tone": "mint",
+      "d": "retro",
+      "b": "24 oct - 13 nov",
+      "s": "mercury retrograde",
+      "cap": "the window"
+     },
+     {
+      "tone": "pink",
+      "b": "8 nov",
+      "s": "diwali, also inside",
+      "cap": "and also"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "a **muhurat** and a **transit** are different things",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "muhurat",
+      "s": "a time u choose",
+      "cap": "elective"
+     },
+     {
+      "tone": "marigold",
+      "b": "transit",
+      "s": "a condition nobody chose",
+      "cap": "gochar"
+     },
+     {
+      "tone": "card",
+      "b": "8 billion",
+      "s": "people, same transit, same second",
+      "cap": "the scale"
+     }
+    ],
+    "copy": "one is a decision about when to act. the other is the weather. **a forecast has never cancelled a wedding by itself.**"
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "and u ++cannot move++ dhanteras anyway",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "trayodashi",
+      "s": "the 13th tithi of the dark fortnight",
+      "cap": "what fixes it"
+     },
+     {
+      "tone": "pink",
+      "b": "nobody picks it",
+      "s": "the moon does",
+      "cap": "who chooses"
+     },
+     {
+      "tone": "card",
+      "b": "so 'postpone'",
+      "s": "means skip the festival",
+      "cap": "the problem"
+     }
+    ],
+    "copy": "the standard retrograde advice is postpone. that assumes a movable date. **a tithi is not movable**, so applied here the advice says skip dhanteras, and nobody actually means that."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "no classical text **says this**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "muhurta checks",
+      "s": "tithi, nakshatra, yoga, karana, lagna",
+      "cap": "what it weighs"
+     },
+     {
+      "tone": "marigold",
+      "b": "not in there",
+      "s": "a ban on trade during vakri",
+      "cap": "what it doesn't"
+     },
+     {
+      "tone": "card",
+      "b": "20th century",
+      "s": "and from a different tradition",
+      "cap": "the origin"
+     }
+    ],
+    "copy": "muhurta genuinely does look at planets. what it has never contained is a rule that a vakri graha suspends commerce for three weeks. **that arrived recently, from somewhere else.**"
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "this happens **one year in five**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "18%",
+      "s": "of the calendar is retrograde",
+      "cap": "the base rate"
+     },
+     {
+      "tone": "mint",
+      "b": "~1 in 5",
+      "s": "chance any date lands inside",
+      "cap": "the odds"
+     },
+     {
+      "tone": "card",
+      "b": "it has",
+      "s": "happened before. repeatedly.",
+      "cap": "and"
+     }
+    ],
+    "copy": "drop any fixed date on the calendar at random and it falls inside a retrograde about 18 percent of the time. **that is a coincidence with a known frequency, not an omen.**"
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "so: buy the thing. ++keep the receipt.++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "BIS + HUID",
+      "s": "check it in the BIS Care app",
+      "cap": "gold"
+     },
+     {
+      "tone": "marigold",
+      "b": "making charges",
+      "s": "as a separate line, always",
+      "cap": "the bill"
+     },
+     {
+      "tone": "card",
+      "b": "warranty",
+      "s": "photographed. return window checked.",
+      "cap": "everything else"
+     }
+    ],
+    "copy": "retrograde asks for review, not avoidance. so do the review properly: hallmark, purity, making charges, buyback terms, and a GST invoice **with ur name on it**."
+   },
+   {
+    "quote": {
+     "q": "a muhurat and a transit are ~~not the same kind of thing~~",
+     "attrib": "that's it, that's the whole post"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "the full argument, **plus the checklist**",
+     "p": "free on the blog. no puja, no upsell.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
+ },
+ "navratri": {
+  "date": "wed, 7 oct",
+  "ground": "pink",
+  "slides": [
+   {
+    "h": "nine nights, nine forms, **one moving date**",
+    "save": "save this, u will be asked which night is which",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "navratri",
+      "b": "9 nights",
+      "cap": "navadurga"
+     },
+     {
+      "tone": "marigold",
+      "d": "tithi",
+      "b": "tithi-set",
+      "s": "so the date moves",
+      "cap": "the calendar"
+     },
+     {
+      "tone": "mint",
+      "b": "4 a year",
+      "s": "not one",
+      "cap": "the surprise"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "nights **one to three**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "shailaputri",
+      "s": "daughter of the mountain. beginnings.",
+      "cap": "night 1"
+     },
+     {
+      "tone": "marigold",
+      "b": "brahmacharini",
+      "s": "austerity. holding a resolve.",
+      "cap": "night 2"
+     },
+     {
+      "tone": "card",
+      "b": "chandraghanta",
+      "s": "courage, and the calm in it.",
+      "cap": "night 3"
+     }
+    ],
+    "copy": "the order is a narrative, not a list. it opens **grounded**, then builds discipline, then finds nerve. somebody designed this."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "nights **four to six**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "kushmanda",
+      "s": "the cosmic egg. the spark.",
+      "cap": "night 4"
+     },
+     {
+      "tone": "pink",
+      "b": "skandamata",
+      "s": "nurture, and the fierceness in it.",
+      "cap": "night 5"
+     },
+     {
+      "tone": "card",
+      "b": "katyayani",
+      "s": "the warrior. resolve turned outward.",
+      "cap": "night 6"
+     }
+    ],
+    "copy": "the middle three turn from inward practice to **outward force**. by the sixth night the form is armed."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "nights **seven to nine**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "kalaratri",
+      "s": "the dark night. the fiercest form.",
+      "cap": "night 7"
+     },
+     {
+      "tone": "mint",
+      "b": "mahagauri",
+      "s": "clarity, right after it",
+      "cap": "night 8"
+     },
+     {
+      "tone": "card",
+      "b": "siddhidatri",
+      "s": "completion. what it was all for.",
+      "cap": "night 9"
+     }
+    ],
+    "copy": "the hardest night comes **seventh**, and the relief comes eighth. then dashami, the tenth day, which is dussehra and one of the best days of the year to begin something."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "there are **four** navratris a year",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "chaitra",
+      "s": "spring. ends in rama navami.",
+      "cap": "widely kept"
+     },
+     {
+      "tone": "pink",
+      "b": "sharad",
+      "s": "autumn. the biggest one.",
+      "cap": "widely kept"
+     },
+     {
+      "tone": "card",
+      "b": "gupt x2",
+      "s": "magha and ashadha. hidden.",
+      "cap": "quietly kept"
+     }
+    ],
+    "copy": "four observances, roughly at the quarter points of the year. **that is a structure, not a coincidence**, and it gets lost when only the loudest one is visible."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "and the ++colour chart++ is modern",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "not classical",
+      "s": "no text prescribes nine colours",
+      "cap": "honestly"
+     },
+     {
+      "tone": "marigold",
+      "b": "newspapers",
+      "s": "western india, recent decades",
+      "cap": "where from"
+     },
+     {
+      "tone": "card",
+      "b": "still real",
+      "s": "millions coordinate by it now",
+      "cap": "and"
+     }
+    ],
+    "copy": "a custom that is forty years old is not lesser than one that is four hundred. **just don't call it ancient** and it loses none of its charm."
+   },
+   {
+    "quote": {
+     "q": "the hardest night comes ~~seventh~~. the relief comes eighth.",
+     "attrib": "somebody thought about the order"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "all nine, **properly**",
+     "p": "plus tithi kshaya, and why it's sometimes 8 days.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
+ },
+ "mercury-effects": {
+  "date": "wed, 28 oct",
+  "ground": "paper",
+  "slides": [
+   {
+    "h": "18% of ur life is ~~mercury retrograde~~",
+    "save": "screenshot this for the next time someone blames budha",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "retro",
+      "b": "1 day in 5",
+      "s": "every year, for everyone",
+      "cap": "the base rate"
+     },
+     {
+      "tone": "marigold",
+      "b": "0 studies",
+      "s": "showing any effect",
+      "cap": "the evidence"
+     },
+     {
+      "tone": "pink",
+      "b": "2 biases",
+      "s": "doing all the work",
+      "cap": "the reason"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "a fifth of everything **already** happens then",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "the bad stuff",
+      "s": "18% of it lands in a window",
+      "cap": "filed"
+     },
+     {
+      "tone": "marigold",
+      "b": "the good stuff",
+      "s": "also 18%. same weeks.",
+      "cap": "not filed"
+     },
+     {
+      "tone": "card",
+      "b": "the label",
+      "s": "only has a slot for one kind",
+      "cap": "the catch"
+     }
+    ],
+    "copy": "u have had promotions, first dates and safe flights during mercury retrograde in **exactly the same proportion**. none of them got filed, because the label has one slot."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the **frequency illusion**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "learn a word",
+      "s": "see it 3 times that week",
+      "cap": "the effect"
+     },
+     {
+      "tone": "pink",
+      "b": "nothing changed",
+      "s": "except ur attention",
+      "cap": "the truth"
+     },
+     {
+      "tone": "card",
+      "b": "works on",
+      "s": "full moons, friday 13th, anything",
+      "cap": "any label"
+     }
+    ],
+    "copy": "also called baader-meinhof. once u know a window is open, **every dropped call becomes evidence** and every call that connected becomes nothing."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "“don't sign anything” is ++a quarter of ur life++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "18%",
+      "s": "retrograde alone",
+      "cap": "just the window"
+     },
+     {
+      "tone": "marigold",
+      "b": "32%",
+      "s": "adding the post-shadow",
+      "cap": "as usually given"
+     },
+     {
+      "tone": "card",
+      "b": "45%",
+      "s": "adding the pre-shadow too",
+      "cap": "the full advice"
+     }
+    ],
+    "copy": "at the bottom of that column, nearly half the year is under caution. **no working tradition ever asked people to stop living for half their life**, and nobody repeating it actually does."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "what the tradition **actually** says",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "things break",
+      "s": "the popular version",
+      "cap": "vs"
+     },
+     {
+      "tone": "mint",
+      "b": "things return",
+      "s": "the classical reading",
+      "cap": "vs"
+     },
+     {
+      "tone": "card",
+      "b": "vakri = strong",
+      "s": "cheshta bala, in shadbala",
+      "cap": "the receipt"
+     }
+    ],
+    "copy": "budha still rules speech, contracts and exchange. what retrograde changes is the **manner**: repeated, revisited, gone over again. that is genuinely different from disaster."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "the one honest use",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "read it twice",
+      "s": "the contract. that's it.",
+      "cap": "do"
+     },
+     {
+      "tone": "mint",
+      "b": "back it up",
+      "s": "good advice in every week",
+      "cap": "do"
+     },
+     {
+      "tone": "card",
+      "b": "don't postpone",
+      "s": "a fifth of the year is too much life",
+      "cap": "don't"
+     }
+    ],
+    "copy": "three times a year a date arrives that reminds a lot of people to be careful with paperwork. **that is a free, culturally enforced QA window.** keep that version."
+   },
+   {
+    "quote": {
+     "q": "count what went ~~right~~ too",
+     "attrib": "the most persuasive experiment u will ever run"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "the base rate, **with the maths**",
+     "p": "free on the blog. no remedy at the end.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
+ },
+ "post-shadow": {
+  "date": "wed, 11 nov",
+  "ground": "mint",
+  "slides": [
+   {
+    "h": "the retrograde ended. why does ~~nothing feel finished?~~",
+    "save": "save this for around the 13th, u will need it",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "retro",
+      "b": "3 passes",
+      "s": "over the same degrees",
+      "cap": "the shadow"
+     },
+     {
+      "tone": "marigold",
+      "b": "13 nov",
+      "s": "mercury stations direct",
+      "cap": "the 'end'"
+     },
+     {
+      "tone": "pink",
+      "b": "~30 nov",
+      "s": "when it actually clears",
+      "cap": "the real end"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "paper",
+    "h": "a retrograde **re-walks** old ground",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "forwards",
+      "s": "first pass. the pre-shadow.",
+      "cap": "pass 1"
+     },
+     {
+      "tone": "marigold",
+      "b": "backwards",
+      "s": "the retrograde itself",
+      "cap": "pass 2"
+     },
+     {
+      "tone": "card",
+      "b": "forwards",
+      "s": "again. the post-shadow.",
+      "cap": "pass 3"
+     }
+    ],
+    "copy": "say it stations retrograde at 20° and turns around at 5°. **that fifteen degrees gets crossed three times**, and the retrograde is only the middle third of it."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "so the direct station is ++not a reset++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "13 nov",
+      "s": "mercury turns around",
+      "cap": "what happens"
+     },
+     {
+      "tone": "pink",
+      "b": "15°",
+      "s": "still to re-cover",
+      "cap": "what remains"
+     },
+     {
+      "tone": "card",
+      "b": "2-3 weeks",
+      "s": "before it reaches new sky",
+      "cap": "how long"
+     }
+    ],
+    "copy": "on the day everyone posts the celebration graphic, mercury still has fifteen degrees to walk before it is anywhere **it has not already been twice**."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "and the shadow idea is **modern**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "vakri",
+      "s": "retrograde",
+      "cap": "vedic term"
+     },
+     {
+      "tone": "mint",
+      "b": "atichari",
+      "s": "fast moving",
+      "cap": "vedic term"
+     },
+     {
+      "tone": "card",
+      "b": "no shadow",
+      "s": "no 3-phase model in the texts",
+      "cap": "vedic term"
+     }
+    ],
+    "copy": "the geometry is real and the three-pass framing is reasonable. **it just isn't something parashara wrote down**, and it usually arrives with the word ancient attached."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "why nothing feels finished, honestly",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "3 weeks",
+      "s": "of deferred admin",
+      "cap": "reason one"
+     },
+     {
+      "tone": "pink",
+      "b": "an expectation",
+      "s": "of relief that wasn't met",
+      "cap": "reason two"
+     },
+     {
+      "tone": "card",
+      "b": "neither",
+      "s": "needs the sky",
+      "cap": "note"
+     }
+    ],
+    "copy": "if u actually postponed things for three weeks, u now have three weeks of backlog. **that is arithmetic.** and an unmet expectation of relief reads as being stuck even when nothing is."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "use it to ++close the loops++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "finish it",
+      "s": "whatever came back round",
+      "cap": "do"
+     },
+     {
+      "tone": "marigold",
+      "b": "send it",
+      "s": "the follow-up u drafted",
+      "cap": "do"
+     },
+     {
+      "tone": "card",
+      "b": "stop",
+      "s": "starting a new caution",
+      "cap": "don't"
+     }
+    ],
+    "copy": "when the post-shadow ends the next pre-shadow is not far away. **this can absorb an entire year if u let it.**"
+   },
+   {
+    "quote": {
+     "q": "if following it fully would be ~~absurd~~",
+     "attrib": "then nobody is following it fully"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "the shadows, **with the degrees**",
+     "p": "free on the blog. plus the full 2026 dates.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
+ },
+ "amanta-purnimanta": {
+  "date": "wed, 14 oct",
+  "ground": "stock",
+  "slides": [
+   {
+    "h": "why ur festival is on ~~a different day~~ from ur cousin's",
+    "save": "send this to the family group before the next argument",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "amanta",
+      "s": "month ends at the new moon",
+      "cap": "south + west"
+     },
+     {
+      "tone": "marigold",
+      "d": "tithi",
+      "b": "purnimanta",
+      "s": "month ends at the full moon",
+      "cap": "north"
+     },
+     {
+      "tone": "pink",
+      "b": "same night",
+      "s": "different month name",
+      "cap": "the result"
+     },
+     {
+      "tone": "mint",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "a circle has **no natural start**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "29.5 days",
+      "s": "one full lunar cycle",
+      "cap": "the month"
+     },
+     {
+      "tone": "marigold",
+      "b": "cut at new",
+      "s": "= amanta",
+      "cap": "option one"
+     },
+     {
+      "tone": "card",
+      "b": "cut at full",
+      "s": "= purnimanta",
+      "cap": "option two"
+     }
+    ],
+    "copy": "two conventions put the scissors in different places. **that is the entire disagreement**, and it has been running for over a thousand years."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "only the ++dark fortnight++ shifts",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "shukla",
+      "s": "same month name in both",
+      "cap": "bright half"
+     },
+     {
+      "tone": "pink",
+      "b": "krishna",
+      "s": "shifts by one month name",
+      "cap": "dark half"
+     },
+     {
+      "tone": "card",
+      "b": "so holi",
+      "s": "is phalguna in both. no argument.",
+      "cap": "example"
+     }
+    ],
+    "copy": "both systems agree on the bright fortnight. the dark one belongs to the month it followed under amanta, and **opens the next month** under purnimanta."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "janmashtami has **two month names**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "bhadrapada",
+      "s": "krishna ashtami, in delhi",
+      "cap": "purnimanta"
+     },
+     {
+      "tone": "mint",
+      "b": "shravana",
+      "s": "krishna ashtami, in mumbai",
+      "cap": "amanta"
+     },
+     {
+      "tone": "card",
+      "b": "one night",
+      "s": "identical tithi, identical sky",
+      "cap": "the truth"
+     }
+    ],
+    "copy": "same for shivaratri, dhanteras and diwali. **every festival in a dark fortnight gets two names**, and neither household is wrong."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the real date splits come from **somewhere else**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "tithi at sunrise",
+      "s": "the usual governing rule",
+      "cap": "rule one"
+     },
+     {
+      "tone": "pink",
+      "b": "or at midnight",
+      "s": "or moonrise, or pradosh",
+      "cap": "rule two"
+     },
+     {
+      "tone": "card",
+      "b": "that's the one",
+      "s": "that actually moves a day",
+      "cap": "the answer"
+     }
+    ],
+    "copy": "when two calendars genuinely disagree about a **date**, it is nearly always this, not amanta versus purnimanta. tithis don't line up with days."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "quick test for ur own family",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "kartik?",
+      "s": "ur purnimanta",
+      "cap": "if diwali is in"
+     },
+     {
+      "tone": "marigold",
+      "b": "ashwin?",
+      "s": "ur amanta",
+      "cap": "if diwali is in"
+     },
+     {
+      "tone": "card",
+      "b": "same night",
+      "s": "either way",
+      "cap": "and"
+     }
+    ],
+    "copy": "ask what month ur family says diwali falls in. **that one answer tells u which convention u grew up inside**, and u can stop arguing about it at dinner."
+   },
+   {
+    "quote": {
+     "q": "one moon. ~~two pairs of scissors.~~",
+     "attrib": "nobody has been wrong this whole time"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "the full mapping, **festival by festival**",
+     "p": "plus adhik maas and why the dates drift.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
  }
 }

@@ -1,0 +1,228 @@
+{
+ "timezone": "Asia/Kolkata",
+ "note": "Generated from decks.json. Times are IST. The Graph API has no future-timestamp field, so publish.py must be running when an item comes due.",
+ "items": [
+  {
+   "id": "android-launch-reel",
+   "when": "2026-09-09T20:00:00+05:30",
+   "type": "reel",
+   "video": "https://www.asktota.com/assets/social/asktota-android-launch-reel.mp4",
+   "caption": "it's live. ask tota is on the play store, free.\n\nnot a horoscope column. it reads ur actual birth chart, ur actual dasha, ur actual transits, and then talks to u like a friend who did the maths.\n\nlink in bio 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologyapp #playstore #birthchart"
+  },
+  {
+   "id": "2026-09-16-how-to-read-kundli-story",
+   "when": "2026-09-16T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/how-to-read-kundli-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-09-16-read-ur-kundli",
+   "when": "2026-09-16T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-01.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-02.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-03.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-04.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-05.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-06.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-07.png",
+    "https://www.asktota.com/assets/social/carousels/read-ur-kundli-08.png"
+   ],
+   "caption": "twelve boxes, nine grahas, and nobody ever gives u the order to read them in.\nthere is one. it starts at ur lagna and works outward, and it takes about twenty minutes the first time.\nlast slide is the rule that keeps every reading honest: three signals, or say nothing.\nfull twelve steps free on the blog. save this one, u will open it again.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #lagna #moonsign #nakshatra #astrologybasics #bigthree",
+   "blog": "https://www.asktota.com/blog/how-to-read-kundli.html"
+  },
+  {
+   "id": "2026-09-23-sun-moon-rising-story",
+   "when": "2026-09-23T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/sun-moon-rising-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-09-23-big-three",
+   "when": "2026-09-23T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/big-three-01.png",
+    "https://www.asktota.com/assets/social/carousels/big-three-02.png",
+    "https://www.asktota.com/assets/social/carousels/big-three-03.png",
+    "https://www.asktota.com/assets/social/carousels/big-three-04.png",
+    "https://www.asktota.com/assets/social/carousels/big-three-05.png",
+    "https://www.asktota.com/assets/social/carousels/big-three-06.png",
+    "https://www.asktota.com/assets/social/carousels/big-three-07.png"
+   ],
+   "caption": "u have three signs, not one, and they are hardly ever the same.\nthe sun moves one degree a day. the moon thirteen. the rising sign changes a whole sign every two hours.\nwhich is why a sun sign horoscope can be written for a twelfth of the planet, and ur rising sign cannot.\ntag the friend whose rising sign explains absolutely everything.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #lagna #moonsign #nakshatra #astrologybasics #bigthree",
+   "blog": "https://www.asktota.com/blog/sun-moon-rising.html"
+  },
+  {
+   "id": "2026-09-30-rahu-ketu-story",
+   "when": "2026-09-30T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/rahu-ketu-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-09-30-rahu-ketu",
+   "when": "2026-09-30T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-01.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-02.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-03.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-04.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-05.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-06.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-07.png",
+    "https://www.asktota.com/assets/social/carousels/rahu-ketu-08.png"
+   ],
+   "caption": "two of ur nine grahas have no body, no light and no mass.\nthey are the two points where the moon's path crosses the sun's, which is the only place an eclipse can happen.\nthe old story says a demon was beheaded and the head keeps swallowing the sun. every detail of that is a correct statement about the lunar nodes.\none wants everything. one is already done. they sit in exactly opposite houses.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #lagna #moonsign #nakshatra #astrologybasics #bigthree",
+   "blog": "https://www.asktota.com/blog/rahu-ketu.html"
+  },
+  {
+   "id": "2026-10-07-navratri-nine-nights-story",
+   "when": "2026-10-07T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/navratri-nine-nights-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-07-navratri",
+   "when": "2026-10-07T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/navratri-01.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-02.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-03.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-04.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-05.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-06.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-07.png",
+    "https://www.asktota.com/assets/social/carousels/navratri-08.png"
+   ],
+   "caption": "nine nights, nine forms, in a fixed order that is a narrative and not a list.\nit opens grounded, builds discipline, turns fierce, breaks on the seventh night and resolves into clarity on the eighth.\nalso: there are four navratris a year, and the colour chart is a lovely modern convention rather than an ancient one.\nsave this, u will be asked which night is which.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #navratri #diwali #dhanteras #panchang #tithi #festivalsofindia",
+   "blog": "https://www.asktota.com/blog/navratri-nine-nights.html"
+  },
+  {
+   "id": "2026-10-14-amanta-purnimanta-story",
+   "when": "2026-10-14T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/amanta-purnimanta-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-14-amanta-purnimanta",
+   "when": "2026-10-14T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-01.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-02.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-03.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-04.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-05.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-06.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-07.png",
+    "https://www.asktota.com/assets/social/carousels/amanta-purnimanta-08.png"
+   ],
+   "caption": "half the country ends the lunar month at the new moon and half at the full moon.\nso the same night is bhadrapada in delhi and shravana in mumbai. same tithi, same sky, two filing systems.\nquick test: ask what month ur family says diwali falls in. kartik means purnimanta, ashwin means amanta.\nnobody has been wrong this whole time. send this to the family group.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #navratri #diwali #dhanteras #panchang #tithi #festivalsofindia",
+   "blog": "https://www.asktota.com/blog/amanta-purnimanta.html"
+  },
+  {
+   "id": "2026-10-21-mercury-retrograde-mechanics-story",
+   "when": "2026-10-21T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/mercury-retrograde-mechanics-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-21-mercury-mechanics",
+   "when": "2026-10-21T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-01.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-02.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-03.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-04.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-05.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-06.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-07.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-mechanics-08.png"
+   ],
+   "caption": "mercury has never moved backwards. not once, not ever.\nit orbits in 88 days and laps us every 116, and around that pass our line of sight to it runs backwards against the stars.\nit happens three times a year, for about 18 percent of the calendar, for every person alive at the same time.\nand vedic astrology scores a retrograde graha as strong. vakri gains cheshta bala. that is the opposite of what u have been told.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #mercuryretrograde #vakri #retrograde #astrotok #genzastrology",
+   "blog": "https://www.asktota.com/blog/mercury-retrograde-mechanics.html"
+  },
+  {
+   "id": "2026-10-28-mercury-retrograde-effects-story",
+   "when": "2026-10-28T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/mercury-retrograde-effects-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-28-mercury-effects",
+   "when": "2026-10-28T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-01.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-02.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-03.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-04.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-05.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-06.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-07.png",
+    "https://www.asktota.com/assets/social/carousels/mercury-effects-08.png"
+   ],
+   "caption": "a fifth of every year is mercury retrograde. so a fifth of everything that has ever gone wrong for u happened during one.\nso did a fifth of everything that went right, and none of that got filed, because the label only has one slot.\n\"don't sign anything\" adds up to a quarter of ur life once shadows are counted. no working tradition ever asked that.\nread the contract twice. back the thing up. go and live the other 82 percent.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #mercuryretrograde #vakri #retrograde #astrotok #genzastrology",
+   "blog": "https://www.asktota.com/blog/mercury-retrograde-effects.html"
+  },
+  {
+   "id": "2026-11-04-dhanteras-mercury-retrograde-story",
+   "when": "2026-11-04T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/dhanteras-mercury-retrograde-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-11-04-dhanteras",
+   "when": "2026-11-04T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/dhanteras-01.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-02.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-03.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-04.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-05.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-06.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-07.png",
+    "https://www.asktota.com/assets/social/carousels/dhanteras-08.png"
+   ],
+   "caption": "dhanteras is on 6 november. mercury is retrograde from 24 october to 13 november. so is diwali.\ndhanteras is a muhurat. mercury retrograde is a transit. two different branches, and one was never built to override the other.\nand u cannot move dhanteras anyway. it is a tithi. so \"postpone it\" means skip the festival, and nobody means that.\nbuy the thing. check the warranty twice. save the bill. that's it, that's the whole remedy.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #navratri #diwali #dhanteras #panchang #tithi #festivalsofindia",
+   "blog": "https://www.asktota.com/blog/dhanteras-mercury-retrograde.html"
+  },
+  {
+   "id": "2026-11-11-retrograde-post-shadow-story",
+   "when": "2026-11-11T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/retrograde-post-shadow-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-11-11-post-shadow",
+   "when": "2026-11-11T19:30:00+05:30",
+   "type": "carousel",
+   "images": [
+    "https://www.asktota.com/assets/social/carousels/post-shadow-01.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-02.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-03.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-04.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-05.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-06.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-07.png",
+    "https://www.asktota.com/assets/social/carousels/post-shadow-08.png"
+   ],
+   "caption": "mercury stations direct on the 13th and everyone posts the celebration graphic.\nthen nothing resolves, because the same fifteen degrees are still being crossed for a third time.\nthe shadow framing is modern, by the way. classical vedic has vakri and atichari and no three phase model at all.\nclose the loops u opened. that works whether or not the astrology does.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #mercuryretrograde #vakri #retrograde #astrotok #genzastrology",
+   "blog": "https://www.asktota.com/blog/retrograde-post-shadow.html"
+  }
+ ]
+}

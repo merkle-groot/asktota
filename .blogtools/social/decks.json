@@ -1,459 +1,1058 @@
 {
  "doshas-ranked": {
-  "title": "5 doshas, ranked by how fake the fear is",
-  "dateline": [
-   "sat, 12 sept",
-   "the fear desk",
-   "vol. u"
-  ],
+  "date": "sat, 12 sept",
+  "ground": "mint",
   "slides": [
    {
-    "t": "cover",
-    "h": "5 doshas people **scare u** with, ranked",
-    "dek": "ranked by one thing only: how far the fear has drifted from what the chart actually says."
+    "h": "5 doshas people ~~scare u~~ with, **ranked**",
+    "save": "save this for the next family wedding, u will need it",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kaalsarp",
+      "b": "kaal sarp",
+      "cap": "no.2"
+     },
+     {
+      "tone": "pink",
+      "d": "gunas",
+      "b": "nadi",
+      "cap": "no.4"
+     },
+     {
+      "tone": "marigold",
+      "d": "kundli",
+      "b": "manglik",
+      "cap": "no.5"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
    },
    {
-    "t": "setup",
-    "kicker": "the setup",
-    "tone": "mint",
-    "h": "a dosha is a **position**, not a punishment.",
-    "body": "every one of these is a rule about where a planet sat. the rule is checkable in ten seconds. the fear attached to it is a separate product, sold separately."
+    "eyebrow": "AUTO",
+    "h": "manglik: mars in **one of six houses**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "1 · 2 · 4",
+      "s": "7 · 8 · 12",
+      "cap": "six houses"
+     },
+     {
+      "tone": "marigold",
+      "b": "6 of 12",
+      "s": "before anyone opens a chart",
+      "cap": "the base rate"
+     },
+     {
+      "tone": "card",
+      "b": "dozens",
+      "s": "of classical cancellations, all free",
+      "cap": "the exits"
+     }
+    ],
+    "copy": "six houses out of twelve. so the base rate is enormous before anyone looks at anything. and the cancellations are long, well documented, and **cost nothing**."
    },
    {
-    "t": "body",
-    "tone": "white",
-    "num": "5",
-    "kicker": "manglik dosha",
-    "h": "mars in one of **six houses**",
-    "body": "1st, 2nd, 4th, 7th, 8th, 12th. six of twelve, so the base rate is enormous before anyone opens a chart. the classical cancellations are long, well documented, and free."
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "nadi: ~~8 of 36~~ points, all or nothing",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "gunas",
+      "b": "8 pts",
+      "cap": "the biggest koota"
+     },
+     {
+      "tone": "mint",
+      "b": "3 groups",
+      "s": "27 nakshatras, 9 in each",
+      "cap": "aadi · madhya · antya"
+     },
+     {
+      "tone": "card",
+      "b": "1 in 3",
+      "s": "couples land in the same one",
+      "cap": "the odds"
+     }
+    ],
+    "copy": "three nadi groups, evenly split. two people picked at random match about **one time in three**. a defect that common is not a defect, it is a demographic."
    },
    {
-    "t": "body",
-    "tone": "mint",
-    "num": "4",
-    "kicker": "nadi dosha",
-    "h": "8 of 36 points, **all or nothing**",
-    "body": "three nadi groups, twenty-seven nakshatras, nine in each. two people picked at random match about one time in three. three textual exceptions exist and cost nothing."
+    "eyebrow": "AUTO",
+    "h": "bhakoot: the **distance** between two moons",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "7 pts",
+      "cap": "also all or nothing"
+     },
+     {
+      "tone": "pink",
+      "b": "6/8 · 5/9 · 2/12",
+      "s": "the pairs that score zero",
+      "cap": "the gaps"
+     },
+     {
+      "tone": "card",
+      "b": "geometry",
+      "s": "wearing the vocabulary of misfortune",
+      "cap": "honestly"
+     }
+    ],
+    "copy": "it counts how far apart the two rashis are. that is the whole check. **bhakoot and nadi together carry 15 of the 36**, which is why so many matches die on one line."
    },
    {
-    "t": "body",
-    "tone": "white",
-    "num": "3",
-    "kicker": "bhakoot dosha",
-    "h": "the **distance** between two moon signs",
-    "body": "worth 7 points and decided purely by how far apart the two rashis are. a geometry check wearing the vocabulary of misfortune."
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "kaal sarp: **seven planets**, one line, no scripture",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kaalsarp",
+      "b": "all 7",
+      "s": "on one side of the rahu-ketu axis",
+      "cap": "the rule"
+     },
+     {
+      "tone": "mint",
+      "b": "0 texts",
+      "s": "parashara · varahamihira · phaladeepika",
+      "cap": "where it appears"
+     },
+     {
+      "tone": "card",
+      "b": "~1 in 60",
+      "s": "minimum, even at random",
+      "cap": "how rare"
+     }
+    ],
+    "copy": "not in a single classical text. it turns up in the twentieth century with an **excellent marketing department**, and it is nowhere near as rare as the word curse implies."
    },
    {
-    "t": "body",
-    "tone": "pink",
-    "num": "2",
-    "kicker": "kaal sarp dosha",
-    "h": "one line, **seven planets**, no scripture",
-    "body": "all seven grahas on one side of the rahu-ketu axis. not in parashara, not in varahamihira, not in phaladeepika. twentieth century, with an excellent marketing department."
+    "eyebrow": "AUTO",
+    "h": "shrapit yoga: a **new name** that sounds ancient",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "saturn",
+      "b": "shani + rahu",
+      "cap": "the condition"
+     },
+     {
+      "tone": "pink",
+      "b": "the name",
+      "s": "is doing all the work here",
+      "cap": "the product"
+     },
+     {
+      "tone": "card",
+      "b": "modern",
+      "s": "coined recently, sold as scripture",
+      "cap": "the age"
+     }
+    ],
+    "copy": "saturn sitting with rahu, handed a word that implies a curse. it is a recent coinage. **the name is the whole product.**"
    },
    {
-    "t": "body",
-    "tone": "marigold",
-    "num": "1",
-    "kicker": "shrapit yoga",
-    "h": "a modern name that **sounds ancient**",
-    "body": "saturn sitting with rahu, given a word that implies a curse. it is a recent coinage. the name is doing all the work, and the name is the whole product."
+    "quote": {
+     "q": "a fear and a fee ~~in the same breath~~",
+     "attrib": "the tell, every single time"
+    },
+    "eyebrow": "the tell"
    },
    {
-    "t": "quote",
-    "chart": "the fear desk",
-    "q": "a fear and a fee **in the same breath**",
-    "attrib": "the tell, every single time · cont. p.10",
-    "blurb": "watch whether they explain the geometry before, or only after, the price comes up."
-   },
-   {
-    "t": "cta",
-    "h": "all five, **taken apart** properly",
-    "p": "free on the blog. no puja upsell.",
-    "btn": "asktota.com/blog"
-   }
-  ]
- },
- "read-ur-kundli": {
-  "title": "how to read ur kundli, step by step",
-  "dateline": [
-   "mon, 14 sept",
-   "the chart desk",
-   "vol. u"
-  ],
-  "slides": [
-   {
-    "t": "cover",
-    "h": "how to read ur kundli, **step by step**",
-    "dek": "twelve boxes, nine grahas, no instructions. here is the order that actually works."
-   },
-   {
-    "t": "setup",
-    "kicker": "the setup",
-    "tone": "mint",
-    "h": "first: **which chart** is it?",
-    "body": "north indian fixes the houses and moves the sign numbers between them. south indian fixes the signs and marks the lagna. same chart, two layouts, and this is where most people get lost."
-   },
-   {
-    "t": "body",
-    "tone": "white",
-    "num": "1",
-    "kicker": "step one",
-    "h": "find ur **lagna**",
-    "body": "the sign rising at ur exact birth minute. it becomes the 1st house. write all twelve house numbers on the chart before doing anything else. this is the step people skip."
-   },
-   {
-    "t": "body",
-    "tone": "pink",
-    "num": "2",
-    "kicker": "step two",
-    "h": "find ur **lagna lord**",
-    "body": "the graha ruling that sign stands in for u. whichever house it sits in is where ur life keeps happening, whether or not u planned it that way."
-   },
-   {
-    "t": "body",
-    "tone": "white",
-    "num": "3",
-    "kicker": "step three",
-    "h": "read the **moon**",
-    "body": "sign, house, nakshatra. then read the whole chart again from the moon sign. that is a free second opinion built into the system, and vedic astrology uses it constantly."
-   },
-   {
-    "t": "body",
-    "tone": "mint",
-    "num": "4–7",
-    "kicker": "the middle",
-    "h": "occupancy, dignity, **aspects**, lords",
-    "body": "who sits where. how comfortable each one is. what each aspects. then the big one: place every house lord and write twelve sentences of “house A gets carried into house B”."
-   },
-   {
-    "t": "body",
-    "tone": "white",
-    "num": "8–11",
-    "kicker": "the timing",
-    "h": "yogas say **what**. dashas say **when**.",
-    "body": "a yoga is capacity. the dasha is the schedule. nothing in a chart fires outside its own period, which is why most people's “raj yoga” has never done anything for them."
-   },
-   {
-    "t": "body",
-    "tone": "marigold",
-    "num": "12",
-    "kicker": "step twelve",
-    "h": "the **rule of three**",
-    "body": "never claim anything unless three separate parts of the chart point the same way. it keeps ur reading honest, and it is the best fraud filter u will ever own."
-   },
-   {
-    "t": "quote",
-    "chart": "the chart desk",
-    "q": "three signals, **or say nothing**",
-    "attrib": "the only rule that matters · cont. p.10",
-    "blurb": "one placement is a note. three that agree is a reading. that gap is where every bad prediction lives."
-   },
-   {
-    "t": "cta",
-    "h": "the full **twelve steps**",
-    "p": "with the tables, free on the blog.",
-    "btn": "asktota.com/blog"
+    "cta": {
+     "h": "all five, **taken apart** properly",
+     "p": "free on the blog. no puja upsell, no affiliate link.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
    }
   ]
  },
  "big-three": {
-  "title": "sun vs moon vs rising",
-  "dateline": [
-   "sat, 19 sept",
-   "the chart desk",
-   "vol. u"
-  ],
+  "date": "sat, 19 sept",
+  "ground": "paper",
   "slides": [
    {
-    "t": "cover",
-    "h": "u have **three signs**, not one",
-    "dek": "and they are hardly ever the same one. here is what each of them is actually doing."
+    "h": "ur big three, as **group chat roles**",
+    "save": "tag the friend whose rising sign explains everything",
+    "tiles": [
+     {
+      "tone": "marigold",
+      "d": "lagna",
+      "b": "the sun",
+      "s": "picks the restaurant",
+      "cap": "one"
+     },
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "the moon",
+      "s": "decides if u actually go",
+      "cap": "two"
+     },
+     {
+      "tone": "pink",
+      "d": "kundli",
+      "b": "the rising",
+      "s": "types the cancel text",
+      "cap": "three"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
    },
    {
-    "t": "setup",
-    "kicker": "why three",
-    "tone": "mint",
-    "h": "they move at **completely different speeds**",
-    "body": "the sun crawls about one degree a day. the moon covers thirteen. the rising sign changes a full sign every two hours. that alone tells u which of them is generic and which is personal."
+    "eyebrow": "AUTO",
+    "h": "the sun: what ur life is **built around**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "1° a day",
+      "s": "so ur birth date alone settles it",
+      "cap": "speed"
+     },
+     {
+      "tone": "marigold",
+      "b": "1 / 12",
+      "s": "of the planet shares it with u",
+      "cap": "how personal"
+     },
+     {
+      "tone": "card",
+      "b": "the CV",
+      "s": "public, tidy, slightly edited",
+      "cap": "what it is"
+     }
+    ],
+    "copy": "it crawls about one degree a day, which is exactly why sun sign horoscopes can be written for **a twelfth of the planet at a time**."
    },
    {
-    "t": "body",
-    "tone": "marigold",
-    "kicker": "the sun",
-    "h": "what ur life is **built around**",
-    "body": "one degree a day, so ur birth date alone settles it. which is exactly why sun sign horoscopes can be written for a twelfth of the planet at a time."
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "the moon: who u are at ~~1am~~",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "13° a day",
+      "s": "new sign every 2.25 days",
+      "cap": "speed"
+     },
+     {
+      "tone": "pink",
+      "b": "the mind",
+      "s": "mood, memory, what makes u feel safe",
+      "cap": "what it runs"
+     },
+     {
+      "tone": "card",
+      "b": "the one",
+      "s": "kundli matching actually uses",
+      "cap": "receipts"
+     }
+    ],
+    "copy": "indian astrology weights this hardest. it is the search history to ur sun sign's linkedin headline, and it is **the sign ur family were quoting all along**."
    },
    {
-    "t": "body",
-    "tone": "white",
-    "kicker": "the moon",
-    "h": "who u are at **1am**",
-    "body": "thirteen degrees a day. carries the mind, the mood, the interior. indian astrology weights this hardest, and it is what kundli matching actually runs on."
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "the rising: changes every **two hours**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "lagna",
+      "b": "1° / 4 min",
+      "s": "a whole sign every 2 hours",
+      "cap": "speed"
+     },
+     {
+      "tone": "marigold",
+      "b": "the frame",
+      "s": "all 12 houses counted from here",
+      "cap": "what it does"
+     },
+     {
+      "tone": "card",
+      "b": "needs a time",
+      "s": "to the minute. no guessing.",
+      "cap": "the catch"
+     }
+    ],
+    "copy": "this is not a personality label. it is the **coordinate system** every other placement in ur chart gets measured in. change it and nothing in the sky moves, but every reading does."
    },
    {
-    "t": "body",
-    "tone": "pink",
-    "kicker": "the rising sign",
-    "h": "who **types the first message**",
-    "body": "changes every two hours, so it needs ur birth time to the minute. it is not a personality label. it is the frame all twelve houses get counted from."
+    "eyebrow": "AUTO",
+    "h": "same morning. **four hours apart.** different chart.",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "same sun",
+      "s": "same moon, probably",
+      "cap": "what matches"
+     },
+     {
+      "tone": "pink",
+      "d": "lagna",
+      "b": "different lagna",
+      "s": "different 12 houses",
+      "cap": "what doesn't"
+     },
+     {
+      "tone": "card",
+      "b": "that gap",
+      "s": "is the whole reason we ask",
+      "cap": "why"
+     }
+    ],
+    "copy": "two babies, one hospital, one morning. they share a sun sign. they do not share a chart. **that is why anyone serious asks for ur birth time before they say anything.**"
    },
    {
-    "t": "body",
-    "tone": "mint",
-    "kicker": "the test",
-    "h": "the **group chat** version",
-    "body": "sun picks the restaurant. moon decides whether u actually go. rising is the message u send at 7pm to cancel."
+    "quote": {
+     "q": "one sign is a guess. ~~three is a chart.~~",
+     "attrib": "the whole argument, in six words"
+    },
+    "eyebrow": "the payoff"
    },
    {
-    "t": "quote",
-    "chart": "sun · moon · lagna",
-    "q": "one sign is a **guess**. three is a chart.",
-    "attrib": "the whole argument · cont. p.8",
-    "blurb": "most people know one of theirs. a real reading needs all three, and the third one needs a birth time."
-   },
-   {
-    "t": "cta",
-    "h": "find **all three** free",
-    "p": "calculator on the blog. takes a minute.",
-    "btn": "asktota.com/blog"
+    "cta": {
+     "h": "find **all three** free",
+     "p": "calculator on the blog. takes about a minute.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
    }
   ]
  },
  "rahu-ketu": {
-  "title": "the two grahas that aren't there",
-  "dateline": [
-   "mon, 21 sept",
-   "the sky desk",
-   "vol. u"
-  ],
+  "date": "mon, 21 sept",
+  "ground": "mint",
   "slides": [
    {
-    "t": "cover",
-    "h": "two of ur nine planets **don't exist**",
-    "dek": "no body. no light. no mass. nothing to photograph. and the tradition weights them harder than almost anything."
+    "h": "two of ur nine planets ~~don't exist~~",
+    "save": "and u are definitely obsessed with one of them",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "no body",
+      "s": "no light, no mass",
+      "cap": "rahu"
+     },
+     {
+      "tone": "pink",
+      "d": "kaalsarp",
+      "b": "no landing",
+      "s": "nothing to photograph",
+      "cap": "ketu"
+     },
+     {
+      "tone": "marigold",
+      "b": "180°",
+      "s": "apart, always, in every chart",
+      "cap": "the axis"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
    },
    {
-    "t": "setup",
-    "kicker": "the setup",
-    "tone": "mint",
+    "eyebrow": "AUTO",
     "h": "picture **two hula hoops**",
-    "body": "hold one flat. that is the sun's path. tilt the second one about five degrees and push it through. that is the moon's path. they meet in exactly two places."
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "one flat",
+      "s": "the sun's path",
+      "cap": "hoop one"
+     },
+     {
+      "tone": "mint",
+      "b": "one tilted",
+      "s": "about 5 degrees. the moon's path.",
+      "cap": "hoop two"
+     },
+     {
+      "tone": "card",
+      "b": "2 crossings",
+      "s": "and only two, ever",
+      "cap": "the answer"
+     }
+    ],
+    "copy": "push them through each other and they meet in exactly two places. **those two places are rahu and ketu.** that is the entire physical story."
    },
    {
-    "t": "body",
-    "tone": "white",
-    "kicker": "what they are",
-    "h": "those two places are **rahu and ketu**",
-    "body": "the lunar nodes. and because two circles that pass through the same centre cross on opposite sides, they are always exactly 180 degrees apart. in every chart ever cast."
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "eclipses can ++only++ happen there",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "5° tilt",
+      "s": "the most important 5 degrees in the sky",
+      "cap": "why"
+     },
+     {
+      "tone": "mint",
+      "b": "not monthly",
+      "s": "or we'd get one every new moon",
+      "cap": "the effect"
+     },
+     {
+      "tone": "card",
+      "b": "2 doors",
+      "s": "an eclipse can come through",
+      "cap": "the nodes"
+     }
+    ],
+    "copy": "that tiny tilt is the only reason we do not get an eclipse every single month. **the nodes are the two doors.**"
    },
    {
-    "t": "body",
-    "tone": "pink",
-    "kicker": "the eclipse",
-    "h": "eclipses **only** happen near them",
-    "body": "that five degree tilt is the entire reason we do not get an eclipse every single month. the nodes are the only two doors an eclipse can come through."
-   },
-   {
-    "t": "body",
-    "tone": "white",
-    "kicker": "the story",
+    "eyebrow": "AUTO",
     "h": "the myth is **astronomy in disguise**",
-    "body": "a severed head and a headless body, permanently opposite, forever chasing the sun and the moon, only able to catch them at two specific points. every detail is a true statement about the nodes."
+    "tiles": [
+     {
+      "tone": "pink",
+      "b": "a severed head",
+      "s": "that swallows the sun",
+      "cap": "rahu"
+     },
+     {
+      "tone": "card",
+      "b": "a headless body",
+      "s": "that slips out the back",
+      "cap": "ketu"
+     },
+     {
+      "tone": "marigold",
+      "b": "forever opposite",
+      "s": "forever chasing the two lights",
+      "cap": "the story"
+     }
+    ],
+    "copy": "a head with no body and a body with no head, permanently opposite, only able to catch the sun at two specific points. **every detail of that story is a true statement about the lunar nodes.**"
    },
    {
-    "t": "body",
-    "tone": "marigold",
-    "kicker": "rahu",
-    "h": "appetite with **no off switch**",
-    "body": "a head with no stomach. it consumes and is never full. where rahu sits is where u chase, where u overreach, and where u are most likely to be spectacular and least likely to be sensible."
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "rahu: appetite with ++no off switch++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "a head",
+      "s": "with no stomach",
+      "cap": "the anatomy"
+     },
+     {
+      "tone": "marigold",
+      "b": "where u chase",
+      "s": "and where u overreach",
+      "cap": "in ur chart"
+     },
+     {
+      "tone": "card",
+      "b": "18 years",
+      "s": "of dasha. the longest any graha gets.",
+      "cap": "the run"
+     }
+    ],
+    "copy": "it consumes and is never full. where rahu sits is where u are most likely to be spectacular and **least likely to be sensible**, and it is usually the same week."
    },
    {
-    "t": "body",
-    "tone": "mint",
-    "kicker": "ketu",
-    "h": "the thing u **already finished**",
-    "body": "a body with no head. acts without appetite. where u are unusually good at something and get absolutely nothing out of being good at it."
+    "eyebrow": "AUTO",
+    "h": "ketu: the thing u **already finished**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "a body",
+      "s": "with no head",
+      "cap": "the anatomy"
+     },
+     {
+      "tone": "mint",
+      "b": "good at it",
+      "s": "and completely uninterested",
+      "cap": "the feeling"
+     },
+     {
+      "tone": "card",
+      "b": "7 years",
+      "s": "of dasha. a clearing out.",
+      "cap": "the run"
+     }
+    ],
+    "copy": "acts without appetite. it is the place ur unusually skilled and get absolutely nothing out of being skilled. **\"i can do it, i just don't care\" is a ketu sentence.**"
    },
    {
-    "t": "body",
-    "tone": "white",
-    "kicker": "the axis",
-    "h": "they always sit **opposite**",
-    "body": "so u are obsessed with one department of ur life and bored of the exact opposite one. that pairing is the reading. neither placement means much alone."
+    "quote": {
+     "q": "one wants everything. ~~one is already done.~~",
+     "attrib": "and they sit in exactly opposite houses"
+    },
+    "eyebrow": "the payoff"
    },
    {
-    "t": "quote",
-    "chart": "rahu ↔ ketu",
-    "q": "one wants everything. one is **already done.**",
-    "attrib": "and they are in every chart · cont. p.10",
-    "blurb": "rahu in the 10th with ketu in the 4th: cannot stop working, cannot stay home. that is the whole reading."
-   },
-   {
-    "t": "cta",
-    "h": "the **full file** on both",
-    "p": "including why they always move backwards.",
-    "btn": "asktota.com/blog"
+    "cta": {
+     "h": "the **full file** on both",
+     "p": "including why they always move backwards.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
    }
   ]
  },
- "neelam": {
-  "title": "before u buy that neelam",
-  "dateline": [
-   "mon, 5 oct",
-   "the remedy desk",
-   "vol. u"
-  ],
+ "read-ur-kundli": {
+  "date": "mon, 14 sept",
+  "ground": "paper",
   "slides": [
    {
-    "t": "cover",
-    "h": "before u buy that neelam: **7 questions**",
-    "dek": "the reading ends and there is a stone at the end of it, usually in a shop the astrologer happens to know."
+    "h": "ur kundli, decoded in **12 swipes**",
+    "save": "save this. u will open it more than once.",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "12 boxes",
+      "cap": "step 1"
+     },
+     {
+      "tone": "marigold",
+      "d": "lagna",
+      "b": "1 lagna",
+      "cap": "step 2"
+     },
+     {
+      "tone": "pink",
+      "d": "tithi",
+      "b": "1 moon",
+      "cap": "step 3"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
    },
    {
-    "t": "setup",
-    "kicker": "the setup",
-    "tone": "mint",
-    "h": "the tradition is real. the **market** is not regulated.",
-    "body": "nine grahas, nine stones, specific metals, days and weights. all genuinely old. what has grown on top of it is one of the least policed trades in indian astrology."
+    "eyebrow": "AUTO",
+    "h": "first: **which chart** is it?",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "north indian",
+      "s": "houses fixed, sign numbers move",
+      "cap": "diamond"
+     },
+     {
+      "tone": "mint",
+      "b": "south indian",
+      "s": "signs fixed, the lagna is marked",
+      "cap": "grid"
+     },
+     {
+      "tone": "card",
+      "b": "same chart",
+      "s": "two layouts. this is where people get lost.",
+      "cap": "honestly"
+     }
+    ],
+    "copy": "north indian: the top centre box is **always** the 1st house. south indian: find the marked lagna and count clockwise. same information, completely different picture."
    },
    {
-    "t": "body",
-    "tone": "white",
-    "num": "1",
-    "kicker": "question one",
-    "h": "did u ask my **birth time**?",
-    "body": "if not, they never calculated ur lagna. and without a lagna there is no way to know what saturn even rules for u. for two of the twelve ascendants it is the best graha in the chart."
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "step one: find ur ~~lagna~~ and write the numbers on",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "lagna",
+      "b": "the 1st",
+      "s": "everything counts forward from here",
+      "cap": "what it is"
+     },
+     {
+      "tone": "marigold",
+      "b": "write it on",
+      "s": "literally. on the screenshot.",
+      "cap": "the trick"
+     },
+     {
+      "tone": "card",
+      "b": "skipped",
+      "s": "by everyone who gives up",
+      "cap": "the step"
+     }
+    ],
+    "copy": "it feels like cheating and it is the single thing that separates people who can read their chart from people who **own a screenshot of one**."
    },
    {
-    "t": "body",
-    "tone": "pink",
-    "num": "2",
-    "kicker": "question two",
-    "h": "which **school** are u following?",
-    "body": "one says strengthen ur weakest graha. the other says never strengthen a graha that rules difficult houses for ur lagna. same chart, opposite advice, both defensible inside the tradition."
+    "eyebrow": "AUTO",
+    "h": "step two: find ur **lagna lord**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "the ruler",
+      "s": "of ur rising sign",
+      "cap": "who"
+     },
+     {
+      "tone": "pink",
+      "b": "it is u",
+      "s": "standing in, all over the chart",
+      "cap": "what it does"
+     },
+     {
+      "tone": "card",
+      "b": "which house",
+      "s": "is where ur life keeps happening",
+      "cap": "the read"
+     }
+    ],
+    "copy": "one sentence, and it explains more than every sun sign horoscope u will read this year: **my life keeps routing through the affairs of house X.**"
    },
    {
-    "t": "body",
-    "tone": "white",
-    "num": "3",
-    "kicker": "question three",
-    "h": "are u also **selling** it to me?",
-    "body": "never buy the stone from the person who diagnosed u. one rule, and most of the fraud in this entire market disappears."
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "steps 3 to 11: the moon, then the **machinery**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "the moon",
+      "s": "sign, house, nakshatra",
+      "cap": "step 3"
+     },
+     {
+      "tone": "marigold",
+      "b": "who's where",
+      "s": "dignity, aspects, house lords",
+      "cap": "steps 4-7"
+     },
+     {
+      "tone": "card",
+      "b": "yogas + dasha",
+      "s": "what ur capable of, and when",
+      "cap": "steps 8-11"
+     }
+    ],
+    "copy": "a yoga says **what**. the dasha says **when**. nothing in a chart ever fires outside its own period, which is why most people's raj yoga has done precisely nothing for them so far."
    },
    {
-    "t": "body",
-    "tone": "mint",
-    "num": "4 · 5",
-    "kicker": "the paperwork",
-    "h": "can i pick the **lab**? and what is the price **per carat**?",
-    "body": "independent certificate, chosen by u, stating species, natural or synthetic, and every treatment. and note that prescriptions come in ratti, about 0.91 carat, while shops quote carats."
+    "eyebrow": "AUTO",
+    "h": "step twelve: the ++rule of three++",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "1 signal",
+      "s": "is a note",
+      "cap": "not enough"
+     },
+     {
+      "tone": "mint",
+      "b": "3 signals",
+      "s": "that agree is a reading",
+      "cap": "enough"
+     },
+     {
+      "tone": "marigold",
+      "b": "ask for them",
+      "s": "when someone says something dramatic",
+      "cap": "the filter"
+     }
+    ],
+    "copy": "never claim anything unless three separate parts of the chart point the same way. it keeps ur reading honest, and it is **the best fraud filter u will ever own**."
    },
    {
-    "t": "body",
-    "tone": "white",
-    "num": "6",
-    "kicker": "question six",
-    "h": "what about an **upratna**?",
-    "body": "the tradition lists an accepted cheaper substitute for all nine stones. if the substitutes work, then price was never the mechanism. that is worth sitting with."
+    "quote": {
+     "q": "three signals, ~~or say nothing~~",
+     "attrib": "the only rule that actually matters"
+    },
+    "eyebrow": "the payoff"
    },
    {
-    "t": "body",
-    "tone": "marigold",
-    "num": "7",
-    "kicker": "question seven",
-    "h": "why the **hurry**?",
-    "body": "“before the next amavasya” is a closing technique, not a calculation. no honest reading collapses because u took a week to think about it."
-   },
-   {
-    "t": "quote",
-    "chart": "the remedy desk",
-    "q": "never buy the stone from **the person who diagnosed u**",
-    "attrib": "one rule, most of the fraud gone · cont. p.10",
-    "blurb": "the tradition is worth knowing properly. the markup is not worth paying blind."
-   },
-   {
-    "t": "cta",
-    "h": "send this to **whoever is about to spend**",
-    "p": "the whole guide, free, no affiliate links.",
-    "btn": "asktota.com/blog"
+    "cta": {
+     "h": "the full **twelve steps**",
+     "p": "with every table, free, no login.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
    }
   ]
  },
  "gunas-36": {
-  "title": "the 36 gunas, actually explained",
-  "dateline": [
-   "sat, 26 sept",
-   "the love desk",
-   "vol. u"
-  ],
+  "date": "sat, 26 sept",
+  "ground": "pink",
   "slides": [
    {
-    "t": "cover",
     "h": "“we got **28 out of 36**”",
-    "dek": "said constantly. almost nobody saying it can name the eight things being checked. here they are."
+    "save": "nobody who says this can name the eight things being checked",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "gunas",
+      "b": "8 checks",
+      "cap": "the kootas"
+     },
+     {
+      "tone": "marigold",
+      "b": "2 moons",
+      "s": "that is all it looks at",
+      "cap": "the inputs"
+     },
+     {
+      "tone": "card",
+      "b": "18 / 36",
+      "s": "a convention, not a law",
+      "cap": "the floor"
+     },
+     {
+      "tone": "mint",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
    },
    {
-    "t": "setup",
-    "kicker": "the setup",
-    "tone": "mint",
-    "h": "eight checks, run on **two moons**",
-    "body": "guna milan compares the two birth nakshatras and the two moon signs. that is all it looks at. no lagna, no houses, no dasha. eight kootas, scored 1 through 8, adding to 36."
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "it compares **two moons**. that's it.",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "2 nakshatras",
+      "s": "and 2 moon signs",
+      "cap": "the inputs"
+     },
+     {
+      "tone": "pink",
+      "b": "no lagna",
+      "s": "no houses, no dasha, no birth time",
+      "cap": "not used"
+     },
+     {
+      "tone": "card",
+      "b": "scored 1-8",
+      "s": "adding up to 36",
+      "cap": "the maths"
+     }
+    ],
+    "copy": "guna milan never opens ur birth time, ur ascendant or ur dasha. it reads two moons against each other. **it has never met either of u.**"
    },
    {
-    "t": "body",
-    "tone": "white",
-    "kicker": "1 · 2 · 3 points",
-    "h": "varna, vashya, **tara**",
-    "body": "temperament grouping, mutual influence, and birth-star compatibility counted between the two nakshatras. six points between them, and the three least quoted items on the list."
+    "eyebrow": "AUTO",
+    "h": "the first six carry **21 points**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "varna 1",
+      "s": "vashya 2 · tara 3",
+      "cap": "the quiet ones"
+     },
+     {
+      "tone": "marigold",
+      "b": "yoni 4",
+      "s": "the one everybody giggles about",
+      "cap": "physical"
+     },
+     {
+      "tone": "card",
+      "b": "maitri 5",
+      "s": "gana 6. friendship and nature.",
+      "cap": "the sensible ones"
+     }
+    ],
+    "copy": "graha maitri, whether the two moon-sign rulers are friends, is genuinely one of the better ideas in here. **the rest are categories, not verdicts.**"
    },
    {
-    "t": "body",
-    "tone": "pink",
-    "kicker": "4 points",
-    "h": "yoni",
-    "body": "physical compatibility, scored through the animal symbol attached to each nakshatra. one of the older and stranger items, and the one people giggle about."
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "the last two carry ++15 of the 36++",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "gunas",
+      "b": "bhakoot 7",
+      "s": "the distance between two moons",
+      "cap": "all or nothing"
+     },
+     {
+      "tone": "pink",
+      "b": "nadi 8",
+      "s": "three groups, 1 in 3 couples match",
+      "cap": "all or nothing"
+     },
+     {
+      "tone": "card",
+      "b": "= 15",
+      "s": "of a 36 point score",
+      "cap": "the weight"
+     }
+    ],
+    "copy": "both are pass-fail. so a couple can score well on six checks and still land under the line because of two. **this is why so many matches die on a single row.**"
    },
    {
-    "t": "body",
-    "tone": "white",
-    "kicker": "5 points",
-    "h": "graha maitri",
-    "body": "whether the rulers of the two moon signs are friends. genuinely one of the more sensible checks in the system, and the one worth arguing about."
+    "eyebrow": "AUTO",
+    "h": "18 is a convention. ~~not a law.~~",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "why 18?",
+      "s": "because it is half of 36",
+      "cap": "the honest answer"
+     },
+     {
+      "tone": "mint",
+      "b": "no text",
+      "s": "sets it as an authority",
+      "cap": "the receipts"
+     },
+     {
+      "tone": "card",
+      "b": "regional",
+      "s": "south india uses 10 kootas, not 8",
+      "cap": "and also"
+     }
+    ],
+    "copy": "it became the floor because half is a natural place to draw a line. treat it as **a norm people agreed on**, which is exactly what it is."
    },
    {
-    "t": "body",
-    "tone": "mint",
-    "kicker": "6 points",
-    "h": "gana",
-    "body": "deva, manushya, rakshasa. a nature grouping drawn from the nakshatras. it is a category, not a verdict on anybody's character."
+    "quote": {
+     "q": "eight checks. ~~none of them is texting back.~~",
+     "attrib": "what a score cannot see"
+    },
+    "eyebrow": "the payoff"
    },
    {
-    "t": "body",
-    "tone": "marigold",
-    "kicker": "7 + 8 points",
-    "h": "bhakoot and nadi carry **15 of the 36**",
-    "body": "both are all or nothing. so a couple can score well on six checks and still land under the line because of two. this is why so many matches collapse on a single row."
+    "cta": {
+     "h": "run **ur own**, free",
+     "p": "all eight kootas with the breakdown shown.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
+   }
+  ]
+ },
+ "neelam": {
+  "date": "mon, 5 oct",
+  "ground": "stock",
+  "slides": [
+   {
+    "h": "before u buy that neelam: **7 questions**",
+    "save": "send this to whoever in ur family is about to spend",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "stone",
+      "b": "9 stones",
+      "cap": "the navaratna"
+     },
+     {
+      "tone": "marigold",
+      "b": "2 schools",
+      "s": "that flatly disagree",
+      "cap": "the fork"
+     },
+     {
+      "tone": "pink",
+      "b": "0 regulation",
+      "s": "on the market around it",
+      "cap": "the risk"
+     },
+     {
+      "tone": "mint",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
    },
    {
-    "t": "body",
-    "tone": "white",
-    "kicker": "the threshold",
-    "h": "18 is a **convention**, not a law",
-    "body": "it became the floor because it is half of 36, not because a single authoritative text put it there. treat it as a norm people agreed on, which is exactly what it is."
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "did u ask my ~~birth time?~~",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "lagna",
+      "b": "no time",
+      "s": "no lagna",
+      "cap": "no advice"
+     },
+     {
+      "tone": "marigold",
+      "b": "shani",
+      "s": "is the BEST graha for 2 of 12 lagnas",
+      "cap": "the point"
+     },
+     {
+      "tone": "card",
+      "b": "ask first",
+      "s": "before anyone names a stone",
+      "cap": "the move"
+     }
+    ],
+    "copy": "without a lagna there is no way to know what saturn even rules for u. **if nobody asked ur birth time, nobody calculated anything.**"
    },
    {
-    "t": "quote",
-    "chart": "guna milan",
-    "q": "eight checks. **none of them** is texting back.",
-    "attrib": "what the score cannot see · cont. p.10",
-    "blurb": "it compares two moons. it has never met either of u. that is worth remembering before it decides anything."
+    "eyebrow": "AUTO",
+    "h": "which ++school++ are u following?",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "school one",
+      "s": "strengthen the weakest graha",
+      "cap": "says"
+     },
+     {
+      "tone": "pink",
+      "b": "school two",
+      "s": "never strengthen a difficult lord",
+      "cap": "says"
+     },
+     {
+      "tone": "card",
+      "b": "same chart",
+      "s": "opposite advice. both defensible.",
+      "cap": "the result"
+     }
+    ],
+    "copy": "this is the single most important thing on this list and **almost nobody selling u a stone will raise it**. ask which school. a real practitioner has an answer ready."
    },
    {
-    "t": "cta",
-    "h": "run **ur own**, free",
-    "p": "all eight kootas, with the breakdown shown.",
-    "btn": "asktota.com/blog"
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "are u ++also selling++ it to me?",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "one rule",
+      "s": "never buy from whoever diagnosed u",
+      "cap": "the fix"
+     },
+     {
+      "tone": "pink",
+      "b": "most fraud",
+      "s": "in this market disappears right here",
+      "cap": "the effect"
+     },
+     {
+      "tone": "card",
+      "b": "awkward",
+      "s": "for about nine seconds",
+      "cap": "the cost"
+     }
+    ],
+    "copy": "they do not have to be dishonest for this to matter. **a diagnosis from the person holding the stock is unverifiable**, and that is enough."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the lab, the **price**, and the hurry",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "ur lab",
+      "s": "not the one that came with the stone",
+      "cap": "question 4"
+     },
+     {
+      "tone": "mint",
+      "b": "per carat",
+      "s": "not the total. ratti ≠ carat.",
+      "cap": "question 5"
+     },
+     {
+      "tone": "card",
+      "b": "why rush?",
+      "s": "“before amavasya” is a closing line",
+      "cap": "question 7"
+     }
+    ],
+    "copy": "one ratti is about 0.91 carat, and prescriptions come in ratti while shops quote carats. **that gap is where the money quietly goes.**"
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "and ask about **upratna**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "stone",
+      "b": "all 9",
+      "s": "have an accepted cheaper substitute",
+      "cap": "the tradition"
+     },
+     {
+      "tone": "marigold",
+      "b": "garnet",
+      "s": "moonstone, citrine, amethyst, peridot",
+      "cap": "examples"
+     },
+     {
+      "tone": "card",
+      "b": "so then",
+      "s": "price was never the mechanism",
+      "cap": "the question"
+     }
+    ],
+    "copy": "the same tradition that prescribes the stone lists a cheap alternative for every single one. **sit with what that implies.**"
+   },
+   {
+    "quote": {
+     "q": "never buy the stone from ~~whoever diagnosed u~~",
+     "attrib": "one rule, most of the fraud gone"
+    },
+    "eyebrow": "the payoff"
+   },
+   {
+    "cta": {
+     "h": "the whole guide, **free**",
+     "p": "no affiliate links. we don't sell stones.",
+     "btn": "asktota.com/blog"
+    },
+    "eyebrow": "one more thing"
    }
   ]
  }

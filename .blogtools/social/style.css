@@ -1,128 +1,124 @@
-/* Ask Tota carousel system. Every number here comes from BRAND_DESIGN_BIBLE 12.1
-   ("the social scale"): border 6px, hard shadow 0/12, card radius 56, print radius 14,
-   dot grid 50px @ r3, margin 96px, card padding 52px. */
+/* Ask Tota carousel v2.
+   Layout copied from the @yoursocialteam reference the client shared: flat pastel ground,
+   numbered pill eyebrow, big centred display headline with ROUNDED PILL highlights,
+   a row of overlapping preview tiles, a justified body paragraph, handle centred at the foot.
+   Typography stays Bricolage Grotesque per BRAND_DESIGN_BIBLE 4.1 (one family, no exceptions).
+   Ink borders and hard shadows are kept from 12.1 because they are the brand's own signature. */
 :root{
-  --bg:#FBF3E0; --dot:#E8DCC2; --ink:#1E3A2A; --body:#2C3E30; --muted:#5E6E5E;
+  --paper:#FBF3E0; --stock:#F4EEDD; --ink:#1E3A2A; --body:#2C3E30; --muted:#5E6E5E;
   --marigold:#FFD24A; --mint:#DFF2E4; --pink:#F8D3E0; --pink-ink:#C2588A;
-  --parrot:#178A4C; --card:#FFFFFF; --cream:#FBF3E0; --stock:#F4EEDD;
+  --parrot:#178A4C; --card:#FFFFFF;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#191919;font-family:'Bricolage Grotesque',sans-serif}
+body{background:#191919;font-family:'Bricolage Grotesque',ui-sans-serif,sans-serif}
+
 .slide{position:relative;width:1080px;height:1350px;overflow:hidden;
-  background:var(--bg);
-  background-image:radial-gradient(var(--dot) 3px, transparent 3.5px);
-  background-size:50px 50px;
-  padding:96px; display:flex; flex-direction:column;}
+  padding:88px 84px 76px;display:flex;flex-direction:column;align-items:center;
+  background:var(--mint)}
+.slide.g-mint{background:var(--mint)}
+.slide.g-pink{background:var(--pink)}
+.slide.g-marigold{background:var(--marigold)}
+.slide.g-paper{background:var(--paper)}
+.slide.g-stock{background:var(--stock)}
 
-/* ---------- shared chrome ---------- */
-.mastbar{background:var(--parrot);border:6px solid var(--ink);border-radius:44px;
-  box-shadow:0 12px 0 var(--ink);padding:26px 40px;display:flex;
-  align-items:center;justify-content:space-between;gap:20px}
-.mastbar b{color:var(--cream);font-weight:800;font-size:44px;letter-spacing:.14em;
-  text-transform:uppercase;line-height:1}
-.mastbar img{width:70px;height:70px;flex:none;object-fit:cover;object-position:50% 22%;border-radius:999px;border:4px solid var(--cream);background:var(--mint)}
-.dateline{display:flex;gap:34px;margin-top:26px;font-weight:700;font-size:30px;
-  letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.rule{height:6px;background:var(--ink);margin-top:22px}
+/* numbered eyebrow, top left */
+.eyebrow{align-self:flex-start;background:var(--pink);border:5px solid var(--ink);
+  border-radius:18px;padding:9px 26px;font-weight:800;font-size:34px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink);line-height:1.1;box-shadow:0 7px 0 var(--ink)}
+.slide.g-pink .eyebrow{background:var(--marigold)}
+.slide.g-marigold .eyebrow{background:var(--card)}
 
-.kicker{display:inline-block;align-self:flex-start;font-weight:800;font-size:30px;letter-spacing:.13em;
-  text-transform:uppercase;color:var(--ink);background:var(--marigold);
-  border:6px solid var(--ink);border-radius:999px;padding:10px 26px;line-height:1.1}
-.kicker.k-pink{background:var(--pink)}
-.kicker.k-mint{background:var(--mint)}
-.kicker.k-cream{background:var(--cream)}
+/* the display headline */
+h1{margin-top:30px;text-align:center;font-weight:800;color:var(--ink);
+  font-size:112px;line-height:1.06;letter-spacing:-.03em;text-wrap:balance;max-width:900px}
+h1.sm{font-size:88px}
+h1 mark{background:var(--marigold);color:var(--ink);border-radius:999px;white-space:nowrap;
+  padding:.04em .34em;margin:0 -.10em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+h1 mark.p{background:var(--pink)}
+h1 mark.c{background:var(--card)}
+.slide.g-marigold h1 mark{background:var(--card)}
 
-h1.scream{font-weight:800;text-transform:uppercase;letter-spacing:-.025em;
-  font-size:118px;line-height:1.02;color:var(--ink);margin-top:40px;text-wrap:balance}
-h1.scream mark{background:var(--marigold);color:var(--ink);white-space:nowrap;
-  padding:0 12px;margin-left:-12px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-p.dek{font-weight:500;font-size:38px;line-height:1.42;color:var(--muted);margin-top:34px;max-width:820px}
+/* the exhibit: a row of overlapping preview tiles */
+.tiles{margin-top:auto;margin-bottom:auto;width:100%;display:flex;align-items:center;
+  justify-content:center;gap:0;padding:28px 0}
+.tile{width:262px;height:392px;flex:none;background:var(--stock);border:5px solid var(--ink);
+  border-radius:16px;box-shadow:0 9px 0 var(--ink);margin-left:-30px;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  padding:22px 16px 34px;position:relative}
+.tile:first-child{margin-left:0;width:298px;height:440px;transform:translateY(18px);z-index:5}
+.tile:nth-child(2){z-index:4} .tile:nth-child(3){z-index:3}
+.tile:nth-child(4){z-index:2} .tile:nth-child(5){z-index:1}
+.tile.t-mint{background:var(--mint)} .tile.t-pink{background:var(--pink)}
+.tile.t-card{background:var(--card)} .tile.t-marigold{background:var(--marigold)}
+.tile b{font-weight:800;font-size:26px;line-height:1.18;color:var(--ink);text-align:center;
+  letter-spacing:-.01em}
+.tile small{font-weight:600;font-size:19px;line-height:1.3;color:var(--muted);text-align:center}
+.tile svg{width:100%;height:150px}
+.tile img{width:88%;object-fit:contain}
+.tile .cap{position:absolute;left:0;right:0;bottom:10px;font-weight:700;font-size:14px;
+  letter-spacing:.08em;text-transform:lowercase;color:var(--muted);text-align:center}
 
-/* the swipe rail: 5 dashes, active in marigold, plus the newspaper continuation mark */
-.rail{position:absolute;left:96px;right:96px;bottom:74px;display:flex;
-  align-items:center;justify-content:space-between}
-.dashes{display:flex;gap:12px}
-.dashes i{display:block;width:60px;height:8px;border-radius:4px;background:var(--ink);opacity:.28}
-.dashes i.on{background:var(--marigold);opacity:1;box-shadow:0 0 0 3px var(--ink)}
-.cont{font-weight:700;font-size:30px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+/* body paragraph */
+p.copy{width:100%;max-width:880px;text-align:justify;text-align-last:center;
+  font-weight:500;font-size:37px;line-height:1.42;color:var(--body);margin-top:6px}
+p.copy b{font-weight:800;color:var(--ink)}
 
+/* cover extras */
+.stamp{position:absolute;right:48px;top:74px;width:168px;height:168px;border-radius:999px;
+  background:var(--marigold);border:6px solid var(--ink);box-shadow:0 10px 0 var(--ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:rotate(9deg);text-align:center;line-height:1.06}
+.stamp span{font-weight:800;font-size:27px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.saveline{margin-top:22px;max-width:640px;text-align:center;font-weight:700;font-size:34px;
+  line-height:1.3;color:var(--pink-ink);transform:rotate(-2deg)}
+.slide.g-pink .saveline{color:var(--parrot)}
 
-/* ---------- C. the desk card ---------- */
-.desk{border:6px solid var(--ink);border-radius:56px;box-shadow:0 12px 0 var(--ink);
-  padding:52px;display:flex;flex-direction:column;gap:26px}
-.desk.t-white{background:var(--card)}
-.desk.t-mint{background:var(--mint)}
-.desk.t-pink{background:var(--pink)}
-.desk.t-marigold{background:var(--marigold)}
-.desk h2{font-weight:800;font-size:62px;line-height:1.1;letter-spacing:-.015em;color:var(--ink)}
-.desk h2 mark{background:var(--marigold);padding:0 10px;box-decoration-break:clone}
-.desk.t-marigold h2 mark{background:var(--cream)}
-.desk p{font-weight:500;font-size:36px;line-height:1.46;color:var(--body)}
-.desk .num{font-weight:800;font-size:120px;line-height:.9;color:var(--ink);opacity:.22}
-.dashrule{border-top:6px dashed var(--ink);opacity:.85}
+/* the foot: handle + progress dots, exactly like the reference */
+.foot{margin-top:auto;padding-top:26px;display:flex;flex-direction:column;
+  align-items:center;gap:14px;width:100%}
+.handle{font-weight:800;font-size:30px;letter-spacing:.06em;color:var(--ink)}
+.dots{display:flex;gap:10px}
+.dots i{width:11px;height:11px;border-radius:999px;background:var(--ink);opacity:.24}
+.dots i.on{opacity:1}
 
-.stack{flex:1;display:flex;flex-direction:column;justify-content:center;gap:34px;
-  padding-bottom:60px}
-
-/* ---------- B. the quote card ---------- */
-.qwrap{flex:1;display:flex;align-items:center;justify-content:center;padding-bottom:60px;position:relative}
-.sheet-back{position:absolute;inset:34px 30px 90px 30px;background:var(--stock);
-  border:6px solid var(--ink);border-radius:14px;transform:rotate(1.6deg)}
-.page{position:relative;width:100%;background:var(--card);border:6px solid var(--ink);
-  border-radius:14px;box-shadow:0 12px 0 var(--ink);padding:44px 46px 54px;
-  display:flex;flex-direction:column;gap:20px}
-.page .ph{text-align:center;font-weight:800;font-size:52px;letter-spacing:-.01em;color:var(--ink)}
-.page .pe{text-align:center;font-weight:700;font-size:26px;letter-spacing:.16em;
+/* the quote payoff slide keeps the newspaper page, it is the brand's screenshot engine */
+.qwrap{margin-top:auto;margin-bottom:auto;width:100%;position:relative;padding:8px 0}
+.sheet-back{position:absolute;inset:18px 16px 34px 16px;background:var(--stock);
+  border:5px solid var(--ink);border-radius:14px;transform:rotate(1.6deg)}
+.page{position:relative;background:var(--card);border:6px solid var(--ink);border-radius:14px;
+  box-shadow:0 12px 0 var(--ink);padding:40px 44px 48px;display:flex;flex-direction:column;gap:18px}
+.page .ph{text-align:center;font-weight:800;font-size:46px;color:var(--ink)}
+.page .pe{text-align:center;font-weight:700;font-size:23px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted)}
-.page .hr{height:6px;background:var(--ink)}
-.page .hr.thin{height:3px}
-.page .row{display:flex;justify-content:space-between;font-weight:700;font-size:24px;
-  letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
-.page .chartk{align-self:center;font-weight:800;font-size:26px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--pink-ink);background:var(--pink);
-  border:5px solid var(--ink);border-radius:999px;padding:8px 22px}
-.page blockquote{text-align:center;font-weight:800;font-size:84px;line-height:1.13;
-  text-transform:uppercase;letter-spacing:-.02em;color:var(--ink);padding:10px 0}
-.page blockquote mark{background:var(--pink);color:var(--ink);padding:0 12px;
-  box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.page .attrib{text-align:center;font-weight:500;font-size:28px;color:var(--muted)}
-.page .foot{display:flex;gap:26px;align-items:flex-start}
-.polaroid{width:190px;flex:none;background:var(--stock);border:5px solid var(--ink);
-  padding:12px 12px 30px;border-radius:6px}
-.polaroid div{height:150px;background:var(--mint);border:4px solid var(--ink)}
-.cols{flex:1;display:flex;flex-direction:column;gap:9px;padding-top:6px}
-.cols i{display:block;height:8px;background:var(--dot);border-radius:2px}
-.cols i:nth-child(2){width:82%}
-.cols i:nth-child(3){width:92%}
-.cols p{font-weight:500;font-size:28px;line-height:1.4;color:var(--body);margin-top:8px}
-.sticker{position:absolute;right:26px;bottom:-34px;transform:rotate(-2deg);
-  background:var(--marigold);border:6px solid var(--ink);border-radius:999px;
-  padding:14px 30px;font-weight:800;font-size:30px;letter-spacing:.05em;color:var(--ink);
+.page .hr{height:5px;background:var(--ink)} .page .hr.thin{height:3px}
+.page .row{display:flex;justify-content:space-between;font-weight:700;font-size:22px;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.page blockquote{text-align:center;font-weight:800;font-size:74px;line-height:1.12;
+  letter-spacing:-.025em;color:var(--ink);padding:6px 0}
+.page blockquote mark{background:var(--pink);border-radius:999px;white-space:nowrap;padding:.04em .3em;
+  margin:0 -.08em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.page .attrib{text-align:center;font-weight:500;font-size:26px;color:var(--muted)}
+.sticker{position:absolute;right:18px;bottom:-22px;transform:rotate(-2deg);
+  background:var(--marigold);border:6px solid var(--ink);border-radius:999px;padding:12px 28px;
+  font-weight:800;font-size:28px;color:var(--ink);box-shadow:0 9px 0 var(--ink)}
+
+/* cta slide */
+.ctacard{margin-top:auto;margin-bottom:auto;width:100%;background:var(--parrot);
+  border:6px solid var(--ink);border-radius:44px;box-shadow:0 12px 0 var(--ink);
+  padding:64px 52px;display:flex;flex-direction:column;align-items:center;gap:30px;text-align:center}
+.ctacard h2{color:var(--paper);font-weight:800;font-size:74px;line-height:1.08;letter-spacing:-.03em}
+.ctacard h2 mark{background:var(--marigold);color:var(--ink);border-radius:999px;white-space:nowrap;
+  padding:.04em .3em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.ctacard p{color:var(--paper);font-weight:500;font-size:34px;opacity:.94}
+.pill{background:var(--paper);border:6px solid var(--ink);border-radius:999px;padding:20px 42px;
+  font-weight:800;font-size:36px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);
   box-shadow:0 10px 0 var(--ink)}
 
-/* ---------- CTA slide ---------- */
-.ctaslide{flex:1;display:flex;flex-direction:column;justify-content:center;
-  align-items:center;text-align:center;gap:40px;padding-bottom:60px}
-.ctacard{width:100%;background:var(--parrot);border:6px solid var(--ink);border-radius:56px;
-  box-shadow:0 12px 0 var(--ink);padding:70px 56px;display:flex;flex-direction:column;
-  align-items:center;gap:34px}
-.ctacard h2{color:var(--cream);font-weight:800;font-size:82px;line-height:1.06;
-  text-transform:uppercase;letter-spacing:-.02em}
-.ctacard h2 mark{background:var(--marigold);color:var(--ink);padding:0 12px;
-  box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.ctacard p{color:var(--cream);font-weight:500;font-size:36px;opacity:.92}
-.pill{background:var(--cream);border:6px solid var(--ink);border-radius:999px;
-  padding:24px 46px;font-weight:800;font-size:40px;letter-spacing:.03em;
-  text-transform:uppercase;color:var(--ink);box-shadow:0 12px 0 var(--ink)}
-.handle{font-weight:800;font-size:36px;letter-spacing:.1em;color:var(--ink)}
-
-/* cover: the desk-art box, per archetype A */
-.art{flex:1;margin-top:34px;margin-bottom:76px;background:var(--mint);
-  border:6px solid var(--ink);border-radius:56px;box-shadow:0 12px 0 var(--ink);
-  position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:flex-end}
-.art img{max-height:94%;width:auto;margin:0 -1% -2% 0}
-.art .stamp{position:absolute;left:44px;top:44px;font-weight:800;font-size:30px;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
-  background:var(--marigold);border:6px solid var(--ink);border-radius:999px;
-  padding:10px 26px;transform:rotate(-3deg);box-shadow:0 8px 0 var(--ink)}
-.cover-dek{font-weight:500;font-size:38px;line-height:1.4;color:var(--muted);margin-top:26px}
+/* ground-aware highlight pills: never the same colour as the slide */
+.slide.g-pink   h1 mark.p{background:var(--marigold)}
+.slide.g-pink   h1 mark{background:var(--marigold)}
+.slide.g-pink   h1 mark.c{background:var(--card)}
+.slide.g-marigold h1 mark.p{background:var(--pink)}
+.slide.g-mint   h1 mark.c{background:var(--card)}
+.slide.g-paper  h1 mark.c{background:var(--card)}
+.slide.g-stock  h1 mark.c{background:var(--card)}

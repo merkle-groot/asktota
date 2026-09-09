@@ -11,19 +11,68 @@
   "read_time": "12 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; EXPLAINER",
-  "keywords": ["muhurat", "muhurta", "shubh muhurat", "rahu kaal", "abhijit muhurat", "choghadiya", "electional astrology"],
+  "keywords": [
+    "muhurat",
+    "muhurta",
+    "shubh muhurat",
+    "rahu kaal",
+    "abhijit muhurat",
+    "choghadiya",
+    "electional astrology"
+  ],
   "faq": [
-    {"q": "what is a muhurat?", "a": "literally, a unit of time: one thirtieth of a day, about 48 minutes. there are 30 muhurtas between one sunrise and the next. in practice the word now means a chosen window that has been checked against the panchang and the rising sign."},
-    {"q": "what does muhurta astrology actually check?", "a": "the five limbs of the panchang for that day, the sign rising at the chosen minute, the moon's placement relative to the person's birth star, and whether the window collides with any of the periods traditionally avoided."},
-    {"q": "how is rahu kaal calculated?", "a": "take the time between local sunrise and local sunset, divide it into eight equal parts, and take one of them according to the weekday. monday takes the 2nd part, saturday the 3rd, friday the 4th, wednesday the 5th, thursday the 6th, tuesday the 7th and sunday the 8th."},
-    {"q": "what is abhijit muhurat?", "a": "the 8th of the day's 30 muhurtas, straddling local solar noon, roughly 24 minutes either side of it. it is treated as generally auspicious and is the usual fallback when no other clean window exists."},
-    {"q": "what is choghadiya?", "a": "a simpler eight-part division of the day and night, each part named amrit, shubh, labh, char, rog, kaal or udveg. it is widely used in western india for everyday timing and is far coarser than a full muhurta calculation."},
-    {"q": "why do two panchangs give different muhurats?", "a": "different ayanamsa, different sunrise convention, and different rules for which tithi governs a day when it changes partway through. the astronomy is the same. the conventions are not."},
-    {"q": "what is a sthir lagna and why does it matter?", "a": "the fixed signs, vrishabha, simha, vrishchika and kumbha. muhurta practice prefers a fixed sign rising for anything meant to last, like a house entry or a marriage, and a movable sign for anything meant to move, like a journey."},
-    {"q": "does a muhurat need my birth details?", "a": "a general muhurat does not. a personal one does, because tarabala and chandrabala are calculated from ur own birth nakshatra and moon sign. that is the difference between the muhurat printed in a calendar and one chosen for u."},
-    {"q": "is a festival date the same as a muhurat?", "a": "no. a festival date is fixed by the lunar calendar, so nobody chooses it. what gets chosen is the window within that day, like the pradosh kaal on dhanteras."},
-    {"q": "does muhurta consider planetary transits?", "a": "yes, in specific ways. it looks at the moon, at the lagna and its lord, and at whether the significator for the act is well placed. what it does not contain is a blanket rule to stop everything while a planet is retrograde."},
-    {"q": "is there evidence that muhurats work?", "a": "no controlled evidence, and no proposed mechanism. what is real and measurable is the coordination effect: a named time gets everyone to turn up, commit, and treat the act as significant."},
-    {"q": "what if i cannot use the muhurat i was given?", "a": "then use abhijit, or the next clean window. muhurta practice has always had fallbacks precisely because life does not stop for a calendar. a tradition with no fallback would not have survived this long."}
-  ]
+    {
+      "q": "what is a muhurat?",
+      "a": "literally, a unit of time: one thirtieth of a day, about 48 minutes. there are 30 muhurtas between one sunrise and the next. in practice the word now means a chosen window that has been checked against the panchang and the rising sign."
+    },
+    {
+      "q": "what does muhurta astrology actually check?",
+      "a": "the five limbs of the panchang for that day, the sign rising at the chosen minute, the moon's placement relative to the person's birth star, and whether the window collides with any of the periods traditionally avoided."
+    },
+    {
+      "q": "how is rahu kaal calculated?",
+      "a": "take the time between local sunrise and local sunset, divide it into eight equal parts, and take one of them according to the weekday. monday takes the 2nd part, saturday the 3rd, friday the 4th, wednesday the 5th, thursday the 6th, tuesday the 7th and sunday the 8th."
+    },
+    {
+      "q": "what is abhijit muhurat?",
+      "a": "the 8th of the day's 30 muhurtas, straddling local solar noon, roughly 24 minutes either side of it. it is treated as generally auspicious and is the usual fallback when no other clean window exists."
+    },
+    {
+      "q": "what is choghadiya?",
+      "a": "a simpler eight-part division of the day and night, each part named amrit, shubh, labh, char, rog, kaal or udveg. it is widely used in western india for everyday timing and is far coarser than a full muhurta calculation."
+    },
+    {
+      "q": "why do two panchangs give different muhurats?",
+      "a": "different ayanamsa, different sunrise convention, and different rules for which tithi governs a day when it changes partway through. the astronomy is the same. the conventions are not."
+    },
+    {
+      "q": "what is a sthir lagna and why does it matter?",
+      "a": "the fixed signs, vrishabha, simha, vrishchika and kumbha. muhurta practice prefers a fixed sign rising for anything meant to last, like a house entry or a marriage, and a movable sign for anything meant to move, like a journey."
+    },
+    {
+      "q": "does a muhurat need my birth details?",
+      "a": "a general muhurat does not. a personal one does, because tarabala and chandrabala are calculated from ur own birth nakshatra and moon sign. that is the difference between the muhurat printed in a calendar and one chosen for u."
+    },
+    {
+      "q": "is a festival date the same as a muhurat?",
+      "a": "no. a festival date is fixed by the lunar calendar, so nobody chooses it. what gets chosen is the window within that day, like the pradosh kaal on dhanteras."
+    },
+    {
+      "q": "does muhurta consider planetary transits?",
+      "a": "yes, in specific ways. it looks at the moon, at the lagna and its lord, and at whether the significator for the act is well placed. what it does not contain is a blanket rule to stop everything while a planet is retrograde."
+    },
+    {
+      "q": "is there evidence that muhurats work?",
+      "a": "no controlled evidence, and no proposed mechanism. what is real and measurable is the coordination effect: a named time gets everyone to turn up, commit, and treat the act as significant."
+    },
+    {
+      "q": "what if i cannot use the muhurat i was given?",
+      "a": "then use abhijit, or the next clean window. muhurta practice has always had fallbacks precisely because life does not stop for a calendar. a tradition with no fallback would not have survived this long."
+    }
+  ],
+  "card_title": "a muhurat is forty eight minutes and a decision",
+  "card_dek": "what actually gets checked, how rahu kaal and abhijit are worked out, and the part of it that genuinely works.",
+  "chip": "explainer",
+  "llms_title": "What a muhurat is",
+  "llms_desc": "48 minutes, the panchang filter, rahu kaal arithmetic, abhijit, and fixed versus movable lagnas."
 }

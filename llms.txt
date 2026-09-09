@@ -31,65 +31,43 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): forty-nine explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): thirty explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
-- [Sun in your birth chart](https://www.asktota.com/blog/sun-in-birth-chart.html): Surya rules Simha alone, is classed as a natural malefic, causes combustion and can never suffer it, house by house.
-- [Moon in your birth chart](https://www.asktota.com/blog/moon-in-birth-chart.html): Chandra as rashi, dasha origin and chandra lagna, plus paksha bala and the kemadruma cancellations.
-- [Mars in your birth chart](https://www.asktota.com/blog/mars-in-birth-chart.html): the 4th, 7th and 8th aspects, why the manglik house list follows from them, and Mars as yogakaraka for two lagnas.
-- [Jupiter in your birth chart](https://www.asktota.com/blog/jupiter-in-birth-chart.html): the 5th and 9th aspects covering both trikonas, kendradhipati dosha, and Gajakesari's real frequency.
-- [Venus in your birth chart](https://www.asktota.com/blog/venus-in-birth-chart.html): the 20 year dasha, the 47 degree elongation limit, and kalatra karaka in every chart regardless of gender.
-- [Exalted and debilitated planets](https://www.asktota.com/blog/exalted-debilitated-planets.html): the full uchcha and neecha table with peak degrees, the four signs with neither, mooltrikona, and neecha bhanga.
-- [Planetary combustion explained](https://www.asktota.com/blog/planetary-combustion.html): astangata orbs for every graha, why Mercury is combust about half the time, and why cazimi is not a Vedic concept.
-- [Benefic and malefic planets](https://www.asktota.com/blog/benefic-malefic-planets.html): naisargika versus functional classification, kendradhipati dosha, the six yogakaraka lagnas, upachaya houses and maraka.
-- [Planetary friendships](https://www.asktota.com/blog/planetary-friendships.html): the naisargika table with its asymmetries, tatkalika maitri, and the five-fold panchadha combination.
-- [How to find your moon sign](https://www.asktota.com/blog/find-your-moon-sign.html): three methods including the full nakshatra pada syllable table used at namakaran.
-
 - [Mercury retrograde: the actual mechanics](https://www.asktota.com/blog/mercury-retrograde-mechanics.html): apparent retrograde motion explained, the 2026 dates, shadow periods, and the classical position that a vakri graha gains cheshta bala.
-- [What Mercury retrograde actually correlates with](https://www.asktota.com/blog/mercury-retrograde-effects.html): the 18 percent base rate, the absence of evidence, and the frequency illusion.
-- [The retrograde post-shadow](https://www.asktota.com/blog/retrograde-post-shadow.html): the degrees crossed three times, and why the direct station is not a reset.
-- [What a muhurat is](https://www.asktota.com/blog/muhurat.html): 48 minutes, the panchang filter, rahu kaal arithmetic, abhijit, and fixed versus movable lagnas.
-- [Dhanteras inside Mercury retrograde](https://www.asktota.com/blog/dhanteras-mercury-retrograde.html): a muhurat is elective and a transit is not, plus the gold-buying checklist.
-- [Navratri: the nine nights](https://www.asktota.com/blog/navratri-nine-nights.html): the Navadurga in order, four navratris a year, tithi kshaya, and the modern origin of the colour chart.
-- [Amanta vs Purnimanta](https://www.asktota.com/blog/amanta-purnimanta.html): why the dark fortnight carries two month names, with the festival mapping and adhik maas.
-- [Mercury in your birth chart](https://www.asktota.com/blog/mercury-in-birth-chart.html): the 28 degree elongation limit, combustion, Budhaditya yoga's real frequency, and Budha house by house.
-- [How to pick a Vedic astrology app](https://www.asktota.com/blog/best-vedic-astrology-app-india.html): ten checks, three product categories, and where competitors beat Ask Tota.
-- [Free kundli online: what free actually means](https://www.asktota.com/blog/free-kundli-online.html): the four business models, what birth data is worth, and why two free charts disagree.
-
 - [How to read your kundli, step by step](https://www.asktota.com/blog/how-to-read-kundli.html): a twelve step reading order: chart style, lagna, lagna lord, moon, occupancy, dignity, aspects, house lords, yogas, dasha, transits, synthesis.
+- [Gemstones by planet](https://www.asktota.com/blog/gemstones-by-planet.html): the full navaratna table, the two schools that disagree about who should wear what, the upratna substitutes, and how not to be overcharged.
+- [Saturn in your chart, minus the fear](https://www.asktota.com/blog/saturn-in-birth-chart.html): 2.5 years per sign, 29.5 years per lap, 19 years of dasha, and Saturn in each of the twelve houses.
+- [Raj yoga is a handshake between two houses](https://www.asktota.com/blog/raj-yoga.html): a kendra lord connected to a trikona lord, how common that is, and why a yoga does nothing until its dasha arrives.
+- [Nadi dosha is one koota carrying eight points](https://www.asktota.com/blog/nadi-dosha.html): all 27 nakshatras assigned to their nadi, why about one couple in three fails it, and the classical exceptions.
+- [When will I get married](https://www.asktota.com/blog/marriage-timing.html): the 7th lord, Venus, the dasha and the Jupiter transit, and why the method produces windows rather than dates.
+- [The navamsa chart is your chart at higher magnification](https://www.asktota.com/blog/navamsa-chart.html): the D9, nine slices per sign, 108 in total, the same grid as the nakshatra padas.
 - [Your lagna matters more than your sun sign](https://www.asktota.com/blog/lagna-ascendant.html): the ascendant sets all twelve houses, changes about every two hours, and decides which grahas are functionally helpful for you.
 - [Rahu and Ketu, the two grahas that are not there](https://www.asktota.com/blog/rahu-ketu.html): the lunar nodes, always 180 degrees apart, always retrograde, one lap every 18.6 years.
 - [Kaal sarp dosha is a line in the sky, not a curse](https://www.asktota.com/blog/kaal-sarp-dosha.html): all seven grahas on one side of the Rahu-Ketu axis. Absent from the classical texts, and far more common than the word curse implies.
-- [The navamsa chart is your chart at higher magnification](https://www.asktota.com/blog/navamsa-chart.html): the D9, nine slices per sign, 108 in total, the same grid as the nakshatra padas.
-- [Raj yoga is a handshake between two houses](https://www.asktota.com/blog/raj-yoga.html): a kendra lord connected to a trikona lord, how common that is, and why a yoga does nothing until its dasha arrives.
-- [Saturn in your chart, minus the fear](https://www.asktota.com/blog/saturn-in-birth-chart.html): 2.5 years per sign, 29.5 years per lap, 19 years of dasha, and Saturn in each of the twelve houses.
-- [When will I get married](https://www.asktota.com/blog/marriage-timing.html): the 7th lord, Venus, the dasha and the Jupiter transit, and why the method produces windows rather than dates.
-- [Nadi dosha is one koota carrying eight points](https://www.asktota.com/blog/nadi-dosha.html): all 27 nakshatras assigned to their nadi, why about one couple in three fails it, and the classical exceptions.
-- [Gemstones by planet](https://www.asktota.com/blog/gemstones-by-planet.html): the full navaratna table, the two schools that disagree about who should wear what, the upratna substitutes, and how not to be overcharged.
-
-- [What Vedic astrology actually is, without the mystique](https://www.asktota.com/blog/what-is-vedic-astrology.html): what jyotish is: nine grahas, twelve houses, twenty-seven nakshatras, the sidereal zodiac, and an explicit line on where the evidence stops.
+- [Your career house, read properly](https://www.asktota.com/blog/career-10th-house.html): the 10th house and its lord, the three other houses career is read across, and why an empty 10th means nothing.
+- [Why Hindu festival dates move every year](https://www.asktota.com/blog/festival-dates.html): the lunisolar calendar, tithis, and intercalary months.
+- [How Ashtakoota scores compatibility out of 36](https://www.asktota.com/blog/ashtakoota-compatibility.html): the eight kootas, their weights, and why Nadi carries 8 of the 36 points.
+- [Manglik dosha is a house number, not a sentence](https://www.asktota.com/blog/manglik-dosha.html): Mars in one of six houses. how common that is, why astrologers disagree, the classical cancellations, and what gets sold in its name.
+- [Sade sati is not a curse](https://www.asktota.com/blog/sade-sati.html): Saturn transiting the 12th, 1st, and 2nd signs from the natal moon, about 7.5 years in three phases.
+- [What an eclipse does to a birth chart](https://www.asktota.com/blog/eclipse-sutak.html): Rahu and Ketu, and why sutak observance depends on local visibility.
+- [Angel numbers, and why you keep seeing them](https://www.asktota.com/blog/angel-numbers.html): every repeating number and its usual meaning, the 1990s origin of the practice, and the documented psychology of noticing them.
+- [What a dasha is](https://www.asktota.com/blog/vimshottari-dasha.html): the Vimshottari system, a fixed 120-year cycle split across nine planets, starting from the natal moon's nakshatra.
+- [27 nakshatras, ranked by how messy they are](https://www.asktota.com/blog/nakshatra.html): the 27-part lunar zodiac that dasha and compatibility actually run on.
+- [The panchang is five numbers, not a mood](https://www.asktota.com/blog/panchang.html): the five limbs, tithi, vara, nakshatra, yoga and karana, and why two panchangs can disagree about the same day.
+- [How accurate does your birth time need to be](https://www.asktota.com/blog/birth-time-accuracy.html): the sun barely moves in a day, the moon shifts about every 2.25 days, the rising sign changes roughly every 2 hours.
+- [Sun sign vs moon sign vs rising sign](https://www.asktota.com/blog/sun-moon-rising.html): three placements, three different jobs, with a calculator for all three.
+- [Vedic vs western astrology, difference by difference](https://www.asktota.com/blog/vedic-vs-western-astrology.html): every structural difference: sidereal against tropical, nine grahas against ten planets, whole sign houses, dashas against transits.
 - [Your kundli is a diagram, not a prophecy](https://www.asktota.com/blog/kundli.html): what a birth chart is, what the twelve boxes mean, why north and south Indian layouts look different, and how to read one in order.
+- [Why your sun sign is different in Vedic astrology](https://www.asktota.com/blog/vedic-sun-sign.html): the sidereal zodiac drifts about 24 degrees from the tropical one, which moves most people back a sign.
 - [The twelve houses, explained one at a time](https://www.asktota.com/blog/12-houses.html): all twelve bhavas, what each rules, and why five to seven empty houses is normal in every chart.
 - [Nine grahas, and why there is no Pluto](https://www.asktota.com/blog/nine-planets.html): each graha's job, what exalted, debilitated and combust actually mean, and why Uranus, Neptune and Pluto are absent.
 - [The twelve rashis, and why yours moved](https://www.asktota.com/blog/zodiac-signs.html): the twelve rashis with rulers, elements and sidereal dates, and why cusp signs do not exist in this system.
-- [Vedic vs western astrology, difference by difference](https://www.asktota.com/blog/vedic-vs-western-astrology.html): every structural difference: sidereal against tropical, nine grahas against ten planets, whole sign houses, dashas against transits.
-- [Manglik dosha is a house number, not a sentence](https://www.asktota.com/blog/manglik-dosha.html): Mars in one of six houses. how common that is, why astrologers disagree, the classical cancellations, and what gets sold in its name.
-- [Your career house, read properly](https://www.asktota.com/blog/career-10th-house.html): the 10th house and its lord, the three other houses career is read across, and why an empty 10th means nothing.
-- [Angel numbers, and why you keep seeing them](https://www.asktota.com/blog/angel-numbers.html): every repeating number and its usual meaning, the 1990s origin of the practice, and the documented psychology of noticing them.
-- [The panchang is five numbers, not a mood](https://www.asktota.com/blog/panchang.html): the five limbs, tithi, vara, nakshatra, yoga and karana, and why two panchangs can disagree about the same day.
-- [Why your sun sign is different in Vedic astrology](https://www.asktota.com/blog/vedic-sun-sign.html): the sidereal zodiac drifts about 24 degrees from the tropical one, which moves most people back a sign.
-- [Sun sign vs moon sign vs rising sign](https://www.asktota.com/blog/sun-moon-rising.html): three placements, three different jobs, with a calculator for all three.
-- [How accurate does your birth time need to be](https://www.asktota.com/blog/birth-time-accuracy.html): the sun barely moves in a day, the moon shifts about every 2.25 days, the rising sign changes roughly every 2 hours.
-- [27 nakshatras, ranked by how messy they are](https://www.asktota.com/blog/nakshatra.html): the 27-part lunar zodiac that dasha and compatibility actually run on.
-- [What a dasha is](https://www.asktota.com/blog/vimshottari-dasha.html): the Vimshottari system, a fixed 120-year cycle split across nine planets, starting from the natal moon's nakshatra.
-- [Sade sati is not a curse](https://www.asktota.com/blog/sade-sati.html): Saturn transiting the 12th, 1st, and 2nd signs from the natal moon, about 7.5 years in three phases.
-- [How Ashtakoota scores compatibility out of 36](https://www.asktota.com/blog/ashtakoota-compatibility.html): the eight kootas, their weights, and why Nadi carries 8 of the 36 points.
-- [Why Hindu festival dates move every year](https://www.asktota.com/blog/festival-dates.html): the lunisolar calendar, tithis, and intercalary months.
-- [What an eclipse does to a birth chart](https://www.asktota.com/blog/eclipse-sutak.html): Rahu and Ketu, and why sutak observance depends on local visibility.
+- [What Vedic astrology actually is, without the mystique](https://www.asktota.com/blog/what-is-vedic-astrology.html): what jyotish is: nine grahas, twelve houses, twenty-seven nakshatras, the sidereal zodiac, and an explicit line on where the evidence stops.
 
 ## Contact
 

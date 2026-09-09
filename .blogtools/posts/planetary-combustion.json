@@ -11,19 +11,67 @@
   "read_time": "9 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE CHART DESK",
-  "keywords": ["planetary combustion", "astangata", "combust planet vedic", "combustion orbs", "mercury combust", "cazimi"],
+  "keywords": [
+    "planetary combustion",
+    "astangata",
+    "combust planet vedic",
+    "combustion orbs",
+    "mercury combust",
+    "cazimi"
+  ],
   "faq": [
-    {"q": "what is combustion in vedic astrology?", "a": "astangata, meaning set or burnt. a graha within a certain number of degrees of the sun is treated as having lost its independent voice, drowned out the way a star is drowned out by daylight."},
-    {"q": "what are the combustion orbs?", "a": "commonly given as moon 12 degrees, mars 17, mercury 14 and 12 when retrograde, jupiter 11, venus 10 and 8 when retrograde, saturn 15. texts differ slightly, so check which set a reading is using."},
-    {"q": "can the sun be combust?", "a": "no. the sun is the only graha that causes combustion and the only one that can never suffer it. rahu and ketu are also unaffected, because they have no body to be hidden."},
-    {"q": "why is mercury combust so often?", "a": "because mercury never appears more than about 28 degrees from the sun, and the combustion orb is 14 degrees. half of its entire possible range sits inside the burn radius."},
-    {"q": "does combustion destroy a planet?", "a": "no. the classical reading is that the graha loses its independent voice, not its significations. it is absorbed into the sun's agenda rather than removed from the chart."},
-    {"q": "is a combust planet in my birth chart a problem?", "a": "it is a condition to note, not a verdict. combustion is very common for mercury and venus, and what matters far more is what the graha rules for ur lagna and where it sits."},
-    {"q": "what is cazimi?", "a": "a western concept where a planet within about 17 arcminutes of the sun is considered strengthened rather than burnt. it is not part of classical vedic astrology and should not be presented as though it were."},
-    {"q": "does combustion affect dasha results?", "a": "practitioners generally read a combust graha's period as one where its significations run through the sun's themes: authority, the self, recognition and the father, rather than independently."},
-    {"q": "which planets combust least often?", "a": "jupiter, with an 11 degree orb and a full 360 degrees of possible positions, so roughly six percent of the time. saturn and mars are similar. venus and mercury are the frequent ones because they are leashed to the sun."},
-    {"q": "how do i check if a planet is combust in my chart?", "a": "take the difference in degrees between that graha and the sun. if it is less than the orb for that graha, it is combust. any chart that shows exact degrees lets u check it in a few seconds."},
-    {"q": "is a combust moon significant?", "a": "a moon within 12 degrees of the sun is near new, so it is both combust and at its weakest by paksha bala. it takes both hits at once, which is why the tithi u were born on carries real information."},
-    {"q": "do all texts agree on the orbs?", "a": "no. the figures above are the most widely used, but classical sources vary by a degree or two and some practitioners adjust for retrograde motion differently. it is a convention, not a constant."}
-  ]
+    {
+      "q": "what is combustion in vedic astrology?",
+      "a": "astangata, meaning set or burnt. a graha within a certain number of degrees of the sun is treated as having lost its independent voice, drowned out the way a star is drowned out by daylight."
+    },
+    {
+      "q": "what are the combustion orbs?",
+      "a": "commonly given as moon 12 degrees, mars 17, mercury 14 and 12 when retrograde, jupiter 11, venus 10 and 8 when retrograde, saturn 15. texts differ slightly, so check which set a reading is using."
+    },
+    {
+      "q": "can the sun be combust?",
+      "a": "no. the sun is the only graha that causes combustion and the only one that can never suffer it. rahu and ketu are also unaffected, because they have no body to be hidden."
+    },
+    {
+      "q": "why is mercury combust so often?",
+      "a": "because mercury never appears more than about 28 degrees from the sun, and the combustion orb is 14 degrees. half of its entire possible range sits inside the burn radius."
+    },
+    {
+      "q": "does combustion destroy a planet?",
+      "a": "no. the classical reading is that the graha loses its independent voice, not its significations. it is absorbed into the sun's agenda rather than removed from the chart."
+    },
+    {
+      "q": "is a combust planet in my birth chart a problem?",
+      "a": "it is a condition to note, not a verdict. combustion is very common for mercury and venus, and what matters far more is what the graha rules for ur lagna and where it sits."
+    },
+    {
+      "q": "what is cazimi?",
+      "a": "a western concept where a planet within about 17 arcminutes of the sun is considered strengthened rather than burnt. it is not part of classical vedic astrology and should not be presented as though it were."
+    },
+    {
+      "q": "does combustion affect dasha results?",
+      "a": "practitioners generally read a combust graha's period as one where its significations run through the sun's themes: authority, the self, recognition and the father, rather than independently."
+    },
+    {
+      "q": "which planets combust least often?",
+      "a": "jupiter, with an 11 degree orb and a full 360 degrees of possible positions, so roughly six percent of the time. saturn and mars are similar. venus and mercury are the frequent ones because they are leashed to the sun."
+    },
+    {
+      "q": "how do i check if a planet is combust in my chart?",
+      "a": "take the difference in degrees between that graha and the sun. if it is less than the orb for that graha, it is combust. any chart that shows exact degrees lets u check it in a few seconds."
+    },
+    {
+      "q": "is a combust moon significant?",
+      "a": "a moon within 12 degrees of the sun is near new, so it is both combust and at its weakest by paksha bala. it takes both hits at once, which is why the tithi u were born on carries real information."
+    },
+    {
+      "q": "do all texts agree on the orbs?",
+      "a": "no. the figures above are the most widely used, but classical sources vary by a degree or two and some practitioners adjust for retrograde motion differently. it is a convention, not a constant."
+    }
+  ],
+  "card_title": "the sun burns things, and only the sun",
+  "card_dek": "the orbs for each graha, why mercury spends about half its life inside them, and what astangata actually changes.",
+  "chip": "explainer",
+  "llms_title": "Planetary combustion explained",
+  "llms_desc": "astangata orbs for every graha, why Mercury is combust about half the time, and why cazimi is not a Vedic concept."
 }

@@ -1,0 +1,77 @@
+name: publish scheduled posts
+
+# Blog posts sit in .blogtools/posts/ until their published date arrives. This
+# releases whatever has come due and regenerates the index, the sitemap and
+# llms.txt to match. Pushing to main triggers the Vercel deploy.
+#
+# 18:35 UTC is 00:05 IST the next day, so a post dated the 11th goes live a few
+# minutes into the 11th, India time.
+
+on:
+  schedule:
+    - cron: '35 18 * * *'
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: 'Release as if it were this date (YYYY-MM-DD). Leave blank for today.'
+        required: false
+      dry_run:
+        description: 'Report only, change nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-scheduled-posts
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Release anything due
+        id: run
+        run: |
+          ARGS=""
+          [ -n "${{ inputs.as_of }}" ] && ARGS="$ARGS --as-of ${{ inputs.as_of }}"
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          python3 .blogtools/publish_site.py $ARGS | tee /tmp/publish.log
+          {
+            echo 'summary<<EOF'
+            cat /tmp/publish.log
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push if anything changed
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "nothing changed. no commit."
+            exit 0
+          fi
+          RELEASED=$(grep -c '^  RELEASE' /tmp/publish.log || true)
+          git config user.name  "asktota-bot"
+          git config user.email "bot@asktota.com"
+          git add -A
+          {
+            printf 'Release %s scheduled post(s)\n\n' "$RELEASED"
+            grep '^  RELEASE' /tmp/publish.log || printf '  index, sitemap or llms.txt refresh only\n'
+            printf '\nAutomated by .github/workflows/publish-scheduled-posts.yml\n'
+          } > /tmp/msg.txt
+          git commit -F /tmp/msg.txt
+          git push
+
+      - name: Report
+        run: |
+          echo '### Scheduled publish' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/publish.log >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

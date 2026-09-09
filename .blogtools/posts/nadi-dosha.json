@@ -11,19 +11,67 @@
   "read_time": "10 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; EXPLAINER",
-  "keywords": ["nadi dosha", "nadi koota", "kundli matching", "guna milan", "ashtakoota", "nadi dosha exceptions"],
+  "keywords": [
+    "nadi dosha",
+    "nadi koota",
+    "kundli matching",
+    "guna milan",
+    "ashtakoota",
+    "nadi dosha exceptions"
+  ],
   "faq": [
-    {"q": "what is nadi dosha?", "a": "it is what happens when both people in a match have birth nakshatras belonging to the same nadi group. nadi is one of the eight kootas in guna milan, it carries 8 of the 36 points, and it scores zero when the two match."},
-    {"q": "what are the three nadis?", "a": "aadi (vata), madhya (pitta) and antya (kapha). the names come from ayurveda. all 27 nakshatras are assigned to one of the three, nine to each."},
-    {"q": "how common is nadi dosha?", "a": "about one couple in three. there are three nadis and a roughly even split of nakshatras between them, so the chance of two people landing in the same group is close to one in three."},
-    {"q": "why is nadi worth 8 points?", "a": "it is the highest weighted koota in the ashtakoota system, traditionally justified by a claim about health and children. because it is all or nothing, losing it drops a score by 8 and often takes a couple under the usual 18 point line."},
-    {"q": "what are the exceptions to nadi dosha?", "a": "the classical exceptions are usually given as: the two share a rashi but have different nakshatras, they share a nakshatra but have different rashis, or they share both but sit in different padas of that nakshatra."},
-    {"q": "does nadi dosha affect children?", "a": "the traditional claim is about progeny and health, borrowed from ayurvedic ideas about constitution. there is no medical evidence connecting birth star groupings to fertility or child health."},
-    {"q": "can nadi dosha be cancelled by a puja?", "a": "there is a remedy industry around it, and there are also textual exceptions that require no payment at all. check the exceptions first, because they are part of the same tradition doing the scoring."},
-    {"q": "is nadi dosha used everywhere in india?", "a": "no. the eight koota system is most associated with north indian practice. much of south india uses a ten koota system with different weights and a different emphasis, and many communities do not weight nadi this heavily."},
-    {"q": "does birth time change my nadi?", "a": "it can. nadi comes from ur moon's nakshatra, and the moon spends a bit over a day in each one. a birth time wrong by several hours can move u to the neighbouring nakshatra and therefore to a different nadi."},
-    {"q": "should a couple call off a wedding over nadi dosha?", "a": "that is a decision about two people, and it should be made by those two people. the score is one traditional metric with a known one in three failure rate, and the tradition itself wrote down exceptions for exactly this case."},
-    {"q": "how do i find my nadi?", "a": "find ur moon's nakshatra at birth, then look up which of the three groups it belongs to. nakshatras 1, 6, 7, 12, 13, 18, 19, 24 and 25 are aadi. 2, 5, 8, 11, 14, 17, 20, 23 and 26 are madhya. the rest are antya."},
-    {"q": "what is the minimum guna score for marriage?", "a": "18 out of 36 is the commonly quoted floor, with 24 and above treated as good. those thresholds are convention rather than a rule from a single authoritative text."}
-  ]
+    {
+      "q": "what is nadi dosha?",
+      "a": "it is what happens when both people in a match have birth nakshatras belonging to the same nadi group. nadi is one of the eight kootas in guna milan, it carries 8 of the 36 points, and it scores zero when the two match."
+    },
+    {
+      "q": "what are the three nadis?",
+      "a": "aadi (vata), madhya (pitta) and antya (kapha). the names come from ayurveda. all 27 nakshatras are assigned to one of the three, nine to each."
+    },
+    {
+      "q": "how common is nadi dosha?",
+      "a": "about one couple in three. there are three nadis and a roughly even split of nakshatras between them, so the chance of two people landing in the same group is close to one in three."
+    },
+    {
+      "q": "why is nadi worth 8 points?",
+      "a": "it is the highest weighted koota in the ashtakoota system, traditionally justified by a claim about health and children. because it is all or nothing, losing it drops a score by 8 and often takes a couple under the usual 18 point line."
+    },
+    {
+      "q": "what are the exceptions to nadi dosha?",
+      "a": "the classical exceptions are usually given as: the two share a rashi but have different nakshatras, they share a nakshatra but have different rashis, or they share both but sit in different padas of that nakshatra."
+    },
+    {
+      "q": "does nadi dosha affect children?",
+      "a": "the traditional claim is about progeny and health, borrowed from ayurvedic ideas about constitution. there is no medical evidence connecting birth star groupings to fertility or child health."
+    },
+    {
+      "q": "can nadi dosha be cancelled by a puja?",
+      "a": "there is a remedy industry around it, and there are also textual exceptions that require no payment at all. check the exceptions first, because they are part of the same tradition doing the scoring."
+    },
+    {
+      "q": "is nadi dosha used everywhere in india?",
+      "a": "no. the eight koota system is most associated with north indian practice. much of south india uses a ten koota system with different weights and a different emphasis, and many communities do not weight nadi this heavily."
+    },
+    {
+      "q": "does birth time change my nadi?",
+      "a": "it can. nadi comes from ur moon's nakshatra, and the moon spends a bit over a day in each one. a birth time wrong by several hours can move u to the neighbouring nakshatra and therefore to a different nadi."
+    },
+    {
+      "q": "should a couple call off a wedding over nadi dosha?",
+      "a": "that is a decision about two people, and it should be made by those two people. the score is one traditional metric with a known one in three failure rate, and the tradition itself wrote down exceptions for exactly this case."
+    },
+    {
+      "q": "how do i find my nadi?",
+      "a": "find ur moon's nakshatra at birth, then look up which of the three groups it belongs to. nakshatras 1, 6, 7, 12, 13, 18, 19, 24 and 25 are aadi. 2, 5, 8, 11, 14, 17, 20, 23 and 26 are madhya. the rest are antya."
+    },
+    {
+      "q": "what is the minimum guna score for marriage?",
+      "a": "18 out of 36 is the commonly quoted floor, with 24 and above treated as good. those thresholds are convention rather than a rule from a single authoritative text."
+    }
+  ],
+  "card_title": "nadi dosha is one koota carrying eight points",
+  "card_dek": "the biggest single item in the 36 point match, and it is all or nothing. roughly one couple in three fails it. here are the exceptions.",
+  "chip": "explainer",
+  "llms_title": "Nadi dosha is one koota carrying eight points",
+  "llms_desc": "all 27 nakshatras assigned to their nadi, why about one couple in three fails it, and the classical exceptions."
 }

@@ -11,19 +11,67 @@
   "read_time": "10 MIN READ",
   "section": "Festivals",
   "kicker": "THE BLOG &middot; THE RETROGRADE DESK",
-  "keywords": ["navratri", "navadurga", "nine forms of durga", "sharad navratri 2026", "ghatasthapana", "navratri colours"],
+  "keywords": [
+    "navratri",
+    "navadurga",
+    "nine forms of durga",
+    "sharad navratri 2026",
+    "ghatasthapana",
+    "navratri colours"
+  ],
   "faq": [
-    {"q": "what are the nine forms of durga?", "a": "shailaputri, brahmacharini, chandraghanta, kushmanda, skandamata, katyayani, kalaratri, mahagauri and siddhidatri. together they are the navadurga, and the order is fixed."},
-    {"q": "why do navratri dates change every year?", "a": "because it is set by tithi, not by the solar calendar. sharad navratri begins on the first tithi of the bright fortnight of ashwin, and a lunar month is about 29.5 days, so it drifts against the gregorian calendar."},
-    {"q": "how many navratris are there in a year?", "a": "four. chaitra navratri in spring and sharad navratri in autumn are the widely observed ones. two more, in magha and ashadha, are called gupt navratri and are kept much more quietly."},
-    {"q": "why is navratri sometimes eight days?", "a": "tithi kshaya. a tithi can begin and end without ever being current at sunrise, so it drops out of the calendar and the festival runs a day short. it is a calendar artefact, not an omission."},
-    {"q": "what is ghatasthapana?", "a": "the establishing of the pot on the first day, which formally opens the observance. it has its own muhurat, usually in the first third of the day, and it is avoided during specific periods."},
-    {"q": "are the navratri colours traditional?", "a": "the nine colour list is a modern convention, popularised through newspapers in western india over the last few decades. it is genuinely enjoyable and it is not classical, and both of those things can be true."},
-    {"q": "what is the difference between navratri and durga puja?", "a": "they are the same season observed differently. durga puja in bengal concentrates on the last few days, with the idol installed on shashthi and immersed on dashami."},
-    {"q": "what happens on the tenth day?", "a": "dashami, which is dussehra or vijayadashami. it closes the nine nights and is treated as one of the most auspicious days of the year for beginnings."},
-    {"q": "does navratri have anything to do with the grahas?", "a": "not directly. the timing is lunar and tithi-based, so it is calendar astronomy rather than a planetary reading. the observance itself is devotional, not astrological."},
-    {"q": "why does the fasting differ between families?", "a": "because the rules are regional and always have been. what counts as permitted food, whether grains are avoided, and how many days are kept vary by community and by household."},
-    {"q": "what is the story behind the nine nights?", "a": "the widely told version is the battle between durga and mahishasura, concluding in victory on the tenth day. the specifics vary by region, and several traditions attach different narratives to the same nine nights."},
-    {"q": "which navratri is the biggest?", "a": "sharad navratri, in the autumn. it leads into dussehra and then into diwali about twenty days later, which makes it the opening of the busiest stretch of the indian festival calendar."}
-  ]
+    {
+      "q": "what are the nine forms of durga?",
+      "a": "shailaputri, brahmacharini, chandraghanta, kushmanda, skandamata, katyayani, kalaratri, mahagauri and siddhidatri. together they are the navadurga, and the order is fixed."
+    },
+    {
+      "q": "why do navratri dates change every year?",
+      "a": "because it is set by tithi, not by the solar calendar. sharad navratri begins on the first tithi of the bright fortnight of ashwin, and a lunar month is about 29.5 days, so it drifts against the gregorian calendar."
+    },
+    {
+      "q": "how many navratris are there in a year?",
+      "a": "four. chaitra navratri in spring and sharad navratri in autumn are the widely observed ones. two more, in magha and ashadha, are called gupt navratri and are kept much more quietly."
+    },
+    {
+      "q": "why is navratri sometimes eight days?",
+      "a": "tithi kshaya. a tithi can begin and end without ever being current at sunrise, so it drops out of the calendar and the festival runs a day short. it is a calendar artefact, not an omission."
+    },
+    {
+      "q": "what is ghatasthapana?",
+      "a": "the establishing of the pot on the first day, which formally opens the observance. it has its own muhurat, usually in the first third of the day, and it is avoided during specific periods."
+    },
+    {
+      "q": "are the navratri colours traditional?",
+      "a": "the nine colour list is a modern convention, popularised through newspapers in western india over the last few decades. it is genuinely enjoyable and it is not classical, and both of those things can be true."
+    },
+    {
+      "q": "what is the difference between navratri and durga puja?",
+      "a": "they are the same season observed differently. durga puja in bengal concentrates on the last few days, with the idol installed on shashthi and immersed on dashami."
+    },
+    {
+      "q": "what happens on the tenth day?",
+      "a": "dashami, which is dussehra or vijayadashami. it closes the nine nights and is treated as one of the most auspicious days of the year for beginnings."
+    },
+    {
+      "q": "does navratri have anything to do with the grahas?",
+      "a": "not directly. the timing is lunar and tithi-based, so it is calendar astronomy rather than a planetary reading. the observance itself is devotional, not astrological."
+    },
+    {
+      "q": "why does the fasting differ between families?",
+      "a": "because the rules are regional and always have been. what counts as permitted food, whether grains are avoided, and how many days are kept vary by community and by household."
+    },
+    {
+      "q": "what is the story behind the nine nights?",
+      "a": "the widely told version is the battle between durga and mahishasura, concluding in victory on the tenth day. the specifics vary by region, and several traditions attach different narratives to the same nine nights."
+    },
+    {
+      "q": "which navratri is the biggest?",
+      "a": "sharad navratri, in the autumn. it leads into dussehra and then into diwali about twenty days later, which makes it the opening of the busiest stretch of the indian festival calendar."
+    }
+  ],
+  "card_title": "nine nights, nine forms, one moving date",
+  "card_dek": "what each of the nine nights marks, why there are four navratris a year, and the honest story behind the colour chart.",
+  "chip": "explainer",
+  "llms_title": "Navratri: the nine nights",
+  "llms_desc": "the Navadurga in order, four navratris a year, tithi kshaya, and the modern origin of the colour chart."
 }

@@ -11,19 +11,67 @@
   "read_time": "10 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE CHART DESK",
-  "keywords": ["benefic malefic planets", "functional benefic", "kendradhipati dosha", "yogakaraka", "upachaya houses", "maraka"],
+  "keywords": [
+    "benefic malefic planets",
+    "functional benefic",
+    "kendradhipati dosha",
+    "yogakaraka",
+    "upachaya houses",
+    "maraka"
+  ],
   "faq": [
-    {"q": "which planets are natural benefics?", "a": "jupiter and venus always, the waxing moon, and mercury when it keeps good company. the classical word is shubha, meaning gentle or auspicious in effect."},
-    {"q": "which planets are natural malefics?", "a": "saturn, mars, the sun, rahu and ketu, plus the waning moon and mercury when it sits with malefics. the word is krura or papa, meaning harsh, not evil."},
-    {"q": "why do the moon and mercury change sides?", "a": "they are the two conditional grahas. the moon is benefic when waxing and malefic when waning, measured by its distance from the sun. mercury takes the character of whatever it sits with."},
-    {"q": "what is a functional benefic?", "a": "a graha that rules good houses for ur particular ascendant. the trikona lords, of the 1st, 5th and 9th, are the reliable ones. this classification depends entirely on ur lagna and it routinely contradicts the natural one."},
-    {"q": "what is kendradhipati dosha?", "a": "a natural benefic that rules a kendra, meaning the 1st, 4th, 7th or 10th house, loses its benefic power. a natural malefic ruling a kendra gains strength instead. it is one of the more counterintuitive rules in the system."},
-    {"q": "what is a yogakaraka?", "a": "a single graha that rules both a kendra and a trikona for ur lagna, making it the most helpful graha in that chart. six lagnas have one: saturn for vrishabha and tula, mars for karka and simha, venus for makara and kumbha."},
-    {"q": "which houses are difficult?", "a": "the 6th, 8th and 12th, called dusthanas. their lords are generally treated as functionally difficult, though a graha ruling both a dusthana and a good house is a mixed case rather than a bad one."},
-    {"q": "what are the upachaya houses?", "a": "the 3rd, 6th, 10th and 11th. malefics are said to improve in them over time, which is why mars in the 6th and saturn in the 11th read well despite both grahas being classed as harsh."},
-    {"q": "what is a maraka planet?", "a": "the lords of the 2nd and 7th houses are called marakas, associated with the end of things in the longevity tradition. it is a technical classification and it is regularly misused to frighten people."},
-    {"q": "so is saturn good or bad?", "a": "for a vrishabha or tula ascendant it is the yogakaraka, the single most helpful graha in the chart. for others it rules difficult houses. the question has no answer until someone knows ur lagna."},
-    {"q": "does a benefic in a bad house become bad?", "a": "it complicates rather than reverses. a natural benefic in the 6th or 8th is usually read as a softening influence in a difficult area, while a graha ruling those houses carries their significations wherever it goes."},
-    {"q": "which classification matters more?", "a": "most practitioners weight the functional one more heavily, because it is specific to ur chart. the natural classification describes temperament, and the functional one describes what a graha is actually delivering for u."}
-  ]
+    {
+      "q": "which planets are natural benefics?",
+      "a": "jupiter and venus always, the waxing moon, and mercury when it keeps good company. the classical word is shubha, meaning gentle or auspicious in effect."
+    },
+    {
+      "q": "which planets are natural malefics?",
+      "a": "saturn, mars, the sun, rahu and ketu, plus the waning moon and mercury when it sits with malefics. the word is krura or papa, meaning harsh, not evil."
+    },
+    {
+      "q": "why do the moon and mercury change sides?",
+      "a": "they are the two conditional grahas. the moon is benefic when waxing and malefic when waning, measured by its distance from the sun. mercury takes the character of whatever it sits with."
+    },
+    {
+      "q": "what is a functional benefic?",
+      "a": "a graha that rules good houses for ur particular ascendant. the trikona lords, of the 1st, 5th and 9th, are the reliable ones. this classification depends entirely on ur lagna and it routinely contradicts the natural one."
+    },
+    {
+      "q": "what is kendradhipati dosha?",
+      "a": "a natural benefic that rules a kendra, meaning the 1st, 4th, 7th or 10th house, loses its benefic power. a natural malefic ruling a kendra gains strength instead. it is one of the more counterintuitive rules in the system."
+    },
+    {
+      "q": "what is a yogakaraka?",
+      "a": "a single graha that rules both a kendra and a trikona for ur lagna, making it the most helpful graha in that chart. six lagnas have one: saturn for vrishabha and tula, mars for karka and simha, venus for makara and kumbha."
+    },
+    {
+      "q": "which houses are difficult?",
+      "a": "the 6th, 8th and 12th, called dusthanas. their lords are generally treated as functionally difficult, though a graha ruling both a dusthana and a good house is a mixed case rather than a bad one."
+    },
+    {
+      "q": "what are the upachaya houses?",
+      "a": "the 3rd, 6th, 10th and 11th. malefics are said to improve in them over time, which is why mars in the 6th and saturn in the 11th read well despite both grahas being classed as harsh."
+    },
+    {
+      "q": "what is a maraka planet?",
+      "a": "the lords of the 2nd and 7th houses are called marakas, associated with the end of things in the longevity tradition. it is a technical classification and it is regularly misused to frighten people."
+    },
+    {
+      "q": "so is saturn good or bad?",
+      "a": "for a vrishabha or tula ascendant it is the yogakaraka, the single most helpful graha in the chart. for others it rules difficult houses. the question has no answer until someone knows ur lagna."
+    },
+    {
+      "q": "does a benefic in a bad house become bad?",
+      "a": "it complicates rather than reverses. a natural benefic in the 6th or 8th is usually read as a softening influence in a difficult area, while a graha ruling those houses carries their significations wherever it goes."
+    },
+    {
+      "q": "which classification matters more?",
+      "a": "most practitioners weight the functional one more heavily, because it is specific to ur chart. the natural classification describes temperament, and the functional one describes what a graha is actually delivering for u."
+    }
+  ],
+  "card_title": "“is saturn bad” is not a question u can answer",
+  "card_dek": "not without a lagna. natural and functional classification are separate systems and they disagree constantly.",
+  "chip": "explainer",
+  "llms_title": "Benefic and malefic planets",
+  "llms_desc": "naisargika versus functional classification, kendradhipati dosha, the six yogakaraka lagnas, upachaya houses and maraka."
 }

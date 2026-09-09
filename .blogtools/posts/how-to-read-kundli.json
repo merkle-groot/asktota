@@ -11,20 +11,71 @@
   "read_time": "14 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; GUIDE",
-  "keywords": ["how to read kundli", "read birth chart", "north indian chart", "south indian chart", "lagna", "kundli reading steps"],
+  "keywords": [
+    "how to read kundli",
+    "read birth chart",
+    "north indian chart",
+    "south indian chart",
+    "lagna",
+    "kundli reading steps"
+  ],
   "faq": [
-    {"q": "how do i start reading my kundli?", "a": "find ur lagna first. it is the 1st house, and every other house is counted forward from it. until u know which box is the 1st house, nothing else in the chart means anything specific."},
-    {"q": "what is the difference between north and south indian charts?", "a": "in a north indian chart the houses are fixed in place and the sign numbers move between them. in a south indian chart the signs are fixed in place and the lagna is marked, so the houses move. the underlying chart is identical."},
-    {"q": "which box is the first house in a north indian chart?", "a": "the diamond at the top centre, always. the number written in it is the sign number, 1 for mesha through 12 for meena. houses then run anticlockwise from there."},
-    {"q": "how are signs arranged in a south indian chart?", "a": "clockwise from meena in the top left corner: meena, mesha, vrishabha, mithuna across the top, then karka, simha, kanya down the right, then tula, vrishchika, dhanu along the bottom, and kumbha, makara up the left."},
-    {"q": "what should i look at after the lagna?", "a": "the lagna lord. find the graha that rules ur lagna sign, then find which house it is sitting in. that pair, lagna plus lagna lord, is the spine of the whole reading."},
-    {"q": "how important is the moon in a kundli?", "a": "very. vedic astrology reads the chart a second time from the moon sign, called chandra lagna, and the moon's nakshatra is what starts the vimshottari dasha clock. it carries the mind and the emotional life."},
-    {"q": "what does exalted or debilitated mean?", "a": "exalted means a graha is in the sign where it functions best, debilitated in the sign where it functions worst. they are opposite signs. each of the seven visible grahas has one of each."},
-    {"q": "how do vedic aspects work?", "a": "every graha aspects the 7th house from itself. mars additionally aspects the 4th and 8th, jupiter the 5th and 9th, saturn the 3rd and 10th. vedic aspects are counted by whole signs, not by degrees."},
-    {"q": "how do i find my current dasha?", "a": "it is calculated from ur moon's exact position in its nakshatra at birth. any calculated chart will list ur current mahadasha and antardasha with their dates."},
-    {"q": "how long does it take to read a kundli properly?", "a": "the first pass through this order takes about twenty minutes. it gets faster. what does not get faster is the last step, deciding what everything adds up to, and that is the step that separates a reading from a list."},
-    {"q": "what is the most common beginner mistake?", "a": "reading one placement in isolation and building a conclusion on it. the working rule is that nothing goes in a reading unless at least three separate parts of the chart point the same way."},
-    {"q": "do i need to learn sanskrit terms to read my chart?", "a": "no. about fifteen words cover almost everything: lagna, rashi, bhava, graha, dasha, nakshatra, kendra, trikona, and the names of the nine grahas."},
-    {"q": "can i read my chart without a birth time?", "a": "partly. u lose the lagna and therefore all twelve houses. u keep ur sun, moon, nakshatra and dasha sequence, which is a real chart with the house layer missing."}
-  ]
+    {
+      "q": "how do i start reading my kundli?",
+      "a": "find ur lagna first. it is the 1st house, and every other house is counted forward from it. until u know which box is the 1st house, nothing else in the chart means anything specific."
+    },
+    {
+      "q": "what is the difference between north and south indian charts?",
+      "a": "in a north indian chart the houses are fixed in place and the sign numbers move between them. in a south indian chart the signs are fixed in place and the lagna is marked, so the houses move. the underlying chart is identical."
+    },
+    {
+      "q": "which box is the first house in a north indian chart?",
+      "a": "the diamond at the top centre, always. the number written in it is the sign number, 1 for mesha through 12 for meena. houses then run anticlockwise from there."
+    },
+    {
+      "q": "how are signs arranged in a south indian chart?",
+      "a": "clockwise from meena in the top left corner: meena, mesha, vrishabha, mithuna across the top, then karka, simha, kanya down the right, then tula, vrishchika, dhanu along the bottom, and kumbha, makara up the left."
+    },
+    {
+      "q": "what should i look at after the lagna?",
+      "a": "the lagna lord. find the graha that rules ur lagna sign, then find which house it is sitting in. that pair, lagna plus lagna lord, is the spine of the whole reading."
+    },
+    {
+      "q": "how important is the moon in a kundli?",
+      "a": "very. vedic astrology reads the chart a second time from the moon sign, called chandra lagna, and the moon's nakshatra is what starts the vimshottari dasha clock. it carries the mind and the emotional life."
+    },
+    {
+      "q": "what does exalted or debilitated mean?",
+      "a": "exalted means a graha is in the sign where it functions best, debilitated in the sign where it functions worst. they are opposite signs. each of the seven visible grahas has one of each."
+    },
+    {
+      "q": "how do vedic aspects work?",
+      "a": "every graha aspects the 7th house from itself. mars additionally aspects the 4th and 8th, jupiter the 5th and 9th, saturn the 3rd and 10th. vedic aspects are counted by whole signs, not by degrees."
+    },
+    {
+      "q": "how do i find my current dasha?",
+      "a": "it is calculated from ur moon's exact position in its nakshatra at birth. any calculated chart will list ur current mahadasha and antardasha with their dates."
+    },
+    {
+      "q": "how long does it take to read a kundli properly?",
+      "a": "the first pass through this order takes about twenty minutes. it gets faster. what does not get faster is the last step, deciding what everything adds up to, and that is the step that separates a reading from a list."
+    },
+    {
+      "q": "what is the most common beginner mistake?",
+      "a": "reading one placement in isolation and building a conclusion on it. the working rule is that nothing goes in a reading unless at least three separate parts of the chart point the same way."
+    },
+    {
+      "q": "do i need to learn sanskrit terms to read my chart?",
+      "a": "no. about fifteen words cover almost everything: lagna, rashi, bhava, graha, dasha, nakshatra, kendra, trikona, and the names of the nine grahas."
+    },
+    {
+      "q": "can i read my chart without a birth time?",
+      "a": "partly. u lose the lagna and therefore all twelve houses. u keep ur sun, moon, nakshatra and dasha sequence, which is a real chart with the house layer missing."
+    }
+  ],
+  "card_title": "how to read ur kundli, step by step",
+  "card_dek": "twelve boxes, nine grahas and no instructions. here is the order that actually works, from the lagna outward, with a checklist at the end.",
+  "chip": "explainer",
+  "llms_title": "How to read your kundli, step by step",
+  "llms_desc": "a twelve step reading order: chart style, lagna, lagna lord, moon, occupancy, dignity, aspects, house lords, yogas, dasha, transits, synthesis."
 }

@@ -11,20 +11,72 @@
   "read_time": "12 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; EXPLAINER",
-  "keywords": ["rahu", "ketu", "rahu ketu", "lunar nodes", "shadow planets", "chhaya graha", "north node south node"],
+  "keywords": [
+    "rahu",
+    "ketu",
+    "rahu ketu",
+    "lunar nodes",
+    "shadow planets",
+    "chhaya graha",
+    "north node south node"
+  ],
   "faq": [
-    {"q": "what are rahu and ketu in astrology?", "a": "they are the two points where the moon's tilted orbit crosses the sun's apparent path. rahu is the ascending crossing, ketu the descending one. eclipses can only happen when a new or full moon lands near one of them, which is why the tradition calls them the eclipse points."},
-    {"q": "are rahu and ketu real planets?", "a": "no. they have no body, no mass and nothing to look at. they are geometry. vedic astrology calls them chhaya grahas, shadow grahas, and reads them anyway."},
-    {"q": "why are rahu and ketu always opposite each other?", "a": "because a tilted circle crosses a flat one in exactly two places, and those two places are always on opposite sides. it is not an astrological rule, it is what happens when two circles intersect."},
-    {"q": "what does rahu represent?", "a": "appetite with no off switch. obsession, ambition, foreign and unfamiliar things, shortcuts, hype, sudden rises. it magnifies whatever it touches and never says enough."},
-    {"q": "what does ketu represent?", "a": "the opposite pull. detachment, things u are already so good at that u are bored of them, sharpness without ambition, spirituality, and a habit of quietly dropping whatever it sits on."},
-    {"q": "do rahu and ketu rule any signs?", "a": "not in the classical system. because they own nothing, they behave like the lord of the sign they sit in and like any graha sitting next to them. that borrowing rule is how parashara says to read them."},
-    {"q": "why do rahu and ketu move backwards?", "a": "the moon's orbital plane slowly wobbles, and it wobbles in the direction opposite to the planets' motion. so the crossing points drift backwards through the zodiac, taking about 18.6 years to go all the way round."},
-    {"q": "how often does rahu change sign?", "a": "roughly every 18 months. one full lap is about 18.6 years, and that split across twelve signs gives about a year and a half each."},
-    {"q": "what is rahu ketu dasha?", "a": "in vimshottari, rahu gets an 18 year period and ketu gets 7. rahu's is the longest of any graha, which is why it gets blamed for so much. ketu's is short and tends to be described as a clearing out."},
-    {"q": "which nakshatras do rahu and ketu rule?", "a": "rahu rules ardra, swati and shatabhisha. ketu rules ashwini, magha and mula. those rulerships are what start the vimshottari dasha clock if u were born under one of them."},
-    {"q": "is rahu always bad?", "a": "no. rahu is the graha of unreasonable ambition, and unreasonable ambition builds most of what people admire. it is unstable rather than evil. the cost is that it never tells u when to stop."},
-    {"q": "what is guru chandal yoga?", "a": "jupiter and rahu sitting together. the traditional reading is that rahu's appetite gets attached to jupiter's judgement, so belief becomes something to win with rather than something to weigh. it is a tendency, not a verdict."},
-    {"q": "are rahu and ketu the same as the north and south node?", "a": "yes. rahu is the north or ascending node, ketu is the south or descending node. western astrology uses the same two points and reads them quite differently."}
-  ]
+    {
+      "q": "what are rahu and ketu in astrology?",
+      "a": "they are the two points where the moon's tilted orbit crosses the sun's apparent path. rahu is the ascending crossing, ketu the descending one. eclipses can only happen when a new or full moon lands near one of them, which is why the tradition calls them the eclipse points."
+    },
+    {
+      "q": "are rahu and ketu real planets?",
+      "a": "no. they have no body, no mass and nothing to look at. they are geometry. vedic astrology calls them chhaya grahas, shadow grahas, and reads them anyway."
+    },
+    {
+      "q": "why are rahu and ketu always opposite each other?",
+      "a": "because a tilted circle crosses a flat one in exactly two places, and those two places are always on opposite sides. it is not an astrological rule, it is what happens when two circles intersect."
+    },
+    {
+      "q": "what does rahu represent?",
+      "a": "appetite with no off switch. obsession, ambition, foreign and unfamiliar things, shortcuts, hype, sudden rises. it magnifies whatever it touches and never says enough."
+    },
+    {
+      "q": "what does ketu represent?",
+      "a": "the opposite pull. detachment, things u are already so good at that u are bored of them, sharpness without ambition, spirituality, and a habit of quietly dropping whatever it sits on."
+    },
+    {
+      "q": "do rahu and ketu rule any signs?",
+      "a": "not in the classical system. because they own nothing, they behave like the lord of the sign they sit in and like any graha sitting next to them. that borrowing rule is how parashara says to read them."
+    },
+    {
+      "q": "why do rahu and ketu move backwards?",
+      "a": "the moon's orbital plane slowly wobbles, and it wobbles in the direction opposite to the planets' motion. so the crossing points drift backwards through the zodiac, taking about 18.6 years to go all the way round."
+    },
+    {
+      "q": "how often does rahu change sign?",
+      "a": "roughly every 18 months. one full lap is about 18.6 years, and that split across twelve signs gives about a year and a half each."
+    },
+    {
+      "q": "what is rahu ketu dasha?",
+      "a": "in vimshottari, rahu gets an 18 year period and ketu gets 7. rahu's is the longest of any graha, which is why it gets blamed for so much. ketu's is short and tends to be described as a clearing out."
+    },
+    {
+      "q": "which nakshatras do rahu and ketu rule?",
+      "a": "rahu rules ardra, swati and shatabhisha. ketu rules ashwini, magha and mula. those rulerships are what start the vimshottari dasha clock if u were born under one of them."
+    },
+    {
+      "q": "is rahu always bad?",
+      "a": "no. rahu is the graha of unreasonable ambition, and unreasonable ambition builds most of what people admire. it is unstable rather than evil. the cost is that it never tells u when to stop."
+    },
+    {
+      "q": "what is guru chandal yoga?",
+      "a": "jupiter and rahu sitting together. the traditional reading is that rahu's appetite gets attached to jupiter's judgement, so belief becomes something to win with rather than something to weigh. it is a tendency, not a verdict."
+    },
+    {
+      "q": "are rahu and ketu the same as the north and south node?",
+      "a": "yes. rahu is the north or ascending node, ketu is the south or descending node. western astrology uses the same two points and reads them quite differently."
+    }
+  ],
+  "card_title": "rahu and ketu, the two grahas that are not there",
+  "card_dek": "two points where the moon's path crosses the sun's. no body, no light, permanently opposite, and the tradition weights them heavily.",
+  "chip": "explainer",
+  "llms_title": "Rahu and Ketu, the two grahas that are not there",
+  "llms_desc": "the lunar nodes, always 180 degrees apart, always retrograde, one lap every 18.6 years."
 }

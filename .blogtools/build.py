@@ -87,7 +87,7 @@ PAGE = """<!DOCTYPE html>
 """
 
 
-def build(slug):
+def build(slug, out_dir=None):
     meta = json.loads((POSTS / f'{slug}.json').read_text())
     body = (POSTS / f'{slug}.body.html').read_text().rstrip() + '\n'
     url = f'{SITE}/blog/{slug}.html'
@@ -150,7 +150,9 @@ def build(slug):
         byline=f"{meta['byline_date']} &middot; {meta['read_time']}",
         body=body,
     )
-    (OUT / f'{slug}.html').write_text(page)
+    dest = pathlib.Path(out_dir) if out_dir else OUT
+    dest.mkdir(parents=True, exist_ok=True)
+    (dest / f'{slug}.html').write_text(page)
     return slug, len(page)
 
 

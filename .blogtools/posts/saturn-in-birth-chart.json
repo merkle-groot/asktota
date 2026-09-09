@@ -11,20 +11,71 @@
   "read_time": "12 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; EXPLAINER",
-  "keywords": ["saturn in birth chart", "shani", "saturn vedic astrology", "saturn in houses", "sade sati", "saturn return"],
+  "keywords": [
+    "saturn in birth chart",
+    "shani",
+    "saturn vedic astrology",
+    "saturn in houses",
+    "sade sati",
+    "saturn return"
+  ],
   "faq": [
-    {"q": "what does saturn represent in vedic astrology?", "a": "time, structure, labour, endurance and consequence. shani is the graha of what things actually cost. it also carries discipline, old age, the long term, and anything that has to be built slowly."},
-    {"q": "which signs does saturn rule?", "a": "makara (capricorn) and kumbha (aquarius). it is exalted in tula (libra), most precisely at 20 degrees, and debilitated in mesha (aries), most precisely at 20 degrees."},
-    {"q": "how long does saturn stay in one sign?", "a": "about two and a half years. a full circuit of the zodiac takes roughly 29.5 years, which is why the saturn return lands around ages 29 and 30."},
-    {"q": "is saturn a malefic planet?", "a": "it is classed as a natural malefic, which in this system means difficult rather than evil. saturn's difficulty is that it charges in time. it is also a yogakaraka, the single best graha, for vrishabha and tula lagnas."},
-    {"q": "what aspects does saturn have?", "a": "the 3rd, 7th and 10th houses from wherever it sits. the 3rd and 10th are its special aspects, which is why saturn's influence reaches so far across a chart."},
-    {"q": "how long is saturn mahadasha?", "a": "19 years in the vimshottari system, the second longest after rahu's 18 and venus's 20. it is usually described as a long stretch of building, restriction and eventual consolidation."},
-    {"q": "what is sade sati?", "a": "the roughly seven and a half years when transiting saturn passes through the sign before ur moon sign, ur moon sign itself, and the sign after it. two and a half years each, three phases."},
-    {"q": "what is a saturn return?", "a": "the moment transiting saturn comes back to the exact place it sat at ur birth. it takes about 29.5 years, so the first one arrives around age 29 or 30 and the second around 59."},
-    {"q": "is saturn retrograde in my chart bad?", "a": "no. saturn spends roughly four and a half months of every year retrograde, so about a third of everyone is born with it. the usual reading is that its lessons run inward rather than outward."},
-    {"q": "which house is saturn best in?", "a": "traditionally the 3rd, 6th and 11th, the upachaya houses, where difficult grahas are said to improve with time. and it is strong in a kendra for the lagnas it rules well. there is no universally best house."},
-    {"q": "what are the common saturn remedies?", "a": "saturday observances, black sesame, mustard oil, feeding crows or dogs, the hanuman chalisa, and blue sapphire. these are cultural practices with real meaning to the people who keep them. none of them moves a planet."},
-    {"q": "why is saturn associated with the sun's hostility?", "a": "in the puranic story shani is the son of surya, and the relationship between them is difficult. astrologically the sun is authority and visibility while saturn is restriction and time, so the two are read as natural opposites."},
-    {"q": "does saturn delay marriage?", "a": "saturn's involvement with the 7th house or its lord is the most cited marker for later marriage. what the classical texts call late was benchmarked against much younger marriage ages than today's."}
-  ]
+    {
+      "q": "what does saturn represent in vedic astrology?",
+      "a": "time, structure, labour, endurance and consequence. shani is the graha of what things actually cost. it also carries discipline, old age, the long term, and anything that has to be built slowly."
+    },
+    {
+      "q": "which signs does saturn rule?",
+      "a": "makara (capricorn) and kumbha (aquarius). it is exalted in tula (libra), most precisely at 20 degrees, and debilitated in mesha (aries), most precisely at 20 degrees."
+    },
+    {
+      "q": "how long does saturn stay in one sign?",
+      "a": "about two and a half years. a full circuit of the zodiac takes roughly 29.5 years, which is why the saturn return lands around ages 29 and 30."
+    },
+    {
+      "q": "is saturn a malefic planet?",
+      "a": "it is classed as a natural malefic, which in this system means difficult rather than evil. saturn's difficulty is that it charges in time. it is also a yogakaraka, the single best graha, for vrishabha and tula lagnas."
+    },
+    {
+      "q": "what aspects does saturn have?",
+      "a": "the 3rd, 7th and 10th houses from wherever it sits. the 3rd and 10th are its special aspects, which is why saturn's influence reaches so far across a chart."
+    },
+    {
+      "q": "how long is saturn mahadasha?",
+      "a": "19 years in the vimshottari system, the second longest after rahu's 18 and venus's 20. it is usually described as a long stretch of building, restriction and eventual consolidation."
+    },
+    {
+      "q": "what is sade sati?",
+      "a": "the roughly seven and a half years when transiting saturn passes through the sign before ur moon sign, ur moon sign itself, and the sign after it. two and a half years each, three phases."
+    },
+    {
+      "q": "what is a saturn return?",
+      "a": "the moment transiting saturn comes back to the exact place it sat at ur birth. it takes about 29.5 years, so the first one arrives around age 29 or 30 and the second around 59."
+    },
+    {
+      "q": "is saturn retrograde in my chart bad?",
+      "a": "no. saturn spends roughly four and a half months of every year retrograde, so about a third of everyone is born with it. the usual reading is that its lessons run inward rather than outward."
+    },
+    {
+      "q": "which house is saturn best in?",
+      "a": "traditionally the 3rd, 6th and 11th, the upachaya houses, where difficult grahas are said to improve with time. and it is strong in a kendra for the lagnas it rules well. there is no universally best house."
+    },
+    {
+      "q": "what are the common saturn remedies?",
+      "a": "saturday observances, black sesame, mustard oil, feeding crows or dogs, the hanuman chalisa, and blue sapphire. these are cultural practices with real meaning to the people who keep them. none of them moves a planet."
+    },
+    {
+      "q": "why is saturn associated with the sun's hostility?",
+      "a": "in the puranic story shani is the son of surya, and the relationship between them is difficult. astrologically the sun is authority and visibility while saturn is restriction and time, so the two are read as natural opposites."
+    },
+    {
+      "q": "does saturn delay marriage?",
+      "a": "saturn's involvement with the 7th house or its lord is the most cited marker for later marriage. what the classical texts call late was benchmarked against much younger marriage ages than today's."
+    }
+  ],
+  "card_title": "saturn in ur chart, minus the fear",
+  "card_dek": "two and a half years a sign. everything shani means comes from how slowly it moves, and none of it is punishment.",
+  "chip": "explainer",
+  "llms_title": "Saturn in your chart, minus the fear",
+  "llms_desc": "2.5 years per sign, 29.5 years per lap, 19 years of dasha, and Saturn in each of the twelve houses."
 }

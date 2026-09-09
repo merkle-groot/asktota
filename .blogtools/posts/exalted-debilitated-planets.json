@@ -11,19 +11,67 @@
   "read_time": "10 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE CHART DESK",
-  "keywords": ["exalted planets", "debilitated planets", "uchcha neecha", "neecha bhanga raja yoga", "mooltrikona", "exaltation degrees"],
+  "keywords": [
+    "exalted planets",
+    "debilitated planets",
+    "uchcha neecha",
+    "neecha bhanga raja yoga",
+    "mooltrikona",
+    "exaltation degrees"
+  ],
   "faq": [
-    {"q": "what does exalted mean in vedic astrology?", "a": "uchcha. the sign where a graha functions at its best, with a specific degree where that peaks. exaltation is about how well a graha can express itself, not about whether good things happen to u."},
-    {"q": "what does debilitated mean?", "a": "neecha. the sign where a graha functions least comfortably, again with a specific deepest degree. it is always the sign exactly opposite the exaltation sign."},
-    {"q": "are exaltation and debilitation always opposite?", "a": "always, and at the same degree. the sun is exalted at 10 degrees mesha and debilitated at 10 degrees tula. that pattern holds for every graha without exception."},
-    {"q": "which signs have no exaltation or debilitation?", "a": "mithuna, simha, dhanu and kumbha have neither, if u set the disputed rahu and ketu positions aside. those four are ruled by mercury, the sun, jupiter and saturn respectively."},
-    {"q": "why is mercury exalted in a sign it rules?", "a": "mercury is the only graha where exaltation and rulership coincide, both in kanya. no classical text derives a mechanical reason, so it is best treated as a feature of the system rather than something to explain away."},
-    {"q": "does the exact degree matter?", "a": "yes. a graha exalted by sign but sitting far from the peak degree is not at full strength. the sun at 10 degrees mesha is at its peak. the sun at 29 degrees mesha is exalted by sign and much weaker in practice."},
-    {"q": "what is neecha bhanga raja yoga?", "a": "the cancellation of a debilitation, which some texts then read as a strength. the commonly cited conditions involve the lord of the debilitation sign, or the lord of the graha's exaltation sign, being well placed in a kendra from the lagna or the moon."},
-    {"q": "how common is a debilitated planet?", "a": "much more common than people expect. each graha has roughly a one in twelve chance, so across the seven visible grahas the odds of at least one debilitation land near one chart in two."},
-    {"q": "is mooltrikona the same as exaltation?", "a": "no, and they get confused constantly. mooltrikona is a degree range inside a graha's own sign where it is especially strong. exaltation is a different sign entirely."},
-    {"q": "where are rahu and ketu exalted?", "a": "disputed. the most commonly used positions are rahu exalted in vrishabha and ketu in vrishchika, with the reverse for debilitation. other traditions use mithuna and dhanu. since the nodes own no signs, there is no settled answer."},
-    {"q": "does a debilitated planet mean bad things happen?", "a": "no. it describes a graha operating in an uncomfortable environment, so it expresses itself awkwardly or indirectly. what happens in a life depends on far more, starting with what that graha rules for ur lagna."},
-    {"q": "is an exalted planet always good for me?", "a": "not necessarily. an exalted graha that rules ur 6th or 8th house is expressing difficult significations very effectively. strength and helpfulness are separate questions."}
-  ]
+    {
+      "q": "what does exalted mean in vedic astrology?",
+      "a": "uchcha. the sign where a graha functions at its best, with a specific degree where that peaks. exaltation is about how well a graha can express itself, not about whether good things happen to u."
+    },
+    {
+      "q": "what does debilitated mean?",
+      "a": "neecha. the sign where a graha functions least comfortably, again with a specific deepest degree. it is always the sign exactly opposite the exaltation sign."
+    },
+    {
+      "q": "are exaltation and debilitation always opposite?",
+      "a": "always, and at the same degree. the sun is exalted at 10 degrees mesha and debilitated at 10 degrees tula. that pattern holds for every graha without exception."
+    },
+    {
+      "q": "which signs have no exaltation or debilitation?",
+      "a": "mithuna, simha, dhanu and kumbha have neither, if u set the disputed rahu and ketu positions aside. those four are ruled by mercury, the sun, jupiter and saturn respectively."
+    },
+    {
+      "q": "why is mercury exalted in a sign it rules?",
+      "a": "mercury is the only graha where exaltation and rulership coincide, both in kanya. no classical text derives a mechanical reason, so it is best treated as a feature of the system rather than something to explain away."
+    },
+    {
+      "q": "does the exact degree matter?",
+      "a": "yes. a graha exalted by sign but sitting far from the peak degree is not at full strength. the sun at 10 degrees mesha is at its peak. the sun at 29 degrees mesha is exalted by sign and much weaker in practice."
+    },
+    {
+      "q": "what is neecha bhanga raja yoga?",
+      "a": "the cancellation of a debilitation, which some texts then read as a strength. the commonly cited conditions involve the lord of the debilitation sign, or the lord of the graha's exaltation sign, being well placed in a kendra from the lagna or the moon."
+    },
+    {
+      "q": "how common is a debilitated planet?",
+      "a": "much more common than people expect. each graha has roughly a one in twelve chance, so across the seven visible grahas the odds of at least one debilitation land near one chart in two."
+    },
+    {
+      "q": "is mooltrikona the same as exaltation?",
+      "a": "no, and they get confused constantly. mooltrikona is a degree range inside a graha's own sign where it is especially strong. exaltation is a different sign entirely."
+    },
+    {
+      "q": "where are rahu and ketu exalted?",
+      "a": "disputed. the most commonly used positions are rahu exalted in vrishabha and ketu in vrishchika, with the reverse for debilitation. other traditions use mithuna and dhanu. since the nodes own no signs, there is no settled answer."
+    },
+    {
+      "q": "does a debilitated planet mean bad things happen?",
+      "a": "no. it describes a graha operating in an uncomfortable environment, so it expresses itself awkwardly or indirectly. what happens in a life depends on far more, starting with what that graha rules for ur lagna."
+    },
+    {
+      "q": "is an exalted planet always good for me?",
+      "a": "not necessarily. an exalted graha that rules ur 6th or 8th house is expressing difficult significations very effectively. strength and helpfulness are separate questions."
+    }
+  ],
+  "card_title": "every exaltation sits exactly opposite its debilitation",
+  "card_dek": "same degree, opposite sign, every time. the full table, the four signs with neither, and the cancellation rules.",
+  "chip": "explainer",
+  "llms_title": "Exalted and debilitated planets",
+  "llms_desc": "the full uchcha and neecha table with peak degrees, the four signs with neither, mooltrikona, and neecha bhanga."
 }

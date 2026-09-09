@@ -11,19 +11,67 @@
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE CHART DESK",
-  "keywords": ["venus in birth chart", "shukra", "kalatra karaka", "venus in houses vedic", "venus exalted pisces", "venus dasha"],
+  "keywords": [
+    "venus in birth chart",
+    "shukra",
+    "kalatra karaka",
+    "venus in houses vedic",
+    "venus exalted pisces",
+    "venus dasha"
+  ],
   "faq": [
-    {"q": "what does venus represent in vedic astrology?", "a": "love, partnership, beauty, art, taste, comfort, luxury and vehicles. shukra is the kalatra karaka, the significator of the spouse, in every chart regardless of gender."},
-    {"q": "which signs does venus rule?", "a": "vrishabha and tula. its mooltrikona is tula from 0 to 15 degrees. it is exalted in meena, deepest at 27 degrees, and debilitated in kanya, deepest at 27 degrees."},
-    {"q": "how long is venus mahadasha?", "a": "20 years, the longest of any graha in vimshottari. that is a fifth of the whole 120 year cycle, which is why a venus period tends to define an entire era of someone's life."},
-    {"q": "how far can venus get from the sun?", "a": "about 47 degrees at most, so it is never more than roughly two signs away. venus and mercury are the only grahas with that constraint, because both orbit inside earth's orbit."},
-    {"q": "why is venus exalted in meena?", "a": "meena is jupiter's sign of sympathy, imagination and dissolved boundaries. a graha built for love and beauty is most itself where the edges between people are softest."},
-    {"q": "why is venus debilitated in kanya?", "a": "kanya is mercury's sign of analysis, correction and usefulness. a graha built for enjoyment and acceptance is least comfortable in the sign that inspects everything for faults."},
-    {"q": "which nakshatras does venus rule?", "a": "bharani, purva phalguni and purva ashadha. if ur moon was in one of those at birth, ur vimshottari dasha sequence started with venus."},
-    {"q": "which house is venus strongest in?", "a": "the 4th, by directional strength, which it shares with the moon. digbala puts venus at full force in the house of home, comfort and the emotional base."},
-    {"q": "is venus a benefic?", "a": "yes, the second greatest natural benefic after jupiter. but it can rule difficult houses for a given lagna, and a natural benefic ruling a kendra is weakened by kendradhipati dosha."},
-    {"q": "does venus mean the same thing in a man's and a woman's chart?", "a": "venus is the karaka for partnership in every chart. the classical texts additionally weight jupiter for the husband in a woman's chart. that is a convention of those texts and worth naming as one rather than repeating unexamined."},
-    {"q": "what does venus retrograde mean?", "a": "venus retrogrades for about 40 days roughly every 19 months, so a smaller share of people are born with it than with mercury retrograde. the classical scoring treats a retrograde graha as gaining motional strength."},
-    {"q": "why is venus the guru of the asuras?", "a": "shukracharya is the teacher of the asuras in the puranic story, opposite brihaspati who teaches the devas. it is a useful frame: jupiter is doctrine and venus is desire, and both are legitimate teachers of something."}
-  ]
+    {
+      "q": "what does venus represent in vedic astrology?",
+      "a": "love, partnership, beauty, art, taste, comfort, luxury and vehicles. shukra is the kalatra karaka, the significator of the spouse, in every chart regardless of gender."
+    },
+    {
+      "q": "which signs does venus rule?",
+      "a": "vrishabha and tula. its mooltrikona is tula from 0 to 15 degrees. it is exalted in meena, deepest at 27 degrees, and debilitated in kanya, deepest at 27 degrees."
+    },
+    {
+      "q": "how long is venus mahadasha?",
+      "a": "20 years, the longest of any graha in vimshottari. that is a fifth of the whole 120 year cycle, which is why a venus period tends to define an entire era of someone's life."
+    },
+    {
+      "q": "how far can venus get from the sun?",
+      "a": "about 47 degrees at most, so it is never more than roughly two signs away. venus and mercury are the only grahas with that constraint, because both orbit inside earth's orbit."
+    },
+    {
+      "q": "why is venus exalted in meena?",
+      "a": "meena is jupiter's sign of sympathy, imagination and dissolved boundaries. a graha built for love and beauty is most itself where the edges between people are softest."
+    },
+    {
+      "q": "why is venus debilitated in kanya?",
+      "a": "kanya is mercury's sign of analysis, correction and usefulness. a graha built for enjoyment and acceptance is least comfortable in the sign that inspects everything for faults."
+    },
+    {
+      "q": "which nakshatras does venus rule?",
+      "a": "bharani, purva phalguni and purva ashadha. if ur moon was in one of those at birth, ur vimshottari dasha sequence started with venus."
+    },
+    {
+      "q": "which house is venus strongest in?",
+      "a": "the 4th, by directional strength, which it shares with the moon. digbala puts venus at full force in the house of home, comfort and the emotional base."
+    },
+    {
+      "q": "is venus a benefic?",
+      "a": "yes, the second greatest natural benefic after jupiter. but it can rule difficult houses for a given lagna, and a natural benefic ruling a kendra is weakened by kendradhipati dosha."
+    },
+    {
+      "q": "does venus mean the same thing in a man's and a woman's chart?",
+      "a": "venus is the karaka for partnership in every chart. the classical texts additionally weight jupiter for the husband in a woman's chart. that is a convention of those texts and worth naming as one rather than repeating unexamined."
+    },
+    {
+      "q": "what does venus retrograde mean?",
+      "a": "venus retrogrades for about 40 days roughly every 19 months, so a smaller share of people are born with it than with mercury retrograde. the classical scoring treats a retrograde graha as gaining motional strength."
+    },
+    {
+      "q": "why is venus the guru of the asuras?",
+      "a": "shukracharya is the teacher of the asuras in the puranic story, opposite brihaspati who teaches the devas. it is a useful frame: jupiter is doctrine and venus is desire, and both are legitimate teachers of something."
+    }
+  ],
+  "card_title": "venus gets twenty years, the longest run in the system",
+  "card_dek": "the karaka for partnership in every chart, leashed to within 47 degrees of the sun, and the longest dasha there is.",
+  "chip": "explainer",
+  "llms_title": "Venus in your birth chart",
+  "llms_desc": "the 20 year dasha, the 47 degree elongation limit, and kalatra karaka in every chart regardless of gender."
 }

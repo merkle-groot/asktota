@@ -11,19 +11,66 @@
   "read_time": "10 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE RETROGRADE DESK",
-  "keywords": ["mercury retrograde effects", "does mercury retrograde affect", "mercury retrograde 2026", "confirmation bias astrology", "frequency illusion"],
+  "keywords": [
+    "mercury retrograde effects",
+    "does mercury retrograde affect",
+    "mercury retrograde 2026",
+    "confirmation bias astrology",
+    "frequency illusion"
+  ],
   "faq": [
-    {"q": "does mercury retrograde actually affect technology?", "a": "there is no measured mechanism and no replicated study showing an effect on devices, travel or contracts. what there is instead is a very well documented set of reasons why people notice more during a named window."},
-    {"q": "how much of the year is mercury retrograde?", "a": "about 18 percent. three windows of roughly three weeks each, every year, for everyone. that is close to one day in five."},
-    {"q": "why do things go wrong during mercury retrograde then?", "a": "things go wrong at the same rate they always did. what changes is that u have been handed a label to file them under, so the ones that fit get remembered and the ones that do not get forgotten."},
-    {"q": "what is the frequency illusion?", "a": "the effect where a thing u just learned about starts appearing everywhere. it is also called the baader-meinhof phenomenon. the thing did not become more common, ur attention became selective."},
-    {"q": "is it true you should not sign contracts during mercury retrograde?", "a": "run the arithmetic on that advice. three weeks, three times a year, is about a quarter of the calendar. no functioning tradition has ever told people to stop making decisions for a quarter of their lives."},
-    {"q": "what does mercury actually signify in vedic astrology?", "a": "speech, intellect, commerce, contracts, accounting, short travel and anything to do with exchange. those significations do not change when it is retrograde."},
-    {"q": "so is mercury retrograde useless?", "a": "as a prediction, there is nothing behind it. as a recurring prompt to re-read things u would otherwise skim, it is a scheduling habit that happens to be harmless and occasionally useful."},
-    {"q": "what does the vedic tradition say about retrograde?", "a": "that a retrograde graha is strong. it gains cheshta bala, motional strength, in the shadbala calculation. the classical reading runs toward intensity and repetition, not malfunction."},
-    {"q": "is a retrograde mercury in my birth chart different?", "a": "yes, and it is a separate question from the transit. about one person in five is born with mercury retrograde. the usual reading is a mind that works inward and revisits things rather than one that is broken."},
-    {"q": "does mercury retrograde affect exams or negotiations?", "a": "no evidence supports that. if u find the label useful as a reminder to prepare twice, use it as a reminder. do not use it as a reason to postpone something that matters."},
-    {"q": "why does mercury get blamed and not saturn?", "a": "saturn is retrograde for more than a third of every year and nobody notices, because saturn does not govern the two things modern life detects instantly when they fail: messages and travel."},
-    {"q": "should i change my plans during mercury retrograde?", "a": "not on the strength of the transit alone. read the contract twice, back things up, and go on with ur life. that advice is good in every week of the year, which is rather the point."}
-  ]
+    {
+      "q": "does mercury retrograde actually affect technology?",
+      "a": "there is no measured mechanism and no replicated study showing an effect on devices, travel or contracts. what there is instead is a very well documented set of reasons why people notice more during a named window."
+    },
+    {
+      "q": "how much of the year is mercury retrograde?",
+      "a": "about 18 percent. three windows of roughly three weeks each, every year, for everyone. that is close to one day in five."
+    },
+    {
+      "q": "why do things go wrong during mercury retrograde then?",
+      "a": "things go wrong at the same rate they always did. what changes is that u have been handed a label to file them under, so the ones that fit get remembered and the ones that do not get forgotten."
+    },
+    {
+      "q": "what is the frequency illusion?",
+      "a": "the effect where a thing u just learned about starts appearing everywhere. it is also called the baader-meinhof phenomenon. the thing did not become more common, ur attention became selective."
+    },
+    {
+      "q": "is it true you should not sign contracts during mercury retrograde?",
+      "a": "run the arithmetic on that advice. three weeks, three times a year, is about a quarter of the calendar. no functioning tradition has ever told people to stop making decisions for a quarter of their lives."
+    },
+    {
+      "q": "what does mercury actually signify in vedic astrology?",
+      "a": "speech, intellect, commerce, contracts, accounting, short travel and anything to do with exchange. those significations do not change when it is retrograde."
+    },
+    {
+      "q": "so is mercury retrograde useless?",
+      "a": "as a prediction, there is nothing behind it. as a recurring prompt to re-read things u would otherwise skim, it is a scheduling habit that happens to be harmless and occasionally useful."
+    },
+    {
+      "q": "what does the vedic tradition say about retrograde?",
+      "a": "that a retrograde graha is strong. it gains cheshta bala, motional strength, in the shadbala calculation. the classical reading runs toward intensity and repetition, not malfunction."
+    },
+    {
+      "q": "is a retrograde mercury in my birth chart different?",
+      "a": "yes, and it is a separate question from the transit. about one person in five is born with mercury retrograde. the usual reading is a mind that works inward and revisits things rather than one that is broken."
+    },
+    {
+      "q": "does mercury retrograde affect exams or negotiations?",
+      "a": "no evidence supports that. if u find the label useful as a reminder to prepare twice, use it as a reminder. do not use it as a reason to postpone something that matters."
+    },
+    {
+      "q": "why does mercury get blamed and not saturn?",
+      "a": "saturn is retrograde for more than a third of every year and nobody notices, because saturn does not govern the two things modern life detects instantly when they fail: messages and travel."
+    },
+    {
+      "q": "should i change my plans during mercury retrograde?",
+      "a": "not on the strength of the transit alone. read the contract twice, back things up, and go on with ur life. that advice is good in every week of the year, which is rather the point."
+    }
+  ],
+  "card_title": "18 percent of ur life is mercury retrograde",
+  "card_dek": "three weeks, three times a year, forever, for everybody. here is what the evidence shows and why u keep noticing.",
+  "chip": "explainer",
+  "llms_title": "What Mercury retrograde actually correlates with",
+  "llms_desc": "the 18 percent base rate, the absence of evidence, and the frequency illusion."
 }

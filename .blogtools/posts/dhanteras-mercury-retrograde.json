@@ -11,19 +11,66 @@
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE RETROGRADE DESK",
-  "keywords": ["dhanteras 2026", "dhanteras mercury retrograde", "muhurat vs transit", "dhanteras buying muhurat", "diwali mercury retrograde"],
+  "keywords": [
+    "dhanteras 2026",
+    "dhanteras mercury retrograde",
+    "muhurat vs transit",
+    "dhanteras buying muhurat",
+    "diwali mercury retrograde"
+  ],
   "faq": [
-    {"q": "is dhanteras 2026 inside mercury retrograde?", "a": "yes. dhanteras falls on 6 november 2026 and mercury is retrograde from 24 october to 13 november. diwali on 8 november sits inside the same window."},
-    {"q": "should i avoid buying gold on dhanteras because of mercury retrograde?", "a": "no classical source supports that. dhanteras is a muhurat and mercury retrograde is a transit. they are outputs of two different branches of the tradition, and one was never written to override the other."},
-    {"q": "how often does dhanteras fall inside mercury retrograde?", "a": "roughly one year in five. mercury is retrograde about 18 percent of the calendar, so any given date lands inside a window about that often. it is a coincidence with a known frequency, not an omen."},
-    {"q": "what is the difference between a muhurat and a transit?", "a": "a muhurat is a time u choose for an act. a transit is a condition nobody chose that applies to everyone at once. electional astrology and gochar are different branches answering different questions."},
-    {"q": "do the classical texts say to stop buying during a retrograde?", "a": "no. muhurta texts weigh the tithi, the nakshatra, the yoga, the karana, the rising sign and the moon. a blanket ban on transactions while a graha is vakri is not in them."},
-    {"q": "what is dhanteras actually about?", "a": "it is dhanatrayodashi, the thirteenth tithi of the dark fortnight before diwali, and also dhanvantari jayanti. the physician of the devas is said to have risen from the churning of the ocean holding a pot, which is why the day carries health as well as wealth."},
-    {"q": "what is the buying window on dhanteras?", "a": "pradosh kaal, the stretch of roughly an hour and a half to two hours after local sunset, is the traditional window. exact timings differ by city because sunset does."},
-    {"q": "can i reschedule dhanteras to avoid the retrograde?", "a": "no, and this is the part that gives the game away. dhanteras is fixed by the lunar calendar. nobody selects it. the only thing anyone chooses is the window inside the day."},
-    {"q": "what does mercury retrograde actually ask for then?", "a": "in the classical reading, repetition and review. applied to a purchase that means read the warranty, keep the invoice, check the return window and verify the hallmark. all of which u should be doing anyway."},
-    {"q": "is buying electronics on dhanteras a bad idea?", "a": "electronics did not exist when any of this was written, so no tradition has an opinion. check the warranty and keep the box. that is the whole remedy."},
-    {"q": "what should i actually check when buying gold?", "a": "the BIS hallmark and its six digit HUID, which u can verify in the BIS Care app, the purity in karats, the making charges as a separate line, the buyback terms, and a proper GST invoice with ur name on it."},
-    {"q": "why does this collision get handled so badly?", "a": "because fear performs. a warning about the biggest buying day of the year will always travel further than an explanation of why two branches of a tradition answer different questions."}
-  ]
+    {
+      "q": "is dhanteras 2026 inside mercury retrograde?",
+      "a": "yes. dhanteras falls on 6 november 2026 and mercury is retrograde from 24 october to 13 november. diwali on 8 november sits inside the same window."
+    },
+    {
+      "q": "should i avoid buying gold on dhanteras because of mercury retrograde?",
+      "a": "no classical source supports that. dhanteras is a muhurat and mercury retrograde is a transit. they are outputs of two different branches of the tradition, and one was never written to override the other."
+    },
+    {
+      "q": "how often does dhanteras fall inside mercury retrograde?",
+      "a": "roughly one year in five. mercury is retrograde about 18 percent of the calendar, so any given date lands inside a window about that often. it is a coincidence with a known frequency, not an omen."
+    },
+    {
+      "q": "what is the difference between a muhurat and a transit?",
+      "a": "a muhurat is a time u choose for an act. a transit is a condition nobody chose that applies to everyone at once. electional astrology and gochar are different branches answering different questions."
+    },
+    {
+      "q": "do the classical texts say to stop buying during a retrograde?",
+      "a": "no. muhurta texts weigh the tithi, the nakshatra, the yoga, the karana, the rising sign and the moon. a blanket ban on transactions while a graha is vakri is not in them."
+    },
+    {
+      "q": "what is dhanteras actually about?",
+      "a": "it is dhanatrayodashi, the thirteenth tithi of the dark fortnight before diwali, and also dhanvantari jayanti. the physician of the devas is said to have risen from the churning of the ocean holding a pot, which is why the day carries health as well as wealth."
+    },
+    {
+      "q": "what is the buying window on dhanteras?",
+      "a": "pradosh kaal, the stretch of roughly an hour and a half to two hours after local sunset, is the traditional window. exact timings differ by city because sunset does."
+    },
+    {
+      "q": "can i reschedule dhanteras to avoid the retrograde?",
+      "a": "no, and this is the part that gives the game away. dhanteras is fixed by the lunar calendar. nobody selects it. the only thing anyone chooses is the window inside the day."
+    },
+    {
+      "q": "what does mercury retrograde actually ask for then?",
+      "a": "in the classical reading, repetition and review. applied to a purchase that means read the warranty, keep the invoice, check the return window and verify the hallmark. all of which u should be doing anyway."
+    },
+    {
+      "q": "is buying electronics on dhanteras a bad idea?",
+      "a": "electronics did not exist when any of this was written, so no tradition has an opinion. check the warranty and keep the box. that is the whole remedy."
+    },
+    {
+      "q": "what should i actually check when buying gold?",
+      "a": "the BIS hallmark and its six digit HUID, which u can verify in the BIS Care app, the purity in karats, the making charges as a separate line, the buyback terms, and a proper GST invoice with ur name on it."
+    },
+    {
+      "q": "why does this collision get handled so badly?",
+      "a": "because fear performs. a warning about the biggest buying day of the year will always travel further than an explanation of why two branches of a tradition answer different questions."
+    }
+  ],
+  "card_title": "dhanteras is inside mercury retrograde this year",
+  "card_dek": "a muhurat and a transit are two different systems and one was never built to override the other. buy the thing, keep the receipt.",
+  "chip": "explainer",
+  "llms_title": "Dhanteras inside Mercury retrograde",
+  "llms_desc": "a muhurat is elective and a transit is not, plus the gold-buying checklist."
 }

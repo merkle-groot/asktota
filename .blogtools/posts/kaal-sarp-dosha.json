@@ -11,19 +11,66 @@
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; EXPLAINER",
-  "keywords": ["kaal sarp dosha", "kalsarp yoga", "rahu ketu axis", "kaal sarp dosh remedies", "vedic astrology doshas"],
+  "keywords": [
+    "kaal sarp dosha",
+    "kalsarp yoga",
+    "rahu ketu axis",
+    "kaal sarp dosh remedies",
+    "vedic astrology doshas"
+  ],
   "faq": [
-    {"q": "what is kaal sarp dosha in simple words?", "a": "it is when all seven visible grahas sit on one side of the line between rahu and ketu. rahu and ketu are always exactly opposite each other, so that line cuts ur chart in half. if nothing is in the other half, u have it."},
-    {"q": "is kaal sarp dosha mentioned in classical texts?", "a": "no. it does not appear in brihat parashara hora shastra, brihat jataka, phaladeepika or saravali. it shows up in indian astrology writing in the twentieth century and spread fast after that."},
-    {"q": "how common is kaal sarp dosha?", "a": "far more common than the word curse suggests. even treating the grahas as randomly placed, all seven landing in one half happens roughly one chart in sixty. mercury and venus never travel far from the sun, so in real charts it happens more often than that."},
-    {"q": "what are the 12 types of kaal sarp dosha?", "a": "anant, kulik, vasuki, shankhpal, padma, mahapadma, takshak, karkotak, shankhachur, ghatak, vishdhar and sheshnag. the name is decided by which house rahu is sitting in. the underlying condition is identical in all twelve."},
-    {"q": "does kaal sarp dosha end at a certain age?", "a": "the placement is fixed at birth and never changes. astrologers who say it fades usually mean the rahu and ketu dasha periods have passed, which is a timing claim, not the dosha disappearing."},
-    {"q": "is partial or anshik kaal sarp dosha a real thing?", "a": "it is a modern extension, used when one graha sits just outside the axis. there is no agreed rule for how far outside still counts, which is exactly why it gets applied so widely."},
-    {"q": "do i need a kaal sarp dosha puja?", "a": "nothing about the astronomy requires one. if the ritual gives u a sense of closure, that is a real thing rituals do for people. treat the price tag as the cost of that, not as a fee to change the sky."},
-    {"q": "can kaal sarp dosha be cancelled?", "a": "different astrologers list different cancellations, usually a strong jupiter, a well placed lagna lord, or planets in kendras. there is no shared rulebook, which tells u a lot about how firm the original rule is."},
-    {"q": "does kaal sarp dosha affect marriage?", "a": "it is not part of ashtakoota matching, which scores eight kootas and never looks at the rahu ketu axis. some families raise it anyway. that is a family conversation, not a calculation."},
-    {"q": "did successful people have kaal sarp dosha?", "a": "many famous names get listed. most of those charts rest on birth times nobody can verify. a list of successes proves as little as a list of failures would, because nobody publishes the charts that did nothing."},
-    {"q": "how do i check if i have kaal sarp dosha?", "a": "find the sign and degree of rahu, then check whether every other graha falls in the 180 degrees running from rahu to ketu. any calculated chart, including the one in ask tota, will show u the positions."},
-    {"q": "does birth time change whether i have it?", "a": "usually not. six of the seven grahas barely move in a day. only the moon travels fast enough to cross the axis inside one day, so the exact minute matters only when the moon is sitting close to that line."}
-  ]
+    {
+      "q": "what is kaal sarp dosha in simple words?",
+      "a": "it is when all seven visible grahas sit on one side of the line between rahu and ketu. rahu and ketu are always exactly opposite each other, so that line cuts ur chart in half. if nothing is in the other half, u have it."
+    },
+    {
+      "q": "is kaal sarp dosha mentioned in classical texts?",
+      "a": "no. it does not appear in brihat parashara hora shastra, brihat jataka, phaladeepika or saravali. it shows up in indian astrology writing in the twentieth century and spread fast after that."
+    },
+    {
+      "q": "how common is kaal sarp dosha?",
+      "a": "far more common than the word curse suggests. even treating the grahas as randomly placed, all seven landing in one half happens roughly one chart in sixty. mercury and venus never travel far from the sun, so in real charts it happens more often than that."
+    },
+    {
+      "q": "what are the 12 types of kaal sarp dosha?",
+      "a": "anant, kulik, vasuki, shankhpal, padma, mahapadma, takshak, karkotak, shankhachur, ghatak, vishdhar and sheshnag. the name is decided by which house rahu is sitting in. the underlying condition is identical in all twelve."
+    },
+    {
+      "q": "does kaal sarp dosha end at a certain age?",
+      "a": "the placement is fixed at birth and never changes. astrologers who say it fades usually mean the rahu and ketu dasha periods have passed, which is a timing claim, not the dosha disappearing."
+    },
+    {
+      "q": "is partial or anshik kaal sarp dosha a real thing?",
+      "a": "it is a modern extension, used when one graha sits just outside the axis. there is no agreed rule for how far outside still counts, which is exactly why it gets applied so widely."
+    },
+    {
+      "q": "do i need a kaal sarp dosha puja?",
+      "a": "nothing about the astronomy requires one. if the ritual gives u a sense of closure, that is a real thing rituals do for people. treat the price tag as the cost of that, not as a fee to change the sky."
+    },
+    {
+      "q": "can kaal sarp dosha be cancelled?",
+      "a": "different astrologers list different cancellations, usually a strong jupiter, a well placed lagna lord, or planets in kendras. there is no shared rulebook, which tells u a lot about how firm the original rule is."
+    },
+    {
+      "q": "does kaal sarp dosha affect marriage?",
+      "a": "it is not part of ashtakoota matching, which scores eight kootas and never looks at the rahu ketu axis. some families raise it anyway. that is a family conversation, not a calculation."
+    },
+    {
+      "q": "did successful people have kaal sarp dosha?",
+      "a": "many famous names get listed. most of those charts rest on birth times nobody can verify. a list of successes proves as little as a list of failures would, because nobody publishes the charts that did nothing."
+    },
+    {
+      "q": "how do i check if i have kaal sarp dosha?",
+      "a": "find the sign and degree of rahu, then check whether every other graha falls in the 180 degrees running from rahu to ketu. any calculated chart, including the one in ask tota, will show u the positions."
+    },
+    {
+      "q": "does birth time change whether i have it?",
+      "a": "usually not. six of the seven grahas barely move in a day. only the moon travels fast enough to cross the axis inside one day, so the exact minute matters only when the moon is sitting close to that line."
+    }
+  ],
+  "card_title": "kaal sarp dosha is a line in the sky, not a curse",
+  "card_dek": "seven grahas on one side of the rahu ketu axis. that is the entire rule, it is in no classical text, and it is not rare.",
+  "chip": "explainer",
+  "llms_title": "Kaal sarp dosha is a line in the sky, not a curse",
+  "llms_desc": "all seven grahas on one side of the Rahu-Ketu axis. Absent from the classical texts, and far more common than the word curse implies."
 }

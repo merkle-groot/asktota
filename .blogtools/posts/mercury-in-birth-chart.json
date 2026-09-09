@@ -11,19 +11,67 @@
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE CHART DESK",
-  "keywords": ["mercury in birth chart", "budha", "budhaditya yoga", "mercury combust", "mercury in houses", "vedic astrology mercury"],
+  "keywords": [
+    "mercury in birth chart",
+    "budha",
+    "budhaditya yoga",
+    "mercury combust",
+    "mercury in houses",
+    "vedic astrology mercury"
+  ],
   "faq": [
-    {"q": "what does mercury represent in vedic astrology?", "a": "speech, intellect, analysis, commerce, accounting, contracts, education, short travel and anything involving exchange. budha is the graha of processing rather than deciding."},
-    {"q": "which signs does mercury rule?", "a": "mithuna and kanya. it is exalted in kanya, deepest at 15 degrees, and debilitated in meena, deepest at 15 degrees. its mooltrikona is kanya from 16 to 20 degrees."},
-    {"q": "why is mercury exalted in a sign it already rules?", "a": "it is the only graha where those coincide, and the tradition treats it as budha being most itself in kanya: precise, analytical and useful. no classical text gives a mechanical reason, so treat it as a feature of the system rather than a derivation."},
-    {"q": "what is mercury combustion?", "a": "a graha too close to the sun is described as burnt, its independent voice drowned out. for mercury the commonly used orb is about 14 degrees, or about 12 degrees when retrograde."},
-    {"q": "why is mercury combust so often?", "a": "because it never appears more than about 28 degrees from the sun. a graha that cannot leave a 28 degree neighbourhood spends a very large share of its time inside a 14 degree burn radius."},
-    {"q": "what is budhaditya yoga?", "a": "the sun and mercury together in one sign. it is described as intelligence and recognition combined. it is also extremely common, because mercury is locked near the sun, so the label alone tells u much less than it sounds like."},
-    {"q": "how long is mercury mahadasha?", "a": "17 years in the vimshottari system. it is the third longest after venus at 20 and saturn at 19."},
-    {"q": "which nakshatras does mercury rule?", "a": "ashlesha, jyeshtha and revati. if ur moon was in one of those at birth, ur vimshottari dasha sequence started with mercury."},
-    {"q": "does mercury take on the nature of what it sits with?", "a": "yes, and this is one of its defining classical rules. budha is described as neutral and adaptable, so it colours toward whichever graha it shares a sign with. mercury with jupiter reads very differently from mercury with saturn."},
-    {"q": "is a debilitated mercury in meena a problem?", "a": "it is the placement where analysis is least at home, in a sign that prefers impressions to precision. it is also very common, and neecha bhanga cancellations apply, so it should never be read as a verdict on its own."},
-    {"q": "what does mercury retrograde mean in a birth chart?", "a": "about one person in five has it. the classical reading is that a retrograde graha gains motional strength, and mercury specifically reads as a mind that works inward, revisits, and is better on the second pass."},
-    {"q": "which house is mercury best in?", "a": "there is no universally best house. mercury is traditionally comfortable in the 1st, 4th, 10th and especially the 10th, and it is strong in kanya wherever that falls. what matters more is what it rules for ur lagna."}
-  ]
+    {
+      "q": "what does mercury represent in vedic astrology?",
+      "a": "speech, intellect, analysis, commerce, accounting, contracts, education, short travel and anything involving exchange. budha is the graha of processing rather than deciding."
+    },
+    {
+      "q": "which signs does mercury rule?",
+      "a": "mithuna and kanya. it is exalted in kanya, deepest at 15 degrees, and debilitated in meena, deepest at 15 degrees. its mooltrikona is kanya from 16 to 20 degrees."
+    },
+    {
+      "q": "why is mercury exalted in a sign it already rules?",
+      "a": "it is the only graha where those coincide, and the tradition treats it as budha being most itself in kanya: precise, analytical and useful. no classical text gives a mechanical reason, so treat it as a feature of the system rather than a derivation."
+    },
+    {
+      "q": "what is mercury combustion?",
+      "a": "a graha too close to the sun is described as burnt, its independent voice drowned out. for mercury the commonly used orb is about 14 degrees, or about 12 degrees when retrograde."
+    },
+    {
+      "q": "why is mercury combust so often?",
+      "a": "because it never appears more than about 28 degrees from the sun. a graha that cannot leave a 28 degree neighbourhood spends a very large share of its time inside a 14 degree burn radius."
+    },
+    {
+      "q": "what is budhaditya yoga?",
+      "a": "the sun and mercury together in one sign. it is described as intelligence and recognition combined. it is also extremely common, because mercury is locked near the sun, so the label alone tells u much less than it sounds like."
+    },
+    {
+      "q": "how long is mercury mahadasha?",
+      "a": "17 years in the vimshottari system. it is the third longest after venus at 20 and saturn at 19."
+    },
+    {
+      "q": "which nakshatras does mercury rule?",
+      "a": "ashlesha, jyeshtha and revati. if ur moon was in one of those at birth, ur vimshottari dasha sequence started with mercury."
+    },
+    {
+      "q": "does mercury take on the nature of what it sits with?",
+      "a": "yes, and this is one of its defining classical rules. budha is described as neutral and adaptable, so it colours toward whichever graha it shares a sign with. mercury with jupiter reads very differently from mercury with saturn."
+    },
+    {
+      "q": "is a debilitated mercury in meena a problem?",
+      "a": "it is the placement where analysis is least at home, in a sign that prefers impressions to precision. it is also very common, and neecha bhanga cancellations apply, so it should never be read as a verdict on its own."
+    },
+    {
+      "q": "what does mercury retrograde mean in a birth chart?",
+      "a": "about one person in five has it. the classical reading is that a retrograde graha gains motional strength, and mercury specifically reads as a mind that works inward, revisits, and is better on the second pass."
+    },
+    {
+      "q": "which house is mercury best in?",
+      "a": "there is no universally best house. mercury is traditionally comfortable in the 1st, 4th, 10th and especially the 10th, and it is strong in kanya wherever that falls. what matters more is what it rules for ur lagna."
+    }
+  ],
+  "card_title": "mercury never gets more than 28 degrees from the sun",
+  "card_dek": "and almost everything budha does in a chart follows from that one fact. combustion, budhaditya, and the house by house read.",
+  "chip": "explainer",
+  "llms_title": "Mercury in your birth chart",
+  "llms_desc": "the 28 degree elongation limit, combustion, Budhaditya yoga's real frequency, and Budha house by house."
 }

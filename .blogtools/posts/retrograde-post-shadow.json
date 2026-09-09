@@ -11,19 +11,66 @@
   "read_time": "9 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE RETROGRADE DESK",
-  "keywords": ["mercury post shadow", "retrograde shadow period", "mercury retrograde ends", "pre shadow", "mercury direct 2026"],
+  "keywords": [
+    "mercury post shadow",
+    "retrograde shadow period",
+    "mercury retrograde ends",
+    "pre shadow",
+    "mercury direct 2026"
+  ],
   "faq": [
-    {"q": "what is the post-shadow period?", "a": "the stretch after a planet stations direct, while it re-crosses the degrees it had already covered during the retrograde. it ends when the planet finally passes the degree where it originally stationed retrograde."},
-    {"q": "when does the 2026 mercury post-shadow end?", "a": "around 30 november. mercury stations direct on 13 november and then takes a further two to three weeks to clear the degrees it had already walked over."},
-    {"q": "why is it called a shadow?", "a": "because the planet passes through the same slice of zodiac three times: forwards, backwards, then forwards again. that thrice-crossed slice is the shadow, and it is the same degrees on all three passes."},
-    {"q": "what is the pre-shadow?", "a": "the mirror image at the front. it starts when the planet first crosses the degree it will later retrograde back to, and runs until the retrograde station."},
-    {"q": "is the shadow period a classical vedic idea?", "a": "no. the shadow framing is modern, and it comes out of western astrological practice. the classical vedic vocabulary has vakri for retrograde and atichari for fast motion, and does not build a three-phase model around it."},
-    {"q": "so why do people still feel unsettled after it ends?", "a": "mostly because three weeks of deferred admin does not clear itself in a day. things reopened during the window take time to close, and that is ordinary scheduling rather than sky mechanics."},
-    {"q": "how long is the whole cycle including shadows?", "a": "roughly nine to ten weeks per retrograde. three of retrograde, and about three either side. across three windows a year that is a large fraction of the calendar, which is worth noticing before treating it as a caution."},
-    {"q": "should i wait until the post-shadow ends to make decisions?", "a": "if u count shadows, u are cautioning about a third of every year. no working tradition ever asked people to defer a third of their lives, and following it would cost u far more than any transit ever has."},
-    {"q": "does the direct station feel like anything?", "a": "the station is the part practitioners weight most, because the planet sits on one degree for days instead of sprinting through a sign. whether u notice it is a separate question and one there is no evidence for."},
-    {"q": "what is a good use for the post-shadow window?", "a": "closing loops. finish the thing u reopened, send the follow-up, sign what u deferred. that is a scheduling habit, and it works whether or not the astrology does."},
-    {"q": "do other planets have shadow periods?", "a": "the same geometry applies to every retrograding planet, so yes. nobody tracks saturn's shadow, even though saturn is retrograde for more of the year than mercury."},
-    {"q": "how do i know which degrees the shadow covers?", "a": "note the degree where the planet stations retrograde and the degree where it stations direct. everything between those two points is the shadow, and it gets crossed three times."}
-  ]
+    {
+      "q": "what is the post-shadow period?",
+      "a": "the stretch after a planet stations direct, while it re-crosses the degrees it had already covered during the retrograde. it ends when the planet finally passes the degree where it originally stationed retrograde."
+    },
+    {
+      "q": "when does the 2026 mercury post-shadow end?",
+      "a": "around 30 november. mercury stations direct on 13 november and then takes a further two to three weeks to clear the degrees it had already walked over."
+    },
+    {
+      "q": "why is it called a shadow?",
+      "a": "because the planet passes through the same slice of zodiac three times: forwards, backwards, then forwards again. that thrice-crossed slice is the shadow, and it is the same degrees on all three passes."
+    },
+    {
+      "q": "what is the pre-shadow?",
+      "a": "the mirror image at the front. it starts when the planet first crosses the degree it will later retrograde back to, and runs until the retrograde station."
+    },
+    {
+      "q": "is the shadow period a classical vedic idea?",
+      "a": "no. the shadow framing is modern, and it comes out of western astrological practice. the classical vedic vocabulary has vakri for retrograde and atichari for fast motion, and does not build a three-phase model around it."
+    },
+    {
+      "q": "so why do people still feel unsettled after it ends?",
+      "a": "mostly because three weeks of deferred admin does not clear itself in a day. things reopened during the window take time to close, and that is ordinary scheduling rather than sky mechanics."
+    },
+    {
+      "q": "how long is the whole cycle including shadows?",
+      "a": "roughly nine to ten weeks per retrograde. three of retrograde, and about three either side. across three windows a year that is a large fraction of the calendar, which is worth noticing before treating it as a caution."
+    },
+    {
+      "q": "should i wait until the post-shadow ends to make decisions?",
+      "a": "if u count shadows, u are cautioning about a third of every year. no working tradition ever asked people to defer a third of their lives, and following it would cost u far more than any transit ever has."
+    },
+    {
+      "q": "does the direct station feel like anything?",
+      "a": "the station is the part practitioners weight most, because the planet sits on one degree for days instead of sprinting through a sign. whether u notice it is a separate question and one there is no evidence for."
+    },
+    {
+      "q": "what is a good use for the post-shadow window?",
+      "a": "closing loops. finish the thing u reopened, send the follow-up, sign what u deferred. that is a scheduling habit, and it works whether or not the astrology does."
+    },
+    {
+      "q": "do other planets have shadow periods?",
+      "a": "the same geometry applies to every retrograding planet, so yes. nobody tracks saturn's shadow, even though saturn is retrograde for more of the year than mercury."
+    },
+    {
+      "q": "how do i know which degrees the shadow covers?",
+      "a": "note the degree where the planet stations retrograde and the degree where it stations direct. everything between those two points is the shadow, and it gets crossed three times."
+    }
+  ],
+  "card_title": "the retrograde ended. why does nothing feel finished?",
+  "card_dek": "because the same fifteen degrees are still being crossed for a third time. what a shadow period is, and how much of it to believe.",
+  "chip": "explainer",
+  "llms_title": "The retrograde post-shadow",
+  "llms_desc": "the degrees crossed three times, and why the direct station is not a reset."
 }

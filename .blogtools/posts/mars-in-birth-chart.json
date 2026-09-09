@@ -11,19 +11,67 @@
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE CHART DESK",
-  "keywords": ["mars in birth chart", "mangal", "kuja dosha", "manglik", "mars aspects", "mars in houses vedic"],
+  "keywords": [
+    "mars in birth chart",
+    "mangal",
+    "kuja dosha",
+    "manglik",
+    "mars aspects",
+    "mars in houses vedic"
+  ],
   "faq": [
-    {"q": "what does mars represent in vedic astrology?", "a": "energy, courage, drive, competition and conflict. mangal also carries younger siblings, land and property, blood, surgery, machinery and anything that involves force being applied deliberately."},
-    {"q": "which signs does mars rule?", "a": "mesha and vrishchika. its mooltrikona is mesha from 0 to 12 degrees. it is exalted in makara, deepest at 28 degrees, and debilitated in karka, deepest at 28 degrees."},
-    {"q": "why does mars have three aspects?", "a": "every graha aspects the 7th from itself. mars additionally aspects the 4th and the 8th. that extra reach is why mars turns up in so many chart readings, and it is a fact about the system rather than about mars being aggressive."},
-    {"q": "what is manglik or kuja dosha?", "a": "mars sitting in the 1st, 2nd, 4th, 7th, 8th or 12th house. six houses out of twelve, so an enormous share of people have it before anyone opens a chart, and the classical cancellations are long."},
-    {"q": "why is mars exalted in makara?", "a": "makara is saturn's sign of structure, patience and long-term building. mars there is force with a plan, which is the most productive version of a graha that otherwise acts first and thinks later."},
-    {"q": "why is mars debilitated in karka?", "a": "karka is the moon's sign of feeling, comfort and protection. a graha built for confrontation is least itself in the sign that most wants to avoid it. the reading is force turned inward rather than force absent."},
-    {"q": "how long is mars mahadasha?", "a": "7 years in vimshottari. it is generally described as a short, high-energy period involving conflict, property, effort and physical push."},
-    {"q": "which nakshatras does mars rule?", "a": "mrigashira, chitra and dhanishta. if ur moon was in one of those at birth, ur vimshottari dasha sequence started with mars."},
-    {"q": "how fast does mars move?", "a": "about 45 days per sign on average, and it retrogrades for roughly two to two and a half months every couple of years. it is the slowest of the personal grahas."},
-    {"q": "which house is mars strongest in?", "a": "the 10th, by directional strength, which it shares with the sun. digbala puts mars at full force in the house of career and visible action."},
-    {"q": "is mars always a malefic?", "a": "it is classed as a natural malefic, meaning harsh in effect. but it is a yogakaraka, the single most helpful graha, for karka and simha lagnas, so what it does for u depends entirely on ur ascendant."},
-    {"q": "what does mars say about siblings?", "a": "mangal is the bhratru karaka, the significator of siblings, and is read alongside the 3rd house. as with every karaka, describe the placement rather than making claims about a real person."}
-  ]
+    {
+      "q": "what does mars represent in vedic astrology?",
+      "a": "energy, courage, drive, competition and conflict. mangal also carries younger siblings, land and property, blood, surgery, machinery and anything that involves force being applied deliberately."
+    },
+    {
+      "q": "which signs does mars rule?",
+      "a": "mesha and vrishchika. its mooltrikona is mesha from 0 to 12 degrees. it is exalted in makara, deepest at 28 degrees, and debilitated in karka, deepest at 28 degrees."
+    },
+    {
+      "q": "why does mars have three aspects?",
+      "a": "every graha aspects the 7th from itself. mars additionally aspects the 4th and the 8th. that extra reach is why mars turns up in so many chart readings, and it is a fact about the system rather than about mars being aggressive."
+    },
+    {
+      "q": "what is manglik or kuja dosha?",
+      "a": "mars sitting in the 1st, 2nd, 4th, 7th, 8th or 12th house. six houses out of twelve, so an enormous share of people have it before anyone opens a chart, and the classical cancellations are long."
+    },
+    {
+      "q": "why is mars exalted in makara?",
+      "a": "makara is saturn's sign of structure, patience and long-term building. mars there is force with a plan, which is the most productive version of a graha that otherwise acts first and thinks later."
+    },
+    {
+      "q": "why is mars debilitated in karka?",
+      "a": "karka is the moon's sign of feeling, comfort and protection. a graha built for confrontation is least itself in the sign that most wants to avoid it. the reading is force turned inward rather than force absent."
+    },
+    {
+      "q": "how long is mars mahadasha?",
+      "a": "7 years in vimshottari. it is generally described as a short, high-energy period involving conflict, property, effort and physical push."
+    },
+    {
+      "q": "which nakshatras does mars rule?",
+      "a": "mrigashira, chitra and dhanishta. if ur moon was in one of those at birth, ur vimshottari dasha sequence started with mars."
+    },
+    {
+      "q": "how fast does mars move?",
+      "a": "about 45 days per sign on average, and it retrogrades for roughly two to two and a half months every couple of years. it is the slowest of the personal grahas."
+    },
+    {
+      "q": "which house is mars strongest in?",
+      "a": "the 10th, by directional strength, which it shares with the sun. digbala puts mars at full force in the house of career and visible action."
+    },
+    {
+      "q": "is mars always a malefic?",
+      "a": "it is classed as a natural malefic, meaning harsh in effect. but it is a yogakaraka, the single most helpful graha, for karka and simha lagnas, so what it does for u depends entirely on ur ascendant."
+    },
+    {
+      "q": "what does mars say about siblings?",
+      "a": "mangal is the bhratru karaka, the significator of siblings, and is read alongside the 3rd house. as with every karaka, describe the placement rather than making claims about a real person."
+    }
+  ],
+  "card_title": "mars reaches three houses, not one",
+  "card_dek": "the 4th, 7th and 8th from wherever it stands. that reach explains manglik dosha better than any warning does.",
+  "chip": "explainer",
+  "llms_title": "Mars in your birth chart",
+  "llms_desc": "the 4th, 7th and 8th aspects, why the manglik house list follows from them, and Mars as yogakaraka for two lagnas."
 }

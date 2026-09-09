@@ -34,6 +34,20 @@
    "blog": "https://www.asktota.com/blog/how-to-read-kundli.html"
   },
   {
+   "id": "2026-09-18-myth-w06-apps",
+   "when": "2026-09-18T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w06-apps.png",
+   "caption": "every claim in a reading should carry a number u can check.\nswiss ephemeris, lahiri ayanamsa, whole sign houses. ask any app which ayanamsa it uses. most cannot answer.\nthat is not a small thing. it is the difference between a calculation and a paragraph.\nthe full comparison, including where our competitors beat us, is on the blog.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-09-19-clip-moon-2am",
+   "when": "2026-09-19T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-moon-2am.png",
+   "caption": "thirteen degrees a day, new sign every two and a quarter. chandra never agreed to be consistent. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
+  },
+  {
    "id": "2026-09-23-sun-moon-rising-story",
    "when": "2026-09-23T08:30:00+05:30",
    "type": "story",
@@ -55,6 +69,20 @@
    ],
    "caption": "u have three signs, not one, and they are hardly ever the same.\nthe sun moves one degree a day. the moon thirteen. the rising sign changes a whole sign every two hours.\nwhich is why a sun sign horoscope can be written for a twelfth of the planet, and ur rising sign cannot.\ntag the friend whose rising sign explains absolutely everything.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #lagna #moonsign #nakshatra #astrologybasics #bigthree",
    "blog": "https://www.asktota.com/blog/sun-moon-rising.html"
+  },
+  {
+   "id": "2026-09-25-myth-w07-birthdate",
+   "when": "2026-09-25T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w07-birthdate.png",
+   "caption": "ur moon changes sign every 2.25 days. ur lagna changes every two hours.\nwithout a birth time we can give u a rashi and a nakshatra and nothing else.\nwe would rather say that than hand u twelve confident house placements built on a guessed noon.\nsaying “we don't know” is a feature. it is also very rare in this category.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-09-26-clip-venus-opinions",
+   "when": "2026-09-26T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-venus-opinions.png",
+   "caption": "the kalatra karaka has been watching from two signs away from the sun, which is as far as it is ever allowed to stand. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
   },
   {
    "id": "2026-09-30-rahu-ketu-story",
@@ -81,6 +109,41 @@
    "blog": "https://www.asktota.com/blog/rahu-ketu.html"
   },
   {
+   "id": "2026-10-02-sun-in-birth-chart-story",
+   "when": "2026-10-02T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/sun-in-birth-chart-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-02-myth-w08-science",
+   "when": "2026-10-02T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w08-science.png",
+   "caption": "the positional astronomy is exact and computable to the arcsecond.\nthe interpretation layered on top of it is a tradition.\nwe tell u which half is which, in every post, and almost nobody else in this category will.\nthat is the whole brand in two lines.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-10-03-clip-ketu-left",
+   "when": "2026-10-03T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-ketu-left.png",
+   "caption": "seven years of dasha and no forwarding address. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
+  },
+  {
+   "id": "2026-10-05-moon-in-birth-chart-story",
+   "when": "2026-10-05T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/moon-in-birth-chart-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-07-mars-in-birth-chart-story",
+   "when": "2026-10-07T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/mars-in-birth-chart-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
    "id": "2026-10-07-navratri-nine-nights-story",
    "when": "2026-10-07T08:30:00+05:30",
    "type": "story",
@@ -105,10 +168,45 @@
    "blog": "https://www.asktota.com/blog/navratri-nine-nights.html"
   },
   {
+   "id": "2026-10-09-jupiter-in-birth-chart-story",
+   "when": "2026-10-09T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/jupiter-in-birth-chart-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-09-myth-w09-colours",
+   "when": "2026-10-09T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w09-colours.png",
+   "caption": "the nine navratri colours spread through newspapers in western india over recent decades.\nlovely. widely kept. about forty years old.\na custom does not need to be ancient to be real, and calling it ancient when it isn't makes everything else u say harder to trust.\nthe nine nights, properly, on the blog.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-10-10-clip-jupiter-bigger",
+   "when": "2026-10-10T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-jupiter-bigger.png",
+   "caption": "guru expands what it touches. on the 5th that reads as luck. on the 6th it is more debt. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
+  },
+  {
+   "id": "2026-10-12-venus-in-birth-chart-story",
+   "when": "2026-10-12T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/venus-in-birth-chart-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
    "id": "2026-10-14-amanta-purnimanta-story",
    "when": "2026-10-14T08:30:00+05:30",
    "type": "story",
    "image": "https://www.asktota.com/assets/social/amanta-purnimanta-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-14-exalted-debilitated-planets-story",
+   "when": "2026-10-14T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/exalted-debilitated-planets-instagram-story.png",
    "note": "add the link sticker by hand. the API cannot attach one."
   },
   {
@@ -129,10 +227,45 @@
    "blog": "https://www.asktota.com/blog/amanta-purnimanta.html"
   },
   {
+   "id": "2026-10-16-planetary-combustion-story",
+   "when": "2026-10-16T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/planetary-combustion-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-16-myth-w10-fasting",
+   "when": "2026-10-16T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w10-fasting.png",
+   "caption": "grains or no grains. sendha namak or none. all nine days or two.\nfasting rules are regional and always have been, and the panchang ur family uses probably differs from the one on ur phone.\nboth are computing correctly. they are applying different conventions.\nwhy that happens, on the blog.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-10-17-clip-mars-deadline",
+   "when": "2026-10-17T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-mars-deadline.png",
+   "caption": "give the commander something to do or it will find something. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
+  },
+  {
+   "id": "2026-10-19-benefic-malefic-planets-story",
+   "when": "2026-10-19T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/benefic-malefic-planets-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
    "id": "2026-10-21-mercury-retrograde-mechanics-story",
    "when": "2026-10-21T08:30:00+05:30",
    "type": "story",
    "image": "https://www.asktota.com/assets/social/mercury-retrograde-mechanics-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-21-planetary-friendships-story",
+   "when": "2026-10-21T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/planetary-friendships-instagram-story.png",
    "note": "add the link sticker by hand. the API cannot attach one."
   },
   {
@@ -151,6 +284,27 @@
    ],
    "caption": "mercury has never moved backwards. not once, not ever.\nit orbits in 88 days and laps us every 116, and around that pass our line of sight to it runs backwards against the stars.\nit happens three times a year, for about 18 percent of the calendar, for every person alive at the same time.\nand vedic astrology scores a retrograde graha as strong. vakri gains cheshta bala. that is the opposite of what u have been told.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #mercuryretrograde #vakri #retrograde #astrotok #genzastrology",
    "blog": "https://www.asktota.com/blog/mercury-retrograde-mechanics.html"
+  },
+  {
+   "id": "2026-10-23-find-your-moon-sign-story",
+   "when": "2026-10-23T08:30:00+05:30",
+   "type": "story",
+   "image": "https://www.asktota.com/assets/social/find-your-moon-sign-instagram-story.png",
+   "note": "add the link sticker by hand. the API cannot attach one."
+  },
+  {
+   "id": "2026-10-23-myth-w11-retro-ancient",
+   "when": "2026-10-23T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w11-retro-ancient.png",
+   "caption": "classical vedic astrology scores a retrograde graha as STRONG.\nvakri earns cheshta bala, one of the six components of shadbala. that is in the texts.\nthe three week panic about contracts and technology is a twentieth century idea from a completely different tradition.\nmercury stations retrograde tomorrow. here is the honest version.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-10-24-clip-mercury-texting",
+   "when": "2026-10-24T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-mercury-texting.png",
+   "caption": "stations retrograde today. it has still never left a 28 degree radius in its entire life. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
   },
   {
    "id": "2026-10-28-mercury-retrograde-effects-story",
@@ -177,6 +331,20 @@
    "blog": "https://www.asktota.com/blog/mercury-retrograde-effects.html"
   },
   {
+   "id": "2026-10-30-myth-w12-dontsign",
+   "when": "2026-10-30T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w12-dontsign.png",
+   "caption": "three weeks, three times a year, is 18% of ur life.\nadd the shadows, as the same advice usually does, and it reaches about 45%.\nno functioning tradition ever asked people to stop living for half of every year, and nobody repeating this actually does it.\nread the contract twice. back the thing up. carry on.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-10-31-clip-rahu-flashbulbs",
+   "when": "2026-10-31T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-rahu-flashbulbs.png",
+   "caption": "a head with no stomach, permanently opposite a body with no head. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
+  },
+  {
    "id": "2026-11-04-dhanteras-mercury-retrograde-story",
    "when": "2026-11-04T08:30:00+05:30",
    "type": "story",
@@ -201,6 +369,20 @@
    "blog": "https://www.asktota.com/blog/dhanteras-mercury-retrograde.html"
   },
   {
+   "id": "2026-11-06-myth-w13-dhanteras",
+   "when": "2026-11-06T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w13-dhanteras.png",
+   "caption": "dhanteras is a tithi. it cannot be moved. so “wait until the 13th” means skip the festival, and nobody means that.\na muhurat is a time u choose. a transit is a condition nobody chose. two different branches, and one was never built to override the other.\nbuy the thing. keep the receipt. read the warranty twice.\nthat's it, that's the whole remedy.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
+  },
+  {
+   "id": "2026-11-07-clip-saturn-review",
+   "when": "2026-11-07T11:00:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/clip-saturn-review.png",
+   "caption": "shani does not punish. shani stops covering for u. 🦜\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymemes #genzastrology"
+  },
+  {
    "id": "2026-11-11-retrograde-post-shadow-story",
    "when": "2026-11-11T08:30:00+05:30",
    "type": "story",
@@ -223,6 +405,13 @@
    ],
    "caption": "mercury stations direct on the 13th and everyone posts the celebration graphic.\nthen nothing resolves, because the same fifteen degrees are still being crossed for a third time.\nthe shadow framing is modern, by the way. classical vedic has vakri and atichari and no three phase model at all.\nclose the loops u opened. that works whether or not the astrology does.\n\nfull piece: asktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #mercuryretrograde #vakri #retrograde #astrotok #genzastrology",
    "blog": "https://www.asktota.com/blog/retrograde-post-shadow.html"
+  },
+  {
+   "id": "2026-11-13-myth-w14-over",
+   "when": "2026-11-13T19:30:00+05:30",
+   "type": "image",
+   "image": "https://www.asktota.com/assets/social/statics/myth-w14-over.png",
+   "caption": "mercury stations direct today and everyone posts the celebration graphic.\nthe post-shadow runs to about 30 november. the same fifteen degrees are being crossed for a third time.\nnothing resets today, and expecting it to is most of why next week feels stuck.\nclose the loops u opened instead.\n\nasktota.com/blog\n\n#vedicastrology #jyotish #kundli #astrologyindia #asktota #astrologymyths #mythbusting"
   }
  ]
 }

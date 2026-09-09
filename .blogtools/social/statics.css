@@ -1,0 +1,64 @@
+/* Ask Tota statics: archetype D (two-up) and the newsprint clipping.
+   Both 1080x1350. Numbers from BRAND_DESIGN_BIBLE 12.1 and 12.7. */
+:root{
+  --paper:#FBF3E0; --stock:#F4EEDD; --halftone:#E3D9C0; --rule:#EDE4CE;
+  --ink:#1E3A2A; --body:#2C3E30; --muted:#5E6E5E;
+  --marigold:#FFD24A; --mint:#DFF2E4; --pink:#F8D3E0; --pink-ink:#C2588A;
+  --parrot:#178A4C; --card:#FFFFFF;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#191919;font-family:'Bricolage Grotesque',ui-sans-serif,sans-serif}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;padding:88px 84px 76px;
+  display:flex;flex-direction:column;background:var(--paper)}
+
+/* ---------- archetype D: the two-up ---------- */
+.deskline{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding-bottom:18px;border-bottom:6px solid var(--ink)}
+.deskline b{font-weight:800;font-size:34px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.deskline span{font-weight:700;font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+h1.q{margin:34px 0 0;font-weight:800;font-size:76px;line-height:1.06;letter-spacing:-.03em;
+  color:var(--ink);text-wrap:balance}
+h1.q mark{background:var(--marigold);border-radius:999px;padding:.04em .28em;margin:0 -.06em;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+.twoup{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:40px 0 0;min-height:0}
+.tile2{border:6px solid var(--ink);border-radius:44px;box-shadow:0 12px 0 var(--ink);
+  padding:52px 36px 72px;display:flex;flex-direction:column;justify-content:center;
+  gap:22px;position:relative}
+.tile2.myth{background:var(--pink)}
+.tile2.receipts{background:var(--mint)}
+.kick{position:absolute;top:-26px;left:28px;border:6px solid var(--ink);border-radius:999px;
+  padding:9px 24px;font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;
+  box-shadow:0 7px 0 var(--ink)}
+.tile2.myth .kick{background:var(--pink-ink);color:var(--paper)}
+.tile2.receipts .kick{background:var(--parrot);color:var(--paper)}
+.tile2 p{margin:0;font-weight:600;font-size:36px;line-height:1.32;color:var(--ink)}
+.tile2 p.small{font-weight:500;font-size:31px;line-height:1.38;color:var(--body)}
+.tile2 .arrow{position:absolute;right:32px;bottom:24px;font-weight:800;font-size:40px;color:var(--ink)}
+
+/* ---------- the newsprint clipping ---------- */
+.slide.clip{background:var(--stock);
+  background-image:radial-gradient(var(--halftone) 2.2px, transparent 2.4px),
+                   repeating-linear-gradient(to bottom, transparent 0 28px, var(--rule) 28px 30px);
+  background-size:7px 7px, 100% 30px;
+  padding:96px 84px 84px}
+.clip .head{border-top:6px solid var(--ink);border-bottom:3px solid var(--ink);
+  padding:14px 0;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.clip .head b{font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.clip .head span{font-weight:700;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.clip .art{flex:1;display:flex;align-items:center;justify-content:center;padding:26px 0}
+.clip .art svg{width:66%;max-height:430px}
+.clip .spot{font-weight:800;font-size:26px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--parrot);text-align:center;margin-top:6px}
+.clip h1{margin:16px 0 0;font-weight:800;font-size:62px;line-height:1.12;letter-spacing:-.025em;
+  color:var(--ink);text-align:center;text-wrap:balance}
+.clip h1 em{font-style:normal;background:var(--marigold);padding:.02em .22em}
+.clip .hair{height:2px;background:var(--ink);opacity:.55;margin:28px 0 18px}
+.clip .cap{font-weight:700;font-size:44px;line-height:1.28;color:var(--body);text-align:center}
+.clip .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:baseline;
+  border-top:3px solid var(--ink);padding-top:16px;
+  font-weight:800;font-size:26px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+.handle{margin-top:auto;padding-top:26px;text-align:center;font-weight:800;font-size:30px;
+  letter-spacing:.06em;color:var(--ink)}

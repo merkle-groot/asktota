@@ -1,0 +1,85 @@
+{
+"myths": [
+ {"id":"w06-apps","date":"fri, 18 sept","q":"astrology apps just **generate 12 horoscopes**",
+  "myth":"it's the same twelve paragraphs, rotated. nobody is calculating anything.",
+  "receipts":"swiss ephemeris. lahiri ayanamsa. whole sign houses. every position computed to the arcminute from ur exact birth minute, and every claim carries a number u can check. ask any app which ayanamsa it uses. most cannot answer."},
+
+ {"id":"w07-birthdate","date":"fri, 25 sept","q":"u only need ur **birth date**",
+  "myth":"the date is enough. the time is a formality nobody really uses.",
+  "receipts":"ur moon changes sign every 2.25 days. ur lagna changes every 2 hours. without a time we can give u a rashi and nothing else. we would rather say that than hand u twelve confident houses built on a guess."},
+
+ {"id":"w08-science","date":"fri, 2 oct","q":"vedic astrology is **anti-science**",
+  "myth":"it's all made up, and anyone who takes it seriously is refusing to look at evidence.",
+  "receipts":"the positional astronomy is exact and computable to the arcsecond. the interpretation on top of it is a tradition. we are honest about which half is which, every single time, and almost nobody else in this category will be."},
+
+ {"id":"w09-colours","date":"fri, 9 oct","q":"the navratri **colour list** is ancient",
+  "myth":"nine colours, one per night, handed down through the tradition.",
+  "receipts":"it spread through newspapers in western india over the last few decades. genuinely lovely, widely kept, and about forty years old. a custom does not need to be ancient to be real. it just should not be sold as something it is not."},
+
+ {"id":"w10-fasting","date":"fri, 16 oct","q":"fasting rules are **the same everywhere**",
+  "myth":"there is one correct way to keep the fast and everyone else is doing it wrong.",
+  "receipts":"they are regional and always have been. grains or no grains, sendha namak or none, all nine days or two. the panchang ur family uses probably differs from the one on ur phone, and both are computing correctly."},
+
+ {"id":"w11-retro-ancient","date":"fri, 23 oct","q":"mercury retrograde is an **ancient warning**",
+  "myth":"the old texts told people not to sign or travel while budha is retrograde.",
+  "receipts":"classical vedic astrology scores a retrograde graha as STRONG. vakri earns cheshta bala, one of the six components of shadbala. the three week panic is a twentieth century idea from a different tradition entirely."},
+
+ {"id":"w12-dontsign","date":"fri, 30 oct","q":"don't sign anything for **three weeks**",
+  "myth":"no contracts, no purchases, no launches until mercury goes direct.",
+  "receipts":"three weeks, three times a year, is 18% of ur life. add the shadows as the same advice usually does and it reaches 45%. no functioning tradition ever asked people to stop living for half of every year. read it twice. don't stop."},
+
+ {"id":"w13-dhanteras","date":"fri, 6 nov","q":"don't buy on dhanteras **this year**",
+  "myth":"mercury is retrograde, so skip the gold, skip the appliance, wait until the 13th.",
+  "receipts":"dhanteras is a tithi. it cannot be moved, so “wait” means skip the festival, and nobody means that. a muhurat is elective and a transit is not. buy the thing. keep the receipt. read the warranty twice."},
+
+ {"id":"w14-over","date":"fri, 13 nov","q":"the retrograde is **over today**",
+  "myth":"mercury stations direct, everything resets, back to normal.",
+  "receipts":"the post-shadow runs to about 30 november. mercury is re-crossing the same fifteen degrees for a third time. nothing resets on the 13th, and expecting it to is most of why the week after feels stuck."},
+
+ {"id":"bank-saturn","date":"from the bank","q":"saturn is a **bad planet**",
+  "myth":"shani punishes people. a saturn period is something to survive.",
+  "receipts":"saturn is the yogakaraka, the single BEST graha, for vrishabha and tula ascendants. it is the lagna lord for two more. for a third of all charts, the scariest graha in the system is on ur side."},
+
+ {"id":"bank-manglik","date":"from the bank","q":"manglik dosha **ruins a marriage**",
+  "myth":"a manglik should not marry a non-manglik. the match is doomed.",
+  "receipts":"it is mars in one of six houses out of twelve. depending on which method and which reference point, somewhere between a third and a half of everyone qualifies, and the classical cancellations run to dozens. it is the most oversold thing in this category."},
+
+ {"id":"bank-debilitated","date":"from the bank","q":"a debilitated planet is a **defect**",
+  "myth":"neecha means broken. that part of ur life is compromised.",
+  "receipts":"about 45% of charts contain at least one debilitation. neecha bhanga cancels a large share of them, and some texts then read the cancellation as a strength. check the cancellations before anyone says anything final."}
+],
+
+"clippings": [
+ {"id":"mercury-texting","date":"sat","planet":"mercury",
+  "line":"mercury, **texting three people at once**",
+  "cap":"sources close to the sun say budha has not left a 28 degree radius in its entire life. it is fine. it is normal. it is still texting."},
+
+ {"id":"rahu-flashbulbs","date":"sat","planet":"rahu",
+  "line":"rahu was seen **near the flashbulbs**",
+  "cap":"a head with no stomach was reported consuming everything at the venue and describing itself as still hungry. ketu left through the kitchen without saying goodbye."},
+
+ {"id":"saturn-review","date":"sat","planet":"saturn",
+  "line":"saturn has scheduled **a performance review**",
+  "cap":"it will take seven and a half years, it is on a published timetable, and it has already read everything u filed. shani does not punish. shani stops covering for u."},
+
+ {"id":"venus-opinions","date":"sat","planet":"venus",
+  "line":"shukra has opinions about **ur situationship**",
+  "cap":"none of them are kind. the kalatra karaka has been watching the whole thing from two signs away from the sun, which is as far as it is ever allowed to stand."},
+
+ {"id":"moon-2am","date":"sat","planet":"moon",
+  "line":"the moon was up **at 2am again**",
+  "cap":"chandra covers thirteen degrees a day and changes its mind every two and a quarter. it is not being difficult. it is the fastest thing in ur chart and it never agreed to be consistent."},
+
+ {"id":"jupiter-bigger","date":"sat","planet":"jupiter",
+  "line":"guru has made it **bigger**",
+  "cap":"nobody asked which house it was standing in. jupiter expands what it touches. on the 5th that is luck. on the 6th it is more debt, and it looks exactly the same from the outside."},
+
+ {"id":"mars-deadline","date":"sat","planet":"mars",
+  "line":"mangal has picked **a fight with a deadline**",
+  "cap":"the commander does not set policy, it executes it. give it something to do or it will find something. mars in the 6th is genuinely one of the best placements there is."},
+
+ {"id":"ketu-left","date":"sat","planet":"ketu",
+  "line":"ketu left, and **took nothing with it**",
+  "cap":"a body with no head, permanently opposite rahu, quietly excellent at the one thing it has completely lost interest in. seven years of dasha and no forwarding address."}
+]
+}

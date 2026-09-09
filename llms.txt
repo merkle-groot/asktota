@@ -31,12 +31,23 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): thirty-nine explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): forty-nine explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
+
+- [Sun in your birth chart](https://www.asktota.com/blog/sun-in-birth-chart.html): Surya rules Simha alone, is classed as a natural malefic, causes combustion and can never suffer it, house by house.
+- [Moon in your birth chart](https://www.asktota.com/blog/moon-in-birth-chart.html): Chandra as rashi, dasha origin and chandra lagna, plus paksha bala and the kemadruma cancellations.
+- [Mars in your birth chart](https://www.asktota.com/blog/mars-in-birth-chart.html): the 4th, 7th and 8th aspects, why the manglik house list follows from them, and Mars as yogakaraka for two lagnas.
+- [Jupiter in your birth chart](https://www.asktota.com/blog/jupiter-in-birth-chart.html): the 5th and 9th aspects covering both trikonas, kendradhipati dosha, and Gajakesari's real frequency.
+- [Venus in your birth chart](https://www.asktota.com/blog/venus-in-birth-chart.html): the 20 year dasha, the 47 degree elongation limit, and kalatra karaka in every chart regardless of gender.
+- [Exalted and debilitated planets](https://www.asktota.com/blog/exalted-debilitated-planets.html): the full uchcha and neecha table with peak degrees, the four signs with neither, mooltrikona, and neecha bhanga.
+- [Planetary combustion explained](https://www.asktota.com/blog/planetary-combustion.html): astangata orbs for every graha, why Mercury is combust about half the time, and why cazimi is not a Vedic concept.
+- [Benefic and malefic planets](https://www.asktota.com/blog/benefic-malefic-planets.html): naisargika versus functional classification, kendradhipati dosha, the six yogakaraka lagnas, upachaya houses and maraka.
+- [Planetary friendships](https://www.asktota.com/blog/planetary-friendships.html): the naisargika table with its asymmetries, tatkalika maitri, and the five-fold panchadha combination.
+- [How to find your moon sign](https://www.asktota.com/blog/find-your-moon-sign.html): three methods including the full nakshatra pada syllable table used at namakaran.
 
 - [Mercury retrograde: the actual mechanics](https://www.asktota.com/blog/mercury-retrograde-mechanics.html): apparent retrograde motion explained, the 2026 dates, shadow periods, and the classical position that a vakri graha gains cheshta bala.
 - [What Mercury retrograde actually correlates with](https://www.asktota.com/blog/mercury-retrograde-effects.html): the 18 percent base rate, the absence of evidence, and the frequency illusion.

@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): thirty explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): thirty-one explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [What Mercury retrograde actually correlates with](https://www.asktota.com/blog/mercury-retrograde-effects.html): the 18 percent base rate, the absence of evidence, and the frequency illusion.
 - [Mercury retrograde: the actual mechanics](https://www.asktota.com/blog/mercury-retrograde-mechanics.html): apparent retrograde motion explained, the 2026 dates, shadow periods, and the classical position that a vakri graha gains cheshta bala.
 - [How to read your kundli, step by step](https://www.asktota.com/blog/how-to-read-kundli.html): a twelve step reading order: chart style, lagna, lagna lord, moon, occupancy, dignity, aspects, house lords, yogas, dasha, transits, synthesis.
 - [Gemstones by planet](https://www.asktota.com/blog/gemstones-by-planet.html): the full navaratna table, the two schools that disagree about who should wear what, the upratna substitutes, and how not to be overcharged.

@@ -43,7 +43,7 @@ jobs:
           ARGS=""
           [ -n "${{ inputs.as_of }}" ] && ARGS="$ARGS --as-of ${{ inputs.as_of }}"
           [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
-          python3 .blogtools/publish_site.py $ARGS | tee /tmp/publish.log
+          PYTHONDONTWRITEBYTECODE=1 python3 .blogtools/publish_site.py $ARGS | tee /tmp/publish.log
           {
             echo 'summary<<EOF'
             cat /tmp/publish.log
@@ -53,14 +53,14 @@ jobs:
       - name: Commit and push if anything changed
         if: ${{ inputs.dry_run != true }}
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
+          if [ -z "$(git status --porcelain blog sitemap.xml llms.txt)" ]; then
             echo "nothing changed. no commit."
             exit 0
           fi
           RELEASED=$(grep -c '^  RELEASE' /tmp/publish.log || true)
           git config user.name  "asktota-bot"
           git config user.email "bot@asktota.com"
-          git add -A
+          git add blog sitemap.xml llms.txt
           {
             printf 'Release %s scheduled post(s)\n\n' "$RELEASED"
             grep '^  RELEASE' /tmp/publish.log || printf '  index, sitemap or llms.txt refresh only\n'

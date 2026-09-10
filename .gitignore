@@ -3,3 +3,5 @@
 .gstack/
 .vercel
 .blogtools/preview/
+__pycache__/
+*.pyc

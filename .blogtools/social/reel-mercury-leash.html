@@ -1,0 +1,99 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--ink:#1E3A2A;--cream:#FBF3E0;--marigold:#FFD24A;--muted:#5E6E5E;--mint:#DFF2E4}
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
+ #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);
+   background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);background-size:50px 50px}
+ .masthead{position:absolute;left:48px;top:150px;width:984px;height:150px;background:var(--ink);
+   display:flex;align-items:center;justify-content:center;box-shadow:14px 14px 0 rgba(30,58,42,.28)}
+ .masthead span{color:var(--cream);font-weight:800;font-size:56px;letter-spacing:.16em;text-transform:uppercase}
+ .hd{position:absolute;left:80px;width:920px;top:400px}
+ .l{font-weight:800;font-size:104px;line-height:114px;letter-spacing:-.03em;text-transform:uppercase;
+    color:var(--ink);position:relative;white-space:nowrap}
+ .l .wipe{position:absolute;left:-16px;top:10px;bottom:12px;width:100%;background:var(--marigold);transform-origin:left center}
+ .l i{font-style:normal;position:relative;z-index:2}
+ /* the arena */
+ #arena{position:absolute;left:0;right:0;top:880px;height:520px}
+ #sun{position:absolute;left:96px;top:160px;width:200px;height:200px;border-radius:999px;
+   background:var(--marigold);border:10px solid var(--ink);box-shadow:0 14px 0 var(--ink)}
+ #sun b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+   font-weight:800;font-size:40px;color:var(--ink);letter-spacing:.08em}
+ #leash{position:absolute;left:296px;top:256px;height:9px;background:var(--ink);border-radius:5px}
+ #merc{position:absolute;top:204px;width:112px;height:112px;border-radius:999px;background:var(--mint);
+   border:9px solid var(--ink);box-shadow:0 10px 0 var(--ink);display:flex;align-items:center;justify-content:center;
+   font-weight:800;font-size:36px;color:var(--ink)}
+ #marks{position:absolute;left:0;right:0;top:392px;height:60px}
+ #marks span{position:absolute;font-weight:700;font-size:30px;letter-spacing:.14em;color:var(--muted);
+   text-transform:uppercase;transform:translateX(-50%)}
+ #marks i{position:absolute;top:-16px;width:5px;height:26px;background:var(--muted);opacity:.6;transform:translateX(-50%)}
+ .sub{position:absolute;left:80px;top:1476px;width:640px;font-weight:500;font-size:44px;line-height:58px;color:var(--muted)}
+ #tota{position:absolute;right:34px;bottom:120px;width:310px}
+ .foot{position:absolute;left:80px;bottom:96px;font-weight:700;font-size:44px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--ink)}
+ .hidden{visibility:hidden}
+</style></head><body>
+<div id="stage">
+  <div class="masthead" id="mast"><span>the daily tota</span></div>
+  <div class="hd" id="head">
+    <div class="l" id="l1">mercury has</div>
+    <div class="l" id="l2">never been</div>
+    <div class="l" id="l3"><div class="wipe" id="wipe"></div><i>28&deg; from the sun</i></div>
+  </div>
+  <div id="arena">
+    <div id="sun"><b>SUN</b></div>
+    <div id="leash"></div>
+    <div id="merc">☿</div>
+    <div id="marks">
+      <i style="left:196px"></i><span style="left:196px">0&deg;</span>
+      <i style="left:880px"></i><span style="left:880px">28&deg;</span>
+    </div>
+  </div>
+  <div class="sub" id="sub">in its entire life. that is the whole reason it looks like it goes backwards.</div>
+  <img id="tota" src="tota-clip.png" alt="">
+  <div class="foot" id="foot">asktota.com</div>
+</div>
+<script>
+const $=id=>document.getElementById(id), cl=(v,a,b)=>Math.max(a,Math.min(b,v)), p=(f,a,b)=>cl((f-a)/(b-a),0,1);
+const TOTAL=180, X0=420, XMAX=880;   // clear of the sun -> the 28 deg limit
+function render(f){
+  // masthead snaps, then holds
+  const my = f<4 ? -320+324*p(f,0,3) : (f<7 ? 4-4*p(f,4,6) : 0);
+  $('mast').style.transform=`translateY(${my}px)`;
+
+  $('l1').classList.toggle('hidden', f<8);
+  $('l2').classList.toggle('hidden', f<14);
+  $('l3').classList.toggle('hidden', f<20);
+  const w=$('wipe'), wp=p(f,24,30);
+  w.style.transform=`scaleX(${wp})`; w.style.visibility = f<24?'hidden':'visible';
+
+  // mercury strains at the leash. two full attempts, then it gives up. loops cleanly.
+  const t = f/TOTAL;
+  let x;
+  const ease = u => 1-Math.pow(1-u,3);
+  if (f < 60)        x = X0 + (XMAX-X0)*ease(p(f,10,52));              // walks out
+  else if (f < 72)   x = XMAX - 46*Math.sin(p(f,60,72)*Math.PI*3)*(1-p(f,60,72)); // yanked back, wobbling
+  else if (f < 120)  x = X0 + (XMAX-X0)*ease(p(f,78,114));             // tries again
+  else if (f < 134)  x = XMAX - 46*Math.sin(p(f,120,134)*Math.PI*3)*(1-p(f,120,134));
+  else               x = XMAX - (XMAX-X0)*ease(p(f,134,176));          // gives up, comes home
+  $('merc').style.left = (x-56)+'px';
+  const len = x-296;
+  $('leash').style.width = len+'px';
+  // it flashes marigold on the two frames where the leash actually goes taut
+  const taut = (f>=56 && f<62) || (f>=116 && f<122);
+  $('leash').style.background = taut ? 'var(--marigold)' : 'var(--ink)';
+  $('leash').style.height = taut ? '15px' : '9px';
+  $('leash').style.top = taut ? '253px' : '256px';
+
+  $('sub').classList.toggle('hidden', f<40);
+  $('foot').classList.toggle('hidden', f<52);
+
+  // tota bobs 4px over 1250ms, per the bible
+  const bob = Math.sin(f/37.5*Math.PI*2)*4;
+  $('tota').style.bottom = (120+bob)+'px';
+}
+render(0); window.render=render; window.TOTAL=TOTAL;
+</script></body></html>

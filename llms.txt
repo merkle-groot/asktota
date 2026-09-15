@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): thirty-two explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): thirty-three explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Dhanteras inside Mercury retrograde](https://www.asktota.com/blog/dhanteras-mercury-retrograde.html): a muhurat is elective and a transit is not, plus the gold-buying checklist.
 - [What a muhurat is](https://www.asktota.com/blog/muhurat.html): 48 minutes, the panchang filter, rahu kaal arithmetic, abhijit, and fixed versus movable lagnas.
 - [What Mercury retrograde actually correlates with](https://www.asktota.com/blog/mercury-retrograde-effects.html): the 18 percent base rate, the absence of evidence, and the frequency illusion.
 - [Mercury retrograde: the actual mechanics](https://www.asktota.com/blog/mercury-retrograde-mechanics.html): apparent retrograde motion explained, the 2026 dates, shadow periods, and the classical position that a vakri graha gains cheshta bala.

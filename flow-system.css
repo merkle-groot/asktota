@@ -1,0 +1,121 @@
+/* Shared Life Edition tokens and components. Loaded after legacy page styles. */
+:root {
+  --paper: #fbf3e0;
+  --stock: #f4eedd;
+  --ink: #1e3a2a;
+  --ink-body: #2c3e30;
+  --ink-muted: #526454;
+  --parrot: #178a4c;
+  --marigold: #ffd24a;
+  --mint: #dff2e4;
+  --pink: #f8d3e0;
+  --flow-surface: #fffdf6;
+  --flow-rule: #c8d0bb;
+  --flow-error: #962e43;
+  --flow-radius: 6px;
+  --flow-width: 1160px;
+  --flow-space: clamp(24px, 4vw, 56px);
+  --flow-focus: #145b38;
+  --flow-font: 'Bricolage Grotesque', Arial, sans-serif;
+}
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--flow-focus);
+  outline-offset: 4px;
+}
+[hidden] { display: none !important; }
+.life-page { background: var(--paper); font-family: var(--flow-font); }
+.life-page .nav { position: relative; background: var(--paper); border-bottom: 1px solid var(--flow-rule); box-shadow: none; }
+.life-page .nav-inner { max-width: var(--flow-width); min-height: 80px; }
+.life-page .nav-link { font-size: 13px; }
+.life-page .edition-wrap { width: min(calc(100% - 64px), var(--flow-width)); padding: 0 0 80px; }
+.flow-progress { margin: 0 0 48px; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--flow-rule); }
+.flow-progress ol { display: flex; flex-wrap: wrap; gap: 32px; list-style: none; padding: 0; }
+.flow-progress li { display: flex; align-items: center; gap: 9px; color: var(--ink-muted); font-size: 13px; }
+.flow-progress li span { width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid var(--flow-rule); border-radius: 50%; font-size: 10px; font-variant-numeric: tabular-nums; }
+.flow-progress li[aria-current] { color: var(--ink); font-weight: 800; }
+.flow-progress li[aria-current] span { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.flow-progress li.is-complete span { background: var(--mint); border-color: var(--parrot); color: var(--ink); }
+.flow-progress p { max-width: 260px; font-size: 12px; color: var(--ink-muted); text-align: right; }
+.life-page section[data-screen] { gap: 24px; }
+.life-page section:is([data-screen="details"], [data-screen="payment"], [data-screen="otp"], [data-screen="checkout"]) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(40px, 7vw, 100px); align-items: start; }
+.life-page .details-hero, .flow-intro { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; padding-top: 18px; }
+.life-page .details-hero-copy { gap: 22px; text-align: left; }
+.life-page .details-hero-copy .intro-kicker { justify-self: start; }
+.life-page .intro-kicker { justify-self: start; }
+.life-page .headline { font-size: clamp(36px, 4.5vw, 62px); line-height: 1.04; letter-spacing: -.055em; font-weight: 700; }
+.life-page .headline mark { padding: 0; color: var(--parrot); background: transparent; }
+.life-page .subtitle { max-width: 44ch; font-size: 17px; line-height: 1.65; font-weight: 400; }
+.life-page .details-mascot { order: 0; width: 250px; height: 250px; max-width: 100%; object-fit: contain; margin: 4px auto 0; }
+.flow-art { width: min(300px, 100%); height: 250px; object-fit: contain; align-self: center; }
+.flow-caption { display: flex; justify-content: space-between; align-items: center; gap: 20px; width: 100%; border-top: 1px solid var(--flow-rule); padding-top: 18px; color: var(--ink-muted); font-size: 10px; letter-spacing: .07em; }
+.flow-caption span { color: var(--parrot); font-size: 18px; letter-spacing: -.02em; }
+.form-heading { display: grid; gap: 9px; }
+.flow-eyebrow { margin: 0; color: var(--parrot); font-size: 10px; font-weight: 700; line-height: 1.5; letter-spacing: .12em; }
+.form-heading :is(h2, h3) { margin: 0; font-size: clamp(23px, 2.3vw, 30px); font-weight: 600; letter-spacing: -.04em; line-height: 1.15; }
+.form-heading > p:not(.flow-eyebrow) { margin: 0; color: var(--ink-muted); font-size: 14px; line-height: 1.5; }
+/* Legacy form components (fields, pills, buttons, cards) are styled by life-edition.css.
+   Only the grid placement of the card footnotes is handled here. */
+.life-page :is(.privacy, [data-screen] > .fine) { grid-column: 2; }
+.order-line, .order-total { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-block: 1px solid var(--flow-rule); font-size: 16px; }
+.order-line strong { text-align: right; font-size: 28px; font-weight: 600; }
+.order-line small, .order-total small { display: block; margin-top: 5px; font-size: 12px; font-weight: 400; color: var(--ink-muted); }
+.order-includes { list-style: none; padding: 0; display: grid; gap: 16px; font-size: 14px; line-height: 1.5; }
+.order-includes li { display: grid; grid-template-columns: 18px 1fr; gap: 8px; }
+.order-includes li::before { content: '✓'; color: var(--parrot); }
+.order-facts { display: grid; gap: 12px; padding: 20px 0 0; border-top: 1px solid var(--flow-rule); font-size: 13px; }
+.order-facts > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.order-facts dt { color: var(--ink-muted); }.order-facts dd { margin: 0; overflow-wrap: anywhere; }
+.order-total { border-bottom: 0; padding-bottom: 0; }.order-total strong { font-size: 44px; letter-spacing: -.04em; font-weight: 600; }
+.checkout-trust { color: var(--ink-muted); text-align: center; font-size: 12px; line-height: 1.6; }
+.life-page .picker-sheet { border: 1px solid var(--ink); border-radius: 12px; background: var(--flow-surface); box-shadow: 8px 8px 0 #1e3a2a20; max-height: calc(100dvh - 32px); overflow-y: auto; }
+.life-page .picker-masthead { background: transparent; color: var(--ink-muted); border-bottom: 1px solid var(--flow-rule); }
+.life-page :is(.picker-close, .picker-cancel) { min-height: 44px; }
+.life-page .picker-rows { display: none; }.life-page .picker-select { display: block; border: 1px solid #889b86; border-radius: var(--flow-radius); background: var(--flow-surface); font-size: 16px; }
+.life-page .picker-summary { border-radius: var(--flow-radius); background: var(--mint); }
+.life-page [data-screen="loader"] { max-width: 620px; min-height: 510px; margin: 60px auto; justify-items: center; align-content: center; text-align: center; }
+.life-page .loader-copy { font-size: clamp(30px, 4vw, 44px); }.life-page .loader-note { max-width: 40ch; line-height: 1.6; }
+.life-page .loader-progress { display: none; }.life-page #loader-retry { max-width: 380px; }
+.flow-footer { width: min(calc(100% - 64px), var(--flow-width)); margin: 0 auto; padding: 24px 0 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; border-top: 1px solid var(--flow-rule); color: var(--ink-muted); font-size: 12px; }
+.flow-footer nav { display: flex; gap: 20px; margin-left: auto; }.flow-footer a { color: var(--ink); }.flow-footer .brand { font-size: 19px; }
+.flow-notice { padding: 20px; border: 1px solid var(--flow-rule); margin-bottom: 20px; }
+/* The home entry and sample edition share the same action and focus language. */
+.flow-entry .hero-actions .btn { border-radius: var(--flow-radius); box-shadow: none; }
+.flow-entry .hero-actions .btn-primary:first-child { background: var(--ink); color: var(--paper); }
+.flow-entry .hero-actions .btn-secondary { background: transparent; color: var(--ink); border: 1px solid var(--flow-rule); }
+.flow-entry .desk { border-color: var(--flow-rule); box-shadow: none; }
+.demo-body { --line: var(--flow-rule); --muted: var(--ink-muted); --violet: var(--parrot); --violet-dark: var(--ink); }
+.demo-body .mode-button { min-height: 44px; }.demo-body .drawer-form :is(input, select, button) { min-height: 44px; }
+.demo-body .rail-steps button { display: inline-block; min-height: 44px; }
+.demo-body .flow-sample-link { color: var(--ink); text-underline-offset: 4px; }
+.demo-skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px 20px; background: var(--ink); color: var(--paper); }
+.demo-skip-link:focus { top: 12px; }
+@media (max-width: 900px) {
+  .flow-progress { gap: 16px; }.flow-progress p { display: none; }
+  .life-page section:is([data-screen="details"], [data-screen="payment"], [data-screen="otp"], [data-screen="checkout"]) { column-gap: 32px; }
+}
+@media (max-width: 700px) {
+  .life-page .edition-wrap, .flow-footer { width: calc(100% - 36px); }
+  .life-page .nav-inner { min-height: 66px; }.life-page .nav .dateline { display: none; }
+  .flow-progress { padding: 20px 0; margin-bottom: 26px; }.flow-progress ol { width: 100%; justify-content: space-between; gap: 8px; }.flow-progress li { font-size: 11px; gap: 5px; }.flow-progress li span { width: 24px; height: 24px; }
+  .life-page section:is([data-screen="details"], [data-screen="payment"], [data-screen="otp"], [data-screen="checkout"]) { grid-template-columns: 1fr; gap: 24px; }
+  .life-page .details-hero, .flow-intro { padding: 0; position: relative; gap: 14px; }.life-page .details-hero-copy { gap: 14px; }
+  .life-page .details-mascot, .flow-art { width: 140px; height: 140px; align-self: center; margin: 0 auto; }
+  .life-page .headline { font-size: clamp(36px, 8vw, 50px); }.life-page .subtitle { font-size: 16px; max-width: 42ch; }
+  .flow-caption { display: none; }
+  .life-page :is(.privacy, [data-screen] > .fine) { grid-column: 1; }
+  .life-page .flow-intro .flow-art { display: none; }
+  .life-page [data-screen="loader"] { margin: 24px auto; min-height: 440px; }
+  .flow-footer { gap: 16px; }.flow-footer > span { display: none; }
+  .demo-body .full-intro h2 { font-size: clamp(36px, 11vw, 56px); overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .life-page *, .demo-body *, .flow-entry * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+@media (max-width: 380px) {
+  .flow-entry .nav-inner { flex-wrap: wrap; gap: 12px; padding-block: 12px; }
+  .flow-entry .nav-actions { width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+}
+@media print {
+  .life-page :is(.nav, .flow-progress, .flow-footer) { display: none !important; }
+}

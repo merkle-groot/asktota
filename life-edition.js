@@ -7,7 +7,13 @@
 (function () {
   'use strict';
 
-  var API = (window.ASKTOTA_API_URL || 'https://api.asktota.com/v1').replace(/\/$/, '');
+  // Local-only override: ?api=http://localhost:8000/v1 points the client at a dev backend.
+  // Ignored on any other host so a shared link can't retarget someone's session data.
+  var API = (function () {
+    var requested = new URLSearchParams(location.search).get('api');
+    var isLocal = /^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(:\d+)?(\/|$)/.test(requested || '');
+    return ((isLocal && requested) || window.ASKTOTA_API_URL || 'https://api.asktota.com/v1').replace(/\/$/, '');
+  })();
   var STORAGE_KEY = 'asktota_web_life_edition';
   var REDUCED = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var EDITION_REQUEST_TIMEOUT_MS = 150000;
@@ -59,9 +65,24 @@
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) {}
   };
   var reducedScroll = REDUCED ? 'auto' : 'smooth';
+  var currentScreen = 'details';
   function show(name) {
+    if (!screens[name]) return;
+    currentScreen = name;
     Object.keys(screens).forEach(function (key) { screens[key].hidden = key !== name; });
     document.body.classList.toggle('is-reading-screen', name === 'partial' || name === 'reading');
+    var step = name === 'details' ? 1 : name === 'partial' ? 2 : name === 'loader' ? (state.verified ? 3 : 1) : 3;
+    document.querySelectorAll('[data-flow-step]').forEach(function (node) {
+      var number = Number(node.dataset.flowStep);
+      if (number === step) node.setAttribute('aria-current', 'step');
+      else node.removeAttribute('aria-current');
+      node.classList.toggle('is-complete', number < step || name === 'reading');
+    });
+    var stages = { details: 'A few details. A reading of your own.', partial: 'Your first look · free to read', payment: 'Full edition · 1 of 2 · Delivery', otp: 'Full edition · 2 of 2 · Verify', loader: state.verified ? 'Payment confirmed · Preparing your edition' : 'Preparing your first look', reading: 'Your full edition · Yours to keep' };
+    text('flow-stage', stages[name]);
+    var heading = screens[name].querySelector('h1, h2');
+    if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+    document.title = (heading ? heading.textContent : 'Your Life Edition') + ' | Ask Tota';
     window.scrollTo({ top: 0, behavior: reducedScroll });
   }
   function text(id, value) { var node = document.getElementById(id); if (node) node.textContent = value || ''; }
@@ -87,6 +108,7 @@
           var error = new Error(body.message || 'something went sideways. try again.');
           error.status = response.status; error.code = body.code || body.error;
           error.attemptsRemaining = body.attemptsRemaining ?? body.attempts_remaining ?? body.attemptsLeft ?? body.attempts_left;
+          error.retryAfter = body.retryAfter || body.retry_after;
           throw error;
         }
         return body;
@@ -111,6 +133,7 @@
     if (!button) return;
     button.disabled = on;
     button.classList.toggle('is-busy', on);
+    button.setAttribute('aria-busy', String(on));
     button.textContent = on ? 'one sec…' : idleLabel;
   }
 
@@ -197,21 +220,31 @@
   }
   function openPicker(mode) {
     pickerFocus = document.activeElement;
+    clearMessage('date-picker-error');
     if (mode === 'date') {
-      var parts = selectedDateParts() || { month: 1, day: 1, year: new Date().getFullYear() };
+      var parts = selectedDateParts() || { month: 1, day: 1, year: 2000 };
       pickerCandidate.month = parts.month; pickerCandidate.day = parts.day; pickerCandidate.year = parts.year;
     } else { pickerCandidate.hour = state.hour; pickerCandidate.minute = state.minute; }
     var backdrop = mode === 'date' ? datePicker : timePicker;
     renderAllPickerColumns(mode);
     backdrop.hidden = false;
     document.body.classList.add('picker-open');
-    var first = backdrop.querySelector('.picker-row.is-selected, .picker-select');
+    document.querySelector('main').inert = true;
+    document.querySelector('.nav').inert = true;
+    document.querySelector('.flow-footer').inert = true;
+    var first = backdrop.querySelector('.picker-select');
     if (first) window.setTimeout(function () { first.focus(); }, 0);
   }
   function closePicker(mode, commit) {
     var backdrop = mode === 'date' ? datePicker : timePicker;
     if (commit && mode === 'date') {
-      state.date = String(pickerCandidate.year).padStart(4, '0') + '-' + String(pickerCandidate.month).padStart(2, '0') + '-' + String(pickerCandidate.day).padStart(2, '0');
+      var candidateDate = String(pickerCandidate.year).padStart(4, '0') + '-' + String(pickerCandidate.month).padStart(2, '0') + '-' + String(pickerCandidate.day).padStart(2, '0');
+      if (new Date(pickerCandidate.year, pickerCandidate.month - 1, pickerCandidate.day) > new Date()) {
+        text('date-picker-error', 'Choose a birth date that isn’t in the future.');
+        return;
+      }
+      state.date = candidateDate;
+      clearMessage('date-picker-error');
       text('date-label', dateLabel(pickerCandidate));
       setDateError(false);
     }
@@ -222,6 +255,9 @@
     }
     backdrop.hidden = true;
     document.body.classList.remove('picker-open');
+    document.querySelector('main').inert = false;
+    document.querySelector('.nav').inert = false;
+    document.querySelector('.flow-footer').inert = false;
     if (pickerFocus && pickerFocus.focus) pickerFocus.focus();
     pickerFocus = null;
     save();
@@ -237,6 +273,13 @@
   });
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') { if (!datePicker.hidden) cancelPicker('date'); else if (!timePicker.hidden) cancelPicker('time'); }
+    var active = !datePicker.hidden ? datePicker : !timePicker.hidden ? timePicker : null;
+    if (event.key === 'Tab' && active) {
+      var nodes = Array.prototype.filter.call(active.querySelectorAll('button, select'), function (node) { return !node.disabled && node.getClientRects().length; });
+      var first = nodes[0], last = nodes[nodes.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
   });
   document.getElementById('time-skip').addEventListener('click', function () {
     state.hour = 12; state.minute = 0; state.accuracy = 'unknown';
@@ -255,21 +298,25 @@
   function placeName(place) { return [place.name, place.country].filter(Boolean).join(', '); }
   function clearPlaces() {
     placeResults.innerHTML = ''; placeInput.setAttribute('aria-expanded', 'false');
+    placeInput.removeAttribute('aria-activedescendant');
   }
   placeInput.addEventListener('input', function () {
     state.place = null; setPlaceError(false); clearPlaces(); clearMessage('details-error');
+    var requestNumber = ++placeRequest;
+    save();
     window.clearTimeout(placeTimer); window.clearTimeout(nudgeTimer);
     var query = placeInput.value.trim();
-    if (query.length < 2) { save(); return; }
+    text('place-status', 'Type a city, then choose a match from the list.');
+    if (query.length < 2) return;
     nudgeTimer = window.setTimeout(function () {
       if (placeResults.children.length && !state.place) {
         setPlaceError(true);
         placeError.textContent = '☝️ tap ur city below to lock it in';
       }
     }, 1500);
-    var requestNumber = ++placeRequest;
     placeTimer = window.setTimeout(function () {
       placeResults.innerHTML = '<p class="suggestions-loading">searching the map…</p>';
+      text('place-status', 'Searching for your city…');
       placeInput.setAttribute('aria-expanded', 'true');
       request('/geocoding/search?q=' + encodeURIComponent(query) + '&limit=5', { authToken: '' }).then(function (data) {
         if (requestNumber !== placeRequest) return;
@@ -277,21 +324,42 @@
         (data.results || []).slice(0, 5).forEach(function (place, index) {
           var button = document.createElement('button');
           button.type = 'button'; button.role = 'option'; button.setAttribute('aria-selected', 'false'); button.dataset.index = index;
+          button.id = 'place-option-' + index; button.tabIndex = -1;
           var name = document.createElement('span'); name.className = 's-name'; name.textContent = place.name || place.display_name || 'unknown city';
           var detail = document.createElement('span'); detail.className = 's-detail'; detail.textContent = [place.admin1 || place.state, place.country].filter(Boolean).join(', ');
           button.appendChild(name); button.appendChild(detail);
-          button.addEventListener('click', function () {
+          button.addEventListener('click', function (event) {
+            event.stopPropagation();
             clearPlaces(); setPlaceError(false);
-            var old = button.innerHTML; button.innerHTML = '<span class="suggestion-spinner">pinning this city…</span>'; button.disabled = true;
+            text('place-status', 'Pinning your city…');
             request('/geocoding/geocode', { method: 'POST', authToken: '', body: JSON.stringify(place) }).then(function (full) {
+              if (requestNumber !== placeRequest) return;
               state.place = full; placeInput.value = placeName(full); setPlaceError(false); save();
-            }).catch(function () { button.innerHTML = old; button.disabled = false; text('details-error', '⚠  couldn’t pin that city. try another result.'); });
+              text('place-status', 'City selected: ' + placeName(full)); placeInput.focus();
+            }).catch(function () { if (requestNumber !== placeRequest) return; text('place-status', 'Edit your city to search again.'); text('details-error', 'Couldn’t pin that city. Please search again.'); });
           });
           placeResults.appendChild(button);
         });
+        placeInput.setAttribute('aria-expanded', String(placeResults.children.length > 0));
+        text('place-status', placeResults.children.length ? 'Choose a match. Use the up and down arrow keys, then Enter.' : 'No matches. Try another spelling or a nearby city.');
         if (!placeResults.children.length) { setPlaceError(true); placeError.textContent = '⚠  no city found. try a nearby one.'; }
       }).catch(function () { if (requestNumber === placeRequest) { clearPlaces(); text('details-error', '⚠  city search is unavailable right now.'); } });
     }, 400);
+  });
+  placeInput.addEventListener('keydown', function (event) {
+    var options = Array.prototype.slice.call(placeResults.querySelectorAll('[role="option"]'));
+    var index = options.findIndex(function (option) { return option.id === placeInput.getAttribute('aria-activedescendant'); });
+    if (event.key === 'Escape') { ++placeRequest; window.clearTimeout(placeTimer); clearPlaces(); return; }
+    if (event.key === 'Enter' && index >= 0) { event.preventDefault(); options[index].click(); return; }
+    if (!options.length || !['ArrowDown', 'ArrowUp'].includes(event.key)) return;
+    event.preventDefault();
+    index = event.key === 'ArrowDown' ? (index + 1) % options.length : (index <= 0 ? options.length - 1 : index - 1);
+    options.forEach(function (option, i) { option.setAttribute('aria-selected', String(i === index)); });
+    placeInput.setAttribute('aria-activedescendant', options[index].id);
+    options[index].scrollIntoView({ block: 'nearest' });
+  });
+  document.addEventListener('click', function (event) {
+    if (!placeResults.contains(event.target) && event.target !== placeInput) { ++placeRequest; window.clearTimeout(placeTimer); clearPlaces(); }
   });
 
   /* ── Anonymous chart + partial reading ───────────────────────────────────── */
@@ -318,8 +386,10 @@
       var partial = results[0];
       if (results[1]) partial.chart = results[1];
       partialReading = partial;
+      stopLoader();
       renderPartial(partial); show('partial');
     }).catch(function (error) {
+      stopLoader();
       show('details'); text('details-error', '⚠  ' + error.message); throw error;
     });
   }
@@ -329,14 +399,17 @@
   var dateError = document.getElementById('date-error');
   var placeError = document.getElementById('place-error');
   function setNameError(on) {
+    nameInput.setAttribute('aria-invalid', String(on));
     nameError.hidden = !on;
     nameInput.closest('.field').classList.toggle('has-error', on);
   }
   function setDateError(on) {
+    dateTrigger.setAttribute('aria-invalid', String(on));
     dateError.hidden = !on;
     dateTrigger.classList.toggle('has-error', on);
   }
   function setPlaceError(on) {
+    placeInput.setAttribute('aria-invalid', String(on));
     placeError.hidden = !on;
     placeInput.closest('.field').classList.toggle('has-error', on);
     placeError.textContent = placeInput.value.trim()
@@ -370,6 +443,8 @@
       state.chartId = chart.chartId || chart.chart_id || chart.id;
       state.token = chart.sessionToken || chart.session_token || chart.token;
       if (!state.chartId || !state.token) throw new Error('the web session could not be opened. try again.');
+      state.verified = false; state.linked = false; state.accountToken = ''; state.orderId = '';
+      webContactProof = ''; verifiedContactPhone = ''; activePaymentOrder = null; lastPaymentResponse = null;
       save(); return loadPartial();
     }).catch(function (error) { text('details-error', '⚠  ' + error.message); }).finally(function () { setBusy(button, false, 'OPEN MY FREE READING →'); });
   });
@@ -417,6 +492,7 @@
   var OTP_LENGTH = 6;
   var resendCooldown = 0;
   var resendTimer = null;
+  var contactAttempt = 0;
 
   var otpCells = Array.prototype.slice.call(document.querySelectorAll('.otp-cell'));
   var otpPhoneDisplay = document.getElementById('otp-phone-display');
@@ -457,6 +533,7 @@
     text('otp-status', message || '');
     document.querySelector('.otp-cells').classList.toggle('has-error', Boolean(message));
     otpStatus.classList.remove('is-success');
+    otpCells.forEach(function (cell) { cell.setAttribute('aria-invalid', String(Boolean(message))); });
   }
   function otpErrorMessage(error) {
     var attempts = error && error.attemptsRemaining;
@@ -472,7 +549,7 @@
   }
   function startResendCooldown(seconds) {
     window.clearInterval(resendTimer);
-    resendCooldown = Math.max(0, seconds || 30);
+    resendCooldown = Math.max(0, seconds == null ? 30 : seconds);
     otpResend.disabled = resendCooldown > 0;
     if (resendCooldown > 0) {
       otpResend.textContent = 'resend in ' + mmss(resendCooldown);
@@ -481,7 +558,7 @@
         if (resendCooldown <= 0) {
           window.clearInterval(resendTimer);
           resendTimer = null;
-          otpResend.disabled = false;
+          otpResend.disabled = verifying;
           otpResend.textContent = 'resend now';
         } else {
           otpResend.textContent = 'resend in ' + mmss(resendCooldown);
@@ -500,18 +577,25 @@
     digits = digits.slice(0, 10);
     this.value = formatNational(digits);
     clearMessage('contact-error');
+    this.removeAttribute('aria-invalid');
   });
 
   document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
     clearMessage('contact-error');
     var button = document.getElementById('contact-submit');
+    if (button.disabled) return;
+    var attempt = ++contactAttempt;
     var phone;
     try { phone = normalizeContact('whatsapp', whatsappInput.value); } catch (error) {
       text('contact-error', '✋  ' + error.message);
+      whatsappInput.setAttribute('aria-invalid', 'true'); whatsappInput.focus();
       return;
     }
     webContactProof = '';
+    verifying = false;
+    otpCells.forEach(function (cell) { cell.disabled = false; });
+    otpVerify.textContent = 'confirm & continue →';
     verifiedContactPhone = '';
     activePaymentOrder = null;
     lastPaymentResponse = null;
@@ -521,6 +605,7 @@
     request('/web/charts/' + encodeURIComponent(state.chartId) + '/contact/otp/start', {
       method: 'POST', body: JSON.stringify({ phone: phone }),
     }).then(function (result) {
+      if (attempt !== contactAttempt) return;
       otpPhoneDisplay.textContent = '+91 ' + formatNational(phone.slice(3));
       setOtpCode('');
       setOtpError('');
@@ -530,6 +615,7 @@
       startResendCooldown(result.resendIn || 30);
       focusCell(0);
     }).catch(function (error) {
+      if (attempt !== contactAttempt) return;
       // A throttle still means the code is on its way — advance with the remaining wait.
       if (error.code === 'resend_too_soon') {
         otpPhoneDisplay.textContent = '+91 ' + formatNational(phone.slice(3));
@@ -558,6 +644,7 @@
       if (code.length === OTP_LENGTH) verifyWebContactOtp(code);
     });
     cell.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); focusCell(index + (event.key === 'ArrowLeft' ? -1 : 1)); }
       if (event.key === 'Backspace' && !this.value && index > 0) {
         event.preventDefault();
         focusCell(index - 1);
@@ -583,12 +670,16 @@
     verifying = true;
     var phone = state.contactValue;
     if (!phone) { verifying = false; setOtpError('go back and enter ur number first.'); return; }
+    var attempt = contactAttempt;
+    otpCells.forEach(function (cell) { cell.disabled = true; });
+    otpResend.disabled = true;
     otpVerify.disabled = true;
     otpVerify.textContent = 'checking…';
     setOtpError('');
     request('/web/charts/' + encodeURIComponent(state.chartId) + '/contact/otp/verify', {
       method: 'POST', body: JSON.stringify({ phone: phone, code: code }),
     }).then(function (result) {
+      if (attempt !== contactAttempt) return;
       webContactProof = result.contactProof || result.contact_proof || '';
       if (!webContactProof) throw new Error('the number was verified, but checkout could not be opened. try again.');
       verifiedContactPhone = phone;
@@ -598,7 +689,9 @@
       otpCells.forEach(function (cell) { cell.disabled = true; });
       window.setTimeout(openCheckout, 450);
     }).catch(function (error) {
+      if (attempt !== contactAttempt) return;
       verifying = false;
+      otpResend.disabled = resendCooldown > 0;
       var dead = error.code === 'code_expired' || error.code === 'no_pending_code' || error.code === 'too_many_attempts';
       if (dead) startResendCooldown(0);
       setOtpError(otpErrorMessage(error));
@@ -616,9 +709,11 @@
   });
 
   otpResend.addEventListener('click', function () {
-    if (resendCooldown > 0) return;
+    if (resendCooldown > 0 || otpResend.disabled) return;
+    otpResend.disabled = true;
     var phone = state.contactValue;
     if (!phone) { show('payment'); return; }
+    var attempt = contactAttempt;
     verifying = false;
     setOtpError('');
     setOtpCode('');
@@ -627,10 +722,13 @@
     request('/web/charts/' + encodeURIComponent(state.chartId) + '/contact/otp/start', {
       method: 'POST', body: JSON.stringify({ phone: phone }),
     }).then(function (result) {
+      if (attempt !== contactAttempt) return;
       if (result.devCode) { text('otp-status', 'local dev code: ' + result.devCode); otpStatus.classList.remove('is-success'); }
       startResendCooldown(result.resendIn || 30);
       focusCell(0);
     }).catch(function (error) {
+      if (attempt !== contactAttempt) return;
+      otpResend.disabled = false;
       if (error.code === 'resend_too_soon' || error.code === 'too_many_sends') startResendCooldown(error.retryAfter || 30);
       setOtpError(error.message || 'could not resend yet. wait a beat.');
     });
@@ -661,7 +759,9 @@
     return new Promise(function (resolve, reject) {
       if (window.Razorpay) return resolve();
       var script = document.createElement('script'); script.src = 'https://checkout.razorpay.com/v1/checkout.js';
-      script.onload = resolve; script.onerror = function () { reject(new Error('checkout could not load. check ur connection.')); };
+      var timer = window.setTimeout(function () { script.remove(); reject(new Error('Checkout is taking too long to load. Please try again.')); }, 15000);
+      script.onload = function () { window.clearTimeout(timer); resolve(); };
+      script.onerror = function () { window.clearTimeout(timer); script.remove(); reject(new Error('checkout could not load. check ur connection.')); };
       document.head.appendChild(script);
     });
   }
@@ -833,6 +933,7 @@
 
   /* ── Loader ───────────────────────────────────────────────────────────────── */
   var loaderTimer = null;
+  var loaderMode = 'partial';
   var partialMessages = ['warming up the cosmic newsroom…', 'filing the rough notes…', 'asking the chart to show its work…', 'okay, almost there…'];
   var editionMessages = ['warming up the cosmic newsroom…', 'shuffling ten desk files…', 'asking mercury to behave for once…', 'printing the receipts…'];
   function stopLoader() {
@@ -845,6 +946,7 @@
     var error = document.getElementById('loader-error');
     if (screen) screen.setAttribute('aria-busy', 'true');
     if (error) { error.hidden = true; error.textContent = ''; }
+    document.getElementById('loader-retry').hidden = true;
   }
   function showLoaderError(error) {
     var message = error && error.message ? error.message : 'the newsroom could not finish the file.';
@@ -854,14 +956,20 @@
     var screen = document.querySelector('[data-screen="loader"]');
     if (errorNode) errorNode.hidden = false;
     if (screen) screen.setAttribute('aria-busy', 'false');
+    document.getElementById('loader-retry').hidden = false;
   }
   function startLoader(mode) {
+    loaderMode = mode;
     var messages = mode === 'edition' ? editionMessages : partialMessages;
     var index = 0; clearLoaderError(); text('loader-copy', messages[0]); stopLoader();
     var screen = document.querySelector('[data-screen="loader"]');
     if (screen) screen.setAttribute('aria-busy', 'true');
     if (!REDUCED) loaderTimer = window.setInterval(function () { index = (index + 1) % messages.length; text('loader-copy', messages[index]); }, 2600);
   }
+  document.getElementById('loader-retry').addEventListener('click', function () {
+    if (loaderMode === 'edition' && state.verified) fetchEdition().catch(function () {});
+    else loadPartial().catch(function () {});
+  });
   /* ── Full edition renderer ────────────────────────────────────────────────── */
   function renderRich(value) {
     return escapeHtml(value).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/==([^=]+)==/g, '<mark>$1</mark>');
@@ -957,11 +1065,22 @@
     return html + '</div></div></article>';
   }
 
-  document.querySelectorAll('[data-back]').forEach(function (button) { button.addEventListener('click', function () { show(button.dataset.back); }); });
+  document.querySelectorAll('[data-back]').forEach(function (button) { button.addEventListener('click', function () {
+    if (currentScreen === 'otp' || currentScreen === 'payment') { ++contactAttempt; verifying = false; }
+    show(button.dataset.back);
+  }); });
 
   /* ── Restore after refresh ────────────────────────────────────────────────── */
+  nameInput.value = state.name;
+  placeInput.value = state.place ? placeName(state.place) : '';
+  whatsappInput.value = formatNational(state.contactValue.replace(/^\+91/, ''));
+  if (state.accuracy !== 'unknown') {
+    text('time-label', String(state.hour).padStart(2, '0') + ':' + String(state.minute).padStart(2, '0') + ' · exact');
+    document.getElementById('time-skip').setAttribute('aria-pressed', 'false');
+  }
+  otpCells.forEach(function (cell) { cell.setAttribute('aria-describedby', 'otp-status'); });
   if (state.token && state.chartId) {
-    if (state.verified && (!state.linked || state.accountToken)) fetchEdition().catch(function () { state.verified = false; save(); if (state.linked) show('details'); else loadPartial().catch(function () {}); });
+    if (state.verified && (!state.linked || state.accountToken)) fetchEdition().catch(function () {});
     else loadPartial().catch(function () {});
   }
 }());

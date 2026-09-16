@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="life-edition.css">
+  <link rel="stylesheet" href="flow-system.css">
 </head>
 <body class="life-page">
   <a class="skip-link" href="#reading-flow">skip to reading</a>
@@ -21,28 +22,29 @@
         <img src="/favicon-96.png" alt="" width="30" height="30" />
         <span>ask tota</span>
       </a>
-      <p class="dateline" id="dateline">THE DAILY TOTA &middot; FRESH TODAY</p>
+      <p class="dateline">THE LIFE EDITION &middot; A LITTLE MORE YOU</p>
       <div class="nav-actions">
-        <a class="nav-link" href="blog/">blog</a>
-        <a class="nav-link" href="life-edition.html">get ur reading</a>
-        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=app.asktota" target="_blank" rel="noopener">
-          <svg class="play-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.9a1 1 0 0 0-.5.9v18.4a1 1 0 0 0 .5.9l10-10.1zM15 8.4 5.2 1.5l9.1 9.2zM5.2 22.5l9.8-6.9-.7-.7zM19.9 10.6-3.3-1.9-2.2 2.2 2.2 2.2 3.3-1.9a1 1 0 0 0 0-1.6z" fill="currentColor"/></svg>
-          google play
-        </a>
+        <a class="nav-link" href="privacy.html">Your privacy ↗</a>
       </div>
     </div>
   </header>
 
   <main id="reading-flow" class="edition-wrap">
+    <nav class="flow-progress" aria-label="Your reading progress">
+      <ol><li aria-current="step" data-flow-step="1"><span>01</span> Your details</li><li data-flow-step="2"><span>02</span> First look</li><li data-flow-step="3"><span>03</span> Full edition</li></ol>
+      <p id="flow-stage" role="status">A few details. A reading of your own.</p>
+    </nav>
+    <noscript><p class="flow-notice">Please enable JavaScript to enter your birth details and open your reading.</p></noscript>
     <!-- Lead-first onboarding: no account or sign-in is needed to start. -->
     <section data-screen="details" aria-labelledby="details-title">
       <div class="details-hero">
         <div class="details-hero-copy">
-          <p class="kicker-pill kicker-green intro-kicker">A FREE READING FROM TOTA</p>
-          <h1 class="headline" id="details-title">tota has a free<br><mark>reading for u.</mark></h1>
-          <p class="subtitle">enter a few birth details and tota will open the first page from ur actual chart.</p>
+          <p class="kicker-pill kicker-green intro-kicker">YOUR STORY STARTS HERE</p>
+          <h1 class="headline" id="details-title">A few details.<br><mark>A little more you.</mark></h1>
+          <p class="subtitle">Your work. Your people. Your next chapter. Let Tota open the first page, using your actual birth chart.</p>
         </div>
         <img class="screen-mascot details-mascot" src="assets/tota/tota-free-reading.png" alt="Tota presenting an open free reading">
+        <p class="flow-caption">YOUR COSMIC CORRESPONDENT <span>Yours, Tota</span></p>
       </div>
 
       <div class="ink-card details-card">
@@ -156,10 +158,13 @@
 
     <!-- Screen 1: capture the WhatsApp number. Verification and checkout happen on the next screens. -->
     <section data-screen="payment" hidden aria-labelledby="payment-title">
+      <div class="flow-intro">
       <button class="back-link" type="button" data-back="partial">← back to my preview</button>
       <p class="kicker-pill kicker-marigold intro-kicker">UNLOCK THE PRIVATE FILE</p>
-      <h2 class="headline" id="payment-title">leave a handle,<br><mark>get the whole story.</mark></h2>
-      <p class="subtitle">Enter the WhatsApp number where Tota should send your full issue and your Razorpay payment receipt. You pay once; no sign-in is needed.</p>
+      <h2 class="headline" id="payment-title">The whole story.<br><mark>Yours to keep.</mark></h2>
+      <p class="subtitle">Ten desks, one connected reading. Leave your WhatsApp number so your full issue and payment receipt can find you.</p>
+      <img class="flow-art" src="assets/tota/tota-exclusive-envelope.png" alt="Tota carrying your private edition">
+      </div>
       <div class="ink-card payment-card">
         <span class="kicker-pill kicker-ink pinned">DELIVERY ADDRESS</span>
         <form id="contact-form" novalidate>
@@ -176,10 +181,13 @@
 
     <!-- Screen 2: verify the code that landed on WhatsApp. -->
     <section data-screen="otp" hidden aria-labelledby="otp-title">
+      <div class="flow-intro">
       <button class="back-link" type="button" data-back="payment">← edit number</button>
       <p class="kicker-pill kicker-marigold intro-kicker">CHECK YOUR WHATSAPP</p>
-      <h2 class="headline" id="otp-title">a code has been<br><mark>dispatched.</mark></h2>
-      <p class="subtitle">sent to <strong id="otp-phone-display">your WhatsApp</strong> · check your chats, bestie</p>
+      <h2 class="headline" id="otp-title">A small check.<br><mark>Then it’s yours.</mark></h2>
+      <p class="subtitle">We sent a code to <strong id="otp-phone-display">your WhatsApp</strong>. Open your chats, then enter it here.</p>
+      <img class="flow-art" src="assets/tota/tota-exclusive-envelope.png" alt="Tota delivering a sealed envelope">
+      </div>
       <div class="ink-card payment-card">
           <span class="kicker-pill kicker-ink pinned">VERIFICATION</span>
           <form id="otp-form" novalidate>
@@ -197,11 +205,12 @@
             <button id="whatsapp-otp-verify" class="pill-button" type="submit" disabled>confirm &amp; continue <span class="arrow">→</span></button>
           </form>
       </div>
-      <p class="otp-note">✦&nbsp; mercury's not in retrograde — this code will actually arrive</p>
+      <p class="fine">Wrong number? Use “edit number” to send the code somewhere else.</p>
     </section>
 
     <!-- App-compatible animated loading state. -->
-    <section data-screen="loader" hidden aria-live="polite" aria-busy="true">
+    <section data-screen="loader" hidden aria-labelledby="loader-copy" aria-busy="true">
+      <p class="flow-eyebrow">AT TOTA’S DESK</p>
       <div class="loader-progress"><span></span><span></span><span></span><span></span><span></span><span></span></div>
       <div class="loader-area">
         <div class="tota-loader" aria-label="Tota is filing your reading">
@@ -210,9 +219,10 @@
           <span class="music-note note-one">♪</span><span class="music-note note-two">♫</span>
         </div>
       </div>
-      <h2 id="loader-copy" class="headline loader-copy">warming up the cosmic newsroom…</h2>
+      <h2 id="loader-copy" class="headline loader-copy" role="status">warming up the cosmic newsroom…</h2>
       <p class="loader-note">Tota is keeping the page warm while your stars come through.</p>
       <p id="loader-error" class="form-error loader-error" role="alert" hidden></p>
+      <button id="loader-retry" class="pill-button" type="button" hidden>Try preparing my reading again ↻</button>
     </section>
 
     <!-- Full paid edition. It is populated only after /verify returns verified=true. -->
@@ -282,6 +292,7 @@
       </aside>
     </section>
   </main>
+  <footer class="flow-footer"><a class="brand" href="/">ask tota</a><span>Your cosmic correspondent.</span><nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></footer>
 
   <!-- Custom BirthPickerModal translation. Rows are generated by life-edition.js. -->
   <div id="date-picker" class="picker-backdrop" hidden>
@@ -290,6 +301,7 @@
       <h2 id="date-picker-title">when did it all begin?</h2><p class="picker-subtitle">tap a row in each column to set ur birthday.</p>
       <div class="picker-grid date-grid"><div class="picker-unit"><span class="picker-unit-label">MONTH</span><div class="picker-column" data-unit="month" role="radiogroup" aria-label="Month"><div class="picker-rows"></div><select class="picker-select" aria-label="Month"></select></div></div><div class="picker-unit"><span class="picker-unit-label">DAY</span><div class="picker-column" data-unit="day" role="radiogroup" aria-label="Day"><div class="picker-rows"></div><select class="picker-select" aria-label="Day"></select></div></div><div class="picker-unit"><span class="picker-unit-label">YEAR</span><div class="picker-column" data-unit="year" role="radiogroup" aria-label="Year"><div class="picker-rows"></div><select class="picker-select" aria-label="Year"></select></div></div></div>
       <div id="date-summary" class="picker-summary"><span class="summary-label">SELECTED</span><strong>choose a date</strong></div>
+      <p id="date-picker-error" class="form-error" role="alert"></p>
       <div class="picker-actions"><button type="button" class="picker-cancel" data-picker-cancel="date">cancel</button><button type="button" class="pill-button" id="date-use">use this date <span class="arrow">→</span></button></div>
     </div>
   </div>

@@ -39,6 +39,7 @@
 .life-page section[data-screen] { gap: 24px; }
 .life-page section:is([data-screen="details"], [data-screen="payment"], [data-screen="otp"], [data-screen="checkout"]) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: clamp(40px, 7vw, 100px); align-items: start; }
 .life-page .details-hero, .flow-intro { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; padding-top: 18px; }
+.life-page .flow-intro, .life-page .payment-card { min-width: 0; }
 .life-page .details-hero-copy { gap: 22px; text-align: left; }
 .life-page .details-hero-copy .intro-kicker { justify-self: start; }
 .life-page .intro-kicker { justify-self: start; }

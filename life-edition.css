@@ -710,3 +710,452 @@ section[data-screen][hidden] { display: none; }
   .reader-facts > div, .reader-facts > div + div { padding: 8px 0; border-right: 0; border-bottom: 1px solid var(--rule); }
   .reader-facts > div:last-child { border-bottom: 0; }
 }
+
+/* Live-only compact unlock CTA. The standalone demo keeps its larger illustrated index. */
+.life-page.demo-body .partial-desk-stack .unlock-card-cta {
+  gap: 14px;
+  width: min(100%, 980px);
+  margin: 38px auto 64px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner {
+  gap: 20px;
+  min-height: 0;
+  padding: 27px 32px;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner-badge {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner-copy {
+  gap: 5px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner-kicker {
+  font-size: 10px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner h3 {
+  max-width: 20ch;
+  font-size: clamp(31px, 3.8vw, 48px);
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner-copy > p {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-ticket-main {
+  padding: 22px 28px 26px;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-topline {
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status {
+  gap: 14px;
+  margin: 16px 0 15px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status-label,
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status-count {
+  font-size: 10px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status-meter {
+  gap: 5px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status-meter i {
+  height: 16px;
+  border-width: 1px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 0;
+  padding: 12px;
+  border-width: 1px;
+  border-radius: 12px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-card-art {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.6;
+  border-width: 1px;
+  border-radius: 9px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text {
+  gap: 2px;
+  margin-top: 11px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text > span {
+  font-size: 9px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text b {
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li > i {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 5px 8px;
+  border-width: 1px;
+  font-size: 9px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-ticket-button {
+  min-height: 52px;
+  margin-top: 16px;
+  padding: 12px 18px;
+  border-width: 1px;
+  box-shadow: 0 5px 0 var(--ink);
+  font-size: 14px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-button-row {
+  gap: 14px;
+}
+
+.life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-button-arrow {
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta {
+    width: auto;
+    margin: 30px 12px 48px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 14px;
+    padding: 21px 18px;
+    border-radius: 13px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner-badge {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner h3 {
+    max-width: 14ch;
+    font-size: clamp(23px, 7vw, 31px);
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner-copy > p {
+    font-size: 12px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-ticket-main {
+    padding: 15px 13px 16px;
+    border-radius: 13px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status {
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    margin: 12px 0 10px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-status-meter {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li {
+    grid-template-columns: 32px minmax(0, 1fr);
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2px 6px;
+    padding: 6px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-card-art {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: auto;
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li > i {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text b {
+    font-size: 11px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li > i {
+    padding: 3px 5px;
+    font-size: 7px;
+  }
+
+  .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-ticket-button {
+    min-height: 48px;
+    margin-top: 13px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+/* Live reading polish: the standalone demo keeps its original masthead and desk treatment. */
+.life-page.demo-body .edition-cover .cover-masthead {
+  display: none;
+}
+
+.life-page.demo-body .edition-cover .hero-copy,
+.life-page.demo-body .edition-cover .hero-art {
+  grid-row: 1;
+}
+
+.life-page.demo-body .reading-intro {
+  padding-bottom: 25px;
+}
+
+.life-page.demo-body .reading-intro + .life-three {
+  margin-top: 18px;
+}
+
+/* Live opening notes: let each card use the full column instead of inheriting the
+   three-column text grid intended for its inner contents. */
+.life-page.demo-body .life-three {
+  margin-bottom: 70px;
+  padding-bottom: 0;
+}
+
+.life-page.demo-body .life-three .three-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 20px 0 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  background: var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.life-page.demo-body .life-three .three-list li:nth-child(n) {
+  display: block;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-top: 3px solid var(--note-accent);
+}
+
+.life-page.demo-body .life-three .three-note-card {
+  display: flex;
+  width: 100%;
+  min-height: 380px;
+  box-sizing: border-box;
+  padding: 28px 30px 26px;
+}
+
+.life-page.demo-body .life-three .three-note-head {
+  gap: 10px;
+}
+
+.life-page.demo-body .life-three .three-list h3 {
+  max-width: 12ch;
+  margin: 42px 0 18px;
+  font-size: clamp(30px, 2.8vw, 45px);
+  line-height: .98;
+  text-wrap: balance;
+}
+
+.life-page.demo-body .life-three .three-list p {
+  max-width: 28ch;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.life-page.demo-body .life-three .three-note-action {
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+@media (max-width: 700px) {
+  .life-page.demo-body .life-three .three-list {
+    grid-template-columns: 1fr;
+    margin-right: 5px;
+  }
+
+  .life-page.demo-body .life-three .three-note-card {
+    min-height: 0;
+    padding: 25px 22px 23px;
+  }
+
+  .life-page.demo-body .life-three .three-list h3 {
+    max-width: 18ch;
+    margin: 30px 0 14px;
+    font-size: clamp(28px, 8vw, 38px);
+  }
+
+  .life-page.demo-body .life-three .three-list p {
+    max-width: 42ch;
+  }
+}
+
+.life-page.demo-body .full-reading-stack .desk-copy {
+  box-sizing: border-box;
+  padding-inline: clamp(14px, 3vw, 42px);
+}
+
+.life-page.demo-body .full-reading-stack .desk-copy h3 {
+  padding-inline: 8px;
+  text-wrap: balance;
+}
+
+.life-page.demo-body .full-reading-stack .reflection {
+  box-sizing: border-box;
+  width: min(100%, 680px);
+  max-width: none;
+  margin: 34px auto 0;
+  padding: 21px 26px 23px;
+  border: 1px solid color-mix(in srgb, var(--chapter-tint) 48%, var(--ink));
+  border-top: 3px solid var(--green);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--chapter-tint) 30%, var(--paper));
+  color: var(--body-ink);
+  text-align: left;
+}
+
+.life-page.demo-body .full-reading-stack .reflection-label {
+  display: block;
+  margin: 0 0 10px;
+  color: var(--green);
+  font: 800 10px/1.25 var(--mono);
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.life-page.demo-body .full-reading-stack .reflection-copy {
+  display: block;
+  max-width: 54ch;
+  margin: 0;
+  color: var(--body-ink);
+  font: 500 15px/1.6 var(--display);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.life-page.demo-body .full-reading-stack .desk-file-ink .reflection {
+  border-color: rgba(251, 243, 224, .25);
+  border-top-color: var(--marigold);
+  background: rgba(0, 0, 0, .18);
+  color: var(--paper);
+}
+
+.life-page.demo-body .full-reading-stack .desk-file-ink .reflection-label {
+  color: var(--marigold);
+}
+
+.life-page.demo-body .full-reading-stack .desk-file-ink .reflection-copy {
+  color: rgba(251, 243, 224, .86);
+}
+
+@media (max-width: 800px) {
+  .life-page.demo-body .edition-cover .hero-copy { grid-row: 1; }
+  .life-page.demo-body .edition-cover .hero-art { grid-row: 2; }
+}
+
+@media (max-width: 560px) {
+  .life-page.demo-body .full-reading-stack .desk-copy {
+    padding-inline: 8px;
+  }
+
+  .life-page.demo-body .full-reading-stack .desk-copy h3 {
+    padding-inline: 4px;
+  }
+
+  .life-page.demo-body .full-reading-stack .reflection {
+    margin-top: 28px;
+    padding: 17px 18px 19px;
+    border-radius: 10px;
+  }
+
+  .life-page.demo-body .full-reading-stack .reflection-label {
+    margin-bottom: 8px;
+    font-size: 9px;
+  }
+
+  .life-page.demo-body .full-reading-stack .reflection-copy {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+/* Keep the payment card and its privacy note together in the right column. */
+.life-page .payment-column {
+  grid-column: 2;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 14px;
+  align-self: center;
+  padding-top: 0;
+}
+
+.life-page .payment-column .payment-card {
+  margin-top: 0;
+}
+
+.life-page .payment-column > .fine {
+  max-width: 48ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .life-page .payment-column {
+    grid-column: 1;
+    gap: 10px;
+    align-self: start;
+    padding-top: 0;
+  }
+}

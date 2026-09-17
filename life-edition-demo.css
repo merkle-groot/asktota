@@ -423,6 +423,7 @@ body { background-color: var(--paper); color: var(--ink); font-family: var(--dis
 .desk-file-pink { background: var(--pink); }
 .desk-file-yellow { background: var(--marigold); }
 .desk-file-paper { background: var(--card); }
+.desk-file-ink .desk-copy h3 { color: var(--paper); }
 .desk-file-ink .desk-copy .mini-label, .desk-file-ink .desk-number, .desk-file-ink .desk-foot { color: var(--marigold); }
 .desk-file-ink .desk-visual-label { color: var(--ink); }
 .desk-foot, .desk-number { color: var(--green); }

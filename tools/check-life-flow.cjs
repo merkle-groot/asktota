@@ -155,10 +155,9 @@ fixture.career = fixture.facets[0];
       await checkLayout('reading-error');
       await page.locator('#loader-retry').click();
       await screen('reading');
-      assert.equal(await page.locator('.desk-file').count(), 10);
+      assert.equal(await page.locator('#reading-desks .desk-file').count(), 10);
       assert.equal(await page.locator('#reading-desk-index button').count(), 10);
-      assert.equal(await page.locator('#reading-top-three').isVisible(), true);
-      assert.equal(await page.locator('#reading-top-three .three-list li').count(), 3);
+      assert.equal(await page.locator('.full-close').isVisible(), true);
       assert.equal(calls.filter(p => p === '/web/orders').length, 1, 'Retries reuse the existing order');
       await page.evaluate(async () => {
         await Promise.all([...document.querySelectorAll('#reading-desks img')].map(img => { img.loading = 'eager'; return img.decode(); }));

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="life-edition.css">
   <link rel="stylesheet" href="flow-system.css">
+  <link rel="stylesheet" href="life-edition-story.css">
 </head>
 <body class="life-page">
   <a class="skip-link" href="#reading-flow">skip to reading</a>
@@ -81,7 +82,7 @@
       <p class="privacy">🔒 ur deets stay between u &amp; tota. we don't gossip, we swear</p>
     </section>
 
-    <!-- The only pre-payment reading: rough notes + Career Desk preview. -->
+        <!-- The only pre-payment reading: rough notes + the first three desk pages. -->
     <section data-screen="partial" class="newspaper-screen" hidden aria-labelledby="partial-title" aria-live="polite">
       <div class="newspaper-page newspaper-page-preview">
         <header class="newspaper-masthead" aria-label="The Daily Tota">
@@ -129,29 +130,46 @@
           </div>
         </article>
 
-        <article class="preview-card preview-feature newspaper-article" id="career-preview-card">
-          <div class="preview-copy">
-            <figure class="preview-visual desk-tone-green"><img src="assets/desks/app/career-desk.png" alt="The Career Desk illustration" loading="lazy"><span class="desk-number">01</span><figcaption id="career-preview-caption">the first desk is already filing.</figcaption></figure>
-            <div class="preview-kicker-row"><span class="kicker-pill kicker-green">CAREER DESK · PREVIEW</span><span id="career-preview-time" class="read-time">1 min read</span></div>
-            <div id="career-preview" class="career-preview-content"><p>the career desk is filing its first note…</p></div>
-          </div>
-        </article>
-
-        <div class="edition-map newspaper-index">
-          <section class="unlock-callout" aria-labelledby="unlock-callout-title">
-            <span class="unlock-callout-lock" aria-hidden="true">🔒</span>
-            <div>
-              <p class="kicker">THE REST OF THE ISSUE</p>
+        <div class="newspaper-section-rule partial-desk-rule"><span>FIRST THREE DESKS</span><span>THE PARTIAL ISSUE</span></div>
+        <div id="partial-desks" class="partial-desk-stack full-reading-stack" aria-live="polite">
+          <p class="partial-desks-loading">tota is opening the first three desks…</p>
+        </div>
+        <section class="partial-unlock unlock-ticket unlock-card-cta" aria-labelledby="unlock-callout-title">
+          <div class="unlock-banner">
+            <span class="unlock-banner-badge" aria-hidden="true">🔒</span>
+            <div class="unlock-banner-copy">
+              <span class="unlock-banner-kicker">THE REST OF THE ISSUE</span>
               <h3 id="unlock-callout-title">pay ₹99 to unlock the full reading.</h3>
               <p>open all ten desk stories, with the receipts behind them.</p>
             </div>
-          </section>
-          <div class="newspaper-section-rule"><span>CONTENTS</span><span>THE FULL ISSUE</span></div>
-          <p class="lead-para">Ten desks. One connected file.</p>
-          <p class="subtitle">The preview ends here. The paid edition unlocks the eight remaining desks.</p>
-          <div id="desk-preview-list" class="desk-preview-list" aria-label="The ten desks in the full Life Edition"></div>
-          <button id="unlock-button" class="pill-button" type="button">continue to unlock <span class="arrow">→</span></button>
-        </div>
+          </div>
+          <div class="unlock-ticket-main">
+            <div class="unlock-topline"><span>CONTENTS</span><span>THE FULL ISSUE</span></div>
+            <div class="unlock-status">
+              <span class="unlock-status-label">You’ve read 3 of 10 desks</span>
+              <span class="unlock-status-meter" aria-hidden="true"><i></i><i></i><i></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i></span>
+              <span class="unlock-status-count mono">7 sealed</span>
+            </div>
+            <ol class="unlock-desk-list" aria-label="Reading status of the ten desks">
+              <li class="is-read"><span class="unlock-card-art"><img src="assets/desks/app/highres/career-desk.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your work gets good when it gets personal.</span></span><span class="unlock-desk-text"><span>01</span><b>Career Desk</b></span><i>read</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/app/highres/love-scandal.png" alt="" loading="lazy"><span class="unlock-card-teaser">You need chemistry with a pulse.</span></span><span class="unlock-desk-text"><span>02</span><b>Love Scandal</b></span><i>sealed</i></li>
+              <li class="is-read"><span class="unlock-card-art"><img src="assets/desks/app/highres/money-beat.png" alt="" loading="lazy"><span class="unlock-card-teaser">Money follows the thing you repeat.</span></span><span class="unlock-desk-text"><span>03</span><b>Money Beat</b></span><i>read</i></li>
+              <li class="is-read"><span class="unlock-card-art"><img src="assets/desks/app/highres/health-watch.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your nervous system is part of the plan.</span></span><span class="unlock-desk-text"><span>04</span><b>Health Watch</b></span><i>read</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/app/highres/home-front.png" alt="" loading="lazy"><span class="unlock-card-teaser">You need a home that lets you expand.</span></span><span class="unlock-desk-text"><span>05</span><b>Home Front</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/app/highres/inner-wire.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your mind needs somewhere to play.</span></span><span class="unlock-desk-text"><span>06</span><b>Inner Wire</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/timing-file-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Momentum arrives in waves.</span></span><span class="unlock-desk-text"><span>07</span><b>The Timing File</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/power-placements-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your edge is the blend.</span></span><span class="unlock-desk-text"><span>08</span><b>Power Placements</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/pattern-breakers-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Stop auditioning for rooms you’ve outgrown.</span></span><span class="unlock-desk-text"><span>09</span><b>Pattern Breakers</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/tota-next-moves-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Make the next move legible.</span></span><span class="unlock-desk-text"><span>10</span><b>Tota’s Next Moves</b></span><i>sealed</i></li>
+            </ol>
+            <button id="unlock-button" class="pill-button unlock-ticket-button" type="button">
+              <span class="unlock-button-row">
+                <span class="unlock-button-label">Unlock all 7 desks for <b>₹99</b></span>
+                <span class="unlock-button-arrow" aria-hidden="true">→</span>
+              </span>
+            </button>
+          </div>
+        </section>
       </div>
       <p id="partial-error" class="form-error" role="status" aria-live="polite"></p>
     </section>
@@ -226,23 +244,27 @@
     </section>
 
     <!-- Full paid edition. It is populated only after /verify returns verified=true. -->
-    <section data-screen="reading" class="newspaper-screen" hidden aria-labelledby="reading-title">
-      <div class="newspaper-page newspaper-page-full">
-        <header class="newspaper-masthead" aria-label="The Daily Tota">
-          <div class="masthead-top"><span>PRIVATE EDITION</span><span>THE LIFE EDITION</span><span>VOL. 01</span></div>
-          <div class="masthead-banner"><span class="masthead-title">THE DAILY TOTA</span><span class="masthead-parrot" aria-hidden="true">🦜</span></div>
-          <div class="masthead-dateline"><span>PERSONAL FILE · <span id="reading-name">U</span></span><span>FRESH FROM THE NEWSROOM</span><span>FULL ISSUE</span></div>
+    <section data-screen="reading" class="newspaper-screen story-screen" hidden aria-labelledby="reading-title">
+      <div class="newspaper-page newspaper-page-full story-shell">
+        <header class="story-masthead" aria-label="The Life Edition">
+          <div class="story-masthead-line"><span>ASK TOTA / LIFE EDITION</span><span>PRIVATE FILE · <strong id="reading-name">U</strong></span><span>VOL. 01</span></div>
+          <div class="story-wordmark"><span>THE LIFE EDITION</span><span class="story-parrot" aria-hidden="true">🦜</span></div>
+          <div class="story-masthead-line"><span>10 DESKS</span><span>FRESH FROM THE NEWSROOM</span><span>YOUR STORY, IN FULL</span></div>
         </header>
 
-        <div class="reading-hero full-hero">
-          <div class="reading-hero-copy">
-            <p class="kicker-pill kicker-ink intro-kicker">PRIVATE FILE · MADE FOR <span id="reading-name-hero">U</span></p>
+        <section class="story-hero" aria-labelledby="reading-title">
+          <div class="story-hero-copy">
+            <p class="story-kicker">PRIVATE FILE · MADE FOR <span id="reading-name-hero">U</span></p>
             <h2 class="headline" id="reading-title">tota found a few things<br><mark>worth telling u.</mark></h2>
             <p id="reading-essence" class="subtitle"></p>
             <div class="reading-metrics" aria-label="Life Edition contents"><span>10 desks</span><span>real receipts</span><span>no vague vibes</span></div>
           </div>
-          <img class="screen-mascot reading-mascot" src="assets/tota/tota-exclusive-envelope.png" alt="Tota delivering a private reading">
-        </div>
+          <figure class="story-hero-art">
+            <span class="story-art-label">THREE NOTES / ONE READING</span>
+            <img src="assets/tota/tota-life-cover.png" alt="Tota holding the complete Life Edition" loading="eager">
+            <figcaption><span>THE FILE IS OPEN</span><b>01—10</b></figcaption>
+          </figure>
+        </section>
         <section class="reader-file" aria-labelledby="reader-file-title">
           <div class="reader-file-heading">
             <div>
@@ -263,8 +285,22 @@
             </div>
           </div>
         </section>
-        <div class="newspaper-section-rule"><span>THE LIFE EDITION</span><span>10 DESKS · 01 READER</span></div>
-        <div id="reading-desks" class="reading-desks"></div>
+        <section id="reading-top-three" class="life-three" hidden aria-labelledby="reading-top-three-title"></section>
+        <section class="story-index" aria-labelledby="story-index-title">
+          <div class="story-index-heading">
+            <div><p class="story-kicker">THE FULL ISSUE · 01 READER</p><h3 id="story-index-title">Ten desks.<br><em>One connected file.</em></h3></div>
+            <p>Start anywhere. The same thread will find you in the next room.</p>
+          </div>
+          <nav id="reading-desk-index" class="story-desk-index" aria-label="Jump to a desk"></nav>
+        </section>
+        <div id="reading-desks" class="reading-desks full-reading-stack" aria-live="polite"></div>
+        <section class="story-close" aria-labelledby="story-close-title">
+          <span class="story-close-star" aria-hidden="true">✦</span>
+          <p class="story-kicker">THE FILE IS YOURS</p>
+          <h3 id="story-close-title">Keep the page open.<br><em>Come back when the weather changes.</em></h3>
+          <p>Your chart is not a verdict. It is a language you can keep learning.</p>
+          <button type="button" class="outline-button" data-back="partial">back to the first look <span>↺</span></button>
+        </section>
         <div class="reading-actions">
           <button id="download-pdf-button" class="pill-button" type="button">download my full PDF <span class="arrow">↓</span></button>
           <p id="pdf-note" class="pdf-note" role="status" aria-live="polite"></p>
@@ -327,6 +363,7 @@
       if (override && (local || /^https:\/\//.test(override))) window.ASKTOTA_API_URL = override.replace(/\/$/, '');
     }());
   </script>
+  <script src="life-edition-isolation.js"></script>
   <script src="life-edition.js"></script>
 </body>
 </html>

@@ -22,16 +22,16 @@
   var PLANET_ABBR = { Sun: 'Su', Moon: 'Mo', Mars: 'Ma', Mercury: 'Me', Jupiter: 'Ju', Venus: 'Ve', Saturn: 'Sa', Rahu: 'Ra', Ketu: 'Ke' };
   var SOUTH_CELL = { 11: [0, 0], 0: [0, 1], 1: [0, 2], 2: [0, 3], 10: [1, 0], 3: [1, 3], 9: [2, 0], 4: [2, 3], 8: [3, 0], 7: [3, 1], 6: [3, 2], 5: [3, 3] };
   var DESKS = [
-    { key: 'career', name: 'Career Desk', tone: 'green', art: 'assets/desks/app/career-desk.png' },
-    { key: 'love', name: 'Love Scandal', tone: 'pink', art: 'assets/desks/app/love-scandal.png' },
-    { key: 'wealth', name: 'Money Beat', tone: 'marigold', art: 'assets/desks/app/money-beat.png' },
-    { key: 'health', name: 'Health Watch', tone: 'green', art: 'assets/desks/app/health-watch.png' },
-    { key: 'family', name: 'Home Front', tone: 'ink', art: 'assets/desks/app/home-front.png' },
-    { key: 'mind', name: 'Inner Wire', tone: 'green', art: 'assets/desks/app/inner-wire.png' },
-    { key: 'timing', name: 'The Timing File', tone: 'marigold', art: 'assets/desks/generated/timing-file.webp' },
-    { key: 'placements', name: 'Power Placements', tone: 'green', art: 'assets/desks/generated/power-placements.webp' },
-    { key: 'patterns', name: 'Pattern Breakers', tone: 'pink', art: 'assets/desks/generated/pattern-breakers.webp' },
-    { key: 'moves', name: "Tota's Next Moves", tone: 'ink', art: 'assets/desks/generated/tota-next-moves.webp' },
+    { key: 'career', name: 'Career Desk', tone: 'green', art: 'assets/desks/app/highres/career-desk.png' },
+    { key: 'love', name: 'Love Scandal', tone: 'pink', art: 'assets/desks/app/highres/love-scandal.png' },
+    { key: 'wealth', name: 'Money Beat', tone: 'marigold', art: 'assets/desks/app/highres/money-beat.png' },
+    { key: 'health', name: 'Health Watch', tone: 'paper', art: 'assets/desks/app/highres/health-watch.png' },
+    { key: 'family', name: 'Home Front', tone: 'ink', art: 'assets/desks/app/highres/home-front.png' },
+    { key: 'mind', name: 'Inner Wire', tone: 'green', art: 'assets/desks/app/highres/inner-wire.png' },
+    { key: 'timing', name: 'The Timing File', tone: 'marigold', art: 'assets/desks/generated/timing-file-planets.png' },
+    { key: 'placements', name: 'Power Placements', tone: 'green', art: 'assets/desks/generated/power-placements-planets.png' },
+    { key: 'patterns', name: 'Pattern Breakers', tone: 'pink', art: 'assets/desks/generated/pattern-breakers-planets.png' },
+    { key: 'moves', name: "Tota's Next Moves", tone: 'ink', art: 'assets/desks/generated/tota-next-moves-planets.png' },
   ];
 
   function readStored() {
@@ -459,33 +459,29 @@
     if (!paragraphs.length && observations.length) paragraphs = [observations.slice(0, 6).join(' ')];
     root.innerHTML = (summary ? '<p class="rough-summary">' + renderRich(summary) + '</p>' : '') + (paragraphs.length ? paragraphs.slice(0, 3).map(function (item) { return '<p>' + renderRich(item) + '</p>'; }).join('') : '<p>ur chart is ready. tota is keeping the first notes rough until the full issue opens.</p>');
   }
-  function renderPreviewFacet(root, facet) {
-    facet = facet || {};
-    var story = Array.isArray(facet.story) ? facet.story : facet.story ? [facet.story] : [];
-    var receipt = facet.why || facet.receipt || '';
-    var strengthValue = Number(facet.strength);
-    var strength = Number.isFinite(strengthValue) && strengthValue > 0 ? Math.max(0, Math.min(4, strengthValue)) : 2;
-    var words = [facet.takeaway || ''].concat(story).join(' ').split(/\s+/).filter(Boolean).length;
-    var caption = facet.caption || 'the first desk is already filing.';
-    var captionNode = document.getElementById('career-preview-caption');
-    var timeNode = document.getElementById('career-preview-time');
-    var split = splitHeadline(facet.headline || 'the work story is taking shape');
-    if (captionNode) captionNode.textContent = caption;
-    if (timeNode) timeNode.textContent = Math.max(1, Math.round(words / 180)) + ' min read';
-    root.innerHTML = '<h3 class="desk-headline">' + (split.lead ? escapeHtml(split.lead) + ' ' : '') + '<mark> ' + escapeHtml(split.highlight) + ' </mark></h3>' +
-      '<div class="byline"><span>🦜</span><span class="who">filed by tota</span><span class="meta">the life edition</span></div>' +
-      '<p class="preview-takeaway">' + renderRich(facet.takeaway || story[0] || '') + '</p>' +
-      '<div class="strength-dots" aria-label="strength ' + strength + ' of 4">' + [0, 1, 2, 3].map(function (i) { return '<i class="' + (i < strength ? 'is-on' : '') + '"></i>'; }).join('') + '</div>' +
-      story.slice(0, 2).map(function (para) { return '<p>' + renderRich(para) + '</p>'; }).join('') +
-      (receipt ? '<div class="receipt-box"><span>THE RECEIPT</span><p>' + renderRich(receipt) + '</p></div>' : '');
+  function renderPartialDesks(partial) {
+    var root = document.getElementById('partial-desks');
+    if (!root) return;
+    var facets = [
+      partial.career || partial.career_preview,
+      partial.wealth || partial.money || partial.wealth_preview || partial.money_preview,
+      partial.health || partial.health_preview,
+    ];
+    facets.forEach(function (facet, index) {
+      facet = facet || {};
+      var meta = metaFor(facet.key);
+      var story = storyFor(facet);
+      var receipt = receiptFor(facet) || (Array.isArray(facet.evidence) ? facet.evidence.join(' · ') : '');
+      if (!facet.key || !story.length || !receipt) throw new Error('The preview returned an incomplete ' + meta.name + '.');
+      facets[index] = facet;
+    });
+    root.innerHTML = facets.map(function (facet, index) { return renderDesk(facet, index, 'partial'); }).join('');
   }
   function renderPartial(partial) {
     text('partial-name', state.name ? state.name + '' : '');
     renderRoughNotes(partial);
     renderReaderFile(partial, 'preview-reading');
-    renderPreviewFacet(document.getElementById('career-preview'), partial.career || partial.career_preview || {});
-    var list = document.getElementById('desk-preview-list');
-    list.innerHTML = DESKS.map(function (desk, index) { return '<span class="desk-preview desk-tone-' + desk.tone + '"><b>' + String(index + 1).padStart(2, '0') + '</b>' + escapeHtml(desk.name) + '</span>'; }).join('');
+    renderPartialDesks(partial);
   }
 
   /* ── Payment gate: screen 1 (phone) → screen 2 (OTP) → Razorpay ─────────── */
@@ -975,6 +971,11 @@
     return escapeHtml(value).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/==([^=]+)==/g, '<mark>$1</mark>');
   }
   function metaFor(key) { return DESKS.filter(function (desk) { return desk.key === key; })[0] || { key: key, name: key || 'The Desk', tone: 'green', art: 'assets/tota/tota-news-vendor.png' }; }
+  function deskOrderIndex(key) {
+    var index = DESKS.map(function (desk) { return desk.key; }).indexOf(key);
+    return index < 0 ? DESKS.length : index;
+  }
+  function safeDeskKey(key) { return String(key || 'desk').toLowerCase().replace(/[^a-z0-9_-]/g, '-'); }
   function splitHeadline(value) {
     var words = String(value || '').replace(/[.]+$/, '').trim().split(/\s+/).filter(Boolean);
     if (words.length <= 2) return { lead: '', highlight: words.join(' ') || 'the file is open' };
@@ -1033,35 +1034,111 @@
     if (Array.isArray(facet.receipts)) return facet.receipts.join(' · ');
     return '';
   }
+  function simpleThreadLabel(key, fallback) {
+    var labels = {
+      career: 'Work',
+      love: 'Love',
+      wealth: 'Money',
+      health: 'Health',
+      family: 'Home',
+      mind: 'Mind',
+      timing: 'Timing',
+      placements: 'Strengths',
+      patterns: 'Patterns',
+      moves: 'Next moves',
+    };
+    return labels[key] || fallback || 'Your life';
+  }
+  function renderTopThree(reading, facets) {
+    var root = document.getElementById('reading-top-three');
+    if (!root) return;
+    var notes = Array.isArray(reading.top_three) && reading.top_three.length
+      ? reading.top_three.slice(0, 3)
+      : facets.slice(0, 3).map(function (facet) {
+        return {
+          key: facet.key,
+          title: facet.title,
+          headline: facet.headline || facet.title,
+          body: facet.takeaway || storyFor(facet)[0] || receiptFor(facet),
+        };
+      });
+    if (!notes.length) { root.hidden = true; root.innerHTML = ''; return; }
+    var readerName = String((reading.birth && reading.birth.name) || state.name || 'u');
+    var list = notes.map(function (note, index) {
+      var meta = metaFor(note.key);
+      var title = simpleThreadLabel(note.key, note.title || meta.name);
+      var headline = note.headline || title;
+      var body = note.body || note.takeaway || 'A thread worth keeping in view.';
+      var target = document.getElementById('desk-' + safeDeskKey(note.key));
+      var href = target ? '#desk-' + safeDeskKey(note.key) : '#reading-desks';
+      return '<li class="three-note three-note-' + escapeHtml(meta.tone) + '">' +
+        '<a class="three-note-card" href="' + escapeHtml(href) + '">' +
+          '<div class="three-note-head"><span class="three-folio" aria-hidden="true">0' + (index + 1) + '</span>' +
+            '<span class="three-note-topic">' + escapeHtml(String(title).toUpperCase()) + '</span><span class="three-note-count">0' + (index + 1) + ' / 03</span></div>' +
+          '<h3>' + renderRich(headline) + '</h3>' +
+          '<p>' + renderRich(body) + '</p>' +
+          '<span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span>' +
+        '</a>' +
+        '</li>';
+    }).join('');
+    root.innerHTML =
+      '<div class="three-issue"><span><strong>OPENING NOTES</strong> · 03 SIGNALS</span><span>THE LIFE EDITION · ' + escapeHtml(readerName.toUpperCase()) + '</span></div>' +
+      '<div class="three-intro"><div class="three-intro-copy"><p class="story-kicker">FOR ' + escapeHtml(readerName.toUpperCase()) + '</p><h2 id="reading-top-three-title">Three things<br><em>to keep in mind.</em></h2><p>Before the full reading, these are the themes that keep showing up in your life right now.</p><span class="three-intro-note">A starting point, not a verdict <b aria-hidden="true">↘</b></span></div><div class="three-portrait"><span class="three-portrait-label">A SHORT NOTE FROM TOTA</span><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three notes from the opening reading" loading="lazy"><span class="three-portrait-caption"><b>01—03</b><span>the short list</span></span></div></div>' +
+      '<div class="three-list-head"><span>THE SHORT LIST</span><span>01—03 · READ ON</span></div>' +
+      '<ol class="three-list">' + list + '</ol>';
+    root.hidden = false;
+  }
+  function renderDeskIndex(facets) {
+    var root = document.getElementById('reading-desk-index');
+    if (!root) return;
+    root.innerHTML = facets.map(function (facet) {
+      var meta = metaFor(facet.key);
+      var number = String(deskOrderIndex(meta.key) + 1).padStart(2, '0');
+      return '<button type="button" data-desk-target="desk-' + escapeHtml(safeDeskKey(meta.key)) + '">' + number + ' ' + escapeHtml(meta.name) + '</button>';
+    }).join('');
+    root.querySelectorAll('[data-desk-target]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var target = document.getElementById(button.dataset.deskTarget);
+        if (target) target.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'start' });
+      });
+    });
+  }
   function renderReading(reading) {
     if (partialReading && partialReading.rough_notes && !reading.rough_notes) reading.rough_notes = partialReading.rough_notes;
     window.clearInterval(loaderTimer);
-    text('reading-name', state.name || 'u');
-    text('reading-name-hero', state.name || 'u');
+    var readerName = (reading.birth && reading.birth.name) || state.name || 'u';
+    text('reading-name', readerName);
+    text('reading-name-hero', readerName);
     text('reading-essence', reading.essence || reading.synthesis || '');
     renderReaderFile(reading, 'reading');
     var facets = Array.isArray(reading.facets) ? reading.facets : Array.isArray(reading.desks) ? reading.desks : [];
-    facets.sort(function (a, b) { return DESKS.map(function (desk) { return desk.key; }).indexOf(a.key) - DESKS.map(function (desk) { return desk.key; }).indexOf(b.key); });
+    facets.sort(function (a, b) { return deskOrderIndex(a.key) - deskOrderIndex(b.key); });
+    renderTopThree(reading, facets);
+    renderDeskIndex(facets);
     document.getElementById('reading-desks').innerHTML = facets.map(renderDesk).join('');
   }
-  function renderDesk(facet) {
+  function renderDesk(facet, index, mode) {
     var meta = metaFor(facet.key); var tone = meta.tone; var story = storyFor(facet); var split = splitHeadline(facet.headline || facet.title || meta.name); var receipt = receiptFor(facet); var evidence = Array.isArray(facet.evidence) ? facet.evidence : [];
     var strength = Math.max(0, Math.min(4, Number(facet.strength) || 0));
-    var deskNumber = String(DESKS.map(function (desk) { return desk.key; }).indexOf(meta.key) + 1).padStart(2, '0');
+    var deskIndex = mode === 'partial' ? index : deskOrderIndex(meta.key);
+    var deskNumber = String(deskIndex + 1).padStart(2, '0');
+    var deskId = safeDeskKey(meta.key);
     var art = meta.art || 'assets/tota/tota-news-vendor.png';
-    var html = '<article class="desk-story desk-story-' + escapeHtml(meta.key) + '"><div class="desk-story-card"><div class="desk-story-copy">';
-    html += '<figure class="desk-visual desk-tone-' + tone + '"><img src="' + escapeHtml(art) + '" alt="' + escapeHtml(meta.name + ' illustration') + '" loading="lazy"><span class="desk-number">' + deskNumber + '</span>' + (facet.caption ? '<figcaption>' + escapeHtml(facet.caption) + '</figcaption>' : '') + '</figure>';
-    html += '<div class="desk-kicker-row"><span class="kicker-pill desk-name kicker-' + tone + '">' + escapeHtml(meta.name) + '</span><span class="read-time">' + Math.max(1, Math.round(story.join(' ').split(/\s+/).filter(Boolean).length / 180)) + ' min read</span></div>';
-    html += '<h3 class="desk-headline">' + (split.lead ? escapeHtml(split.lead) + ' ' : '') + '<mark' + (tone === 'pink' ? ' class="mark-pink"' : '') + '> ' + escapeHtml(split.highlight) + ' </mark></h3>';
-    html += '<div class="byline"><span>🦜</span><span class="who">filed by tota</span><span class="meta">the life edition</span></div>';
+    var minutes = Math.max(1, Math.round(story.join(' ').split(/\s+/).filter(Boolean).length / 180));
+    var articleId = (mode === 'partial' ? 'partial-' : 'desk-') + deskId;
+    var html = '<article id="' + escapeHtml(articleId) + '" class="desk-file desk-file-' + escapeHtml(tone) + '" data-desk-key="' + escapeHtml(deskId) + '" data-reveal data-progress-step="' + deskIndex + '">';
+    html += '<div class="desk-visual"><img src="' + escapeHtml(art) + '" alt="' + escapeHtml(meta.name + ' illustration') + '" loading="lazy"><span class="desk-visual-label">' + deskNumber + ' / ' + escapeHtml(meta.name) + '</span></div>';
+    html += '<div class="desk-copy"><span class="desk-number">' + deskNumber + '</span><p class="mini-label">' + escapeHtml(meta.name) + '</p>';
+    html += '<h3 class="desk-headline">' + (split.lead ? escapeHtml(split.lead) + ' ' : '') + '<mark>' + escapeHtml(split.highlight) + '</mark></h3>';
+    html += '<p class="narrator-byline">A personal letter from Tota · ' + minutes + ' min</p>';
     if (facet.takeaway) html += '<p class="desk-takeaway">' + renderRich(facet.takeaway) + '</p>';
     html += '<div class="strength-dots" aria-label="strength ' + strength + ' of 4">' + [0, 1, 2, 3].map(function (i) { return '<i class="' + (i < strength ? 'is-on' : '') + '"></i>'; }).join('') + '</div>';
     story.forEach(function (para, index) {
-      html += '<p class="para">' + renderRich(para) + '</p>';
+      html += '<p class="reading-copy">' + renderRich(para) + '</p>';
       if (facet.quote && facet.quote.text && index === 0) html += '<blockquote class="quote-block"><p class="q">&quot;' + escapeHtml(facet.quote.text) + '&quot;</p><p class="src">— ' + escapeHtml(facet.quote.source || 'the planets') + ', allegedly</p></blockquote>';
     });
-    if (receipt) html += '<div class="receipt-box full-receipt"><p class="receipt-label">THE RECEIPT</p><p>' + renderRich(receipt) + '</p></div>';
     if (evidence.length) html += '<div class="evidence-block"><div class="evidence-rule"></div><p class="evidence-title">what this is based on</p><div class="chip-row">' + evidence.map(function (item) { return '<span class="chip">' + escapeHtml(item) + '</span>'; }).join('') + '</div></div>';
+    if (receipt) html += '<div class="desk-foot reflection"><span class="reflection-label">WHY TOTA LANDED HERE</span><span class="reflection-copy">' + renderRich(receipt) + '</span></div>';
     return html + '</div></div></article>';
   }
 

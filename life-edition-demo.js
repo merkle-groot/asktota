@@ -70,46 +70,28 @@
       p.textContent = paragraph;
       copy.insertBefore(p, copy.querySelector('.desk-foot'));
     });
-    var note = document.createElement('aside');
-    note.className = 'tota-margin';
-    var avatar = document.createElement('img');
-    avatar.src = 'assets/tota/tota-editor-note.png';
-    avatar.alt = 'Tota';
-    avatar.loading = 'lazy';
-    var quote = document.createElement('blockquote');
-    quote.textContent = letter[1];
-    var sign = document.createElement('span');
-    sign.className = 'tota-sign';
-    sign.textContent = 'A new note from the editor';
-    note.append(avatar, quote, sign);
-    copy.append(note);
     var foot = copy.querySelector('.desk-foot');
     foot.className = 'desk-foot reflection';
-    foot.textContent = 'Take this with you / ' + letter[5];
+    foot.innerHTML = '<span class="reflection-label mono">WHY TOTA LANDED HERE</span><span class="reflection-copy"></span>';
+    foot.querySelector('.reflection-copy').textContent = letter[5];
   });
 
   document.querySelectorAll('[data-reading-view]').forEach(function (view) {
     var section = document.createElement('section');
+    var deskPrefix = view.dataset.readingView === 'partial' ? 'partial-' : 'desk-';
     section.className = 'life-three';
-    section.setAttribute('aria-label', 'Top 3 things in your life');
-    section.innerHTML = '<div class="three-issue"><span class="mono">01 / OPENING NOTES</span><span>THE LIFE EDITION · RAVI</span></div><div class="three-intro"><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three blank notes for your opening reading" loading="lazy"><div class="three-intro-copy"><p class="section-kicker mono">RAVI, BEFORE WE BEGIN</p><h2>Top 3 things<br>in your life.</h2><p>Before we open the desks, Tota is keeping three threads in view: the choices, people, and possibility already shaping your next page.</p><span class="tota-sign">Notes from the editor <i aria-hidden="true">↗</i></span></div></div><div class="three-list-head"><span class="mono">THE THREADS I’D KEEP BESIDE US</span><span class="mono">01—03 · CONTINUE BELOW</span></div><ol class="three-list"><li><span>01 / YOUR VOICE</span><h3>You want your work to feel like yours.</h3><p>I’d start with the choices you want to own, especially where being helpful has taken the place of having a say.</p></li><li><span>02 / YOUR PEOPLE</span><h3>You deserve care you don’t have to earn.</h3><p>Notice who makes room for you when you arrive with nothing to fix. Let those relationships take up more of the page.</p></li><li><span>03 / YOUR NEXT CHAPTER</span><h3>Make a little room before you begin.</h3><p>You’ve been quick to carry the extra thing. I’d like the next six months to include a few commitments you choose for yourself.</p></li></ol>';
-    var portrait = section.querySelector('.three-intro img');
-    var portraitFrame = document.createElement('div');
-    portraitFrame.className = 'three-portrait';
-    portrait.before(portraitFrame);
-    portraitFrame.append(portrait);
-    portraitFrame.insertAdjacentHTML('afterbegin', '<span class="three-portrait-label mono">THREE NOTES / ONE READING</span>');
-    portraitFrame.insertAdjacentHTML('beforeend', '<span class="three-portrait-caption"><b>01—03</b><span>held in view</span></span>');
-    section.querySelector('.three-intro h2').innerHTML = 'Top 3 things<br><em>in your life.</em>';
-    section.querySelectorAll('.three-list li').forEach(function (item, index) {
-      var number = document.createElement('div');
-      number.className = 'three-folio';
-      number.setAttribute('aria-hidden', 'true');
-      number.textContent = '0' + (index + 1);
-      item.prepend(number);
-      item.style.setProperty('--note-order', index);
-    });
-    view.querySelector('.reading-intro, .full-intro').after(section);
+    section.setAttribute('aria-label', 'Opening notes');
+    section.innerHTML = '<div class="three-issue"><span><strong>OPENING NOTES</strong> · 03 SIGNALS</span><span>THE LIFE EDITION · RAVI</span></div>' +
+      '<div class="three-intro"><div class="three-intro-copy"><p class="section-kicker mono">FOR RAVI</p><h2>Three things<br><em>to keep in mind.</em></h2><p>Before the full reading, these are the themes that keep showing up in your life right now.</p><span class="three-intro-note">A starting point, not a verdict <b aria-hidden="true">↘</b></span></div><div class="three-portrait"><span class="three-portrait-label mono">A SHORT NOTE FROM TOTA</span><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three notes from the opening reading" loading="lazy"><span class="three-portrait-caption"><b>01—03</b><span>the short list</span></span></div></div>' +
+      '<div class="three-list-head"><span>THE SHORT LIST</span><span>01—03 · READ ON</span></div>' +
+      '<ol class="three-list"><li class="three-note three-note-green"><a class="three-note-card" href="#' + deskPrefix + 'career"><div class="three-note-head"><span class="three-folio" aria-hidden="true">01</span><span class="three-note-topic">WORK</span><span class="three-note-count">01 / 03</span></div><h3>Your work is changing shape.</h3><p>You are ready for more say in what you make, but the next step needs patience as well as nerve.</p><span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span></a></li><li class="three-note three-note-pink"><a class="three-note-card" href="#' + deskPrefix + 'love"><div class="three-note-head"><span class="three-folio" aria-hidden="true">02</span><span class="three-note-topic">LOVE</span><span class="three-note-count">02 / 03</span></div><h3>You want something that feels real.</h3><p>Small talk is not enough right now. You are looking for care that shows up without being chased.</p><span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span></a></li><li class="three-note three-note-marigold"><a class="three-note-card" href="#' + deskPrefix + 'money"><div class="three-note-head"><span class="three-folio" aria-hidden="true">03</span><span class="three-note-topic">MONEY</span><span class="three-note-count">03 / 03</span></div><h3>Your earning power is real.</h3><p>The leak is not a lack of talent. It is giving too much away before anyone has to value it.</p><span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span></a></li></ol>';
+    var intro = view.querySelector('.reading-intro, .full-intro');
+    if (intro) intro.after(section);
+    else {
+      var deskIndex = view.querySelector('.desk-index');
+      if (deskIndex) deskIndex.before(section);
+      else view.prepend(section);
+    }
   });
 
   var drawer = document.querySelector('.report-drawer');

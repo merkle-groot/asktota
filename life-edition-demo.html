@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="life-edition-demo.css">
+  <link rel="stylesheet" href="life-edition-demo.css?v=3">
   <link rel="stylesheet" href="flow-system.css">
+  <link rel="stylesheet" href="life-edition-story.css?v=4">
 </head>
 <body class="demo-body" data-seed="DLDENSKLZ">
   <a class="demo-skip-link" href="#top">Skip to reading</a>
@@ -54,89 +55,66 @@
     <section id="partial-reading" class="reading-view is-visible" data-reading-view="partial" aria-labelledby="partial-heading">
       <div class="reading-intro">
         <div>
-          <p class="section-kicker mono">PARTIAL READING · FIRST LOOK</p>
-          <h2 id="partial-heading">The first few<br><em>signals.</em></h2>
+          <p class="section-kicker mono">PARTIAL READING · FIRST THREE DESKS</p>
+          <h2 id="partial-heading">Start with<br><em>three desks.</em></h2>
         </div>
-        <p class="intro-aside">“Before we open every chapter, I want you to see what keeps connecting them. Start here, Ravi.”<br><span class="tota-sign">Yours, Tota</span></p>
+        <p class="intro-aside">“Before we open every chapter, I want you to see the desks that set the rest of the file in motion. Start here, Ravi.”<br><span class="tota-sign">Yours, Tota</span></p>
       </div>
 
-      <div class="reading-layout">
-        <aside class="progress-rail" aria-label="Partial reading progress">
-          <div class="rail-caption mono">OPENING FILE</div>
-          <div class="rail-track"><span class="rail-fill"></span></div>
-          <ol class="rail-steps">
-            <li class="is-current"><button type="button" data-scroll-target="partial-signal">01 <span>the signal</span></button></li>
-            <li><button type="button" data-scroll-target="partial-pattern">02 <span>the pattern</span></button></li>
-            <li><button type="button" data-scroll-target="partial-next">03 <span>what’s next</span></button></li>
-          </ol>
-          <p class="rail-foot mono">scroll to reveal</p>
-        </aside>
+      <div class="partial-desk-stack full-reading-stack">
+        <article id="partial-career" class="desk-file desk-file-career desk-file-lime" data-reveal data-progress-step="0">
+          <div class="desk-visual"><img src="assets/desks/app/highres/career-desk.png" alt="Career Desk illustration" loading="lazy"><span class="desk-visual-label mono">01 / CAREER DESK</span></div>
+          <div class="desk-copy"><span class="desk-number">01</span><h3>Your work gets good when it gets personal.</h3><p class="narrator-byline">A first look at the Career Desk · 1 min</p><div class="partial-story-copy"><p class="reading-copy">You are not built for work that asks you to leave your taste at the door. The strongest lane is the one where judgment, craft, and people all meet.</p><p class="reading-copy">The work gets stronger when your point of view is visible in the room. Let the part of the job that feels most like yours become the part people remember.</p></div><div class="desk-foot reflection"><span class="reflection-label mono">WHY TOTA LANDED HERE</span><span class="reflection-copy">Judgment, craft, and people all meet where you work.</span></div></div>
+        </article>
+        <article id="partial-money" class="desk-file desk-file-money desk-file-yellow" data-reveal data-progress-step="1">
+          <div class="desk-visual"><img src="assets/desks/app/highres/money-beat.png" alt="Money Beat illustration" loading="lazy"><span class="desk-visual-label mono">02 / MONEY BEAT</span></div>
+          <div class="desk-copy"><span class="desk-number">02</span><h3>Money follows the thing you repeat.</h3><p class="narrator-byline">A first look at the Money Beat · 1 min</p><div class="partial-story-copy"><p class="reading-copy">Your chart rewards a body of work, not a lucky one-off. The more clearly you name the value you create, the less energy you spend proving it.</p><p class="reading-copy">Build the thing that can keep paying you back: a skill, a system, or a body of work people can recognise without a sales pitch.</p></div><div class="desk-foot reflection"><span class="reflection-label mono">WHY TOTA LANDED HERE</span><span class="reflection-copy">Your leverage grows when the value becomes visible and repeatable.</span></div></div>
+        </article>
+        <article id="partial-health" class="desk-file desk-file-health desk-file-paper" data-reveal data-progress-step="2">
+          <div class="desk-visual"><img src="assets/desks/app/highres/health-watch.png" alt="Health Watch illustration" loading="lazy"><span class="desk-visual-label mono">03 / HEALTH WATCH</span></div>
+          <div class="desk-copy"><span class="desk-number">03</span><h3>Your nervous system is part of the plan.</h3><p class="narrator-byline">A first look at the Health Watch · 1 min</p><div class="partial-story-copy"><p class="reading-copy">Rest is not a reward you earn after the real work. It is the operating system that lets your sharpness stay sharp.</p><p class="reading-copy">Small routines do more for you than heroic resets. Give your body a pace it can trust, and the rest of the story has somewhere to land.</p></div><div class="desk-foot reflection"><span class="reflection-label mono">WHY TOTA LANDED HERE</span><span class="reflection-copy">The pace you keep decides how long your sharpness can stay sharp.</span></div></div>
+        </article>
 
-        <div class="reading-stack">
-          <article id="partial-signal" class="reveal-block reveal-block-lime" data-reveal data-progress-step="0">
-            <div class="file-tab mono">FILE 01 / SIGNAL</div>
-            <div class="signal-grid">
-              <div class="signal-visual">
-                <span class="signal-number">01</span>
-                <div class="signal-pulse" aria-hidden="true"><span></span><span></span><span></span></div>
-                <span class="signal-word mono">VISIBLE<br>FROM<br>THE START</span>
-              </div>
-              <div class="signal-copy">
-                <p class="mini-label mono">THE TOP LINE</p>
-                <h3>You don’t enter a room quietly.</h3>
-                <p class="reading-copy">There is a fast, instinctive part of you that knows where the energy is. People notice your point of view before they know your story — and you’re often the one who gives a drifting conversation its direction.</p>
-                <div class="receipt"><span class="receipt-mark">✦</span><p><b>chart receipt</b><br>strong fire at the front of the file · high signal, low tolerance for pretending</p></div>
-              </div>
+        <section class="partial-unlock unlock-ticket unlock-card-cta" aria-labelledby="unlock-title">
+          <div class="unlock-banner">
+            <span class="unlock-banner-badge" aria-hidden="true">🔒</span>
+            <div class="unlock-banner-copy">
+              <span class="unlock-banner-kicker">THE REST OF THE ISSUE</span>
+              <h3 id="unlock-title">pay ₹99 to unlock the full reading.</h3>
+              <p>open all ten desk stories, with the receipts behind them.</p>
             </div>
-          </article>
-
-          <article id="partial-pattern" class="reveal-block reveal-block-paper" data-reveal data-progress-step="1">
-            <div class="file-tab file-tab-dark mono">FILE 02 / PATTERN</div>
-            <div class="pattern-grid">
-              <div class="pattern-copy">
-                <p class="mini-label mono">THE REPEATING THING</p>
-                <h3>When life gets loud, you get useful.</h3>
-                <p class="reading-copy">You are good at finding the practical move inside an emotional mess. The catch: you can become so capable that everyone forgets to ask what you actually want.</p>
-                <div class="pattern-lines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-              </div>
-              <div class="pattern-note">
-                <span class="note-pin">PINNED NOTE</span>
-                <p>your next chapter gets lighter when “I can handle it” stops being the same sentence as “I should handle it.”</p>
-                <span class="note-sign mono">— TOTA / OBSERVED</span>
-              </div>
+          </div>
+          <div class="unlock-ticket-main">
+            <div class="unlock-topline"><span>CONTENTS</span><span>THE FULL ISSUE</span></div>
+            <div class="unlock-status">
+              <span class="unlock-status-label">You’ve read 3 of 10 desks</span>
+              <span class="unlock-status-meter" aria-hidden="true"><i></i><i></i><i></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i><i class="is-locked"></i></span>
+              <span class="unlock-status-count mono">7 sealed</span>
             </div>
-          </article>
-
-          <article id="partial-next" class="reveal-block reveal-block-ink" data-reveal data-progress-step="2">
-            <div class="file-tab file-tab-acid mono">FILE 03 / NEXT SIX MONTHS</div>
-            <div class="next-grid">
-              <div class="next-heading"><p class="mini-label mono">POWER MOVES</p><h3>Three doors are already warm.</h3></div>
-              <ol class="move-list">
-                <li><span>01</span><p><b>Make the visible move.</b><br>Let the work be seen before it is perfect.</p></li>
-                <li><span>02</span><p><b>Change the room.</b><br>A new circle gives your old ambition oxygen.</p></li>
-                <li><span>03</span><p><b>Keep one promise to yourself.</b><br>Consistency becomes your quiet flex.</p></li>
-              </ol>
-            </div>
-          </article>
-
-          <section class="partial-unlock" aria-labelledby="unlock-title">
-            <div class="unlock-asterisk" aria-hidden="true">✳</div>
-            <div><p class="section-kicker mono">THE PREVIEW ENDS HERE</p><h3 id="unlock-title">There are ten full files<br>behind this envelope.</h3><p>Career, love, money, family, mind, timing — the full edition connects the dots between them.</p></div>
-            <button class="acid-button" type="button" data-switch-mode="full">open the full edition <span>↗</span></button>
-          </section>
-        </div>
+            <ol class="unlock-desk-list" aria-label="Reading status of the ten desks">
+              <li class="is-read"><span class="unlock-card-art"><img src="assets/desks/app/highres/career-desk.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your work gets good when it gets personal.</span></span><span class="unlock-desk-text"><span>01</span><b>Career Desk</b></span><i>read</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/app/highres/love-scandal.png" alt="" loading="lazy"><span class="unlock-card-teaser">You need chemistry with a pulse.</span></span><span class="unlock-desk-text"><span>02</span><b>Love Scandal</b></span><i>sealed</i></li>
+              <li class="is-read"><span class="unlock-card-art"><img src="assets/desks/app/highres/money-beat.png" alt="" loading="lazy"><span class="unlock-card-teaser">Money follows the thing you repeat.</span></span><span class="unlock-desk-text"><span>03</span><b>Money Beat</b></span><i>read</i></li>
+              <li class="is-read"><span class="unlock-card-art"><img src="assets/desks/app/highres/health-watch.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your nervous system is part of the plan.</span></span><span class="unlock-desk-text"><span>04</span><b>Health Watch</b></span><i>read</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/app/highres/home-front.png" alt="" loading="lazy"><span class="unlock-card-teaser">You need a home that lets you expand.</span></span><span class="unlock-desk-text"><span>05</span><b>Home Front</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/app/highres/inner-wire.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your mind needs somewhere to play.</span></span><span class="unlock-desk-text"><span>06</span><b>Inner Wire</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/timing-file-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Momentum arrives in waves.</span></span><span class="unlock-desk-text"><span>07</span><b>The Timing File</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/power-placements-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Your edge is the blend.</span></span><span class="unlock-desk-text"><span>08</span><b>Power Placements</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/pattern-breakers-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Stop auditioning for rooms you’ve outgrown.</span></span><span class="unlock-desk-text"><span>09</span><b>Pattern Breakers</b></span><i>sealed</i></li>
+              <li class="is-locked"><span class="unlock-card-art"><img src="assets/desks/generated/tota-next-moves-planets.png" alt="" loading="lazy"><span class="unlock-card-teaser">Make the next move legible.</span></span><span class="unlock-desk-text"><span>10</span><b>Tota’s Next Moves</b></span><i>sealed</i></li>
+            </ol>
+            <button class="acid-button unlock-ticket-button" type="button" data-switch-mode="full">
+              <span class="unlock-button-row">
+                <span class="unlock-button-label">Unlock all 7 desks for <b>₹99</b></span>
+                <span class="unlock-button-arrow" aria-hidden="true">→</span>
+              </span>
+            </button>
+          </div>
+        </section>
       </div>
     </section>
 
-    <section id="full-reading" class="reading-view" data-reading-view="full" hidden aria-labelledby="full-heading">
-      <div class="full-intro">
-        <div>
-          <p class="section-kicker mono">FULL EDITION · PRIVATE FILE</p>
-          <h2 id="full-heading">The whole<br><em>constellation.</em></h2>
-        </div>
-        <div class="full-intro-right"><span class="edition-count">10<span>/10</span></span><p>desks opened<br>one connected reading</p></div>
-      </div>
-
+    <section id="full-reading" class="reading-view" data-reading-view="full" hidden aria-label="Full Life Edition">
       <nav class="desk-index" aria-label="Life Edition desks">
         <span class="index-title mono">JUMP TO A DESK</span>
         <div class="desk-index-list">
@@ -154,16 +132,16 @@
       </nav>
 
       <div class="full-reading-stack">
-        <article id="desk-career" class="desk-file desk-file-lime" data-reveal data-progress-step="0"><div class="desk-visual"><img src="assets/desks/app/highres/career-desk.png" alt="Career Desk illustration"><span class="desk-visual-label mono">01 / CAREER DESK</span></div><div class="desk-copy"><span class="desk-number">01</span><p class="mini-label mono">THE OPENING MOVE</p><h3>Your work gets good when it gets personal.</h3><p class="reading-copy">You are not built for work that asks you to leave your taste at the door. The strongest lane is the one where judgment, craft, and people all meet.</p><div class="desk-foot mono">RECEIPT / AUTONOMY + CRAFT</div></div></article>
-        <article id="desk-love" class="desk-file desk-file-pink" data-reveal data-progress-step="1"><div class="desk-visual"><img src="assets/desks/app/highres/love-scandal.png" alt="Love Scandal illustration"><span class="desk-visual-label mono">02 / LOVE SCANDAL</span></div><div class="desk-copy"><span class="desk-number">02</span><p class="mini-label mono">THE HEART FILE</p><h3>You need chemistry with a pulse.</h3><p class="reading-copy">Polite is not the same as alive. You do best with someone who can meet your directness, keep their own centre, and still make the day feel a little cinematic.</p><div class="desk-foot mono">RECEIPT / CURIOSITY + HONESTY</div></div></article>
-        <article id="desk-money" class="desk-file desk-file-yellow" data-reveal data-progress-step="2"><div class="desk-visual"><img src="assets/desks/app/highres/money-beat.png" alt="Money Beat illustration"><span class="desk-visual-label mono">03 / MONEY BEAT</span></div><div class="desk-copy"><span class="desk-number">03</span><p class="mini-label mono">THE VALUE SIGNAL</p><h3>Money follows the thing you repeat.</h3><p class="reading-copy">Your chart rewards a body of work, not a lucky one-off. The more clearly you name the value you create, the less energy you spend proving it.</p><div class="desk-foot mono">RECEIPT / LEVERAGE + PATIENCE</div></div></article>
-        <article id="desk-health" class="desk-file desk-file-paper" data-reveal data-progress-step="3"><div class="desk-visual"><img src="assets/desks/app/highres/health-watch.png" alt="Health Watch illustration"><span class="desk-visual-label mono">04 / HEALTH WATCH</span></div><div class="desk-copy"><span class="desk-number">04</span><p class="mini-label mono">THE BODY NOTE</p><h3>Your nervous system is part of the plan.</h3><p class="reading-copy">Rest is not a reward you earn after the real work. It is the operating system that lets your sharpness stay sharp.</p><div class="desk-foot mono">RECEIPT / RHYTHM + BOUNDARIES</div></div></article>
-        <article id="desk-home" class="desk-file desk-file-pink" data-reveal data-progress-step="4"><div class="desk-visual"><img src="assets/desks/app/highres/home-front.png" alt="Home Front illustration"><span class="desk-visual-label mono">05 / HOME FRONT</span></div><div class="desk-copy"><span class="desk-number">05</span><p class="mini-label mono">THE INNER ADDRESS</p><h3>You need a home that lets you expand.</h3><p class="reading-copy">Your space is not background. It changes the quality of your thinking, your hosting, and the risks you feel ready to take.</p><div class="desk-foot mono">RECEIPT / BEAUTY + ROOM</div></div></article>
-        <article id="desk-mind" class="desk-file desk-file-lime" data-reveal data-progress-step="5"><div class="desk-visual"><img src="assets/desks/app/highres/inner-wire.png" alt="Inner Wire illustration"><span class="desk-visual-label mono">06 / INNER WIRE</span></div><div class="desk-copy"><span class="desk-number">06</span><p class="mini-label mono">THE PRIVATE WEATHER</p><h3>Your mind needs somewhere to play.</h3><p class="reading-copy">You process by connecting unlikely dots. Give that instinct a project, a page, or a conversation before it turns into overthinking.</p><div class="desk-foot mono">RECEIPT / PATTERN + PLAY</div></div></article>
-        <article id="desk-timing" class="desk-file desk-file-yellow" data-reveal data-progress-step="6"><div class="desk-visual"><img src="assets/desks/generated/timing-file-planets.png" alt="The Timing File illustration"><span class="desk-visual-label mono">07 / TIMING FILE</span></div><div class="desk-copy"><span class="desk-number">07</span><p class="mini-label mono">THE WEATHER AHEAD</p><h3>Momentum arrives in waves.</h3><p class="reading-copy">The next six months favour visible experiments and cleaner commitments. Start small enough to start now; build the proof as you go.</p><div class="desk-foot mono">RECEIPT / WINDOW + MOTION</div></div></article>
-        <article id="desk-power" class="desk-file desk-file-lime" data-reveal data-progress-step="7"><div class="desk-visual"><img src="assets/desks/generated/power-placements-planets.png" alt="Power Placements illustration"><span class="desk-visual-label mono">08 / POWER PLACEMENTS</span></div><div class="desk-copy"><span class="desk-number">08</span><p class="mini-label mono">THE UNFAIR ADVANTAGE</p><h3>Your edge is the blend.</h3><p class="reading-copy">You are most magnetic where precision meets warmth. Don’t flatten one side to look more professional — the contrast is the signature.</p><div class="desk-foot mono">RECEIPT / RANGE + TASTE</div></div></article>
-        <article id="desk-patterns" class="desk-file desk-file-pink" data-reveal data-progress-step="8"><div class="desk-visual"><img src="assets/desks/generated/pattern-breakers-planets.png" alt="Pattern Breakers illustration"><span class="desk-visual-label mono">09 / PATTERN BREAKERS</span></div><div class="desk-copy"><span class="desk-number">09</span><p class="mini-label mono">THE LOOP TO LEAVE</p><h3>Stop auditioning for rooms you’ve outgrown.</h3><p class="reading-copy">The old strategy was to become useful enough to be chosen. The new one is to choose the room, then bring your full voice into it.</p><div class="desk-foot mono">RECEIPT / CHOICE + SELF-TRUST</div></div></article>
-        <article id="desk-moves" class="desk-file desk-file-ink" data-reveal data-progress-step="9"><div class="desk-visual"><img src="assets/desks/generated/tota-next-moves-planets.png" alt="Tota's Next Moves illustration"><span class="desk-visual-label mono">10 / TOTA’S NEXT MOVES</span></div><div class="desk-copy"><span class="desk-number">10</span><p class="mini-label mono">THE LAST PAGE / FOR NOW</p><h3>Make the next move legible.</h3><p class="reading-copy">You don’t need the whole staircase. You need one honest step, taken in public enough that life can answer back.</p><div class="desk-foot mono">RECEIPT / BEGIN + BE SEEN</div></div></article>
+        <article id="desk-career" class="desk-file desk-file-career desk-file-lime" data-reveal data-progress-step="0"><div class="desk-visual"><img src="assets/desks/app/highres/career-desk.png" alt="Career Desk illustration"><span class="desk-visual-label mono">01 / CAREER DESK</span></div><div class="desk-copy"><span class="desk-number">01</span><h3>Your work gets good when it gets personal.</h3><p class="reading-copy">You are not built for work that asks you to leave your taste at the door. The strongest lane is the one where judgment, craft, and people all meet.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / AUTONOMY + CRAFT</div></div></article>
+        <article id="desk-love" class="desk-file desk-file-love desk-file-pink" data-reveal data-progress-step="1"><div class="desk-visual"><img src="assets/desks/app/highres/love-scandal.png" alt="Love Scandal illustration"><span class="desk-visual-label mono">02 / LOVE SCANDAL</span></div><div class="desk-copy"><span class="desk-number">02</span><h3>You need chemistry with a pulse.</h3><p class="reading-copy">Polite is not the same as alive. You do best with someone who can meet your directness, keep their own centre, and still make the day feel a little cinematic.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / CURIOSITY + HONESTY</div></div></article>
+        <article id="desk-money" class="desk-file desk-file-money desk-file-yellow" data-reveal data-progress-step="2"><div class="desk-visual"><img src="assets/desks/app/highres/money-beat.png" alt="Money Beat illustration"><span class="desk-visual-label mono">03 / MONEY BEAT</span></div><div class="desk-copy"><span class="desk-number">03</span><h3>Money follows the thing you repeat.</h3><p class="reading-copy">Your chart rewards a body of work, not a lucky one-off. The more clearly you name the value you create, the less energy you spend proving it.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / LEVERAGE + PATIENCE</div></div></article>
+        <article id="desk-health" class="desk-file desk-file-health desk-file-paper" data-reveal data-progress-step="3"><div class="desk-visual"><img src="assets/desks/app/highres/health-watch.png" alt="Health Watch illustration"><span class="desk-visual-label mono">04 / HEALTH WATCH</span></div><div class="desk-copy"><span class="desk-number">04</span><h3>Your nervous system is part of the plan.</h3><p class="reading-copy">Rest is not a reward you earn after the real work. It is the operating system that lets your sharpness stay sharp.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / RHYTHM + BOUNDARIES</div></div></article>
+        <article id="desk-home" class="desk-file desk-file-home desk-file-pink" data-reveal data-progress-step="4"><div class="desk-visual"><img src="assets/desks/app/highres/home-front.png" alt="Home Front illustration"><span class="desk-visual-label mono">05 / HOME FRONT</span></div><div class="desk-copy"><span class="desk-number">05</span><h3>You need a home that lets you expand.</h3><p class="reading-copy">Your space is not background. It changes the quality of your thinking, your hosting, and the risks you feel ready to take.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / BEAUTY + ROOM</div></div></article>
+        <article id="desk-mind" class="desk-file desk-file-mind desk-file-lime" data-reveal data-progress-step="5"><div class="desk-visual"><img src="assets/desks/app/highres/inner-wire.png" alt="Inner Wire illustration"><span class="desk-visual-label mono">06 / INNER WIRE</span></div><div class="desk-copy"><span class="desk-number">06</span><h3>Your mind needs somewhere to play.</h3><p class="reading-copy">You process by connecting unlikely dots. Give that instinct a project, a page, or a conversation before it turns into overthinking.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / PATTERN + PLAY</div></div></article>
+        <article id="desk-timing" class="desk-file desk-file-timing desk-file-yellow" data-reveal data-progress-step="6"><div class="desk-visual"><img src="assets/desks/generated/timing-file-planets.png" alt="The Timing File illustration"><span class="desk-visual-label mono">07 / TIMING FILE</span></div><div class="desk-copy"><span class="desk-number">07</span><h3>Momentum arrives in waves.</h3><p class="reading-copy">The next six months favour visible experiments and cleaner commitments. Start small enough to start now; build the proof as you go.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / WINDOW + MOTION</div></div></article>
+        <article id="desk-power" class="desk-file desk-file-power desk-file-lime" data-reveal data-progress-step="7"><div class="desk-visual"><img src="assets/desks/generated/power-placements-planets.png" alt="Power Placements illustration"><span class="desk-visual-label mono">08 / POWER PLACEMENTS</span></div><div class="desk-copy"><span class="desk-number">08</span><h3>Your edge is the blend.</h3><p class="reading-copy">You are most magnetic where precision meets warmth. Don’t flatten one side to look more professional — the contrast is the signature.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / RANGE + TASTE</div></div></article>
+        <article id="desk-patterns" class="desk-file desk-file-patterns desk-file-pink" data-reveal data-progress-step="8"><div class="desk-visual"><img src="assets/desks/generated/pattern-breakers-planets.png" alt="Pattern Breakers illustration"><span class="desk-visual-label mono">09 / PATTERN BREAKERS</span></div><div class="desk-copy"><span class="desk-number">09</span><h3>Stop auditioning for rooms you’ve outgrown.</h3><p class="reading-copy">The old strategy was to become useful enough to be chosen. The new one is to choose the room, then bring your full voice into it.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / CHOICE + SELF-TRUST</div></div></article>
+        <article id="desk-moves" class="desk-file desk-file-moves desk-file-ink" data-reveal data-progress-step="9"><div class="desk-visual"><img src="assets/desks/generated/tota-next-moves-planets.png" alt="Tota's Next Moves illustration"><span class="desk-visual-label mono">10 / TOTA’S NEXT MOVES</span></div><div class="desk-copy"><span class="desk-number">10</span><h3>Make the next move legible.</h3><p class="reading-copy">You don’t need the whole staircase. You need one honest step, taken in public enough that life can answer back.</p><div class="desk-foot mono">WHY TOTA LANDED HERE / BEGIN + BE SEEN</div></div></article>
       </div>
 
       <section class="full-close"><span class="close-star" aria-hidden="true">✦</span><p class="section-kicker mono">THE FILE IS YOURS</p><h3>Keep the page open.<br>Come back when the weather changes.</h3><p>Your chart is not a verdict. It is a language you can keep learning.</p><button type="button" class="outline-button" data-switch-mode="partial">back to the first look <span>↺</span></button></section>
@@ -190,6 +168,8 @@
   </dialog>
 
   <footer class="demo-footer"><span class="mono">ASK TOTA / LIFE EDITION</span><span>hardcoded interaction demo</span><span class="mono">DLDENSKLZ · 001</span></footer>
-  <script src="life-edition-demo.js"></script>
+  <script src="life-edition-isolation.js?v=3"></script>
+  <script src="life-edition-demo.js?v=3"></script>
+  <script src="life-edition-demo-live.js?v=3"></script>
 </body>
 </html>

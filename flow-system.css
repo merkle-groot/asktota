@@ -78,6 +78,7 @@
 .flow-footer { width: min(calc(100% - 64px), var(--flow-width)); margin: 0 auto; padding: 24px 0 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; border-top: 1px solid var(--flow-rule); color: var(--ink-muted); font-size: 12px; }
 .flow-footer nav { display: flex; gap: 20px; margin-left: auto; }.flow-footer a { color: var(--ink); }.flow-footer .brand { font-size: 19px; }
 .flow-notice { padding: 20px; border: 1px solid var(--flow-rule); margin-bottom: 20px; }
+.isolation-notice { margin: 0 0 24px; border-color: var(--parrot); background: var(--mint); color: var(--ink); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 /* The home entry and sample edition share the same action and focus language. */
 .flow-entry .hero-actions .btn { border-radius: var(--flow-radius); box-shadow: none; }
 .flow-entry .hero-actions .btn-primary:first-child { background: var(--ink); color: var(--paper); }

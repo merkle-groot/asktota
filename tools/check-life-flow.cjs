@@ -12,10 +12,11 @@ const output = process.argv[3];
 if (output) fs.mkdirSync(output, { recursive: true });
 const keys = ['career', 'love', 'wealth', 'health', 'family', 'mind', 'timing', 'placements', 'patterns', 'moves'];
 const fixture = {
-  birth: { date: '1994-06-15', time: '12:00', time_accuracy: 'unknown', place: 'Bengaluru, India' },
+  birth: { name: 'Ravi', date: '1994-06-15', time: '12:00', time_accuracy: 'unknown', place: 'Bengaluru, India' },
   chart: { lagna_sign_index: 0, houses: { 1: { occupants: ['Sun', 'Moon'] } } },
   rough_notes: { summary: 'A little room for the things you choose.', paragraphs: ['Your work and your people are part of the same story. Start by noticing where your own voice is strongest.'] },
   essence: 'The person you’ve become. The patterns you carry. The chapter you get to choose next.',
+  top_three: ['career', 'love', 'wealth'].map(key => ({ key, title: key, headline: 'Make a little room for your own story', body: 'You deserve space to choose what comes next.' })),
   facets: keys.map(key => ({ key, headline: 'Make a little room for your own story', takeaway: 'You deserve space to choose what comes next.', strength: 3, story: ['You are quick to carry the extra thing. Notice the choices you want to own, especially where being helpful has taken the place of having a say.', 'Let the relationships that make room for you take up more of the page. Your next chapter begins with one small commitment you choose for yourself.'], receipt: 'A sample placement, used only for this local UI check.', evidence: ['Moon in the first house'], caption: 'A closer look at your story.' }))
 };
 fixture.career = fixture.facets[0];
@@ -131,25 +132,12 @@ fixture.career = fixture.facets[0];
       await page.locator('#contact-submit').click();
       await screen('otp');
       await checkLayout('otp');
-      await page.locator('.otp-cell').first().fill('111111');
+      await page.locator('.otp-cell').first().pressSequentially('111111');
       await page.waitForFunction(() => document.getElementById('otp-status').textContent.includes('2 attempts'));
-      await page.locator('.otp-cell').first().fill('123456');
-      await screen('checkout');
-      assert.equal(calls.filter(p => p === '/web/orders').length, 0, 'No order until explicit payment click');
-      await checkLayout('checkout');
-      // Editing the number after a successful OTP must leave inputs usable.
-      await page.locator('[data-screen="checkout"] [data-back]').click();
-      await page.locator('#contact-submit').click();
-      await screen('otp');
-      assert.equal(await page.locator('.otp-cell').first().isEnabled(), true);
-      await page.locator('.otp-cell').first().fill('123456');
-      await screen('checkout');
-      await page.evaluate(() => { delete window.Razorpay; });
-      await page.locator('#checkout-submit').click();
-      await page.locator('#checkout-error').filter({ hasText: 'could not load' }).waitFor();
-      await page.evaluate(() => { window.Razorpay = window.testRazorpay; });
-      await page.locator('#payment-retry').click();
+      await page.locator('.otp-cell').first().pressSequentially('123456');
       await page.waitForFunction(() => window.testCheckoutOpen);
+      assert.equal(calls.filter(p => p === '/web/orders').length, 1, 'Order opens after OTP verification');
+      // A dismissed checkout keeps the order and returns to the payment screen.
       await page.evaluate(() => window.testCheckout.modal.ondismiss());
       await page.locator('#payment-retry').waitFor({ state: 'visible' });
       await checkLayout('payment-canceled');
@@ -167,8 +155,10 @@ fixture.career = fixture.facets[0];
       await checkLayout('reading-error');
       await page.locator('#loader-retry').click();
       await screen('reading');
-      assert.equal(await page.locator('.desk-story').count(), 10);
-      assert.equal(await page.locator('#reading-contents a').count(), 10);
+      assert.equal(await page.locator('.desk-file').count(), 10);
+      assert.equal(await page.locator('#reading-desk-index button').count(), 10);
+      assert.equal(await page.locator('#reading-top-three').isVisible(), true);
+      assert.equal(await page.locator('#reading-top-three .three-list li').count(), 3);
       assert.equal(calls.filter(p => p === '/web/orders').length, 1, 'Retries reuse the existing order');
       await page.evaluate(async () => {
         await Promise.all([...document.querySelectorAll('#reading-desks img')].map(img => { img.loading = 'eager'; return img.decode(); }));

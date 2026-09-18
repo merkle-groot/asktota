@@ -1,0 +1,140 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+ /* Reel 10 - red flag / green flag. 1080x1920, 270 frames at 30fps = 9s, loops.
+    A placement card lands, a verdict stamp slams on it, the card gets shoved into
+    the pile behind and the next one lands. Five cards; the fifth is about the
+    viewer. Pure function of the frame, hard cuts, no fades, Tota bobs 4px. */
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--stock:#F4EEDD;--halftone:#E3D9C0;--ink:#1E3A2A;--cream:#FBF3E0;
+       --marigold:#FFD24A;--muted:#5E6E5E;--mint:#DFF2E4;--pink:#F8D3E0;--pink-ink:#C2588A;--parrot:#178A4C}
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
+ #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);
+   background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);background-size:50px 50px}
+
+ .masthead{position:absolute;left:48px;top:120px;width:984px;height:140px;background:var(--ink);
+   display:flex;align-items:center;justify-content:center;box-shadow:14px 14px 0 rgba(30,58,42,.28)}
+ .masthead span{color:var(--cream);font-weight:800;font-size:54px;letter-spacing:.16em;text-transform:uppercase}
+ #deskbar{position:absolute;left:48px;top:268px;width:984px;height:66px;overflow:hidden}
+ #deskbar .fill{position:absolute;inset:0;background:var(--marigold);border:6px solid var(--ink);
+   display:flex;align-items:center;justify-content:center;transform-origin:left center}
+ #deskbar b{font-weight:800;font-size:30px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
+
+ .hd{position:absolute;left:72px;width:936px;top:700px}
+ .l{font-weight:800;line-height:1.02;letter-spacing:-.035em;text-transform:lowercase;color:var(--ink);white-space:nowrap}
+ #l1{font-size:150px}
+ #l2{font-size:96px;margin-top:8px;display:inline-block;padding:2px 26px 10px;border-radius:999px}
+
+ /* the pile. every card is absolutely positioned in the same box; the pile ones sit behind, rotated */
+ #pile{position:absolute;left:72px;top:470px;width:936px;height:900px}
+ .card{position:absolute;inset:0;background:var(--stock);border:8px solid var(--ink);box-shadow:0 14px 0 var(--ink);
+   padding:40px 48px 44px;display:flex;flex-direction:column;
+   background-image:radial-gradient(var(--halftone) 2.2px,transparent 2.4px);background-size:7px 7px;
+   transform-origin:center center}
+ .card .kick{display:flex;justify-content:space-between;align-items:baseline;border-bottom:4px solid var(--ink);padding-bottom:14px}
+ .card .kick b{font-weight:800;font-size:26px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+ .card .kick span{font-weight:700;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+ .card .place{margin-top:44px;font-weight:800;font-size:112px;line-height:.98;letter-spacing:-.035em;
+   text-transform:lowercase;color:var(--ink);text-wrap:balance}
+ .card .house{margin-top:18px;display:inline-block;align-self:flex-start;padding:8px 24px 12px;border-radius:999px;
+   background:var(--mint);border:5px solid var(--ink);font-weight:800;font-size:34px;letter-spacing:.06em;
+   text-transform:lowercase;color:var(--ink)}
+ .card .why{flex:1;display:flex;align-items:flex-end;font-weight:700;font-size:52px;line-height:1.1;
+   letter-spacing:-.02em;color:var(--ink);text-wrap:balance;padding-bottom:10px}
+ /* the stamp */
+ .stamp{position:absolute;right:36px;top:330px;padding:16px 36px 22px;border:10px solid var(--ink);
+   border-radius:18px;font-weight:800;font-size:92px;line-height:1;letter-spacing:-.01em;text-transform:uppercase;
+   color:var(--cream);box-shadow:0 12px 0 var(--ink);transform-origin:center center;white-space:nowrap}
+ .stamp.red{background:var(--pink-ink)}
+ .stamp.green{background:var(--parrot)}
+ .stamp.gold{background:var(--marigold);color:var(--ink)}
+
+ .sub{position:absolute;left:72px;top:1560px;width:660px;font-weight:600;font-size:44px;line-height:1.24;color:var(--muted)}
+ #tota{position:absolute;right:20px;bottom:112px;width:330px}
+ .foot{position:absolute;left:72px;bottom:92px;font-weight:800;font-size:46px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--ink)}
+ .hidden{visibility:hidden}
+</style></head><body>
+<div id="stage">
+  <div class="masthead" id="mast"><span>the daily tota</span></div>
+  <div id="deskbar"><div class="fill" id="deskfill"><b>placements &middot; flagged &middot; no appeal</b></div></div>
+
+  <div class="hd" id="head">
+    <div class="l" id="l1">ur chart.</div>
+    <div class="l" id="l2">flagged.</div>
+  </div>
+
+  <div id="pile"></div>
+
+  <div class="sub" id="sub">all twelve of urs are on asktota.com. free.</div>
+  <img id="tota" src="tota.png" alt="">
+  <div class="foot" id="foot">asktota.com</div>
+</div>
+<script>
+const $=id=>document.getElementById(id),
+      cl=(v,a,b)=>Math.max(a,Math.min(b,v)),
+      p=(f,a,b)=>cl((f-a)/(b-a),0,1),
+      ease=u=>1-Math.pow(1-u,3);
+const TOTAL=270;
+
+// five cards. cut is when the card lands, stamp is when the verdict slams.
+// after the next card's cut this one is shoved into the pile behind.
+const BEATS=[
+ {cut:42,  stamp:60,  v:'red',   place:'venus in the 12th',  house:'12th &middot; the hidden',   why:'loves in secret. gets caught in public.'},
+ {cut:84,  stamp:102, v:'green', place:'moon in the 4th',    house:'4th &middot; home',          why:'will feed u. will also cry about it. both are care.'},
+ {cut:126, stamp:144, v:'red',   place:'mars in the 7th',    house:'7th &middot; partners',      why:'fights for u. fights with u. same energy, no off switch.'},
+ {cut:168, stamp:186, v:'green', place:'jupiter in the 2nd', house:'2nd &middot; money',         why:'pays. every time. without the speech about it.'},
+ {cut:210, stamp:228, v:'gold',  place:'u, reading this',    house:'instead of texting back',  why:'checked the chart first. green flag. finally.', last:true},
+];
+const LABEL={red:'red flag', green:'green flag', gold:'green flag'};
+const SFX = BEATS.flatMap(b => [['whoosh', b.cut, 0.7], ['stamp', b.stamp, b.last ? 1.0 : 0.85]])
+  .concat([['thud', 2, 0.9], ['thud', 210, 0.8], ['stamp', 246, 0.9]]);
+
+const cards = BEATS.map((b,i)=>{
+  const c=document.createElement('div'); c.className='card hidden';
+  c.innerHTML=`<div class="kick"><b>placement no. 0${i+1}</b><span>${b.last?'filed by u':'filed today'}</span></div>
+    <div class="place">${b.place}</div><div class="house">${b.house}</div>
+    <div class="why">${b.why}</div><div class="stamp ${b.v} hidden">${LABEL[b.v]}</div>`;
+  $('pile').appendChild(c); return c;
+});
+
+function render(f){
+  const my = f<4 ? -300+304*p(f,0,3) : (f<7 ? 4-4*p(f,4,6) : 0);
+  $('mast').style.transform=`translateY(${my}px)`;
+  $('deskfill').style.transform=`scaleX(${p(f,8,13)})`;
+  $('deskbar').classList.toggle('hidden', f<8);
+
+  $('l1').classList.toggle('hidden', f<14);
+  $('l2').classList.toggle('hidden', f<22);
+  $('l2').style.background = f<22 ? 'transparent' : 'var(--pink-ink)';
+  $('l2').style.color = f<22 ? 'var(--ink)' : 'var(--cream)';
+  $('head').classList.toggle('hidden', f>=BEATS[0].cut);
+
+  BEATS.forEach((b,i)=>{
+    const c=cards[i], st=c.querySelector('.stamp');
+    if(f<b.cut){ c.classList.add('hidden'); return; }
+    c.classList.remove('hidden');
+    const next = BEATS[i+1];
+    const shoved = next && f>=next.cut;
+    // the card drops in from above over 4 frames, hard, then holds.
+    // once shoved it sits behind, tilted, nudged up, and stays there for the rest of the reel.
+    const drop = 60*(1-p(f,b.cut,b.cut+4));
+    const depth = shoved ? BEATS.slice(i+1).filter(x=>f>=x.cut).length : 0;
+    const rot = shoved ? (i%2? 3.2 : -3.2)*Math.min(depth,2) : 0;
+    const y = shoved ? -14*Math.min(depth,3) : -drop;
+    c.style.transform=`translateY(${y}px) rotate(${rot}deg)`;
+    c.style.zIndex = 10-depth;
+    // the stamp slams: one frame at 1.14, one at 0.96, then 1. rotated a touch off square.
+    st.classList.toggle('hidden', f<b.stamp);
+    const k=f-b.stamp, sc = k===0 ? 1.14 : k===1 ? 0.96 : 1;
+    st.style.transform=`rotate(${b.v==='green'||b.v==='gold'?-6:6}deg) scale(${sc})`;
+  });
+
+  $('sub').classList.toggle('hidden', f<246);
+  $('foot').classList.toggle('hidden', f<246);
+  $('tota').style.bottom = (112+Math.sin(f/37.5*Math.PI*2)*4)+'px';
+}
+render(0); window.render=render; window.TOTAL=TOTAL; window.SFX=SFX;
+</script></body></html>

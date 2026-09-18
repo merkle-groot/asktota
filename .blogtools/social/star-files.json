@@ -1,0 +1,57 @@
+{
+  "note": "STAR FILES. One deck per trending name, for reel-star-file.html. The readings are written from the app's own celebrity life reading, which uses a public birth date and no birth time (timeAccuracy: unknown, hour defaulted to noon). Every deck says so on the slate and in the caption. Character and chart only: never a claim about a real person's private life, health, or conduct.",
+  "decks": {
+    "abhishek-sharma": {
+      "slug": "abhishek-sharma",
+      "no": "001",
+      "kicker": "star files &middot; no. 001 &middot; filed today",
+      "hook": [
+        "a 30 ball hundred",
+        "is a chart event"
+      ],
+      "name": "abhishek sharma",
+      "why": "fastest hundred in t20i cricket. 30 balls. so we ran his chart through the app.",
+      "filed": "filed 18 sept",
+      "basis": "public date · no birth time",
+      "sub": "public birth date, no birth time. the desk reads the day, not the minute.",
+      "hold": 36,
+      "ctaHold": 72,
+      "desks": [
+        {
+          "desk": "career",
+          "stamp": "long game",
+          "verdict": "saturn built it. the hot half detonated it.",
+          "evidence": "two speeds in one chart: something patient underneath, something that refuses to wait on top. the breakthrough looks sudden from outside. the loading was years of the boring version."
+        },
+        {
+          "desk": "love",
+          "stamp": "no notes",
+          "verdict": "decides early. verifies late.",
+          "evidence": "more heat than caution here. certainty tends to arrive before the evidence does, and trust keeps its own slower timetable regardless."
+        },
+        {
+          "desk": "money",
+          "stamp": "read it twice",
+          "verdict": "the money follows the name, not the bet.",
+          "evidence": "jupiter thinks in scale, which is the upside. it is also how a shortcut gets mistaken for a plan. this chart wants ambition with paperwork attached."
+        },
+        {
+          "desk": "the downfall desk",
+          "stamp": "handle with care",
+          "hot": true,
+          "verdict": "the weak spot is speed. not scandal.",
+          "evidence": "the same heat that wins the contest shortens the gap between provocation and reply. in the middle it is a weapon. outside it, it is just noise over the thing he wanted seen."
+        }
+      ],
+      "cta": {
+        "h": "comment a **name**",
+        "p": "the most asked for name gets the next star file. u can also just run it urself, free, in the app.",
+        "btn": "asktota.com"
+      },
+      "title": "star files no. 001: abhishek sharma",
+      "summary": "the first star file. a trending name, four desks, a downfall desk, and a comment prompt that feeds next week's episode.",
+      "caption": "STAR FILES no. 001 📂 abhishek sharma, 30 balls, fastest t20i hundred there has ever been.\n\nso we put him through the same reading the app runs on anyone.\n\ncareer: two speeds. something patient underneath, something that will not wait on top. the innings looked sudden. the chart had been loading for years.\nlove: decides early, verifies late.\nmoney: it follows the name, not the bet.\nthe downfall desk: the weak spot is speed, not scandal. the heat that wins the contest is the same heat that answers things it did not need to answer.\n\nthis is entertainment, read off a public birth date with no birth time, so it reads the day and not the minute.\n\nnow the fun part 👇 comment a name. the one that gets asked for most gets star file no. 002 this week. follow so u actually see whose chart we open next 🦜\n\nor skip the queue and run anyone urself, free on asktota.com\n\n#abhisheksharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #t20i #birthchart",
+      "tags": "#abhisheksharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #t20i #birthchart"
+    }
+  }
+}

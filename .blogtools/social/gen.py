@@ -58,6 +58,15 @@ DIAGRAMS = {
               '<circle cx="110" cy="60" r="15" fill="'+INK+'" stroke="none"/>'
               '<circle cx="148" cy="60" r="15"/>'
               '<path d="M148 45a15 15 0 000 30z" fill="'+INK+'" stroke="none"/>'),
+ # the 27 nakshatras: one circle, cut 27 ways instead of 12. the moon sits in one of them
+ 'nakshatra': svg('<circle cx="100" cy="60" r="44"/>'
+                  '<path d="M144.0 60.0L153.0 60.0" stroke-width="3"/><path d="M142.8 70.1L151.6 72.2" stroke-width="3"/><path d="M139.3 79.7L147.4 83.8" stroke-width="3"/><path d="M133.7 88.3L140.6 94.1" stroke-width="3"/><path d="M126.3 95.3L131.6 102.5" stroke-width="3"/><path d="M117.4 100.4L121.0 108.7" stroke-width="3"/><path d="M107.6 103.3L109.2 112.2" stroke-width="3"/><path d="M97.4 103.9L96.9 112.9" stroke-width="3"/><path d="M87.4 102.2L84.8 110.8" stroke-width="3"/><path d="M78.0 98.1L73.5 105.9" stroke-width="3"/><path d="M69.8 92.0L63.6 98.6" stroke-width="3"/><path d="M63.2 84.2L55.7 89.1" stroke-width="3"/><path d="M58.7 75.0L50.2 78.1" stroke-width="3"/><path d="M56.3 65.1L47.4 66.2" stroke-width="3"/><path d="M56.3 54.9L47.4 53.8" stroke-width="3"/><path d="M58.7 45.0L50.2 41.9" stroke-width="3"/><path d="M63.2 35.8L55.7 30.9" stroke-width="3"/><path d="M69.8 28.0L63.6 21.4" stroke-width="3"/><path d="M78.0 21.9L73.5 14.1" stroke-width="3"/><path d="M87.4 17.8L84.8 9.2" stroke-width="3"/><path d="M97.4 16.1L96.9 7.1" stroke-width="3"/><path d="M107.6 16.7L109.2 7.8" stroke-width="3"/><path d="M117.4 19.6L121.0 11.3" stroke-width="3"/><path d="M126.3 24.7L131.6 17.5" stroke-width="3"/><path d="M133.7 31.7L140.6 25.9" stroke-width="3"/><path d="M139.3 40.3L147.4 36.2" stroke-width="3"/><path d="M142.8 49.9L151.6 47.8" stroke-width="3"/>'
+                  '<path d="M100 60 144 60" stroke-dasharray="5 5"/>'
+                  '<circle cx="144" cy="60" r="8" fill="#FFD24A"/>'),
+ # the nine grahas as nine desks on one floor. the lit one is the dasha u are running
+ 'graha9': svg(''.join(f'<circle cx="{56+(i%3)*44}" cy="{26+(i//3)*34}" r="14" '
+                       f'{"fill=\"#FFD24A\"" if i==4 else ("fill=\"#F8D3E0\"" if i>6 else "")}/>'
+                       for i in range(9))),
  # saturn, the slow one
  'saturn': svg('<circle cx="100" cy="60" r="30"/><ellipse cx="100" cy="60" rx="58" ry="16" '
                'transform="rotate(-18 100 60)"/>'),
@@ -104,6 +113,13 @@ def slide_html(s, i, deck, n):
         parts.append(f'<div class="saveline">{esc(s["save"])}</div>')
     if s.get('tiles'):
         parts.append('<div class="tiles">' + ''.join(tile(t) for t in s['tiles']) + '</div>')
+    if s.get('rows'):
+        # a full width ruled list. tiles cap out at four across, so anything that
+        # is genuinely a table of nine goes here instead of overflowing the row.
+        tight = ' tight' if len(s['rows']) >= 9 else ''
+        parts.append(f'<div class="ledger{tight}">' + ''.join(
+            f'<div class="lrow"><b>{hl(esc(a))}</b><span>{hl(esc(b))}</span></div>'
+            for a, b in s['rows']) + '</div>')
     if s.get('quote'):
         q = s['quote']
         parts.append(

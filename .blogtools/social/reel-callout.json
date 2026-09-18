@@ -1,0 +1,65 @@
+{
+  "note": "Decks for reel-callout.html. Copy is a bit. It is not a reading of anyone's chart, and each notes.md says so. Voice rules are BRAND_DESIGN_BIBLE section 4 and CONTENT_SYSTEM section 3: lowercase, specific, no em dashes, never teaches first.",
+  "decks": {
+    "moon-2am": {
+      "slug": "moon-2am",
+      "kicker": "the moon desk &middot; filed 2am &middot; unedited",
+      "hook": ["ur moon sign", "at 2am", "not the sun sign. the one that actually texts."],
+      "sub": "ur moon sign is on ur chart, not on ur birthday.",
+      "hold": 24,
+      "ctaHold": 60,
+      "cta": {
+        "h": "comment ur **moon sign**",
+        "p": "the sun sign is the press release. the moon is the 2am draft.",
+        "btn": "asktota.com"
+      },
+      "cards": [
+        {"tag": "aries moon", "when": "2:04 am", "line": "u up? no reason.", "sub": "there is a reason. it is from 2021 and it is still open."},
+        {"tag": "taurus moon", "when": "2:09 am", "line": "i'm not upset. i'm just not going to speak.", "sub": "has been composing this silence since march."},
+        {"tag": "gemini moon", "when": "2:11 am", "line": "ok so hear me out (voice note, 9 min)", "sub": "sent it. immediately sent a second one correcting the first."},
+        {"tag": "cancer moon", "when": "2:14 am", "line": "do people actually like me or are they being nice", "sub": "will ask again on thursday. will not accept the answer."},
+        {"tag": "leo moon", "when": "2:18 am", "line": "i'm so over it btw. anyway did u see my story", "sub": "the story was posted for one person. u know the one."},
+        {"tag": "virgo moon", "when": "2:23 am", "line": "i made a list of everything i did wrong", "sub": "the list is numbered. item 4 is from a group project in 2019."},
+        {"tag": "libra moon", "when": "2:27 am", "line": "ok but whose side are u on. be honest.", "sub": "does not want honest. wants a co-signature."},
+        {"tag": "scorpio moon", "when": "2:31 am", "line": "i found their cousin's finsta", "sub": "took eleven minutes. will bring it up in four months."},
+        {"tag": "sagittarius moon", "when": "2:36 am", "line": "what if i just moved to goa", "sub": "the tab is open. the tab has been open since june."},
+        {"tag": "capricorn moon", "when": "2:41 am", "line": "i'm fine. i have a plan. it is four years long.", "sub": "the plan has a spreadsheet. the spreadsheet has no crying column."},
+        {"tag": "aquarius moon", "when": "2:47 am", "line": "genuinely i don't need anyone", "sub": "typed this to a person. at 2:47am. on purpose."},
+        {"tag": "pisces moon", "when": "2:52 am", "line": "sorry ignore that. sorry. sorry.", "sub": "apologised three times for a message that was completely fine."}
+      ],
+      "title": "ur moon sign at 2am",
+      "summary": "twelve moons, twelve 2am texts, one comment prompt. the whole point is the last frame.",
+      "caption": "ur sun sign is the press release. ur moon sign is the 2am draft 🌙\n\nthe moon is where u actually live when nobody is watching: how u panic, who u text, what u apologise for. it is not ur birthday sign. it is a separate placement, in a separate rashi, and most people have never checked it.\n\nwhich one of these was u last week.\n\ncomment ur moon sign 👇 if u don't know it, it takes 30 seconds on asktota.com, free 🦜\n\n#moonsign #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #chandrarashi #astrologymemes #astrologyapp",
+      "tags": "#moonsign #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #chandrarashi #astrologymemes #astrologyapp"
+    },
+
+    "group-chat": {
+      "slug": "group-chat",
+      "kicker": "the gossip desk &middot; nine grahas &middot; one chat",
+      "hook": ["ur group chat,", "by graha", "all nine are in there. one of them is u."],
+      "sub": "which one u are is on ur chart, not on vibes.",
+      "hold": 24,
+      "ctaHold": 60,
+      "cta": {
+        "h": "send this to ur **rahu**",
+        "p": "u already know who it is. u thought of them on slide three.",
+        "btn": "asktota.com"
+      },
+      "cards": [
+        {"tag": "the sun", "when": "the one in charge", "line": "picks the place, the time and the plan", "sub": "did not ask. the poll was decorative."},
+        {"tag": "the moon", "when": "the one who feels it", "line": "asks if everyone got home ok, at 1am", "sub": "also the one who leaves on read for two days without noticing."},
+        {"tag": "mars", "when": "the one who moves", "line": "replies 'say less. leaving now.'", "sub": "is already in the auto. nobody confirmed anything."},
+        {"tag": "mercury", "when": "the one who talks", "line": "nine voice notes. none of them under four minutes.", "sub": "sends the summary after u have already listened to all nine."},
+        {"tag": "jupiter", "when": "the one with advice", "line": "gives the advice she is not taking herself", "sub": "correct every single time. about other people."},
+        {"tag": "venus", "when": "the one with taste", "line": "books the place, then splits the bill wrong", "sub": "the place was beautiful. u paid for someone's starter."},
+        {"tag": "saturn", "when": "the one with limits", "line": "says we should all go home and sleep", "sub": "right. hated for it. correct anyway."},
+        {"tag": "rahu", "when": "the one with receipts", "alt": true, "line": "screenshots absolutely everything", "sub": "has a folder. the folder has subfolders. u are in one of them."},
+        {"tag": "ketu", "when": "the one who left", "alt": true, "line": "exited the group in 2023 and never explained", "sub": "resurfaces once a year to react to one message with a heart."}
+      ],
+      "title": "ur group chat, by graha",
+      "summary": "nine grahas as nine people in one group chat, ending on a tag prompt.",
+      "caption": "every group chat has all nine grahas in it 🦜\n\nthis is actually how jyotish thinks about them. the grahas are not lucky rocks in the sky, they are nine jobs: one decides, one feels, one moves, one talks, one advises, one spends, one limits, one grabs, one leaves. ur chart says which of those nine is running the show in ur life right now.\n\nu thought of a specific person for at least four of these.\n\nsend it to ur rahu. and to ur ketu, if they are still reachable 💀\n\nfind out which graha is running ur chart, free on asktota.com\n\n#navagraha #vedicastrology #jyotish #kundli #astrologyindia #asktota #rahuketu #birthchart #astrologymemes #groupchat",
+      "tags": "#navagraha #vedicastrology #jyotish #kundli #astrologyindia #asktota #rahuketu #birthchart #astrologymemes #groupchat"
+    }
+  }
+}

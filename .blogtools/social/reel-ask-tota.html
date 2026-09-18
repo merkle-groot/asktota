@@ -1,0 +1,241 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+ /* The "ask tota" screen reels. 1080x1920, 270 frames at 30fps = 9s.
+    One question gets typed into the app, tota starts answering, the answer masks
+    partway. Same rules as every other reel in this folder: render(f) is a pure
+    function of the frame number and nothing animates by itself.
+
+    The screen is a faithful rebuild of the app's ask tota view, matching
+    assets/shots/tota-column.png: the back and title row, the FILED STORY pill,
+    the white YOUR TIP card, and the mint THE TOTA COLUMN card under it. */
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--stock:#F4EEDD;--ink:#1E3A2A;--body:#2C3E30;
+       --cream:#FBF3E0;--marigold:#FFD24A;--muted:#5E6E5E;--mint:#DFF2E4;
+       --pink:#F8D3E0;--pink-ink:#C2588A;--parrot:#178A4C;--card:#FFFFFF}
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
+ #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);
+   background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);background-size:50px 50px}
+
+ /* ---------- the app chrome ---------- */
+ .bar{position:absolute;left:56px;right:56px;top:104px;display:flex;align-items:center;
+   justify-content:space-between}
+ .bar .back{font-weight:800;font-size:44px;color:var(--ink)}
+ .bar .title{position:absolute;left:0;right:0;text-align:center;font-weight:800;font-size:48px;
+   color:var(--ink)}
+ .bar .title i{font-style:normal;color:var(--parrot)}
+ .rule{position:absolute;left:56px;right:56px;top:186px;height:4px;background:var(--ink);opacity:.9}
+
+ #scroll{position:absolute;left:56px;right:56px;top:230px;bottom:268px;overflow:hidden}
+
+ /* the empty state, before anything is sent */
+ #empty{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;
+   gap:34px;padding-top:30px}
+ #empty h2{font-weight:800;font-size:76px;line-height:1.08;letter-spacing:-.03em;color:var(--ink)}
+ #empty p{font-weight:500;font-size:38px;line-height:1.3;color:var(--muted)}
+ .chips{display:flex;gap:18px;flex-wrap:wrap;margin-top:6px}
+ .chips span{border:5px solid var(--ink);border-radius:999px;background:var(--card);
+   box-shadow:0 7px 0 var(--ink);padding:14px 30px;font-weight:800;font-size:32px;color:var(--ink)}
+ .chips span:first-child{background:var(--marigold)}
+
+ /* the thread */
+ #thread{position:absolute;left:0;right:0;top:0}
+ .filed{display:inline-flex;align-items:center;gap:12px;background:var(--pink);
+   border:6px solid var(--ink);border-radius:999px;box-shadow:0 8px 0 var(--ink);
+   padding:12px 30px;font-weight:800;font-size:30px;letter-spacing:.14em;text-transform:uppercase;
+   color:var(--ink);margin-left:22px;position:relative;z-index:3}
+ .qcard{background:var(--card);border:6px solid var(--ink);box-shadow:0 12px 0 var(--ink);
+   border-radius:10px;padding:34px 36px 38px;margin-top:-14px}
+ .qcard .kick{font-weight:800;font-size:30px;letter-spacing:.1em;text-transform:uppercase;
+   color:var(--pink-ink)}
+ .qcard p{margin-top:14px;font-weight:800;font-size:52px;line-height:1.16;letter-spacing:-.02em;
+   color:var(--ink)}
+
+ .acard{position:relative;background:var(--mint);border:6px solid var(--ink);border-radius:10px;
+   box-shadow:0 12px 0 var(--ink);padding:34px 36px 40px;margin-top:34px;overflow:hidden}
+ .acard .col{text-align:center;font-weight:800;font-size:30px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--pink-ink)}
+ .byline{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px}
+ .byline .av{width:62px;height:62px;border-radius:999px;border:4px solid var(--ink);
+   background:var(--mint) url(tota.png) no-repeat;background-size:113px;
+   background-position:-26px 4px}
+ .byline span{font-weight:600;font-size:30px;color:var(--muted)}
+ .hair{height:3px;background:var(--ink);opacity:.5;margin:22px 0 26px}
+ .acard h3{font-weight:800;font-size:60px;line-height:1.1;letter-spacing:-.03em;color:var(--ink)}
+ .acard .ln{margin-top:22px;font-weight:500;font-size:38px;line-height:1.34;color:var(--body)}
+
+ /* the mask. the answer keeps going, u just do not get to read it. */
+ #tail{margin-top:22px;filter:blur(9px)}
+ #tail .ln{margin-top:22px}
+ #veil{position:absolute;left:0;right:0;bottom:0;height:340px;
+   background:linear-gradient(to bottom,rgba(223,242,228,0) 0%,rgba(223,242,228,.92) 46%,var(--mint) 76%)}
+ #lock{position:absolute;left:36px;right:36px;bottom:34px;display:flex;align-items:center;
+   justify-content:center;gap:14px;background:var(--ink);border-radius:999px;padding:18px 28px;
+   font-weight:800;font-size:30px;color:var(--cream);text-align:center}
+
+ /* the composer */
+ #composer{position:absolute;left:56px;right:56px;bottom:118px;display:flex;align-items:center;gap:20px}
+ #field{flex:1;min-height:112px;background:var(--card);border:6px solid var(--ink);
+   border-radius:999px;box-shadow:0 9px 0 var(--ink);padding:24px 36px;display:flex;align-items:center;
+   font-weight:600;font-size:40px;color:var(--ink);overflow:hidden;white-space:nowrap}
+ #field.ph{color:var(--muted)}
+ #caret{display:inline-block;width:4px;height:46px;background:var(--ink);margin-left:3px;
+   vertical-align:-8px}
+ #send{flex:none;width:112px;height:112px;border-radius:999px;background:var(--marigold);
+   border:6px solid var(--ink);box-shadow:0 9px 0 var(--ink);display:flex;align-items:center;
+   justify-content:center;font-weight:800;font-size:48px;color:var(--ink)}
+
+ /* the end band */
+ #band{position:absolute;left:0;right:0;bottom:0;height:560px;background:var(--ink);
+   padding:58px 72px 0;box-shadow:0 -14px 0 rgba(30,58,42,.22)}
+ #band h4{font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-.035em;color:var(--cream)}
+ #band h4 em{font-style:normal;color:var(--marigold)}
+ #band .url{margin-top:26px;display:inline-block;background:var(--marigold);border-radius:999px;
+   padding:16px 36px;font-weight:800;font-size:42px;letter-spacing:.06em;color:var(--ink);
+   text-transform:uppercase}
+ #bandtota{position:absolute;right:34px;bottom:0;width:280px}
+ .hidden{visibility:hidden}
+</style></head><body>
+<div id="stage">
+  <div class="bar"><div class="back">&larr; back</div><div class="title">ask <i>tota</i></div></div>
+  <div class="rule"></div>
+
+  <div id="scroll">
+    <div id="empty">
+      <h2>ask the question<br>u'd never google.</h2>
+      <p>tota reads ur chart before answering. not a horoscope column.</p>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <div id="thread" class="hidden">
+      <div class="filed">&#128204; filed story</div>
+      <div class="qcard"><div class="kick" id="kick">your tip &middot; career</div><p id="qtext"></p></div>
+      <div class="acard" id="acard">
+        <div class="col">the tota column</div>
+        <div class="byline"><div class="av"></div><span>reported by tota &middot; on the record</span></div>
+        <div class="hair"></div>
+        <h3 id="head"></h3>
+        <div id="lines"></div>
+        <div id="tail">
+          <div class="ln">every claim in here is tied to a position in ur chart, computed from ur birth minute, and tota will show u the working if u ask for it.</div>
+          <div class="ln">the rest of this answer names the house, the dasha lord and the window.</div>
+        </div>
+        <div id="veil"></div>
+        <div id="lock"><span>&#128274;</span><span id="locktext"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="composer">
+    <div id="field" class="ph"><span id="typed">ask tota anything</span><i id="caret"></i></div>
+    <div id="send">&uarr;</div>
+  </div>
+
+  <div id="band" class="hidden">
+    <h4>chat with tota.<br>know ur future.<br><em>free.</em></h4>
+    <div class="url">asktota.com</div>
+    <img id="bandtota" src="tota.png" alt="">
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id),
+      cl=(v,a,b)=>Math.max(a,Math.min(b,v)),
+      p=(f,a,b)=>cl((f-a)/(b-a),0,1);
+const TOTAL=270;
+
+// the timeline. every number is a frame.
+const T={typeIn:8, typeOut:88, press:90, sent:96, think:102, answer:128, head:136,
+         line:[146,160,174], mask:190, band:222};
+
+let DECK=null;
+function setDeck(d){
+  DECK=d;
+  $('chips').innerHTML = d.chips.map(c=>`<span>${c}</span>`).join('');
+  $('kick').innerHTML = 'your tip &middot; ' + d.topic;
+  $('qtext').textContent = d.q;
+  $('head').textContent = d.headline;
+  $('lines').innerHTML = d.lines.map((t,i)=>`<div class="ln" id="ln${i}">${t}</div>`).join('');
+  $('locktext').textContent = d.lock;
+
+  // Fit guard. The answer card is at its tallest once the third line and the masked
+  // tail are both in, which is frame 200. Step the body copy down until the card
+  // clears the scroll area, so a longer answer never gets its bottom edge sliced off.
+  render(200);
+  const box = $('scroll').getBoundingClientRect();
+  let size = 38, guard = 0;
+  const body = [...document.querySelectorAll('#lines .ln, #tail .ln')];
+  while ($('acard').getBoundingClientRect().bottom > box.bottom - 8 && size > 30 && guard++ < 20) {
+    size -= 1;
+    body.forEach(el => { el.style.fontSize = size + 'px'; });
+  }
+  if ($('acard').getBoundingClientRect().bottom > box.bottom - 8) {
+    throw new Error('answer card still overflows at ' + size + 'px: shorten the deck copy');
+  }
+  render(0);
+}
+
+function render(f){
+  if(!DECK) return;
+  const sent = f >= T.sent;
+
+  // ---- the composer types the question one character at a time, then sends ----
+  const n = Math.round(DECK.q.length * p(f, T.typeIn, T.typeOut));
+  const typing = f >= T.typeIn && !sent;
+  $('typed').textContent = (f < T.typeIn || sent) ? 'ask tota anything' : DECK.q.slice(0, n);
+  $('field').classList.toggle('ph', f < T.typeIn || sent);
+  // the caret blinks on a 15 frame cycle while the field has focus, and only then
+  $('caret').style.visibility = (typing && Math.floor(f/8) % 2 === 0) ? 'visible' : 'hidden';
+
+  // the send button presses 4px down on the tap, like every other button in the brand
+  const pressed = f >= T.press && f < T.press + 4;
+  $('send').style.transform = pressed ? 'translateY(6px)' : 'none';
+  $('send').style.boxShadow = pressed ? '0 3px 0 var(--ink)' : '0 9px 0 var(--ink)';
+
+  // ---- the thread ----
+  $('empty').classList.toggle('hidden', sent);
+  $('thread').classList.toggle('hidden', !sent);
+
+  // tota thinks for a beat. three dots, one every 6 frames, because a real wait is
+  // the most convincing thing in a product demo.
+  const thinking = f >= T.think && f < T.answer;
+  $('acard').classList.toggle('hidden', f < T.think);
+  if (thinking) {
+    const dots = '.'.repeat(1 + Math.floor((f - T.think)/6) % 3);
+    $('head').textContent = 'reading ur chart' + dots;
+    $('head').style.color = 'var(--muted)';
+  } else if (f >= T.head) {
+    $('head').textContent = DECK.headline;
+    $('head').style.color = 'var(--ink)';
+  } else {
+    $('head').textContent = '';
+  }
+  $('acard').querySelector('.col').style.visibility = f >= T.answer ? 'visible' : 'hidden';
+  $('acard').querySelector('.byline').style.visibility = f >= T.answer ? 'visible' : 'hidden';
+  $('acard').querySelector('.hair').style.visibility = f >= T.answer ? 'visible' : 'hidden';
+
+  // the answer arrives a line at a time. hard cuts, no fades.
+  DECK.lines.forEach((_, i) => {
+    const el = $('ln' + i);
+    if (el) el.style.display = f >= T.line[i] ? 'block' : 'none';
+  });
+
+  // ---- the mask ----
+  const masked = f >= T.mask;
+  $('tail').style.display  = masked ? 'block' : 'none';
+  $('veil').style.display  = masked ? 'block' : 'none';
+  $('lock').style.display  = masked ? 'flex'  : 'none';
+
+  // ---- the end band, and tota bobbing 4px over 1250ms per the bible ----
+  $('band').classList.toggle('hidden', f < T.band);
+  $('composer').classList.toggle('hidden', f >= T.band);
+  $('bandtota').style.bottom = (Math.sin(f/37.5*Math.PI*2)*4)+'px';
+}
+
+// The deck is injected by genaskreels.py with setDeck(...), not fetched: a
+// file:// page cannot read its own JSON sibling, and inlining it into four copies
+// of this file would mean four places to fix a typo.
+document.fonts.ready.then(() => { document.body.dataset.ready = '1'; });
+window.render=render; window.setDeck=setDeck; window.TOTAL=TOTAL;
+</script></body></html>

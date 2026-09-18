@@ -58,10 +58,27 @@ h1 mark.c{background:var(--card)}
 .tile .cap{position:absolute;left:0;right:0;bottom:10px;font-weight:700;font-size:14px;
   letter-spacing:.08em;text-transform:lowercase;color:var(--muted);text-align:center}
 
+/* the ledger: a ruled list for the slides that are honestly a table */
+.ledger{width:100%;max-width:900px;margin:18px auto 6px;display:flex;flex-direction:column}
+.lrow{display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+  padding:13px 4px;border-bottom:3px dashed rgba(30,58,42,.28)}
+.lrow:last-child{border-bottom:0}
+.ledger.tight{margin-top:10px}
+.ledger.tight .lrow{padding:8px 4px}
+.ledger.tight .lrow b{font-size:34px}
+.ledger.tight .lrow span{font-size:28px}
+.lrow b{font-weight:800;font-size:38px;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.lrow span{font-weight:600;font-size:31px;line-height:1.2;color:var(--muted);text-align:right}
+.lrow mark{background:var(--marigold);padding:0 8px;border-radius:999px;color:var(--ink)}
+
 /* body paragraph */
 p.copy{width:100%;max-width:880px;text-align:justify;text-align-last:center;
   font-weight:500;font-size:37px;line-height:1.42;color:var(--body);margin-top:6px}
 p.copy b{font-weight:800;color:var(--ink)}
+p.copy mark{background:var(--marigold);color:var(--ink);border-radius:8px;padding:.02em .22em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+p.copy mark.p{background:var(--pink)}
+p.copy mark.c{background:var(--card)}
+.slide.g-marigold p.copy mark{background:var(--card)}
 
 /* cover extras */
 .stamp{position:absolute;right:44px;top:52px;width:142px;height:142px;border-radius:999px;

@@ -1,0 +1,137 @@
+{
+  "note": "The 'ask tota' screen reels. One question typed into the app, tota starts answering, the answer masks partway. Four decks, same 270 frame timeline, swapped by ?deck= on reel-ask-tota.html. The reading text is illustrative: it is a mock of a real answer, not a reading of anyone's chart, and notes.md says so.",
+  "decks": {
+    "jobs": {
+      "slug": "jobs",
+      "topic": "career",
+      "q": "when am i gonna find a job?",
+      "chips": [
+        "career",
+        "love",
+        "money"
+      ],
+      "headline": "saturn's running ur interview",
+      "lines": [
+        "ur 10th lord is in the 6th, which is the house of the job u actually get hired for. not the one u post about.",
+        "u are in a saturn period, and saturn does not hand things over. it makes u qualify for them first.",
+        "the window that matters is when jupiter crosses ur 10th, and ur chart puts that at"
+      ],
+      "lock": "the date is in the rest of the answer",
+      "cover": "when am i gonna find a job?",
+      "title": "ask tota: the job question",
+      "summary": "the most asked question in the app, typed out and half answered.",
+      "caption": "\"when am i gonna find a job?\" is the question people actually open the app to ask.\n\ntota reads ur 10th house, ur 10th lord and the dasha u are actually running before it says a single word. not a sun sign. not twelve paragraphs on rotation. ur chart.\n\nit gave a window. we are not putting the date in a reel.\n\nask it urself, free, no paywall 🦜\n\nwhat would u ask it first 👇",
+      "tags": "#vedicastrology #jyotish #careerastrology #kundli #astrologyindia #asktota #jobsearch #dasha #birthchart #astrologyapp"
+    },
+    "situationship": {
+      "slug": "situationship",
+      "topic": "love",
+      "q": "why hasn't he texted back?",
+      "chips": [
+        "love",
+        "career",
+        "money"
+      ],
+      "headline": "he's not busy. check the 12th house.",
+      "lines": [
+        "ur 7th lord is sitting in the 12th, which is the house of things that happen privately and get said out loud much later.",
+        "venus is retrograde right now, so every conversation about this one is going to get had twice. that is not a metaphor.",
+        "the part u are not going to like is what ur own chart says about why u keep"
+      ],
+      "lock": "tota finished that sentence. we did not.",
+      "cover": "why hasn't he texted back?",
+      "title": "ask tota: the situationship",
+      "summary": "why hasn't he texted back, answered with a house and a transit.",
+      "caption": "u are not imagining it. u are also not going to enjoy the second half of this answer.\n\ntota reads ur 7th lord, ur venus and the transit running right now before it says anything about him. then it says the part about u, which is the part we cut.\n\nask it the thing u would never google. free.\n\nsend this to the friend who is in one 👇",
+      "tags": "#vedicastrology #situationship #astrologymemes #jyotish #lovehoroscope #kundli #astrologyindia #asktota #7thhouse #desiastrology"
+    },
+    "ex": {
+      "slug": "ex",
+      "topic": "love",
+      "q": "should i text my ex back?",
+      "chips": [
+        "love",
+        "career",
+        "money"
+      ],
+      "headline": "the chart says no. the chart also knows u will.",
+      "lines": [
+        "ketu is on ur 7th house right now. ketu is the graha of things u already finished and keep picking back up anyway.",
+        "so the pull is real, and it is also a transit. it has an end date and ur chart names it.",
+        "before u type anything, the thing ur chart actually flags is that this one keeps"
+      ],
+      "lock": "u already know. tota said it out loud.",
+      "cover": "should i text my ex back?",
+      "title": "ask tota: the ex",
+      "summary": "should i text my ex back. the chart says no, and then says more.",
+      "caption": "we asked tota. tota did not soften it.\n\nketu sitting on the 7th, a pull with an actual end date, and one sentence about why this one keeps coming back that we could not fit in a reel.\n\nask it before u open that chat. free on asktota.com 🦜\n\nbe honest down there. have u texted back 👇",
+      "tags": "#vedicastrology #astrologymemes #ex #situationship #jyotish #ketu #kundli #astrologyindia #asktota #genzastrology"
+    },
+    "money": {
+      "slug": "money",
+      "topic": "money",
+      "q": "when will i actually have money?",
+      "chips": [
+        "money",
+        "career",
+        "love"
+      ],
+      "headline": "ur 11th house is not the problem",
+      "lines": [
+        "ur 2nd lord is fine. u earn. the story is in the 12th, and the 12th is the house of what leaves.",
+        "the shift is dated, not vibes: jupiter moves into ur 11th and that is the first real window in three years.",
+        "the month ur chart gives for when it actually turns is"
+      ],
+      "lock": "it gave a month. ask it urself.",
+      "cover": "when will i actually have money?",
+      "title": "ask tota: the money question",
+      "summary": "when will i actually have money, and why the 11th house is not the answer.",
+      "caption": "\"when will i actually have money\" has a real answer, and it is not the 11th house.\n\ntota reads ur 2nd, ur 11th and ur 12th, then names the window. it gave a month. we are not putting the month in a reel.\n\nask it urself. free 🦜\n\nguess which house it flagged 👇",
+      "tags": "#vedicastrology #moneyastrology #jyotish #kundli #astrologyindia #asktota #2ndhouse #wealthyoga #birthchart #astrologyapp"
+    },
+    "quit": {
+      "slug": "quit",
+      "topic": "career",
+      "q": "should i quit my job?",
+      "chips": [
+        "career",
+        "money",
+        "love"
+      ],
+      "headline": "not yet. and the chart says why.",
+      "lines": [
+        "ur 6th lord is the one carrying ur income right now. the 6th is the job u are hired for, not the one u want. it is doing its job.",
+        "u are in a rahu antardasha, and rahu makes the exit look bigger than the door. that is the itch. it is dated.",
+        "the month ur 10th lord finally gets support from jupiter, which is when leaving stops costing u, is"
+      ],
+      "lock": "tota gave a month. we are not.",
+      "cover": "should i quit my job?",
+      "title": "ask tota: the quitting question",
+      "summary": "should i quit my job. the chart says not yet, and names when.",
+      "caption": "\"should i quit my job?\" is the second most asked thing in the app, right after when am i getting one.\n\ntota reads ur 6th, ur 10th and the antardasha u are actually in before it says a word. it said not yet. then it gave a month. we cut the month.\n\nask it before u draft the email. free 🦜\n\nbe honest, is the draft already written 👇",
+      "tags": "#vedicastrology #jyotish #careerastrology #quitmyjob #kundli #astrologyindia #asktota #dasha #rahu #astrologyapp"
+    },
+    "marriage": {
+      "slug": "marriage",
+      "topic": "love",
+      "q": "when am i getting married?",
+      "chips": [
+        "love",
+        "career",
+        "money"
+      ],
+      "headline": "ur 7th lord is busy. here's when it's free.",
+      "lines": [
+        "ur 7th lord is sitting in the 12th with saturn. that is not a curse, it is a delay with a reason: it wants the person to be from outside ur circle.",
+        "venus, the karaka for marriage, is strong in ur chart. so it happens. the question was never if.",
+        "the dasha that actually delivers it starts when ur venus antardasha opens, and ur chart puts that in"
+      ],
+      "lock": "there is a year in the rest of the answer",
+      "cover": "when am i getting married?",
+      "title": "ask tota: the wedding question",
+      "summary": "when am i getting married, answered with the 7th lord and a dasha, not a rishta.",
+      "caption": "\"when am i getting married?\" gets asked in the app more than anyone will admit at a dinner table.\n\ntota reads ur 7th lord, ur venus and the dasha that actually delivers it. it does not do 'soon'. it gave a year. the year is not in the reel.\n\nask it before ur aunt does. free 🦜\n\ntag the friend whose rishta list is longer than their contact list 👇",
+      "tags": "#vedicastrology #jyotish #marriageastrology #kundli #astrologyindia #asktota #7thhouse #venus #dasha #desiastrology"
+    }
+  }
+}

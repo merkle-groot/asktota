@@ -2156,5 +2156,1171 @@
     "eyebrow": "one more thing"
    }
   ]
+ },
+ "saturn-return": {
+  "date": "sat, 12 sept",
+  "ground": "mint",
+  "slides": [
+   {
+    "h": "saturn return: the ~~quarter life crisis~~ has a **date**",
+    "save": "save this if u are 27, 28 or 29 and everything is on fire",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "saturn",
+      "b": "29.5 yrs",
+      "cap": "one lap"
+     },
+     {
+      "tone": "pink",
+      "b": "27 to 30",
+      "s": "the window, give or take",
+      "cap": "when"
+     },
+     {
+      "tone": "marigold",
+      "b": "twice",
+      "s": "in a normal life",
+      "cap": "how often"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "saturn takes **29.5 years** to go round once",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "saturn",
+      "b": "29.5",
+      "s": "years for one orbit",
+      "cap": "the lap"
+     },
+     {
+      "tone": "marigold",
+      "b": "2.5 yrs",
+      "s": "in each rashi",
+      "cap": "the pace"
+     },
+     {
+      "tone": "card",
+      "b": "~29 · ~58",
+      "s": "the two returns",
+      "cap": "ur birthdays"
+     }
+    ],
+    "copy": "saturn is the slowest graha u can see. it spends about two and a half years in each rashi, so it gets back to where it was when u were born around ur **29th birthday**, and again around 58."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "what actually gets **audited**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "the house",
+      "s": "saturn sits in",
+      "cap": "the file"
+     },
+     {
+      "tone": "mint",
+      "b": "10th",
+      "s": "the job u took at 23",
+      "cap": "if it's here"
+     },
+     {
+      "tone": "card",
+      "b": "7th",
+      "s": "the person u picked at 23",
+      "cap": "if it's here"
+     }
+    ],
+    "copy": "whichever house saturn sits in ur chart is the one that gets reviewed. it is not random. the job, the relationship, the flat: **the thing u chose without thinking** is the thing that gets examined."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "it starts **before** 29",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "retro",
+      "b": "~27.5",
+      "s": "first contact",
+      "cap": "the warm up"
+     },
+     {
+      "tone": "marigold",
+      "b": "29 to 30",
+      "s": "the exact pass",
+      "cap": "the return"
+     },
+     {
+      "tone": "card",
+      "b": "up to 3",
+      "s": "passes, because retrograde",
+      "cap": "why it drags"
+     }
+    ],
+    "copy": "saturn slows down and goes retrograde every year, so it can cross ur natal saturn **three times**. that is why the return feels like two years of pressure and not one bad birthday."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "saturn is not ~~cruel~~. it is **fair**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "karma",
+      "s": "karaka, in the texts",
+      "cap": "the ledger"
+     },
+     {
+      "tone": "mint",
+      "b": "effort",
+      "s": "what it actually reads",
+      "cap": "the input"
+     },
+     {
+      "tone": "card",
+      "b": "late",
+      "s": "is not the same as never",
+      "cap": "the payout"
+     }
+    ],
+    "copy": "the classical word is karaka of karma. it pays out what was put in, **late and in full**. the people who get wrecked at 29 are the ones who built on nothing for six years."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "three saturn clocks. **which one** is urs",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "saturn",
+      "b": "the return",
+      "s": "from natal saturn",
+      "cap": "clock 1"
+     },
+     {
+      "tone": "pink",
+      "d": "tithi",
+      "b": "sade sati",
+      "s": "7.5 yrs from ur moon",
+      "cap": "clock 2"
+     },
+     {
+      "tone": "card",
+      "b": "dasha",
+      "s": "the saturn period",
+      "cap": "clock 3"
+     }
+    ],
+    "copy": "the return, sade sati and a saturn dasha are **three different things**, and people mix them up constantly. ur chart says which one u are in. it can be none of them, and it can be all three."
+   },
+   {
+    "eyebrow": "the tell",
+    "quote": {
+     "q": "saturn does not ~~ruin~~ ur twenties. it **grades** them",
+     "attrib": "the desk, to everyone turning 29"
+    }
+   },
+   {
+    "eyebrow": "one more thing",
+    "cta": {
+     "h": "find ur saturn, **free**",
+     "p": "the house and the date are on ur chart. no crystal, no course.",
+     "btn": "asktota.com"
+    }
+   }
+  ],
+  "title": "saturn return, explained",
+  "blog": "https://www.asktota.com/blog/saturn-in-birth-chart.html",
+  "caption": "turning 29 and everything is on fire? that has a name and a date.\n\nsaturn takes 29.5 years to get back to where it was when u were born. whichever house it sits in ur chart is the one that gets audited: the job, the person, the flat u picked at 23 without thinking. it crosses three times because of retrograde, which is why it feels like two years, not one birthday.\n\nand it is not the same as sade sati or a saturn dasha. three clocks. ur chart says which one is urs.\n\nfind ur saturn free on asktota.com 🦜\n\nwhat got audited in ur return 👇\n\n#saturnreturn #vedicastrology #jyotish #kundli #astrologyindia #asktota #saturn #birthchart #turning29 #astrologyapp"
+ },
+ "houses-ranked": {
+  "date": "sat, 12 sept",
+  "ground": "pink",
+  "slides": [
+   {
+    "h": "the 12 houses, ranked by how much they **run ur week**",
+    "save": "save this so u stop asking what the 8th house is",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "12",
+      "s": "houses, one chart",
+      "cap": "the grid"
+     },
+     {
+      "tone": "marigold",
+      "b": "8th",
+      "cap": "no.1"
+     },
+     {
+      "tone": "mint",
+      "b": "12th",
+      "cap": "no.2"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "no.5 the 10th: the job u **post about**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "lagna",
+      "b": "karma",
+      "s": "bhava, the public one",
+      "cap": "the name"
+     },
+     {
+      "tone": "marigold",
+      "b": "10th lord",
+      "s": "where the work comes from",
+      "cap": "the key"
+     },
+     {
+      "tone": "card",
+      "b": "visible",
+      "s": "title, reputation, the boss",
+      "cap": "what's here"
+     }
+    ],
+    "copy": "the career house. status, reputation, the thing u say at weddings. it runs ur week if ur boss does. the **10th lord's placement** says where the work actually shows up."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "no.4 the 7th: everyone u **argue with**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "partners",
+      "s": "marriage, business, both",
+      "cap": "the room"
+     },
+     {
+      "tone": "pink",
+      "b": "open enemies",
+      "s": "also live here. yes.",
+      "cap": "the twist"
+     },
+     {
+      "tone": "card",
+      "b": "7th lord",
+      "s": "who u keep picking",
+      "cap": "the pattern"
+     }
+    ],
+    "copy": "the classical texts put the spouse and the opponent in **the same house**. that is not a joke, it is the point: the 7th is everyone u are bound to, whether u like them or not."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "no.3 the 6th: the job u **actually get**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "rog · rin · ripu",
+      "s": "illness, debt, enemies",
+      "cap": "the trio"
+     },
+     {
+      "tone": "marigold",
+      "b": "service",
+      "s": "the 9 to 6, the grind",
+      "cap": "also here"
+     },
+     {
+      "tone": "card",
+      "b": "strong 6th",
+      "s": "u win the fight",
+      "cap": "the upside"
+     }
+    ],
+    "copy": "the daily grind house. work u are hired for, debts, health, the people who want u gone. a **strong 6th lord** wins fights. a weak one picks them. this house runs more weeks than the 10th does."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "no.2 the 12th: what **leaves**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "sleep",
+      "s": "the bed, the dream",
+      "cap": "what's here"
+     },
+     {
+      "tone": "pink",
+      "b": "expenses",
+      "s": "money that goes out",
+      "cap": "also"
+     },
+     {
+      "tone": "card",
+      "b": "moksha",
+      "s": "the exit, the good kind",
+      "cap": "the catch"
+     }
+    ],
+    "copy": "loss, exit, foreign lands, the bed. money leaves here, secrets leave here, sleep happens here. also the **moksha** house, so it is not the villain. it is the door."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "no.1 the 8th: **sudden** everything",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kaalsarp",
+      "b": "the hidden",
+      "s": "what nobody planned",
+      "cap": "the theme"
+     },
+     {
+      "tone": "mint",
+      "b": "other people's",
+      "s": "money. inheritance, insurance",
+      "cap": "the payout"
+     },
+     {
+      "tone": "card",
+      "b": "longevity",
+      "s": "the one everyone fears",
+      "cap": "the fear"
+     }
+    ],
+    "copy": "change with no notice, other people's money, the things under the floorboards. the house people are scared of is the house that **pays the inheritance**. transformation, not doom."
+   },
+   {
+    "eyebrow": "the tell",
+    "quote": {
+     "q": "there is no ~~bad~~ house. there is a house u **haven't read**",
+     "attrib": "the desk"
+    }
+   },
+   {
+    "eyebrow": "one more thing",
+    "cta": {
+     "h": "see which house **ur planets** sit in",
+     "p": "free chart. all twelve, named, no jargon.",
+     "btn": "asktota.com"
+    }
+   }
+  ],
+  "title": "the 12 houses, ranked",
+  "blog": "https://www.asktota.com/blog/12-houses.html",
+  "caption": "ranked the houses by how much they run ur week. the 8th won.\n\n10th is the job u post about. 7th is everyone u argue with, spouse and enemies in the same room. 6th is the job u actually get. 12th is what leaves: money, sleep, secrets. 8th is sudden everything, and also the inheritance.\n\nthere is no bad house. there is a house u haven't read.\n\nsee which house ur planets sit in, free, asktota.com 🦜\n\nwhich house is running ur week rn 👇\n\n#vedicastrology #jyotish #12houses #8thhouse #kundli #astrologyindia #asktota #birthchart #astrologymemes #astrologyapp"
+ },
+ "moon-sign": {
+  "date": "sat, 12 sept",
+  "ground": "mint",
+  "slides": [
+   {
+    "h": "ur sun sign is the ~~cover~~. ur moon sign is the **book**",
+    "save": "save this before the next 'what's ur sign' conversation",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "the moon",
+      "s": "the real u, in jyotish",
+      "cap": "the lead"
+     },
+     {
+      "tone": "pink",
+      "b": "2.25 days",
+      "s": "per rashi",
+      "cap": "how fast"
+     },
+     {
+      "tone": "marigold",
+      "b": "27",
+      "s": "nakshatras",
+      "cap": "the detail"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the west reads the **sun**. india reads the **moon**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "sun",
+      "s": "~30 days per sign",
+      "cap": "the column"
+     },
+     {
+      "tone": "marigold",
+      "d": "tithi",
+      "b": "moon",
+      "s": "2.25 days per sign",
+      "cap": "the rashi"
+     },
+     {
+      "tone": "card",
+      "b": "two answers",
+      "s": "both called 'ur sign'",
+      "cap": "the confusion"
+     }
+    ],
+    "copy": "when an indian astrologer asks ur rashi, they mean ur **moon sign**. the newspaper column uses ur sun. two different planets, two different answers, and everyone uses the same word for both."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "the moon is ur **mind**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "manas",
+      "s": "the mind, in the texts",
+      "cap": "the word"
+     },
+     {
+      "tone": "mint",
+      "b": "how u react",
+      "s": "not how u present",
+      "cap": "what it shows"
+     },
+     {
+      "tone": "card",
+      "b": "2am",
+      "s": "the version of u only u see",
+      "cap": "honestly"
+     }
+    ],
+    "copy": "in jyotish the moon is the karaka of manas, the mind. how u react, what u need to feel safe, what u do at 2am. the sun is the ego. **the moon is the mood**, and the mood is what runs ur week."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "ur dashas start from the **moon**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "27",
+      "s": "nakshatras, one is urs",
+      "cap": "the birth star"
+     },
+     {
+      "tone": "marigold",
+      "b": "120 yrs",
+      "s": "vimshottari cycle",
+      "cap": "the clock"
+     },
+     {
+      "tone": "card",
+      "b": "the moon",
+      "s": "sets where it starts",
+      "cap": "the key"
+     }
+    ],
+    "copy": "vimshottari dasha, the timing system tota uses, starts from the nakshatra ur moon was in at birth. **ur whole life's chapters are timed off the moon.** the sun has nothing to do with it."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "**sade sati** is a moon thing",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "saturn",
+      "b": "7.5 yrs",
+      "s": "saturn's famous stretch",
+      "cap": "the length"
+     },
+     {
+      "tone": "pink",
+      "b": "12 · 1 · 2",
+      "s": "counted from ur moon",
+      "cap": "the houses"
+     },
+     {
+      "tone": "card",
+      "b": "wrong sign",
+      "s": "wrong maths, wrong fear",
+      "cap": "the trap"
+     }
+    ],
+    "copy": "saturn's seven and a half years is counted from ur **moon sign**, not ur sun. if someone told u u are in sade sati and they were going off the newspaper sign, the maths was wrong from the first line."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the **24 degree** problem",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "lagna",
+      "b": "~24°",
+      "s": "ayanamsa, the gap",
+      "cap": "the shift"
+     },
+     {
+      "tone": "mint",
+      "b": "sidereal",
+      "s": "what jyotish uses",
+      "cap": "this side"
+     },
+     {
+      "tone": "card",
+      "b": "tropical",
+      "s": "what the west uses",
+      "cap": "that side"
+     }
+    ],
+    "copy": "jyotish uses the sidereal zodiac, which sits about 24 degrees behind the western one. so ur moon sign here is **often one sign back** from what an app in the west says. neither is wrong. they measure different things."
+   },
+   {
+    "eyebrow": "the tell",
+    "quote": {
+     "q": "ur sun sign is the ~~poster~~. ur moon sign is the **film**",
+     "attrib": "the desk"
+    }
+   },
+   {
+    "eyebrow": "one more thing",
+    "cta": {
+     "h": "find ur moon sign, **free**",
+     "p": "birth time matters here. the moon changes sign every 2.25 days.",
+     "btn": "asktota.com"
+    }
+   }
+  ],
+  "title": "moon sign vs sun sign",
+  "blog": "https://www.asktota.com/blog/sun-moon-rising.html",
+  "caption": "ur sun sign is the cover. ur moon sign is the book.\n\nwhen an indian astrologer asks ur rashi they mean ur moon. the newspaper uses ur sun. two planets, two answers, same word. the moon is ur mind, ur dashas start from it, sade sati is counted from it, and the sidereal zodiac puts it about 24 degrees back from what a western app says.\n\nfind ur moon sign free on asktota.com 🦜 birth time matters, it moves a sign every 2.25 days.\n\ndid ur sign change 👇\n\n#moonsign #vedicastrology #jyotish #rashi #kundli #astrologyindia #asktota #sidereal #nakshatra #astrologyapp"
+ },
+ "dasha-chapters": {
+  "date": "sat, 12 sept",
+  "ground": "marigold",
+  "slides": [
+   {
+    "h": "why ur life changes in **chapters**: dasha, explained",
+    "save": "save this. it explains the year everything changed.",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "120 yrs",
+      "s": "one full cycle",
+      "cap": "the clock"
+     },
+     {
+      "tone": "pink",
+      "b": "9 grahas",
+      "s": "each takes a turn",
+      "cap": "the cast"
+     },
+     {
+      "tone": "mint",
+      "d": "tithi",
+      "b": "ur moon",
+      "s": "sets the start",
+      "cap": "the key"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "vimshottari: **120 years**, nine turns, fixed order",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "ketu 7 · venus 20 · sun 6",
+      "cap": "the first three"
+     },
+     {
+      "tone": "marigold",
+      "b": "moon 10 · mars 7 · rahu 18",
+      "cap": "the middle"
+     },
+     {
+      "tone": "card",
+      "b": "jupiter 16 · saturn 19 · mercury 17",
+      "cap": "the last three"
+     }
+    ],
+    "copy": "every graha gets a fixed number of years, in a fixed order, adding up to 120. u start somewhere in the middle depending on ur moon's nakshatra at birth. that is why **two people the same age are in different chapters**."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "the **mahadasha** is the chapter. the **antardasha** is the page",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "mahadasha",
+      "s": "6 to 20 years",
+      "cap": "the chapter"
+     },
+     {
+      "tone": "mint",
+      "b": "antardasha",
+      "s": "months",
+      "cap": "the page"
+     },
+     {
+      "tone": "card",
+      "b": "pratyantar",
+      "s": "weeks",
+      "cap": "the line"
+     }
+    ],
+    "copy": "inside every big period the nine grahas take smaller turns in the same order. so a venus mahadasha has a **saturn antardasha** inside it, and that is the year things slowed down for no reason u could name."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the **handover** is the year u remember",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "sandhi",
+      "s": "the junction, in the texts",
+      "cap": "the word"
+     },
+     {
+      "tone": "pink",
+      "b": "± 1 yr",
+      "s": "either side of the change",
+      "cap": "the wobble"
+     },
+     {
+      "tone": "card",
+      "b": "job · city · person",
+      "s": "what flips",
+      "cap": "the pattern"
+     }
+    ],
+    "copy": "the switch between two mahadashas is dasha sandhi. the classical texts flag it as unstable. **look back at the year ur life rearranged itself.** there is a decent chance it was one of these."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "mint",
+    "h": "**rahu** 18, **saturn** 19, **venus** 20: the long ones",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "rahu",
+      "s": "ambition, no brakes",
+      "cap": "18 years"
+     },
+     {
+      "tone": "marigold",
+      "d": "saturn",
+      "b": "saturn",
+      "s": "the audit",
+      "cap": "19 years"
+     },
+     {
+      "tone": "card",
+      "b": "venus",
+      "s": "the comfortable one",
+      "cap": "20 years"
+     }
+    ],
+    "copy": "three periods take up 57 of the 120 years, so **most adults are in one of them**. venus is the soft one. rahu is wanting more with no off switch. saturn is where all of it gets inspected."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "a **good** graha in a bad house still runs the house",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "placement",
+      "s": "which house it sits in",
+      "cap": "check 1"
+     },
+     {
+      "tone": "pink",
+      "b": "lordship",
+      "s": "which houses it owns",
+      "cap": "check 2"
+     },
+     {
+      "tone": "card",
+      "b": "strength",
+      "s": "dignity, aspects, all of it",
+      "cap": "check 3"
+     }
+    ],
+    "copy": "which chapter u are in matters less than what that graha is doing in ur chart. a jupiter period with jupiter in the 12th is **not the jupiter period the memes promise**. the chart decides, not the name."
+   },
+   {
+    "eyebrow": "the tell",
+    "quote": {
+     "q": "ur life is not ~~random~~. it is on a **schedule** u never read",
+     "attrib": "the desk"
+    }
+   },
+   {
+    "eyebrow": "one more thing",
+    "cta": {
+     "h": "find ur current dasha, **free**",
+     "p": "tota reads it before it answers a single question. now u can too.",
+     "btn": "asktota.com"
+    }
+   }
+  ],
+  "title": "dasha, explained",
+  "blog": "https://www.asktota.com/blog/vimshottari-dasha.html",
+  "caption": "why did ur life rearrange itself in one year? there is a schedule for that.\n\nvimshottari dasha: nine grahas, fixed years each, 120 in total, and where u start depends on ur moon's nakshatra. the mahadasha is the chapter, the antardasha is the page. the handover between two is the year u remember. rahu, saturn and venus take up 57 of the 120 years, so most adults are in one of them.\n\ntota reads ur dasha before it answers anything. find urs free on asktota.com 🦜\n\nwhich year did everything change for u 👇\n\n#dasha #vimshottari #vedicastrology #jyotish #kundli #astrologyindia #asktota #mahadasha #birthchart #astrologyapp"
+ },
+ "nakshatra-decoder": {
+  "date": "sun, 20 sept",
+  "ground": "mint",
+  "title": "nakshatra, explained",
+  "blog": "https://www.asktota.com/blog/nakshatra.html",
+  "slides": [
+   {
+    "h": "ur sun sign cuts the sky ~~12~~ ways. jyotish cuts it **27**",
+    "save": "save this. ur nakshatra is the placement nobody has ever told u",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nakshatra",
+      "b": "27",
+      "cap": "the cuts"
+     },
+     {
+      "tone": "marigold",
+      "b": "13°20'",
+      "s": "each one, exactly",
+      "cap": "the width"
+     },
+     {
+      "tone": "pink",
+      "b": "the moon",
+      "s": "not the sun",
+      "cap": "what sits in it"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "a nakshatra is **13°20'** of sky",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nakshatra",
+      "b": "360 ÷ 27",
+      "s": "= 13°20' each",
+      "cap": "the maths"
+     },
+     {
+      "tone": "marigold",
+      "b": "1 a day",
+      "s": "the moon's pace",
+      "cap": "how fast"
+     },
+     {
+      "tone": "card",
+      "b": "27.3 days",
+      "s": "one full lap",
+      "cap": "the month"
+     }
+    ],
+    "copy": "same circle, finer ruler. a rashi is 30 degrees, a nakshatra is 13 degrees 20 minutes, and the moon crosses roughly **one a day**. that is why the old system counts in nakshatras and not in months."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "urs is where the ++moon++ was, not the sun",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "kundli",
+      "b": "janma",
+      "s": "nakshatra",
+      "cap": "the name for it"
+     },
+     {
+      "tone": "mint",
+      "b": "birth time",
+      "s": "decides the pada",
+      "cap": "why it's asked"
+     },
+     {
+      "tone": "card",
+      "b": "1 of 27",
+      "s": "u have exactly one",
+      "cap": "urs"
+     }
+    ],
+    "copy": "ur birth nakshatra is the one the **moon** was sitting in when u were born. this is the number a jyotishi asks for first, before ur sun sign, before anything. it is also the one western astrology does not have."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "every nakshatra owns a **graha**. that graha starts ur clock",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "graha9",
+      "b": "9 lords",
+      "s": "across 27",
+      "cap": "the rota"
+     },
+     {
+      "tone": "marigold",
+      "b": "120 yrs",
+      "s": "one full cycle",
+      "cap": "vimshottari"
+     },
+     {
+      "tone": "pink",
+      "b": "ur first",
+      "s": "dasha, and when",
+      "cap": "what it sets"
+     }
+    ],
+    "copy": "this is the part that matters. ur nakshatra's ruling graha decides which **dasha** u were born into and therefore the order and the dates of every period after it. ur whole timeline is unlocked by one placement."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "each one splits again into **4 padas**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "3°20'",
+      "s": "one pada",
+      "cap": "the quarter"
+     },
+     {
+      "tone": "card",
+      "b": "108",
+      "s": "padas in the zodiac",
+      "cap": "the total"
+     },
+     {
+      "tone": "pink",
+      "b": "navamsa",
+      "s": "the pada feeds it",
+      "cap": "where it lands"
+     }
+    ],
+    "copy": "two people born the same week can share a nakshatra and still be nothing alike, because the **pada** is different. the pada is also how ur navamsa chart gets built, which is the one used for marriage."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "where it actually gets **used**",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "tithi",
+      "b": "muhurat",
+      "s": "picking the day",
+      "cap": "no.1"
+     },
+     {
+      "tone": "mint",
+      "b": "matching",
+      "s": "nadi and gana koota",
+      "cap": "no.2"
+     },
+     {
+      "tone": "card",
+      "b": "naming",
+      "s": "the birth syllable",
+      "cap": "no.3"
+     }
+    ],
+    "copy": "ur nakshatra is what the family priest used to pick the naming syllable, and it is 14 of the 36 points in ashtakoota matching. it has been doing real work in ur life already. nobody told u its name."
+   },
+   {
+    "eyebrow": "the tell",
+    "g": "pink",
+    "quote": {
+     "q": "ur sun sign is the ~~headline~~. ur nakshatra is the **byline**",
+     "attrib": "the desk, to everyone who only knows their rashi"
+    }
+   },
+   {
+    "eyebrow": "one more thing",
+    "cta": {
+     "h": "find ur nakshatra, **free**",
+     "p": "birth date, time, place. it takes 30 seconds and no course.",
+     "btn": "asktota.com"
+    }
+   }
+  ],
+  "caption": "u know ur sun sign. u probably know ur moon sign. u almost certainly do not know ur nakshatra, and it is the one a jyotishi asks for first 🌙\n\nwestern astrology cuts the sky into 12. jyotish cuts the same circle into 27, at 13°20' each, and the moon crosses about one a day. the one it was sitting in when u were born is ur janma nakshatra.\n\nhere is why it is not trivia: every nakshatra is ruled by a graha, and that graha decides which dasha u were born into. ur entire vimshottari timeline, all 120 years of it, is set by that one placement. it also carries 14 of the 36 points in marriage matching.\n\nsave this. then go find urs, free on asktota.com 🦜\n\ncomment ur nakshatra if u already know it 👇\n\n#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #dasha #moonsign #astrologyapp"
+ },
+ "navagraha-jobs": {
+  "date": "tue, 22 sept",
+  "ground": "stock",
+  "title": "the nine grahas, and the job each one has",
+  "blog": "https://www.asktota.com/blog/nine-planets.html",
+  "slides": [
+   {
+    "h": "nine grahas. **nine jobs.** not nine lucky rocks",
+    "save": "save this. it is the whole cast, on one screen",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "graha9",
+      "b": "9",
+      "cap": "the cast"
+     },
+     {
+      "tone": "marigold",
+      "b": "0",
+      "s": "uranus, neptune, pluto",
+      "cap": "not in it"
+     },
+     {
+      "tone": "pink",
+      "b": "2",
+      "s": "are not planets at all",
+      "cap": "the twist"
+     },
+     {
+      "tone": "card",
+      "img": "tota.png",
+      "cap": "the desk"
+     }
+    ],
+    "stamp": [
+     "ask",
+     "tota"
+    ]
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "the seven u can **see**",
+    "tiles": [
+     {
+      "tone": "card",
+      "b": "sun · moon",
+      "s": "the self, the mind",
+      "cap": "the two lights"
+     },
+     {
+      "tone": "mint",
+      "b": "mars · mercury",
+      "s": "the nerve, the mouth",
+      "cap": "the fast two"
+     },
+     {
+      "tone": "card",
+      "b": "jupiter · venus · saturn",
+      "s": "the teacher, the taste, the limit",
+      "cap": "the slow three"
+     }
+    ],
+    "copy": "graha does not mean planet. it means **the one that seizes**. the list is what is visible from earth with no telescope, which is why uranus, neptune and pluto were never in it and are not missing."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "pink",
+    "h": "the two that are not ~~planets~~ at all",
+    "tiles": [
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "rahu",
+      "s": "the north node",
+      "cap": "the craving"
+     },
+     {
+      "tone": "card",
+      "d": "nodes",
+      "b": "ketu",
+      "s": "the south node",
+      "cap": "the letting go"
+     },
+     {
+      "tone": "marigold",
+      "b": "180°",
+      "s": "always exactly opposite",
+      "cap": "the axis"
+     }
+    ],
+    "copy": "rahu and ketu are the two points where the moon's path crosses the sun's. they are **maths, not rock**. that is also why eclipses only happen near them, and why the old stories give them a head and a body."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "one job each, in ++one line++",
+    "rows": [
+     [
+      "sun",
+      "who u are when nobody is impressed"
+     ],
+     [
+      "moon",
+      "how u actually feel about it"
+     ],
+     [
+      "mars",
+      "what u are willing to fight for"
+     ],
+     [
+      "mercury",
+      "how u explain urself"
+     ],
+     [
+      "jupiter",
+      "what u believe, and who u lecture"
+     ],
+     [
+      "venus",
+      "what u want, and what u spend on"
+     ],
+     [
+      "saturn",
+      "what u only get by earning it slowly"
+     ],
+     [
+      "rahu",
+      "what u cannot stop reaching for"
+     ],
+     [
+      "ketu",
+      "what u are already done with"
+     ]
+    ],
+    "copy": "nine jobs, nine departments. the graha that is strong in ur chart is the department with the **budget**."
+   },
+   {
+    "eyebrow": "AUTO",
+    "g": "marigold",
+    "h": "benefic and malefic is not **good and bad**",
+    "tiles": [
+     {
+      "tone": "mint",
+      "b": "shubha",
+      "s": "jupiter, venus, strong moon",
+      "cap": "the soft ones"
+     },
+     {
+      "tone": "card",
+      "b": "krura",
+      "s": "saturn, mars, rahu, ketu",
+      "cap": "the hard ones"
+     },
+     {
+      "tone": "pink",
+      "b": "mercury",
+      "s": "becomes whatever it sits with",
+      "cap": "the chameleon"
+     }
+    ],
+    "copy": "saturn is called cruel because it is **slow and it does not negotiate**, not because it hates u. a hard graha in a good house builds something. a soft graha in a weak one just makes u comfortable while nothing happens."
+   },
+   {
+    "eyebrow": "AUTO",
+    "h": "each one gets **years** of ur life",
+    "rows": [
+     [
+      "venus",
+      "20 yrs"
+     ],
+     [
+      "saturn",
+      "19 yrs"
+     ],
+     [
+      "rahu",
+      "18 yrs"
+     ],
+     [
+      "mercury",
+      "17 yrs"
+     ],
+     [
+      "jupiter",
+      "16 yrs"
+     ],
+     [
+      "moon",
+      "10 yrs"
+     ],
+     [
+      "mars",
+      "7 yrs"
+     ],
+     [
+      "ketu",
+      "7 yrs"
+     ],
+     [
+      "sun",
+      "6 yrs"
+     ],
+     [
+      "the full cycle",
+      "**120 yrs**"
+     ]
+    ],
+    "copy": "vimshottari dasha hands ur life to one graha at a time, in a fixed order. **u are inside one right now**, and which one depends on the nakshatra ur moon was in."
+   },
+   {
+    "eyebrow": "the tell",
+    "g": "pink",
+    "quote": {
+     "q": "the grahas do not ~~do things to u~~. they say **when**",
+     "attrib": "the desk, to everyone blaming mercury"
+    }
+   },
+   {
+    "eyebrow": "one more thing",
+    "cta": {
+     "h": "see which graha is **running u**",
+     "p": "ur dasha, ur houses, ur nine. free, no course, no crystal.",
+     "btn": "asktota.com"
+    }
+   }
+  ],
+  "caption": "nine grahas. nine jobs. two of them are not even planets 🦜\n\ngraha does not mean planet, it means the one that seizes. the list is everything visible from earth without a telescope, plus rahu and ketu, which are the two points where the moon's path crosses the sun's. maths, not rock. that is why eclipses happen there.\n\nthe part worth saving is the last one: vimshottari dasha gives each graha a fixed number of years of ur life. venus 20, saturn 19, rahu 18, mercury 17, jupiter 16, moon 10, mars 7, ketu 7, sun 6. 120 years, in a fixed order, and u are sitting inside one of them right now.\n\nwhich one depends on the nakshatra ur moon was in when u were born.\n\nfind urs free on asktota.com\n\ncomment the graha u think is running u 👇\n\n#navagraha #vedicastrology #jyotish #kundli #astrologyindia #asktota #rahuketu #dasha #birthchart #astrologyapp"
  }
 }

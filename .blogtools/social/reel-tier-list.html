@@ -1,0 +1,158 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+ /* Reel 09 - the tier list. 1080x1920, 270 frames at 30fps = 9s, loops.
+    Six chips fly onto an S/A/B/C/F board, one a second, each with a one-line reason.
+    The last chip is "ur excuses" and it goes straight to F. Same rules as reels 02
+    and 04: pure function of the frame, hard cuts, no fades, Tota bobs 4px. */
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--stock:#F4EEDD;--ink:#1E3A2A;--cream:#FBF3E0;
+       --marigold:#FFD24A;--muted:#5E6E5E;--mint:#DFF2E4;--pink:#F8D3E0;--pink-ink:#C2588A;
+       --parrot:#178A4C}
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
+ #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);
+   background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);background-size:50px 50px}
+
+ .masthead{position:absolute;left:48px;top:120px;width:984px;height:140px;background:var(--ink);
+   display:flex;align-items:center;justify-content:center;box-shadow:14px 14px 0 rgba(30,58,42,.28)}
+ .masthead span{color:var(--cream);font-weight:800;font-size:54px;letter-spacing:.16em;text-transform:uppercase}
+ #deskbar{position:absolute;left:48px;top:268px;width:984px;height:66px;overflow:hidden}
+ #deskbar .fill{position:absolute;inset:0;background:var(--marigold);border:6px solid var(--ink);
+   display:flex;align-items:center;justify-content:center;transform-origin:left center}
+ #deskbar b{font-weight:800;font-size:30px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);white-space:nowrap}
+
+ /* the hook */
+ .hd{position:absolute;left:72px;width:936px;top:700px}
+ .l{font-weight:800;line-height:1.02;letter-spacing:-.035em;text-transform:lowercase;color:var(--ink);white-space:nowrap}
+ #l1{font-size:118px}
+ #l2{font-size:96px;margin-top:10px;display:inline-block;padding:2px 26px 10px;border-radius:999px}
+
+ /* the board: five rows, label on the left, chips slot in on the right */
+ #board{position:absolute;left:72px;top:400px;width:936px;border:8px solid var(--ink);
+   background:var(--stock);box-shadow:0 14px 0 var(--ink)}
+ .row{display:flex;height:150px;border-bottom:6px solid var(--ink)}
+ .row:last-child{border-bottom:0}
+ .row .lab{width:150px;flex:none;display:flex;align-items:center;justify-content:center;
+   font-weight:800;font-size:92px;color:var(--ink);border-right:6px solid var(--ink)}
+ .row.s .lab{background:var(--pink-ink);color:var(--cream)}
+ .row.a .lab{background:var(--marigold)}
+ .row.b .lab{background:var(--mint)}
+ .row.c .lab{background:var(--cream)}
+ .row.f .lab{background:var(--ink);color:var(--cream)}
+ .row .slots{position:relative;flex:1}
+ .chip{position:absolute;top:24px;height:102px;width:236px;background:var(--cream);border:7px solid var(--ink);
+   border-radius:999px;box-shadow:0 8px 0 var(--ink);display:flex;align-items:center;justify-content:center;
+   font-weight:800;font-size:44px;letter-spacing:-.02em;text-transform:lowercase;color:var(--ink);white-space:nowrap}
+ .chip.hot{background:var(--marigold)}
+ .chip.bad{background:var(--pink-ink);color:var(--cream)}
+
+ /* the reason line under the board */
+ #why{position:absolute;left:72px;top:1220px;width:936px;height:300px;display:flex;flex-direction:column}
+ #why .kick{font-weight:800;font-size:26px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+   border-bottom:4px solid var(--ink);padding-bottom:12px;display:flex;justify-content:space-between}
+ #why q{flex:1;display:flex;align-items:center;font-weight:800;font-size:66px;line-height:1.06;
+   letter-spacing:-.03em;color:var(--ink);quotes:none;text-wrap:balance}
+
+ .sub{position:absolute;left:72px;top:1560px;width:660px;font-weight:600;font-size:44px;line-height:1.24;color:var(--muted)}
+ #tota{position:absolute;right:20px;bottom:112px;width:330px}
+ .foot{position:absolute;left:72px;bottom:92px;font-weight:800;font-size:46px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--ink)}
+ .hidden{visibility:hidden}
+</style></head><body>
+<div id="stage">
+  <div class="masthead" id="mast"><span>the daily tota</span></div>
+  <div id="deskbar"><div class="fill" id="deskfill"><b>grahas &middot; ranked &middot; no appeal</b></div></div>
+
+  <div class="hd" id="head">
+    <div class="l" id="l1">ranking ur grahas.</div>
+    <div class="l" id="l2">no one is safe.</div>
+  </div>
+
+  <div id="board">
+    <div class="row s"><div class="lab">S</div><div class="slots" id="r-s"></div></div>
+    <div class="row a"><div class="lab">A</div><div class="slots" id="r-a"></div></div>
+    <div class="row b"><div class="lab">B</div><div class="slots" id="r-b"></div></div>
+    <div class="row c"><div class="lab">C</div><div class="slots" id="r-c"></div></div>
+    <div class="row f"><div class="lab">F</div><div class="slots" id="r-f"></div></div>
+  </div>
+
+  <div id="why">
+    <div class="kick"><b id="whyno">no. 01</b><span id="whytier">placed: s tier</span></div>
+    <q id="whyq"></q>
+  </div>
+
+  <div class="sub" id="sub">ur chart ranks them differently. that is the point.</div>
+  <img id="tota" src="tota.png" alt="">
+  <div class="foot" id="foot">asktota.com</div>
+</div>
+<script>
+const $=id=>document.getElementById(id),
+      cl=(v,a,b)=>Math.max(a,Math.min(b,v)),
+      p=(f,a,b)=>cl((f-a)/(b-a),0,1);
+const TOTAL=270;
+
+// six chips. cut is the frame the chip starts flying, it lands 3 frames later, no easing.
+// tier is the row, q is the reason that shows under the board while this chip is the newest.
+const BEATS=[
+ {cut:42,  tier:'s', n:'saturn',     q:'makes u qualify for it first. then hands it over late.'},
+ {cut:73,  tier:'s', n:'rahu',       q:'the reason there is a 3am cart with nine things in it.'},
+ {cut:104, tier:'b', n:'mercury',    q:'three weeks, three times a year. overrated. sorry.'},
+ {cut:135, tier:'a', n:'venus',      q:'bought the plant. bought a second plant for the plant.'},
+ {cut:166, tier:'c', n:'the moon',   q:'cried at 2:14am. the reason was the moon.'},
+ {cut:210, tier:'f', n:'ur excuses', q:'blamed all of the above. the sky was busy.', bad:true},
+];
+const SFX = BEATS.flatMap(b => [['whoosh', b.cut, 0.7], ['stamp', b.cut+3, b.bad ? 1.0 : 0.85]])
+  .concat([['thud', 2, 0.9], ['thud', 210, 0.9], ['stamp', 240, 1.0]]);
+
+// build one chip per beat up front so the DOM is stable across frames
+const slotX=[20, 276, 532];
+const chips = BEATS.map((b,i)=>{
+  const c=document.createElement('div'); c.className='chip'+(b.bad?' bad':'')+(b.tier==='s'?' hot':'');
+  c.textContent=b.n; $('r-'+b.tier).appendChild(c);
+  b.slot = BEATS.slice(0,i).filter(x=>x.tier===b.tier).length;
+  return c;
+});
+
+function render(f){
+  const my = f<4 ? -300+304*p(f,0,3) : (f<7 ? 4-4*p(f,4,6) : 0);
+  $('mast').style.transform=`translateY(${my}px)`;
+  $('deskfill').style.transform=`scaleX(${p(f,8,13)})`;
+  $('deskbar').classList.toggle('hidden', f<8);
+
+  $('l1').classList.toggle('hidden', f<14);
+  $('l2').classList.toggle('hidden', f<22);
+  $('l2').style.background = f<22 ? 'transparent' : 'var(--marigold)';
+  $('head').classList.toggle('hidden', f>=BEATS[0].cut);
+
+  const on = f>=BEATS[0].cut;
+  $('board').classList.toggle('hidden', !on);
+  $('why').classList.toggle('hidden', !on);
+
+  let cur=null;
+  BEATS.forEach((b,i)=>{
+    const c=chips[i];
+    if(f<b.cut){ c.classList.add('hidden'); return; }
+    c.classList.remove('hidden');
+    cur=b;
+    // flies in from off the right edge, three frames, straight line, then one frame of overshoot
+    const u=p(f,b.cut,b.cut+3), k=f-(b.cut+3);
+    const x0=slotX[b.slot], x=x0 + (1100-x0)*(1-u);
+    const sc = k===0 ? 1.06 : k===1 ? 0.98 : 1;
+    c.style.left=x+'px'; c.style.transform=`scale(${sc})`;
+  });
+  if(cur){
+    const i=BEATS.indexOf(cur);
+    $('whyno').textContent=`no. 0${i+1}`;
+    $('whytier').textContent = cur.bad ? 'placed: f. no appeal' : `placed: ${cur.tier} tier`;
+    $('whyq').textContent=cur.q;
+    $('whytier').style.color = cur.bad ? 'var(--pink-ink)' : 'var(--muted)';
+  }
+
+  $('sub').classList.toggle('hidden', f<240);
+  $('foot').classList.toggle('hidden', f<240);
+  $('tota').style.bottom = (112+Math.sin(f/37.5*Math.PI*2)*4)+'px';
+}
+render(0); window.render=render; window.TOTAL=TOTAL; window.SFX=SFX;
+</script></body></html>

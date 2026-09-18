@@ -1,0 +1,197 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+ /* Reel 04 - the excuse desk. 1080x1920, 270 frames at 30fps = 9s, loops.
+    Same rules as reel 02: every element is a pure function of the frame number,
+    hard cuts only, no fades, Tota bobs 4px over 1250ms per BRAND_DESIGN_BIBLE 12.4. */
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--stock:#F4EEDD;--halftone:#E3D9C0;
+       --ink:#1E3A2A;--cream:#FBF3E0;--marigold:#FFD24A;--muted:#5E6E5E;
+       --mint:#DFF2E4;--pink:#F8D3E0;--pink-ink:#C2588A;--parrot:#178A4C}
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
+ #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);
+   background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);background-size:50px 50px}
+
+ /* masthead + the desk bar under it */
+ .masthead{position:absolute;left:48px;top:120px;width:984px;height:140px;background:var(--ink);
+   display:flex;align-items:center;justify-content:center;box-shadow:14px 14px 0 rgba(30,58,42,.28)}
+ .masthead span{color:var(--cream);font-weight:800;font-size:54px;letter-spacing:.16em;text-transform:uppercase}
+ #deskbar{position:absolute;left:48px;top:268px;width:984px;height:66px;overflow:hidden}
+ #deskbar .fill{position:absolute;inset:0;background:var(--marigold);border:6px solid var(--ink);
+   display:flex;align-items:center;justify-content:center;transform-origin:left center}
+ #deskbar b{font-weight:800;font-size:30px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink);
+   white-space:nowrap}
+
+ /* the hook */
+ .hd{position:absolute;left:72px;width:936px;top:700px}
+ .l{font-weight:800;line-height:1.02;letter-spacing:-.035em;text-transform:lowercase;
+    color:var(--ink);position:relative;white-space:nowrap}
+ #l1{font-size:150px}
+ #l2{font-size:96px;margin-top:8px;display:inline-block;padding:2px 26px 10px;border-radius:999px}
+
+ /* the confession clipping */
+ #card{position:absolute;left:72px;top:400px;width:936px;height:330px;background:var(--stock);
+   border:8px solid var(--ink);box-shadow:0 14px 0 var(--ink);padding:26px 40px 30px;
+   background-image:radial-gradient(var(--halftone) 2.2px,transparent 2.4px);background-size:7px 7px;
+   display:flex;flex-direction:column}
+ #card .kick{display:flex;justify-content:space-between;align-items:baseline;
+   border-bottom:4px solid var(--ink);padding-bottom:12px}
+ #card .kick b{font-weight:800;font-size:26px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+ #card .kick span{font-weight:700;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+ #card q{flex:1;display:flex;align-items:center;font-weight:800;font-size:76px;line-height:1.05;
+   letter-spacing:-.03em;color:var(--ink);quotes:none;text-wrap:balance}
+
+ /* the fault meter */
+ #meter{position:absolute;left:72px;top:800px;width:936px;height:230px}
+ #meter .ends{display:flex;justify-content:space-between;align-items:baseline}
+ #meter .ends span{font-weight:800;font-size:38px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+ #meter .track{position:absolute;left:0;right:0;top:78px;height:44px;background:var(--cream);
+   border:7px solid var(--ink);border-radius:999px;box-shadow:0 9px 0 var(--ink);overflow:hidden}
+ #meter .track i{position:absolute;left:0;top:0;bottom:0;background:var(--marigold);
+   border-right:6px solid var(--ink)}
+ #meter .ticks{position:absolute;left:0;right:0;top:140px;height:26px}
+ #meter .ticks i{position:absolute;top:0;width:5px;height:18px;background:var(--muted);opacity:.5;
+   transform:translateX(-50%)}
+ #needle{position:absolute;top:52px;width:34px;height:96px;background:var(--marigold);
+   border:7px solid var(--ink);border-radius:12px;box-shadow:0 8px 0 var(--ink);
+   transform:translateX(-50%)}
+ #verdict{position:absolute;left:0;right:0;top:184px;text-align:center;font-weight:800;font-size:34px;
+   letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+
+ /* the stamp: the graha that gets the blame */
+ #stamp{position:absolute;left:72px;top:1090px;width:640px;padding:20px 34px 26px;
+   background:var(--marigold);border:9px solid var(--ink);box-shadow:0 14px 0 var(--ink);
+   transform-origin:left top}
+ #stamp b{display:block;font-weight:800;font-size:96px;line-height:1;letter-spacing:-.02em;
+   text-transform:lowercase;color:var(--ink)}
+ #stamp small{display:block;margin-top:8px;font-weight:700;font-size:28px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--ink);opacity:.72}
+ #stamp.guilty{background:var(--pink-ink)}
+ #stamp.guilty b,#stamp.guilty small{color:var(--cream)}
+
+ .sub{position:absolute;left:72px;top:1560px;width:660px;font-weight:600;font-size:44px;
+   line-height:1.24;color:var(--muted)}
+ #tota{position:absolute;right:20px;bottom:112px;width:330px}
+ .foot{position:absolute;left:72px;bottom:92px;font-weight:800;font-size:46px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--ink)}
+ .hidden{visibility:hidden}
+</style></head><body>
+<div id="stage">
+  <div class="masthead" id="mast"><span>the daily tota</span></div>
+  <div id="deskbar"><div class="fill" id="deskfill"><b>the excuse desk &middot; open 24/7</b></div></div>
+
+  <div class="hd" id="head">
+    <div class="l" id="l1">not ur fault.</div>
+    <div class="l" id="l2">allegedly.</div>
+  </div>
+
+  <div id="card">
+    <div class="kick"><b id="cardno">confession no. 01</b><span>filed today</span></div>
+    <q id="cardq">left them on read. six days.</q>
+  </div>
+
+  <div id="meter">
+    <div class="ends"><span>it was u</span><span>it was the sky</span></div>
+    <div class="track"><i id="fill"></i></div>
+    <div class="ticks" id="ticks"></div>
+    <div id="needle"></div>
+    <div id="verdict">the desk has ruled</div>
+  </div>
+
+  <div id="stamp"><b>mercury</b><small>retrograde &middot; blame accepted</small></div>
+
+  <div class="sub" id="sub">we do the maths. u do the texting.</div>
+  <img id="tota" src="tota.png" alt="">
+  <div class="foot" id="foot">asktota.com</div>
+</div>
+<script>
+const $=id=>document.getElementById(id),
+      cl=(v,a,b)=>Math.max(a,Math.min(b,v)),
+      p=(f,a,b)=>cl((f-a)/(b-a),0,1),
+      ease=u=>1-Math.pow(1-u,3);
+const TOTAL=270;
+
+// the four confessions, then the turn. cut is the frame the clipping hard-cuts in,
+// stamp is the frame the verdict lands, x is where the needle settles (0 = u, 1 = the sky).
+const BEATS=[
+ {cut:42,  stamp:62,  x:0.93, q:'left them on read. six days.',      b:'mercury',  s:'retrograde &middot; blame accepted'},
+ {cut:90,  stamp:110, x:0.88, q:'cried at 2:14am. no reason.',       b:'the moon', s:'4th house &middot; blame accepted'},
+ {cut:138, stamp:158, x:0.90, q:'bought a fourth plant.',            b:'venus',    s:'obviously &middot; blame accepted'},
+ {cut:186, stamp:206, x:0.86, q:'quit on a monday. no plan.',        b:'mars',     s:'always mars &middot; blame accepted'},
+ {cut:228, stamp:242, x:0.06, q:'texted them again anyway.',          b:'that was u', s:'the sky was busy &middot; denied', guilty:true},
+];
+
+// meter geometry, in the 936px-wide #meter box
+const MX0=34, MX1=902;
+$('ticks').innerHTML = Array.from({length:9},(_,i)=>
+  `<i style="left:${MX0+(MX1-MX0)*i/8}px"></i>`).join('');
+
+function beatAt(f){ let cur=null; for(const b of BEATS) if(f>=b.cut) cur=b; return cur; }
+
+function render(f){
+  // masthead snaps down in 4 frames, overshoots 4px, settles. no fade, ever.
+  const my = f<4 ? -300+304*p(f,0,3) : (f<7 ? 4-4*p(f,4,6) : 0);
+  $('mast').style.transform=`translateY(${my}px)`;
+
+  // the desk bar wipes left to right over 180ms
+  const dw=p(f,8,13);
+  $('deskfill').style.transform=`scaleX(${dw})`;
+  $('deskbar').classList.toggle('hidden', f<8);
+
+  // the hook, two hard cuts. line 2 gets the marigold pill on the cut, not a wipe,
+  // because at 96px a wipe reads as a fade at this distance.
+  $('l1').classList.toggle('hidden', f<14);
+  $('l2').classList.toggle('hidden', f<22);
+  $('l2').style.background = f<22 ? 'transparent' : 'var(--marigold)';
+  // the hook clears when the first confession lands, so the eye has one job
+  $('head').classList.toggle('hidden', f>=BEATS[0].cut);
+
+  const b=beatAt(f);
+  const on = !!b;
+  $('card').classList.toggle('hidden', !on);
+  $('meter').classList.toggle('hidden', !on);
+  $('stamp').classList.toggle('hidden', !on || f < b.stamp);
+
+  if(on){
+    const i=BEATS.indexOf(b);
+    $('cardno').textContent = i<4 ? `confession no. 0${i+1}` : 'confession no. 05';
+    $('cardq').innerHTML = b.q;
+
+    // the clipping punches in: 6px up over 4 frames off the cut, then holds
+    const punch = 6*(1-p(f,b.cut,b.cut+4));
+    $('card').style.transform=`translateY(${-punch}px)`;
+
+    // the needle swings from wherever it was to this beat's verdict.
+    const prev = i>0 ? BEATS[i-1].x : 0.5;
+    const swing = p(f, b.cut+2, b.cut+14);
+    // the last one is a slam, not a swing: three frames, no easing out
+    const u = b.guilty ? p(f,b.cut,b.cut+3) : ease(swing);
+    const x = prev + (b.x-prev)*u;
+    const nx = MX0+(MX1-MX0)*x;
+    $('needle').style.left = nx+'px';
+    // the bar fills up to wherever the needle stopped, so the meter reads as a meter
+    $('fill').style.width = Math.max(0, nx-8)+'px';
+    $('fill').style.background = b.guilty ? 'var(--pink-ink)' : 'var(--marigold)';
+    $('needle').style.background = b.guilty ? 'var(--pink-ink)' : 'var(--marigold)';
+    $('verdict').textContent = b.guilty ? 'the desk declines' : 'the desk has ruled';
+
+    // the stamp lands hard: one frame at 1.06, one at 0.98, then 1. no bounce curve.
+    const k = f-b.stamp;
+    const sc = k===0 ? 1.06 : k===1 ? 0.98 : 1;
+    const rot = b.guilty ? 3 : -3;
+    $('stamp').style.transform=`rotate(${rot}deg) scale(${sc})`;
+    $('stamp').classList.toggle('guilty', !!b.guilty);
+    $('stamp').innerHTML = `<b>${b.b}</b><small>${b.s}</small>`;
+  }
+
+  // the payoff line and the url only exist after the turn
+  $('sub').classList.toggle('hidden', f<250);
+  $('foot').classList.toggle('hidden', f<250);
+
+  // tota bobs 4px over 1250ms, per the bible
+  $('tota').style.bottom = (112+Math.sin(f/37.5*Math.PI*2)*4)+'px';
+}
+render(0); window.render=render; window.TOTAL=TOTAL;
+</script></body></html>

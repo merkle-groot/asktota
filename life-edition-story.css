@@ -1541,6 +1541,9 @@
 
   .full-reading-stack .desk-visual {
     grid-column: 1;
+    /* life-edition-demo.css turns .desk-visual into a two-column grid on mobile;
+       reset to one column so the artwork centers instead of filling the left half. */
+    grid-template-columns: minmax(0, 1fr);
     width: 100%;
     margin-inline: auto;
     justify-items: center;
@@ -1552,8 +1555,6 @@
     max-height: none;
     margin-inline: auto;
     justify-self: center;
-    transform: translateX(20%) scale(1.12);
-    transform-origin: center;
   }
 
   .life-page.demo-body .full-reading-stack .desk-copy,

@@ -851,7 +851,7 @@ section[data-screen][hidden] { display: none; }
 @media (max-width: 560px) {
   .life-page.demo-body .partial-desk-stack .unlock-card-cta {
     width: auto;
-    margin: 30px 12px 48px;
+    margin: 30px 24px 48px;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-banner {
@@ -893,44 +893,55 @@ section[data-screen][hidden] { display: none; }
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    border-top: 0;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li {
-    grid-template-columns: 32px minmax(0, 1fr);
+    grid-template-columns: 44px minmax(0, 1fr) auto;
     display: grid;
-    grid-template-rows: auto auto;
-    gap: 2px 6px;
-    padding: 6px;
+    grid-template-rows: minmax(44px, auto);
+    gap: 8px 10px;
+    align-items: center;
+    padding: 9px 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-card-art {
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     aspect-ratio: auto;
     grid-column: 1;
-    grid-row: 1 / -1;
+    grid-row: 1;
+    border-radius: 8px;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text {
     grid-column: 2;
     grid-row: 1;
+    min-width: 0;
+    margin-top: 0;
+    gap: 3px;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li > i {
-    grid-column: 2;
-    grid-row: 2;
-    margin-top: 0;
+    grid-column: 3;
+    grid-row: 1;
+    align-self: center;
+    margin: 0;
+    white-space: nowrap;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-text b {
-    font-size: 11px;
+    font-size: 13px;
+    line-height: 1.15;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-desk-list li > i {
-    padding: 3px 5px;
-    font-size: 7px;
+    padding: 5px 7px;
+    font-size: 8px;
   }
 
   .life-page.demo-body .partial-desk-stack .unlock-card-cta .unlock-ticket-button {
@@ -1157,5 +1168,102 @@ section[data-screen][hidden] { display: none; }
     gap: 10px;
     align-self: start;
     padding-top: 0;
+  }
+
+  .life-page section[data-screen="payment"] .flow-intro,
+  .life-page section[data-screen="otp"] .flow-intro {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .life-page section[data-screen="payment"] .flow-intro > *,
+  .life-page section[data-screen="otp"] .flow-intro > * {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .life-page section[data-screen="payment"] .flow-intro > .back-link,
+  .life-page section[data-screen="otp"] .flow-intro > .back-link {
+    align-self: flex-start;
+    margin-inline: 0;
+    text-align: left;
+  }
+
+  .life-page section[data-screen="payment"] .flow-intro .subtitle,
+  .life-page section[data-screen="otp"] .flow-intro .subtitle {
+    margin-top: 8px;
+  }
+
+  /* Keep the WhatsApp gate inside the narrow mobile reading column. */
+  .life-page section[data-screen="payment"],
+  .life-page section[data-screen="otp"],
+  .life-page .payment-column,
+  .life-page .payment-card,
+  .life-page .payment-card form {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .life-page section:is([data-screen="payment"], [data-screen="otp"]) {
+    overflow-x: hidden;
+  }
+
+  .life-page .payment-card {
+    overflow: visible;
+    padding-inline: 18px;
+  }
+
+  .life-page .payment-card .field,
+  .life-page .payment-card .pill-button {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .life-page .payment-card .phone-field input {
+    width: 0;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .life-page .payment-card .field-hint,
+  .life-page .payment-column > .fine {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .life-page .payment-card .pill-button {
+    padding-inline: 12px;
+    white-space: normal;
+  }
+
+  .life-page .payment-card .otp-cells {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .life-page .payment-card {
+    padding-inline: 14px;
+  }
+
+  .life-page .payment-card .phone-field {
+    gap: 7px;
+  }
+
+  .life-page .payment-card .phone-prefix {
+    padding-right: 7px;
+  }
+
+  .life-page .payment-card .pill-button {
+    font-size: 14px;
   }
 }

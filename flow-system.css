@@ -22,6 +22,9 @@
   outline: 3px solid var(--flow-focus);
   outline-offset: 4px;
 }
+/* Screen headings receive focus after a view change for assistive technology;
+   they are not interactive controls and should not show a large focus ring. */
+.life-page :where(h1, h2, h3)[tabindex="-1"]:focus { outline: none; }
 [hidden] { display: none !important; }
 .life-page { background: var(--paper); font-family: var(--flow-font); }
 .life-page .nav { position: relative; background: var(--paper); border-bottom: 1px solid var(--flow-rule); box-shadow: none; }
@@ -100,13 +103,19 @@
   .life-page .nav-inner { min-height: 66px; }.life-page .nav .dateline { display: none; }
   .flow-progress { padding: 20px 0; margin-bottom: 26px; }.flow-progress ol { width: 100%; justify-content: space-between; gap: 8px; }.flow-progress li { font-size: 11px; gap: 5px; }.flow-progress li span { width: 24px; height: 24px; }
   .life-page section:is([data-screen="details"], [data-screen="payment"], [data-screen="otp"], [data-screen="checkout"]) { grid-template-columns: 1fr; gap: 24px; }
-  .life-page .details-hero, .flow-intro { padding: 0; position: relative; gap: 14px; }.life-page .details-hero-copy { gap: 14px; }
-  .life-page .details-mascot, .flow-art { width: 140px; height: 140px; align-self: center; margin: 0 auto; }
-  .life-page .headline { font-size: clamp(36px, 8vw, 50px); }.life-page .subtitle { font-size: 16px; max-width: 42ch; }
+  .life-page .details-hero, .flow-intro { padding: 0; position: relative; gap: 14px; }.life-page .details-hero { align-items: center; }.life-page .details-hero-copy { width: 100%; align-items: center; gap: 14px; text-align: center; }.life-page .details-hero-copy .intro-kicker { justify-self: center; }
+  .life-page .details-mascot, .flow-art { width: 190px; height: 190px; align-self: center; margin: 0 auto; }
+  .life-page .details-card { width: calc(100% - 16px); justify-self: center; gap: 10px; padding: 22px 12px 14px; }
+  .life-page .details-card form { gap: 6px; }
+  .life-page .headline { font-size: clamp(36px, 8vw, 50px); }.life-page .subtitle { max-width: 42ch; margin-inline: auto; font-size: 16px; text-align: center; }
   .flow-caption { display: none; }
   .life-page :is(.privacy, [data-screen] > .fine) { grid-column: 1; }
   .life-page .flow-intro .flow-art { display: none; }
   .life-page [data-screen="loader"] { margin: 24px auto; min-height: 440px; }
+  /* The loader status reads as a caption here, not a page headline:
+     the generic .headline clamp above would otherwise blow it up to 36px+. */
+  .life-page .loader-copy { font-size: clamp(21px, 5.5vw, 26px); }
+  .life-page .loader-note { font-size: 13px; }
   .flow-footer { gap: 16px; }.flow-footer > span { display: none; }
   .demo-body .full-intro h2 { font-size: clamp(36px, 11vw, 56px); overflow-wrap: anywhere; }
 }

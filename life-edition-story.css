@@ -260,7 +260,7 @@
   color: var(--paper);
   font-size: clamp(47px, 6.7vw, 94px);
   font-weight: 800;
-  letter-spacing: -.085em;
+  letter-spacing: -.03em;
   line-height: .88;
 }
 
@@ -713,6 +713,14 @@
   border-top: 1px solid var(--story-line);
 }
 
+/* Treat the narrow tablet/mobile reading width as a single-column layout too. */
+@media (max-width: 1000px) {
+  .three-intro,
+  .demo-body .life-three .three-intro { grid-template-columns: 1fr; }
+  .three-portrait,
+  .demo-body .life-three .three-portrait { display: none !important; }
+}
+
 @media (max-width: 800px) {
   .story-shell { padding-inline: 18px; }
   .story-masthead-line { grid-template-columns: 1fr 1fr; font-size: 8px; }
@@ -729,7 +737,8 @@
   .three-intro { grid-template-columns: 1fr; gap: 18px; padding-block: 30px; }
   .three-intro-copy { min-height: 300px; padding: 30px 24px; }
   .three-intro h2 { font-size: clamp(45px, 12vw, 70px); }
-  .three-portrait { min-height: 270px; width: min(100%, 330px); margin-inline: auto; }
+  .three-portrait,
+  .demo-body .life-three .three-portrait { display: none; }
   .three-list { grid-template-columns: 1fr; margin-right: 5px; }
   .three-note-card { min-height: 0; padding: 26px 20px 24px; }
   .three-list h3 { max-width: 20ch; margin: 34px 0 14px; font-size: clamp(27px, 7vw, 36px); }
@@ -1463,7 +1472,7 @@
   .newspaper-page-preview .unlock-card-cta,
   .demo-body .partial-desk-stack .unlock-card-cta {
     width: auto;
-    margin: 40px 12px 64px;
+    margin: 40px 24px 64px;
     gap: 14px;
   }
 
@@ -1591,4 +1600,12 @@
   white-space: normal;
   line-height: 1.5;
   text-align: center;
+}
+
+/* Keep the unlock CTA inset from the reading column on both page variants. */
+.life-page.demo-body .partial-desk-stack > .unlock-card-cta,
+.demo-body .partial-desk-stack > .unlock-card-cta {
+  width: min(calc(100% - 48px), 760px);
+  max-width: 760px;
+  margin-inline: auto;
 }

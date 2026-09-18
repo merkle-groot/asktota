@@ -1019,7 +1019,7 @@ body { background-color: var(--paper); color: var(--ink); font-family: var(--dis
   max-width: none;
   margin: 0 0 30px;
   font: 800 clamp(44px, 5.6vw, 80px)/1.02 var(--display);
-  letter-spacing: -.075em;
+  letter-spacing: -.03em;
 }
 .life-three .three-intro h2 br { display: block; }
 .life-three .three-intro h2 em { display: block; color: var(--green); font-weight: 500; }
@@ -1137,7 +1137,7 @@ body { background-color: var(--paper); color: var(--ink); font-family: var(--dis
   .life-three .three-intro img { width: min(94%, 280px); }
   .three-portrait-label { top: 5%; left: 12%; }
   .three-portrait-caption { right: 0; bottom: 0; }
-  .life-three .three-intro h2 { font-size: clamp(40px, 10vw, 64px); letter-spacing: -.06em; }
+  .life-three .three-intro h2 { font-size: clamp(40px, 10vw, 64px); letter-spacing: -.03em; }
   .life-three .three-intro p:not(.section-kicker) { max-width: 35ch; font-size: 15px; }
   .life-three .three-list { margin-right: 5px; padding: 0 20px; box-shadow: 5px 5px 0 var(--ink); }
   .life-three .three-list li:nth-child(n) { grid-template-columns: 42px minmax(0, 1fr); column-gap: 14px; row-gap: 16px; padding: 26px 0 30px; }
@@ -1209,7 +1209,31 @@ body { background-color: var(--paper); color: var(--ink); font-family: var(--dis
   .edition-cover .hero-art { grid-column: 1; grid-row: 3; width: min(100%, 410px); justify-self: center; margin: 35px 0 0; transform: none; }
   .cover-art-index { display: none; }
   .edition-cover .hero-art img { margin-top: 0; }
-  .cover-footer { flex-direction: column; margin-top: 35px; gap: 17px; }
+  .cover-footer {
+    flex-direction: column;
+    margin-top: 35px;
+    gap: 17px;
+    padding-top: 0;
+    padding-bottom: 17px;
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+  }
+  .reading-intro,
+  .full-intro {
+    border-top: 0;
+    text-align: center;
+  }
+  .intro-aside {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .full-intro-right {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
   .edition-cover .hero-meta { justify-content: center; gap: 12px; font-size: 9px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1536,7 +1560,7 @@ body { background-color: var(--paper); color: var(--ink); font-family: var(--dis
   margin: 22px 0 28px;
   color: var(--paper);
   font: 800 clamp(44px, 5.5vw, 78px)/.88 var(--display);
-  letter-spacing: -.085em;
+  letter-spacing: -.03em;
 }
 
 .demo-body .life-three .three-intro h2 em { color: var(--marigold); font-style: normal; font-weight: 800; }

@@ -90,6 +90,11 @@
     if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
     document.title = (heading ? heading.textContent : 'Your Life Edition') + ' | Ask Tota';
     window.scrollTo({ top: 0, behavior: reducedScroll });
+    if (name === 'reading') window.requestAnimationFrame(updateDeskIndexProgress);
+    else {
+      var deskNav = document.querySelector('.desk-index');
+      if (deskNav) deskNav.classList.remove('is-visible');
+    }
   }
   function text(id, value) { var node = document.getElementById(id); if (node) node.textContent = value || ''; }
   function clearMessage(id) { text(id, ''); }
@@ -509,7 +514,6 @@
     var targetPrefix = mode === 'partial' ? 'partial-' : 'desk-';
     var labels = { career: 'Work', love: 'Love', wealth: 'Money', family: 'Home', mind: 'Mind', timing: 'Timing', placements: 'Strengths', patterns: 'Patterns', moves: 'Next moves' };
     root.innerHTML =
-      '<div class="three-issue"><span><strong>OPENING NOTES</strong> · 03 SIGNALS</span><span>THE LIFE EDITION · ' + escapeHtml(name.toUpperCase()) + '</span></div>' +
       '<div class="three-intro"><div class="three-intro-copy"><p class="section-kicker mono">FOR ' + escapeHtml(name.toUpperCase()) + '</p><h2>Three things<br><em>to keep in mind.</em></h2><p>Before the full reading, these are the themes that keep showing up in your life right now.</p><span class="three-intro-note">A starting point, not a verdict <b aria-hidden="true">↘</b></span></div><div class="three-portrait"><span class="three-portrait-label mono">A SHORT NOTE FROM TOTA</span><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three notes from the opening reading" loading="lazy"><span class="three-portrait-caption"><b>01—03</b><span>the short list</span></span></div></div>' +
       '<div class="three-list-head"><span>THE SHORT LIST</span><span>01—03 · READ ON</span></div>' +
       '<ol class="three-list">' + notes.map(function (note, index) {
@@ -1083,16 +1087,65 @@
     if (!root) return;
     root.innerHTML = facets.map(function (facet) {
       var meta = metaFor(facet.key);
-      var number = String(deskOrderIndex(meta.key) + 1).padStart(2, '0');
-      return '<button type="button" data-desk-target="desk-' + escapeHtml(meta.id || safeDeskKey(meta.key)) + '">' + number + ' ' + escapeHtml(meta.name) + '</button>';
+      return '<button type="button" data-desk-target="desk-' + escapeHtml(meta.id || safeDeskKey(meta.key)) + '">' + escapeHtml(meta.name) + '</button>';
     }).join('');
     root.querySelectorAll('[data-desk-target]').forEach(function (button) {
       button.addEventListener('click', function () {
         var target = document.getElementById(button.dataset.deskTarget);
-        if (target) target.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'start' });
+        if (!target) return;
+        var isMobile = window.matchMedia('(max-width: 800px)').matches;
+        var deskIndex = document.querySelector('.desk-index.is-visible') || document.querySelector('.desk-index');
+        var anchor = isMobile ? (target.querySelector('.desk-visual') || target) : (target.querySelector('.desk-visual-label') || target);
+        var header = document.querySelector('.nav');
+        var offset = isMobile
+          ? (deskIndex ? deskIndex.offsetHeight + 12 : 12)
+          : (header ? header.offsetHeight : 0) + 18;
+        window.scrollTo({ top: Math.max(0, window.scrollY + anchor.getBoundingClientRect().top - offset), behavior: REDUCED ? 'auto' : 'smooth' });
       });
     });
   }
+
+  var deskProgressFrame = 0;
+  function updateDeskIndexProgress() {
+    var view = document.getElementById('full-reading');
+    var nav = view && view.querySelector('.desk-index');
+    var desks = view ? Array.prototype.slice.call(view.querySelectorAll('#reading-desks > .desk-file')) : [];
+    if (!view || view.hidden || !nav || !desks.length) {
+      if (nav) nav.classList.remove('is-visible');
+      return;
+    }
+
+    var first = desks[0].getBoundingClientRect();
+    var last = desks[desks.length - 1].getBoundingClientRect();
+    var stack = document.getElementById('reading-desks').getBoundingClientRect();
+    var desksInView = stack.top < window.innerHeight * .82 && stack.bottom > window.innerHeight * .18;
+    nav.classList.toggle('is-visible', desksInView);
+    var readingLine = Math.max(120, nav.getBoundingClientRect().bottom + 24);
+    var fraction = Math.max(0, Math.min(1, (window.innerHeight * .45 - first.top) / Math.max(1, last.bottom - first.top - window.innerHeight * .45)));
+    var current = 0;
+    desks.forEach(function (desk, index) {
+      if (desk.getBoundingClientRect().top <= readingLine) current = index;
+    });
+
+    var buttons = Array.prototype.slice.call(nav.querySelectorAll('[data-desk-target]'));
+    buttons.forEach(function (button, index) {
+      var selected = index === current;
+      button.classList.toggle('is-active', selected);
+      if (selected) button.setAttribute('aria-current', 'step');
+      else button.removeAttribute('aria-current');
+    });
+    nav.style.setProperty('--read-progress', fraction * 100 + '%');
+    nav.style.setProperty('--read-progress-scale', fraction);
+  }
+  function scheduleDeskIndexProgress() {
+    if (deskProgressFrame) return;
+    deskProgressFrame = window.requestAnimationFrame(function () {
+      deskProgressFrame = 0;
+      updateDeskIndexProgress();
+    });
+  }
+  window.addEventListener('scroll', scheduleDeskIndexProgress, { passive: true });
+  window.addEventListener('resize', scheduleDeskIndexProgress);
   function renderReading(reading) {
     if (partialReading && partialReading.rough_notes && !reading.rough_notes) reading.rough_notes = partialReading.rough_notes;
     window.clearInterval(loaderTimer);
@@ -1108,6 +1161,7 @@
     renderDeskIndex(facets);
     var root = document.getElementById('reading-desks');
     if (root) root.innerHTML = facets.map(renderDesk).join('');
+    scheduleDeskIndexProgress();
   }
   function renderDesk(facet, index, mode) {
     var meta = metaFor(facet.key); var tone = meta.tone; var story = storyFor(facet); var headline = facet.headline || facet.title || meta.name; var receipt = receiptFor(facet) || (Array.isArray(facet.evidence) ? facet.evidence.join(' · ') : '');

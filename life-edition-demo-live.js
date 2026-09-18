@@ -115,7 +115,6 @@
     var view = root.closest('[data-reading-view]');
     var targetPrefix = view && view.dataset.readingView === 'partial' ? 'partial-' : 'desk-';
     root.innerHTML =
-      '<div class="three-issue"><span><strong>OPENING NOTES</strong> · 03 SIGNALS</span><span>THE LIFE EDITION · ' + escapeHtml(name.toUpperCase()) + '</span></div>' +
       '<div class="three-intro"><div class="three-intro-copy"><p class="section-kicker mono">FOR ' + escapeHtml(name.toUpperCase()) + '</p><h2>Three things<br><em>to keep in mind.</em></h2><p>Before the full reading, these are the themes that keep showing up in your life right now.</p><span class="three-intro-note">A starting point, not a verdict <b aria-hidden="true">↘</b></span></div><div class="three-portrait"><span class="three-portrait-label mono">A SHORT NOTE FROM TOTA</span><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three notes from the opening reading" loading="lazy"><span class="three-portrait-caption"><b>01—03</b><span>the short list</span></span></div></div>' +
       '<div class="three-list-head"><span>THE SHORT LIST</span><span>01—03 · READ ON</span></div>' +
       '<ol class="three-list">' + notes.map(function (note, index) {

@@ -81,8 +81,7 @@
     var deskPrefix = view.dataset.readingView === 'partial' ? 'partial-' : 'desk-';
     section.className = 'life-three';
     section.setAttribute('aria-label', 'Opening notes');
-    section.innerHTML = '<div class="three-issue"><span><strong>OPENING NOTES</strong> · 03 SIGNALS</span><span>THE LIFE EDITION · RAVI</span></div>' +
-      '<div class="three-intro"><div class="three-intro-copy"><p class="section-kicker mono">FOR RAVI</p><h2>Three things<br><em>to keep in mind.</em></h2><p>Before the full reading, these are the themes that keep showing up in your life right now.</p><span class="three-intro-note">A starting point, not a verdict <b aria-hidden="true">↘</b></span></div><div class="three-portrait"><span class="three-portrait-label mono">A SHORT NOTE FROM TOTA</span><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three notes from the opening reading" loading="lazy"><span class="three-portrait-caption"><b>01—03</b><span>the short list</span></span></div></div>' +
+    section.innerHTML = '<div class="three-intro"><div class="three-intro-copy"><p class="section-kicker mono">FOR RAVI</p><h2>Three things<br><em>to keep in mind.</em></h2><p>Before the full reading, these are the themes that keep showing up in your life right now.</p><span class="three-intro-note">A starting point, not a verdict <b aria-hidden="true">↘</b></span></div><div class="three-portrait"><span class="three-portrait-label mono">A SHORT NOTE FROM TOTA</span><img src="assets/tota/tota-three-notes-trio.png" alt="Tota presenting three notes from the opening reading" loading="lazy"><span class="three-portrait-caption"><b>01—03</b><span>the short list</span></span></div></div>' +
       '<div class="three-list-head"><span>THE SHORT LIST</span><span>01—03 · READ ON</span></div>' +
       '<ol class="three-list"><li class="three-note three-note-green"><a class="three-note-card" href="#' + deskPrefix + 'career"><div class="three-note-head"><span class="three-folio" aria-hidden="true">01</span><span class="three-note-topic">WORK</span><span class="three-note-count">01 / 03</span></div><h3>Your work is changing shape.</h3><p>You are ready for more say in what you make, but the next step needs patience as well as nerve.</p><span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span></a></li><li class="three-note three-note-pink"><a class="three-note-card" href="#' + deskPrefix + 'love"><div class="three-note-head"><span class="three-folio" aria-hidden="true">02</span><span class="three-note-topic">LOVE</span><span class="three-note-count">02 / 03</span></div><h3>You want something that feels real.</h3><p>Small talk is not enough right now. You are looking for care that shows up without being chased.</p><span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span></a></li><li class="three-note three-note-marigold"><a class="three-note-card" href="#' + deskPrefix + 'money"><div class="three-note-head"><span class="three-folio" aria-hidden="true">03</span><span class="three-note-topic">MONEY</span><span class="three-note-count">03 / 03</span></div><h3>Your earning power is real.</h3><p>The leak is not a lack of talent. It is giving too much away before anyone has to value it.</p><span class="three-note-action">read this desk <span aria-hidden="true">↗</span></span></a></li></ol>';
     var intro = view.querySelector('.reading-intro, .full-intro');
@@ -227,8 +226,13 @@
     var isDesk = target.classList.contains('desk-file');
     document.body.classList.remove('nav-hidden');
     navigationUntil = performance.now() + 1600;
-    var offset = header.offsetHeight + (isDesk ? deskNav.offsetHeight : 60) + 16;
-    window.scrollTo({ top: Math.max(0, window.scrollY + target.getBoundingClientRect().top - offset), behavior: reducedMotion ? 'auto' : 'smooth' });
+    var isMobile = window.matchMedia('(max-width: 800px)').matches;
+    var deskIndex = document.querySelector('.desk-index.is-visible') || document.querySelector('.desk-index');
+    var anchor = isDesk ? (isMobile ? (target.querySelector('.desk-visual') || target) : (target.querySelector('.desk-visual-label') || target)) : target;
+    var offset = isDesk
+      ? (isMobile ? (deskIndex ? deskIndex.offsetHeight + 12 : 12) : header.offsetHeight + 18)
+      : header.offsetHeight + 60;
+    window.scrollTo({ top: Math.max(0, window.scrollY + anchor.getBoundingClientRect().top - offset), behavior: reducedMotion ? 'auto' : 'smooth' });
   }
 
   document.querySelectorAll('[data-scroll-target]').forEach(function (button) {
@@ -262,6 +266,8 @@
     var activeView = document.querySelector('[data-reading-view]:not([hidden])');
     if (!activeView) return;
     var full = activeView.dataset.readingView === 'full';
+    var deskNavNode = document.querySelector('.desk-index');
+    if (!full && deskNavNode) deskNavNode.classList.remove('is-visible');
     var blocks = Array.prototype.slice.call(activeView.querySelectorAll(full ? '.desk-file' : '[data-progress-step]'));
     if (!blocks.length) return;
     var first = blocks[0].getBoundingClientRect();
@@ -279,6 +285,10 @@
       railFill.style.width = mobile ? fraction * 100 + '%' : '100%';
     }
     if (activeView.dataset.readingView === 'full') {
+      var deskStack = activeView.querySelector('.full-reading-stack');
+      var deskStackRect = deskStack && deskStack.getBoundingClientRect();
+      var desksInView = deskStackRect && deskStackRect.top < window.innerHeight * .82 && deskStackRect.bottom > window.innerHeight * .18;
+      if (deskNavNode) deskNavNode.classList.toggle('is-visible', Boolean(desksInView));
       var currentId = blocks[current].id;
       document.querySelectorAll('.desk-index-list button').forEach(function (button) {
         var selected = button.dataset.scrollTarget === currentId;
@@ -295,6 +305,7 @@
       });
       activeDeskId = currentId;
       document.querySelector('.desk-index').style.setProperty('--read-progress', fraction * 100 + '%');
+      document.querySelector('.desk-index').style.setProperty('--read-progress-scale', fraction);
     }
     document.documentElement.style.setProperty('--page-progress', fraction);
   }

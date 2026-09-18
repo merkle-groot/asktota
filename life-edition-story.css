@@ -197,7 +197,6 @@
   border-top: 1px solid var(--ink);
 }
 
-.three-issue,
 .three-list-head {
   display: flex;
   justify-content: space-between;
@@ -211,10 +210,7 @@
   text-transform: uppercase;
 }
 
-.three-issue { border-bottom: 1px solid var(--story-line); }
-.three-issue > :first-child,
 .three-list-head > :first-child { color: var(--story-green); font-weight: 800; }
-.three-issue strong { color: var(--ink); font-weight: 800; }
 
 .three-intro {
   display: grid;
@@ -940,6 +936,36 @@
   color: rgba(251, 243, 224, .86);
 }
 
+/* Tota's final desk uses the same light editorial paper as the rest of the reading. */
+.full-reading-stack .desk-file-moves {
+  background: linear-gradient(180deg, #eef4e8 0%, #dcebd9 48%, #eef4e8 100%);
+  color: var(--ink);
+}
+
+.full-reading-stack .desk-file-moves .desk-visual img { mix-blend-mode: multiply; }
+.full-reading-stack .desk-file-moves .desk-visual-label,
+.full-reading-stack .desk-file-moves .narrator-byline,
+.full-reading-stack .desk-file-moves .tota-sign { color: var(--muted); }
+.full-reading-stack .desk-file-moves .desk-copy h3,
+.full-reading-stack .desk-file-moves .desk-number,
+.full-reading-stack .desk-file-moves .mini-label,
+.full-reading-stack .desk-file-moves .reading-copy,
+.full-reading-stack .desk-file-moves .desk-foot,
+.full-reading-stack .desk-file-moves .tota-margin blockquote,
+.full-reading-stack .desk-file-moves .reflection-copy { color: var(--ink); }
+.full-reading-stack .desk-file-moves .desk-copy .reading-copy,
+.full-reading-stack .desk-file-moves .reflection-copy { color: var(--body-ink); }
+.full-reading-stack .desk-file-moves .tota-margin { border-color: var(--line); }
+
+.life-page.demo-body .full-reading-stack .desk-file-moves .reflection {
+  border-color: color-mix(in srgb, var(--chapter-tint) 48%, var(--ink));
+  border-top-color: var(--green);
+  background: color-mix(in srgb, var(--chapter-tint) 30%, var(--paper));
+  color: var(--body-ink);
+}
+.life-page.demo-body .full-reading-stack .desk-file-moves .reflection-label { color: var(--green); }
+.life-page.demo-body .full-reading-stack .desk-file-moves .reflection-copy { color: var(--body-ink); }
+
 @media (max-width: 560px) {
   .newspaper-page-preview .partial-desk-stack .desk-file {
     min-height: auto;
@@ -1504,4 +1530,64 @@
 @media (prefers-reduced-motion: reduce) {
   .newspaper-page-preview .unlock-card-cta .unlock-ticket-button,
   .demo-body .partial-desk-stack .unlock-card-cta .unlock-ticket-button { transition: none; }
+}
+
+/* Reading proportions: give mobile art more presence and let desktop copy breathe. */
+@media (max-width: 800px) {
+  .full-reading-stack .desk-file {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .full-reading-stack .desk-visual {
+    grid-column: 1;
+    width: 100%;
+    margin-inline: auto;
+    justify-items: center;
+  }
+
+  .full-reading-stack .desk-visual > img {
+    width: min(100%, 720px);
+    max-width: none;
+    max-height: none;
+    margin-inline: auto;
+    justify-self: center;
+    transform: translateX(20%) scale(1.12);
+    transform-origin: center;
+  }
+
+  .life-page.demo-body .full-reading-stack .desk-copy,
+  .demo-body .full-reading-stack .desk-copy {
+    grid-column: 1;
+    width: 100%;
+    padding-inline: clamp(22px, 7vw, 40px);
+  }
+}
+
+@media (min-width: 801px) {
+  .life-page.demo-body .full-reading-stack .desk-copy,
+  .demo-body .full-reading-stack .desk-copy {
+    width: min(100%, 1120px);
+    padding-inline: clamp(28px, 4vw, 80px);
+  }
+
+  .full-reading-stack .desk-copy h3 { max-width: 820px; }
+  .full-reading-stack .desk-headline { max-width: 18ch; }
+
+  .full-reading-stack .desk-copy .reading-copy,
+  .full-reading-stack .desk-takeaway {
+    max-width: 820px;
+  }
+}
+
+/* Keep the closing rationale on the same readable measure as the headline. */
+.full-reading-stack .desk-copy > .desk-foot {
+  display: block;
+  box-sizing: border-box;
+  width: min(100%, 820px);
+  max-width: none;
+  margin-inline: auto;
+  white-space: normal;
+  line-height: 1.5;
+  text-align: center;
 }

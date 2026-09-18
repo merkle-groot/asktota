@@ -783,13 +783,18 @@
     var button = document.getElementById('contact-submit');
     var contactBody = { chartId: state.chartId, contact: { type: 'whatsapp', value: verifiedContactPhone }, contactProof: webContactProof };
     setBusy(button, true, '✆  send my code →');
-    request('/web/orders', { method: 'POST', body: JSON.stringify(contactBody) }).then(function (order) {
+    return request('/web/orders', { method: 'POST', body: JSON.stringify(contactBody) }).then(function (order) {
       state.orderId = order.order_id || order.orderId || order.id; save();
       if (!state.orderId) throw new Error('the payment order could not be opened.');
       if (order.mode === 'stub' || order.stub === true) {
         activePaymentOrder = null; lastPaymentResponse = null;
         if (paymentRetry) paymentRetry.hidden = true;
         return verifyOrder(state.orderId, { stub: true });
+      }
+      if (order.mode === 'paid' || order.paid === true) {
+        activePaymentOrder = null; lastPaymentResponse = null;
+        if (paymentRetry) paymentRetry.hidden = true;
+        return finishPaidOrder();
       }
       activePaymentOrder = order;
       lastPaymentResponse = null;
@@ -809,11 +814,14 @@
       document.head.appendChild(script);
     });
   }
+  function finishPaidOrder() {
+    state.verified = true; save();
+    return fetchEdition().then(function () { return downloadEditionPdf().catch(function () { return null; }); }).then(function () { startDeliveryPolling(); });
+  }
   function verifyOrder(orderId, payload) {
     return request('/web/orders/' + encodeURIComponent(orderId) + '/verify', { method: 'POST', body: JSON.stringify(payload) }).then(function (result) {
       if (result.verified !== true) throw new Error('payment is still being verified. try again in a moment.');
-      state.verified = true; save();
-      return fetchEdition().then(function () { return downloadEditionPdf().catch(function () { return null; }); }).then(function () { startDeliveryPolling(); });
+      return finishPaidOrder();
     });
   }
   function showPaymentError(message, canRetry) {
@@ -873,7 +881,7 @@
       ? verifyOrder(state.orderId, lastPaymentResponse).catch(function () {
         if (!state.verified) showPaymentError('we could not confirm that payment yet. your order is safe — try again.', true);
       })
-      : openRazorpay(activePaymentOrder).catch(function (error) { showPaymentError(error.message || 'checkout could not load. try again.', true); });
+      : openCheckout().catch(function (error) { showPaymentError(error.message || 'checkout could not load. try again.', true); });
     retry.finally(function () { if (!state.verified) button.disabled = false; });
   });
   var editionRequest = null;

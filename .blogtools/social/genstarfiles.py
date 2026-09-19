@@ -8,38 +8,43 @@ setDeck rather than being hardcoded here.
     python3 genstarfiles.py                    # every deck
     python3 genstarfiles.py abhishek-sharma    # just this one
 
-Frames are screenshotted one at a time through gstack browse, then encoded with
-an SFX bed built from audio/.
+Subject photos come out of photos/, filled by genphotos.py. A subject with no
+file there renders the redacted plate, which is a supported state.
+
+Frames are screenshotted through gstack browse in verified batches (see
+reelshot.py), then encoded with an SFX bed built from audio/.
 """
 import json, pathlib, subprocess, sys, tempfile
 
+from reelshot import browse, capture, open_page
+
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT.parent.parent
-BROWSE = pathlib.Path.home() / '.claude/skills/gstack/browse/dist/browse'
 FPS = 30
 
-# reel folder numbers. 01 to 12 are taken, see assets/social/reels/.
-ORDER = {'abhishek-sharma': 15}
+# reel folder numbers. 01 to 14 and 16 are taken, see assets/social/reels/.
+ORDER = {'abhishek-sharma': 15, 'kohli-rohit': 17}
+PHOTOS = ROOT / 'photos'
 
 
-def browse(*args):
-    out = subprocess.run([str(BROWSE), *args], capture_output=True, text=True).stdout.strip().splitlines()
-    return out[-1] if out else ''
+def with_photos(deck):
+    """Point every subject at its photo file, or at nothing.
+
+    The deck never names a path. genphotos.py owns photos/, so dropping a
+    licensed jpg in there is all it takes to upgrade a redacted file to a
+    photo led one, and deleting it is all it takes to go back.
+    """
+    for subject in ([deck] if deck.get('mode', 'solo') == 'solo' else [deck['a'], deck['b']]):
+        f = PHOTOS / f"{subject['slug']}.jpg"
+        subject['photo'] = f'photos/{f.name}' if f.exists() else None
+    return deck
 
 
 def render_frames(deck, out):
-    out.mkdir(parents=True, exist_ok=True)
-    browse('viewport', '1080x1920')
-    browse('goto', f'file://{ROOT}/reel-star-file.html')
-    browse('js', 'document.fonts.ready.then(()=>1)')
-    meta = json.loads(browse('js', f'JSON.stringify(setDeck({json.dumps(deck)}))'))
-    total = meta['total']
-    for f in range(total):
-        browse('js', f'render({f})')
-        browse('screenshot', '#stage', str(out / f'f{f:04d}.png'))
-    n = len(list(out.glob('*.png')))
-    assert n == total, f'{deck["slug"]}: rendered {n} frames, expected {total}'
-    return total, meta['sfx']
+    open_page(f'file://{ROOT}/reel-star-file.html')
+    meta = json.loads(browse('js', f'JSON.stringify(setDeck({json.dumps(with_photos(deck))}))'))
+    capture(meta['total'], out, label=f'{deck["slug"]}: ')
+    return meta['total'], meta['sfx']
 
 
 def build_sfx(path, total, events):
@@ -73,8 +78,9 @@ def main():
     tmp = pathlib.Path(tempfile.mkdtemp(prefix='asktota-starfile-', dir='/private/tmp'))
     for key in want:
         deck = data['decks'][key]
+        shot = 'photo' if (PHOTOS / f"{deck.get('slug', key)}.jpg").exists() or deck.get('mode') == 'versus' else 'redacted'
         frames = tmp / key
-        print(f'{key}: rendering', flush=True)
+        print(f'{key}: rendering ({deck.get("mode", "solo")}, {shot})', flush=True)
         total, sfx = render_frames(deck, frames)
         bed = tmp / f'{key}.wav'
         build_sfx(bed, total, sfx)

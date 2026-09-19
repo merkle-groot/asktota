@@ -4,7 +4,11 @@
     "moon-2am": {
       "slug": "moon-2am",
       "kicker": "the moon desk &middot; filed 2am &middot; unedited",
-      "hook": ["ur moon sign", "at 2am", "not the sun sign. the one that actually texts."],
+      "hook": [
+        "ur moon sign",
+        "at 2am",
+        "not the sun sign. the one that actually texts."
+      ],
       "sub": "ur moon sign is on ur chart, not on ur birthday.",
       "hold": 24,
       "ctaHold": 60,
@@ -14,29 +18,92 @@
         "btn": "asktota.com"
       },
       "cards": [
-        {"tag": "aries moon", "when": "2:04 am", "line": "u up? no reason.", "sub": "there is a reason. it is from 2021 and it is still open."},
-        {"tag": "taurus moon", "when": "2:09 am", "line": "i'm not upset. i'm just not going to speak.", "sub": "has been composing this silence since march."},
-        {"tag": "gemini moon", "when": "2:11 am", "line": "ok so hear me out (voice note, 9 min)", "sub": "sent it. immediately sent a second one correcting the first."},
-        {"tag": "cancer moon", "when": "2:14 am", "line": "do people actually like me or are they being nice", "sub": "will ask again on thursday. will not accept the answer."},
-        {"tag": "leo moon", "when": "2:18 am", "line": "i'm so over it btw. anyway did u see my story", "sub": "the story was posted for one person. u know the one."},
-        {"tag": "virgo moon", "when": "2:23 am", "line": "i made a list of everything i did wrong", "sub": "the list is numbered. item 4 is from a group project in 2019."},
-        {"tag": "libra moon", "when": "2:27 am", "line": "ok but whose side are u on. be honest.", "sub": "does not want honest. wants a co-signature."},
-        {"tag": "scorpio moon", "when": "2:31 am", "line": "i found their cousin's finsta", "sub": "took eleven minutes. will bring it up in four months."},
-        {"tag": "sagittarius moon", "when": "2:36 am", "line": "what if i just moved to goa", "sub": "the tab is open. the tab has been open since june."},
-        {"tag": "capricorn moon", "when": "2:41 am", "line": "i'm fine. i have a plan. it is four years long.", "sub": "the plan has a spreadsheet. the spreadsheet has no crying column."},
-        {"tag": "aquarius moon", "when": "2:47 am", "line": "genuinely i don't need anyone", "sub": "typed this to a person. at 2:47am. on purpose."},
-        {"tag": "pisces moon", "when": "2:52 am", "line": "sorry ignore that. sorry. sorry.", "sub": "apologised three times for a message that was completely fine."}
+        {
+          "tag": "aries moon",
+          "when": "2:04 am",
+          "line": "u up? no reason.",
+          "sub": "there is a reason. it is from 2021 and it is still open."
+        },
+        {
+          "tag": "taurus moon",
+          "when": "2:09 am",
+          "line": "i'm not upset. i'm just not going to speak.",
+          "sub": "has been composing this silence since march."
+        },
+        {
+          "tag": "gemini moon",
+          "when": "2:11 am",
+          "line": "ok so hear me out (voice note, 9 min)",
+          "sub": "sent it. immediately sent a second one correcting the first."
+        },
+        {
+          "tag": "cancer moon",
+          "when": "2:14 am",
+          "line": "do people actually like me or are they being nice",
+          "sub": "will ask again on thursday. will not accept the answer."
+        },
+        {
+          "tag": "leo moon",
+          "when": "2:18 am",
+          "line": "i'm so over it btw. anyway did u see my story",
+          "sub": "the story was posted for one person. u know the one."
+        },
+        {
+          "tag": "virgo moon",
+          "when": "2:23 am",
+          "line": "i made a list of everything i did wrong",
+          "sub": "the list is numbered. item 4 is from a group project in 2019."
+        },
+        {
+          "tag": "libra moon",
+          "when": "2:27 am",
+          "line": "ok but whose side are u on. be honest.",
+          "sub": "does not want honest. wants a co-signature."
+        },
+        {
+          "tag": "scorpio moon",
+          "when": "2:31 am",
+          "line": "i found their cousin's finsta",
+          "sub": "took eleven minutes. will bring it up in four months."
+        },
+        {
+          "tag": "sagittarius moon",
+          "when": "2:36 am",
+          "line": "what if i just moved to goa",
+          "sub": "the tab is open. the tab has been open since june."
+        },
+        {
+          "tag": "capricorn moon",
+          "when": "2:41 am",
+          "line": "i'm fine. i have a plan. it is four years long.",
+          "sub": "the plan has a spreadsheet. the spreadsheet has no crying column."
+        },
+        {
+          "tag": "aquarius moon",
+          "when": "2:47 am",
+          "line": "genuinely i don't need anyone",
+          "sub": "typed this to a person. at 2:47am. on purpose."
+        },
+        {
+          "tag": "pisces moon",
+          "when": "2:52 am",
+          "line": "sorry ignore that. sorry. sorry.",
+          "sub": "apologised three times for a message that was completely fine."
+        }
       ],
       "title": "ur moon sign at 2am",
       "summary": "twelve moons, twelve 2am texts, one comment prompt. the whole point is the last frame.",
       "caption": "ur sun sign is the press release. ur moon sign is the 2am draft 🌙\n\nthe moon is where u actually live when nobody is watching: how u panic, who u text, what u apologise for. it is not ur birthday sign. it is a separate placement, in a separate rashi, and most people have never checked it.\n\nwhich one of these was u last week.\n\ncomment ur moon sign 👇 if u don't know it, it takes 30 seconds on asktota.com, free 🦜\n\n#moonsign #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #chandrarashi #astrologymemes #astrologyapp",
       "tags": "#moonsign #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #chandrarashi #astrologymemes #astrologyapp"
     },
-
     "group-chat": {
       "slug": "group-chat",
       "kicker": "the gossip desk &middot; nine grahas &middot; one chat",
-      "hook": ["ur group chat,", "by graha", "all nine are in there. one of them is u."],
+      "hook": [
+        "ur group chat,",
+        "by graha",
+        "all nine are in there. one of them is u."
+      ],
       "sub": "which one u are is on ur chart, not on vibes.",
       "hold": 24,
       "ctaHold": 60,
@@ -46,20 +113,227 @@
         "btn": "asktota.com"
       },
       "cards": [
-        {"tag": "the sun", "when": "the one in charge", "line": "picks the place, the time and the plan", "sub": "did not ask. the poll was decorative."},
-        {"tag": "the moon", "when": "the one who feels it", "line": "asks if everyone got home ok, at 1am", "sub": "also the one who leaves on read for two days without noticing."},
-        {"tag": "mars", "when": "the one who moves", "line": "replies 'say less. leaving now.'", "sub": "is already in the auto. nobody confirmed anything."},
-        {"tag": "mercury", "when": "the one who talks", "line": "nine voice notes. none of them under four minutes.", "sub": "sends the summary after u have already listened to all nine."},
-        {"tag": "jupiter", "when": "the one with advice", "line": "gives the advice she is not taking herself", "sub": "correct every single time. about other people."},
-        {"tag": "venus", "when": "the one with taste", "line": "books the place, then splits the bill wrong", "sub": "the place was beautiful. u paid for someone's starter."},
-        {"tag": "saturn", "when": "the one with limits", "line": "says we should all go home and sleep", "sub": "right. hated for it. correct anyway."},
-        {"tag": "rahu", "when": "the one with receipts", "alt": true, "line": "screenshots absolutely everything", "sub": "has a folder. the folder has subfolders. u are in one of them."},
-        {"tag": "ketu", "when": "the one who left", "alt": true, "line": "exited the group in 2023 and never explained", "sub": "resurfaces once a year to react to one message with a heart."}
+        {
+          "tag": "the sun",
+          "when": "the one in charge",
+          "line": "picks the place, the time and the plan",
+          "sub": "did not ask. the poll was decorative."
+        },
+        {
+          "tag": "the moon",
+          "when": "the one who feels it",
+          "line": "asks if everyone got home ok, at 1am",
+          "sub": "also the one who leaves on read for two days without noticing."
+        },
+        {
+          "tag": "mars",
+          "when": "the one who moves",
+          "line": "replies 'say less. leaving now.'",
+          "sub": "is already in the auto. nobody confirmed anything."
+        },
+        {
+          "tag": "mercury",
+          "when": "the one who talks",
+          "line": "nine voice notes. none of them under four minutes.",
+          "sub": "sends the summary after u have already listened to all nine."
+        },
+        {
+          "tag": "jupiter",
+          "when": "the one with advice",
+          "line": "gives the advice she is not taking herself",
+          "sub": "correct every single time. about other people."
+        },
+        {
+          "tag": "venus",
+          "when": "the one with taste",
+          "line": "books the place, then splits the bill wrong",
+          "sub": "the place was beautiful. u paid for someone's starter."
+        },
+        {
+          "tag": "saturn",
+          "when": "the one with limits",
+          "line": "says we should all go home and sleep",
+          "sub": "right. hated for it. correct anyway."
+        },
+        {
+          "tag": "rahu",
+          "when": "the one with receipts",
+          "alt": true,
+          "line": "screenshots absolutely everything",
+          "sub": "has a folder. the folder has subfolders. u are in one of them."
+        },
+        {
+          "tag": "ketu",
+          "when": "the one who left",
+          "alt": true,
+          "line": "exited the group in 2023 and never explained",
+          "sub": "resurfaces once a year to react to one message with a heart."
+        }
       ],
       "title": "ur group chat, by graha",
       "summary": "nine grahas as nine people in one group chat, ending on a tag prompt.",
       "caption": "every group chat has all nine grahas in it 🦜\n\nthis is actually how jyotish thinks about them. the grahas are not lucky rocks in the sky, they are nine jobs: one decides, one feels, one moves, one talks, one advises, one spends, one limits, one grabs, one leaves. ur chart says which of those nine is running the show in ur life right now.\n\nu thought of a specific person for at least four of these.\n\nsend it to ur rahu. and to ur ketu, if they are still reachable 💀\n\nfind out which graha is running ur chart, free on asktota.com\n\n#navagraha #vedicastrology #jyotish #kundli #astrologyindia #asktota #rahuketu #birthchart #astrologymemes #groupchat",
       "tags": "#navagraha #vedicastrology #jyotish #kundli #astrologyindia #asktota #rahuketu #birthchart #astrologymemes #groupchat"
+    },
+    "the-ick": {
+      "slug": "the-ick",
+      "kicker": "the love desk &middot; icks filed &middot; no appeal",
+      "hook": [
+        "the ick,",
+        "by venus sign",
+        "venus is what u want. it is also what puts u off."
+      ],
+      "sub": "ur venus sign is on ur chart. it is not ur sun sign.",
+      "hold": 24,
+      "ctaHold": 60,
+      "cta": {
+        "h": "comment ur **venus sign**",
+        "p": "the ick and the crush are the same placement, running in both directions.",
+        "btn": "asktota.com"
+      },
+      "cards": [
+        {
+          "tag": "aries venus",
+          "when": "ick no. 01",
+          "line": "said 'let's be spontaneous' and drove to a mall",
+          "sub": "wants the rush. does not want the plan that makes a rush possible."
+        },
+        {
+          "tag": "taurus venus",
+          "when": "ick no. 02",
+          "line": "suggested the same restaurant. for the fourth time.",
+          "sub": "this is loyalty. it is also why nothing has changed since 2021."
+        },
+        {
+          "tag": "gemini venus",
+          "when": "ick no. 03",
+          "line": "told me my own story back to me on thursday",
+          "sub": "collects material. does not always file where it came from."
+        },
+        {
+          "tag": "cancer venus",
+          "when": "ick no. 04",
+          "line": "brought up his ex to explain why he is careful now",
+          "sub": "the past is furniture here. he will not be moving it."
+        },
+        {
+          "tag": "leo venus",
+          "when": "ick no. 05",
+          "line": "checked his reflection in the metro door. twice.",
+          "sub": "needs to be seen. the door counts as an audience."
+        },
+        {
+          "tag": "virgo venus",
+          "when": "ick no. 06",
+          "line": "corrected how i said the name of a pasta",
+          "sub": "thinks precision is a love language. it is a hobby."
+        },
+        {
+          "tag": "libra venus",
+          "when": "ick no. 07",
+          "line": "said 'whatever u want' then sulked about what i wanted",
+          "sub": "wanted to be asked twice. will not tell u that."
+        },
+        {
+          "tag": "scorpio venus",
+          "when": "ick no. 08",
+          "line": "asked who i was texting. it was my mother.",
+          "sub": "intensity is the draw. it is also the whole problem."
+        },
+        {
+          "tag": "sagittarius venus",
+          "when": "ick no. 09",
+          "line": "said he doesn't believe in labels. at a wedding.",
+          "sub": "means it. also would like u to stay. both, somehow."
+        },
+        {
+          "tag": "capricorn venus",
+          "when": "ick no. 10",
+          "line": "sent a calendar invite for the date. with an agenda.",
+          "sub": "this is affection. it has simply been through procurement."
+        },
+        {
+          "tag": "aquarius venus",
+          "when": "ick no. 11",
+          "line": "explained my own job to me at a party",
+          "sub": "loves an idea. is still learning that u are not one."
+        },
+        {
+          "tag": "pisces venus",
+          "when": "ick no. 12",
+          "line": "cried at an ad, then forgot my birthday",
+          "sub": "feels everything. retains almost none of it."
+        }
+      ],
+      "title": "the ick, by venus sign",
+      "summary": "twelve venus signs, twelve icks, then comment ur venus. the sequel format to moon 2am.",
+      "caption": "the ick is a venus thing 🚩\n\nvenus is not just who u fancy. it is what u find attractive, what u spend on, what u put up with, and the exact thing that ends it for u at dinner. same placement, running in both directions.\n\nit is also not ur sun sign. venus is its own placement in its own rashi, and it moves fast enough that people born days apart have different ones.\n\ntag the person who has done at least one of these 💀\n\ncomment ur venus sign 👇 if u have no idea what it is, that is 30 seconds on asktota.com, free 🦜\n\n#venussign #vedicastrology #jyotish #kundli #astrologyindia #asktota #theick #birthchart #astrologymemes #datingindia",
+      "tags": "#venussign #vedicastrology #jyotish #kundli #astrologyindia #asktota #theick #birthchart #astrologymemes #datingindia"
+    },
+    "birth-weekday": {
+      "slug": "birth-weekday",
+      "kicker": "the vara desk &middot; seven days &middot; one graha each",
+      "hook": [
+        "the day of the week",
+        "u were born",
+        "seven days, seven grahas. this is the one placement u already know."
+      ],
+      "sub": "vara: the weekday lord. real jyotish, and no chart needed to find urs.",
+      "hold": 32,
+      "ctaHold": 68,
+      "cards": [
+        {
+          "tag": "born on a sunday",
+          "when": "surya · the sun",
+          "line": "cannot be in a room without ending up in charge of it",
+          "sub": "surya does not do side quests and it does not do anonymous. the day wants credit, and it has usually earned it."
+        },
+        {
+          "tag": "born on a monday",
+          "when": "chandra · the moon",
+          "line": "mood is a weather system and everyone else lives downwind",
+          "sub": "chandra changes sign every two and a half days. so do u, and u have quietly decided that is everyone else's problem."
+        },
+        {
+          "tag": "born on a tuesday",
+          "when": "mangal · mars",
+          "line": "sent it. read it back. sent another one.",
+          "sub": "mangal does not let a draft cool down. it is the speed that wins the argument and the speed that pays for it later."
+        },
+        {
+          "tag": "born on a wednesday",
+          "when": "budha · mercury",
+          "line": "has argued both sides. in the same conversation. convincingly.",
+          "sub": "budha is the negotiator. unbeatable in a meeting, exhausting in a relationship, and genuinely not sure which one it meant."
+        },
+        {
+          "tag": "born on a thursday",
+          "when": "guru · jupiter",
+          "line": "gives advice nobody asked for and is annoyingly right",
+          "sub": "guru is the teacher of the chart. the trouble with a teacher is that class never actually ends."
+        },
+        {
+          "tag": "born on a friday",
+          "when": "shukra · venus",
+          "line": "will not leave in the wrong outfit. will leave the country on a whim.",
+          "sub": "shukra wants it beautiful before it wants it sensible. a very good eye and a very expensive one."
+        },
+        {
+          "tag": "born on a saturday",
+          "when": "shani · saturn",
+          "line": "old since nine. tired since twelve. correct since about now.",
+          "sub": "shani makes u wait for every single thing and then hands it over permanently. slowest start in the week, longest run."
+        }
+      ],
+      "cta": {
+        "h": "comment ur **birth day**",
+        "p": "not the date. the day of the week. that is the graha that has been running ur week since u got here.",
+        "btn": "asktota.com"
+      },
+      "title": "the day of the week u were born",
+      "summary": "seven varas, seven grahas, one comment prompt with zero lookup cost. the weekday lord is the only placement an audience can answer instantly, which is the whole reason this one exists.",
+      "caption": "the day of the week u were born has a graha attached to it, and nobody told u 🦜\n\nthis is vara, the weekday lord. it is the oldest working piece of jyotish and it is the only placement u do not have to look up, because u already know it.\n\nsunday is surya. monday is chandra. tuesday is mangal. wednesday is budha. thursday is guru. friday is shukra. saturday is shani.\n\nur sun sign is a horoscope column. ur vara is a schedule. it is why some weeks feel like they are being run by somebody else, and which somebody that is.\n\ncomment ur birth day 👇 not the date, the day. and if u do not know it, that is what the app is for.\n\nfull chart, free, on asktota.com\n\n#vara #vedicastrology #jyotish #kundli #astrologyindia #asktota #navagraha #birthchart #shani #astrologymemes",
+      "tags": "#vara #vedicastrology #jyotish #kundli #astrologyindia #asktota #navagraha #birthchart #shani #astrologymemes"
     }
   }
 }

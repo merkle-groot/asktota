@@ -9,6 +9,30 @@ and a reel that produces **DM shares** beats both. Saves are for carousels.
 
 ---
 
+## shipped 19 September 2026
+
+Three things came off this list and one thing got fixed underneath it.
+
+- **Star Files went photo led.** The subject's face is now on frame 0 and stays
+  in the case header for every frame after it. See
+  `reels/15_star-file-abhishek-sharma/notes.md` for what was wrong with the
+  first cut and why each change was made.
+- **Two charts, one reel, built.** `versus` mode, shipped as no. 002,
+  kohli vs rohit. This was no. 1 on the list below. See
+  `reels/17_star-file-kohli-rohit/notes.md`.
+- **The zero lookup comment prompt, built.** `the day of the week u were born`,
+  seven varas, seven grahas. Idea 2 below wanted a prompt that manufactures the
+  next post; this is the version of it with no lookup cost at all. See
+  `reels/18_birth-weekday/notes.md`.
+- **Photos have a pipeline.** `genphotos.py` resolves a Wikidata id to a
+  Commons photo and records the licence, so a star file subject is one command
+  away from a face. Not every public figure has a free photo; the one this
+  series opened on does not.
+- **Rendering got about eighteen times faster and stopped losing whole runs.**
+  `reelshot.py`. Both were costing real time on every single reel.
+
+---
+
 ## 1. STAR FILES, every week it trends · `genstarfiles.py`
 
 The series is live at no. 001. Keep it weekly and pick the name off whatever is
@@ -21,9 +45,12 @@ actually spiking, not off who is famous in general.
 | any public feud | both sides, same reel, two slates |
 | award night | whoever lost |
 
-The one that will outperform the rest: **two charts, one reel**. Two slates, then
-the desks file a verdict on the pair. Any public rivalry works. It doubles the
-fandoms fighting in the comments, which is the point.
+The one that outperforms the rest, now built: **two charts, one reel**. `versus`
+mode, two faces on frame 0, the desk picks a side each round and scores it. Any
+public rivalry works and it does not have to be cricket. It doubles the fandoms
+fighting in the comments, which is the point. Check for free photos with
+`python3 genphotos.py --find "<name>"` before writing the deck: no photo, no
+head to head worth cutting.
 
 Rules do not move: character and chart only, public birth date, no birth time, said
 out loud. See `reels/15_star-file-abhishek-sharma/notes.md`.
@@ -117,3 +144,35 @@ not spent on a reel, and the reel is the only thing a stranger will ever see.
 **Anything with a paid boost behind it, this month.** Boosting to a 17 follower
 account buys views from people with no reason to follow. Wait until one reel has
 proved it holds attention on its own, then put money behind that one.
+
+## 8. the reply reel · no generator, one evening
+
+Every prompt this account runs produces buckets of commenters and none of them
+have been answered with a post. Pick the day with the most comments under the
+vara reel, cut a single card expansion for it, and post it as its own reel.
+Instagram treats a reel that answers a comment as a new post and shows it to
+everyone who engaged with the first one, so the second reel inherits the first
+one's audience for free.
+
+This is the cheapest reach on the whole list and it needs no new template. It
+only needs somebody to actually read the comments.
+
+## 9. the downfall desk, on its own · `genstarfiles.py`, deck variant
+
+The downfall desk is the only card anybody stops for and it is currently buried
+as the fourth of four. A ten second reel that is nothing but the downfall desk,
+on a name that is trending, would test whether the other three desks are
+carrying any weight at all. If it performs as well as a full star file, the full
+star file is too long.
+
+Worth running as an experiment before building anything else on this list.
+
+## 10. what the desk got wrong · `genstarfiles.py`, versus mode
+
+Take the round the comments argued with hardest on no. 002 and file a reel that
+concedes it. The desk changing its mind in public, with the original verdict on
+screen next to the revision.
+
+Accounts almost never do this and it is the single most shareable thing a
+judgement format can produce, because it turns the people who disagreed into
+the people who won.

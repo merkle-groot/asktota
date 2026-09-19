@@ -1,57 +1,173 @@
 {
-  "note": "STAR FILES. One deck per trending name, for reel-star-file.html. The readings are written from the app's own celebrity life reading, which uses a public birth date and no birth time (timeAccuracy: unknown, hour defaulted to noon). Every deck says so on the slate and in the caption. Character and chart only: never a claim about a real person's private life, health, or conduct.",
+  "note": "STAR FILES, for reel-star-file.html. Two modes. solo: one subject, N desks, the last one is the downfall desk. versus: two subjects, N rounds, the desk picks a side in each and the closer asks to be argued with. Readings come from the app's own celebrity life reading, which runs on a public birth date with no birth time (timeAccuracy: unknown, hour defaulted to noon). Every deck says so on the slate and in the caption. Character and chart only: never a claim about a real person's private life, health or conduct. Photos resolve out of photos/<slug>.jpg, which genphotos.py fills from Wikidata P18; a subject with no free photo renders the redacted plate instead and that is a supported state, not a broken one.",
   "decks": {
     "abhishek-sharma": {
+      "mode": "solo",
       "slug": "abhishek-sharma",
       "no": "001",
-      "kicker": "star files &middot; no. 001 &middot; filed today",
-      "hook": [
-        "a 30 ball hundred",
-        "is a chart event"
-      ],
       "name": "abhishek sharma",
-      "why": "fastest hundred in t20i cricket. 30 balls. so we ran his chart through the app.",
+      "initials": "as",
+      "redactLabel": "no photo on file",
+      "tab": "star file · no. 001",
+      "kicker": "star file no. 001 · filed 18 sept",
+      "open": {
+        "stamp": "the downfall desk",
+        "line": "his chart has a **weak spot**"
+      },
+      "hook": [
+        "30 balls.",
+        "fastest **hundred** ever"
+      ],
+      "hookNote": "so we ran him through the same reading the app runs on anyone. four desks filed. the last one is the one to read.",
+      "slateKicker": "the file · in one line",
+      "why": "two speeds in one chart.",
+      "whyNote": "something patient underneath. something that refuses to wait on top. every desk below is that same argument in a different room.",
       "filed": "filed 18 sept",
       "basis": "public date · no birth time",
-      "sub": "public birth date, no birth time. the desk reads the day, not the minute.",
+      "sub": "entertainment. read off a public birth date with no birth time, so the desk reads the day and not the minute.",
       "hold": 36,
-      "ctaHold": 72,
+      "lastHold": 52,
+      "ctaHold": 74,
       "desks": [
         {
           "desk": "career",
           "stamp": "long game",
-          "verdict": "saturn built it. the hot half detonated it.",
-          "evidence": "two speeds in one chart: something patient underneath, something that refuses to wait on top. the breakthrough looks sudden from outside. the loading was years of the boring version."
+          "verdict": "saturn built it. the hot half lit it.",
+          "evidence": "the breakthrough looks sudden from outside. what it actually took was years of the boring version, filed under nobody watching."
         },
         {
           "desk": "love",
           "stamp": "no notes",
           "verdict": "decides early. verifies late.",
-          "evidence": "more heat than caution here. certainty tends to arrive before the evidence does, and trust keeps its own slower timetable regardless."
+          "evidence": "more heat than caution in this half of the chart. certainty tends to arrive first and the evidence catches up on its own schedule."
         },
         {
           "desk": "money",
           "stamp": "read it twice",
-          "verdict": "the money follows the name, not the bet.",
-          "evidence": "jupiter thinks in scale, which is the upside. it is also how a shortcut gets mistaken for a plan. this chart wants ambition with paperwork attached."
+          "verdict": "it follows the name, not the bet.",
+          "evidence": "jupiter thinks in scale, which is the whole upside. it is also how a shortcut gets mistaken for a plan. ambition with paperwork attached."
         },
         {
           "desk": "the downfall desk",
           "stamp": "handle with care",
           "hot": true,
           "verdict": "the weak spot is speed. not scandal.",
-          "evidence": "the same heat that wins the contest shortens the gap between provocation and reply. in the middle it is a weapon. outside it, it is just noise over the thing he wanted seen."
+          "evidence": "the same heat that wins the contest shortens the gap between provocation and reply. in the middle it is a weapon. outside it, it is noise over the thing he wanted seen."
         }
       ],
       "cta": {
-        "h": "comment a **name**",
-        "p": "the most asked for name gets the next star file. u can also just run it urself, free, in the app.",
+        "h": "tell us we're **wrong**",
+        "p": "then comment a name. the one asked for most gets star file no. 002. or skip the queue and run anyone urself, free.",
         "btn": "asktota.com"
       },
       "title": "star files no. 001: abhishek sharma",
-      "summary": "the first star file. a trending name, four desks, a downfall desk, and a comment prompt that feeds next week's episode.",
-      "caption": "STAR FILES no. 001 📂 abhishek sharma, 30 balls, fastest t20i hundred there has ever been.\n\nso we put him through the same reading the app runs on anyone.\n\ncareer: two speeds. something patient underneath, something that will not wait on top. the innings looked sudden. the chart had been loading for years.\nlove: decides early, verifies late.\nmoney: it follows the name, not the bet.\nthe downfall desk: the weak spot is speed, not scandal. the heat that wins the contest is the same heat that answers things it did not need to answer.\n\nthis is entertainment, read off a public birth date with no birth time, so it reads the day and not the minute.\n\nnow the fun part 👇 comment a name. the one that gets asked for most gets star file no. 002 this week. follow so u actually see whose chart we open next 🦜\n\nor skip the queue and run anyone urself, free on asktota.com\n\n#abhisheksharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #t20i #birthchart",
+      "summary": "the first star file, rebuilt photo led. the face and the downfall stamp are on frame 0, the four desks file, and the closer farms both an argument and the next episode's name.",
+      "caption": "STAR FILES no. 001 📂 abhishek sharma. 30 balls. the fastest t20i hundred there has ever been.\n\nso we put him through the same reading the app runs on anyone.\n\ncareer: saturn built it, the hot half lit it. the innings looked sudden. the chart had been loading for years.\nlove: decides early, verifies late.\nmoney: it follows the name, not the bet.\nthe downfall desk: the weak spot is speed, not scandal. the heat that wins the contest is the same heat that answers things it did not need to answer.\n\nthis is entertainment, read off a public birth date with no birth time, so it reads the day and not the minute.\n\nthink the desk got it backwards? say so 👇 and comment a name while ur there. the one asked for most gets star file no. 002 this week. follow so u actually see whose chart we open next 🦜\n\nor skip the queue and run anyone urself, free on asktota.com\n\n#abhisheksharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #t20i #birthchart",
       "tags": "#abhisheksharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #t20i #birthchart"
+    },
+    "kohli-rohit": {
+      "mode": "versus",
+      "slug": "kohli-rohit",
+      "no": "002",
+      "a": {
+        "slug": "virat-kohli",
+        "name": "virat kohli",
+        "short": "kohli",
+        "initials": "vk",
+        "born": "5 nov 1988"
+      },
+      "b": {
+        "slug": "rohit-sharma",
+        "name": "rohit sharma",
+        "short": "rohit",
+        "initials": "rs",
+        "born": "30 apr 1987"
+      },
+      "name": "kohli vs rohit",
+      "tab": "star file · no. 002",
+      "kicker": "head to head · no. 002 · filed 19 sept",
+      "open": {
+        "stamp": "head to head",
+        "line": "two charts. **one desk.**"
+      },
+      "hook": [
+        "same team.",
+        "**opposite charts.**"
+      ],
+      "hookNote": "we ran both through the app and made the desk pick a side in every round. it did not go the way the timeline thinks it should.",
+      "slateKicker": "the file · the split",
+      "why": "one chart wants the summit. one wants the room.",
+      "whyNote": "that is the entire difference between them, and it turns up again in every round below.",
+      "filed": "filed 19 sept",
+      "basis": "public dates · no birth times",
+      "sub": "entertainment. read off public birth dates with no birth times, so the desk reads the day and not the minute.",
+      "hold": 42,
+      "lastHold": 56,
+      "ctaHold": 78,
+      "rounds": [
+        {
+          "desk": "temperament",
+          "win": "b",
+          "stamp": "round to rohit",
+          "a": {
+            "verdict": "runs hot by design",
+            "note": "a chart that switches on when the stakes go up. calm is not the goal here, it is the thing to be survived."
+          },
+          "b": {
+            "verdict": "runs cool by default",
+            "note": "the pressure does not register on the surface. that is the gift, and it is also why the low gear is hard to leave."
+          }
+        },
+        {
+          "desk": "the long game",
+          "win": "a",
+          "stamp": "round to kohli",
+          "a": {
+            "verdict": "builds by grinding",
+            "note": "saturn gets paid here. the boring version of the work is the version this chart is actually built for."
+          },
+          "b": {
+            "verdict": "builds by waiting",
+            "note": "timing over effort. brilliant when the moment arrives, expensive when it has to be manufactured."
+          }
+        },
+        {
+          "desk": "money",
+          "win": "b",
+          "stamp": "round to rohit",
+          "a": {
+            "verdict": "the name is the asset",
+            "note": "jupiter in scale mode. the upside is enormous and the risk is mistaking reach for a plan."
+          },
+          "b": {
+            "verdict": "the timing is the asset",
+            "note": "fewer bets, later, larger. this chart is slower to move and it loses less on the way."
+          }
+        },
+        {
+          "desk": "the downfall desk",
+          "win": null,
+          "hot": true,
+          "stamp": "no winner here",
+          "a": {
+            "verdict": "the heat that wins is the heat that leaks",
+            "note": "the same fire that carries a chase answers things it never needed to answer."
+          },
+          "b": {
+            "verdict": "the calm that saves is the calm that stalls",
+            "note": "the same steadiness that holds a room is what makes the urgent thing wait one week too long."
+          }
+        }
+      ],
+      "cta": {
+        "h": "2 to 1. **rohit.**",
+        "p": "u do not agree. good. comment the round the desk got backwards 👇 and drop the two names u want in star file no. 003.",
+        "btn": "asktota.com"
+      },
+      "title": "star files no. 002: kohli vs rohit",
+      "summary": "the head to head format. two charts, four rounds, the desk picks a side in each and scores it 2 to 1, which is the argument the comments are for.",
+      "caption": "STAR FILES no. 002 📂 head to head. virat kohli vs rohit sharma, same team, opposite charts.\n\nwe ran both through the app and made the desk pick a side in every round.\n\ntemperament: kohli runs hot by design, rohit runs cool by default. round to rohit.\nthe long game: kohli builds by grinding, rohit builds by waiting. round to kohli.\nmoney: the name is the asset vs the timing is the asset. round to rohit.\nthe downfall desk: no winner. the heat that wins is the heat that leaks. the calm that saves is the calm that stalls.\n\n2 to 1, rohit.\n\nthis is entertainment, read off public birth dates with no birth times, so it reads the day and not the minute. character and chart only.\n\nu do not agree 👇 comment the round the desk got backwards. and drop the two names u want in star file no. 003 🦜\n\nrun either chart urself, free on asktota.com\n\n#viratkohli #rohitsharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #birthchart",
+      "tags": "#viratkohli #rohitsharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #birthchart"
     }
   }
 }

@@ -8,36 +8,24 @@ timing lives next to the animation it belongs to and cannot drift from it.
     python3 genreel.py tier-list 09     # reel-tier-list.html -> assets/social/reels/09_tier-list/
     python3 genreel.py red-flag 10
 
-Frames are screenshotted one at a time through gstack browse, then encoded with
-an SFX bed built from audio/. Decks that share a template (the ask tota screens)
+Frames are screenshotted through gstack browse in verified batches (see
+reelshot.py), then encoded with an SFX bed built from audio/. Decks that share a template (the ask tota screens)
 still go through genaskreels.py.
 """
 import json, pathlib, subprocess, sys, tempfile
 
+from reelshot import browse, capture, open_page
+
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT.parent.parent
-BROWSE = pathlib.Path.home() / '.claude/skills/gstack/browse/dist/browse'
 FPS = 30
 
 
-def browse(*args):
-    out = subprocess.run([str(BROWSE), *args], capture_output=True, text=True).stdout.strip().splitlines()
-    return out[-1] if out else ''   # `render(f)` returns undefined, which prints nothing
-
-
 def render_frames(slug, out):
-    out.mkdir(parents=True, exist_ok=True)
-    browse('viewport', '1080x1920')
-    browse('goto', f'file://{ROOT}/reel-{slug}.html')
-    browse('js', 'document.fonts.ready.then(()=>1)')
+    open_page(f'file://{ROOT}/reel-{slug}.html')
     meta = json.loads(browse('js', 'JSON.stringify({total:TOTAL, sfx:SFX})'))
-    total = meta['total']
-    for f in range(total):
-        browse('js', f'render({f})')
-        browse('screenshot', '#stage', str(out / f'f{f:04d}.png'))
-    n = len(list(out.glob('*.png')))
-    assert n == total, f'{slug}: rendered {n} frames, expected {total}'
-    return total, meta['sfx']
+    capture(meta['total'], out, label=f'{slug}: ')
+    return meta['total'], meta['sfx']
 
 
 def build_sfx(path, total, events):

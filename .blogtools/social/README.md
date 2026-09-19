@@ -57,3 +57,53 @@ ffmpeg -y -framerate 30 -i frames/f%04d.png \
 ```
 
 The silent AAC track is deliberate. Instagram is happier with it than without.
+
+## reel generators
+
+Each generator is a template plus a data file. The template owns the motion, the
+data file owns the words, and `render(frame)` stays a pure function of the frame
+so any frame can be shot independently and out of order.
+
+| generator | template | decks |
+|---|---|---|
+| `genstarfiles.py` | `reel-star-file.html` | `star-files.json` |
+| `gencallout.py` | `reel-callout.html` | `reel-callout.json` |
+| `genaskreels.py` | `reel-ask-tota.html` | `reel-ask-tota.json` |
+| `genreel.py` | any self-contained `reel-*.html` | in the template |
+| `genmyths.py` | `myths.html` | `myths.json` |
+
+All of them capture through `reelshot.py`, which does two things the generators
+used to each get wrong on their own. It batches frames into one `browse chain`
+process instead of spawning the binary twice per frame, which took a twelve
+second reel from eighteen minutes to about one. And it verifies every frame as
+it lands and reshoots the ones that dropped, instead of counting files at the
+end and throwing the whole render away over a single missing png.
+
+## subject photos
+
+`genphotos.py` fills `photos/<slug>.jpg` for the STAR FILES reels. It resolves a
+Wikidata id to that entity's `P18` photo on Wikimedia Commons, which is the same
+path the app takes for celebrity portraits (`app/utils/wikimediaImage.ts`), then
+crops it to the 3:4 card slot with a crop anchored above centre so a wide action
+shot does not get beheaded.
+
+```bash
+python3 genphotos.py --find "shubman gill"   # look up a qid, write nothing
+python3 genphotos.py                         # every subject in photos.json
+python3 genphotos.py virat-kohli             # just this one
+```
+
+Two things this buys. The licence is nameable, because a Commons file carries
+one and `photo-credits.json` records it per subject. And the birth date on the
+slate comes off the same record as the face, so the two cannot drift apart.
+
+Not every public figure has a free photo. `"manual": true` in `photos.json` says
+so, and until a file is dropped in by hand the template renders the redacted
+plate instead: initials behind a pink **no photo on file** bar. That is a
+supported state and it looks deliberate, but it is not the same reel. A face on
+frame 0 is the single thing that stops a scroll, so a subject worth filing is a
+subject worth finding a licensed photo for.
+
+The photo treatment lives in the template, not in the file on disk: duotone to
+ink and cream with a dot screen over it, so a press photo sits in the brand
+palette instead of fighting it. Retune it in `.duo` and re-render, no refetch.

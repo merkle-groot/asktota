@@ -1,0 +1,12 @@
+{
+  "note": "Subjects for the STAR FILES reels. A wikidata id resolves to that entity's P18 photo on Wikimedia Commons, which is the same path the app takes for celebrity portraits (see app/utils/wikimediaImage.ts), so the licence is nameable and the birth date on the slate comes off the same record as the face. manual:true means no free photo exists and the file has to be dropped into photos/ by hand; until it is, the template renders the redacted plate instead.",
+  "subjects": {
+    "abhishek-sharma": {
+      "wikidata": "Q19803999",
+      "manual": true,
+      "why": "Q19803999 has no P18 and the en-wiki article has no lead image, so there is no freely licensed photo of him anywhere on Commons as of 18 Sept 2026. Drop a licensed photo at photos/abhishek-sharma.jpg and re-render. Re-run `python3 genphotos.py --find \"abhishek sharma\"` in a few months; a player this size gets a Commons photo eventually, and flipping manual to false picks it up automatically."
+    },
+    "virat-kohli": { "wikidata": "Q213854" },
+    "rohit-sharma": { "wikidata": "Q3520045" }
+  }
+}

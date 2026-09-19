@@ -3,77 +3,189 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
 <style>
- /* STAR FILES. 1080x1920, 30fps, loops. One deck per subject in star-files.json.
-    A trending name goes in, the four desks file a verdict, the last one is the
-    downfall desk. Ends on "comment a name", which is the point of the series.
-    Same rules as the other reels: render(f) is a pure function of the frame,
-    hard cuts, no fades, Tota bobs. */
- :root{--bg:#FBF3E0;--dot:#E8DCC2;--stock:#F4EEDD;--ink:#1E3A2A;--cream:#FBF3E0;
-       --marigold:#FFD24A;--muted:#5E6E5E;--mint:#DFF2E4;--pink:#F8D3E0;--pink-ink:#C2588A;
-       --parrot:#178A4C}
+ /* STAR FILES v2. 1080x1920, 30fps, loops. Decks live in star-files.json.
+
+    v1 opened on a masthead slide-in and did not say the subject's name until
+    frame 44. That is the whole reel spent on brand furniture, past the point
+    where a feed has already decided. v2 inverts it:
+
+      - frame 0 is the payload. The face is full bleed, the name is set, and
+        the downfall stamp is already down. Nothing builds in from nothing.
+      - the face never leaves. After the cold open it sits in the case header
+        for every remaining frame, so there is a person on screen at all times.
+      - the cold open promises the downfall desk and desk 4 pays it off. An
+        open loop, not a slideshow.
+      - the masthead is gone. The file tab does that job in a sixth of the space.
+
+    Two modes. solo: one subject, N desks. versus: two subjects, N rounds, the
+    desk picks a side each round, and the closer asks to be argued with.
+
+    render(f) stays a pure function of the frame. Hard cuts, no fades, Tota bobs. */
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--ink:#1E3A2A;--cream:#FBF3E0;
+       --marigold:#FFD24A;--muted:#5E6E5E;--pink:#F8D3E0;--pink-ink:#C2588A;
+       --dim:#BFD6C4;--faint:#9FBCA6}
  *{margin:0;padding:0;box-sizing:border-box}
  body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
  #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);
    background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);background-size:50px 50px}
 
- .masthead{position:absolute;left:48px;top:100px;width:984px;height:132px;background:var(--ink);
-   display:flex;align-items:center;justify-content:center;box-shadow:14px 14px 0 rgba(30,58,42,.28)}
- .masthead span{color:var(--cream);font-weight:800;font-size:52px;letter-spacing:.16em;text-transform:uppercase}
- #deskbar{position:absolute;left:48px;top:240px;width:984px;height:64px;overflow:hidden}
- #deskbar .fill{position:absolute;inset:0;background:var(--pink-ink);border:6px solid var(--ink);
-   display:flex;align-items:center;justify-content:center;transform-origin:left center}
- #deskbar b{font-weight:800;font-size:29px;letter-spacing:.24em;text-transform:uppercase;
-   color:var(--cream);white-space:nowrap}
+ /* ---- the photo treatment -------------------------------------------------
+    A press photo dropped in raw fights the palette and reads as a different
+    account's post. Duotone pins it to two brand colours: shadows to ink,
+    highlights to cream. The dot screen on top matches the page texture so the
+    face sits in the paper instead of on it. */
+ .duo{position:relative;overflow:hidden;background:var(--ink)}
+ .duo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;display:block;
+   filter:grayscale(1) contrast(1.28) brightness(1.06)}
+ .duo::before,.duo::after{content:'';position:absolute;inset:0;pointer-events:none}
+ .duo::before{background:var(--ink);mix-blend-mode:lighten}
+ .duo::after{background:var(--cream);mix-blend-mode:multiply}
+ .duo .screen{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:.22;
+   background-image:radial-gradient(var(--dot) 2px,transparent 2.4px);background-size:14px 14px}
+ /* no free photo on file. The redaction is the format, not an apology for it. */
+ .redact{position:absolute;inset:0;background:var(--ink);display:flex;align-items:center;
+   justify-content:center;overflow:hidden}
+ .redact .glyph{font-weight:800;color:rgba(251,243,224,.13);text-transform:uppercase;
+   letter-spacing:-.06em;line-height:.8}
+ .redact .bar{position:absolute;left:-6%;width:112%;background:var(--pink-ink);
+   transform:rotate(-6deg);display:flex;align-items:center;justify-content:center}
+ .redact .bar b{color:var(--cream);font-weight:800;text-transform:uppercase;white-space:nowrap}
 
- /* the hook: why this name is on the desk today */
- .hd{position:absolute;left:72px;width:936px;top:640px}
- .l{font-weight:800;line-height:1.04;letter-spacing:-.035em;text-transform:lowercase;color:var(--ink)}
- #l1{font-size:104px}
- #l2{font-size:88px;margin-top:16px;display:inline-block;padding:2px 26px 12px;border-radius:999px;
-   background:var(--marigold)}
+ /* ---- cold open: f0 is already composed ---------------------------------- */
+ /* The cold open is a magazine cover, not an intro. The plate holds the top
+    two thirds and the type sits on the paper below it, which is the only way
+    the name stays legible whether the plate is a photo or the redaction. */
+ #open{position:absolute;inset:0}
+ #openphoto{position:absolute;left:0;top:0;width:1080px;height:1210px}
+ #opengrad{position:absolute;left:0;top:820px;width:1080px;height:390px;
+   background:linear-gradient(to bottom,rgba(30,58,42,0),rgba(30,58,42,.55))}
+ #opentab{position:absolute;left:0;top:104px;background:var(--pink-ink);color:var(--cream);
+   font-weight:800;font-size:34px;letter-spacing:.24em;text-transform:uppercase;padding:18px 44px 26px}
+ #openstamp{position:absolute;right:52px;top:912px;background:var(--marigold);border:8px solid var(--ink);
+   transform:rotate(-7deg);padding:16px 34px 24px;font-weight:800;font-size:44px;letter-spacing:.14em;
+   text-transform:uppercase;color:var(--ink);transform-origin:80% 50%;
+   box-shadow:8px 8px 0 rgba(30,58,42,.3)}
+ #openfoot{position:absolute;left:64px;right:64px;top:1262px}
+ #openname{color:var(--ink);font-weight:800;font-size:128px;line-height:.92;letter-spacing:-.05em;
+   text-transform:lowercase;text-wrap:balance}
+ #openline{margin-top:36px;font-weight:800;font-size:74px;line-height:1.08;letter-spacing:-.035em;
+   text-transform:lowercase;color:var(--ink);text-wrap:balance}
+ #openline em{font-style:normal;background:var(--pink-ink);color:var(--cream);padding:0 18px 8px;
+   border-radius:999px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ #openrule{margin-top:40px;border-top:7px solid var(--ink);padding-top:22px;display:flex;
+   justify-content:space-between;font-weight:800;font-size:27px;letter-spacing:.18em;
+   text-transform:uppercase;color:var(--muted);white-space:nowrap}
+ /* versus cold open: one screen, two fandoms */
+ #openvs{position:absolute;left:0;top:0;width:1080px;height:1210px;display:none}
+ #openvs .half{position:absolute;top:0;width:540px;height:1210px}
+ #openvs .half.a{left:0}
+ #openvs .half.b{left:540px}
+ #openvs .half .duo::before{background:var(--ink)}
+ #openvs .half.b .duo::after{background:var(--pink)}
+ #openvs .seam{position:absolute;left:526px;top:0;width:28px;height:1210px;background:var(--bg)}
+ #vsdisc{position:absolute;left:406px;top:470px;width:268px;height:268px;border-radius:50%;
+   background:var(--marigold);border:12px solid var(--ink);display:flex;align-items:center;
+   justify-content:center;font-weight:800;font-size:106px;color:var(--ink);text-transform:uppercase;
+   letter-spacing:-.04em;box-shadow:0 14px 0 rgba(30,58,42,.35)}
+ #openvs .tag{position:absolute;bottom:0;left:0;width:540px;background:var(--ink);color:var(--cream);
+   font-weight:800;font-size:40px;line-height:1;letter-spacing:-.02em;text-transform:lowercase;
+   padding:22px 14px 28px;text-align:center}
 
- /* the subject slate, held for a beat before the desks file */
- #slate{position:absolute;left:72px;top:380px;width:936px;height:1080px;background:var(--ink);
-   padding:88px 64px;display:flex;flex-direction:column;box-shadow:0 16px 0 rgba(30,58,42,.3)}
- #slate .k{font-weight:800;font-size:30px;letter-spacing:.26em;text-transform:uppercase;color:var(--marigold)}
- #sname{margin-top:40px;color:var(--cream);font-weight:800;font-size:132px;line-height:.98;
-   letter-spacing:-.045em;text-transform:lowercase}
- #swhy{margin-top:56px;color:#BFD6C4;font-weight:600;font-size:52px;line-height:1.22}
- #sdata{margin-top:auto;border-top:5px solid rgba(251,243,224,.35);padding-top:26px;display:flex;
-   justify-content:space-between;font-weight:800;font-size:24px;letter-spacing:.14em;white-space:nowrap;
-   text-transform:uppercase;color:#9FBCA6}
+ /* ---- case header: the face, pinned, for every frame after the open ------- */
+ #case{position:absolute;left:72px;top:96px;width:936px;height:264px;display:flex;gap:24px;
+   align-items:stretch}
+ .casepic{width:200px;height:248px;border:7px solid var(--ink);box-shadow:8px 8px 0 rgba(30,58,42,.3);
+   flex:0 0 auto}
+ #casetext{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0}
+ #casetab{align-self:flex-start;background:var(--pink-ink);color:var(--cream);font-weight:800;
+   font-size:25px;letter-spacing:.22em;text-transform:uppercase;padding:11px 26px 17px;white-space:nowrap}
+ #casename{margin-top:16px;color:var(--ink);font-weight:800;font-size:74px;line-height:.96;
+   letter-spacing:-.045em;text-transform:lowercase;white-space:nowrap}
+ #casebasis{margin-top:16px;color:var(--muted);font-weight:800;font-size:23px;letter-spacing:.16em;
+   text-transform:uppercase;white-space:nowrap}
+ /* two subjects means two portraits, so both get narrower and the right one is
+    tinted to match its side of the cold open */
+ #case.vs .casepic{width:146px}
+ #case.vs #casephotob .duo::after,#case.vs #casephotob::after{background:var(--pink)}
 
- /* one desk verdict at a time */
- #deskcard{position:absolute;left:72px;top:380px;width:936px;height:1080px;background:var(--cream);
-   border:8px solid var(--ink);box-shadow:0 16px 0 var(--ink);padding:56px 56px 0;
-   transform-origin:50% 40%}
+ /* ---- the cards ----------------------------------------------------------- */
+ .card{position:absolute;left:72px;top:400px;width:936px;height:1060px}
+ #hook{background:var(--marigold);border:8px solid var(--ink);box-shadow:0 16px 0 var(--ink);
+   padding:72px 60px;display:flex;flex-direction:column;justify-content:center;transform-origin:50% 40%}
+ #hook .l{font-weight:800;line-height:1.0;letter-spacing:-.045em;text-transform:lowercase;color:var(--ink)}
+ #h1{font-size:118px}
+ #h2{margin-top:18px;font-size:118px}
+ #h2 em{font-style:normal;background:var(--ink);color:var(--marigold);padding:0 22px 12px;
+   border-radius:999px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ #hooknote{margin-top:56px;font-weight:600;font-size:44px;line-height:1.2;color:#6B5A19}
+
+ #slate{background:var(--ink);padding:80px 60px;display:flex;flex-direction:column;
+   box-shadow:0 16px 0 rgba(30,58,42,.3);transform-origin:50% 40%}
+ #slate .k{font-weight:800;font-size:29px;letter-spacing:.26em;text-transform:uppercase;color:var(--marigold)}
+ #swhy{margin-top:48px;color:var(--cream);font-weight:800;font-size:76px;line-height:1.08;
+   letter-spacing:-.035em;text-transform:lowercase;text-wrap:balance}
+ #snote{margin-top:44px;color:var(--dim);font-weight:600;font-size:46px;line-height:1.22;text-wrap:balance}
+ #sdata{margin-top:auto;border-top:5px solid rgba(251,243,224,.35);padding-top:24px;display:flex;
+   justify-content:space-between;font-weight:800;font-size:23px;letter-spacing:.14em;white-space:nowrap;
+   text-transform:uppercase;color:var(--faint)}
+
+ #deskcard{background:var(--cream);border:8px solid var(--ink);box-shadow:0 16px 0 var(--ink);
+   padding:52px 52px 0;transform-origin:50% 40%}
  #dchip{display:inline-block;background:var(--ink);color:var(--cream);border-radius:999px;
-   padding:12px 42px 20px;font-weight:800;font-size:44px;letter-spacing:.2em;text-transform:uppercase}
+   padding:12px 42px 20px;font-weight:800;font-size:42px;letter-spacing:.2em;text-transform:uppercase}
+ #deskcard.hot{background:var(--pink);border-color:var(--pink-ink);box-shadow:0 16px 0 var(--pink-ink)}
  #deskcard.hot #dchip{background:var(--pink-ink)}
- #dverdict{margin-top:58px;font-weight:800;font-size:92px;line-height:1.02;letter-spacing:-.04em;
+ #dverdict{margin-top:52px;font-weight:800;font-size:90px;line-height:1.02;letter-spacing:-.04em;
    text-transform:lowercase;color:var(--ink);text-wrap:balance}
  #deskcard.hot #dverdict{color:var(--pink-ink)}
- #devidence{margin-top:52px;font-weight:600;font-size:48px;line-height:1.24;color:var(--muted);text-wrap:balance}
- #dstamp{position:absolute;right:54px;bottom:132px;background:var(--marigold);border:6px solid var(--ink);
-   font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);
+ #devidence{margin-top:46px;font-weight:600;font-size:46px;line-height:1.24;color:var(--muted);text-wrap:balance}
+ #deskcard.hot #devidence{color:#8C4A69}
+ #dstamp{position:absolute;right:50px;bottom:128px;background:var(--marigold);border:6px solid var(--ink);
+   font-weight:800;font-size:29px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);
    padding:12px 24px 18px;transform:rotate(-8deg)}
- #deskcard.hot #dstamp{background:var(--pink-ink);color:var(--cream)}
- #dmeta{position:absolute;left:56px;right:56px;bottom:40px;display:flex;justify-content:space-between;
-   border-top:5px solid var(--ink);padding-top:20px;font-weight:800;font-size:27px;letter-spacing:.2em;
+ #deskcard.hot #dstamp{background:var(--pink-ink);color:var(--cream);border-color:var(--pink-ink)}
+ #dmeta{position:absolute;left:52px;right:52px;bottom:38px;display:flex;justify-content:space-between;
+   border-top:5px solid var(--ink);padding-top:18px;font-weight:800;font-size:26px;letter-spacing:.2em;
    text-transform:uppercase;color:var(--muted)}
+ #deskcard.hot #dmeta{border-color:var(--pink-ink);color:#8C4A69}
 
- /* the closer: the whole reason the series exists */
- #cta{position:absolute;left:72px;top:380px;width:936px;height:1080px;background:var(--ink);
-   padding:96px 72px;display:flex;flex-direction:column;justify-content:center;
-   box-shadow:0 16px 0 rgba(30,58,42,.3)}
- #cta h2{color:var(--cream);font-weight:800;font-size:114px;line-height:1.14;letter-spacing:-.04em;
+ /* versus round: both verdicts on one card, the desk picks one */
+ #round{background:var(--cream);border:8px solid var(--ink);box-shadow:0 16px 0 var(--ink);
+   padding:44px 40px 0;transform-origin:50% 40%;display:flex;flex-direction:column}
+ #rchip{align-self:center;background:var(--ink);color:var(--cream);border-radius:999px;
+   padding:11px 40px 19px;font-weight:800;font-size:40px;letter-spacing:.2em;text-transform:uppercase}
+ #rcols{margin-top:40px;flex:1;display:flex;gap:26px}
+ .rcol{flex:1;min-width:0;border:6px solid var(--ink);padding:30px 26px 96px;display:flex;
+   flex-direction:column;justify-content:center;background:var(--bg);position:relative}
+ .rcol .who{font-weight:800;font-size:38px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+ .rcol .v{margin-top:24px;font-weight:800;font-size:60px;line-height:1.04;letter-spacing:-.035em;
+   text-transform:lowercase;color:var(--ink);text-wrap:balance}
+ .rcol .n{margin-top:24px;font-weight:600;font-size:34px;line-height:1.22;color:var(--muted);text-wrap:balance}
+ .rcol.win{background:var(--marigold);border-color:var(--ink)}
+ .rcol.win .who{color:#6B5A19}
+ .rcol.win .n{color:#6B5A19}
+ .rcol .edge{position:absolute;left:26px;right:26px;bottom:28px;font-weight:800;font-size:24px;
+   letter-spacing:.16em;text-transform:uppercase;color:transparent;white-space:nowrap}
+ .rcol.win .edge{color:var(--ink)}
+ #rmeta{padding:20px 0 34px;display:flex;justify-content:space-between;font-weight:800;font-size:25px;
+   letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+ #round.hot{background:var(--pink);border-color:var(--pink-ink);box-shadow:0 16px 0 var(--pink-ink)}
+ #round.hot #rchip{background:var(--pink-ink)}
+ #round.hot .rcol{border-color:var(--pink-ink);background:var(--cream)}
+ #round.hot .rcol .v{color:var(--pink-ink)}
+ #round.hot .rcol .who,#round.hot .rcol .n,#round.hot #rmeta{color:#8C4A69}
+
+ #cta{background:var(--ink);padding:88px 64px;display:flex;flex-direction:column;justify-content:center;
+   box-shadow:0 16px 0 rgba(30,58,42,.3);transform-origin:50% 40%}
+ #cta h2{color:var(--cream);font-weight:800;font-size:110px;line-height:1.12;letter-spacing:-.045em;
    text-transform:lowercase;text-wrap:balance}
- #cta h2 em{font-style:normal;background:var(--marigold);color:var(--ink);padding:0 20px 10px;border-radius:999px}
- #cta p{margin-top:52px;color:#BFD6C4;font-weight:600;font-size:48px;line-height:1.24}
- #ctapill{margin-top:68px;align-self:flex-start;background:var(--marigold);border:8px solid var(--cream);
-   border-radius:999px;padding:18px 54px 26px;font-weight:800;font-size:56px;color:var(--ink)}
+ #cta h2 em{font-style:normal;background:var(--marigold);color:var(--ink);padding:0 20px 10px;
+   border-radius:999px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ #cta p{margin-top:48px;color:var(--dim);font-weight:600;font-size:46px;line-height:1.24;text-wrap:balance}
+ #ctapill{margin-top:60px;align-self:flex-start;background:var(--marigold);border:8px solid var(--cream);
+   border-radius:999px;padding:18px 54px 26px;font-weight:800;font-size:54px;color:var(--ink)}
 
- .sub{position:absolute;left:72px;top:1512px;width:640px;font-weight:600;font-size:38px;
+ .sub{position:absolute;left:72px;top:1512px;width:640px;font-weight:600;font-size:36px;
    line-height:1.22;color:var(--muted)}
  #tota{position:absolute;right:20px;bottom:104px;width:320px}
  .foot{position:absolute;left:72px;bottom:84px;font-weight:800;font-size:44px;letter-spacing:.14em;
@@ -81,22 +193,49 @@
  .hidden{visibility:hidden}
 </style></head><body>
 <div id="stage">
-  <div class="masthead" id="mast"><span>the daily tota</span></div>
-  <div id="deskbar"><div class="fill" id="deskfill"><b id="deskkick"></b></div></div>
 
-  <div class="hd" id="head">
-    <div class="l" id="l1"></div>
-    <div class="l" id="l2"></div>
+  <div id="open">
+    <div id="openphoto" class="duo"><img id="openimg" alt=""><div class="screen"></div></div>
+    <div id="openvs">
+      <div class="half a"><div class="duo" style="width:540px;height:1210px"><img id="vsimga" alt=""><div class="screen"></div></div><div class="tag" id="vstaga"></div></div>
+      <div class="half b"><div class="duo" style="width:540px;height:1210px"><img id="vsimgb" alt=""><div class="screen"></div></div><div class="tag" id="vstagb"></div></div>
+      <div class="seam"></div>
+      <div id="vsdisc">vs</div>
+    </div>
+    <div id="opengrad"></div>
+    <div id="opentab"></div>
+    <div id="openstamp"></div>
+    <div id="openfoot">
+      <div id="openname"></div>
+      <div id="openline"></div>
+      <div id="openrule"><span id="or1"></span><span id="or2"></span></div>
+    </div>
   </div>
 
-  <div id="slate">
-    <div class="k">star file &middot; subject</div>
-    <div id="sname"></div>
+  <div id="case">
+    <div id="casephoto" class="duo casepic"><img id="caseimg" alt=""><div class="screen"></div></div>
+    <div id="casephotob" class="duo casepic" hidden><img id="caseimgb" alt=""><div class="screen"></div></div>
+    <div id="casetext">
+      <div id="casetab"></div>
+      <div id="casename"></div>
+      <div id="casebasis"></div>
+    </div>
+  </div>
+
+  <div class="card" id="hook">
+    <div class="l" id="h1"></div>
+    <div class="l" id="h2"></div>
+    <div id="hooknote"></div>
+  </div>
+
+  <div class="card" id="slate">
+    <div class="k" id="slatek">star file &middot; why this name</div>
     <div id="swhy"></div>
+    <div id="snote"></div>
     <div id="sdata"><span id="sd1"></span><span id="sd2"></span></div>
   </div>
 
-  <div id="deskcard">
+  <div class="card" id="deskcard">
     <div id="dchip"></div>
     <div id="dverdict"></div>
     <div id="devidence"></div>
@@ -104,7 +243,22 @@
     <div id="dmeta"><span id="dno"></span><span id="dname"></span></div>
   </div>
 
-  <div id="cta">
+  <div class="card" id="round">
+    <div id="rchip"></div>
+    <div id="rcols">
+      <div class="rcol" id="rcola">
+        <div class="who" id="rwhoa"></div><div class="v" id="rva"></div><div class="n" id="rna"></div>
+        <div class="edge">the desk leans here</div>
+      </div>
+      <div class="rcol" id="rcolb">
+        <div class="who" id="rwhob"></div><div class="v" id="rvb"></div><div class="n" id="rnb"></div>
+        <div class="edge">the desk leans here</div>
+      </div>
+    </div>
+    <div id="rmeta"><span id="rno"></span><span id="rbasis"></span></div>
+  </div>
+
+  <div class="card" id="cta">
     <h2></h2>
     <p></p>
     <div id="ctapill"></div>
@@ -117,89 +271,173 @@
 <script>
 const $=id=>document.getElementById(id),
       cl=(v,a,b)=>Math.max(a,Math.min(b,v)),
-      p=(f,a,b)=>cl((f-a)/(b-a),0,1);
+      p=(f,a,b)=>cl((f-a)/(b-a),0,1),
+      pill=s=>String(s).replace(/\*\*(.+?)\*\*/g,'<em>$1</em>');
 
-const T={mast:0, desk:8, l1:14, l2:26, slate:44, first:86};
-let D=null, CUTS=[], SLATE_END=0, CTA_AT=0;
+// Beat boundaries. The open is short on purpose: it exists to be frame 0, not
+// to be watched. Everything after it earns its length.
+const T={openEnd:18, hook:18, slate:56, first:94};
+let D=null, MODE='solo', ITEMS=[], CUTS=[], CTA_AT=0;
+
+/* A subject with no photo file gets the redacted plate. Sized off the slot, so
+   the same markup works at 1080 wide in the open and 200 wide in the header. */
+function fillPhoto(box, img, subject){
+  const w=box.offsetWidth||parseInt(box.style.width)||1080;
+  const old=box.querySelector('.redact'); if(old) old.remove();
+  if(subject.photo){
+    img.src=subject.photo; img.style.display='';
+    box.style.background='var(--ink)';
+    return;
+  }
+  img.removeAttribute('src'); img.style.display='none';
+  const r=document.createElement('div'); r.className='redact';
+  const g=document.createElement('div'); g.className='glyph';
+  g.style.fontSize=Math.round(w*0.46)+'px'; g.textContent=subject.initials||'';
+  const bar=document.createElement('div'); bar.className='bar';
+  bar.style.height=Math.round(w*0.15)+'px'; bar.style.top=Math.round(w*0.52)+'px';
+  const b=document.createElement('b');
+  b.style.fontSize=Math.round(w*0.062)+'px';
+  b.style.letterSpacing=(w>400?'.2em':'.1em');
+  b.textContent=subject.redactLabel||'no photo on file';
+  bar.appendChild(b); r.append(g,bar); box.appendChild(r);
+}
 
 function setDeck(deck){
-  D=deck;
-  const hold=deck.hold||36;
-  CUTS=deck.desks.map((_,i)=>T.first+i*hold);
-  SLATE_END=T.first;
-  CTA_AT=T.first+deck.desks.length*hold;
-  const TOTAL=CTA_AT+(deck.ctaHold||66);
+  D=deck; MODE=deck.mode||'solo';
+  const solo=MODE==='solo';
+  ITEMS = solo ? deck.desks : deck.rounds;
 
-  $('deskkick').innerHTML=deck.kicker;
-  // the bar clips rather than wraps, so shrink a long kicker until it fits
-  const kick=$('deskkick');
-  kick.style.fontSize=''; kick.style.letterSpacing='';
-  for(let px=29; px>17 && kick.scrollWidth>944; px--){
-    kick.style.fontSize=px+'px';
-    kick.style.letterSpacing=(0.24-(29-px)*0.012)+'em';
+  // A longer hold on the last card, because it is the one the open promised.
+  const hold=deck.hold||36, last=deck.lastHold||hold+14;
+  CUTS=[]; let at=T.first;
+  ITEMS.forEach((_,i)=>{ CUTS.push(at); at += (i===ITEMS.length-1 ? last : hold); });
+  CTA_AT=at;
+  const TOTAL=CTA_AT+(deck.ctaHold||72);
+
+  const A = solo ? deck : deck.a;
+  $('opentab').textContent=deck.tab||`star file · no. ${deck.no}`;
+  $('openstamp').textContent=deck.open.stamp;
+  $('openname').textContent=solo ? deck.name : `${deck.a.short} vs ${deck.b.short}`;
+  $('openline').innerHTML=pill(deck.open.line);
+  $('or1').textContent=deck.filed;
+  $('or2').textContent=deck.basis;
+  const on=$('openname'); on.style.fontSize='';
+  for(let px=128; px>78 && on.scrollHeight>270; px--) on.style.fontSize=px+'px';
+
+  $('openvs').style.display = solo ? 'none' : 'block';
+  $('openphoto').style.display = solo ? 'block' : 'none';
+  $('opengrad').style.display = solo ? 'block' : 'none';
+  if(solo){
+    fillPhoto($('openphoto'), $('openimg'), deck);
+  }else{
+    const ha=$('openvs').querySelector('.half.a .duo'), hb=$('openvs').querySelector('.half.b .duo');
+    fillPhoto(ha, $('vsimga'), deck.a);
+    fillPhoto(hb, $('vsimgb'), deck.b);
+    $('vstaga').textContent=deck.a.name;
+    $('vstagb').textContent=deck.b.name;
   }
-  $('l1').textContent=deck.hook[0];
-  $('l2').textContent=deck.hook[1];
-  $('sname').textContent=deck.name;
+
+  $('case').classList.toggle('vs', !solo);
+  $('casephotob').hidden = solo;
+  fillPhoto($('casephoto'), $('caseimg'), A);
+  if(!solo) fillPhoto($('casephotob'), $('caseimgb'), deck.b);
+  $('casetab').textContent=deck.kicker||`star file no. ${deck.no} · ${deck.filed}`;
+  $('casename').textContent=solo ? deck.name : `${deck.a.short} vs ${deck.b.short}`;
+  $('casebasis').textContent=deck.basis;
+  const room = 936 - (solo ? 200 : 146*2+24) - 24;
+  const tab=$('casetab');
+  tab.style.fontSize=''; tab.style.letterSpacing='';
+  for(let px=25; px>15 && tab.scrollWidth>room; px--){
+    tab.style.fontSize=px+'px';
+    tab.style.letterSpacing=(0.22-(25-px)*0.014)+'em';
+  }
+  const nm=$('casename'); nm.style.fontSize='';
+  for(let px=74; px>34 && nm.scrollWidth>room; px--) nm.style.fontSize=px+'px';
+  const bs=$('casebasis'); bs.style.fontSize=''; bs.style.letterSpacing='';
+  for(let px=23; px>14 && bs.scrollWidth>room; px--){
+    bs.style.fontSize=px+'px';
+    bs.style.letterSpacing=(0.16-(23-px)*0.012)+'em';
+  }
+
+  $('h1').textContent=deck.hook[0];
+  $('h2').innerHTML=pill(deck.hook[1]);
+  $('hooknote').textContent=deck.hookNote||'';
+  $('slatek').textContent=deck.slateKicker||'star file · why this name';
   $('swhy').textContent=deck.why;
+  $('snote').textContent=deck.whyNote||'';
   $('sd1').textContent=deck.filed;
   $('sd2').textContent=deck.basis;
   $('sub').textContent=deck.sub||'';
-  $('cta').querySelector('h2').innerHTML=deck.cta.h.replace(/\*\*(.+?)\*\*/g,'<em>$1</em>');
+  $('cta').querySelector('h2').innerHTML=pill(deck.cta.h);
   $('cta').querySelector('p').textContent=deck.cta.p;
   $('ctapill').textContent=deck.cta.btn;
 
-  // sound sits on the frame the thing happens, so it cannot drift from the cut
-  const SFX=[['thud',T.mast,0.9],['whoosh',T.desk,0.5],['click',T.l1,0.5],['click',T.l2,0.6],
-             ['thud',T.slate,0.95]]
-    .concat(CUTS.flatMap((c,i)=>[['whoosh',c,0.6],['stamp',c+6,i===D.desks.length-1?1.0:0.8]]))
+  // Sound sits on the frame the thing happens, so it cannot drift from the cut.
+  const SFX=[['thud',0,1.0],['stamp',2,1.0],['whoosh',T.hook,0.6],['click',T.hook+3,0.5],
+             ['thud',T.slate,0.9]]
+    .concat(CUTS.flatMap((c,i)=>[['whoosh',c,0.6],['stamp',c+6,i===ITEMS.length-1?1.0:0.8]]))
     .concat([['thud',CTA_AT,0.95],['stamp',CTA_AT+10,1.0]]);
   window.TOTAL=TOTAL; window.SFX=SFX;
   return {total:TOTAL, sfx:SFX};
 }
 
 function paintDesk(i){
-  const d=D.desks[i];
+  const d=ITEMS[i];
   $('deskcard').classList.toggle('hot', !!d.hot);
   $('dchip').textContent=d.desk;
   $('dverdict').textContent=d.verdict;
   $('devidence').textContent=d.evidence;
   $('dstamp').textContent=d.stamp;
-  $('dno').textContent=`desk ${i+1} of ${D.desks.length}`;
+  $('dno').textContent=`desk ${i+1} of ${ITEMS.length}`;
   $('dname').textContent=D.name;
 }
 
-function render(f){
-  const my = f<4 ? -300+304*p(f,0,3) : (f<7 ? 4-4*p(f,4,6) : 0);
-  $('mast').style.transform=`translateY(${my}px)`;
-  $('deskbar').classList.toggle('hidden', f<T.desk);
-  $('deskfill').style.transform=`scaleX(${p(f,T.desk,T.desk+5)})`;
+function paintRound(i){
+  const r=ITEMS[i];
+  $('round').classList.toggle('hot', !!r.hot);
+  $('rchip').textContent=r.desk;
+  $('rwhoa').textContent=D.a.short; $('rva').textContent=r.a.verdict; $('rna').textContent=r.a.note;
+  $('rwhob').textContent=D.b.short; $('rvb').textContent=r.b.verdict; $('rnb').textContent=r.b.note;
+  $('rcola').classList.toggle('win', r.win==='a');
+  $('rcolb').classList.toggle('win', r.win==='b');
+  $('rno').textContent=`round ${i+1} of ${ITEMS.length}`;
+  $('rbasis').textContent=r.stamp||D.basis;
+}
 
-  const onSlate = f>=T.slate && f<SLATE_END;
-  const onDesks = f>=SLATE_END && f<CTA_AT;
+function render(f){
+  const solo=MODE==='solo';
+  const onOpen  = f<T.openEnd;
+  const onHook  = f>=T.hook  && f<T.slate;
+  const onSlate = f>=T.slate && f<T.first;
+  const onCards = f>=T.first && f<CTA_AT;
   const onCta   = f>=CTA_AT;
 
-  $('head').classList.toggle('hidden', f>=T.slate);
-  $('l1').classList.toggle('hidden', f<T.l1);
-  $('l2').classList.toggle('hidden', f<T.l2);
-
+  $('open').classList.toggle('hidden', !onOpen);
+  $('case').classList.toggle('hidden', onOpen);
+  $('hook').classList.toggle('hidden', !onHook);
   $('slate').classList.toggle('hidden', !onSlate);
-  $('deskcard').classList.toggle('hidden', !onDesks);
+  $('deskcard').classList.toggle('hidden', !(onCards && solo));
+  $('round').classList.toggle('hidden', !(onCards && !solo));
   $('cta').classList.toggle('hidden', !onCta);
-  $('sub').classList.toggle('hidden', f<T.slate);
+  $('sub').classList.toggle('hidden', onOpen);
+  $('foot').classList.toggle('hidden', onOpen);
+  $('tota').classList.toggle('hidden', onOpen);
 
-  if(onSlate){
-    $('slate').style.transform=`scale(${1+0.05*(1-p(f,T.slate,T.slate+3))})`;
+  if(onOpen){
+    // the stamp settles rather than flies in, so frame 0 is already the poster
+    $('openstamp').style.transform=`rotate(-7deg) scale(${1+0.07*(1-p(f,0,4))})`;
+    if(!solo) $('vsdisc').style.transform=`scale(${1+0.10*(1-p(f,0,5))})`;
   }
-  if(onDesks){
+  if(onHook) $('hook').style.transform=`scale(${1+0.045*(1-p(f,T.hook,T.hook+3))})`;
+  if(onSlate) $('slate').style.transform=`scale(${1+0.045*(1-p(f,T.slate,T.slate+3))})`;
+  if(onCards){
     let i=0; for(let k=0;k<CUTS.length;k++) if(f>=CUTS[k]) i=k;
-    paintDesk(i);
-    $('deskcard').style.transform=`scale(${1+0.045*(1-p(f,CUTS[i],CUTS[i]+3))})`;
-    $('dstamp').classList.toggle('hidden', f<CUTS[i]+6);
+    const el=solo ? $('deskcard') : $('round');
+    solo ? paintDesk(i) : paintRound(i);
+    el.style.transform=`scale(${1+0.045*(1-p(f,CUTS[i],CUTS[i]+3))})`;
+    if(solo) $('dstamp').classList.toggle('hidden', f<CUTS[i]+6);
   }
-  if(onCta){
-    $('cta').style.transform=`scale(${1+0.05*(1-p(f,CTA_AT,CTA_AT+3))})`;
-  }
+  if(onCta) $('cta').style.transform=`scale(${1+0.05*(1-p(f,CTA_AT,CTA_AT+3))})`;
 
   $('tota').style.transform=`translateY(${Math.round(2*Math.sin(f/30*2*Math.PI))*2}px)`;
 }

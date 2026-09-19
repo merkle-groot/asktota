@@ -8,38 +8,26 @@ setDeck rather than being hardcoded here.
     python3 gencallout.py                 # every deck
     python3 gencallout.py moon-2am        # just this one
 
-Frames are screenshotted one at a time through gstack browse, then encoded with
-an SFX bed built from audio/.
+Frames are screenshotted through gstack browse in verified batches (see
+reelshot.py), then encoded with an SFX bed built from audio/.
 """
 import json, pathlib, subprocess, sys, tempfile
 
+from reelshot import browse, capture, open_page
+
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT.parent.parent
-BROWSE = pathlib.Path.home() / '.claude/skills/gstack/browse/dist/browse'
 FPS = 30
 
 # reel folder numbers. 01 to 12 are taken, see assets/social/reels/.
-ORDER = {'moon-2am': 13, 'group-chat': 14}
-
-
-def browse(*args):
-    out = subprocess.run([str(BROWSE), *args], capture_output=True, text=True).stdout.strip().splitlines()
-    return out[-1] if out else ''
+ORDER = {'moon-2am': 13, 'group-chat': 14, 'the-ick': 16, 'birth-weekday': 18}
 
 
 def render_frames(deck, out):
-    out.mkdir(parents=True, exist_ok=True)
-    browse('viewport', '1080x1920')
-    browse('goto', f'file://{ROOT}/reel-callout.html')
-    browse('js', 'document.fonts.ready.then(()=>1)')
+    open_page(f'file://{ROOT}/reel-callout.html')
     meta = json.loads(browse('js', f'JSON.stringify(setDeck({json.dumps(deck)}))'))
-    total = meta['total']
-    for f in range(total):
-        browse('js', f'render({f})')
-        browse('screenshot', '#stage', str(out / f'f{f:04d}.png'))
-    n = len(list(out.glob('*.png')))
-    assert n == total, f'{deck["slug"]}: rendered {n} frames, expected {total}'
-    return total, meta['sfx']
+    capture(meta['total'], out, label=f'{deck["slug"]}: ')
+    return meta['total'], meta['sfx']
 
 
 def build_sfx(path, total, events):

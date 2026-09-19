@@ -1,0 +1,22 @@
+{
+  "virat-kohli": {
+    "name": "Virat Kohli",
+    "wikidata": "Q213854",
+    "dob": "1988-11-05",
+    "file": "Virat Kohli in PMO New Delhi.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Virat_Kohli_in_PMO_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Virat_Kohli_in_PMO_New_Delhi.jpg",
+    "licence": "GODL-India",
+    "author": "Prime Minister's Office"
+  },
+  "rohit-sharma": {
+    "name": "Rohit Sharma",
+    "wikidata": "Q3520045",
+    "dob": "1987-04-30",
+    "file": "Rohit Sharma in PMO New Delhi.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Rohit_Sharma_in_PMO_New_Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Rohit_Sharma_in_PMO_New_Delhi.jpg",
+    "licence": "GODL-India",
+    "author": "Prime Minister's Office"
+  }
+}

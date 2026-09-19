@@ -3,8 +3,8 @@
 
 Each deck is the same 270 frame timeline in reel-ask-tota.html with different
 copy injected, so all four stay in sync: fix the template once, re-run, get four
-corrected reels. Frames are screenshotted one at a time through gstack browse,
-then encoded with an SFX bed built from audio/.
+corrected reels. Frames are screenshotted through gstack browse in verified
+batches (see reelshot.py), then encoded with an SFX bed built from audio/.
 
     python3 genaskreels.py            # all four
     python3 genaskreels.py ex jobs    # just these
@@ -14,9 +14,10 @@ looks like, not a reading of anyone's chart, and each notes.md says so.
 """
 import json, pathlib, subprocess, sys, os, tempfile
 
+from reelshot import browse, capture, open_page
+
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT.parent.parent
-BROWSE = pathlib.Path.home() / '.claude/skills/gstack/browse/dist/browse'
 TOTAL = 270
 FPS = 30
 
@@ -35,21 +36,10 @@ def sfx_events():
     return ev
 
 
-def browse(*args):
-    return subprocess.run([str(BROWSE), *args], capture_output=True, text=True).stdout.strip()
-
-
 def render_frames(deck, out):
-    out.mkdir(parents=True, exist_ok=True)
-    browse('viewport', '1080x1920')
-    browse('goto', f'file://{ROOT}/reel-ask-tota.html')
-    browse('js', 'document.fonts.ready.then(()=>1)')
+    open_page(f'file://{ROOT}/reel-ask-tota.html')
     browse('js', f'setDeck({json.dumps(deck)}); 1')
-    for f in range(TOTAL):
-        browse('js', f'render({f})')
-        browse('screenshot', '#stage', str(out / f'f{f:04d}.png'))
-    n = len(list(out.glob('*.png')))
-    assert n == TOTAL, f'{deck["slug"]}: rendered {n} frames, expected {TOTAL}'
+    capture(TOTAL, out, label=f'{deck["slug"]}: ')
 
 
 def build_sfx(path):

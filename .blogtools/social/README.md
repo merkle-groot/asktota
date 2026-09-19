@@ -77,7 +77,25 @@ used to each get wrong on their own. It batches frames into one `browse chain`
 process instead of spawning the binary twice per frame, which took a twelve
 second reel from eighteen minutes to about one. And it verifies every frame as
 it lands and reshoots the ones that dropped, instead of counting files at the
-end and throwing the whole render away over a single missing png.
+end and throwing the whole render away over a single missing png. Dropped
+frames are not rare: a photo led reel loses about six of 328 on a typical run.
+
+### the SFX bed, and one bug worth remembering
+
+The sound bed is built by delaying one wav per event and mixing them, so timing
+lives next to the animation it belongs to rather than in a separate edit.
+
+The mix used to end `apad,atrim=0:<dur>`. `apad` with no length generates
+silence **forever**, and the `atrim` below it only discards frames: it does not
+signal end of stream back up the graph. Whether the render finished in a tenth
+of a second or span at 100% CPU was a race on how `amix` propagated EOF. On
+19 Sept 2026 it span for fifty minutes on a ten second mix, twice, after
+completing instantly a dozen times before that.
+
+It is now `apad=whole_dur=<dur>`, which pads to an exact total and then ends the
+stream. Every ffmpeg call also carries a `timeout`, so a future hang fails
+loudly instead of blocking the run. If you touch this filter, run the build a
+dozen times rather than once: a single pass proves nothing against a race.
 
 ## subject photos
 

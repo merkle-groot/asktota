@@ -3,11 +3,13 @@
 **a trending name, four desks, one downfall desk. 10.9s, loops.**
 1080 x 1920, H.264 + AAC, 328 frames.
 
-**Status: held.** Re-cut photo led on 19 September 2026. It currently renders
-the redacted plate, because there is no freely licensed photo of him anywhere
-(Wikidata `Q19803999` has no `P18`, and the en-wiki article has no lead image).
-See "the photo" below. Do not queue it until that is resolved or the redacted
-version is a deliberate choice.
+**Scheduled:** Friday 25 September 2026, 20:00 IST.
+
+The original 18 Sept slot had already passed by the time this was re-cut, and
+no. 002 was queued for the 26th. A star file no. 001 landing after no. 002 is
+not an option, so `the ick` moved from the 25th to the 28th and this took its
+place. The ick is evergreen; this one is riding a news peg that decays daily,
+so the swap only goes one way round.
 
 ## what changed in the re-cut, and why
 
@@ -33,23 +35,36 @@ Four changes, in order of how much they matter:
 
 The masthead is gone. The file tab does the same job in a sixth of the space.
 
-## the photo
+## the photo, and what is not known about it
 
-The whole re-cut is built around a face on frame 0, and this subject does not
-have one that can be used. To fix it:
+The frame is the meditation celebration, supplied by hand on 19 Sept and taken
+through the normal crop with `genphotos.py --add`.
 
-```bash
-# drop a photo you have the rights to at:
-#   .blogtools/social/photos/abhishek-sharma.jpg
-cd .blogtools/social
-python3 genstarfiles.py abhishek-sharma
-```
+**Its licence is unverified and `photo-credits.json` says so in those words.**
+It is not a Commons file like the ones behind no. 002, and nobody has checked
+what it may be used for. That is a live risk on a commercial account and it sits
+with whoever publishes it, not with the pipeline. Kohli and Rohit in no. 002 are
+GODL-India via Wikidata, free for commercial use with attribution; this is not
+that, and the two should not be confused because they look alike on screen.
 
-The template picks the file up on its own and the redacted plate disappears. No
-JSON edit, no code change. `photos.json` records why this subject is `manual`,
-and it is worth re-running `python3 genphotos.py --find "abhishek sharma"` every
-few months: a player at this level gets a Commons photo eventually, and flipping
-`manual` to `false` then makes it automatic.
+No freely licensed alternative exists. Wikidata `Q19803999` has no `P18`, a
+Commons title and category search returns only the businessman, the film
+director and unrelated namesakes, and Openverse returns one 208x276 Commons png
+that has since been deleted. `photos.json` records all three checks so nobody
+repeats them. Re-run `python3 genphotos.py --find "abhishek sharma"` every few
+months: a player at this level gets a Commons photo eventually, and flipping
+`manual` to `false` then makes it automatic and properly licensed.
+
+Two framing settings, both in data rather than hand cropping, so a re-run
+reproduces them:
+
+- `photos.json` → `crop: {"x": 0.29}`. He sits left of centre in the supplied
+  frame, and a centred crop puts his face a third of the way in and clips a hand.
+- `star-files.json` → `headZoom: 1.55`. The stored photo is framed for the cold
+  open, which wants the pose. At 200px in the case header that same framing
+  renders his face about thirty pixels across, which is nothing on a phone, so
+  the header pushes in on the face. A photo already cropped to head and
+  shoulders leaves this at 1 and is untouched.
 
 ## the rules for this series, and they are not optional
 

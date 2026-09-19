@@ -4,7 +4,11 @@
     "abhishek-sharma": {
       "wikidata": "Q19803999",
       "manual": true,
-      "why": "No freely licensed photo of him exists as of 19 Sept 2026. Checked, and all three came back empty: Wikidata Q19803999 has no P18, a Commons title and category search returns only the businessman, the film director and unrelated namesakes, and Openverse (which aggregates Flickr CC and the rest) returns one 208x276 Commons png that has since been deleted and would have been a 4x upscale into a 900px slot anyway. To fix: drop a photo you hold the rights to at photos/abhishek-sharma.jpg and run `python3 genstarfiles.py abhishek-sharma`. The template picks it up with no JSON or code change. Re-run `python3 genphotos.py --find \"abhishek sharma\"` every few months: a player at this level gets a Commons photo eventually, and flipping manual to false then makes it automatic."
+      "why": "No freely licensed photo of him exists as of 19 Sept 2026. Checked, and all three came back empty: Wikidata Q19803999 has no P18, a Commons title and category search returns only the businessman, the film director and unrelated namesakes, and Openverse (which aggregates Flickr CC and the rest) returns one 208x276 Commons png that has since been deleted and would have been a 4x upscale into a 900px slot anyway. To fix: drop a photo you hold the rights to at photos/abhishek-sharma.jpg and run `python3 genstarfiles.py abhishek-sharma`. The template picks it up with no JSON or code change. Re-run `python3 genphotos.py --find \"abhishek sharma\"` every few months: a player at this level gets a Commons photo eventually, and flipping manual to false then makes it automatic.",
+      "crop": {
+        "x": 0.29
+      },
+      "cropNote": "He sits left of centre in the supplied frame, so a centred crop puts his face a third of the way in and clips a hand. 0.29 centres the head in the slot."
     },
     "virat-kohli": {
       "wikidata": "Q213854"

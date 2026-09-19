@@ -51,10 +51,16 @@ def build_sfx(path):
         legs += f'[{i}]adelay={ms}|{ms},volume={vol}[a{i}];'
         mix += f'[a{i}]'
     dur = TOTAL / FPS
+    # apad with no length generates silence forever, and the atrim below it only
+    # discards frames: it does not signal end of stream back up the graph. Whether
+    # this returned in a tenth of a second or span at 100% CPU was a race on how
+    # amix propagated EOF, and on 19 Sept 2026 it span for fifty minutes on a ten
+    # second mix. whole_dur pads to an exact total and then ends the stream.
     filt = (f'{legs}{mix}amix=inputs={len(ev)}:normalize=0:duration=longest[m];'
-            f'[m]apad,atrim=0:{dur},alimiter=limit=0.94[out]')
+            f'[m]apad=whole_dur={dur},atrim=0:{dur},alimiter=limit=0.94[out]')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', *ins, '-filter_complex', filt,
-                    '-map', '[out]', '-ar', '44100', '-ac', '2', str(path)], check=True)
+                    '-map', '[out]', '-ar', '44100', '-ac', '2', str(path)],
+                   check=True, timeout=120)
 
 
 def encode(frames, sfx, mp4):
@@ -65,7 +71,7 @@ def encode(frames, sfx, mp4):
         '-i', str(sfx), '-shortest',
         '-c:v', 'libx264', '-profile:v', 'high', '-level', '4.0', '-pix_fmt', 'yuv420p',
         '-crf', '18', '-r', str(FPS), '-movflags', '+faststart',
-        '-c:a', 'aac', '-b:a', '128k', str(mp4)], check=True)
+        '-c:a', 'aac', '-b:a', '128k', str(mp4)], check=True, timeout=900)
 
 
 def main():

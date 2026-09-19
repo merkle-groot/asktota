@@ -18,5 +18,12 @@
     "page": "https://commons.wikimedia.org/wiki/File:Rohit_Sharma_in_PMO_New_Delhi.jpg",
     "licence": "GODL-India",
     "author": "Prime Minister's Office"
+  },
+  "abhishek-sharma": {
+    "source": "supplied by hand",
+    "file": "pasted-image-20260919-095224.png",
+    "licence": "UNVERIFIED",
+    "author": "unknown",
+    "note": "Not resolved from Wikidata or Commons. Nobody has checked what this may be used for; whoever added it owns that call."
   }
 }

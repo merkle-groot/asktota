@@ -96,6 +96,12 @@
    align-items:stretch}
  .casepic{width:200px;height:248px;border:7px solid var(--ink);box-shadow:8px 8px 0 rgba(30,58,42,.3);
    flex:0 0 auto}
+ /* The stored photo is framed for the cold open, where a wide action shot wants
+    to keep the pose. At 200px the same framing renders the face about thirty
+    pixels across, which is nothing on a phone. headZoom pushes into the face
+    for the header only, per subject: a photo already cropped to head and
+    shoulders leaves it at 1 and is untouched. */
+ .casepic img{transform:scale(var(--headzoom,1));transform-origin:50% 16%}
  #casetext{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0}
  #casetab{align-self:flex-start;background:var(--pink-ink);color:var(--cream);font-weight:800;
    font-size:25px;letter-spacing:.22em;text-transform:uppercase;padding:11px 26px 17px;white-space:nowrap}
@@ -340,7 +346,11 @@ function setDeck(deck){
   $('case').classList.toggle('vs', !solo);
   $('casephotob').hidden = solo;
   fillPhoto($('casephoto'), $('caseimg'), A);
-  if(!solo) fillPhoto($('casephotob'), $('caseimgb'), deck.b);
+  $('casephoto').style.setProperty('--headzoom', A.headZoom||1);
+  if(!solo){
+    fillPhoto($('casephotob'), $('caseimgb'), deck.b);
+    $('casephotob').style.setProperty('--headzoom', deck.b.headZoom||1);
+  }
   $('casetab').textContent=deck.kicker||`star file no. ${deck.no} · ${deck.filed}`;
   $('casename').textContent=solo ? deck.name : `${deck.a.short} vs ${deck.b.short}`;
   $('casebasis').textContent=deck.basis;

@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/getyourreading", "destination": "/life-edition.html" }
+    { "source": "/getyourreading", "destination": "/life-edition" }
   ]
 }

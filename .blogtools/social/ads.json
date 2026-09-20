@@ -1,0 +1,68 @@
+{
+ "note": "Paid install creatives for the android app, rendered by genads.py into every size in SIZES. Claims are held to what the site already says: free to download with a usable free tier, a paid tier above it, no ads and no data brokers, android only while the iphone build is in progress. Do not write 'completely free' here: there is a paid tier, and a claim the store listing contradicts is how a Meta ad gets rejected or refunded. Five angles rather than one, because a single creative tests nothing. The badge names the category and platform, the button names the price and the store: if those two say the same thing, one of them is wasted.",
+ "ads": {
+  "bestie": {
+   "slug": "bestie",
+   "theme": "cream",
+   "badge": "vedic astrology · android",
+   "hook": [
+    "ur astrology",
+    "**bestie**",
+    "is on android"
+   ],
+   "sub": "it reads ur actual birth chart, ur dasha and today's transits. then talks to u like a person who did the maths.",
+   "cta": "free on google play",
+   "angle": "Brand warmth, and the line the founder already uses on the site. The safe control: every other creative is measured against this one."
+  },
+  "not-a-horoscope": {
+   "slug": "not-a-horoscope",
+   "theme": "ink",
+   "badge": "vedic astrology · android",
+   "hook": [
+    "this is not a",
+    "**horoscope app**"
+   ],
+   "sub": "no twelve rotating paragraphs. swiss ephemeris, lahiri ayanamsa, ur real birth details.",
+   "cta": "free on google play",
+   "angle": "The rational differentiator. Speaks to people who already half suspect their current app is generating filler, which is most of them."
+  },
+  "birth-time": {
+   "slug": "birth-time",
+   "theme": "cream",
+   "badge": "vedic astrology · android",
+   "hook": [
+    "ur horoscope app",
+    "does not know",
+    "**ur birth time**"
+   ],
+   "sub": "this one asks for it. that is the entire difference between a column and a chart.",
+   "cta": "free on google play",
+   "angle": "One concrete, checkable fact. The strongest hook of the five on paper, because the reader can verify it in four seconds inside whatever app they already have."
+  },
+  "four-times": {
+   "slug": "four-times",
+   "theme": "marigold",
+   "badge": "vedic astrology · android",
+   "hook": [
+    "u checked ur horoscope",
+    "**4 times this week**"
+   ],
+   "sub": "none of it was about u. it was about everyone born inside the same 30 day window.",
+   "cta": "get the real one, free",
+   "angle": "Self recognition, and the one most likely to be screenshotted. Also the riskiest: a callout can read as a scold, so watch the comment sentiment, not just the CTR."
+  },
+  "no-data-brokers": {
+   "slug": "no-data-brokers",
+   "theme": "ink",
+   "badge": "vedic astrology · android",
+   "hook": [
+    "no ads.",
+    "no data brokers.",
+    "**no ad IDs.**"
+   ],
+   "sub": "u are handing over ur birth date, time and city. every other free astrology app is selling that. we do not.",
+   "cta": "free on google play",
+   "angle": "Privacy, which is the live anxiety in this category and is true here (it is on the site already). Aimed at the people who will not install a free astrology app precisely because it is free."
+  }
+ }
+}

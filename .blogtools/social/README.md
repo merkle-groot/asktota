@@ -125,3 +125,45 @@ subject worth finding a licensed photo for.
 The photo treatment lives in the template, not in the file on disk: duotone to
 ink and cream with a dot screen over it, so a press photo sits in the brand
 palette instead of fighting it. Retune it in `.duo` and re-render, no refetch.
+
+## paid install ads
+
+`genads.py` renders `ads.json` through `ads.html` into
+`assets/social/ads/<slug>/<slug>-<size>.png`, at every size in `SIZES`:
+`sq` 1080x1080 for feed, `st` 1080x1920 for stories and reels. Run both. A
+campaign given one size lets Meta crop the other, and the crop takes the bottom
+line of the hook with it.
+
+```bash
+python3 genads.py               # every ad, every size
+python3 genads.py birth-time    # just this one
+```
+
+A paid placement is not a reel. It is judged at thumbnail size, in under a
+second, by somebody who did not ask to see it. So each creative carries one
+idea, the hook set as large as it will go, and the platform stated rather than
+implied: android only matters here, because a click from an iPhone is money
+spent on a bounce.
+
+Three rules the template enforces so they cannot quietly rot:
+
+- **Authored line breaks are respected.** `hook` is a list of lines and each one
+  is `white-space: nowrap`. The fit shrinks type until every line fits the width
+  *and* the stack fits the height. Fitting on height alone stranded single words
+  at the top of a paid placement.
+- **The badge and the button never say the same thing.** The badge names the
+  category and the platform, the button names the price and the store. If they
+  agree, one of them is wasted.
+- **Claims are held to what the store listing and the site already say.** Free
+  to download, a usable free tier, a paid tier above it, no ads and no data
+  brokers. Do not write "completely free": there is a paid tier, and a claim the
+  listing contradicts is how an ad gets rejected, or refunded after it runs.
+
+Output is PNG rather than JPG. These are flat brand colours with hard type
+edges, which is exactly where JPEG ringing shows.
+
+One gotcha worth knowing: browse refuses to write outside `/private/tmp` and its
+own launch directory, and it says so on stdout while still exiting 0. So a
+screenshot aimed straight at `assets/` silently produces nothing. `genads.py`
+stages into a temp dir and moves the file into place, and surfaces what browse
+actually said if a shot never lands.

@@ -1,0 +1,147 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+ /* Paid install ads for the android app. One definition per ad in ads.json,
+    rendered at every size in SIZES by genads.py.
+
+    A paid placement is not a reel. It is judged at thumbnail size, in under a
+    second, by somebody who did not ask to see it. So: one idea per image, the
+    hook set as large as it will go, and the offer and the platform both stated
+    rather than implied. Android only matters here, because a click from an
+    iPhone is money spent on a bounce.
+
+    Layout is flex rather than absolute, so the same markup composes at 1:1 and
+    9:16 without a second template, and the type auto-fits at each size. */
+ :root{--bg:#FBF3E0;--dot:#E8DCC2;--ink:#1E3A2A;--cream:#FBF3E0;--marigold:#FFD24A;
+       --muted:#5E6E5E;--pink-ink:#C2588A;--dim:#BFD6C4}
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{background:#111;font-family:'Bricolage Grotesque',sans-serif}
+ #stage{position:relative;overflow:hidden;display:flex;flex-direction:column;
+   background:var(--bg);background-image:radial-gradient(var(--dot) 3px,transparent 3.5px);
+   background-size:50px 50px}
+ #stage.ink{background:var(--ink);background-image:radial-gradient(rgba(251,243,224,.09) 3px,transparent 3.5px)}
+ #stage.marigold{background:var(--marigold);background-image:radial-gradient(rgba(30,58,42,.10) 3px,transparent 3.5px)}
+
+ .pad{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:center}
+ #badge{align-self:flex-start;background:var(--pink-ink);color:var(--cream);font-weight:800;
+   text-transform:uppercase;white-space:nowrap}
+ #stage.marigold #badge{background:var(--ink)}
+
+ #hook{font-weight:800;line-height:.98;letter-spacing:-.045em;text-transform:lowercase;
+   color:var(--ink)}
+ /* Each authored line is its own block and does not re-wrap. The line breaks in
+    ads.json are a design decision, and a template that reflows them strands a
+    word like "ur" on a line of its own at the top of a paid placement. */
+ #hook .hl{display:block;white-space:nowrap}
+ #stage.ink #hook{color:var(--cream)}
+ #hook em{font-style:normal;background:var(--marigold);color:var(--ink);border-radius:999px;
+   display:inline-block}
+ #stage.marigold #hook em{background:var(--ink);color:var(--marigold)}
+ #stage.ink #hook em{background:var(--marigold);color:var(--ink)}
+
+ #sub{font-weight:600;color:var(--muted);line-height:1.2;text-wrap:pretty}
+ #stage.ink #sub{color:var(--dim)}
+ #stage.marigold #sub{color:#6B5A19}
+
+ /* the store button. it has to read as a button, not as a line of copy */
+ #cta{align-self:flex-start;display:flex;align-items:center;background:var(--ink);
+   color:var(--cream);border-radius:999px;font-weight:800;white-space:nowrap}
+ #stage.ink #cta{background:var(--marigold);color:var(--ink)}
+ #stage.marigold #cta{background:var(--ink);color:var(--marigold)}
+ #cta .tri{flex:0 0 auto;display:block}
+
+ #tota{position:absolute;z-index:1;right:0;bottom:0}
+ #foot{position:absolute;z-index:2;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+   color:var(--ink)}
+ #stage.ink #foot{color:var(--dim)}
+</style></head><body>
+<div id="stage">
+  <div class="pad">
+    <div id="badge"></div>
+    <div id="hook"></div>
+    <div id="sub"></div>
+    <div id="cta"><svg class="tri" viewBox="0 0 24 24" fill="currentColor"><path d="M4 2.5v19l16-9.5z"/></svg><span id="ctatext"></span></div>
+  </div>
+  <img id="tota" src="tota.png" alt="">
+  <div id="foot">asktota.com</div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const pill=s=>String(s).replace(/\*\*(.+?)\*\*/g,'<em>$1</em>');
+
+/* Per-size geometry. A square has about a third of the vertical room of a
+   story, so it is not the same design scaled: the type ceiling, the gutters and
+   the parrot all change, and the hook is allowed fewer lines before it shrinks. */
+const GEO={
+  sq:{w:1080,h:1080,pad:[84,84],gap:26,badge:26,hookMax:112,hookMin:58,hookBox:470,
+      sub:40,subBox:120,cta:40,ctaPad:[22,46],tri:34,tota:330,foot:26,footPos:[84,70],subW:.76},
+  st:{w:1080,h:1920,pad:[96,120],gap:40,badge:32,hookMax:152,hookMin:74,hookBox:900,
+      sub:52,subBox:200,cta:50,ctaPad:[28,60],tri:44,tota:430,foot:34,footPos:[96,96],subW:.80}
+};
+let G=GEO.st;
+
+/* Shrink until it fits. Copy length differs per ad and per size, so a fixed
+   type scale either overflows the box or wastes half of it. */
+function fit(el, max, min, box){
+  el.style.fontSize=max+'px';
+  for(let px=max; px>min && el.scrollHeight>box; px-=2) el.style.fontSize=px+'px';
+}
+
+/* The hook fits on two axes: every authored line has to fit the width without
+   wrapping, and the stack has to fit the height. Width is the binding one most
+   of the time, which is why height-only fitting produced stranded words. */
+function fitHook(el, max, min, box, width, onSize){
+  const lines=[...el.querySelectorAll('.hl')];
+  const widest=()=>lines.reduce((w,l)=>Math.max(w,l.scrollWidth),0);
+  for(let px=max; px>=min; px-=2){
+    el.style.fontSize=px+'px';
+    onSize();
+    if(widest()<=width && el.scrollHeight<=box) return px;
+  }
+  return min;
+}
+
+function setSize(name){
+  G=GEO[name];
+  const s=$('stage');
+  s.style.width=G.w+'px'; s.style.height=G.h+'px';
+  const [py,px]=G.pad;
+  s.querySelector('.pad').style.padding=`${py}px ${px}px`;
+  $('badge').style.cssText+=`;font-size:${G.badge}px;letter-spacing:.2em;padding:${G.badge*.42}px ${G.badge*1.1}px ${G.badge*.68}px`;
+  $('sub').style.fontSize=G.sub+'px';
+  $('sub').style.maxWidth=Math.round(G.w*G.subW)+'px';
+  $('cta').style.cssText+=`;font-size:${G.cta}px;gap:${G.cta*.42}px;padding:${G.ctaPad[0]}px ${G.ctaPad[1]}px ${G.ctaPad[0]*1.35}px`;
+  $('cta').querySelector('.tri').style.cssText=`width:${G.tri}px;height:${G.tri}px`;
+  $('tota').style.width=G.tota+'px';
+  $('foot').style.cssText+=`;font-size:${G.foot}px;left:${G.footPos[0]}px;bottom:${G.footPos[1]}px`;
+  $('hook').style.margin=`${G.gap}px 0`;
+  $('sub').style.marginBottom=`${G.gap*1.4}px`;
+  $('hook').style.paddingRight=`${Math.round(G.tota*0.10)}px`;
+  $('hook').querySelectorAll('em').forEach(e=>{});
+}
+
+function setAd(ad){
+  const s=$('stage');
+  s.className=ad.theme||'';
+  $('badge').textContent=ad.badge;
+  $('hook').innerHTML=ad.hook.map(l=>`<span class="hl">${pill(l)}</span>`).join('');
+  $('sub').textContent=ad.sub||'';
+  $('ctatext').textContent=ad.cta||'free on google play';
+  // the pill padding has to track the type size or it swallows the words
+  const setPill=()=>{
+    const px=parseFloat(getComputedStyle($('hook')).fontSize);
+    $('hook').querySelectorAll('em').forEach(e=>{
+      e.style.padding=`0 ${Math.round(px*0.17)}px ${Math.round(px*0.09)}px`;
+    });
+  };
+  const room = G.w - G.pad[1]*2 - Math.round(G.tota*0.10);
+  const px = fitHook($('hook'), G.hookMax, G.hookMin, G.hookBox, room, setPill);
+  fit($('sub'), G.sub, Math.round(G.sub*0.7), G.subBox);
+  return {w:G.w, h:G.h, hookPx:px, wrapped:[...$('hook').querySelectorAll('.hl')]
+    .filter(l=>l.scrollWidth>room).length};
+}
+window.setSize=setSize; window.setAd=setAd;
+</script>
+</body></html>

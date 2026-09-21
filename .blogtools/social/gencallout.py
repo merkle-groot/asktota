@@ -20,7 +20,8 @@ SITE = ROOT.parent.parent
 FPS = 30
 
 # reel folder numbers. 01 to 12 are taken, see assets/social/reels/.
-ORDER = {'moon-2am': 13, 'group-chat': 14, 'the-ick': 16, 'birth-weekday': 18}
+ORDER = {'moon-2am': 13, 'group-chat': 14, 'the-ick': 16, 'birth-weekday': 18,
+         'rising-sign': 21, 'how-u-argue': 22, 'nakshatra-flags': 23}
 
 
 def render_frames(deck, out):

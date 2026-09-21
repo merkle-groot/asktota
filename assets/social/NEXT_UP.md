@@ -9,6 +9,49 @@ and a reel that produces **DM shares** beats both. Saves are for carousels.
 
 ---
 
+## shipped 20 September 2026
+
+Five more reels, taking the queue from 28 Sept out to 3 Oct.
+
+- **STAR FILES no. 003, dhoni vs kohli.** Scored 2 to 1 against the sentimental
+  favourite, deliberately. See the warning in that reel's notes: two head to
+  heads in a row have now picked the underdog, and a third makes the verdict
+  predictable rather than felt.
+- **STAR FILES no. 004, shah rukh khan.** The first one with no news peg and the
+  first outside cricket. It is a test of whether the series can run on a name
+  alone, which decides whether it can be scheduled a month out.
+- **Three callout decks on three placements the account had not used**: lagna,
+  mangal and nakshatra. See below for why that spread matters.
+
+The photo pipeline is no longer the constraint it was in the first batch. Every
+major Indian sport and film name checked has a free Commons photo via Wikidata
+P18, so a star file is now a data file and two commands.
+
+---
+
+## the friction ladder, which is the thing to schedule around
+
+Every comment prompt costs the viewer something, and the cost decides what the
+reel is *for*. Stop picking prompts by which joke is funniest and pick by which
+job the week needs:
+
+| prompt | cost to answer | what it buys |
+|---|---|---|
+| birth weekday | nothing, they already know | reply volume, the ranking signal |
+| sun / moon sign | a recall | replies, slightly fewer |
+| venus, mars, nakshatra | a lookup | app opens |
+| **rising sign** | a lookup **and a birth time** | installs |
+
+Do not run two reels off the same rung in one week: they compete for the same
+behaviour. Alternate down the ladder, so a high volume week feeds the ranking
+and the next one converts it.
+
+Same rule for share-shaped reels. `ur group chat, by graha` and `how u argue, by
+mars sign` both close on a tag rather than a comment, and both want a week to
+themselves.
+
+---
+
 ## shipped 19 September 2026
 
 Three things came off this list and one thing got fixed underneath it.
@@ -176,3 +219,16 @@ screen next to the revision.
 Accounts almost never do this and it is the single most shareable thing a
 judgement format can produce, because it turns the people who disagreed into
 the people who won.
+
+## 11. saturn return, by what shani takes first · `gencallout.py`, deck
+
+Written up and not built. Twelve signs, twelve things shani repossesses first,
+and it lands on the single biggest search term this niche has outside
+compatibility. The framing that keeps it from being doom: shani does not punish,
+it repossesses what was never actually yours.
+
+## 12. the other fifteen nakshatras · `gencallout.py`, two decks
+
+`red flags, by nakshatra` uses twelve of twenty seven. There are two more reels
+of that idea before anything repeats, which is unusually deep for one concept
+and the closest thing here to a format that does not run out.

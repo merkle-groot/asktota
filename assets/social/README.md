@@ -11,7 +11,7 @@ and what the manual work is. `NEXT_UP.md` is the queue of concepts not built yet
 
 | folder | what | count |
 |---|---|---|
-| `reels/` | one folder per reel, with an mp4 and notes | 15 videos |
+| `reels/` | one folder per reel, with an mp4 and notes | 16 videos |
 | `carousels/` | one folder per deck, plus `myth-desk/` for the weekly series | 280 slides |
 | `stories/` | `upcoming/` and `evergreen/`, filenames carry the blog date | 49 cards |
 | `statics/` | `myth-desk/` two-ups and `gossip-clippings/` | 20 images |

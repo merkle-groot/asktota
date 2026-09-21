@@ -169,6 +169,174 @@
       "summary": "the head to head format. two charts, four rounds, the desk picks a side in each and scores it 2 to 1, which is the argument the comments are for.",
       "caption": "STAR FILES no. 002 📂 head to head. virat kohli vs rohit sharma, same team, opposite charts.\n\nwe ran both through the app and made the desk pick a side in every round.\n\ntemperament: kohli runs hot by design, rohit runs cool by default. round to rohit.\nthe long game: kohli builds by grinding, rohit builds by waiting. round to kohli.\nmoney: the name is the asset vs the timing is the asset. round to rohit.\nthe downfall desk: no winner. the heat that wins is the heat that leaks. the calm that saves is the calm that stalls.\n\n2 to 1, rohit.\n\nthis is entertainment, read off public birth dates with no birth times, so it reads the day and not the minute. character and chart only.\n\nu do not agree 👇 comment the round the desk got backwards. and drop the two names u want in star file no. 003 🦜\n\nrun either chart urself, free on asktota.com\n\n#viratkohli #rohitsharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #birthchart",
       "tags": "#viratkohli #rohitsharma #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #birthchart"
+    },
+    "dhoni-kohli": {
+      "mode": "versus",
+      "slug": "dhoni-kohli",
+      "no": "003",
+      "a": {
+        "slug": "ms-dhoni",
+        "name": "ms dhoni",
+        "short": "dhoni",
+        "initials": "md",
+        "born": "7 jul 1981"
+      },
+      "b": {
+        "slug": "virat-kohli",
+        "name": "virat kohli",
+        "short": "kohli",
+        "initials": "vk",
+        "born": "5 nov 1988"
+      },
+      "name": "dhoni vs kohli",
+      "tab": "star file · no. 003",
+      "kicker": "head to head · no. 003 · filed 29 sept",
+      "open": {
+        "stamp": "head to head",
+        "line": "who does the desk **actually** back"
+      },
+      "hook": [
+        "one stayed calm.",
+        "**one stayed loud.**"
+      ],
+      "hookNote": "two captains, two charts, four rounds. the desk picked a side in each and the answer is going to annoy somebody.",
+      "slateKicker": "the file · the split",
+      "why": "one chart lowers the room. one chart raises it.",
+      "whyNote": "neither is the better instrument. they are different instruments, and every round below is the same difference showing up again.",
+      "filed": "filed 29 sept",
+      "basis": "public dates · no birth times",
+      "sub": "entertainment. read off public birth dates with no birth times, so the desk reads the day and not the minute.",
+      "hold": 42,
+      "lastHold": 56,
+      "ctaHold": 78,
+      "rounds": [
+        {
+          "desk": "under pressure",
+          "win": "a",
+          "stamp": "round to dhoni",
+          "a": {
+            "verdict": "the stakes do not register",
+            "note": "a chart with an unusually long gap between the event and the reaction. that gap is the whole career."
+          },
+          "b": {
+            "verdict": "the stakes are the fuel",
+            "note": "switches on when it is hard. brilliant in a chase, restless in a dead rubber."
+          }
+        },
+        {
+          "desk": "how they lead",
+          "win": "b",
+          "stamp": "round to kohli",
+          "a": {
+            "verdict": "leads by subtraction",
+            "note": "says less than the room wants. calming when it works, unreadable when it does not."
+          },
+          "b": {
+            "verdict": "leads by raising the floor",
+            "note": "demands the standard out loud and in public. exhausting to stand next to, and it moves people."
+          }
+        },
+        {
+          "desk": "what outlasts them",
+          "win": "b",
+          "stamp": "round to kohli",
+          "a": {
+            "verdict": "the moment",
+            "note": "this chart is remembered for instants. a shot, a review, a walk off. instants are hard to build on."
+          },
+          "b": {
+            "verdict": "the standard",
+            "note": "saturn gets paid here. the habit outlives the highlight, and the habit is what the next lot copy."
+          }
+        },
+        {
+          "desk": "the downfall desk",
+          "win": null,
+          "hot": true,
+          "stamp": "no winner here",
+          "a": {
+            "verdict": "the calm that saves is the calm that hides",
+            "note": "a chart this hard to read gives nothing away, including the things people needed to hear."
+          },
+          "b": {
+            "verdict": "the fire that drives is the fire that burns",
+            "note": "the same heat that raises a standard cannot be switched off for the people who did not sign up for it."
+          }
+        }
+      ],
+      "cta": {
+        "h": "2 to 1. **kohli.**",
+        "p": "say it. comment the round the desk got backwards 👇 and drop the two names u want in star file no. 005.",
+        "btn": "asktota.com"
+      },
+      "title": "star files no. 003: dhoni vs kohli",
+      "summary": "the captaincy argument, scored. two charts, four rounds, and a 2 to 1 that picks against the sentimental favourite on purpose.",
+      "caption": "STAR FILES no. 003 📂 head to head. ms dhoni vs virat kohli. two captains, two charts, four rounds.\n\nunder pressure: dhoni's chart barely registers the stakes, kohli's runs on them. round to dhoni.\nhow they lead: subtraction vs raising the floor. round to kohli.\nwhat outlasts them: the moment vs the standard. round to kohli.\nthe downfall desk: no winner. the calm that saves is the calm that hides. the fire that drives is the fire that burns.\n\n2 to 1, kohli.\n\nthis is entertainment, read off public birth dates with no birth times, so it reads the day and not the minute. character and chart only.\n\nu are already typing 👇 comment the round the desk got backwards. and drop the two names u want in star file no. 005 🦜\n\nrun either chart urself, free on asktota.com\n\n#msdhoni #viratkohli #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #birthchart",
+      "tags": "#msdhoni #viratkohli #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #cricket #birthchart"
+    },
+    "shah-rukh-khan": {
+      "mode": "solo",
+      "slug": "shah-rukh-khan",
+      "no": "004",
+      "name": "shah rukh khan",
+      "initials": "sk",
+      "tab": "star file · no. 004",
+      "kicker": "star file no. 004 · filed 1 oct",
+      "headZoom": 1.15,
+      "open": {
+        "stamp": "the downfall desk",
+        "line": "the chart of an **outsider**"
+      },
+      "hook": [
+        "no film family.",
+        "**no plan b.**"
+      ],
+      "hookNote": "the biggest star in the country started with none of the things that usually make one. so we ran the chart that did it.",
+      "slateKicker": "the file · in one line",
+      "why": "a chart built to be underestimated first.",
+      "whyNote": "everything below is what happens when the thing that was supposed to be a disadvantage turns out to be the engine.",
+      "filed": "filed 1 oct",
+      "basis": "public date · no birth time",
+      "sub": "entertainment. read off a public birth date with no birth time, so the desk reads the day and not the minute.",
+      "hold": 36,
+      "lastHold": 52,
+      "ctaHold": 74,
+      "desks": [
+        {
+          "desk": "career",
+          "stamp": "the long way",
+          "verdict": "rahu took the stairs nobody was watching.",
+          "evidence": "an outsider chart does not get handed the room. it studies the room, learns the rules faster than the insiders ever had to, and then plays them better."
+        },
+        {
+          "desk": "love",
+          "stamp": "no notes",
+          "verdict": "loyal past the point of convenience.",
+          "evidence": "this half of the chart does not do casual. it picks once, commits hard, and then defends the choice long after it stopped needing defending."
+        },
+        {
+          "desk": "money",
+          "stamp": "read it twice",
+          "verdict": "builds the house, then buys the street.",
+          "evidence": "jupiter in scale mode again. the instinct is not to be paid, it is to own the thing that pays. enormous upside and a very long exposure."
+        },
+        {
+          "desk": "the downfall desk",
+          "stamp": "handle with care",
+          "hot": true,
+          "verdict": "the charm is the armour. armour gets heavy.",
+          "evidence": "a chart this good at being liked will perform through things it should be allowed to just feel. the risk is not the fall. it is never being off duty for long enough to notice one."
+        }
+      ],
+      "cta": {
+        "h": "tell us we're **wrong**",
+        "p": "then comment a name. the one asked for most gets star file no. 005. or skip the queue and run anyone urself, free.",
+        "btn": "asktota.com"
+      },
+      "title": "star files no. 004: shah rukh khan",
+      "summary": "the first star file outside cricket. the outsider arc read as a chart, and the downfall desk on somebody nobody expects a downfall desk on.",
+      "caption": "STAR FILES no. 004 📂 shah rukh khan. no film family, no plan b, and somehow the biggest star in the country.\n\nso we ran the chart that did it.\n\ncareer: rahu took the stairs nobody was watching. an outsider chart learns the rules faster than the insiders ever had to.\nlove: loyal past the point of convenience. picks once, defends it forever.\nmoney: builds the house, then buys the street. the instinct is to own the thing that pays.\nthe downfall desk: the charm is the armour, and armour gets heavy. the risk is never being off duty long enough to notice.\n\nthis is entertainment, read off a public birth date with no birth time, so it reads the day and not the minute. character and chart only.\n\nthink the desk got it backwards? say so 👇 and comment a name while ur there. the one asked for most gets star file no. 005 🦜\n\nor skip the queue and run anyone urself, free on asktota.com\n\n#shahrukhkhan #srk #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #bollywood #birthchart",
+      "tags": "#shahrukhkhan #srk #starfiles #vedicastrology #jyotish #kundli #astrologyindia #asktota #bollywood #birthchart"
     }
   }
 }

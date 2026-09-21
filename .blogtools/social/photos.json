@@ -15,6 +15,14 @@
     },
     "rohit-sharma": {
       "wikidata": "Q3520045"
+    },
+    "ms-dhoni": {
+      "wikidata": "Q470774",
+      "commons": "MS Dhoni 2016.jpg",
+      "why": "P18 on Q470774 is him in Territorial Army uniform looking away from camera. Against Kohli in a cricket kit facing the lens it reads as a different kind of photo entirely, and it is the less recognisable of the two. This one is a 1915x2560 portrait, CC BY-SA 4.0."
+    },
+    "shah-rukh-khan": {
+      "wikidata": "Q9535"
     }
   }
 }

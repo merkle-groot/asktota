@@ -334,6 +334,291 @@
       "summary": "seven varas, seven grahas, one comment prompt with zero lookup cost. the weekday lord is the only placement an audience can answer instantly, which is the whole reason this one exists.",
       "caption": "the day of the week u were born has a graha attached to it, and nobody told u 🦜\n\nthis is vara, the weekday lord. it is the oldest working piece of jyotish and it is the only placement u do not have to look up, because u already know it.\n\nsunday is surya. monday is chandra. tuesday is mangal. wednesday is budha. thursday is guru. friday is shukra. saturday is shani.\n\nur sun sign is a horoscope column. ur vara is a schedule. it is why some weeks feel like they are being run by somebody else, and which somebody that is.\n\ncomment ur birth day 👇 not the date, the day. and if u do not know it, that is what the app is for.\n\nfull chart, free, on asktota.com\n\n#vara #vedicastrology #jyotish #kundli #astrologyindia #asktota #navagraha #birthchart #shani #astrologymemes",
       "tags": "#vara #vedicastrology #jyotish #kundli #astrologyindia #asktota #navagraha #birthchart #shani #astrologymemes"
+    },
+    "rising-sign": {
+      "slug": "rising-sign",
+      "kicker": "the lagna desk &middot; what they decide first",
+      "hook": [
+        "ur rising sign,",
+        "not ur sun sign",
+        "the lagna is the door. the sun is what's behind it."
+      ],
+      "sub": "lagna needs ur birth time. that is why nobody has ever told u urs.",
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "aries rising",
+          "when": "ruled by mangal",
+          "line": "walked in like the meeting had already started",
+          "sub": "lagna sets the pace before u speak. this one arrives at full volume and wonders why everyone looks startled."
+        },
+        {
+          "tag": "taurus rising",
+          "when": "ruled by shukra",
+          "line": "looks expensive even in a hoodie",
+          "sub": "the door is calm and well made. people assume money. it is usually just refusal to rush."
+        },
+        {
+          "tag": "gemini rising",
+          "when": "ruled by budha",
+          "line": "read the room and then rearranged it",
+          "sub": "a door that talks first. charming in ten minutes, exhausting in three hours, and it knows."
+        },
+        {
+          "tag": "cancer rising",
+          "when": "ruled by chandra",
+          "line": "gave u the good chair without being asked",
+          "sub": "reads the temperature on arrival. it is genuine care and it is also a way of staying in charge of the room."
+        },
+        {
+          "tag": "leo rising",
+          "when": "ruled by surya",
+          "line": "apologised for being late in a way that got applause",
+          "sub": "the door is a performance and it is a good one. the risk is forgetting there is a house behind it."
+        },
+        {
+          "tag": "virgo rising",
+          "when": "ruled by budha",
+          "line": "noticed the thing u hoped nobody noticed",
+          "sub": "a door that audits. useful, precise, and quietly terrifying to live with."
+        },
+        {
+          "tag": "libra rising",
+          "when": "ruled by shukra",
+          "line": "agreed with u and u still do not know their opinion",
+          "sub": "the smoothest door in the set. everything lands softly, including things that should not have."
+        },
+        {
+          "tag": "scorpio rising",
+          "when": "ruled by mangal",
+          "line": "said four words and u thought about them all week",
+          "sub": "gives nothing away on purpose. people call it intense. it is just the shutters being closed."
+        },
+        {
+          "tag": "sagittarius rising",
+          "when": "ruled by guru",
+          "line": "turned a small question into a plan for march",
+          "sub": "the door is already leaving. enormous energy, no follow through unless something holds it."
+        },
+        {
+          "tag": "capricorn rising",
+          "when": "ruled by shani",
+          "line": "was the only one who actually read the document",
+          "sub": "arrives older than they are. competent from a distance, hard to get past up close."
+        },
+        {
+          "tag": "aquarius rising",
+          "when": "ruled by shani",
+          "line": "disagreed with the premise, politely",
+          "sub": "a door that does not do small talk. it does not dislike u, it just cannot see the point of the warm up."
+        },
+        {
+          "tag": "pisces rising",
+          "when": "ruled by guru",
+          "line": "made u feel understood and said almost nothing",
+          "sub": "the softest door and the least fixed. it takes the shape of the room, then wonders where it went."
+        }
+      ],
+      "cta": {
+        "h": "comment ur **rising sign**",
+        "p": "if u do not know it, that is a birth time thing and it takes about thirty seconds in the app.",
+        "btn": "asktota.com"
+      },
+      "title": "ur rising sign, by what people decide first",
+      "summary": "twelve lagnas, twelve first impressions, and a comment prompt that requires a birth time, which is an app open rather than a guess.",
+      "caption": "ur sun sign is what u are like. ur rising sign is what people decide about u in the first eight seconds 🚪\n\nlagna is the door. it is the sign that was climbing the horizon at the exact minute u were born, which is why it needs ur birth time and why almost nobody knows theirs.\n\nit is also why people who have known u for years describe u completely differently to people who just met u. they are describing different parts of the chart.\n\ncomment ur rising sign 👇 and if u have no idea what it is, that is thirty seconds and a birth time on asktota.com, free 🦜\n\n#risingsign #lagna #ascendant #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #astrologymemes",
+      "tags": "#risingsign #lagna #ascendant #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #astrologymemes"
+    },
+    "how-u-argue": {
+      "slug": "how-u-argue",
+      "kicker": "the mangal desk &middot; twelve ways to lose a fight",
+      "hook": [
+        "how u argue,",
+        "by mars sign",
+        "mangal is not anger. it is what u do with it."
+      ],
+      "sub": "mars is its own placement in its own sign. it is not ur sun sign.",
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "aries mars",
+          "when": "the sender",
+          "line": "does not draft. sends.",
+          "sub": "mangal here has no gap between feeling it and doing it. wins the exchange, loses the week."
+        },
+        {
+          "tag": "taurus mars",
+          "when": "the archivist",
+          "line": "goes quiet for eleven days then brings receipts",
+          "sub": "slow to start, impossible to stop. the fight is over. this chart is still holding it."
+        },
+        {
+          "tag": "gemini mars",
+          "when": "the technician",
+          "line": "wins on technicality and calls it a draw",
+          "sub": "argues to be correct, not to be finished. will use ur own sentence against u."
+        },
+        {
+          "tag": "cancer mars",
+          "when": "the sideways one",
+          "line": "says 'it's fine' and it is famously not fine",
+          "sub": "conflict goes sideways here, never forward. the hurt arrives before the argument does."
+        },
+        {
+          "tag": "leo mars",
+          "when": "the performer",
+          "line": "needs an audience or it is not worth having",
+          "sub": "the fight is about dignity, not the topic. apologise in public and it is over in seconds."
+        },
+        {
+          "tag": "virgo mars",
+          "when": "the auditor",
+          "line": "corrects ur grammar mid argument",
+          "sub": "mangal filed under precision. fatal in a debate, unbearable in a kitchen."
+        },
+        {
+          "tag": "libra mars",
+          "when": "the avoider",
+          "line": "refuses to fight and wins by exhaustion",
+          "sub": "conflict is avoided until it leaks. the nicest people here have the longest lists."
+        },
+        {
+          "tag": "scorpio mars",
+          "when": "the filer",
+          "line": "does not argue. remembers.",
+          "sub": "nothing is raised in the moment. everything is filed, and the file does not expire."
+        },
+        {
+          "tag": "sagittarius mars",
+          "when": "the philosopher",
+          "line": "escalates to philosophy in under a minute",
+          "sub": "the specific complaint becomes a statement about society. u came about the dishes."
+        },
+        {
+          "tag": "capricorn mars",
+          "when": "the lawyer",
+          "line": "waits for u to be wrong in writing",
+          "sub": "mangal with paperwork. will not engage until the position is unassailable."
+        },
+        {
+          "tag": "aquarius mars",
+          "when": "the principle",
+          "line": "argues the principle while u argue the thing",
+          "sub": "cold, fair and completely beside the point u were making."
+        },
+        {
+          "tag": "pisces mars",
+          "when": "the dissolver",
+          "line": "cries and then comforts u about it",
+          "sub": "conflict dissolves rather than resolves. u will leave feeling like the villain either way."
+        }
+      ],
+      "cta": {
+        "h": "comment ur **mars sign**",
+        "p": "and tag the person this reel is obviously about. we will wait.",
+        "btn": "asktota.com"
+      },
+      "title": "how u argue, by mars sign",
+      "summary": "twelve mangal placements as twelve fighting styles, with a tag prompt as well as a comment prompt, because an argument reel is the one people send to someone.",
+      "caption": "mangal is not anger. it is what u do with anger, and it is a completely different placement from ur sun sign ⚔️\n\nsome charts send the message. some charts go quiet for eleven days and come back with receipts. some do not argue at all, they just file it, and the file does not expire.\n\nnone of these are the good one. mars is a tool, and the twelve versions of it are twelve different tools.\n\ncomment ur mars sign 👇 and tag the person this is obviously about 💀\n\nno idea what urs is? full chart, free, asktota.com 🦜\n\n#marssign #mangal #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #astrologymemes #relationships",
+      "tags": "#marssign #mangal #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #astrologymemes #relationships"
+    },
+    "nakshatra-flags": {
+      "slug": "nakshatra-flags",
+      "kicker": "the nakshatra desk &middot; 12 of 27 &middot; unedited",
+      "hook": [
+        "red flags,",
+        "by nakshatra",
+        "27 of them. western astrology has exactly none of this."
+      ],
+      "sub": "ur nakshatra is where the moon actually was. it is the read under the read.",
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "ashwini · flag",
+          "when": "ketu rules it",
+          "line": "started it, will not finish it",
+          "sub": "ruled by ketu. fast, healing, and already three doors down."
+        },
+        {
+          "tag": "bharani · flag",
+          "when": "shukra rules it",
+          "line": "intensity mistaken for commitment",
+          "sub": "shukra in a hard house. it holds things very tightly, including things it should put down."
+        },
+        {
+          "tag": "krittika · flag",
+          "when": "surya rules it",
+          "line": "honest in a way that draws blood",
+          "sub": "surya's blade. the criticism is accurate. that is the problem with it."
+        },
+        {
+          "tag": "rohini · flag",
+          "when": "chandra rules it",
+          "line": "wants beautiful things and will not be rushed",
+          "sub": "chandra's favourite. warm, stubborn, quietly expensive."
+        },
+        {
+          "tag": "mrigashira · flag",
+          "when": "mangal rules it",
+          "line": "always searching, never arriving",
+          "sub": "budha in seek mode. wonderful company. terrible at staying."
+        },
+        {
+          "tag": "ardra · flag",
+          "when": "rahu rules it",
+          "line": "storms, then acts like it did not rain",
+          "sub": "rahu's own. the reset is total and everyone else is still wet."
+        },
+        {
+          "tag": "ashlesha · flag",
+          "when": "budha rules it",
+          "line": "reads u faster than u read urself",
+          "sub": "budha coiled. perceptive to the point of being unsettling."
+        },
+        {
+          "tag": "magha · flag",
+          "when": "ketu rules it",
+          "line": "needs the respect before the affection",
+          "sub": "ketu with ancestors behind it. carries a lineage into a dinner argument."
+        },
+        {
+          "tag": "purva phalguni · flag",
+          "when": "shukra rules it",
+          "line": "allergic to anything unpleasant",
+          "sub": "shukra at leisure. charming, generous, and gone the moment it gets hard."
+        },
+        {
+          "tag": "chitra · flag",
+          "when": "mangal rules it",
+          "line": "builds the image before the thing",
+          "sub": "mangal as designer. the surface is immaculate. ask about the foundation."
+        },
+        {
+          "tag": "jyeshtha · flag",
+          "when": "budha rules it",
+          "line": "competitive about things nobody entered",
+          "sub": "budha as elder sibling. carries a rank nobody handed out."
+        },
+        {
+          "tag": "shatabhisha · flag",
+          "when": "rahu rules it",
+          "line": "disappears to fix itself and calls it fine",
+          "sub": "rahu in isolation. heals alone, on purpose, and leaves u outside."
+        }
+      ],
+      "cta": {
+        "h": "comment ur **nakshatra**",
+        "p": "twelve of twenty seven here. the other fifteen are in the app, along with which one is urs.",
+        "btn": "asktota.com"
+      },
+      "title": "red flags, by nakshatra",
+      "summary": "twelve of the twenty seven lunar mansions as twelve red flags. the sharpest differentiator the account has, because a western astrology account structurally cannot post it.",
+      "caption": "western astrology splits the sky into 12. jyotish splits it into 27 🌙\n\nthose 27 are the nakshatras, the lunar mansions, and ur moon sat in exactly one of them when u were born. it is the read under the read: two people with the same moon sign can be in completely different nakshatras and be nothing alike.\n\ntwelve of them here, as red flags, because that is more fun than a textbook.\n\nthe other fifteen are in the app, along with which one is actually urs.\n\ncomment ur nakshatra 👇 if u do not know it, that is the whole point, it is free on asktota.com 🦜\n\n#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #moonsign #birthchart #astrologymemes #redflags",
+      "tags": "#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #moonsign #birthchart #astrologymemes #redflags"
     }
   }
 }

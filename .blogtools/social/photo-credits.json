@@ -25,5 +25,25 @@
     "licence": "UNVERIFIED",
     "author": "unknown",
     "note": "Not resolved from Wikidata or Commons. Nobody has checked what this may be used for; whoever added it owns that call."
+  },
+  "ms-dhoni": {
+    "name": null,
+    "wikidata": "Q470774",
+    "dob": "1981-07-07",
+    "file": "MS Dhoni 2016.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/MS_Dhoni_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:MS_Dhoni_2016.jpg",
+    "licence": "CC BY-SA 4.0",
+    "author": "Amardeep Singh"
+  },
+  "shah-rukh-khan": {
+    "name": "Shah Rukh Khan",
+    "wikidata": "Q9535",
+    "dob": "1965-11-02",
+    "file": "Shah Rukh Khan graces the launch of the new Santro.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg",
+    "licence": "CC BY 3.0",
+    "author": "Bollywood Hungama"
   }
 }

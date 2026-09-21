@@ -23,7 +23,7 @@ SITE = ROOT.parent.parent
 FPS = 30
 
 # reel folder numbers. 01 to 14 and 16 are taken, see assets/social/reels/.
-ORDER = {'abhishek-sharma': 15, 'kohli-rohit': 17}
+ORDER = {'abhishek-sharma': 15, 'kohli-rohit': 17, 'dhoni-kohli': 19, 'shah-rukh-khan': 20}
 PHOTOS = ROOT / 'photos'
 
 

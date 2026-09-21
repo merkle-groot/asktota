@@ -16,6 +16,10 @@ A subject whose head is not near the middle gets a "crop" object in photos.json,
 e.g. {"x": 0.29}, which slides the crop window rather than hand cropping the
 file. Re-running then reproduces the same framing instead of losing it.
 
+A subject whose P18 is unusable gets "commons": "<file name>.jpg", which picks a
+different Commons file by name and still reads the licence off it. Find one with
+a Commons search; P18 is one editor's pick, not the best editorial choice.
+
 Writes photos/<slug>.jpg (900x1100, face-weighted crop) and records the licence
 in photo-credits.json. A subject with no Commons photo is not an error: it is
 left out, and reel-star-file.html falls back to the redacted plate on its own.
@@ -172,6 +176,12 @@ def main():
             print(f'{slug}: manual, {state}')
             continue
         ent = entity(s['wikidata'])
+        # P18 is whatever an editor happened to put on the record, which is not
+        # always the most usable or most recognisable photo of a person. A named
+        # "commons" file overrides it while keeping the licence lookup and the
+        # birth date coming off the same Wikidata record.
+        if s.get('commons'):
+            ent['image'] = s['commons']
         if not ent['image']:
             credits.pop(slug, None)
             print(f'{slug}: no Commons photo on {s["wikidata"]}, renders redacted')

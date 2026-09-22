@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): thirty-five explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): thirty-six explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Amanta vs Purnimanta](https://www.asktota.com/blog/amanta-purnimanta.html): why the dark fortnight carries two month names, with the festival mapping and adhik maas.
 - [Navratri: the nine nights](https://www.asktota.com/blog/navratri-nine-nights.html): the Navadurga in order, four navratris a year, tithi kshaya, and the modern origin of the colour chart.
 - [The retrograde post-shadow](https://www.asktota.com/blog/retrograde-post-shadow.html): the degrees crossed three times, and why the direct station is not a reset.
 - [Dhanteras inside Mercury retrograde](https://www.asktota.com/blog/dhanteras-mercury-retrograde.html): a muhurat is elective and a transit is not, plus the gold-buying checklist.

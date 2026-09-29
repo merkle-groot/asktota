@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): thirty-eight explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): thirty-nine explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Free kundli online: what free actually means](https://www.asktota.com/blog/free-kundli-online.html): the four business models, what birth data is worth, and why two free charts disagree.
 - [How to pick a Vedic astrology app](https://www.asktota.com/blog/best-vedic-astrology-app-india.html): ten checks, three product categories, and where competitors beat Ask Tota.
 - [Mercury in your birth chart](https://www.asktota.com/blog/mercury-in-birth-chart.html): the 28 degree elongation limit, combustion, Budhaditya yoga's real frequency, and Budha house by house.
 - [Amanta vs Purnimanta](https://www.asktota.com/blog/amanta-purnimanta.html): why the dark fortnight carries two month names, with the festival mapping and adhik maas.

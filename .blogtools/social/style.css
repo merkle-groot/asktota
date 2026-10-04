@@ -142,3 +142,57 @@ p.copy mark.c{background:var(--card)}
 
 /* a cover carrying the roundel keeps the headline clear of it */
 .slide:has(.stamp) h1{max-width:748px}
+
+/* ---- minimal decks (4 Oct 2026). hook cover + one-idea beat slides. ----
+   The cover is the only thing a scroller sees, so it carries one line at
+   poster size and nothing that previews the answer. Every slide after it
+   says one thing. Rules live in lint.py so they cannot quietly rot. */
+.slide.g-ink{background:var(--ink)}
+.slide.hook{justify-content:center;padding:96px 76px 76px}
+.hk-kick{position:absolute;left:76px;top:84px;background:var(--card);border:5px solid var(--ink);
+  border-radius:999px;padding:10px 28px 13px;font-weight:800;font-size:28px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink);box-shadow:0 7px 0 var(--ink)}
+h1.hk{margin:0 0 120px;align-self:flex-start;text-align:left;font-size:150px;line-height:.98;
+  letter-spacing:-.045em;max-width:930px;text-wrap:balance}
+h1.hk mark{padding:.0em .26em .06em;margin:0 -.06em}
+.hk-swipe{position:absolute;left:76px;bottom:150px;background:var(--ink);color:var(--paper);
+  border-radius:999px;padding:16px 36px 20px;font-weight:800;font-size:36px;letter-spacing:.02em}
+.hk-tota{position:absolute;right:-26px;bottom:44px;width:360px;transform:rotate(-6deg)}
+.slide.hook .foot{position:absolute;left:0;right:0;bottom:62px;padding:0}
+.slide.hook .handle{display:none}
+.slide.g-ink h1.hk{color:var(--paper)}
+.slide.g-ink h1.hk mark{color:var(--ink)}
+.slide.g-ink .hk-swipe{background:var(--marigold);color:var(--ink)}
+.slide.g-ink .dots i{background:var(--paper)}
+
+.slide.beat h1.bt{font-size:100px;line-height:1.04;margin-top:44px}
+.bigcard{margin:auto 0;min-width:560px;max-width:900px;background:var(--card);border:6px solid var(--ink);
+  border-radius:40px;box-shadow:0 14px 0 var(--ink);padding:44px 64px 50px;display:flex;
+  flex-direction:column;align-items:center;gap:10px;text-align:center}
+.bigcard.t-marigold{background:var(--marigold)} .bigcard.t-pink{background:var(--pink)}
+.bigcard.t-mint{background:var(--mint)} .bigcard.t-stock{background:var(--stock)}
+.slide.g-marigold .bigcard.t-marigold{background:var(--card)}
+.bigcard svg{width:300px;height:180px}
+.bigcard b{font-weight:800;font-size:220px;line-height:.95;letter-spacing:-.05em;color:var(--ink)}
+.bigcard b mark{background:var(--marigold);border-radius:999px;padding:0 .18em;color:var(--ink)}
+.bigcard .bcap{font-weight:700;font-size:40px;color:var(--muted);letter-spacing:-.005em}
+.blist{margin:auto 0;width:100%;max-width:880px;display:flex;flex-direction:column;gap:26px}
+.bli{display:flex;align-items:center;gap:28px;background:var(--card);border:6px solid var(--ink);
+  border-radius:28px;box-shadow:0 10px 0 var(--ink);padding:26px 34px}
+.bli i{flex:none;width:76px;height:76px;border-radius:999px;background:var(--marigold);border:5px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800;font-size:38px;color:var(--ink)}
+.bli span{font-weight:800;font-size:52px;line-height:1.1;letter-spacing:-.02em;color:var(--ink)}
+.bli span mark{background:var(--pink);border-radius:999px;padding:0 .2em}
+p.note{margin-top:0;margin-bottom:8px;text-align:center;max-width:860px;font-weight:700;font-size:46px;
+  line-height:1.24;color:var(--body);text-wrap:balance}
+p.note mark{background:var(--marigold);border-radius:10px;padding:0 .2em;color:var(--ink)}
+.slide.g-marigold p.note mark{background:var(--card)}
+/* a beat with no number and no list: headline and line sit together mid-slide */
+.slide.beat.solo h1.bt{margin-top:auto;font-size:116px}
+.slide.beat.solo p.note{margin-top:48px;margin-bottom:auto;font-size:54px;max-width:820px}
+/* the closing card alone on a slide */
+.slide.ctaonly{justify-content:center}
+.slide.ctaonly .ctacard{margin:auto 0;padding:84px 60px}
+.slide.ctaonly .ctacard h2{font-size:96px}
+.slide.ctaonly .ctacard p{font-size:42px}
+.slide.ctaonly .foot{margin-top:0}

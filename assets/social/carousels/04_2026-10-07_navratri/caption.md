@@ -1,21 +1,20 @@
-# Carousel 04 — nine nights, nine forms, one moving date
+# Carousel 4 — there are four navratris a year
 
 | | |
 |---|---|
-| **Post on** | Wednesday 07 October 2026, 19:30 IST |
-| **Slides** | 8, in the order numbered |
+| **Post on** | 2026-10-07 |
+| **Slides** | 6, in the order numbered |
 | **Size** | 1080 x 1350 (4:5) |
 | **Blog post** | https://www.asktota.com/blog/navratri-nine-nights.html |
 
 ## Caption
 
 ```
-nine nights, nine forms, in a fixed order that is a narrative and not a list.
-it opens grounded, builds discipline, turns fierce, breaks on the seventh night and resolves into clarity on the eighth.
-also: there are four navratris a year, and the colour chart is a lovely modern convention rather than an ancient one.
-save this, u will be asked which night is which.
+navratri isn't once a year. it's four times, roughly one every quarter. and the nine nights run in a fixed order, with the hardest one seventh.
 
-full piece: asktota.com/blog
+which navratri did u grow up keeping? 👇
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #navratri #diwali #dhanteras #panchang #tithi #festivalsofindia
+asktota.com 🦜
+
+#navratri #navadurga #vedicastrology #asktota #astrologyindia
 ```

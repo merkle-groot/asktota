@@ -10,14 +10,10 @@
 
 ## caption
 
-three myths this week, and the receipts for each one.
+tula lagna's best years are the saturn dasha. three myths, three sets of receipts.
 
-a transit says what is in the air. the dasha says whether it is ur turn.
-
-save it. u will hear at least one of these at a family function, and now u have the numbers.
-
-which one did u grow up believing? tell us, we will do that one next.
+which one did u grow up believing? 👇
 
 free chart on asktota.com 🦜
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #mythbusting #astrologyfacts #birthchart #desiastrology #astrologyapp
+#vedicastrology #jyotish #mythbusting #astrologyindia #asktota

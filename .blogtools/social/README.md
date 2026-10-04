@@ -97,6 +97,60 @@ stream. Every ffmpeg call also carries a `timeout`, so a future hang fails
 loudly instead of blocking the run. If you touch this filter, run the build a
 dozen times rather than once: a single pass proves nothing against a race.
 
+## content rules: hooks and minimal slides
+
+From 4 October 2026, after a review of the live account (18 followers, one to four
+likes a post, no comments on any of the last twelve), two rules apply to anything new:
+
+1. **A carousel's first slide is a hook.** One line, poster size, nothing that
+   previews the answer. A cover that lists the three myths, or shows four preview
+   tiles, has already given the post away before anyone swipes.
+2. **Minimal content.** One idea per slide. A number, or three short items, and at
+   most one supporting line. No paragraphs.
+
+`lint.py` enforces both, and every generator calls it before it writes anything:
+
+| where | marked by | limits |
+|---|---|---|
+| `decks.json` | `"format": "minimal"` | hook 10 words, beat headline 9, slide 24, note 14, closer 18, caption 45 before hashtags, 4 to 8 slides, no `copy`/`tiles`/`rows` |
+| `reel-callout.json` | `"minimal": true` | hook 8 words, card line 9, tag 4, no `sub` lines, caption 45 |
+| `myths.json` | a `cover` line on the week | cover 10, myth 12, receipts 22 |
+
+Two checks run on everything, old or new, because they are bugs rather than
+style: an HTML entity in the data (templates write text, so `&middot;` shows up
+on screen as `&middot;`, which is what happened to star file 005), and an em dash
+anywhere a viewer reads.
+
+```bash
+python3 lint.py                   # every data file
+python3 -m unittest test_lint     # the rules themselves
+```
+
+### the slide types
+
+A minimal deck in `decks.json` is three kinds of slide:
+
+- `{"hook": "80% of u have the **wrong** sun sign"}`: the cover. Optional `kick`, `g`.
+- `{"beat": true, "eyebrow": "AUTO", "h": "...", "big": "24\u00b0", "cap": "...", "note": "..."}`:
+  one big number or word in a card. Swap `big` for `list` (up to three items). A beat
+  with neither is centred as a headline and one line.
+- `{"cta": {"h": "...", "p": "...", "btn": "asktota.com"}}`: the closer, centred.
+
+The older decks predate the rules and are left as they shipped.
+
+### minimal reels
+
+`"minimal": true` on a callout deck puts the whole two line hook on frame 0, at
+poster size, with the same three frame slam the cards use. A reel's first frame is
+its thumbnail, and the old timeline left it as an empty cream field until frame 14.
+Cards drop to a tag and one line, and the standing sub line goes.
+
+### the myth desk
+
+A week with a `cover` line renders a hook cover (no docket), bigger receipts, and a
+closer without the fine print. `python3 genmyths.py --render 2026-10-09` re-shoots
+every deck from that date on.
+
 ## subject photos
 
 `genphotos.py` fills `photos/<slug>.jpg` for the STAR FILES reels. It resolves a

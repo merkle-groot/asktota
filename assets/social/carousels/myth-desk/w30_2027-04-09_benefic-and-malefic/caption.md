@@ -10,14 +10,10 @@
 
 ## caption
 
-three myths this week, and the receipts for each one.
+mars is a yogakaraka for karka lagna. three myths, three sets of receipts.
 
-there are no good and bad grahas. there are grahas that are good for ur lagna, and that list changes for every one of the twelve.
-
-save it. u will hear at least one of these at a family function, and now u have the numbers.
-
-which one did u grow up believing? tell us, we will do that one next.
+which one did u grow up believing? 👇
 
 free chart on asktota.com 🦜
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #mythbusting #astrologyfacts #birthchart #desiastrology #astrologyapp
+#vedicastrology #jyotish #mythbusting #astrologyindia #asktota

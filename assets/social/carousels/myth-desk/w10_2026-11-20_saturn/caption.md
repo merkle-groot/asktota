@@ -10,14 +10,10 @@
 
 ## caption
 
-three myths this week, and the receipts for each one.
+saturn is the single best graha for two ascendants. three myths, three sets of receipts.
 
-for a third of all charts the scariest graha in the system is the one on ur side.
-
-save it. u will hear at least one of these at a family function, and now u have the numbers.
-
-which one did u grow up believing? tell us, we will do that one next.
+which one did u grow up believing? 👇
 
 free chart on asktota.com 🦜
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #mythbusting #astrologyfacts #birthchart #desiastrology #astrologyapp
+#vedicastrology #jyotish #mythbusting #astrologyindia #asktota

@@ -49,3 +49,14 @@
 .dots i.on{background:var(--ink)}
 .deckfoot{margin-top:auto;padding-top:28px;display:flex;justify-content:space-between;
   align-items:center;font-weight:800;font-size:30px;letter-spacing:.02em;color:var(--ink)}
+
+/* ---------- rewritten weeks (4 Oct 2026): hook cover, short receipts ---------- */
+.slide.hookcover{position:relative}
+.slide.hookcover h1.mhook{margin:auto 0 170px;font-weight:800;font-size:132px;line-height:1.0;
+  letter-spacing:-.045em;color:var(--ink);text-wrap:balance;max-width:930px}
+.slide.hookcover h1.mhook mark{background:var(--marigold);border-radius:999px;padding:0 .24em .05em;
+  margin:0 -.06em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.mswipe{position:absolute;left:84px;bottom:170px;background:var(--ink);color:var(--paper);border-radius:999px;
+  padding:16px 36px 20px;font-weight:800;font-size:36px}
+.mtota{position:absolute;right:-20px;bottom:110px;width:330px;transform:rotate(-6deg)}
+.tile2 p.big{font-weight:700;font-size:44px;line-height:1.24;color:var(--ink)}

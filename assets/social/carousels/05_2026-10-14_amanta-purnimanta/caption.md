@@ -1,21 +1,20 @@
-# Carousel 05 — why ur festival is on a different day
+# Carousel 5 — diwali is in kartik. or ashwin.
 
 | | |
 |---|---|
-| **Post on** | Wednesday 14 October 2026, 19:30 IST |
-| **Slides** | 8, in the order numbered |
+| **Post on** | 2026-10-14 |
+| **Slides** | 7, in the order numbered |
 | **Size** | 1080 x 1350 (4:5) |
 | **Blog post** | https://www.asktota.com/blog/amanta-purnimanta.html |
 
 ## Caption
 
 ```
-half the country ends the lunar month at the new moon and half at the full moon.
-so the same night is bhadrapada in delhi and shravana in mumbai. same tithi, same sky, two filing systems.
-quick test: ask what month ur family says diwali falls in. kartik means purnimanta, ashwin means amanta.
-nobody has been wrong this whole time. send this to the family group.
+half the country ends the lunar month at the new moon, half at the full moon. same night, two month names, nobody wrong.
 
-full piece: asktota.com/blog
+kartik or ashwin, which does ur family say? 👇
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #navratri #diwali #dhanteras #panchang #tithi #festivalsofindia
+asktota.com 🦜
+
+#amanta #purnimanta #panchang #asktota #vedicastrology
 ```

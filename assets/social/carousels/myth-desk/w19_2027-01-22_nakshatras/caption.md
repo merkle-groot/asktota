@@ -10,14 +10,10 @@
 
 ## caption
 
-three myths this week, and the receipts for each one.
+about 1 in 5 babies is born gand mool. three myths, three sets of receipts.
 
-27 nakshatras, 4 padas each, 108 slots. that is the resolution the tradition actually works at.
-
-save it. u will hear at least one of these at a family function, and now u have the numbers.
-
-which one did u grow up believing? tell us, we will do that one next.
+which one did u grow up believing? 👇
 
 free chart on asktota.com 🦜
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #mythbusting #astrologyfacts #birthchart #desiastrology #astrologyapp
+#vedicastrology #jyotish #mythbusting #astrologyindia #asktota

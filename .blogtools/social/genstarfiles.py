@@ -22,8 +22,9 @@ ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT.parent.parent
 FPS = 30
 
-# reel folder numbers. 01 to 14 and 16 are taken, see assets/social/reels/.
-ORDER = {'abhishek-sharma': 15, 'kohli-rohit': 17, 'dhoni-kohli': 19, 'shah-rukh-khan': 20}
+# reel folder numbers. see assets/social/reels/ for what each number holds.
+ORDER = {'abhishek-sharma': 15, 'kohli-rohit': 17, 'dhoni-kohli': 19, 'shah-rukh-khan': 20,
+         'deepika-padukone': 25}
 PHOTOS = ROOT / 'photos'
 
 

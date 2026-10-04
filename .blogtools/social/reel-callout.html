@@ -71,6 +71,14 @@
  .foot{position:absolute;left:72px;bottom:92px;font-weight:800;font-size:46px;letter-spacing:.14em;
    text-transform:uppercase;color:var(--ink)}
  .hidden{visibility:hidden}
+
+ /* minimal decks: poster-size hook from frame 0, one line per card, no standing sub */
+ .min .hd{top:560px}
+ .min #l1{font-size:150px;line-height:.98}
+ .min #l2{font-size:132px;margin-top:22px}
+ .min #l3,.min #csub,.min #sub{display:none}
+ .min #bubble{margin-top:90px;padding:60px 56px}
+ .min #btext{font-size:100px;line-height:1.04}
 </style></head><body>
 <div id="stage">
   <div class="masthead" id="mast"><span>the daily tota</span></div>
@@ -110,17 +118,23 @@ const $=id=>document.getElementById(id),
       p=(f,a,b)=>cl((f-a)/(b-a),0,1);
 
 // timeline constants. the deck decides how many cards, everything else is fixed.
-const T={mast:0, desk:8, l1:14, l2:24, l3:34, first:54};
+// minimal decks (4 Oct 2026) put the whole hook on frame 0: a reel's first frame
+// is its thumbnail and its hook, and an empty cream field stops nobody.
+const T_FULL={mast:0, desk:8, l1:14, l2:24, l3:34, first:54},
+      T_MIN={mast:0, desk:8, l1:0, l2:0, l3:9999, first:42};
+let T=T_FULL;
 let D=null, TOTAL=0, SFX=[], CUTS=[];
 
 function setDeck(deck){
   D=deck;
+  T=deck.minimal?T_MIN:T_FULL;
+  document.body.classList.toggle('min', !!deck.minimal);
   const hold=deck.hold||24, n=deck.cards.length;
   CUTS=deck.cards.map((_,i)=>T.first+i*hold);
   const ctaAt=T.first+n*hold;
   TOTAL=ctaAt+(deck.ctaHold||54);
 
-  $('deskkick').innerHTML=deck.kicker;
+  $('deskkick').textContent=deck.kicker;
   // the bar clips rather than wraps, so shrink a long kicker until it fits
   const kick=$('deskkick');
   kick.style.fontSize=''; kick.style.letterSpacing='';
@@ -138,7 +152,7 @@ function setDeck(deck){
 
   // every sound sits on the exact frame the thing happens, so timing cannot
   // drift from the animation it belongs to.
-  SFX=[['thud',T.mast,0.9],['whoosh',T.desk,0.5],['click',T.l1,0.5],['click',T.l2,0.6]]
+  SFX=[['thud',T.mast,0.9],['whoosh',T.desk,0.5],['click',T.l1,0.5]].concat(T.l2===T.l1?[]:[['click',T.l2,0.6]])
       .concat(CUTS.flatMap((c,i)=>[['whoosh',c,0.55],['click',c+3,i===0?0.7:0.5]]))
       .concat([['thud',ctaAt,0.95],['stamp',ctaAt+8,1.0]]);
   window.TOTAL=TOTAL; window.SFX=SFX; window.CTA_AT=ctaAt;
@@ -169,6 +183,8 @@ function render(f){
   $('l2').classList.toggle('hidden', f<T.l2);
   $('l3').classList.toggle('hidden', f<T.l3);
   $('l2').style.background = f<T.l2 ? 'transparent' : 'var(--marigold)';
+  // minimal hook lands with the same three frame slam the cards use
+  $('head').style.transform = D.minimal ? `scale(${1+0.04*(1-p(f,0,3))})` : '';
 
   const onCta = f>=ctaAt;
   $('deck').classList.toggle('hidden', !onCards || onCta);

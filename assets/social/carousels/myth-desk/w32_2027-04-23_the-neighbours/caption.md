@@ -10,14 +10,10 @@
 
 ## caption
 
-three myths this week, and the receipts for each one.
+most numerology in india is twentieth century, mostly western. three myths, three sets of receipts.
 
-if it does not start from a birth time and a computed position, it is not jyotisha. it might still be worth something. it is just not this.
-
-save it. u will hear at least one of these at a family function, and now u have the numbers.
-
-which one did u grow up believing? tell us, we will do that one next.
+which one did u grow up believing? 👇
 
 free chart on asktota.com 🦜
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #mythbusting #astrologyfacts #birthchart #desiastrology #astrologyapp
+#vedicastrology #jyotish #mythbusting #astrologyindia #asktota

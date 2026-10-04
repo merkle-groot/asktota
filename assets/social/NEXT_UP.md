@@ -9,6 +9,40 @@ and a reel that produces **DM shares** beats both. Saves are for carousels.
 
 ---
 
+## shipped 4 October 2026: hooks and minimal slides
+
+A review of the live account on 4 Oct: 18 followers, one to four likes a post, and
+no comments on any of the last twelve. Two rules came out of it, and `lint.py`
+now enforces them (see `.blogtools/social/README.md`):
+
+1. **a carousel's first slide is a hook.** one line, poster size, no preview.
+2. **minimal content.** one idea per slide, no paragraphs.
+
+What changed:
+
+- **six minimal carousels**, Mon and Thu 19:30 from 5 Oct: wrong sun sign (80%),
+  1 in 4 in sade sati, up to half of india is manglik, born 2 hours later, ur era
+  has an end date, 18 years of rahu. Folders 19 to 24.
+- **three minimal reels**: is ur moon in sade sati rn (29), ur sun sign in vedic
+  (30), how long each planet runs ur life (31). Reels 24, 26 and 28 were converted
+  to minimal before they ever posted. Reel 25 (deepika) re-rendered with the
+  `&middot;` bug fixed, and 27 (text back) finally rendered.
+- **the myth desk, weeks 4 to 34.** Every cover is now one claim instead of a
+  docket of all three myths. Receipts cut from about 55 words to 22 or fewer, same
+  facts. Week 6 also carried a factual error ("we are on a faster inner track and
+  we overtake it" about mercury, which is backwards) and that line is gone.
+- **the reel queue** had nothing after 3 Oct. It now runs to 17 Oct.
+- **blog:** the fifteen held posts were re-dated to 4 Oct so the release bot
+  publishes them all on its next run.
+
+Captions follow the same rule: 45 words before the hashtags, five hashtags.
+
+What to watch: saves and shares on the six new carousels against the dasha deck
+(the best of the old ones, 4 likes). That needs Insights, which a logged-out
+view of the profile cannot see.
+
+---
+
 ## shipped 20 September 2026
 
 Five more reels, taking the queue from 28 Sept out to 3 Oct.

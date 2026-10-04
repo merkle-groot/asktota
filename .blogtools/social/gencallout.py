@@ -13,15 +13,18 @@ reelshot.py), then encoded with an SFX bed built from audio/.
 """
 import json, pathlib, subprocess, sys, tempfile
 
+import lint
 from reelshot import browse, capture, open_page
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SITE = ROOT.parent.parent
 FPS = 30
 
-# reel folder numbers. 01 to 12 are taken, see assets/social/reels/.
+# reel folder numbers. see assets/social/reels/ for what each number holds.
 ORDER = {'moon-2am': 13, 'group-chat': 14, 'the-ick': 16, 'birth-weekday': 18,
-         'rising-sign': 21, 'how-u-argue': 22, 'nakshatra-flags': 23}
+         'rising-sign': 21, 'how-u-argue': 22, 'nakshatra-flags': 23,
+         'saturn-takes': 24, 'nakshatra-flags-2': 26, 'nakshatra-flags-3': 28,
+         'sade-sati-rn': 29, 'vedic-sun-dates': 30, 'dasha-lengths': 31}
 
 
 def render_frames(deck, out):
@@ -64,6 +67,9 @@ def encode(frames, sfx, mp4):
 
 def main():
     data = json.loads((ROOT / 'reel-callout.json').read_text())
+    problems = lint.reels(data)
+    if problems:
+        sys.exit('reel-callout.json fails the content rules:\n  ' + '\n  '.join(problems))
     want = sys.argv[1:] or list(data['decks'])
     tmp = pathlib.Path(tempfile.mkdtemp(prefix='asktota-callout-', dir='/private/tmp'))
     for key in want:

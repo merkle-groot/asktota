@@ -8,6 +8,8 @@ Type stays Bricolage Grotesque per BRAND_DESIGN_BIBLE 4.1.
 """
 import json, pathlib, html as H, sys
 
+import lint
+
 ROOT = pathlib.Path(__file__).resolve().parent
 INK, MUT = '#1E3A2A', '#5E6E5E'
 
@@ -101,9 +103,50 @@ def foot(i, n):
 
 WORDS = ['one','two','three','four','five','six','seven','eight','nine','ten']
 
-def slide_html(s, i, deck, n):
+def hook_html(s, i, deck, n):
+    """The cover of a minimal deck. One line of type, as big as it will go, and
+    nothing else competing with it: no tiles, no subhead, no preview of the answer.
+    Its only job is to stop a thumb, so the swipe cue is the only other words on it."""
     g = s.get('g', deck.get('ground', 'mint'))
-    parts = [f'<section class="slide g-{g}" id="{deck["id"]}-{i+1:02d}">']
+    kick = f'<div class="hk-kick">{esc(s["kick"])}</div>' if s.get('kick') else ''
+    return (f'<section class="slide hook g-{g}" id="{deck["id"]}-{i+1:02d}">{kick}'
+            f'<h1 class="hk">{hl(esc(s["hook"]))}</h1>'
+            f'<div class="hk-swipe">{esc(s.get("swipe", "swipe"))} &rarr;</div>'
+            f'<img class="hk-tota" src="tota.png" alt="">'
+            f'{foot(i, n)}</section>')
+
+def beat_html(s, i, deck, n):
+    """One idea per slide: a short headline, one big thing, at most one short line."""
+    g = s.get('g', deck.get('ground', 'mint'))
+    solo = '' if (s.get('big') or s.get('list')) else ' solo'
+    parts = [f'<section class="slide beat{solo} g-{g}" id="{deck["id"]}-{i+1:02d}">']
+    if s.get('eyebrow'):
+        parts.append(f'<div class="eyebrow">{esc(s["eyebrow"])}</div>')
+    parts.append(f'<h1 class="bt">{hl(esc(s["h"]))}</h1>')
+    if s.get('big'):
+        tone = f' t-{s["tone"]}' if s.get('tone') else ''
+        d = DIAGRAMS[s['d']] if s.get('d') else ''
+        cap = f'<span class="bcap">{esc(s["cap"])}</span>' if s.get('cap') else ''
+        parts.append(f'<div class="bigcard{tone}">{d}<b>{hl(esc(s["big"]))}</b>{cap}</div>')
+    if s.get('list'):
+        parts.append('<div class="blist">' + ''.join(
+            f'<div class="bli"><i>{k+1}</i><span>{hl(esc(x))}</span></div>'
+            for k, x in enumerate(s['list'])) + '</div>')
+    if s.get('note'):
+        parts.append(f'<p class="note">{hl(esc(s["note"]))}</p>')
+    parts.append(foot(i, n))
+    parts.append('</section>')
+    return ''.join(parts)
+
+def slide_html(s, i, deck, n):
+    if s.get('hook'):
+        return hook_html(s, i, deck, n)
+    if s.get('beat'):
+        return beat_html(s, i, deck, n)
+    g = s.get('g', deck.get('ground', 'mint'))
+    # a closing card on its own (minimal decks) is centred and set larger
+    only = ' ctaonly' if s.get('cta') and not (s.get('h') or s.get('copy') or s.get('tiles')) else ''
+    parts = [f'<section class="slide{only} g-{g}" id="{deck["id"]}-{i+1:02d}">']
     if s.get('eyebrow') is not None:
         parts.append(f'<div class="eyebrow">{esc(s["eyebrow"])}</div>')
     if s.get('h'):
@@ -145,6 +188,9 @@ def slide_html(s, i, deck, n):
 
 def build(path='decks.json', out='carousels.html'):
     decks = json.loads((ROOT / path).read_text())
+    problems = lint.decks(decks)
+    if problems:
+        sys.exit('decks.json fails the content rules, nothing written:\n  ' + '\n  '.join(problems))
     blocks, index = [], {}
     for key, deck in decks.items():
         deck['id'] = key

@@ -94,22 +94,23 @@
         {
           "id": "colours",
           "q": "the navratri **colour list** is ancient",
-          "myth": "nine colours, one per night, handed down through the tradition.",
-          "receipts": "it spread through newspapers in western india over the last few decades. genuinely lovely, widely kept, and about forty years old. a custom does not need to be ancient to be real. it just should not be sold as something it is not."
+          "myth": "the navratri colour list is ancient",
+          "receipts": "it spread through western indian newspapers over the last few decades. lovely, widely kept, and about forty years old."
         },
         {
           "id": "onefestival",
           "q": "navratri is **one festival** everywhere",
-          "myth": "same nine nights, same rituals, one country, one observance.",
-          "receipts": "gujarat dances garba, bengal builds pandals for durga puja, the south sets out golu dolls, the north stages ramlila and ends on dussehra. same nine nights, four different festivals sharing a calendar. none of them is the correct one."
+          "myth": "navratri is one festival, observed the same everywhere",
+          "receipts": "gujarat dances garba, bengal builds durga puja pandals, the south sets out golu, the north stages ramlila. four festivals, one calendar."
         },
         {
           "id": "ninedays",
           "q": "navratri is always **nine days**",
-          "myth": "nine nights, nine dates, every year, no exceptions.",
-          "receipts": "it runs on tithis, not on dates, and tithis do not match days one to one. a tithi can be skipped or repeated, so the festival lands on eight or ten calendar days some years. ur panchang is not broken. the moon is just not on our calendar."
+          "myth": "navratri is always nine days, no exceptions",
+          "receipts": "it runs on tithis, which can be skipped or repeated, so some years it lands on eight or ten days."
         }
-      ]
+      ],
+      "cover": "ur navratri colour list is **40 years old**"
     },
     {
       "n": 5,
@@ -121,22 +122,23 @@
         {
           "id": "fasting",
           "q": "fasting rules are **the same everywhere**",
-          "myth": "there is one correct way to keep the fast and everyone else is doing it wrong.",
-          "receipts": "they are regional and always have been. grains or no grains, sendha namak or none, all nine days or two. the panchang ur family uses probably differs from the one on ur phone, and both are computing correctly."
+          "myth": "there is one correct way to keep a fast",
+          "receipts": "fasting rules are regional and always have been. grains or none, sendha namak or none, all nine days or two."
         },
         {
           "id": "appease",
           "q": "fasting **fixes** a bad planet",
-          "myth": "skip food on the right day and the graha stops causing trouble.",
-          "receipts": "the classical remedies are mantra, daan, and conduct, and every text that lists them frames them as discipline, not as a transaction. no chapter anywhere says a graha is settled by an empty stomach. if a fast steadies u, keep it. do not expect it to move saturn."
+          "myth": "fasting on the right day fixes a bad planet",
+          "receipts": "the classical remedies are mantra, daan and conduct. no text says a graha is settled by an empty stomach."
         },
         {
           "id": "mustfast",
           "q": "u **have to** fast on ur graha's day",
-          "myth": "saturday for shani, tuesday for mangal, or the dosha gets worse.",
-          "receipts": "weekday lordship is real and the practice is old. the compulsion is not. anyone telling u that skipping a saturday fast will make ur sade sati worse has moved from tradition into fear, and fear is the one thing that reliably makes people spend money on this subject."
+          "myth": "skip ur shani saturday fast and the dosha gets worse",
+          "receipts": "weekday lordship is real and the practice is old. the compulsion is fear, and fear is what makes people spend."
         }
-      ]
+      ],
+      "cover": "no text says **an empty stomach** settles a graha"
     },
     {
       "n": 6,
@@ -148,22 +150,23 @@
         {
           "id": "ancient",
           "q": "mercury retrograde is an **ancient warning**",
-          "myth": "the old texts told people not to sign or travel while budha is retrograde.",
-          "receipts": "classical vedic astrology scores a retrograde graha as STRONG. vakri earns cheshta bala, one of the six components of shadbala. the three week panic is a twentieth century idea from a different tradition entirely."
+          "myth": "old texts warned against signing or travel during mercury retrograde",
+          "receipts": "classical vedic astrology scores a retrograde graha as strong: vakri earns cheshta bala. the three week panic is a twentieth century import."
         },
         {
           "id": "backwards",
           "q": "mercury actually **moves backwards**",
-          "myth": "three times a year the planet reverses direction in space.",
-          "receipts": "it never does. we are on a faster inner track and we overtake it, so it appears to slide back against the stars the way a slower car does out a train window. mercury never gets more than 28 degrees from the sun, and that limit is the whole reason the loop looks the way it does."
+          "myth": "mercury actually reverses direction in space three times a year",
+          "receipts": "it never does. it only appears to slide back against the stars, an effect of watching from a moving earth."
         },
         {
           "id": "onlygemini",
           "q": "it only hits **gemini and virgo**",
-          "myth": "budha rules those two rashis, so the rest of us are exempt.",
-          "receipts": "a transit is read from where it lands in ur chart, not from whose sign it owns. mercury retrograde in ur 10th reads like work. in ur 4th it reads like home. everyone gets one, everyone gets a different one, and nobody gets a free pass."
+          "myth": "mercury retrograde only affects gemini and virgo",
+          "receipts": "a transit is read by where it lands in ur chart. in ur 10th it reads like work, in ur 4th, home."
         }
-      ]
+      ],
+      "cover": "classical astrology scores retrograde mercury as **strong**"
     },
     {
       "n": 7,
@@ -175,22 +178,23 @@
         {
           "id": "dontsign",
           "q": "don't sign anything for **three weeks**",
-          "myth": "no contracts, no purchases, no launches until mercury goes direct.",
-          "receipts": "three weeks, three times a year, is 18% of ur life. add the shadows as the same advice usually does and it reaches 45%. no functioning tradition ever asked people to stop living for half of every year. read it twice. don't stop."
+          "myth": "don't sign anything until mercury goes direct",
+          "receipts": "three weeks, three times a year, is 18% of ur life. add the shadows: 45%. read it twice. don't stop."
         },
         {
           "id": "travel",
           "q": "don't **travel** during retrograde",
-          "myth": "flights get cancelled, bags get lost, the sky is against ur itinerary.",
-          "receipts": "airlines cancel flights for weather, staffing and maintenance, and those numbers are published monthly. none of them cycle with budha. what does change is ur attention: u notice the delay and file it as evidence. that is confirmation bias doing the work, not mercury."
+          "myth": "don't travel during retrograde, flights get cancelled",
+          "receipts": "airlines publish cancellation numbers monthly: weather, staffing, maintenance. none cycle with budha. u just notice the delay and file it as evidence."
         },
         {
           "id": "backup",
           "q": "back up ur phone, **mercury eats data**",
-          "myth": "hard drives fail and messages vanish more often in the three weeks.",
-          "receipts": "back up ur phone. that is good advice on all 365 days and we are not going to argue u out of it. it just is not astrology. if a rule is sensible in january and sensible in july, u do not need a graha to justify it."
+          "myth": "back up ur phone, mercury retrograde eats data",
+          "receipts": "back up ur phone. it's good advice all 365 days, and good advice doesn't need a graha."
         }
-      ]
+      ],
+      "cover": "mercury retrograde plus shadows is **45% of ur life**"
     },
     {
       "n": 8,
@@ -202,22 +206,23 @@
         {
           "id": "dhanteras",
           "q": "don't buy on dhanteras **this year**",
-          "myth": "mercury is retrograde, so skip the gold, skip the appliance, wait until the 13th.",
-          "receipts": "dhanteras is a tithi. it cannot be moved, so “wait” means skip the festival, and nobody means that. a muhurat is elective and a transit is not. buy the thing. keep the receipt. read the warranty twice."
+          "myth": "skip dhanteras shopping this year, mercury is retrograde",
+          "receipts": "dhanteras is a tithi, so it can't move. a muhurat is elective, a transit isn't. buy the thing. keep the receipt."
         },
         {
           "id": "gold",
           "q": "u **must** buy gold on dhanteras",
-          "myth": "no metal in the house that day means no lakshmi in the house that year.",
-          "receipts": "the older custom is buying any new utensil or metal object, and steel counts. gold is the version jewellers advertise, for reasons that are not hard to work out. if the budget is tight, a steel vessel keeps the festival exactly as well and always did."
+          "myth": "u must buy gold on dhanteras or lose lakshmi",
+          "receipts": "the older custom is any new utensil or metal object, and steel counts. gold is the version jewellers advertise."
         },
         {
           "id": "guarantee",
           "q": "a good **muhurat guarantees** the outcome",
-          "myth": "start at the auspicious minute and the business, the marriage or the move works.",
-          "receipts": "electional astrology picks a favourable start. that is the entire claim. no classical text promises a result, and the ones that discuss muhurat spend most of their pages on what to avoid rather than what to expect. a good start is worth having. it is not a warranty."
+          "myth": "a good muhurat guarantees the business, marriage or move works",
+          "receipts": "electional astrology picks a favourable start. that's the whole claim. no classical text promises a result. a good start isn't a warranty."
         }
-      ]
+      ],
+      "cover": "a **steel vessel** keeps dhanteras just as well"
     },
     {
       "n": 9,
@@ -229,22 +234,23 @@
         {
           "id": "over",
           "q": "the retrograde is **over today**",
-          "myth": "mercury stations direct, everything resets, back to normal.",
-          "receipts": "the post-shadow runs to about 30 november. mercury is re-crossing the same fifteen degrees for a third time. nothing resets on the 13th, and expecting it to is most of why the week after feels stuck."
+          "myth": "mercury stations direct and everything goes back to normal",
+          "receipts": "the post-shadow runs to about 30 november, with mercury crossing the same fifteen degrees a third time. nothing resets on the 13th."
         },
         {
           "id": "shadow",
           "q": "the **shadow periods** are made up",
-          "myth": "pre-shadow and post-shadow are invented to stretch three weeks into ten.",
-          "receipts": "the degrees are real and computable: mercury crosses the same arc three times, forward, back, forward. that is geometry, u can plot it. what is invented is treating all ten weeks as equally cursed. the arithmetic is sound. the dread attached to it is not."
+          "myth": "shadow periods are invented to stretch three weeks into ten",
+          "receipts": "the degrees are real and plottable: mercury crosses the same arc three times. treating all ten weeks as cursed is invented."
         },
         {
           "id": "feelit",
           "q": "u can **feel** the exact station day",
-          "myth": "the day it turns direct has a distinct physical texture people report picking up.",
-          "receipts": "the station is a moment where apparent motion crosses zero, and mercury sits nearly still for days on either side of it. there is no edge to feel. what people report is usually the calendar: they knew the date, they watched for it, they found it."
+          "myth": "u can physically feel the day mercury turns direct",
+          "receipts": "mercury sits nearly still for days around the station. there's no edge to feel. people knew the date, watched, and found it."
         }
-      ]
+      ],
+      "cover": "mercury stations direct and **nothing resets**"
     },
     {
       "n": 10,
@@ -256,22 +262,23 @@
         {
           "id": "badplanet",
           "q": "saturn is a **bad planet**",
-          "myth": "shani punishes people. a saturn period is something to survive.",
-          "receipts": "saturn is the yogakaraka, the single BEST graha, for vrishabha and tula ascendants. it is the lagna lord for two more. for a third of all charts, the scariest graha in the system is on ur side."
+          "myth": "saturn is a bad planet that punishes people",
+          "receipts": "saturn is the yogakaraka, the single best graha, for vrishabha and tula ascendants, and lagna lord for two more."
         },
         {
           "id": "sadesati",
           "q": "sade sati is **7 years of ruin**",
-          "myth": "saturn crosses ur moon and everything collapses for seven and a half years.",
-          "receipts": "it is saturn transiting the 12th, the 1st and the 2nd from ur natal moon, and it takes about seven and a half years because saturn takes about 29.5 years to go round. it arrives roughly three times in a normal lifespan. if it were seven years of ruin, most people would spend a quarter of their life ruined."
+          "myth": "sade sati is seven and a half years of ruin",
+          "receipts": "it comes roughly three times in a normal lifespan. if it were ruin, most people would spend a quarter of life ruined."
         },
         {
           "id": "punishes",
           "q": "shani **punishes** u for ur karma",
-          "myth": "he keeps a ledger, and a hard transit is the bill arriving.",
-          "receipts": "the classical descriptions of shani are slow, cold, dry, patient, and concerned with what is actually load-bearing. the punishment framing came later and it sells remedies extremely well. read a saturn period as an audit, not a sentence. audits are unpleasant and they are not personal."
+          "myth": "shani keeps a karma ledger and a hard transit is the bill",
+          "receipts": "classical texts describe shani as slow, cold, patient and focused on what's load-bearing. the punishment framing came later, and sells remedies."
         }
-      ]
+      ],
+      "cover": "saturn is the **single best graha** for two ascendants"
     },
     {
       "n": 11,
@@ -283,22 +290,23 @@
         {
           "id": "ruins",
           "q": "manglik dosha **ruins a marriage**",
-          "myth": "a manglik should not marry a non-manglik. the match is doomed.",
-          "receipts": "it is mars in one of six houses out of twelve. depending on which method and which reference point, somewhere between a third and a half of everyone qualifies, and the classical cancellations run to dozens. it is the most oversold thing in this category."
+          "myth": "a manglik marrying a non-manglik is doomed",
+          "receipts": "it's mars in six of twelve houses. a third to half of everyone qualifies, and the classical cancellations run to dozens."
         },
         {
           "id": "tree",
           "q": "a manglik must **marry a tree** first",
-          "myth": "kumbh vivah or a peepal marriage is required before a real wedding can happen.",
-          "receipts": "it is a folk remedy, regional, and nowhere near universal. no classical text prescribes it as the fix for mars in the 7th. if a family finds meaning in it, that is theirs to keep. it should never be the price of admission to a marriage, and it is routinely sold as exactly that."
+          "myth": "a manglik must marry a tree before a real wedding",
+          "receipts": "it's a regional folk remedy. no classical text prescribes it for mars in the 7th. it's not an entry fee."
         },
         {
           "id": "death",
           "q": "manglik means ur **partner dies**",
-          "myth": "that is what the dosha is actually predicting, everyone just says it politely.",
-          "receipts": "no. this is the single most damaging sentence in indian matchmaking and it has no classical basis at that strength. mars in those houses is read as heat, friction, impatience in a partnership. real, workable, and worth knowing. it is not a death sentence and saying so out loud has wrecked real families."
+          "myth": "manglik secretly means ur partner will die",
+          "receipts": "no classical basis at that strength. mars there reads as heat, friction and impatience in a partnership. real, workable, worth knowing."
         }
-      ]
+      ],
+      "cover": "up to **half of everyone** is manglik"
     },
     {
       "n": 12,
@@ -310,22 +318,23 @@
         {
           "id": "defect",
           "q": "a debilitated planet is a **defect**",
-          "myth": "neecha means broken. that part of ur life is compromised.",
-          "receipts": "about 45% of charts contain at least one debilitation. neecha bhanga cancels a large share of them, and some texts then read the cancellation as a strength. check the cancellations before anyone says anything final."
+          "myth": "a debilitated planet means that part of life is broken",
+          "receipts": "about 45% of charts have at least one. neecha bhanga cancels a large share, and some texts read that as strength."
         },
         {
           "id": "exalted",
           "q": "an **exalted** planet means an easy life",
-          "myth": "ucha is the best case, so that part of life just works.",
-          "receipts": "exaltation is one strength measure out of several. a planet can be exalted and sit in a house that gives it nothing to do, or be exalted and combust, or be exalted and own two difficult houses. shadbala exists because one flag is never the whole reading. exalted is a good start, not a verdict."
+          "myth": "an exalted planet means that part of life just works",
+          "receipts": "exaltation is one strength measure of several. a planet can be exalted and combust, or exalted and owning two difficult houses."
         },
         {
           "id": "loophole",
           "q": "neecha bhanga is a **loophole**",
-          "myth": "a technicality astrologers use to soften bad news for paying clients.",
-          "receipts": "it is a set of stated conditions in the classical texts, not an improvisation. the lord of the debilitation sign, or the lord of the exaltation sign, in a kendra from the lagna or the moon, among others. the conditions are checkable, which is precisely what a loophole is not."
+          "myth": "neecha bhanga is a loophole to soften bad news",
+          "receipts": "it's a set of stated conditions in the classical texts, and they're checkable, which is exactly what a loophole isn't."
         }
-      ]
+      ],
+      "cover": "about **45% of charts** have a debilitated planet"
     },
     {
       "n": 13,
@@ -337,22 +346,23 @@
         {
           "id": "notreal",
           "q": "rahu and ketu **aren't real**",
-          "myth": "there are no planets there, so the whole thing is invented.",
-          "receipts": "they are the two points where the moon's path crosses the sun's path, and they are exactly where eclipses happen. no rock, real geometry, computable to the arcsecond. the tradition calls them chhaya grahas, shadow planets, which is an unusually honest name for a thing to be given."
+          "myth": "rahu and ketu aren't real, so it's all invented",
+          "receipts": "they're the two points where the moon's path crosses the sun's, exactly where eclipses happen. no rock, real geometry."
         },
         {
           "id": "onlybad",
           "q": "rahu only brings **trouble**",
-          "myth": "obsession, addiction, scandal. nothing good comes out of a rahu period.",
-          "receipts": "rahu is also the graha of foreign things, sudden rise, technology, mass attention and hunger. read the same signature in a chart where it works and it is a career made out of nothing in five years. it is the most volatile graha in the set. volatile is not a synonym for bad."
+          "myth": "rahu only brings obsession, addiction and scandal",
+          "receipts": "rahu is also foreign things, sudden rise, technology and mass attention. it's the most volatile graha. volatile isn't a synonym for bad."
         },
         {
           "id": "opposite",
           "q": "ketu is just **rahu's leftovers**",
-          "myth": "one node matters and the other is thrown in for symmetry.",
-          "receipts": "they are always 180 degrees apart, so every rahu reading is automatically a ketu reading. where rahu grabs, ketu drops. the axis is one story told from both ends: what u are chasing, and what u are quietly done with. reading only one half is how people get the whole thing backwards."
+          "myth": "ketu is just rahu's leftovers, thrown in for symmetry",
+          "receipts": "they're always 180 degrees apart, so every rahu reading is a ketu reading. where rahu grabs, ketu drops."
         }
-      ]
+      ],
+      "cover": "rahu and ketu are where **eclipses happen**"
     },
     {
       "n": 14,
@@ -364,22 +374,23 @@
         {
           "id": "classical",
           "q": "kaal sarp is in the **classical texts**",
-          "myth": "an ancient dosha, described by the rishis, carried down through parashara.",
-          "receipts": "it is not in brihat parashara hora shastra. it is a twentieth century popular addition, spread by pamphlets and later by websites, and its rise tracks almost exactly with the rise of paid puja packages at a handful of temples. that is a fact about publishing, not about the sky."
+          "myth": "kaal sarp is an ancient dosha, carried down through parashara",
+          "receipts": "it's not in brihat parashara hora shastra. it's a twentieth century addition, and its rise tracks the rise of paid puja packages."
         },
         {
           "id": "cursed",
           "q": "kaal sarp means ur life is **blocked**",
-          "myth": "nothing will work until the dosha is removed by a special puja.",
-          "receipts": "all seven grahas fall on one side of the nodal axis fairly often, because the nodes move slowly and the grahas bunch up. plenty of people with the configuration have ordinary, successful lives, and this gets pointed out every time someone actually counts. a common configuration cannot explain an uncommon outcome."
+          "myth": "kaal sarp blocks ur life until a special puja removes it",
+          "receipts": "all seven grahas landing on one side of the nodes happens fairly often. a common configuration can't explain an uncommon outcome."
         },
         {
           "id": "puja",
           "q": "one **puja** at the right temple clears it",
-          "myth": "go to the named place, pay the named amount, the dosha is lifted.",
-          "receipts": "if the dosha is a modern invention, the removal service built around it is a modern invention too. we are not telling anyone what to believe or where to travel. we are telling u the price list came first and the doctrine came after, and u deserved to know that before u booked."
+          "myth": "one puja at the right temple, for the right price, lifts it",
+          "receipts": "if the dosha is a modern invention, so is the removal service. the price list came first, the doctrine after."
         }
-      ]
+      ],
+      "cover": "kaal sarp is **not in parashara**"
     },
     {
       "n": 15,
@@ -391,22 +402,23 @@
         {
           "id": "weakplanet",
           "q": "wear a stone for ur **weakest** planet",
-          "myth": "find the weak graha, buy its stone, prop it up.",
-          "receipts": "the classical logic runs the other way for most schools: u strengthen a graha that is functionally benefic for ur lagna, not one that is merely weak. strengthening a weak malefic is how people make things louder. this is the single most common mistake in the entire remedy trade."
+          "myth": "wear a stone to prop up ur weakest planet",
+          "receipts": "most schools strengthen a graha that's functionally benefic for ur lagna. strengthen a weak malefic and u just make things louder."
         },
         {
           "id": "neelam",
           "q": "**neelam** works within days or not at all",
-          "myth": "blue sapphire either gives u money in a week or has to be taken off immediately.",
-          "receipts": "that three day trial story is a retail script, not a classical rule. saturn's stone is prescribed for the slowest graha in the system, which is a strange thing to expect instant results from. if a jeweller frames it as a lottery ticket with a refund window, u are in a shop, not a consultation."
+          "myth": "blue sapphire pays off within days or must come off",
+          "receipts": "the three day trial is a retail script. neelam is saturn's stone, the slowest graha. why expect it to rush?"
         },
         {
           "id": "carat",
           "q": "**bigger carat** means stronger effect",
-          "myth": "the heavier the stone, the more of the planet u get.",
-          "receipts": "weight rules in the texts are prescriptive and modest, and they vary by school. what the market has done with them is obvious from the price per carat curve. if the recommendation gets heavier every time ur budget is mentioned, the recommendation is not coming from the chart."
+          "myth": "a bigger, heavier stone gives u more of the planet",
+          "receipts": "the texts set modest weights. if the recommendation gets heavier every time ur budget comes up, it's not coming from the chart."
         }
-      ]
+      ],
+      "cover": "the 3 day neelam trial is **a retail script**"
     },
     {
       "n": 16,
@@ -418,22 +430,23 @@
         {
           "id": "yearly",
           "q": "ur **2027 horoscope** is written for u",
-          "myth": "the yearly forecast for ur sign is a prediction about ur year.",
-          "receipts": "it is written for one twelfth of the planet. that is roughly 650 million people sharing one paragraph. the parts that feel accurate are the parts written to fit anyone, which is a technique with a name, and the technique is older than the internet."
+          "myth": "the yearly forecast for ur sign predicts ur year",
+          "receipts": "it's written for one twelfth of the planet, roughly 650 million people. the bits that feel accurate were written to fit anyone."
         },
         {
           "id": "jan1",
           "q": "the astrological year starts on **1 january**",
-          "myth": "new year, new chart, new predictions from midnight.",
-          "receipts": "nothing in jyotisha turns over on 1 january. the tajika annual chart runs from ur own solar return, the moment the sun comes back to its exact natal degree, so ur astrological year starts near ur birthday and nobody else's. a calendar year is an administrative convenience."
+          "myth": "the astrological year resets on 1 january",
+          "receipts": "nothing in jyotisha turns over on 1 january. the tajika annual chart starts at ur solar return, near ur birthday."
         },
         {
           "id": "sameforall",
           "q": "a transit hits **everyone the same**",
-          "myth": "jupiter enters a sign, so all of that sign gets the same year.",
-          "receipts": "a transit is read from ur moon and ur lagna, through ur running dasha, against ur natal placements. same jupiter, twelve different houses, and a different dasha lord for each person. the sky is shared. the chart it lands on is not."
+          "myth": "jupiter enters ur sign, so ur whole sign gets one year",
+          "receipts": "a transit is read from ur moon, lagna and dasha. same jupiter, twelve different houses. the sky is shared. ur chart isn't."
         }
-      ]
+      ],
+      "cover": "ur yearly horoscope is shared with **650 million people**"
     },
     {
       "n": 17,
@@ -445,22 +458,23 @@
         {
           "id": "sunsign",
           "q": "ur **sun sign** is ur sign",
-          "myth": "the one u say at parties is the one the chart runs on.",
-          "receipts": "vedic readings are built on the moon rashi and the lagna. the sun matters, it rules the soul, the father, authority and vitality, but it is not the anchor. if u have only ever been told a sun sign, u have been handed the least specific fact in ur chart."
+          "myth": "the sign u say at parties is the one ur chart uses",
+          "receipts": "vedic readings are built on the moon rashi and the lagna. a sun sign is the least specific fact in ur chart."
         },
         {
           "id": "changed",
           "q": "vedic astrology **changed** my sign",
-          "myth": "someone moved the signs, and now the wrong one applies.",
-          "receipts": "nobody moved anything. western astrology measures from the equinox point, vedic measures from the fixed stars, and those two references have drifted about 24 degrees apart over roughly two thousand years. the gap has a name, ayanamsa, and it is why about four people in five get a different rashi."
+          "myth": "someone moved the signs, and now the wrong one applies",
+          "receipts": "nobody moved anything. western measures from the equinox, vedic from the fixed stars, and the two have drifted about 24 degrees apart."
         },
         {
           "id": "cusp",
           "q": "i'm on the **cusp** of two signs",
-          "myth": "born near the boundary, so both signs apply a bit.",
-          "receipts": "a rashi is 30 degrees with a hard edge. u are in one or the other, to the arcminute, and ur birth time decides it. the cusp idea is a way of describing not knowing the exact degree. the fix is not to claim both, it is to get the time right."
+          "myth": "born near the boundary, so both signs apply a bit",
+          "receipts": "a rashi is 30 degrees with a hard edge. u're in one. cusp just means u don't know the exact degree."
         }
-      ]
+      ],
+      "cover": "about 4 in 5 get a **different vedic sign**"
     },
     {
       "n": 18,
@@ -472,22 +486,23 @@
         {
           "id": "sankranti",
           "q": "makar sankranti is the **winter solstice**",
-          "myth": "it marks the shortest day, that's why it's always mid january.",
-          "receipts": "the solstice is around 21 december. sankranti is the sun entering sidereal makara, and the two used to coincide, which is exactly the point. they have drifted apart by about 24 degrees, roughly 24 days, over two millennia. the festival is a fossil of a sky that has moved."
+          "myth": "makar sankranti marks the winter solstice, the shortest day",
+          "receipts": "the solstice is around 21 december. sankranti is the sun entering sidereal makara. they once coincided, then drifted about 24 days."
         },
         {
           "id": "onepanchang",
           "q": "there is **one correct** panchang",
-          "myth": "one sky, so any two panchangs that disagree means one is wrong.",
-          "receipts": "amanta reckoning ends the month at the new moon, purnimanta at the full moon, so the same month name can refer to periods about fifteen days apart. the north and the south have used different ones for centuries. add a different ayanamsa and u get two honest calendars that disagree."
+          "myth": "one sky, so two panchangs that disagree means one is wrong",
+          "receipts": "amanta months end at new moon, purnimanta at full moon, so the same month name can land about fifteen days apart."
         },
         {
           "id": "tithi",
           "q": "a **tithi** is just a day",
-          "myth": "tithi, date, same thing with a sanskrit name on it.",
-          "receipts": "a tithi is 12 degrees of separation between the sun and the moon, and the moon does not keep office hours. a tithi can run 20 hours or 27, so it can be skipped or repeated against the calendar. that is why a festival can look like it lands on two different dates and neither is a mistake."
+          "myth": "a tithi is just a date with a sanskrit name",
+          "receipts": "a tithi is 12 degrees between sun and moon. it can run 20 hours or 27, so some get skipped or repeated."
         }
-      ]
+      ],
+      "cover": "makar sankranti drifted **24 days** off the solstice"
     },
     {
       "n": 19,
@@ -499,22 +514,23 @@
         {
           "id": "extra",
           "q": "nakshatras are an **optional extra**",
-          "myth": "nice detail, but the rashi is the real information.",
-          "receipts": "the dasha system runs off ur moon's nakshatra. ur entire timeline, every period and sub-period for 120 years, is calculated from which of the 27 the moon was sitting in and how far through. it is not a garnish. it is the clock."
+          "myth": "nakshatras are a nice detail, the rashi is the real info",
+          "receipts": "the dasha system runs off ur moon's nakshatra. every period and sub-period for 120 years is calculated from it. it's the clock."
         },
         {
           "id": "fixed",
           "q": "everyone's nakshatra name is **fixed at birth**",
-          "myth": "the naming letter from the nakshatra is a rule that must be followed.",
-          "receipts": "the pada gives a syllable and the custom of naming from it is real and widely kept. it is a custom. no text says a child named otherwise is damaged, and the amount of guilt sold to parents on this point is out of all proportion to what the tradition actually claims."
+          "myth": "the name syllable from ur nakshatra is a rule u must follow",
+          "receipts": "naming from the pada syllable is a custom. no text says a child named otherwise is damaged. the guilt is sold separately."
         },
         {
           "id": "gandmool",
           "q": "**gand mool** nakshatra is bad luck for the family",
-          "myth": "born in one of those six and the child brings trouble to parents.",
-          "receipts": "gand mool is the junction points, where a rashi boundary meets a nakshatra boundary. ashwini, ashlesha, magha, jyeshtha, moola, revati. it is six of 27, so about one child in five. the shanti ritual is old and harmless. the belief that the child is a hazard is neither, and it lands on infants."
+          "myth": "a child born in a gand mool nakshatra brings trouble to parents",
+          "receipts": "it's six nakshatras out of 27, about one child in five. the shanti ritual is harmless. calling the baby a hazard isn't."
         }
-      ]
+      ],
+      "cover": "about 1 in 5 babies is born **gand mool**"
     },
     {
       "n": 20,
@@ -526,22 +542,23 @@
         {
           "id": "dashabad",
           "q": "a **saturn dasha** is 19 bad years",
-          "myth": "the mahadasha of a malefic is nineteen years to be endured.",
-          "receipts": "vimshottari runs 120 years total: ketu 7, venus 20, sun 6, moon 10, mars 7, rahu 18, jupiter 16, saturn 19, mercury 17. what a period does depends on what that graha rules in ur chart and where it sits. for a tula lagna, those nineteen saturn years are the best years in the sequence."
+          "myth": "a saturn mahadasha is nineteen years to endure",
+          "receipts": "what a period does depends on what that graha rules in ur chart. for tula lagna, saturn's nineteen years are the best."
         },
         {
           "id": "transits",
           "q": "**transits** are what matter, not dashas",
-          "myth": "check today's sky, that's the forecast.",
-          "receipts": "the classical order is the other way round. the dasha sets what is live in ur life right now, and the transit decides when inside that window it fires. same jupiter transit, one person in a jupiter period and one not, and only one of them has a year worth writing about."
+          "myth": "check today's sky, that's the forecast. dashas are secondary.",
+          "receipts": "classically the dasha sets what's live in ur life, and the transit decides when inside that window it fires."
         },
         {
           "id": "exactday",
           "q": "a good astrologer names the **exact day**",
-          "myth": "real skill means a date, and vagueness means they don't know.",
-          "receipts": "the honest resolution of a sub-period is weeks, sometimes months, and anyone who tells u otherwise is doing performance. the ones who name dates are right sometimes, which is what keeps the trade alive. a range u can plan around beats a date u will build ur year on."
+          "myth": "a real astrologer names the exact day. vagueness means they don't know.",
+          "receipts": "a sub-period resolves to weeks, sometimes months. naming the exact day is performance, and it's right just often enough."
         }
-      ]
+      ],
+      "cover": "tula lagna's best years are **the saturn dasha**"
     },
     {
       "n": 21,
@@ -553,22 +570,23 @@
         {
           "id": "score18",
           "q": "below **18 points** means don't marry",
-          "myth": "18 out of 36 is the pass mark and anything under it is a no.",
-          "receipts": "the 18 line is a convention, not a scripture. and the scoring is lopsided: nadi carries 8 and bhakoot 7, so two kootas hold 15 of the 36 and both are all or nothing. a couple can lose 15 points on two technicalities and score 21 on everything that describes daily life together."
+          "myth": "18 of 36 is the pass mark. anything under is a no",
+          "receipts": "the 18 line is a convention. nadi carries 8 and bhakoot 7, both all or nothing, so two technicalities can cost 15."
         },
         {
           "id": "nadi",
           "q": "**nadi dosha** cannot be cancelled",
-          "myth": "same nadi, zero points, no exceptions, walk away.",
-          "receipts": "three nadi groups, 27 nakshatras split nine and nine and nine, so two people picked at random land in the same one about a third of the time. a defect that common is a demographic. the classical cancellations exist, they are written down, and they cost nothing to check."
+          "myth": "same nadi means zero points, no exceptions, walk away",
+          "receipts": "two random people share a nadi about a third of the time. the classical cancellations are written down and free to check."
         },
         {
           "id": "onlyscore",
           "q": "the **score** is the whole match",
-          "myth": "run the ashtakoota, read the number, done.",
-          "receipts": "the number is a compatibility index built mainly from the two moons. it says nothing about the 7th house in either chart, nothing about the dasha each of u is running, nothing about mars. a real matching reads all of that. the number is where u start, not where u stop."
+          "myth": "run the ashtakoota, read the number, done",
+          "receipts": "the score is built mainly from the two moons. it says nothing about either 7th house, the dashas u're running, or mars."
         }
-      ]
+      ],
+      "cover": "two kootas hold **15 of the 36** points"
     },
     {
       "n": 22,
@@ -580,22 +598,23 @@
         {
           "id": "byage",
           "q": "the chart says u marry at **28**",
-          "myth": "there is an exact age in there and a good astrologer reads it off.",
-          "receipts": "what the chart shows is windows: dasha periods of the 7th lord, of venus, of grahas linked to the 7th, and the transits that light them. those are ranges, usually a year or two wide. an exact age is a guess with a confident voice on top of it."
+          "myth": "there's an exact marriage age in ur chart, waiting to be read",
+          "receipts": "the chart shows windows, usually a year or two wide, set by dashas and transits. an exact age is a confident guess."
         },
         {
           "id": "loveorarranged",
           "q": "the chart says **love or arranged**",
-          "myth": "there is a marker that decides which one u get.",
-          "receipts": "there are signatures that lean one way, venus and rahu contacts, a 5th and 7th lord connection, and they lean. they do not decide. the same configuration reads as a love marriage in one family and a long engagement in another, because the second half of this is society, not sky."
+          "myth": "one marker in the chart decides love or arranged",
+          "receipts": "venus and rahu contacts or a 5th and 7th lord link lean one way. they don't decide. the other half is society."
         },
         {
           "id": "name",
           "q": "an astrologer can name **who** it will be",
-          "myth": "the first letter, the direction, the profession, all of it is in there.",
-          "receipts": "direction and profession sometimes have classical support and land at about the rate u would expect from a category with four options. a name does not. if someone hands u a letter of the alphabet, u are not in a reading, and the damage that this specific claim does to real relationships is not small."
+          "myth": "ur spouse's first letter, direction and profession are all in there",
+          "receipts": "direction and profession have some classical support and hit at about chance. a name has none. a letter isn't a reading."
         }
-      ]
+      ],
+      "cover": "ur chart can't name **who** u'll marry"
     },
     {
       "n": 23,
@@ -607,22 +626,23 @@
         {
           "id": "onlymarriage",
           "q": "the 7th house is **only marriage**",
-          "myth": "one house, one topic, the spouse.",
-          "receipts": "the 7th is partnership as a category: ur business partner, ur opposing counsel, the person across the table in any negotiation. it is also, in classical texts, the house of open enemies. same house, because the geometry is the same. it is whoever is directly opposite u."
+          "myth": "the 7th house is the spouse and nothing else",
+          "receipts": "the 7th is partnership as a category: business partner, opposing counsel, and classically, open enemies. it's whoever sits directly opposite u."
         },
         {
           "id": "malefic7",
           "q": "a **malefic** in the 7th ruins the marriage",
-          "myth": "saturn, mars or rahu there and the partnership is in trouble.",
-          "receipts": "saturn in the 7th classically slows and steadies rather than breaks, and delay is not damage. what the graha actually does depends on whether it is functionally benefic for ur lagna, whether it is aspected, and what dasha u are in when it matters. one placement is never a verdict."
+          "myth": "saturn, mars or rahu in the 7th means marriage trouble",
+          "receipts": "saturn in the 7th classically slows and steadies, and delay isn't damage. one placement is never a verdict."
         },
         {
           "id": "venus",
           "q": "**venus** is the marriage planet for everyone",
-          "myth": "check venus, that's the love reading.",
-          "receipts": "venus is the karaka for a wife and for relationship in general. for a woman's marriage, the classical karaka is jupiter. and the karaka is only ever one of three things u read, alongside the 7th house and its lord. one planet is a headline. three signals is a reading."
+          "myth": "check venus, that's the love reading for everyone",
+          "receipts": "for a woman's marriage the karaka is jupiter. the karaka is one of three reads, with the 7th house and its lord."
         }
-      ]
+      ],
+      "cover": "ur 7th house is also **ur open enemies**"
     },
     {
       "n": 24,
@@ -634,22 +654,23 @@
         {
           "id": "rajyoga",
           "q": "a **raj yoga** makes u rich",
-          "myth": "it's in the chart, so the money is coming.",
-          "receipts": "raj yogas are common. a kendra lord and a trikona lord connecting is not a rare event, and most charts have some version of one. what decides whether it does anything is strength, ownership, and whether u ever run the dasha of the grahas involved. plenty of people carry a yoga they never get to spend."
+          "myth": "a raj yoga in ur chart means money is coming",
+          "receipts": "raj yogas are common. most charts have one. plenty of people never run the dasha that lets them spend it."
         },
         {
           "id": "2ndhouse",
           "q": "the **2nd house** is ur bank balance",
-          "myth": "one house holds the money, read it and u know.",
-          "receipts": "the 2nd is accumulated wealth and what u hold. the 11th is income and gains. the 9th is fortune, the 10th is what u do to earn it, and the 12th is what leaves. money is a circuit across at least five houses and reading one of them is like checking one leg of a balance sheet."
+          "myth": "the 2nd house is ur bank balance, read it and u know",
+          "receipts": "the 2nd is what u hold. the 11th is income, the 12th is what leaves. money runs across at least five houses."
         },
         {
           "id": "poverty",
           "q": "a **daridra yoga** means poverty",
-          "myth": "it's named for poverty, so that's what it does.",
-          "receipts": "the names in this tradition are dramatic because they were written to be memorised in verse. daridra yogas have stated cancellation conditions, like almost everything else with a frightening name. any astrologer who reads u a yoga name without checking whether it survives contact with the rest of the chart is reading u a dictionary."
+          "myth": "a daridra yoga means poverty, it's right there in the name",
+          "receipts": "names are dramatic because they were memorised in verse. daridra yogas have cancellation conditions. a name alone is a dictionary entry."
         }
-      ]
+      ],
+      "cover": "most charts have **a raj yoga** somewhere"
     },
     {
       "n": 25,
@@ -661,22 +682,23 @@
         {
           "id": "jobtitle",
           "q": "the chart names ur **job**",
-          "myth": "a good reading tells u the profession, specifically.",
-          "receipts": "what the 10th house and its lord give u is a shape: whether u do better with structure or autonomy, with people or with systems, with risk or with continuity. the classical texts list professions that existed when they were written. mapping those onto product management takes judgement, and u should be told that is happening."
+          "myth": "a good reading names ur exact profession",
+          "receipts": "the 10th gives a shape: structure or autonomy, people or systems, risk or continuity. the job title takes judgement."
         },
         {
           "id": "govt",
           "q": "a strong **sun** means a government job",
-          "myth": "surya is authority, so it points at the state.",
-          "receipts": "surya is authority, visibility and being answerable for the outcome. in a text written under kings that reads as royal service. in 2027 it reads as anyone whose name is on the decision. the karaka did not change. the job market did."
+          "myth": "a strong sun points u at a government job",
+          "receipts": "surya is authority and being answerable. under kings that meant royal service. now it's anyone whose name is on the decision."
         },
         {
           "id": "switch",
           "q": "never switch jobs in a **bad transit**",
-          "myth": "wait for saturn to move, wait for mercury to go direct, then apply.",
-          "receipts": "add up the rules people follow and there are about four clean months a year left. careers do not wait four months. the useful version is smaller: know which quarter is likely to be noisy, put ur negotiation somewhere else in it, and go. timing is for the meeting, not for the decade."
+          "myth": "never apply for jobs until saturn moves and mercury goes direct",
+          "receipts": "follow every rule and about four clean months a year are left. know which quarter is noisy, negotiate somewhere else, and go."
         }
-      ]
+      ],
+      "cover": "ur chart's career list predates **product management**"
     },
     {
       "n": 26,
@@ -688,22 +710,23 @@
         {
           "id": "expensive",
           "q": "the **expensive** remedy works better",
-          "myth": "a bigger puja, a heavier stone, a longer package, a stronger result.",
-          "receipts": "the three the texts return to again and again are japa, daan and achara: repetition, giving, and how u conduct urself. two of them cost nothing and the third is deliberately meant to cost u something u will notice. price is a feature of the market that grew around the remedy, not of the remedy."
+          "myth": "a bigger puja or heavier stone gets a stronger result",
+          "receipts": "the texts keep returning to japa, daan and achara: repetition, giving and conduct. two are free. the price came from the market."
         },
         {
           "id": "counts",
           "q": "the mantra needs an **exact count** or it fails",
-          "myth": "miss the number and the whole thing is void.",
-          "receipts": "counts exist and they are traditional. the framing that a missed repetition voids the effort is a control mechanism, not a doctrine. every teacher who actually teaches this says the same thing about it: the discipline is the point, and consistency beats arithmetic."
+          "myth": "miss the mantra count and the whole thing is void",
+          "receipts": "counts are traditional. the idea that a miss voids it is a control mechanism. teachers who teach this say consistency beats arithmetic."
         },
         {
           "id": "instead",
           "q": "a remedy can replace **doing the thing**",
-          "myth": "fix the graha and the exam, the job or the relationship sorts itself out.",
-          "receipts": "no text in this tradition supports that reading and most of them say the opposite plainly. jyotisha describes conditions. it does not do ur work. an astrologer who lets u leave believing a ritual is a substitute for effort has sold u something worse than a wrong prediction."
+          "myth": "fix the graha and the exam or job sorts itself out",
+          "receipts": "most texts plainly say the opposite. jyotisha describes conditions. it does not do ur work."
         }
-      ]
+      ],
+      "cover": "two of the three classical remedies **cost nothing**"
     },
     {
       "n": 27,
@@ -715,22 +738,23 @@
         {
           "id": "nazar",
           "q": "**nazar** is in the birth chart",
-          "myth": "the evil eye is a planetary condition an astrologer can read.",
-          "receipts": "nazar is folk belief, and it is ancient, widespread and genuinely part of the culture. it is not jyotisha. no classical chapter computes it, no graha rules it, and no house holds it. we are not here to take it off anyone. we are here to say it is a different subject with a different ancestry."
+          "myth": "an astrologer can read the evil eye in ur chart",
+          "receipts": "nazar is ancient, widespread folk belief and real culture. no graha rules it, no house holds it. different subject, different ancestry."
         },
         {
           "id": "blackmagic",
           "q": "a chart can show **black magic**",
-          "myth": "certain combinations reveal that someone has done something to u.",
-          "receipts": "this is the highest risk claim in the entire trade, because the remedy is always expensive and always urgent. the classical support is thin, the diagnostic is unfalsifiable, and the business model is obvious. an astrologer who raises this unprompted is not reading ur chart."
+          "myth": "certain combinations show someone did black magic on u",
+          "receipts": "the classical support is thin, the remedy always expensive and urgent. whoever raises this unprompted isn't reading ur chart."
         },
         {
           "id": "photo",
           "q": "an astrologer can read ur **photo or ur palm** instead",
-          "myth": "no birth details needed, the face or the hand carries the same information.",
-          "receipts": "samudrika shastra and hasta rekha are their own traditions with their own texts, and they are not jyotisha. mixing them and presenting the result as a chart reading is a category error. it is also the fastest way to get a confident answer out of someone who never had ur birth time."
+          "myth": "ur face or palm says the same as ur birth chart",
+          "receipts": "samudrika shastra and hasta rekha are separate traditions, own texts and all. selling them as a chart reading is a category error."
         }
-      ]
+      ],
+      "cover": "no classical chapter computes **nazar**"
     },
     {
       "n": 28,
@@ -742,22 +766,23 @@
         {
           "id": "birthday",
           "q": "the new year chart starts on ur **birthday**",
-          "myth": "same date every year, so the chart resets on the date on ur passport.",
-          "receipts": "it starts at ur solar return, the exact moment the sun comes back to the degree and minute it held at birth. that lands within a day or so of ur birthday and moves around inside it. same reason a leap year exists: the earth does not care about our calendar."
+          "myth": "the annual chart resets on the birthday on ur passport",
+          "receipts": "it starts at ur solar return: the sun back on its exact birth degree and minute, within a day or so."
         },
         {
           "id": "replaces",
           "q": "the annual chart **replaces** the birth chart",
-          "myth": "new year, new chart, read that one instead.",
-          "receipts": "varshaphal is a zoom lens, not a new map. the tajika system reads the year against the natal chart, never in place of it. a promise that is not in the birth chart does not appear in a year chart, and any reading that finds one there has stopped doing jyotisha."
+          "myth": "new year, new chart, so read that one instead",
+          "receipts": "tajika reads the year against the natal chart. a promise missing from the birth chart can't show up in a year chart."
         },
         {
           "id": "muntha",
           "q": "**muntha** in a bad house ruins the year",
-          "myth": "one point lands wrong and the whole twelve months are written off.",
-          "receipts": "muntha advances one house per year of life, so everyone hits the 6th, the 8th and the 12th on a fixed rotation. everyone. if a 12th house muntha ruined a year, every human would have a ruined year at the same intervals, which is not what anyone observes."
+          "myth": "muntha in a bad house writes off the whole year",
+          "receipts": "muntha moves one house per year, so everyone hits the 6th, 8th and 12th on a fixed rotation. everyone."
         }
-      ]
+      ],
+      "cover": "ur astrological new year **isn't ur birthday**"
     },
     {
       "n": 29,
@@ -769,22 +794,23 @@
         {
           "id": "dusthana",
           "q": "the **8th house** is the death house",
-          "myth": "anything landing there is a warning about mortality.",
-          "receipts": "the 8th is longevity, inheritance, other people's money, research, and anything hidden that has to be dug for. astrologers with a functioning ethic do not predict death from it, and the good texts warn against it explicitly. it is also the house behind every insurance policy and every phd."
+          "myth": "anything in the 8th house is a death warning",
+          "receipts": "the 8th is longevity, inheritance, other people's money and research. the good texts explicitly warn against predicting death from it."
         },
         {
           "id": "sixth",
           "q": "the **6th house** is only illness and enemies",
-          "myth": "a bad house, full stop, nothing useful in it.",
-          "receipts": "the 6th is illness, debt and conflict, and it is also service, daily discipline, competition and the capacity to fight. athletes, litigators, doctors and soldiers live there. a strong 6th is why some people get better under pressure instead of folding. the house is not the problem. the reading of it was."
+          "myth": "the 6th house is illness and enemies, nothing useful",
+          "receipts": "it's also discipline, competition and the capacity to fight. athletes, litigators, doctors and soldiers live there."
         },
         {
           "id": "twelfth",
           "q": "the **12th house** means loss",
-          "myth": "expenses, endings, everything draining away.",
-          "receipts": "the 12th is expenditure, foreign lands, isolation, sleep, and moksha. every person who has ever moved abroad has a 12th house story, and most of them call it the best decision they made. loss is one reading of a house whose actual theme is what u release."
+          "myth": "the 12th house is expenses, endings, everything draining away",
+          "receipts": "it's also foreign lands, sleep and moksha. everyone who moved abroad has a 12th house story. its theme is what u release."
         }
-      ]
+      ],
+      "cover": "the 8th house is behind **every phd**"
     },
     {
       "n": 30,
@@ -796,22 +822,23 @@
         {
           "id": "fixed",
           "q": "jupiter is **good** and mars is **bad**",
-          "myth": "a fixed list, same for everyone, learned once.",
-          "receipts": "functional benefic and malefic are decided by which houses a graha owns from ur lagna. jupiter owns two difficult houses for a vrishabha lagna and behaves accordingly. mars is a yogakaraka for karka and simha. the natural list is a beginner's shortcut. the functional list is the actual reading."
+          "myth": "jupiter is good, mars is bad, same for everyone",
+          "receipts": "house ownership from ur lagna decides it. jupiter owns two difficult houses for vrishabha. mars is a yogakaraka for karka and simha."
         },
         {
           "id": "jupiteraspect",
           "q": "a **jupiter aspect** fixes anything",
-          "myth": "guru drishti lands on a house and the problem is solved.",
-          "receipts": "jupiter expands what it touches. that is the actual description. it expands a good placement and it expands a bad one, and the texts are clear that guru on a malefic in a difficult house can make the difficulty larger, not smaller. expansion is not repair."
+          "myth": "a jupiter aspect on a house solves the problem",
+          "receipts": "jupiter expands what it touches, good or bad. on a malefic in a difficult house, it can make the difficulty bigger."
         },
         {
           "id": "moonwaxing",
           "q": "the **moon** is always benefic",
-          "myth": "chandra is gentle, so a strong moon is always good news.",
-          "receipts": "classically the moon's benefic status depends on how full it is. a waning moon near the sun is counted as a malefic by most schools, and a bright full moon is the strongest benefic in the set. same graha, opposite classification, decided by a number u can look up for ur birth date."
+          "myth": "the moon is gentle, so a strong moon is always good",
+          "receipts": "most schools count a waning moon near the sun as malefic. a bright full moon is the strongest benefic."
         }
-      ]
+      ],
+      "cover": "mars is a **yogakaraka** for karka lagna"
     },
     {
       "n": 31,
@@ -823,22 +850,23 @@
         {
           "id": "unlucky",
           "q": "an eclipse is **bad luck**",
-          "myth": "a grahan is an omen and something bad follows it.",
-          "receipts": "eclipses happen in seasons, roughly two to five times a year, and they have been predicted centuries in advance for a very long time. jyotisha treats a grahan as a strong period for the houses it touches in ur chart, and strong is not the same as bad. the panic is folk, the geometry is arithmetic."
+          "myth": "a grahan is an omen and something bad follows",
+          "receipts": "eclipses come roughly two to five times a year, predicted centuries ahead. jyotisha reads them as strong periods for the houses touched."
         },
         {
           "id": "sutak",
           "q": "**sutak** rules are the same for both eclipses",
-          "myth": "one rule, one duration, any grahan.",
-          "receipts": "the traditional periods differ: about 12 hours before a solar eclipse, about 9 hours before a lunar one, and they apply only where the eclipse is actually visible. that last clause is the one nobody repeats. an eclipse invisible from ur city carries no sutak in the classical framing."
+          "myth": "sutak is one rule and one duration for any eclipse",
+          "receipts": "about 12 hours before a solar eclipse, about 9 before a lunar, and only where the eclipse is actually visible."
         },
         {
           "id": "pregnant",
           "q": "an eclipse **harms a pregnancy**",
-          "myth": "stay indoors, do not use a knife, do not eat, or the baby is affected.",
-          "receipts": "there is no mechanism and no evidence, and this one has been studied because it causes real harm. what it does produce is hours of avoidable fear and, occasionally, skipped meals for someone who should not be skipping meals. keep the custom if it comforts u. do not let it override a doctor."
+          "myth": "stay indoors, skip knives and food, or the baby is affected",
+          "receipts": "no mechanism, no evidence, and it's been studied. keep the custom if it comforts u. don't let it override a doctor."
         }
-      ]
+      ],
+      "cover": "sutak only applies where the eclipse is **actually visible**"
     },
     {
       "n": 32,
@@ -850,22 +878,23 @@
         {
           "id": "numerology",
           "q": "**numerology** is part of vedic astrology",
-          "myth": "ur life path number is another view of the same chart.",
-          "receipts": "the number systems people use in india today are largely twentieth century and mostly western in origin, whatever the packaging says. jyotisha computes positions from a birth moment. adding up the digits of a date is a different operation from a different tradition, and mixing them is a marketing decision."
+          "myth": "ur life path number is another view of ur chart",
+          "receipts": "jyotisha computes positions from a birth moment. adding up a date's digits is a different operation from a different tradition."
         },
         {
           "id": "vastu",
           "q": "**vastu** and jyotisha are the same subject",
-          "myth": "one body of knowledge, one practitioner, one bill.",
-          "receipts": "vastu shastra is architecture: orientation, light, air, and the layout of a built space. it is a real tradition with its own texts and it has nothing to do with where mars was when u were born. a consultant who moves seamlessly from ur chart to ur kitchen direction has widened the invoice, not the diagnosis."
+          "myth": "vastu and jyotisha are one subject, one practitioner, one bill",
+          "receipts": "vastu is architecture: orientation, light, air, layout. going from ur chart to ur kitchen direction widens the invoice, and only the invoice."
         },
         {
           "id": "tarot",
           "q": "**tarot** readings and chart readings are interchangeable",
-          "myth": "different tools, same information, pick whichever u like.",
-          "receipts": "a chart is fixed at birth and computes the same way for anyone who runs it. a card draw is different every time and is read as a snapshot of a question. those are opposite epistemics. enjoy both if u want. do not let anyone present one as a verification of the other."
+          "myth": "tarot and a chart reading give the same information",
+          "receipts": "a chart is fixed at birth and computes the same for anyone. a card draw changes every time. neither verifies the other."
         }
-      ]
+      ],
+      "cover": "most numerology in india is **twentieth century**, mostly western"
     },
     {
       "n": 33,
@@ -877,22 +906,23 @@
         {
           "id": "death",
           "q": "an astrologer can tell u **when u'll die**",
-          "myth": "ayurdaya is in the texts, so a good one can read the span.",
-          "receipts": "longevity calculations exist in the classical literature and they contradict each other freely, which is why serious teachers refuse to teach them to beginners. we do not answer this question. not because it is unaskable, but because being wrong about it is unforgivable and being right about it helps nobody."
+          "myth": "a good astrologer can read ur lifespan from ayurdaya",
+          "receipts": "the classical longevity calculations contradict each other. being wrong is unforgivable and being right helps nobody, so we don't answer."
         },
         {
           "id": "children",
           "q": "the chart says whether u'll have **children**",
-          "myth": "the 5th house gives a yes or a no and a number.",
-          "receipts": "the 5th house describes a theme, and fertility is medicine. we have watched this claim send people away from doctors and toward remedies, and the years lost are not recoverable. an astrologer who answers this with a number is playing with something that has a clinical answer available."
+          "myth": "the 5th house gives a yes or no, and a number",
+          "receipts": "the 5th describes a theme. fertility is medicine. this claim sends people to remedies over doctors. those years don't come back."
         },
         {
           "id": "diagnosis",
           "q": "a chart can **diagnose** an illness",
-          "myth": "the 6th house names the condition and the graha names the organ.",
-          "receipts": "classical medical astrology maps grahas to body systems and it is genuinely interesting reading. it is not a diagnosis, it has no test characteristics, and it was written before germ theory. if anything in a reading sounds like a medical claim, the correct next step is a clinic, every single time."
+          "myth": "the 6th house names the condition, the graha names the organ",
+          "receipts": "medical astrology maps grahas to body systems. it predates germ theory and isn't a diagnosis. anything medical sounding goes to a clinic."
         }
-      ]
+      ],
+      "cover": "we **refuse** to tell u when u'll die"
     },
     {
       "n": 34,
@@ -904,22 +934,23 @@
         {
           "id": "believe",
           "q": "u have to **believe** in it to use it",
-          "myth": "it only works for people who are already convinced.",
-          "receipts": "u do not have to believe anything to read a chart. the positions are computed, the classical rules are written down, and u can check both. treat it as a language a culture used for two thousand years to talk about time and character. u can read a language without swearing an oath to it."
+          "myth": "astrology only works for people already convinced",
+          "receipts": "the positions are computed and the rules are written down, so u can check both. reading a language needs no oath."
         },
         {
           "id": "fortune",
           "q": "astrology is about **predicting the future**",
-          "myth": "the whole point is finding out what happens.",
-          "receipts": "the useful half is description, not prediction. what season u are in, where the friction sits, which of ur own patterns is currently loud. that is checkable against ur own life, which is exactly why it is worth more than a forecast u cannot verify until it is too late."
+          "myth": "the whole point of astrology is finding out what happens",
+          "receipts": "the useful half is description: what season u are in, where the friction sits. u can check that against ur own life."
         },
         {
           "id": "free",
           "q": "if it's **free**, it must be worse",
-          "myth": "the paid reading is the real one, the app is a teaser.",
-          "receipts": "the computation is the expensive part to build and the cheap part to run, which is why we give it away. what we will never do is charge u to remove a fear we invented. every myth in this series is one we could have sold u instead. thirty four weeks, 102 of them, all free."
+          "myth": "the paid reading is the real one, the app is a teaser",
+          "receipts": "computation is expensive to build and cheap to run, so it's free. we never charge u to remove a fear we invented."
         }
-      ]
+      ],
+      "cover": "u don't need to **believe** to read a chart"
     }
   ]
 }

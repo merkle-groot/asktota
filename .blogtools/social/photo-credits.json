@@ -45,5 +45,15 @@
     "page": "https://commons.wikimedia.org/wiki/File:Shah_Rukh_Khan_graces_the_launch_of_the_new_Santro.jpg",
     "licence": "CC BY 3.0",
     "author": "Bollywood Hungama"
+  },
+  "deepika-padukone": {
+    "name": "Deepika Padukone",
+    "wikidata": "Q159178",
+    "dob": "1986-01-05",
+    "file": "Deepika Padukone 2025 (1).png",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Deepika_Padukone_2025_%281%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Deepika_Padukone_2025_(1).png",
+    "licence": "CC BY 3.0",
+    "author": "Narendra Modi"
   }
 }

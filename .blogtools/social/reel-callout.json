@@ -3,7 +3,7 @@
   "decks": {
     "moon-2am": {
       "slug": "moon-2am",
-      "kicker": "the moon desk &middot; filed 2am &middot; unedited",
+      "kicker": "the moon desk · filed 2am · unedited",
       "hook": [
         "ur moon sign",
         "at 2am",
@@ -98,7 +98,7 @@
     },
     "group-chat": {
       "slug": "group-chat",
-      "kicker": "the gossip desk &middot; nine grahas &middot; one chat",
+      "kicker": "the gossip desk · nine grahas · one chat",
       "hook": [
         "ur group chat,",
         "by graha",
@@ -177,7 +177,7 @@
     },
     "the-ick": {
       "slug": "the-ick",
-      "kicker": "the love desk &middot; icks filed &middot; no appeal",
+      "kicker": "the love desk · icks filed · no appeal",
       "hook": [
         "the ick,",
         "by venus sign",
@@ -272,7 +272,7 @@
     },
     "birth-weekday": {
       "slug": "birth-weekday",
-      "kicker": "the vara desk &middot; seven days &middot; one graha each",
+      "kicker": "the vara desk · seven days · one graha each",
       "hook": [
         "the day of the week",
         "u were born",
@@ -337,7 +337,7 @@
     },
     "rising-sign": {
       "slug": "rising-sign",
-      "kicker": "the lagna desk &middot; what they decide first",
+      "kicker": "the lagna desk · what they decide first",
       "hook": [
         "ur rising sign,",
         "not ur sun sign",
@@ -432,7 +432,7 @@
     },
     "how-u-argue": {
       "slug": "how-u-argue",
-      "kicker": "the mangal desk &middot; twelve ways to lose a fight",
+      "kicker": "the mangal desk · twelve ways to lose a fight",
       "hook": [
         "how u argue,",
         "by mars sign",
@@ -527,7 +527,7 @@
     },
     "nakshatra-flags": {
       "slug": "nakshatra-flags",
-      "kicker": "the nakshatra desk &middot; 12 of 27 &middot; unedited",
+      "kicker": "the nakshatra desk · 12 of 27 · unedited",
       "hook": [
         "red flags,",
         "by nakshatra",
@@ -565,7 +565,7 @@
           "tag": "mrigashira · flag",
           "when": "mangal rules it",
           "line": "always searching, never arriving",
-          "sub": "budha in seek mode. wonderful company. terrible at staying."
+          "sub": "mangal on the hunt. wonderful company. terrible at staying."
         },
         {
           "tag": "ardra · flag",
@@ -619,6 +619,415 @@
       "summary": "twelve of the twenty seven lunar mansions as twelve red flags. the sharpest differentiator the account has, because a western astrology account structurally cannot post it.",
       "caption": "western astrology splits the sky into 12. jyotish splits it into 27 🌙\n\nthose 27 are the nakshatras, the lunar mansions, and ur moon sat in exactly one of them when u were born. it is the read under the read: two people with the same moon sign can be in completely different nakshatras and be nothing alike.\n\ntwelve of them here, as red flags, because that is more fun than a textbook.\n\nthe other fifteen are in the app, along with which one is actually urs.\n\ncomment ur nakshatra 👇 if u do not know it, that is the whole point, it is free on asktota.com 🦜\n\n#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #moonsign #birthchart #astrologymemes #redflags",
       "tags": "#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #moonsign #birthchart #astrologymemes #redflags"
+    },
+    "saturn-takes": {
+      "slug": "saturn-takes",
+      "kicker": "the shani desk · repossessions · unedited",
+      "hook": [
+        "what shani takes",
+        "off u first"
+      ],
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "aries",
+          "when": "mangal rules u",
+          "line": "takes the shortcut"
+        },
+        {
+          "tag": "taurus",
+          "when": "shukra rules u",
+          "line": "takes the comfort u called stability"
+        },
+        {
+          "tag": "gemini",
+          "when": "budha rules u",
+          "line": "takes the second option"
+        },
+        {
+          "tag": "cancer",
+          "when": "chandra rules u",
+          "line": "takes the people u kept for safety"
+        },
+        {
+          "tag": "leo",
+          "when": "surya rules u",
+          "line": "takes the audience"
+        },
+        {
+          "tag": "virgo",
+          "when": "budha rules u",
+          "line": "takes the system"
+        },
+        {
+          "tag": "libra",
+          "when": "shukra rules u",
+          "line": "takes the balance u were faking"
+        },
+        {
+          "tag": "scorpio",
+          "when": "mangal rules u",
+          "line": "takes the control"
+        },
+        {
+          "tag": "sagittarius",
+          "when": "guru rules u",
+          "line": "takes the exit"
+        },
+        {
+          "tag": "capricorn",
+          "when": "shani rules u",
+          "line": "takes the excuse"
+        },
+        {
+          "tag": "aquarius",
+          "when": "shani rules u too",
+          "line": "takes the distance"
+        },
+        {
+          "tag": "pisces",
+          "when": "guru rules u",
+          "line": "takes the escape"
+        }
+      ],
+      "cta": {
+        "h": "comment ur **sign**",
+        "p": "shani is sitting somewhere in ur chart right now. the app says where, and what it is holding.",
+        "btn": "asktota.com"
+      },
+      "title": "what shani takes off u first",
+      "summary": "twelve signs, twelve things saturn repossesses first. the framing that keeps it out of doom: shani does not punish, it takes back what was never actually yours. lands on the biggest search term this niche has outside compatibility.",
+      "caption": "shani does not punish u. it repossesses the thing that was never really urs.\n\ntwelve signs, twelve repossessions. comment ur sign 👇\n\nwhere is shani in ur chart? free on asktota.com 🦜\n\n#saturn #shani #sadesati #vedicastrology #asktota",
+      "tags": "#saturn #shani #sadesati #vedicastrology #jyotish #kundli #astrologyindia #asktota #birthchart #saturnreturn",
+      "minimal": true
+    },
+    "nakshatra-flags-2": {
+      "slug": "nakshatra-flags-2",
+      "kicker": "the nakshatra desk · 8 of the other 15 · unedited",
+      "hook": [
+        "red flags,",
+        "by nakshatra ii"
+      ],
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "punarvasu · flag",
+          "when": "guru rules it",
+          "line": "leaves, comes back, acts like it never left"
+        },
+        {
+          "tag": "pushya · flag",
+          "when": "shani rules it",
+          "line": "feeds everyone, then resents it quietly"
+        },
+        {
+          "tag": "uttara phalguni · flag",
+          "when": "surya rules it",
+          "line": "wants the terms before the feeling"
+        },
+        {
+          "tag": "hasta · flag",
+          "when": "chandra rules it",
+          "line": "fixes things nobody asked it to fix"
+        },
+        {
+          "tag": "swati · flag",
+          "when": "rahu rules it",
+          "line": "independent until it is lonely. then independent again"
+        },
+        {
+          "tag": "vishakha · flag",
+          "when": "guru rules it",
+          "line": "wants it so badly it forgets why"
+        },
+        {
+          "tag": "anuradha · flag",
+          "when": "shani rules it",
+          "line": "loyal to people who stopped earning it"
+        },
+        {
+          "tag": "mula · flag",
+          "when": "ketu rules it",
+          "line": "pulls the whole thing up to check the roots"
+        }
+      ],
+      "cta": {
+        "h": "comment ur **nakshatra**",
+        "p": "urs is in the app. free.",
+        "btn": "asktota.com"
+      },
+      "title": "red flags, by nakshatra ii",
+      "summary": "the second eight of the twenty seven. same engine as the first, and the series now has one more reel in it before anything repeats.",
+      "caption": "ur moon sits in one of 27 nakshatras. here are eight more red flags.\n\nfind urs and comment it 👇\n\nfree on asktota.com 🦜\n\n#nakshatra #vedicastrology #moonsign #redflags #asktota",
+      "tags": "#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #moonsign #birthchart #astrologymemes #redflags",
+      "minimal": true
+    },
+    "nakshatra-flags-3": {
+      "slug": "nakshatra-flags-3",
+      "kicker": "the nakshatra desk · the last 7 of 27 · unedited",
+      "hook": [
+        "red flags,",
+        "by nakshatra iii"
+      ],
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "purva ashadha · flag",
+          "when": "shukra rules it",
+          "line": "cannot be told it is wrong"
+        },
+        {
+          "tag": "uttara ashadha · flag",
+          "when": "surya rules it",
+          "line": "wins slowly, then reminds u"
+        },
+        {
+          "tag": "shravana · flag",
+          "when": "chandra rules it",
+          "line": "hears everything. repeats some of it"
+        },
+        {
+          "tag": "dhanishta · flag",
+          "when": "mangal rules it",
+          "line": "busy as a personality"
+        },
+        {
+          "tag": "purva bhadrapada · flag",
+          "when": "guru rules it",
+          "line": "says the unhinged thing out loud"
+        },
+        {
+          "tag": "uttara bhadrapada · flag",
+          "when": "shani rules it",
+          "line": "so calm u miss that it left"
+        },
+        {
+          "tag": "revati · flag",
+          "when": "budha rules it",
+          "line": "gives everything away, including what it needed"
+        }
+      ],
+      "cta": {
+        "h": "comment ur **nakshatra**",
+        "p": "urs is in the app. free.",
+        "btn": "asktota.com"
+      },
+      "title": "red flags, by nakshatra iii",
+      "summary": "the last seven. three reels, twenty seven nakshatras, no repeats. the deepest single concept the account has and the one no western astrology account can copy.",
+      "caption": "the last seven. all 27 nakshatras are now filed.\n\nwhich one is urs? comment it 👇\n\nfree on asktota.com 🦜\n\n#nakshatra #vedicastrology #moonsign #redflags #asktota",
+      "tags": "#nakshatra #vedicastrology #jyotish #kundli #astrologyindia #asktota #moonsign #birthchart #astrologymemes #redflags",
+      "minimal": true
+    },
+    "sade-sati-rn": {
+      "slug": "sade-sati-rn",
+      "minimal": true,
+      "kicker": "the shani desk · who is in it · oct 2026",
+      "hook": [
+        "is ur moon in",
+        "sade sati rn?"
+      ],
+      "hold": 26,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "aries moon",
+          "when": "phase one",
+          "line": "it just began. settle in."
+        },
+        {
+          "tag": "pisces moon",
+          "when": "the peak",
+          "line": "u are in the middle of it",
+          "alt": true
+        },
+        {
+          "tag": "aquarius moon",
+          "when": "phase three",
+          "line": "the exit. it lets go in 2027"
+        },
+        {
+          "tag": "leo moon",
+          "when": "ashtama shani",
+          "line": "not sade sati. the 8th house one.",
+          "alt": true
+        },
+        {
+          "tag": "sagittarius moon",
+          "when": "kantaka shani",
+          "line": "not sade sati. the thorn one."
+        },
+        {
+          "tag": "everyone else",
+          "when": "clear",
+          "line": "off the hook. for now.",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "comment ur **moon**",
+        "p": "don't know it? tota finds it free.",
+        "btn": "asktota.com"
+      },
+      "title": "is ur moon in sade sati right now",
+      "caption": "saturn sits in pisces until mid 2027. that puts three moon signs in sade sati and two more in dhaiya.\n\ncomment ur moon sign 👇\n\ncheck urs free on asktota.com 🦜\n\n#sadesati #shani #vedicastrology #moonsign #asktota"
+    },
+    "vedic-sun-dates": {
+      "slug": "vedic-sun-dates",
+      "minimal": true,
+      "kicker": "the sun desk · sidereal · lahiri",
+      "hook": [
+        "ur sun sign,",
+        "in vedic"
+      ],
+      "hold": 22,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "jan 14-feb 12",
+          "when": "western: mostly aquarius",
+          "line": "vedic capricorn"
+        },
+        {
+          "tag": "feb 13-mar 14",
+          "when": "western: mostly pisces",
+          "line": "vedic aquarius",
+          "alt": true
+        },
+        {
+          "tag": "mar 15-apr 13",
+          "when": "western: mostly aries",
+          "line": "vedic pisces"
+        },
+        {
+          "tag": "apr 14-may 14",
+          "when": "western: mostly taurus",
+          "line": "vedic aries",
+          "alt": true
+        },
+        {
+          "tag": "may 15-jun 14",
+          "when": "western: mostly gemini",
+          "line": "vedic taurus"
+        },
+        {
+          "tag": "jun 15-jul 15",
+          "when": "western: mostly cancer",
+          "line": "vedic gemini",
+          "alt": true
+        },
+        {
+          "tag": "jul 16-aug 16",
+          "when": "western: mostly leo",
+          "line": "vedic cancer"
+        },
+        {
+          "tag": "aug 17-sep 16",
+          "when": "western: mostly virgo",
+          "line": "vedic leo",
+          "alt": true
+        },
+        {
+          "tag": "sep 17-oct 16",
+          "when": "western: mostly libra",
+          "line": "vedic virgo"
+        },
+        {
+          "tag": "oct 17-nov 15",
+          "when": "western: mostly scorpio",
+          "line": "vedic libra",
+          "alt": true
+        },
+        {
+          "tag": "nov 16-dec 15",
+          "when": "western: mostly sagittarius",
+          "line": "vedic scorpio"
+        },
+        {
+          "tag": "dec 16-jan 13",
+          "when": "western: mostly capricorn",
+          "line": "vedic sagittarius",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "did u **change**?",
+        "p": "comment old sign, new sign.",
+        "btn": "asktota.com"
+      },
+      "title": "ur sun sign, in vedic",
+      "caption": "vedic astrology counts the sun against the stars, not the seasons. in 2026 that moves most birthdays back one sign.\n\ncomment ur old sign and ur new one 👇\n\nfree on asktota.com 🦜\n\n#vedicastrology #sunsign #jyotish #siderealastrology #asktota"
+    },
+    "dasha-lengths": {
+      "slug": "dasha-lengths",
+      "minimal": true,
+      "kicker": "the dasha desk · 120 years · nine shifts",
+      "hook": [
+        "how long each planet",
+        "runs ur life"
+      ],
+      "hold": 24,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "ketu era",
+          "when": "mahadasha",
+          "line": "7 years of letting go"
+        },
+        {
+          "tag": "venus era",
+          "when": "mahadasha",
+          "line": "20 years. the longest glow-up",
+          "alt": true
+        },
+        {
+          "tag": "sun era",
+          "when": "mahadasha",
+          "line": "6 years in the spotlight"
+        },
+        {
+          "tag": "moon era",
+          "when": "mahadasha",
+          "line": "10 years of feeling everything",
+          "alt": true
+        },
+        {
+          "tag": "mars era",
+          "when": "mahadasha",
+          "line": "7 years of picking fights"
+        },
+        {
+          "tag": "rahu era",
+          "when": "mahadasha",
+          "line": "18 years of wanting more",
+          "alt": true
+        },
+        {
+          "tag": "jupiter era",
+          "when": "mahadasha",
+          "line": "16 years of growing up"
+        },
+        {
+          "tag": "saturn era",
+          "when": "mahadasha",
+          "line": "19 years of earning it",
+          "alt": true
+        },
+        {
+          "tag": "mercury era",
+          "when": "mahadasha",
+          "line": "17 years of figuring it out"
+        }
+      ],
+      "cta": {
+        "h": "which era are u **in**?",
+        "p": "tota reads ur dasha. free.",
+        "btn": "asktota.com"
+      },
+      "title": "how long each planet runs ur life",
+      "caption": "vimshottari dasha: 120 years split nine ways. venus gets 20. the sun gets 6. where u start depends on ur moon.\n\nwhich era are u in? 👇\n\nasktota.com 🦜\n\n#dasha #mahadasha #vedicastrology #asktota #astrologyindia"
     }
   }
 }

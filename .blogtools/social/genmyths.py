@@ -16,6 +16,7 @@ myth desk images that exist. Nothing about that design is re-invented here; this
 file only adds the cover and the closer around it.
 
     python3 genmyths.py            # writes myths.html and myths-index.json
+    python3 genmyths.py --render 2026-10-09   # + screenshots every deck from that date on
 """
 import json, pathlib, html as H, datetime as dt, sys
 
@@ -66,6 +67,15 @@ def deskline(right):
 
 
 def cover(w, d):
+    if w.get('cover'):
+        # rewritten weeks (4 Oct 2026): one claim at poster size, nothing listed.
+        # the docket gave all three myths away before anyone swiped.
+        return (f'<section class="slide cover hookcover" id="myth-{w["slug"]}-01">'
+                + deskline(f'vol. {w["n"]:02d} \u00b7 {pretty(d)}')
+                + f'<h1 class="mhook">{hl(esc(w["cover"]))}</h1>'
+                + '<div class="mswipe">3 myths. swipe &rarr;</div>'
+                + '<img class="mtota" src="tota.png" alt="">'
+                + deckfoot(0) + '</section>')
     cases = ''.join(
         f'<div class="case"><b>{i + 1:02d}</b><p>{esc(plain(m["q"]))}</p></div>'
         for i, m in enumerate(w['myths']))
@@ -85,9 +95,9 @@ def twoup(w, m, i):
             + f'<h1 class="q">{hl(esc(m["q"]))}</h1>'
             + '<div class="twoup">'
             + '<div class="tile2 myth"><span class="kick">the myth</span>'
-            + f'<p>{esc(m["myth"])}</p><span class="arrow">&rarr;</span></div>'
+            + f'<p{" class=\"big\"" if w.get("cover") else ""}>{esc(m["myth"])}</p><span class="arrow">&rarr;</span></div>'
             + '<div class="tile2 receipts"><span class="kick">the receipts</span>'
-            + f'<p class="small">{esc(m["receipts"])}</p><span class="arrow">&rarr;</span></div>'
+            + f'<p class="{"big" if w.get("cover") else "small"}">{esc(m["receipts"])}</p><span class="arrow">&rarr;</span></div>'
             + '</div>' + deckfoot(i + 1) + '</section>')
 
 
@@ -98,13 +108,23 @@ def closer(w):
             + '<span class="kicker">what to keep</span>'
             + f'<p class="rule">{hl(esc(w["rule"]))}</p>'
             + '<div class="cta"><b>every claim we make carries a number u can check.</b>'
-            + '<span>ur chart, ur dasha, ur transits, computed from ur birth minute. '
-            + 'swiss ephemeris, lahiri ayanamsa, whole sign houses.</span>'
+            + ('' if w.get('cover') else
+               '<span>ur chart, ur dasha, ur transits, computed from ur birth minute. '
+               'swiss ephemeris, lahiri ayanamsa, whole sign houses.</span>')
             + '<div class="pill">free on asktota.com</div></div>'
             + '</div>' + deckfoot(4) + '</section>')
 
 
 def caption(w, d):
+    if w.get('cover'):
+        claims = '\n'.join(f'{i + 1}. {plain(m["q"])}' for i, m in enumerate(w['myths']))
+        return (f'# myth desk vol. {w["n"]:02d} \u00b7 {w["title"]}\n\n'
+                f'**post on {d.isoformat()} at 19:30 IST.** 5 slides, in order.\n\n'
+                f'## the three\n\n{claims}\n\n## caption\n\n'
+                f'{plain(w["cover"])}. three myths, three sets of receipts.\n\n'
+                f'which one did u grow up believing? \U0001F447\n\n'
+                f'free chart on asktota.com \U0001F99C\n\n'
+                f'#vedicastrology #jyotish #mythbusting #astrologyindia #asktota\n')
     claims = '\n'.join(f'{i + 1}. {plain(m["q"])}' for i, m in enumerate(w['myths']))
     return (f'# myth desk vol. {w["n"]:02d} \u00b7 {w["title"]}\n\n'
             f'**post on {d.isoformat()} at 19:30 IST.** 5 slides, in order.\n\n'
@@ -218,7 +238,39 @@ def schedule(idx):
     return len(dropped), len(added)
 
 
+def render(idx, since):
+    """Screenshots every deck dated on or after `since` into its folder, and writes
+    caption.md. browse only writes under its launch dir or /private/tmp, so each
+    slide is staged there and moved, and a slide that never lands is an error."""
+    import shutil, subprocess, tempfile
+    B = pathlib.Path.home() / '.claude/skills/gstack/browse/dist/browse'
+    run = lambda *a: subprocess.run([str(B), *a], capture_output=True, text=True, check=True).stdout
+    run('viewport', '1080x1350')
+    run('goto', f'file://{ROOT}/myths.html')
+    run('js', 'document.fonts.ready.then(()=>new Promise(r=>setTimeout(r,300)))')
+    tmp = pathlib.Path(tempfile.mkdtemp(prefix='asktota-myths-', dir='/private/tmp'))
+    n = 0
+    for w in idx:
+        if w['date'] < since:
+            continue
+        out = SITE / 'assets/social/carousels' / w['folder']
+        out.mkdir(parents=True, exist_ok=True)
+        for k, sid in enumerate(w['ids'], 1):
+            shot = tmp / f'{sid}.png'
+            said = run('screenshot', f'#{sid}', str(shot))
+            if not shot.exists():
+                sys.exit(f'{sid}: no file written. browse said: {said.strip()}')
+            shutil.move(shot, out / f'{k:02d}.png')
+        (out / 'caption.md').write_text(w['caption'])
+        n += 1
+    return n
+
+
 if __name__ == '__main__':
+    import lint
+    problems = lint.myths(json.loads((ROOT / 'myths.json').read_text()))
+    if problems:
+        sys.exit('myths.json fails the content rules:\n  ' + '\n  '.join(problems))
     idx = build()
     print(f'{len(idx)} decks, {len(idx) * 5} slides, {len(idx) * 3} myths')
     print(f'  first  {idx[0]["date"]}  {idx[0]["folder"]}')
@@ -226,3 +278,6 @@ if __name__ == '__main__':
     if '--schedule' in sys.argv:
         out, ins = schedule(idx)
         print(f'schedule.json: dropped {out} single myth statics, added {ins} decks')
+    if '--render' in sys.argv:
+        since = sys.argv[sys.argv.index('--render') + 1]
+        print(f'rendered {render(idx, since)} decks dated {since} or later')

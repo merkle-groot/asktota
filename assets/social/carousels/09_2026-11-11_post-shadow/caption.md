@@ -1,21 +1,20 @@
-# Carousel 09 — the retrograde ended. why does nothing feel finished?
+# Carousel 9 — mercury goes direct 13 nov. it's not over.
 
 | | |
 |---|---|
-| **Post on** | Wednesday 11 November 2026, 19:30 IST |
-| **Slides** | 8, in the order numbered |
+| **Post on** | 2026-11-11 |
+| **Slides** | 6, in the order numbered |
 | **Size** | 1080 x 1350 (4:5) |
 | **Blog post** | https://www.asktota.com/blog/retrograde-post-shadow.html |
 
 ## Caption
 
 ```
-mercury stations direct on the 13th and everyone posts the celebration graphic.
-then nothing resolves, because the same fifteen degrees are still being crossed for a third time.
-the shadow framing is modern, by the way. classical vedic has vakri and atichari and no three phase model at all.
-close the loops u opened. that works whether or not the astrology does.
+mercury stations direct on 13 nov, then spends 2 to 3 weeks re-crossing degrees it has already walked twice. and if u postponed things for three weeks, u now have three weeks of backlog.
 
-full piece: asktota.com/blog
+what are u still waiting to close? 👇
 
-#vedicastrology #jyotish #kundli #astrologyindia #asktota #mercuryretrograde #vakri #retrograde #astrotok #genzastrology
+asktota.com 🦜
+
+#mercuryretrograde #postshadow #vedicastrology #asktota #astrologyindia
 ```

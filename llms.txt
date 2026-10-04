@@ -31,13 +31,28 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks, membership tiers, and an FAQ.
-- [Blog](https://www.asktota.com/blog/): forty explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): fifty-five explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Venus in your birth chart](https://www.asktota.com/blog/venus-in-birth-chart.html): the 20 year dasha, the 47 degree elongation limit, and kalatra karaka in every chart regardless of gender.
+- [Shani dhaiya explained](https://www.asktota.com/blog/shani-dhaiya.html): the 2.5 year Saturn transit of the 4th house (kantaka shani) and the 8th house (ashtama shani) from the natal Moon, where both sit in the 29.5 year Saturn cycle, and how they differ from sade sati.
+- [Saturn return vs sade sati](https://www.asktota.com/blog/saturn-return-vs-sade-sati.html): the Saturn return measures transiting Saturn against natal Saturn and lands at about 29 for everyone; sade sati measures it against the natal Moon and can begin at any age. Includes why the return is zodiac independent and sade sati is not.
+- [The Rahu Ketu transit explained](https://www.asktota.com/blog/rahu-ketu-transit.html): the lunar nodes as an axis: always 180 degrees apart, always retrograde, about 18 months per sign, with the favourable houses from the Moon, the origin of eclipse seasons, and the 18.6 year nodal return.
+- [Planetary transits (gochar) explained](https://www.asktota.com/blog/planetary-transits-gochar.html): why classical gochar counts from the Moon sign rather than the lagna, the favourable houses for each graha, the vedha cancellation, ashtakavarga bindus, and the double transit rule.
+- [Planetary friendships](https://www.asktota.com/blog/planetary-friendships.html): the naisargika table with its asymmetries, tatkalika maitri, and the five-fold panchadha combination.
+- [Planetary combustion explained](https://www.asktota.com/blog/planetary-combustion.html): astangata orbs for every graha, why Mercury is combust about half the time, and why cazimi is not a Vedic concept.
+- [Moon in your birth chart](https://www.asktota.com/blog/moon-in-birth-chart.html): Chandra as rashi, dasha origin and chandra lagna, plus paksha bala and the kemadruma cancellations.
+- [Mars in your birth chart](https://www.asktota.com/blog/mars-in-birth-chart.html): the 4th, 7th and 8th aspects, why the manglik house list follows from them, and Mars as yogakaraka for two lagnas.
+- [The Jupiter transit explained](https://www.asktota.com/blog/jupiter-transit.html): a year per sign and four houses influenced at once, the favourable houses counted from the Moon, the 12-year Jupiter return, and the double transit with Saturn.
+- [Jupiter in your birth chart](https://www.asktota.com/blog/jupiter-in-birth-chart.html): the 5th and 9th aspects covering both trikonas, kendradhipati dosha, and Gajakesari's real frequency.
+- [How to find your moon sign](https://www.asktota.com/blog/find-your-moon-sign.html): three methods including the full nakshatra pada syllable table used at namakaran.
+- [Exalted and debilitated planets](https://www.asktota.com/blog/exalted-debilitated-planets.html): the full uchcha and neecha table with peak degrees, the four signs with neither, mooltrikona, and neecha bhanga.
+- [Benefic and malefic planets](https://www.asktota.com/blog/benefic-malefic-planets.html): naisargika versus functional classification, kendradhipati dosha, the six yogakaraka lagnas, upachaya houses and maraka.
+- [Ashtakavarga explained](https://www.asktota.com/blog/ashtakavarga.html): the eight-fold bindu system: how each graha and the Lagna score every sign, why the sarvashtakavarga total is always 337, the per-graha totals, the kakshya subdivision, and how bindu counts personalise a transit reading.
 - [Sun in your birth chart](https://www.asktota.com/blog/sun-in-birth-chart.html): Surya rules Simha alone, is classed as a natural malefic, causes combustion and can never suffer it, house by house.
 - [Free kundli online: what free actually means](https://www.asktota.com/blog/free-kundli-online.html): the four business models, what birth data is worth, and why two free charts disagree.
 - [How to pick a Vedic astrology app](https://www.asktota.com/blog/best-vedic-astrology-app-india.html): ten checks, three product categories, and where competitors beat Ask Tota.

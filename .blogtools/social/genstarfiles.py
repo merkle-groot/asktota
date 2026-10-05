@@ -24,7 +24,7 @@ FPS = 30
 
 # reel folder numbers. see assets/social/reels/ for what each number holds.
 ORDER = {'abhishek-sharma': 15, 'kohli-rohit': 17, 'dhoni-kohli': 19, 'shah-rukh-khan': 20,
-         'deepika-padukone': 25}
+         'deepika-padukone': 25, 'priyanka-chopra': 34}
 PHOTOS = ROOT / 'photos'
 
 

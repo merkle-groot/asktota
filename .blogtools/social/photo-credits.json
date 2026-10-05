@@ -55,5 +55,15 @@
     "page": "https://commons.wikimedia.org/wiki/File:Deepika_Padukone_2025_(1).png",
     "licence": "CC BY 3.0",
     "author": "Narendra Modi"
+  },
+  "priyanka-chopra": {
+    "name": "Priyanka Chopra",
+    "wikidata": "Q158957",
+    "dob": "1982-07-18",
+    "file": "Priyanka Chopra at Bulgary launch, 2024 (cropped).jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/45/Priyanka_Chopra_at_Bulgary_launch%2C_2024_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Priyanka_Chopra_at_Bulgary_launch,_2024_(cropped).jpg",
+    "licence": "CC BY 3.0",
+    "author": "Bollywood Hungama"
   }
 }

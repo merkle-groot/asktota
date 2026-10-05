@@ -9,6 +9,41 @@ and a reel that produces **DM shares** beats both. Saves are for carousels.
 
 ---
 
+## shipped 5 October 2026: the queue to mid november
+
+Thirteen more posts, all under the 4 Oct rules and all lint clean. Reels now run
+to 30 Oct and the minimal carousels to 12 Nov.
+
+**Seven reels, folders 32 to 38**, alternating down the friction ladder:
+
+| date | reel | rung |
+|---|---|---|
+| sun 18 oct | ur moon sign at a shaadi (32) | recall, tag |
+| tue 20 oct | where ur 36 points come from (33) | lookup |
+| thu 22 oct | STAR FILES no. 006, priyanka chopra (34) | name |
+| sat 24 oct | mercury retrograde can't do this (35) | zero cost |
+| mon 26 oct | half of u have a debilitated planet (36) | lookup |
+| wed 28 oct | ur moon sign on diwali cleaning day (37) | recall, tag |
+| fri 30 oct | what ur rahu sign can't stop wanting (38) | lookup |
+
+**Six minimal carousels, folders 25 to 30**, Mon and Thu 19:30, each linked to a
+live blog post: ur kundli has a second chart (navamsa), ur late 20s crisis has two
+names (saturn return vs sade sati), 11:11 isn't in a single vedic text (angel
+numbers), ur chart has a house for ur enemies (12 houses), born 3 days apart u
+can't share a moon sign, ur career isn't in ur sun sign (10th house).
+
+Claims that could be wrong were computed rather than copied, with Swiss Ephemeris
+on Lahiri: mercury's station dates and that the whole retrograde sits in vedic
+libra, the "half of u" debilitation rate (46.7% over 4,000 random births), and
+priyanka chopra's day chart across all 24 hours, so the star file only leans on
+placements that hold whatever her birth time was. Each reel's `notes.md` has the
+numbers.
+
+Star file no. 006 is the third unpegged file in a row. If it holds against 004
+and 005, the series can be scheduled a month out.
+
+---
+
 ## shipped 4 October 2026: hooks and minimal slides
 
 A review of the live account on 4 Oct: 18 followers, one to four likes a post, and

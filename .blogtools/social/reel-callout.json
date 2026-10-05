@@ -1028,6 +1028,450 @@
       },
       "title": "how long each planet runs ur life",
       "caption": "vimshottari dasha: 120 years split nine ways. venus gets 20. the sun gets 6. where u start depends on ur moon.\n\nwhich era are u in? 👇\n\nasktota.com 🦜\n\n#dasha #mahadasha #vedicastrology #asktota #astrologyindia"
+    },
+    "shaadi-signs": {
+      "slug": "shaadi-signs",
+      "minimal": true,
+      "kicker": "the wedding desk · by moon sign · shaadi season",
+      "hook": [
+        "ur moon sign",
+        "at a shaadi"
+      ],
+      "hold": 22,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "aries moon",
+          "when": "the guest",
+          "line": "first on the dance floor. last to leave."
+        },
+        {
+          "tag": "taurus moon",
+          "when": "the guest",
+          "line": "here for the food. has notes on the paneer.",
+          "alt": true
+        },
+        {
+          "tag": "gemini moon",
+          "when": "the guest",
+          "line": "knows every rishta backstory by the haldi."
+        },
+        {
+          "tag": "cancer moon",
+          "when": "the guest",
+          "line": "cries at the vidaai. not even family.",
+          "alt": true
+        },
+        {
+          "tag": "leo moon",
+          "when": "the guest",
+          "line": "outfit planned since the engagement. three changes."
+        },
+        {
+          "tag": "virgo moon",
+          "when": "the guest",
+          "line": "fixing the seating chart. nobody asked.",
+          "alt": true
+        },
+        {
+          "tag": "libra moon",
+          "when": "the guest",
+          "line": "in every photo. somehow in the couple's too."
+        },
+        {
+          "tag": "scorpio moon",
+          "when": "the guest",
+          "line": "knows which uncles aren't talking. and why.",
+          "alt": true
+        },
+        {
+          "tag": "sagittarius moon",
+          "when": "the guest",
+          "line": "here for the baraat. gone by the pheras."
+        },
+        {
+          "tag": "capricorn moon",
+          "when": "the guest",
+          "line": "worked out the per plate cost. out loud.",
+          "alt": true
+        },
+        {
+          "tag": "aquarius moon",
+          "when": "the guest",
+          "line": "befriended the dj. now runs the playlist."
+        },
+        {
+          "tag": "pisces moon",
+          "when": "the guest",
+          "line": "fell for a cousin's friend by the sangeet.",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "tag ur **shaadi squad**",
+        "p": "don't know ur moon? tota finds it free.",
+        "btn": "asktota.com"
+      },
+      "title": "ur moon sign at a shaadi",
+      "caption": "wedding season is here. ur moon sign already decided what kind of guest u are.\n\ntag the virgo moon fixing the seating chart 👇\n\nfind ur moon sign free on asktota.com 🦜\n\n#shaadiseason #moonsign #vedicastrology #indianwedding #asktota"
+    },
+    "koota-36": {
+      "slug": "koota-36",
+      "minimal": true,
+      "kicker": "the matching desk · ashtakoota · eight checks",
+      "hook": [
+        "where ur 36",
+        "points come from"
+      ],
+      "hold": 26,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "varna",
+          "when": "1 point",
+          "line": "work temperament. worth the least."
+        },
+        {
+          "tag": "vashya",
+          "when": "2 points",
+          "line": "who pulls who.",
+          "alt": true
+        },
+        {
+          "tag": "tara",
+          "when": "3 points",
+          "line": "the luck between ur two stars."
+        },
+        {
+          "tag": "yoni",
+          "when": "4 points",
+          "line": "physical chemistry. yes, really.",
+          "alt": true
+        },
+        {
+          "tag": "graha maitri",
+          "when": "5 points",
+          "line": "are ur moon lords friends?"
+        },
+        {
+          "tag": "gana",
+          "when": "6 points",
+          "line": "deva, manushya or rakshasa.",
+          "alt": true
+        },
+        {
+          "tag": "bhakoot",
+          "when": "7 points",
+          "line": "feelings and money, side by side."
+        },
+        {
+          "tag": "nadi",
+          "when": "8 points",
+          "line": "the heaviest one. health and genes.",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "what did u **score**?",
+        "p": "two moons, eight checks. free.",
+        "btn": "asktota.com"
+      },
+      "title": "where ur 36 points come from",
+      "caption": "36 points, eight separate checks, and every one runs on two moon signs and two nakshatras. the sun isn't in it at all.\n\nwhat did u score? 👇\n\nrun urs free on asktota.com 🦜\n\n#gunamilan #ashtakoota #kundlimatching #vedicastrology #asktota"
+    },
+    "mercury-rx-cant": {
+      "slug": "mercury-rx-cant",
+      "minimal": true,
+      "kicker": "the mercury desk · 24 oct to 13 nov · all in tula",
+      "hook": [
+        "mercury retrograde",
+        "**can't** do this"
+      ],
+      "hold": 26,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "text u back",
+          "when": "ur ex",
+          "line": "that was their choice."
+        },
+        {
+          "tag": "crack ur screen",
+          "when": "ur phone",
+          "line": "u dropped it. we saw.",
+          "alt": true
+        },
+        {
+          "tag": "cancel ur plans",
+          "when": "the flake",
+          "line": "they were never coming."
+        },
+        {
+          "tag": "move backwards",
+          "when": "the planet",
+          "line": "it never has. it only looks like it.",
+          "alt": true
+        },
+        {
+          "tag": "stop dhanteras",
+          "when": "6 nov",
+          "line": "a tithi can't be postponed."
+        },
+        {
+          "tag": "hit reply all",
+          "when": "the email",
+          "line": "that one's on u.",
+          "alt": true
+        },
+        {
+          "tag": "last forever",
+          "when": "the dates",
+          "line": "three weeks, all in vedic libra."
+        }
+      ],
+      "cta": {
+        "h": "what are u **blaming** on it?",
+        "p": "tota reads ur mercury. free.",
+        "btn": "asktota.com"
+      },
+      "title": "mercury retrograde can't do this",
+      "caption": "mercury stations retrograde today and turns direct on 13 nov, all of it in vedic libra. the planet never moves backwards. ur ex is still ur ex.\n\nwhat are u blaming on it? 👇\n\nasktota.com 🦜\n\n#mercuryretrograde #vakri #vedicastrology #astrologymemes #asktota"
+    },
+    "neecha-planets": {
+      "slug": "neecha-planets",
+      "minimal": true,
+      "kicker": "the neecha desk · debilitated · lahiri",
+      "hook": [
+        "half of u have a",
+        "**debilitated** planet"
+      ],
+      "hold": 26,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "sun in libra",
+          "when": "neecha",
+          "line": "wants approval. hates that it wants it."
+        },
+        {
+          "tag": "moon in scorpio",
+          "when": "neecha",
+          "line": "feels everything. admits nothing.",
+          "alt": true
+        },
+        {
+          "tag": "mars in cancer",
+          "when": "neecha",
+          "line": "avoids the fight. then explodes."
+        },
+        {
+          "tag": "mercury in pisces",
+          "when": "neecha",
+          "line": "brilliant. can't explain how.",
+          "alt": true
+        },
+        {
+          "tag": "jupiter in capricorn",
+          "when": "neecha",
+          "line": "has faith. still wants receipts."
+        },
+        {
+          "tag": "venus in virgo",
+          "when": "neecha",
+          "line": "loves u. also found four flaws.",
+          "alt": true
+        },
+        {
+          "tag": "saturn in aries",
+          "when": "neecha",
+          "line": "patience, in the sign of right now."
+        },
+        {
+          "tag": "neecha bhanga",
+          "when": "the cancellation",
+          "line": "some charts flip it into a strength.",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "got one? **comment it**",
+        "p": "tota checks all nine. free.",
+        "btn": "asktota.com"
+      },
+      "title": "half of u have a debilitated planet",
+      "caption": "about 1 chart in 2 has at least one planet in its debilitation sign. it's common, it's not a verdict, and neecha bhanga can cancel it.\n\ngot one? comment it 👇\n\ncheck free on asktota.com 🦜\n\n#neecha #debilitated #vedicastrology #birthchart #asktota"
+    },
+    "diwali-cleaning": {
+      "slug": "diwali-cleaning",
+      "minimal": true,
+      "kicker": "the diwali desk · by moon sign · 8 nov",
+      "hook": [
+        "ur moon sign",
+        "on diwali cleaning day"
+      ],
+      "hold": 22,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "aries moon",
+          "when": "the cleaner",
+          "line": "done by noon. broke one diya."
+        },
+        {
+          "tag": "taurus moon",
+          "when": "the cleaner",
+          "line": "found old mithai. ate it. no regrets.",
+          "alt": true
+        },
+        {
+          "tag": "gemini moon",
+          "when": "the cleaner",
+          "line": "on a call the whole time. one shelf."
+        },
+        {
+          "tag": "cancer moon",
+          "when": "the cleaner",
+          "line": "kept every box. \"it has memories.\"",
+          "alt": true
+        },
+        {
+          "tag": "leo moon",
+          "when": "the cleaner",
+          "line": "cleaned the one room guests will see."
+        },
+        {
+          "tag": "virgo moon",
+          "when": "the cleaner",
+          "line": "deep cleaned the fan. nobody asked.",
+          "alt": true
+        },
+        {
+          "tag": "libra moon",
+          "when": "the cleaner",
+          "line": "made a playlist first. still on the playlist."
+        },
+        {
+          "tag": "scorpio moon",
+          "when": "the cleaner",
+          "line": "found ur old diary. said nothing.",
+          "alt": true
+        },
+        {
+          "tag": "sagittarius moon",
+          "when": "the cleaner",
+          "line": "\"getting supplies.\" back four hours later."
+        },
+        {
+          "tag": "capricorn moon",
+          "when": "the cleaner",
+          "line": "made a chart. assigned everyone a task.",
+          "alt": true
+        },
+        {
+          "tag": "aquarius moon",
+          "when": "the cleaner",
+          "line": "invented a system. nobody follows it."
+        },
+        {
+          "tag": "pisces moon",
+          "when": "the cleaner",
+          "line": "found childhood photos. day over.",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "tag ur **cleaning partner**",
+        "p": "find ur moon sign. free.",
+        "btn": "asktota.com"
+      },
+      "title": "ur moon sign on diwali cleaning day",
+      "caption": "diwali is 8 nov, so the cleaning has already started in every house. ur moon sign decides how much of it u actually do.\n\ntag who does all the work 👇\n\nasktota.com 🦜\n\n#diwali #diwalicleaning #moonsign #vedicastrology #asktota"
+    },
+    "rahu-wants": {
+      "slug": "rahu-wants",
+      "minimal": true,
+      "kicker": "the rahu desk · by sign · never full",
+      "hook": [
+        "what ur rahu sign",
+        "can't stop wanting"
+      ],
+      "hold": 22,
+      "ctaHold": 60,
+      "cards": [
+        {
+          "tag": "rahu in aries",
+          "when": "the craving",
+          "line": "to be first. at anything."
+        },
+        {
+          "tag": "rahu in taurus",
+          "when": "the craving",
+          "line": "the house. the car. the safety net.",
+          "alt": true
+        },
+        {
+          "tag": "rahu in gemini",
+          "when": "the craving",
+          "line": "every podcast, every opinion, all at once."
+        },
+        {
+          "tag": "rahu in cancer",
+          "when": "the craving",
+          "line": "a home that finally feels like one.",
+          "alt": true
+        },
+        {
+          "tag": "rahu in leo",
+          "when": "the craving",
+          "line": "the stage. the centre of it."
+        },
+        {
+          "tag": "rahu in virgo",
+          "when": "the craving",
+          "line": "to be right. with sources.",
+          "alt": true
+        },
+        {
+          "tag": "rahu in libra",
+          "when": "the craving",
+          "line": "the perfect partner. on paper."
+        },
+        {
+          "tag": "rahu in scorpio",
+          "when": "the craving",
+          "line": "the secret. any secret.",
+          "alt": true
+        },
+        {
+          "tag": "rahu in sagittarius",
+          "when": "the craving",
+          "line": "a passport with no blank pages."
+        },
+        {
+          "tag": "rahu in capricorn",
+          "when": "the craving",
+          "line": "the title. the corner office.",
+          "alt": true
+        },
+        {
+          "tag": "rahu in aquarius",
+          "when": "the craving",
+          "line": "to change everything. starting with u."
+        },
+        {
+          "tag": "rahu in pisces",
+          "when": "the craving",
+          "line": "the escape. any kind.",
+          "alt": true
+        }
+      ],
+      "cta": {
+        "h": "where's ur **rahu**?",
+        "p": "it's a lookup. tota does it free.",
+        "btn": "asktota.com"
+      },
+      "title": "what ur rahu sign can't stop wanting",
+      "caption": "rahu never gets full. whichever sign it sat in when u were born is the thing u keep chasing, even after u get it.\n\nwhere's ur rahu? 👇\n\nasktota.com 🦜\n\n#rahu #rahuketu #vedicastrology #birthchart #asktota"
     }
   }
 }

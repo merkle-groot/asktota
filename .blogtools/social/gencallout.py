@@ -24,7 +24,9 @@ FPS = 30
 ORDER = {'moon-2am': 13, 'group-chat': 14, 'the-ick': 16, 'birth-weekday': 18,
          'rising-sign': 21, 'how-u-argue': 22, 'nakshatra-flags': 23,
          'saturn-takes': 24, 'nakshatra-flags-2': 26, 'nakshatra-flags-3': 28,
-         'sade-sati-rn': 29, 'vedic-sun-dates': 30, 'dasha-lengths': 31}
+         'sade-sati-rn': 29, 'vedic-sun-dates': 30, 'dasha-lengths': 31,
+         'shaadi-signs': 32, 'koota-36': 33, 'mercury-rx-cant': 35,
+         'neecha-planets': 36, 'diwali-cleaning': 37, 'rahu-wants': 38}
 
 
 def render_frames(deck, out):

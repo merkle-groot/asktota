@@ -5,30 +5,72 @@
   "og_description": "A year per sign, four houses influenced at once, and a return every twelve years. Here is what guru peyarchi actually changes.",
   "h1": "jupiter gives u a year, and touches four houses doing it",
   "dek": "guru spends about twelve months in a sign and aspects three more houses from wherever it stands. that is why its transit is the most watched slow movement in the sky after saturn's. here is what it does, counted from ur moon, with the return and the double transit.",
-  "published": "2026-10-04",
-  "modified": "2026-10-04",
-  "byline_date": "OCTOBER 4, 2026",
+  "published": "2026-10-28",
+  "modified": "2026-10-28",
   "read_time": "10 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE RETROGRADE DESK",
-  "keywords": ["jupiter transit", "guru peyarchi", "guru gochar", "jupiter return", "double transit", "jupiter transit from moon"],
+  "keywords": [
+    "jupiter transit",
+    "guru peyarchi",
+    "guru gochar",
+    "jupiter return",
+    "double transit",
+    "jupiter transit from moon"
+  ],
   "card_title": "jupiter gives u a year, and touches four houses doing it",
   "card_dek": "a year per sign, three extra houses aspected from wherever it stands, and a return every twelve years. what guru peyarchi actually changes.",
   "chip": "explainer",
   "llms_title": "The Jupiter transit explained",
   "llms_desc": "a year per sign and four houses influenced at once, the favourable houses counted from the Moon, the 12-year Jupiter return, and the double transit with Saturn.",
   "faq": [
-    {"q": "how long does jupiter stay in one sign?", "a": "about a year, and a full circuit of the zodiac takes roughly twelve. that is why its transit is used for timing: a year is a unit u can actually plan around."},
-    {"q": "which houses is the jupiter transit good in?", "a": "counted from ur moon sign, the classical gochar list is the 2nd, 5th, 7th, 9th and 11th. the 4th, 8th and 12th are the ones traditionally read as difficult."},
-    {"q": "what is guru peyarchi?", "a": "the tamil term for jupiter changing sign. it is treated as a significant annual event across south india, with temple observances attached, and it is simply the sign ingress of a transiting graha."},
-    {"q": "does jupiter aspect houses while transiting?", "a": "yes, and this is what makes it unusual. jupiter aspects the 5th, 7th and 9th from wherever it is, so a single transit position is influencing four houses of ur chart at once."},
-    {"q": "what is a jupiter return?", "a": "transiting jupiter coming back to the sign, or the exact degree, it occupied at ur birth. it happens roughly every twelve years, so around ages 12, 24, 36, 48 and 60."},
-    {"q": "why does jupiter go retrograde every year?", "a": "because earth overtakes it once per orbit. jupiter is retrograde for about four months of every year, every year, and nobody has ever cancelled anything over it."},
-    {"q": "what is the double transit?", "a": "jupiter and saturn both influencing the same house at once, by placement or aspect. because their speeds differ so much it is uncommon and short, and the tradition treats a house under both as genuinely activated."},
-    {"q": "does a jupiter transit guarantee good things?", "a": "no. jupiter expands what it touches, and the 6th house is debt, illness and rivals. an expanded difficult house is more of the difficulty, not less."},
-    {"q": "how many people share my jupiter transit result?", "a": "about a twelfth of everyone alive, because gochar is counted from the moon sign. ashtakavarga bindus are how that gets narrowed to ur own chart."},
-    {"q": "is the jupiter transit more important than my dasha?", "a": "no. the dasha is the timing engine and runs in chunks of years. a jupiter transit is generally read as triggering something a dasha has already made available."},
-    {"q": "what does jupiter transiting my natal moon mean?", "a": "it is one of the more watched positions, read as a year in which the mind gets more room. it happens roughly once every twelve years and lasts about twelve months."},
-    {"q": "when is the jupiter transit used for marriage timing?", "a": "jupiter crossing the 7th house, the 7th lord, or the natal moon is the most cited trigger. it is used alongside the dasha rather than instead of it."}
+    {
+      "q": "how long does jupiter stay in one sign?",
+      "a": "about a year, and a full circuit of the zodiac takes roughly twelve. that is why its transit is used for timing: a year is a unit u can actually plan around."
+    },
+    {
+      "q": "which houses is the jupiter transit good in?",
+      "a": "counted from ur moon sign, the classical gochar list is the 2nd, 5th, 7th, 9th and 11th. the 4th, 8th and 12th are the ones traditionally read as difficult."
+    },
+    {
+      "q": "what is guru peyarchi?",
+      "a": "the tamil term for jupiter changing sign. it is treated as a significant annual event across south india, with temple observances attached, and it is simply the sign ingress of a transiting graha."
+    },
+    {
+      "q": "does jupiter aspect houses while transiting?",
+      "a": "yes, and this is what makes it unusual. jupiter aspects the 5th, 7th and 9th from wherever it is, so a single transit position is influencing four houses of ur chart at once."
+    },
+    {
+      "q": "what is a jupiter return?",
+      "a": "transiting jupiter coming back to the sign, or the exact degree, it occupied at ur birth. it happens roughly every twelve years, so around ages 12, 24, 36, 48 and 60."
+    },
+    {
+      "q": "why does jupiter go retrograde every year?",
+      "a": "because earth overtakes it once per orbit. jupiter is retrograde for about four months of every year, every year, and nobody has ever cancelled anything over it."
+    },
+    {
+      "q": "what is the double transit?",
+      "a": "jupiter and saturn both influencing the same house at once, by placement or aspect. because their speeds differ so much it is uncommon and short, and the tradition treats a house under both as genuinely activated."
+    },
+    {
+      "q": "does a jupiter transit guarantee good things?",
+      "a": "no. jupiter expands what it touches, and the 6th house is debt, illness and rivals. an expanded difficult house is more of the difficulty, not less."
+    },
+    {
+      "q": "how many people share my jupiter transit result?",
+      "a": "about a twelfth of everyone alive, because gochar is counted from the moon sign. ashtakavarga bindus are how that gets narrowed to ur own chart."
+    },
+    {
+      "q": "is the jupiter transit more important than my dasha?",
+      "a": "no. the dasha is the timing engine and runs in chunks of years. a jupiter transit is generally read as triggering something a dasha has already made available."
+    },
+    {
+      "q": "what does jupiter transiting my natal moon mean?",
+      "a": "it is one of the more watched positions, read as a year in which the mind gets more room. it happens roughly once every twelve years and lasts about twelve months."
+    },
+    {
+      "q": "when is the jupiter transit used for marriage timing?",
+      "a": "jupiter crossing the 7th house, the 7th lord, or the natal moon is the most cited trigger. it is used alongside the dasha rather than instead of it."
+    }
   ]
 }

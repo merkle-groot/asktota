@@ -17,7 +17,7 @@ Sources of truth:
 Everything downstream is regenerated from those: blog/*.html, the archive grid and
 its ItemList schema, sitemap.xml, and the Explainers section of llms.txt.
 """
-import argparse, datetime, json, pathlib, re, shutil, sys
+import argparse, datetime, json, os, pathlib, re, shutil, sys
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -155,6 +155,55 @@ def write_llms(live):
     p.write_text(s)
 
 
+START_HERE = 'what-is-vedic-astrology'
+
+
+def write_home(live):
+    """The homepage blog teaser: the newest live post, then the start-here explainer.
+    Without this the homepage kept advertising an August post as the latest."""
+    p = ROOT / 'index.html'; s = p.read_text()
+    by_slug = {m['slug']: m for m in live}
+    picks = [(live[0], '<span class="chip chip-marigold">latest</span>')]
+    if START_HERE in by_slug and live[0]['slug'] != START_HERE:
+        picks.append((by_slug[START_HERE], '<span class="chip chip-pink">start here</span>'))
+    cards = ''.join(
+        f'          <a class="story" href="blog/{m["slug"]}.html">\n'
+        f'            {chip}\n'
+        f'            <p class="meta">{m["card_date"]} &middot; {m["read_time"].lower()}</p>\n'
+        f'            <h3>{m["card_title"]}</h3>\n'
+        f'            <p>{m["card_dek"]}</p>\n'
+        f'            <span class="go">read the story</span>\n'
+        f'          </a>\n'
+        for m, chip in picks)
+    s, n = re.subn(r'(<section class="sec" id="blog-teaser">.*?<div class="story-row">\n).*?(        </div>)',
+                   lambda mm: mm.group(1) + cards + mm.group(2), s, count=1, flags=re.S)
+    if not n:
+        raise SystemExit('index.html: blog teaser story-row not found')
+    s = re.sub(r'(<section class="sec" id="blog-teaser">.*?<p class="lede">)[a-z-]+ pieces so far',
+               lambda mm: mm.group(1) + f'{in_words(len(live))} pieces so far', s, count=1, flags=re.S)
+    p.write_text(s)
+
+
+QUEUE_WARN_DAYS = 14
+
+
+def report_queue(held, as_of):
+    """Say how long the queue lasts. An empty queue looks exactly like a healthy
+    no-op run, so in CI it is raised as a workflow warning instead of passing silently."""
+    if not held:
+        msg = 'the queue is empty. no post is scheduled after today, so nothing new will publish.'
+    else:
+        nxt, last = min(m['published'] for m in held), max(m['published'] for m in held)
+        days = (datetime.date.fromisoformat(last) - as_of).days
+        print(f'  queue: {len(held)} scheduled, next on {nxt}, last on {last} ({days} days of runway)')
+        if days >= QUEUE_WARN_DAYS:
+            return
+        msg = f'the queue runs out on {last}, {days} days from now. schedule more posts.'
+    print(f'  WARNING: {msg}')
+    if os.environ.get('GITHUB_ACTIONS'):
+        print(f'::warning title=blog queue::{msg}')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--as-of', help='YYYY-MM-DD. defaults to today in IST.')
@@ -195,6 +244,7 @@ def main():
         print(f'  HOLD     {m["published"]}  {m["slug"]}')
     if not releasing and not pulling:
         print('  nothing to change.')
+    report_queue(held, as_of)
 
     if a.dry_run:
         print('\ndry run. nothing written.')
@@ -214,7 +264,8 @@ def main():
     write_index(live)
     write_sitemap(live)
     write_llms(live)
-    print(f'\nwrote blog/index.html, sitemap.xml and llms.txt for {len(live)} posts.')
+    write_home(live)
+    print(f'\nwrote blog/index.html, index.html, sitemap.xml and llms.txt for {len(live)} posts.')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,76 @@
+{
+  "title": "What is ayanamsa? Why your Vedic sign is different | Ask Tota",
+  "description": "Ayanamsa is the 24 degree gap between the Western and Vedic zodiacs. What causes it, why India uses Lahiri, and how it moves your sign.",
+  "og_title": "What is ayanamsa, and why it moves your sign",
+  "og_description": "The 24 degree gap between Western and Vedic astrology, where it comes from, why it grows every year, and why India standardised on Lahiri in 1955.",
+  "h1": "ayanamsa is the 24 degree gap that moves ur sign",
+  "dek": "western and vedic astrology agree exactly where the planets are. they disagree on where the zodiac starts. the size of that disagreement has a name, it grows by about a degree every 72 years, and it is why ur vedic sign is often one back.",
+  "published": "2026-11-05",
+  "modified": "2026-11-05",
+  "read_time": "10 MIN READ",
+  "section": "Vedic astrology",
+  "kicker": "THE BLOG &middot; EXPLAINER",
+  "keywords": [
+    "ayanamsa",
+    "what is ayanamsa",
+    "lahiri ayanamsa",
+    "sidereal zodiac",
+    "precession of equinoxes",
+    "why my zodiac sign changed"
+  ],
+  "card_title": "ayanamsa is the 24 degree gap that moves ur sign",
+  "card_dek": "both zodiacs agree where the planets are. they disagree where the zodiac starts, by about 24 degrees, and it grows every year.",
+  "chip": "explainer",
+  "llms_title": "Ayanamsa explained",
+  "llms_desc": "what ayanamsa is, how precession of the equinoxes creates the roughly 24 degree gap between tropical and sidereal zodiacs, the main ayanamsas (Lahiri, Raman, Krishnamurti, Fagan-Bradley), and why India's 1955 Calendar Reform Committee chose Lahiri.",
+  "faq": [
+    {
+      "q": "what is ayanamsa in simple words?",
+      "a": "it is the number of degrees between the western zodiac's starting point and the vedic zodiac's starting point. in 2026 it is about 24 degrees using lahiri, the indian standard. subtract it from a western position and u get the vedic one."
+    },
+    {
+      "q": "why does ayanamsa exist?",
+      "a": "because earth's axis wobbles slowly, a motion called precession. the western zodiac is tied to the spring equinox, which drifts against the stars. the vedic zodiac is tied to the stars. the gap between them is the drift accumulated so far."
+    },
+    {
+      "q": "what is the current lahiri ayanamsa?",
+      "a": "about 24 degrees 13 minutes in 2026. it grows by roughly 50 seconds of arc a year, so about one degree every 72 years."
+    },
+    {
+      "q": "why is my zodiac sign different in vedic astrology?",
+      "a": "the 24 degree ayanamsa shifts most positions back by most of a sign. if ur western sun is in the first three weeks or so of its sign, ur vedic sun is usually in the previous sign. the planets did not move. the ruler did."
+    },
+    {
+      "q": "which ayanamsa is correct?",
+      "a": "there is no astronomical proof for any of them, because each depends on where u decide the sidereal zodiac begins. lahiri is the official indian standard and by far the most used in vedic astrology. use what ur tradition uses and stay consistent."
+    },
+    {
+      "q": "what is the difference between lahiri and kp ayanamsa?",
+      "a": "krishnamurti, used in kp astrology, differs from lahiri by only a few minutes of arc. it rarely changes a sign, but it can change a sub lord in kp work, where tiny divisions matter."
+    },
+    {
+      "q": "what is raman ayanamsa?",
+      "a": "the ayanamsa used by b. v. raman, about a degree and a half smaller than lahiri. it can shift planets near a sign or nakshatra boundary, which is why charts from raman followers sometimes differ."
+    },
+    {
+      "q": "does ayanamsa affect my moon sign?",
+      "a": "yes, the same way it affects everything. the moon's vedic position is its tropical position minus the ayanamsa. if ur moon sits near a boundary, the choice of ayanamsa can decide which sign and nakshatra it falls in."
+    },
+    {
+      "q": "who decided india uses lahiri ayanamsa?",
+      "a": "the calendar reform committee set up by the government of india in 1952, chaired by physicist meghnad saha. its 1955 report recommended the chitrapaksha ayanamsa, computed by n. c. lahiri, for the national calendar and almanacs."
+    },
+    {
+      "q": "when was the ayanamsa zero?",
+      "a": "on lahiri's definition, the two zodiacs coincided around 285 ce. other ayanamsas put that date a few centuries earlier or later, which is exactly why they disagree by a degree or two today."
+    },
+    {
+      "q": "does western astrology use ayanamsa?",
+      "a": "mainstream western astrology does not, because it uses the tropical zodiac tied to the seasons. western sidereal astrologers do, usually the fagan-bradley ayanamsa."
+    },
+    {
+      "q": "will the gap keep growing?",
+      "a": "yes. precession takes about 25,800 years to go all the way round, so the gap keeps growing by about a degree every 72 years until, in thousands of years, it laps a full sign and beyond."
+    }
+  ]
+}

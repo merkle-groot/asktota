@@ -5,30 +5,73 @@
   "og_description": "Always opposite, always moving backwards, eighteen months to a sign. What a nodal transit actually is and where eclipse season comes from.",
   "h1": "rahu and ketu move backwards, and always take two houses",
   "dek": "every other transit moves one house at a time. the nodes always move two, they are always exactly opposite, and they walk the zodiac in reverse. here is the mechanism, counted from ur moon, with the eclipse seasons and the nodal return.",
-  "published": "2026-10-04",
-  "modified": "2026-10-04",
-  "byline_date": "OCTOBER 4, 2026",
+  "published": "2026-10-30",
+  "modified": "2026-10-30",
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; THE RETROGRADE DESK",
-  "keywords": ["rahu ketu transit", "rahu transit", "ketu transit", "nodal return", "rahu ketu peyarchi", "lunar nodes", "eclipse season"],
+  "keywords": [
+    "rahu ketu transit",
+    "rahu transit",
+    "ketu transit",
+    "nodal return",
+    "rahu ketu peyarchi",
+    "lunar nodes",
+    "eclipse season"
+  ],
   "card_title": "rahu and ketu move backwards, and always take two houses",
   "card_dek": "always opposite, always retrograde, eighteen months to a sign. the axis, the eclipse seasons, and the nodal return at 18, 37 and 56.",
   "chip": "explainer",
   "llms_title": "The Rahu Ketu transit explained",
   "llms_desc": "the lunar nodes as an axis: always 180 degrees apart, always retrograde, about 18 months per sign, with the favourable houses from the Moon, the origin of eclipse seasons, and the 18.6 year nodal return.",
   "faq": [
-    {"q": "how long does rahu stay in one sign?", "a": "about eighteen months, and ketu is in the opposite sign for exactly the same stretch. a full circuit of the zodiac takes 18.6 years."},
-    {"q": "why do rahu and ketu move backwards?", "a": "because the moon's orbital plane slowly wobbles, and that drags the two crossing points backwards through the zodiac. so rahu goes from mesha into meena, not into vrishabha."},
-    {"q": "are rahu and ketu always opposite?", "a": "yes, exactly 180 degrees apart, always. they are the two intersections of two tilted circles, and two circles cannot cross in three places."},
-    {"q": "which houses are good for a rahu transit?", "a": "counted from ur moon sign, the classical favourable houses for both nodes are the 3rd, 6th and 11th. that is the same short list saturn gets."},
-    {"q": "what is rahu ketu peyarchi?", "a": "the tamil term for the nodes changing sign. it is treated as a notable event because it only happens once every eighteen months, and the whole axis moves at once."},
-    {"q": "what is a nodal return?", "a": "transiting rahu coming back to the sign or degree it occupied at ur birth. it happens roughly every 18.6 years, so around ages 18 to 19, 37, and 55 to 56."},
-    {"q": "why do eclipses only happen near rahu and ketu?", "a": "an eclipse needs the sun, moon and earth in a line, and the only places the moon's path meets the sun's are the two nodes. so eclipses arrive in whichever pair of signs the axis currently occupies."},
-    {"q": "what is the difference between the mean node and the true node?", "a": "the mean node is the smoothed average position, which always retrogrades. the true node is the actual instantaneous crossing point, which wobbles and can creep forward for a few days. most vedic software uses the mean node and the gap is usually under two degrees."},
-    {"q": "does a rahu transit affect everyone with my moon sign?", "a": "the cohort reading does, and that is about a twelfth of everyone alive. vedha can cancel it and ashtakavarga bindus adjust it to ur chart, which is where a shared reading starts becoming ur own."},
-    {"q": "is the rahu transit worse than sade sati?", "a": "they are different instruments. sade sati is saturn spending seven and a half years across three houses from ur moon. a nodal transit is eighteen months across a pair of opposite houses, and it repeats far more often."},
-    {"q": "what happens when rahu transits my natal moon?", "a": "it is one of the more watched positions, read as the mind getting loud and hungry about whatever that house covers. it happens roughly once every 18.6 years and lasts about eighteen months."},
-    {"q": "do rahu and ketu have a dasha as well as a transit?", "a": "yes, and that is the more important of the two. rahu runs eighteen years of vimshottari and ketu runs seven. a nodal transit landing while a nodal dasha is running is the case actually worth reading closely."}
+    {
+      "q": "how long does rahu stay in one sign?",
+      "a": "about eighteen months, and ketu is in the opposite sign for exactly the same stretch. a full circuit of the zodiac takes 18.6 years."
+    },
+    {
+      "q": "why do rahu and ketu move backwards?",
+      "a": "because the moon's orbital plane slowly wobbles, and that drags the two crossing points backwards through the zodiac. so rahu goes from mesha into meena, not into vrishabha."
+    },
+    {
+      "q": "are rahu and ketu always opposite?",
+      "a": "yes, exactly 180 degrees apart, always. they are the two intersections of two tilted circles, and two circles cannot cross in three places."
+    },
+    {
+      "q": "which houses are good for a rahu transit?",
+      "a": "counted from ur moon sign, the classical favourable houses for both nodes are the 3rd, 6th and 11th. that is the same short list saturn gets."
+    },
+    {
+      "q": "what is rahu ketu peyarchi?",
+      "a": "the tamil term for the nodes changing sign. it is treated as a notable event because it only happens once every eighteen months, and the whole axis moves at once."
+    },
+    {
+      "q": "what is a nodal return?",
+      "a": "transiting rahu coming back to the sign or degree it occupied at ur birth. it happens roughly every 18.6 years, so around ages 18 to 19, 37, and 55 to 56."
+    },
+    {
+      "q": "why do eclipses only happen near rahu and ketu?",
+      "a": "an eclipse needs the sun, moon and earth in a line, and the only places the moon's path meets the sun's are the two nodes. so eclipses arrive in whichever pair of signs the axis currently occupies."
+    },
+    {
+      "q": "what is the difference between the mean node and the true node?",
+      "a": "the mean node is the smoothed average position, which always retrogrades. the true node is the actual instantaneous crossing point, which wobbles and can creep forward for a few days. most vedic software uses the mean node and the gap is usually under two degrees."
+    },
+    {
+      "q": "does a rahu transit affect everyone with my moon sign?",
+      "a": "the cohort reading does, and that is about a twelfth of everyone alive. vedha can cancel it and ashtakavarga bindus adjust it to ur chart, which is where a shared reading starts becoming ur own."
+    },
+    {
+      "q": "is the rahu transit worse than sade sati?",
+      "a": "they are different instruments. sade sati is saturn spending seven and a half years across three houses from ur moon. a nodal transit is eighteen months across a pair of opposite houses, and it repeats far more often."
+    },
+    {
+      "q": "what happens when rahu transits my natal moon?",
+      "a": "it is one of the more watched positions, read as the mind getting loud and hungry about whatever that house covers. it happens roughly once every 18.6 years and lasts about eighteen months."
+    },
+    {
+      "q": "do rahu and ketu have a dasha as well as a transit?",
+      "a": "yes, and that is the more important of the two. rahu runs eighteen years of vimshottari and ketu runs seven. a nodal transit landing while a nodal dasha is running is the case actually worth reading closely."
+    }
   ]
 }

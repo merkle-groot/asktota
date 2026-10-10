@@ -8,7 +8,7 @@ Each post needs .blogtools/posts/<slug>.json and .blogtools/posts/<slug>.body.ht
 Output goes to blog/<slug>.html. The nav, zodiac rail and footer come from
 .blogtools/chrome_top.html and .blogtools/chrome_foot.html so every post stays identical.
 """
-import json, sys, pathlib, html
+import datetime, json, sys, pathlib, html
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TOOLS = ROOT / '.blogtools'
@@ -87,11 +87,19 @@ PAGE = """<!DOCTYPE html>
 """
 
 
+def byline_date(published):
+    """The visible date is always derived from `published`, so it can never drift from it."""
+    d = datetime.date.fromisoformat(published)
+    return f'{d.strftime("%B").upper()} {d.day}, {d.year}'
+
+
 def build(slug, out_dir=None):
     meta = json.loads((POSTS / f'{slug}.json').read_text())
     body = (POSTS / f'{slug}.body.html').read_text().rstrip() + '\n'
     url = f'{SITE}/blog/{slug}.html'
     modified = meta.get('modified', meta['published'])
+    if modified < meta['published']:
+        raise SystemExit(f'{slug}.json: modified {modified} is before published {meta["published"]}')
 
     graph = [
         {
@@ -147,7 +155,7 @@ def build(slug, out_dir=None):
         section=html.escape(meta['section'], quote=True),
         kicker=meta.get('kicker', 'THE BLOG &middot; EXPLAINER'),
         h1=meta['h1'], dek=meta['dek'],
-        byline=f"{meta['byline_date']} &middot; {meta['read_time']}",
+        byline=f"{byline_date(meta['published'])} &middot; {meta['read_time']}",
         body=body,
     )
     dest = pathlib.Path(out_dir) if out_dir else OUT

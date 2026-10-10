@@ -5,30 +5,73 @@
   "og_description": "Eight voters, twelve signs, 337 points that have to go somewhere. The layer of jyotish that turns a cohort transit reading into your own.",
   "h1": "ashtakavarga is the part that makes a transit actually urs",
   "dek": "the standard objection to transits is that they apply to a twelfth of the planet. the tradition raised it first and answered with a points system. eight voters, twelve signs, 337 points, and a different distribution in every chart ever cast.",
-  "published": "2026-10-04",
-  "modified": "2026-10-04",
-  "byline_date": "OCTOBER 4, 2026",
+  "published": "2026-10-06",
+  "modified": "2026-10-06",
   "read_time": "11 MIN READ",
   "section": "Vedic astrology",
   "kicker": "THE BLOG &middot; EXPLAINER",
-  "keywords": ["ashtakavarga", "sarvashtakavarga", "bhinnashtakavarga", "bindu", "kakshya", "ashtakavarga transit", "337 bindus"],
+  "keywords": [
+    "ashtakavarga",
+    "sarvashtakavarga",
+    "bhinnashtakavarga",
+    "bindu",
+    "kakshya",
+    "ashtakavarga transit",
+    "337 bindus"
+  ],
   "card_title": "ashtakavarga is the part that makes a transit actually urs",
   "card_dek": "eight voters, twelve signs, 337 points that have to go somewhere. the arithmetic layer of jyotish, and the answer to its own hardest objection.",
   "chip": "explainer",
   "llms_title": "Ashtakavarga explained",
   "llms_desc": "the eight-fold bindu system: how each graha and the Lagna score every sign, why the sarvashtakavarga total is always 337, the per-graha totals, the kakshya subdivision, and how bindu counts personalise a transit reading.",
   "faq": [
-    {"q": "what is ashtakavarga?", "a": "a points system that scores each sign in ur chart from eight reference points: the seven grahas and the lagna. each one either gives a sign a point or does not, according to fixed classical rules."},
-    {"q": "what is a bindu?", "a": "one benefic point. in a single graha's chart each sign scores 0 to 8, because there are eight possible contributors. 5 or more is read as supported, 3 or fewer as thin."},
-    {"q": "what is the difference between bhinnashtakavarga and sarvashtakavarga?", "a": "bhinnashtakavarga is one graha's own table of scores across the twelve signs. sarvashtakavarga is all seven of those tables added together, so each sign gets a single number from 0 to 56."},
-    {"q": "why does sarvashtakavarga always total 337?", "a": "because each graha's own total is fixed: sun 48, moon 49, mars 39, mercury 54, jupiter 56, venus 52 and saturn 39. those add to 337 in every chart, so only the distribution across the signs changes."},
-    {"q": "what is a good sarvashtakavarga score?", "a": "the average sign scores about 28, since 337 divided by twelve is 28.1. above 30 is read as a strong house and below 25 as a thin one."},
-    {"q": "how does ashtakavarga improve a transit reading?", "a": "it makes it personal. classical gochar gives u a reading shared with everyone who has ur moon sign. the bindu count for that graha in that sign is specific to ur chart, so the same transit reads differently for two people."},
-    {"q": "do i need my birth time for ashtakavarga?", "a": "yes. the lagna is one of the eight contributors and the house positions depend on it. without a birth time the grid can still be calculated and it will quietly be the wrong grid."},
-    {"q": "are rahu and ketu included in ashtakavarga?", "a": "not in the classical system. the eight contributors are the seven grahas and the lagna. some modern practitioners add the nodes, which produces totals that no longer match the classical ones."},
-    {"q": "what is kakshya in ashtakavarga?", "a": "each sign divided into eight parts of 3 degrees 45 minutes, one per contributor, in the order saturn, jupiter, mars, sun, venus, mercury, moon, lagna. a transiting graha is read as supported while crossing a kakshya whose owner gave that sign a bindu."},
-    {"q": "is ashtakavarga used for sade sati?", "a": "routinely. two people in sade sati in the same signs can have very different saturn bindu counts in those signs, and that difference is the standard explanation for why one person's sade sati is harder than another's."},
-    {"q": "what are the ashtakavarga reduction techniques?", "a": "trikona shodhana and ekadhipatya shodhana, two classical procedures for adjusting the totals before reading them. practitioners disagree on when to apply them, which is a real and well documented disagreement rather than a gap in the sources."},
-    {"q": "does a low bindu count mean something bad will happen?", "a": "no. it means that graha has little support in that sign in ur chart, so results there tend to take more effort. every chart has low scoring signs, by arithmetic."}
+    {
+      "q": "what is ashtakavarga?",
+      "a": "a points system that scores each sign in ur chart from eight reference points: the seven grahas and the lagna. each one either gives a sign a point or does not, according to fixed classical rules."
+    },
+    {
+      "q": "what is a bindu?",
+      "a": "one benefic point. in a single graha's chart each sign scores 0 to 8, because there are eight possible contributors. 5 or more is read as supported, 3 or fewer as thin."
+    },
+    {
+      "q": "what is the difference between bhinnashtakavarga and sarvashtakavarga?",
+      "a": "bhinnashtakavarga is one graha's own table of scores across the twelve signs. sarvashtakavarga is all seven of those tables added together, so each sign gets a single number from 0 to 56."
+    },
+    {
+      "q": "why does sarvashtakavarga always total 337?",
+      "a": "because each graha's own total is fixed: sun 48, moon 49, mars 39, mercury 54, jupiter 56, venus 52 and saturn 39. those add to 337 in every chart, so only the distribution across the signs changes."
+    },
+    {
+      "q": "what is a good sarvashtakavarga score?",
+      "a": "the average sign scores about 28, since 337 divided by twelve is 28.1. above 30 is read as a strong house and below 25 as a thin one."
+    },
+    {
+      "q": "how does ashtakavarga improve a transit reading?",
+      "a": "it makes it personal. classical gochar gives u a reading shared with everyone who has ur moon sign. the bindu count for that graha in that sign is specific to ur chart, so the same transit reads differently for two people."
+    },
+    {
+      "q": "do i need my birth time for ashtakavarga?",
+      "a": "yes. the lagna is one of the eight contributors and the house positions depend on it. without a birth time the grid can still be calculated and it will quietly be the wrong grid."
+    },
+    {
+      "q": "are rahu and ketu included in ashtakavarga?",
+      "a": "not in the classical system. the eight contributors are the seven grahas and the lagna. some modern practitioners add the nodes, which produces totals that no longer match the classical ones."
+    },
+    {
+      "q": "what is kakshya in ashtakavarga?",
+      "a": "each sign divided into eight parts of 3 degrees 45 minutes, one per contributor, in the order saturn, jupiter, mars, sun, venus, mercury, moon, lagna. a transiting graha is read as supported while crossing a kakshya whose owner gave that sign a bindu."
+    },
+    {
+      "q": "is ashtakavarga used for sade sati?",
+      "a": "routinely. two people in sade sati in the same signs can have very different saturn bindu counts in those signs, and that difference is the standard explanation for why one person's sade sati is harder than another's."
+    },
+    {
+      "q": "what are the ashtakavarga reduction techniques?",
+      "a": "trikona shodhana and ekadhipatya shodhana, two classical procedures for adjusting the totals before reading them. practitioners disagree on when to apply them, which is a real and well documented disagreement rather than a gap in the sources."
+    },
+    {
+      "q": "does a low bindu count mean something bad will happen?",
+      "a": "no. it means that graha has little support in that sign in ur chart, so results there tend to take more effort. every chart has low scoring signs, by arithmetic."
+    }
   ]
 }

@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks (all free to use), and an FAQ.
-- [Blog](https://www.asktota.com/blog/): forty-six explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): forty-seven explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Jupiter in your birth chart](https://www.asktota.com/blog/jupiter-in-birth-chart.html): the 5th and 9th aspects covering both trikonas, kendradhipati dosha, and Gajakesari's real frequency.
 - [Mars in your birth chart](https://www.asktota.com/blog/mars-in-birth-chart.html): the 4th, 7th and 8th aspects, why the manglik house list follows from them, and Mars as yogakaraka for two lagnas.
 - [Moon in your birth chart](https://www.asktota.com/blog/moon-in-birth-chart.html): Chandra as rashi, dasha origin and chandra lagna, plus paksha bala and the kemadruma cancellations.
 - [How to find your moon sign](https://www.asktota.com/blog/find-your-moon-sign.html): three methods including the full nakshatra pada syllable table used at namakaran.

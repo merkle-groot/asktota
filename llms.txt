@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks (all free to use), and an FAQ.
-- [Blog](https://www.asktota.com/blog/): forty-eight explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): forty-nine explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Exalted and debilitated planets](https://www.asktota.com/blog/exalted-debilitated-planets.html): the full uchcha and neecha table with peak degrees, the four signs with neither, mooltrikona, and neecha bhanga.
 - [Venus in your birth chart](https://www.asktota.com/blog/venus-in-birth-chart.html): the 20 year dasha, the 47 degree elongation limit, and kalatra karaka in every chart regardless of gender.
 - [Jupiter in your birth chart](https://www.asktota.com/blog/jupiter-in-birth-chart.html): the 5th and 9th aspects covering both trikonas, kendradhipati dosha, and Gajakesari's real frequency.
 - [Mars in your birth chart](https://www.asktota.com/blog/mars-in-birth-chart.html): the 4th, 7th and 8th aspects, why the manglik house list follows from them, and Mars as yogakaraka for two lagnas.

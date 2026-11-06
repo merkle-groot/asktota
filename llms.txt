@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks (all free to use), and an FAQ.
-- [Blog](https://www.asktota.com/blog/): fifty-seven explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): fifty-eight explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Antardasha explained](https://www.asktota.com/blog/antardasha.html): what an antardasha (bhukti) is in Vimshottari dasha, the order of the nine sub-periods, the formula for their length (mahadasha years times antardasha years divided by 120), a worked Saturn mahadasha table, and how the mahadasha and antardasha lords are read together.
 - [Ayanamsa explained](https://www.asktota.com/blog/what-is-ayanamsa.html): what ayanamsa is, how precession of the equinoxes creates the roughly 24 degree gap between tropical and sidereal zodiacs, the main ayanamsas (Lahiri, Raman, Krishnamurti, Fagan-Bradley), and why India's 1955 Calendar Reform Committee chose Lahiri.
 - [AI astrology explained](https://www.asktota.com/blog/ai-astrology.html): how AI astrology works: chart calculation from an ephemeris versus interpretation by a language model, why chatbots alone can misplace planets, how to check an AI reading, and where human astrologers still differ.
 - [Shani dhaiya explained](https://www.asktota.com/blog/shani-dhaiya.html): the 2.5 year Saturn transit of the 4th house (kantaka shani) and the 8th house (ashtama shani) from the natal Moon, where both sit in the 29.5 year Saturn cycle, and how they differ from sade sati.

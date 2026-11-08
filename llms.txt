@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks (all free to use), and an FAQ.
-- [Blog](https://www.asktota.com/blog/): fifty-eight explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): fifty-nine explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Daily horoscopes explained](https://www.asktota.com/blog/daily-horoscope.html): what a daily horoscope is built from (the Moon's transit counted from a sun or moon sign), why Vedic horoscopes use the Moon sign, why generic horoscopes feel accurate (the Barnum or Forer effect), and how a reading from a full birth chart differs.
 - [Antardasha explained](https://www.asktota.com/blog/antardasha.html): what an antardasha (bhukti) is in Vimshottari dasha, the order of the nine sub-periods, the formula for their length (mahadasha years times antardasha years divided by 120), a worked Saturn mahadasha table, and how the mahadasha and antardasha lords are read together.
 - [Ayanamsa explained](https://www.asktota.com/blog/what-is-ayanamsa.html): what ayanamsa is, how precession of the equinoxes creates the roughly 24 degree gap between tropical and sidereal zodiacs, the main ayanamsas (Lahiri, Raman, Krishnamurti, Fagan-Bradley), and why India's 1955 Calendar Reform Committee chose Lahiri.
 - [AI astrology explained](https://www.asktota.com/blog/ai-astrology.html): how AI astrology works: chart calculation from an ephemeris versus interpretation by a language model, why chatbots alone can misplace planets, how to check an AI reading, and where human astrologers still differ.

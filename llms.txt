@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks (all free to use), and an FAQ.
-- [Blog](https://www.asktota.com/blog/): sixty-one explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): sixty-two explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [Bhakoot dosha explained](https://www.asktota.com/blog/bhakoot-dosha.html): what bhakoot koota measures in Ashtakoota guna milan (Moon sign distance, 7 points), the three bhakoot dosha types (2/12 dwirdwadash, 5/9 navam-pancham, 6/8 shadashtak), why about half of random couples have it, classical cancellation rules, and myths.
 - [Gajakesari yoga explained](https://www.asktota.com/blog/gajakesari-yoga.html): the classical definition of Gajakesari yoga (Jupiter in a kendra, the 1st, 4th, 7th or 10th, from the Moon), why roughly one in three charts has it, the strength conditions from classical texts, what weakens it, and common myths.
 - [Nakshatra padas explained](https://www.asktota.com/blog/nakshatra-padas.html): what nakshatra padas (charans) are, why 27 nakshatras times 4 padas equals 12 signs times 9 navamsas, how each pada maps to a navamsa sign, the purushartha pattern, vargottama padas, gandanta, and how padas give the traditional first syllable of a name.
 - [Daily horoscopes explained](https://www.asktota.com/blog/daily-horoscope.html): what a daily horoscope is built from (the Moon's transit counted from a sun or moon sign), why Vedic horoscopes use the Moon sign, why generic horoscopes feel accurate (the Barnum or Forer effect), and how a reading from a full birth chart differs.

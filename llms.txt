@@ -31,13 +31,14 @@
 ## Pages
 
 - [Home](https://www.asktota.com/): what the app is, the six desks (all free to use), and an FAQ.
-- [Blog](https://www.asktota.com/blog/): sixty-six explainers on Vedic astrology, many with a working calculator.
+- [Blog](https://www.asktota.com/blog/): sixty-seven explainers on Vedic astrology, many with a working calculator.
 - [Privacy Policy](https://www.asktota.com/privacy.html): what is collected, who processes it, and where. Written against India's DPDP Act, 2023.
 - [Terms of Service](https://www.asktota.com/terms.html)
 - [Delete your account](https://www.asktota.com/delete-account.html)
 
 ## Explainers
 
+- [How accurate is Vedic astrology?](https://www.asktota.com/blog/how-accurate-is-vedic-astrology.html): an honest look at Vedic astrology's accuracy: the astronomical calculations versus the interpretations, controlled tests (Carlson 1985, Dean and Kelly time twins 2003, Narlikar's Indian study 2009), why readings feel accurate, and how to use astrology responsibly as a reflective tool.
 - [Rahu mahadasha explained](https://www.asktota.com/blog/rahu-mahadasha.html): Rahu mahadasha in Vimshottari: 18 years, why Rahu gives results through its sign lord and conjunctions, the nine antardashas and their lengths, themes commonly reported, the factors that decide results, traditional remedies, and myths.
 - [Divisional charts (vargas) explained](https://www.asktota.com/blog/divisional-charts-vargas.html): what divisional charts (vargas) are in Vedic astrology, the sixteen shodashavarga charts from Brihat Parashara Hora Shastra and what each signifies (D1, D2, D3, D4, D7, D9, D10, D12, D16, D20, D24, D27, D30, D40, D45, D60), how they are calculated, and how birth time accuracy limits them.
 - [Vedic numerology explained](https://www.asktota.com/blog/vedic-numerology.html): how Indian numerology works: mulank (psychic or root number) from the birth day, bhagyank (destiny number) from the full date, the planet assigned to each number 1 to 9, Chaldean name numbers, how numerology differs from Vedic astrology, and common myths.
